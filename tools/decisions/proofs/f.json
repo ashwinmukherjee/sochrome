@@ -1,0 +1,86 @@
+{
+  "C21": {
+    "kind": "e2e",
+    "ref": "E3: the tab reads the product's name at every step of the walk, on every deep link and after a refused file; a sample's room alone is titled with its variant. Unit: src/app/router.test.ts (the tab names the product alone on every route a file can reach)"
+  },
+  "P7": {
+    "kind": "e2e",
+    "ref": "E3: the footnote pushes #/genes; Esc and BACK go back through history (forward returns to the genes page); with no entry of this page's under it, BACK puts the landing in its place"
+  },
+  "R16": {
+    "kind": "e2e",
+    "ref": "E3: in a room there is no tally, no Next, no YOUR GENOME, no footnote and no ledger rows to key; shots/review/f/room-1440.png"
+  },
+  "R29": {
+    "kind": "e2e",
+    "ref": "E3: nine entries back to the landing and forward again with no reload; arriving replaces (history's length unchanged on every deep link) and each step pushes one; an address naming an unknown variant or carrier lands on its list"
+  },
+  "M1": {
+    "kind": "e2e",
+    "ref": "E4 at 320 x 640 and 390 x 844: the descent folded onto the cut it is on, the list the whole screen on arrival, a room under its folded row, the genes page under its caption; shots/review/f/descent-390.png, list-390.png, room-390.png, genes-390.png"
+  },
+  "M2": {
+    "kind": "e2e",
+    "ref": "E4: at 600 px the apparatus is the strip, at 601 px it is the column beside the specimen"
+  },
+  "M3": {
+    "kind": "e2e",
+    "ref": "E4: wall 20 and the stage the screen less 40 at both sizes; the stations are the phone pass's, which supersede this row's (station-q 40, station-c 64, claim zone 104, stage top 192, ink 232, gap below 24, stages P1 320, P2 192, P3 360, P3 array top 16, ledger gap 24, 10 columns; on a screen 700 px tall or less 32, 56, 104, 176, 216, 16, 320, 192, 336, 16, 24), in FRAME.phone and FRAME.short of src/styles/tokens.ts"
+  },
+  "M4": {
+    "kind": "e2e",
+    "ref": "E4: list rows 48 px tall; the caption's, every row's and the count's baseline 30 px down; the folded row stands at the strip's top with its baseline where the caption's was"
+  },
+  "M5": {
+    "kind": "e2e",
+    "ref": "E4: the band, its caption, its rows and the page under it all transition over --an-fade (0.32 s). A tally cut's height is its caption's own, so it folds on that clock only where the browser can interpolate to auto; elsewhere it folds at once (in the report)"
+  },
+  "M6": {
+    "kind": "e2e",
+    "ref": "E4: after a row tap the band is 48 px tall, the tapped row at its top, no other row and no caption standing; the captions and the rows share one transition"
+  },
+  "M7": {
+    "kind": "e2e",
+    "ref": "E4: the specimen under an open strip is at opacity 0.22, over the descent and over a room; shots/review/f/room-open-390.png"
+  },
+  "M8": {
+    "kind": "e2e",
+    "ref": "E4: the chevron's box is 48 x 48 at the strip's right edge, stroked 1 px in --ink-dim; it folds and unfolds the strip; none shows while the list is the whole screen"
+  },
+  "M9": {
+    "kind": "e2e",
+    "ref": "E4: in a room at both sizes the bezel is not displayed and the stage is the screen less the two walls"
+  },
+  "M10": {
+    "kind": "e2e",
+    "ref": "E4: the specimen's label 32 px under the strip, the ledger's first line 32 under the label's top, NEXT and BACK 28 from the foot and 20 from the walls, 48 clear above the controls' row at 390 x 844 (at 320 x 640 the ledger's smallest pitch is taller than the screen leaves: in the report). The numbers' 20 px column, its 12 gutter and the sex row's note are the ledger's own: tools/e2e/ledger.ts at 390 and 320"
+  },
+  "M11": {
+    "kind": "e2e",
+    "ref": "E4: list rows 48 px, gene rows 32 px, the two captions 28 apart where they share a line, the captions ending 24 above the first row"
+  },
+  "K11": {
+    "kind": "e2e",
+    "ref": "E3: the ground differs with the OS's scheme; ?theme=dark pins it and is the only thing that sets data-theme; no toggle on the page; after the walk nothing is in localStorage, sessionStorage, cookies or IndexedDB, and the cache holds reference data alone"
+  },
+  "K12": {
+    "kind": "e2e",
+    "ref": "E3: the body transitions background-color and color over 0.18 s; overscroll-behavior none; scroll-behavior smooth"
+  },
+  "K13": {
+    "kind": "e2e",
+    "ref": "E3: the apparatus column's ground is --v-rail at 1440; E4: the strip's ground is the same at 320 and 390"
+  },
+  "I5": {
+    "kind": "e2e",
+    "ref": "E3: Esc closes a room (to its list), and the genes page (back to where it was opened from)"
+  },
+  "I6": {
+    "kind": "e2e",
+    "ref": "E3: every step pushes exactly one entry; arriving replaces; the read's loading entry is replaced by the first count's, and a file turned away before its read leaves none"
+  },
+  "I7": {
+    "kind": "e2e",
+    "ref": "E4: a tap on the folded strip unfolds it; a row folds it onto that row and opens its room; a gene folds it and its tick steps out; a tap on the receded page folds it and does nothing else"
+  }
+}

@@ -1,0 +1,282 @@
+{
+  "G1": {
+    "kind": "e2e",
+    "ref": "tools/e2e/ledger.ts (decided G1: pitch = floor((height − 2·132)/22) clamped 23-36; rows that far apart)"
+  },
+  "G2": {
+    "kind": "e2e",
+    "ref": "tools/e2e/ledger.ts (decided G2: bar, grow, 16 air above row 1, tracks at 96, numbers' right edge at 80)"
+  },
+  "G3": {
+    "kind": "e2e",
+    "ref": "tools/e2e/ledger.ts (decided G3: every bar is round(length·k) on chromosome 1's scale; every mark 1 px, inside its bar)"
+  },
+  "G4": {
+    "kind": "e2e",
+    "ref": "tools/e2e/ledger.ts (decided G4: each row's marks are drawn in level order)"
+  },
+  "G5": {
+    "kind": "e2e",
+    "ref": "tools/e2e/ledger.ts (decided G5: unread, the base and the solid are one fill and the ink is out); shots/review/b/unread-1440.png"
+  },
+  "G6": {
+    "kind": "e2e",
+    "ref": "tools/e2e/ledger.ts (decided G6: the ease, 1200, 1400 and 600 as the drawing resolves them)"
+  },
+  "G7": {
+    "kind": "e2e",
+    "ref": "tools/e2e/ledger.ts (decided G7: at coding the base takes the tint; the solid and the ink are out); shots/review/b/coding-1440.png"
+  },
+  "G8": {
+    "kind": "e2e",
+    "ref": "tools/e2e/ledger.ts (rare marks measure 3 px wide; decided G8: the widening's delay is 1.2 s); shots/review/b/rare-1440.png"
+  },
+  "G9": {
+    "kind": "e2e",
+    "ref": "tools/e2e/ledger.ts (at the last cut every carrier's mark measures 1 px, every standing one 3); shots/review/b/yours-1440.png"
+  },
+  "G10": {
+    "kind": "e2e",
+    "ref": "tools/e2e/ledger.ts (decided G10: list() sets .instant and drops it two frames on)"
+  },
+  "G11": {
+    "kind": "e2e",
+    "ref": "tools/e2e/ledger.ts (decided G11: the lit variant's row at 1, every other row at 0.4); shots/review/b/lit-1440.png"
+  },
+  "G12": {
+    "kind": "e2e",
+    "ref": "tools/e2e/ledger.ts (decided G12: --e2 = round(grow·2.5); one tick lit, measuring bar + 2·e2); shots/review/b/lit-1440.png"
+  },
+  "G13": {
+    "kind": "e2e",
+    "ref": "tools/e2e/ledger.ts (decided G13: in the list a rare mark's transitions are 0.15 s)"
+  },
+  "G14": {
+    "kind": "e2e",
+    "ref": "tools/e2e/ledger.ts (every row's key at 1440, 1024, 390, 320 in every state: never cut by the window, the ledger's column or a clipping parent, never on a bar or on each other; the rows sum to the tally; the sex row counts X + Y); shots/review/b/key-1440.png, shots/review/b/key-390.png, shots/review/b/sex-row-1440.png"
+  },
+  "G15": {
+    "kind": "e2e",
+    "ref": "tools/e2e/ledger.ts (no bands while loading; a lit variant keys its row with no count; in the list a row lights its own variants as a set)"
+  },
+  "G16": {
+    "kind": "e2e",
+    "ref": "tools/e2e/ledger.ts (decided G16: the band runs from 60 to the bar's end + 48, one pitch tall)"
+  },
+  "G17": {
+    "kind": "e2e",
+    "ref": "tools/e2e/ledger.ts (decided G17: a target is 13 by 3 bars; targets show only in the list, one per group, none under the genes page)"
+  },
+  "G18": {
+    "kind": "e2e",
+    "ref": "tools/e2e/ledger.ts (no two columns of one level within a pixel of each other, in any row, on four fixtures)"
+  },
+  "G19": {
+    "kind": "e2e",
+    "ref": "tools/e2e/ledger.ts (targets equal groups for each list; a click carries its group's keys)"
+  },
+  "G21": {
+    "kind": "review",
+    "ref": "shots/review/b/loading-1440.png"
+  },
+  "G22": {
+    "kind": "e2e",
+    "ref": "tools/e2e/ledger.ts (G22: with motion reduced state() lands at once, transitions 0 s, the rare mark already 3 wide)"
+  },
+  "G23": {
+    "kind": "e2e",
+    "ref": "tools/e2e/ledger.ts (resize: the drawing is redrawn at the new width in the state it stood in)"
+  },
+  "G24": {
+    "kind": "e2e",
+    "ref": "tools/e2e/ledger.ts (decided G24: the words, 11 px, no underline, left edge on the tracks' start); shots/review/b/list-1440.png"
+  },
+  "G25": {
+    "kind": "e2e",
+    "ref": "tools/e2e/ledger.ts (decided G25: the layer in at 0.15 s and out at 1.2 s, each gene tick at 0.45); shots/review/b/genes-1440.png"
+  },
+  "G26": {
+    "kind": "e2e",
+    "ref": "tools/e2e/ledger.ts (decided G26: X's bar at its true length; with no X the outline, 1 px, and its note; the note never cut at four widths); shots/review/b/all-1440.png"
+  },
+  "G27": {
+    "kind": "e2e",
+    "ref": "tools/e2e/ledger.ts (decided G27: the caption's words, uppercase, left edge on the tracks' start); shots/review/b/all-1440.png"
+  },
+  "L1": {
+    "kind": "e2e",
+    "ref": "tools/e2e/descent.ts (E1) (the explanation's top is --rail-top − 14; 13/18 at --ink-dim; sentences 16 apart; between the walls, at 1440, 1024, 390, 320); shots/review/b/landing-1440.png"
+  },
+  "L2": {
+    "kind": "unit",
+    "ref": "src/app/landing/words.test.ts (the five lines as amended); E1 reads them from the page in order"
+  },
+  "L3": {
+    "kind": "e2e",
+    "ref": "tools/e2e/descent.ts (E1) (the count's underline 1 px at --ink-dim, offset 3, text --ink; pointed at, the underline --ink; its click calls onGenes)"
+  },
+  "L4": {
+    "kind": "e2e",
+    "ref": "tools/e2e/descent.ts (E1) (one line, centred across and down the specimen; actions --ink, \"or\" --ink-dim, colour 0.12 s); shots/review/b/landing-1440.png"
+  },
+  "L5": {
+    "kind": "e2e",
+    "ref": "tools/e2e/descent.ts (E1) (at 390 and 320: no \"or\", two rows 16 apart, 32 under the explanation, on the wall's edge; the explanation runs to the right wall); shots/review/b/landing-390.png"
+  },
+  "L6": {
+    "kind": "e2e",
+    "ref": "tools/e2e/descent.ts (E1) (the picker's accept is .vcf,.vcf.gz,.gz)"
+  },
+  "L7": {
+    "kind": "e2e",
+    "ref": "tools/e2e/descent.ts (E1) (LOAD YOUR GENOME shows the question with the genes' own count, 145, then the 150 MB line and the own-file line; the answer goes with the file; VIEW A SAMPLE goes straight to the release; block at most 360, one left edge, 16 gaps); shots/review/b/question-1440.png, shots/review/b/question-390.png. Dropping the genes before the read is the reader's (leaveOut)"
+  },
+  "L8": {
+    "kind": "e2e",
+    "ref": "tools/e2e/descent.ts (E1) (each of the twelve reasons: two sentences, then its ways on, on one line at 1440 and two rows at 390; never scrolls sideways); shots/review/b/refusal-chip-1440.png, shots/review/b/refusal-chip-390.png"
+  },
+  "L9": {
+    "kind": "unit",
+    "ref": "src/app/landing/words.test.ts (the eight decided refusals word for word, the product named only through the slot); E1 reads each from the page with BRAND.name"
+  },
+  "L10": {
+    "kind": "e2e",
+    "ref": "tools/e2e/descent.ts (E1) (the face's fade is 0.3 s; the actions stand faded out before the question arrives, 280 ms or more after the press)"
+  },
+  "L11": {
+    "kind": "e2e",
+    "ref": "tools/e2e/descent.ts (E1) (Escape on the question or a refusal, and the picker's cancel, return to the two actions)"
+  },
+  "L12": {
+    "kind": "e2e",
+    "ref": "tools/e2e/descent.ts (E1) (no tally or NEXT on the landing; an arrow key leaves it where it is)"
+  },
+  "L13": {
+    "kind": "e2e",
+    "ref": "tools/e2e/descent.ts (E1) (on the landing the captions, ledger and tally are not drawn at all: the landing is its own frame, and they arrive on the ground beat)"
+  },
+  "L14": {
+    "kind": "e2e",
+    "ref": "tools/e2e/descent.ts (E1) (release 0.4 s, the ground about 400 ms after the choice, the read about 1600 ms after; on the ground a grey 0 at --ink-dim, the ledger unread, both fading in over 1.2 s); shots/review/b/arrival-ground-1440.png"
+  },
+  "L15": {
+    "kind": "e2e",
+    "ref": "tools/e2e/descent.ts (E1) (the caption reads Your genome, a no-break space, the name in parentheses, set uppercase; the name's fade is 0.6 s)"
+  },
+  "L16": {
+    "kind": "e2e",
+    "ref": "tools/e2e/descent.ts (E1) (a read broken partway holds its fill and count about 1400 ms, then the landing with the broken refusal and nothing kept); src/app/descent/controller.test.ts; shots/review/b/descent-broken-1440.png"
+  },
+  "L17": {
+    "kind": "e2e",
+    "ref": "tools/e2e/descent.ts (E1) (the file read and the reference data trailing: the count and caption stand, NEXT's corner reads Reference data n% in the caption's setting with tabular numerals on the wall, NEXT out until the read is done; onLoadChosen fires on LOAD YOUR GENOME only); shots/review/b/descent-reference-1440.png"
+  },
+  "D1": {
+    "kind": "unit",
+    "ref": "src/app/descent/controller.test.ts (the steps run all, coding, protein, rare, yours, list; landing and loading before them)"
+  },
+  "D2": {
+    "kind": "e2e",
+    "ref": "tools/e2e/descent.ts (E1) (count mono 13/17, 0.02em, tabular, on the text edge; caption sans 13/18 under it); shots/review/b/descent-yours-1440.png"
+  },
+  "D3": {
+    "kind": "e2e",
+    "ref": "tools/e2e/descent.ts (E1) (8 from each count to its caption, 32 from each caption to the next count)"
+  },
+  "D4": {
+    "kind": "e2e",
+    "ref": "tools/e2e/descent.ts (E1) (the cut the descent is on: --ink over --ink-dim; the one behind: --ink-dim over --ink-dim)"
+  },
+  "D5": {
+    "kind": "e2e",
+    "ref": "tools/e2e/descent.ts (E1) (the caption's delay is 0.6 s on a 1.2 s fade)"
+  },
+  "D6": {
+    "kind": "e2e",
+    "ref": "tools/e2e/descent.ts (E1) (the first caption stays out while the count runs, and is in 1.7 s after it lands)"
+  },
+  "D7": {
+    "kind": "e2e",
+    "ref": "tools/e2e/descent.ts (E1) (cuts ahead stand at opacity 0; the first count does not move as the others arrive)"
+  },
+  "D8": {
+    "kind": "unit",
+    "ref": "src/app/descent/controller.test.ts (the five captions from HG002's counts); E1 reads every caption from the page on four fixtures"
+  },
+  "D9": {
+    "kind": "unit",
+    "ref": "src/app/descent/controller.test.ts (a share in plain words: under 0.1%, under 1%, about half, about N%)"
+  },
+  "D10": {
+    "kind": "unit",
+    "ref": "src/app/descent/controller.test.ts (nothing rare reads differently); E1 on the empty fixture; shots/review/b/descent-nothing-rare-1440.png"
+  },
+  "D11": {
+    "kind": "e2e",
+    "ref": "tools/e2e/ledger.ts (rare marks measure 3 px wide; before rare, 1 px); E1 (the rare caption says so)"
+  },
+  "D12": {
+    "kind": "e2e",
+    "ref": "tools/e2e/descent.ts (E1) (the count at rare is counts.rare, which is yours + carriers, on four fixtures)"
+  },
+  "D13": {
+    "kind": "e2e",
+    "ref": "tools/e2e/descent.ts (E1) (empty fixture: NEXT reads EXPLORE at rare, the next step is the list, the left arrow from rare goes to protein); src/app/descent/controller.test.ts (back from the list lands on rare)"
+  },
+  "D14": {
+    "kind": "e2e",
+    "ref": "tools/e2e/descent.ts (E1) (counts on the text edge at --wall; every caption inside the same inset from the column's right edge, and at least one reaching toward it)"
+  },
+  "D15": {
+    "kind": "e2e",
+    "ref": "tools/e2e/descent.ts (E1) (neither the explanation nor a caption wraps pretty)"
+  },
+  "D16": {
+    "kind": "e2e",
+    "ref": "tools/e2e/descent.ts (E1) (NEXT's box 15 tall, its bottom --sp-5 above the foot; its wait 1.8 s, not in before the caption; EXPLORE on the last cut, the two words crossfaded); shots/review/b/descent-all-1440.png, shots/review/b/descent-yours-1440.png"
+  },
+  "D17": {
+    "kind": "e2e",
+    "ref": "tools/e2e/descent.ts (E1) (first sight: --ink, the arrow's nudge 1.7 s; once used: --ink-dim and still); shots/review/b/descent-all-1440.png"
+  },
+  "D18": {
+    "kind": "e2e",
+    "ref": "tools/e2e/descent.ts (E1) (the arrow 0.4em after the word, its right edge on the wall)"
+  },
+  "D19": {
+    "kind": "e2e",
+    "ref": "tools/e2e/descent.ts (E1) (the right and left arrow keys step forward and back; nothing while the read runs); Tally.tsx ignores keys typed in a field"
+  },
+  "D20": {
+    "kind": "e2e",
+    "ref": "tools/e2e/descent.ts (E1) (the step from the last cut opens the list with Your variants standing); tools/e2e/ledger.ts (state list resets to yours)"
+  },
+  "D21": {
+    "kind": "e2e",
+    "ref": "tools/e2e/descent.ts (E1) (motion reduced: every bar whole, unseen until its chromosome is done, then solid; the tally's transitions 0 s); src/app/descent/controller.test.ts"
+  },
+  "D22": {
+    "kind": "e2e",
+    "ref": "tools/e2e/descent.ts (E1) (the bars are done in file order through the read); tools/e2e/ledger.ts (23 rows, X last, Y never drawn)"
+  },
+  "D23": {
+    "kind": "e2e",
+    "ref": "tools/e2e/descent.ts (E1) (every count and caption equals what the words work out from each fixture's own counts, on four fixtures)"
+  },
+  "G20": {
+    "kind": "e2e",
+    "ref": "tools/e2e/lists.ts (E2: pointing at a tick lights its rows and scrolls the first into the clear); the ledger says tick or row through on(ev, (keys, from))"
+  },
+  "I3": {
+    "kind": "e2e",
+    "ref": "tools/e2e/ledger.ts (no bands while loading; hit targets only in the list); E1 (reading, the drawing is neither live nor a menu; at the last cut live, not a menu)"
+  },
+  "I8": {
+    "kind": "e2e",
+    "ref": "tools/e2e/descent.ts (E1) (NEXT's first use retires its cue: --ink-dim, no nudge)"
+  },
+  "V13": {
+    "kind": "review",
+    "ref": "shots/review/b/descent-yours-1440.png"
+  }
+}

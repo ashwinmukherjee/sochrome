@@ -1,0 +1,4025 @@
+{
+  "status": "Checked against published sources on 2026-11-19 and approved for the proof of concept; no clinician has reviewed it. Records P3 draws have status 'checked' and a 'check' entry; others are still the draft.",
+  "units": "percent of people (0-100) who get the outcome by the stated age",
+  "complement": "XX / XY = chromosomal complement; 'any' = source pools both. Never shown as sex in copy.",
+  "records": [
+    {
+      "gene": "BRCA1",
+      "outcome": "breast cancer by age 80",
+      "age": 80,
+      "complement": "XX",
+      "variant_class": "pathogenic/likely pathogenic (mostly truncating)",
+      "missense_note": "Dorling 2021 (BCAC): missense variants classed pathogenic by standard criteria carried breast cancer risk similar to protein-truncating variants; other rare missense (aggregate) OR ~1.0 (BRCA1 1.06, BRCA2 0.97).",
+      "baseline": {
+        "value": 12.6,
+        "range": null,
+        "ci": null,
+        "source": {
+          "citation": "O'Brien et al. JAMA Oncol 2025;11(12):1458-69",
+          "where": "Table 2, PV-only model, Overall rows",
+          "cohort": "CARRIERS consortium, 67,692 US women, iCARE model standardised to US incidence; invasive or in situ",
+          "year": 2025,
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12512027/"
+        },
+        "quote": "Noncarrier: by age 50 y 2.4 (2.4-2.4); by age 80 y if free at 50 y 10.4 (10.4-10.5). Combined as 1-(1-a)(1-b)."
+      },
+      "with_variant": {
+        "value": 57.6,
+        "range": null,
+        "ci": null,
+        "source": {
+          "citation": "O'Brien et al. JAMA Oncol 2025;11(12):1458-69",
+          "where": "Table 2, PV-only model, Overall rows",
+          "cohort": "CARRIERS consortium, 67,692 US women, iCARE model standardised to US incidence; invasive or in situ",
+          "year": 2025,
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12512027/"
+        },
+        "quote": "BRCA1: by age 50 y 14.3; by age 80 y if free of breast cancer at age 50 y 50.5. Combined as 1-(1-a)(1-b)."
+      },
+      "ascertainment": "population",
+      "flags": [
+        "derived: the paper gives risk by 50 and from 50 to 80 for women free of breast cancer at 50; combined here, not printed in the paper",
+        "counts in-situ as well as invasive cancers, on both sides",
+        "replaces a family-clinic figure of 72 (Kuchenbaecker KB et al. JAMA 2017;317(23):2402-16), which runs high for people found by testing"
+      ],
+      "status": "checked",
+      "p3_use": "squares",
+      "p3_first": true,
+      "p3_note": "",
+      "check": {
+        "date": "2026-11-19",
+        "verdict": "replaced",
+        "note": "Population-based; carrier and baseline from one model. Within two points of NCCN v1.2025's range.",
+        "before": {
+          "baseline": 13.0,
+          "with_variant": 72,
+          "with_variant_source": "Kuchenbaecker KB et al. JAMA 2017;317(23):2402-16"
+        }
+      }
+    },
+    {
+      "gene": "BRCA1",
+      "outcome": "ovarian cancer by age 80",
+      "age": 80,
+      "complement": "XX",
+      "variant_class": "pathogenic/likely pathogenic (mostly truncating)",
+      "missense_note": "",
+      "baseline": {
+        "value": 1.1,
+        "range": null,
+        "ci": null,
+        "source": {
+          "citation": "SEER Cancer Stat Facts: Ovarian Cancer",
+          "where": "Lifetime Risk of Developing Cancer",
+          "cohort": "US SEER registries, 2021-2023 data",
+          "year": 2026,
+          "url": "https://seer.cancer.gov/statfacts/html/ovary.html"
+        },
+        "quote": "Lifetime Risk of Developing Cancer : Approximately 1.1 percent of women will be diagnosed with ovarian cancer at some point during their lifetime, based on 2021–2023 data."
+      },
+      "with_variant": {
+        "value": 44,
+        "range": null,
+        "ci": [
+          36,
+          53
+        ],
+        "source": {
+          "citation": "Kuchenbaecker KB et al. JAMA 2017;317(23):2402-16",
+          "where": "Abstract, Results",
+          "cohort": "prospective cohort, 6036 BRCA1 and 3820 BRCA2 female carriers (IBCCS, BCFR, kConFab); 94% family-clinic, 6% population-based ascertainment",
+          "year": 2017,
+          "url": "https://pubmed.ncbi.nlm.nih.gov/28632866/"
+        },
+        "quote": "The cumulative ovarian cancer risk to age 80 years was 44% (95% CI, 36%-53%) for BRCA1 and 17% (95% CI, 11%-25%) for BRCA2 carriers."
+      },
+      "ascertainment": "clinic/family",
+      "flags": [
+        "baseline is SEER lifetime risk, not risk by the stated age",
+        "includes fallopian tube/peritoneal per source definitions (not checked)"
+      ],
+      "status": "draft",
+      "p3_use": "squares",
+      "p3_first": false,
+      "p3_note": ""
+    },
+    {
+      "gene": "BRCA1",
+      "outcome": "breast cancer by age 80",
+      "age": 80,
+      "complement": "XY",
+      "variant_class": "pathogenic/likely pathogenic (mostly truncating)",
+      "missense_note": "",
+      "baseline": {
+        "value": 0.13,
+        "range": null,
+        "ci": null,
+        "source": {
+          "citation": "American Cancer Society. Key Statistics for Breast Cancer in Men",
+          "where": "Key statistics page",
+          "cohort": "US population (ACS estimate)",
+          "year": 2026,
+          "url": "https://www.cancer.org/cancer/types/breast-cancer-in-men/about/key-statistics.html"
+        },
+        "quote": "For men, the average lifetime risk of getting breast cancer is about 1 in 755."
+      },
+      "with_variant": {
+        "value": 0.4,
+        "range": null,
+        "ci": [
+          0.1,
+          1.5
+        ],
+        "source": {
+          "citation": "Li S et al. J Clin Oncol 2022;40(14):1529-41",
+          "where": "Results",
+          "cohort": "CIMBA, 3184 BRCA1 and 2157 BRCA2 families; segregation analysis adjusted for family ascertainment",
+          "year": 2022,
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9084432/"
+        },
+        "quote": "By age 80 years, the male breast cancer risk for BRCA1 and BRCA2 carriers was 0.4% (95% CI, 0.1 to 1.5) and 3.8% (95% CI, 1.9 to 7.7), respectively;"
+      },
+      "ascertainment": "clinic/family",
+      "flags": [
+        "baseline is SEER lifetime risk, not risk by the stated age",
+        "baseline from ACS (no SEER statfacts page for male breast); 1 in 755 = 0.13%",
+        "both values well under 1 in 100: renders as <1 square"
+      ],
+      "status": "draft",
+      "p3_use": "sentence",
+      "p3_first": true,
+      "p3_note": "0.4 rounds to 0 squares: an honest sentence, not a grid"
+    },
+    {
+      "gene": "BRCA2",
+      "outcome": "breast cancer by age 80",
+      "age": 80,
+      "complement": "XX",
+      "variant_class": "pathogenic/likely pathogenic (mostly truncating)",
+      "missense_note": "Dorling 2021 (BCAC): missense variants classed pathogenic by standard criteria carried breast cancer risk similar to protein-truncating variants; other rare missense (aggregate) OR ~1.0 (BRCA1 1.06, BRCA2 0.97).",
+      "baseline": {
+        "value": 12.6,
+        "range": null,
+        "ci": null,
+        "source": {
+          "citation": "O'Brien et al. JAMA Oncol 2025;11(12):1458-69",
+          "where": "Table 2, PV-only model, Overall rows",
+          "cohort": "CARRIERS consortium, 67,692 US women, iCARE model standardised to US incidence; invasive or in situ",
+          "year": 2025,
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12512027/"
+        },
+        "quote": "Noncarrier: by age 50 y 2.4 (2.4-2.4); by age 80 y if free at 50 y 10.4 (10.4-10.5). Combined as 1-(1-a)(1-b)."
+      },
+      "with_variant": {
+        "value": 52.8,
+        "range": null,
+        "ci": null,
+        "source": {
+          "citation": "O'Brien et al. JAMA Oncol 2025;11(12):1458-69",
+          "where": "Table 2, PV-only model, Overall rows",
+          "cohort": "CARRIERS consortium, 67,692 US women, iCARE model standardised to US incidence; invasive or in situ",
+          "year": 2025,
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12512027/"
+        },
+        "quote": "BRCA2: by age 50 y 12.8; by age 80 y if free of breast cancer at age 50 y 45.9. Combined as 1-(1-a)(1-b)."
+      },
+      "ascertainment": "population",
+      "flags": [
+        "derived: the paper gives risk by 50 and from 50 to 80 for women free of breast cancer at 50; combined here, not printed in the paper",
+        "counts in-situ as well as invasive cancers, on both sides",
+        "replaces a family-clinic figure of 69 (Kuchenbaecker KB et al. JAMA 2017;317(23):2402-16), which runs high for people found by testing"
+      ],
+      "status": "checked",
+      "p3_use": "squares",
+      "p3_first": true,
+      "p3_note": "",
+      "check": {
+        "date": "2026-11-19",
+        "verdict": "replaced",
+        "note": "Population-based; carrier and baseline from one model. Within two points of NCCN v1.2025's range.",
+        "before": {
+          "baseline": 13.0,
+          "with_variant": 69,
+          "with_variant_source": "Kuchenbaecker KB et al. JAMA 2017;317(23):2402-16"
+        }
+      }
+    },
+    {
+      "gene": "BRCA2",
+      "outcome": "ovarian cancer by age 80",
+      "age": 80,
+      "complement": "XX",
+      "variant_class": "pathogenic/likely pathogenic (mostly truncating)",
+      "missense_note": "",
+      "baseline": {
+        "value": 1.1,
+        "range": null,
+        "ci": null,
+        "source": {
+          "citation": "SEER Cancer Stat Facts: Ovarian Cancer",
+          "where": "Lifetime Risk of Developing Cancer",
+          "cohort": "US SEER registries, 2021-2023 data",
+          "year": 2026,
+          "url": "https://seer.cancer.gov/statfacts/html/ovary.html"
+        },
+        "quote": "Lifetime Risk of Developing Cancer : Approximately 1.1 percent of women will be diagnosed with ovarian cancer at some point during their lifetime, based on 2021–2023 data."
+      },
+      "with_variant": {
+        "value": 17,
+        "range": null,
+        "ci": [
+          11,
+          25
+        ],
+        "source": {
+          "citation": "Kuchenbaecker KB et al. JAMA 2017;317(23):2402-16",
+          "where": "Abstract, Results",
+          "cohort": "prospective cohort, 6036 BRCA1 and 3820 BRCA2 female carriers (IBCCS, BCFR, kConFab); 94% family-clinic, 6% population-based ascertainment",
+          "year": 2017,
+          "url": "https://pubmed.ncbi.nlm.nih.gov/28632866/"
+        },
+        "quote": "The cumulative ovarian cancer risk to age 80 years was 44% (95% CI, 36%-53%) for BRCA1 and 17% (95% CI, 11%-25%) for BRCA2 carriers."
+      },
+      "ascertainment": "clinic/family",
+      "flags": [
+        "baseline is SEER lifetime risk, not risk by the stated age"
+      ],
+      "status": "draft",
+      "p3_use": "squares",
+      "p3_first": false,
+      "p3_note": ""
+    },
+    {
+      "gene": "BRCA2",
+      "outcome": "breast cancer by age 80",
+      "age": 80,
+      "complement": "XY",
+      "variant_class": "pathogenic/likely pathogenic (mostly truncating)",
+      "missense_note": "",
+      "baseline": {
+        "value": 0.13,
+        "range": null,
+        "ci": null,
+        "source": {
+          "citation": "American Cancer Society. Key Statistics for Breast Cancer in Men",
+          "where": "Key statistics page",
+          "cohort": "US population (ACS estimate)",
+          "year": 2026,
+          "url": "https://www.cancer.org/cancer/types/breast-cancer-in-men/about/key-statistics.html"
+        },
+        "quote": "For men, the average lifetime risk of getting breast cancer is about 1 in 755."
+      },
+      "with_variant": {
+        "value": 3.8,
+        "range": null,
+        "ci": [
+          1.9,
+          7.7
+        ],
+        "source": {
+          "citation": "Li S et al. J Clin Oncol 2022;40(14):1529-41",
+          "where": "Results",
+          "cohort": "CIMBA, 3184 BRCA1 and 2157 BRCA2 families; segregation analysis adjusted for family ascertainment",
+          "year": 2022,
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9084432/"
+        },
+        "quote": "By age 80 years, the male breast cancer risk for BRCA1 and BRCA2 carriers was 0.4% (95% CI, 0.1 to 1.5) and 3.8% (95% CI, 1.9 to 7.7), respectively;"
+      },
+      "ascertainment": "clinic/family",
+      "flags": [
+        "baseline is SEER lifetime risk, not risk by the stated age",
+        "baseline from ACS (no SEER statfacts page for male breast); 1 in 755 = 0.13%"
+      ],
+      "status": "draft",
+      "p3_use": "squares",
+      "p3_first": false,
+      "p3_note": "3.8 rounds to 4 squares over a baseline of 0"
+    },
+    {
+      "gene": "BRCA2",
+      "outcome": "prostate cancer by age 80",
+      "age": 80,
+      "complement": "XY",
+      "variant_class": "pathogenic/likely pathogenic (mostly truncating)",
+      "missense_note": "",
+      "baseline": {
+        "value": 12.2,
+        "range": null,
+        "ci": null,
+        "source": {
+          "citation": "SEER Cancer Statistics Review 1975-2017",
+          "where": "Table 23.10, 10/20/30-year risk by current age, chained to 80; scaled by the change in lifetime risk to 2021-2023 (12.12 to 12.9)",
+          "cohort": "US SEER",
+          "year": 2020,
+          "url": "https://seer.cancer.gov/archive/csr/1975_2017/results_single/sect_23_table.10.pdf"
+        },
+        "quote": "Risk by age 80, chained from the table's interval risks."
+      },
+      "with_variant": {
+        "value": 26.9,
+        "range": null,
+        "ci": [
+          20.5,
+          34.7
+        ],
+        "source": {
+          "citation": "Li S et al. J Clin Oncol 2022;40(14):1529-41",
+          "where": "Results",
+          "cohort": "CIMBA, 3184 BRCA1 and 2157 BRCA2 families; segregation analysis adjusted for family ascertainment",
+          "year": 2022,
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9084432/"
+        },
+        "quote": "The prostate cancer risk associated with BRCA2 PVs was 26.9% (95% CI, 20.5 to 34.7) by age 80 years and 33.1% (95% CI, 25.5 to 42.2) by age 85 years."
+      },
+      "ascertainment": "clinic/family",
+      "flags": [
+        "baseline derived by chaining interval risks",
+        "carrier figure uses UK 2008-2012 incidence"
+      ],
+      "status": "checked",
+      "p3_use": "squares",
+      "p3_first": true,
+      "p3_note": "",
+      "check": {
+        "date": "2026-11-19",
+        "verdict": "baseline corrected",
+        "note": "26.9 by 80 is in Li 2022 Results, Absolute Risks (CI 20.5-34.7). The baseline was a lifetime risk.",
+        "before": {
+          "baseline": 13.2,
+          "with_variant": 26.9,
+          "with_variant_source": "Li S et al. J Clin Oncol 2022;40(14):1529-41"
+        }
+      }
+    },
+    {
+      "gene": "PALB2",
+      "outcome": "breast cancer by age 80",
+      "age": 80,
+      "complement": "XX",
+      "variant_class": "pathogenic, protein-truncating",
+      "missense_note": "",
+      "baseline": {
+        "value": 12.6,
+        "range": null,
+        "ci": null,
+        "source": {
+          "citation": "O'Brien et al. JAMA Oncol 2025;11(12):1458-69",
+          "where": "Table 2, PV-only model, Overall rows",
+          "cohort": "CARRIERS consortium, 67,692 US women, iCARE model standardised to US incidence; invasive or in situ",
+          "year": 2025,
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12512027/"
+        },
+        "quote": "Noncarrier: by age 50 y 2.4 (2.4-2.4); by age 80 y if free at 50 y 10.4 (10.4-10.5). Combined as 1-(1-a)(1-b)."
+      },
+      "with_variant": {
+        "value": 43.8,
+        "range": null,
+        "ci": null,
+        "source": {
+          "citation": "O'Brien et al. JAMA Oncol 2025;11(12):1458-69",
+          "where": "Table 2, PV-only model, Overall rows",
+          "cohort": "CARRIERS consortium, 67,692 US women, iCARE model standardised to US incidence; invasive or in situ",
+          "year": 2025,
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12512027/"
+        },
+        "quote": "PALB2: by age 50 y 9.9; by age 80 y if free of breast cancer at age 50 y 37.6. Combined as 1-(1-a)(1-b)."
+      },
+      "ascertainment": "population",
+      "flags": [
+        "derived: the paper gives risk by 50 and from 50 to 80 for women free of breast cancer at 50; combined here, not printed in the paper",
+        "counts in-situ as well as invasive cancers, on both sides",
+        "replaces a family-clinic figure of 53 (Yang X et al. J Clin Oncol 2020;38(7):674-85), which runs high for people found by testing"
+      ],
+      "status": "checked",
+      "p3_use": "squares",
+      "p3_first": true,
+      "p3_note": "",
+      "check": {
+        "date": "2026-11-19",
+        "verdict": "replaced",
+        "note": "Population-based; carrier and baseline from one model. Within two points of NCCN v1.2025's range.",
+        "before": {
+          "baseline": 13.0,
+          "with_variant": 53,
+          "with_variant_source": "Yang X et al. J Clin Oncol 2020;38(7):674-85"
+        }
+      }
+    },
+    {
+      "gene": "PALB2",
+      "outcome": "ovarian cancer by age 80",
+      "age": 80,
+      "complement": "XX",
+      "variant_class": "pathogenic variants (predominantly truncating)",
+      "missense_note": "",
+      "baseline": {
+        "value": 1.1,
+        "range": null,
+        "ci": null,
+        "source": {
+          "citation": "SEER Cancer Stat Facts: Ovarian Cancer",
+          "where": "Lifetime Risk of Developing Cancer",
+          "cohort": "US SEER registries, 2021-2023 data",
+          "year": 2026,
+          "url": "https://seer.cancer.gov/statfacts/html/ovary.html"
+        },
+        "quote": "Lifetime Risk of Developing Cancer : Approximately 1.1 percent of women will be diagnosed with ovarian cancer at some point during their lifetime, based on 2021–2023 data."
+      },
+      "with_variant": {
+        "value": 5,
+        "range": null,
+        "ci": [
+          2,
+          10
+        ],
+        "source": {
+          "citation": "Yang X et al. J Clin Oncol 2020;38(7):674-85",
+          "where": "Abstract, Results",
+          "cohort": "524 PALB2 families from 21 countries; complex segregation analysis adjusted for family-specific ascertainment",
+          "year": 2020,
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7049229/"
+        },
+        "quote": "On the basis of the combined data, the estimated risks to age 80 years were 53% (95% CI, 44% to 63%) for female breast cancer, 5% (95% CI, 2% to 10%) for ovarian cancer, 2%-3% (95% CI females, 1% to 4%; 95% CI males, 2% to 5%) for pancreatic cancer, and 1% (95% CI, 0.2% to 5%) for male breast cancer."
+      },
+      "ascertainment": "mixed",
+      "flags": [
+        "baseline is SEER lifetime risk, not risk by the stated age"
+      ],
+      "status": "draft",
+      "p3_use": "squares",
+      "p3_first": false,
+      "p3_note": ""
+    },
+    {
+      "gene": "PALB2",
+      "outcome": "breast cancer by age 80",
+      "age": 80,
+      "complement": "XY",
+      "variant_class": "pathogenic variants (predominantly truncating)",
+      "missense_note": "",
+      "baseline": {
+        "value": 0.13,
+        "range": null,
+        "ci": null,
+        "source": {
+          "citation": "American Cancer Society. Key Statistics for Breast Cancer in Men",
+          "where": "Key statistics page",
+          "cohort": "US population (ACS estimate)",
+          "year": 2026,
+          "url": "https://www.cancer.org/cancer/types/breast-cancer-in-men/about/key-statistics.html"
+        },
+        "quote": "For men, the average lifetime risk of getting breast cancer is about 1 in 755."
+      },
+      "with_variant": {
+        "value": 1,
+        "range": null,
+        "ci": [
+          0.2,
+          5
+        ],
+        "source": {
+          "citation": "Yang X et al. J Clin Oncol 2020;38(7):674-85",
+          "where": "Abstract, Results",
+          "cohort": "524 PALB2 families from 21 countries; complex segregation analysis adjusted for family-specific ascertainment",
+          "year": 2020,
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7049229/"
+        },
+        "quote": "On the basis of the combined data, the estimated risks to age 80 years were 53% (95% CI, 44% to 63%) for female breast cancer, 5% (95% CI, 2% to 10%) for ovarian cancer, 2%-3% (95% CI females, 1% to 4%; 95% CI males, 2% to 5%) for pancreatic cancer, and 1% (95% CI, 0.2% to 5%) for male breast cancer."
+      },
+      "ascertainment": "mixed",
+      "flags": [
+        "baseline is SEER lifetime risk, not risk by the stated age",
+        "baseline from ACS; 1 in 755 = 0.13%"
+      ],
+      "status": "draft",
+      "p3_use": "sentence",
+      "p3_first": true,
+      "p3_note": "1 square over a 0 baseline; a sentence reads better"
+    },
+    {
+      "gene": "CHEK2",
+      "outcome": "breast cancer by age 80",
+      "age": 80,
+      "complement": "XX",
+      "variant_class": "pathogenic, protein-truncating including c.1100delC; not p.Ile157Thr",
+      "missense_note": "Dorling 2021: rare missense (aggregate) OR 1.42 (1.28-1.58) vs truncating OR 2.54; c.1100delC OR 2.66; I157T and S428F low risk (CARRIERS OR <1.5).",
+      "baseline": {
+        "value": 12.6,
+        "range": null,
+        "ci": null,
+        "source": {
+          "citation": "O'Brien et al. JAMA Oncol 2025;11(12):1458-69",
+          "where": "Table 2, PV-only model, Overall rows",
+          "cohort": "CARRIERS consortium, 67,692 US women, iCARE model standardised to US incidence; invasive or in situ",
+          "year": 2025,
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12512027/"
+        },
+        "quote": "Noncarrier: by age 50 y 2.4 (2.4-2.4); by age 80 y if free at 50 y 10.4 (10.4-10.5). Combined as 1-(1-a)(1-b)."
+      },
+      "with_variant": {
+        "value": 28.4,
+        "range": null,
+        "ci": null,
+        "source": {
+          "citation": "O'Brien et al. JAMA Oncol 2025;11(12):1458-69",
+          "where": "Table 2, PV-only model, Overall rows",
+          "cohort": "CARRIERS consortium, 67,692 US women, iCARE model standardised to US incidence; invasive or in situ",
+          "year": 2025,
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12512027/"
+        },
+        "quote": "CHEK2: by age 50 y 6.2; by age 80 y if free of breast cancer at age 50 y 23.7. Combined as 1-(1-a)(1-b)."
+      },
+      "ascertainment": "population",
+      "flags": [
+        "derived: the paper gives risk by 50 and from 50 to 80 for women free of breast cancer at 50; combined here, not printed in the paper",
+        "counts in-situ as well as invasive cancers, on both sides",
+        "replaces a family-clinic figure of 33 (Nguyen-Dumont T et al. Cancers 2021;13(6):1378 (Australian Breast Cancer Family Registry)), which runs high for people found by testing",
+        "p.Ile157Thr is low-penetrance; NCCN gives it no extra management. A low-penetrance ClinVar call keeps it out of the figure"
+      ],
+      "status": "checked",
+      "p3_use": "squares",
+      "p3_first": true,
+      "p3_note": "small cohort (26 families); Dorling/CARRIERS put it lower (about 20-30)",
+      "check": {
+        "date": "2026-11-19",
+        "verdict": "replaced",
+        "note": "Population-based; carrier and baseline from one model. Within two points of NCCN v1.2025's range.",
+        "before": {
+          "baseline": 13.0,
+          "with_variant": 33,
+          "with_variant_source": "Nguyen-Dumont T et al. Cancers 2021;13(6):1378 (Australian Breast Cancer Family Registry)"
+        }
+      }
+    },
+    {
+      "gene": "ATM",
+      "outcome": "breast cancer by age 80",
+      "age": 80,
+      "complement": "XX",
+      "variant_class": "pathogenic (heterozygous) variants, mostly truncating",
+      "missense_note": "Dorling 2021: rare missense (aggregate) OR 1.06; risk concentrated in FAT and kinase-domain missense; c.7271T>G missense reported much higher (52%, 28-80).",
+      "baseline": {
+        "value": 10.9,
+        "range": null,
+        "ci": null,
+        "source": {
+          "citation": "Renault AL et al. Breast Cancer Res 2022",
+          "where": "Methods",
+          "cohort": "Australian population model input",
+          "year": 2022,
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8973562/"
+        },
+        "quote": "The population cumulative risk to age 80 was taken to be 10.9%."
+      },
+      "with_variant": {
+        "value": 13,
+        "range": null,
+        "ci": [
+          4.6,
+          30
+        ],
+        "source": {
+          "citation": "Renault AL et al. Breast Cancer Res 2022;24:24 (Australian Breast Cancer Family Registry)",
+          "where": "Abstract; Methods",
+          "cohort": "population-based case-control-family study; 34 carrier probands, 1029 relatives; segregation analysis",
+          "year": 2022,
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8973562/"
+        },
+        "quote": "The estimated cumulative risk of breast cancer to age 80 years for heterozygous ATM pathogenic variant carriers was estimated to be 13% (95% CI 4.6–30)."
+      },
+      "ascertainment": "population",
+      "flags": [
+        "low outlier: HR 1.32 (0.45-3.87) not significant; small study",
+        "larger data disagree: Dorling 2021 BCAC truncating OR 2.10 with absolute risk by 80 'within the 17 to 30% range'; Hu 2021 CARRIERS OR 1.82 and 'over the 20% threshold' by 85",
+        "recommend not showing 13 without review; a point ~20-25 from the BCAC/CARRIERS range would be 'point chosen from range'"
+      ],
+      "status": "draft",
+      "p3_use": "hold",
+      "p3_first": true,
+      "p3_note": "13% vs 10.9% is not significant in the source and sits below Dorling/CARRIERS; needs a decision"
+    },
+    {
+      "gene": "CDH1",
+      "outcome": "stomach cancer by age 80",
+      "age": 80,
+      "complement": "XY",
+      "variant_class": "pathogenic variants",
+      "missense_note": "",
+      "baseline": {
+        "value": 0.8,
+        "range": null,
+        "ci": null,
+        "source": {
+          "citation": "SEER Cancer Statistics Review 1975-2017",
+          "where": "Table 24.13, interval risks chained to 80",
+          "cohort": "US SEER",
+          "year": 2020,
+          "url": "https://seer.cancer.gov/archive/csr/1975_2017/results_single/sect_24_table.13.pdf"
+        },
+        "quote": "Stomach cancer by age 80, chained."
+      },
+      "with_variant": {
+        "value": 19.1,
+        "range": null,
+        "ci": null,
+        "source": {
+          "citation": "Ryan CE et al. JAMA 2024;332(9):722-9",
+          "where": "Results; eTable 2",
+          "cohort": "213 North American families, 883 CDH1 P/LP carriers",
+          "year": 2024,
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11372503/"
+        },
+        "quote": "cumulative advanced gastric cancer risk in female and male carriers by age 80 years was 12.6% and 19.1%, respectively (eTable 2): the estimate that includes stage IA cancers found at preventive gastrectomy"
+      },
+      "ascertainment": "clinic/family",
+      "flags": [
+        "family-ascertained",
+        "no CI read for the any-stage figures (eTable 2)",
+        "replaces Roberts 2019's 42"
+      ],
+      "status": "checked",
+      "p3_use": "squares",
+      "p3_first": true,
+      "p3_note": "",
+      "check": {
+        "date": "2026-11-19",
+        "verdict": "replaced",
+        "note": "Ryan 2024 supersedes Roberts 2019. Any stage, matching the plain outcome; advanced only is 10.3 (XY) and 6.5 (XX).",
+        "before": {
+          "baseline": 0.8,
+          "with_variant": 42,
+          "with_variant_source": "Roberts ME et al. JAMA Oncol 2019;5(9):1325-31"
+        }
+      }
+    },
+    {
+      "gene": "CDH1",
+      "outcome": "stomach cancer by age 80",
+      "age": 80,
+      "complement": "XX",
+      "variant_class": "pathogenic variants",
+      "missense_note": "",
+      "baseline": {
+        "value": 0.5,
+        "range": null,
+        "ci": null,
+        "source": {
+          "citation": "SEER Cancer Statistics Review 1975-2017",
+          "where": "Table 24.14, interval risks chained to 80",
+          "cohort": "US SEER",
+          "year": 2020,
+          "url": "https://seer.cancer.gov/archive/csr/1975_2017/results_single/sect_24_table.14.pdf"
+        },
+        "quote": "Stomach cancer by age 80, chained."
+      },
+      "with_variant": {
+        "value": 12.6,
+        "range": null,
+        "ci": null,
+        "source": {
+          "citation": "Ryan CE et al. JAMA 2024;332(9):722-9",
+          "where": "Results; eTable 2",
+          "cohort": "213 North American families, 883 CDH1 P/LP carriers",
+          "year": 2024,
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11372503/"
+        },
+        "quote": "cumulative advanced gastric cancer risk in female and male carriers by age 80 years was 12.6% and 19.1%, respectively (eTable 2): the estimate that includes stage IA cancers found at preventive gastrectomy"
+      },
+      "ascertainment": "clinic/family",
+      "flags": [
+        "family-ascertained",
+        "no CI read for the any-stage figures (eTable 2)",
+        "replaces Roberts 2019's 33"
+      ],
+      "status": "checked",
+      "p3_use": "squares",
+      "p3_first": true,
+      "p3_note": "",
+      "check": {
+        "date": "2026-11-19",
+        "verdict": "replaced",
+        "note": "Ryan 2024 supersedes Roberts 2019. Any stage, matching the plain outcome; advanced only is 10.3 (XY) and 6.5 (XX).",
+        "before": {
+          "baseline": 0.8,
+          "with_variant": 33,
+          "with_variant_source": "Roberts ME et al. JAMA Oncol 2019;5(9):1325-31"
+        }
+      }
+    },
+    {
+      "gene": "CDH1",
+      "outcome": "breast cancer by age 80",
+      "age": 80,
+      "complement": "XX",
+      "variant_class": "pathogenic variants",
+      "missense_note": "",
+      "baseline": {
+        "value": 13.0,
+        "range": null,
+        "ci": null,
+        "source": {
+          "citation": "SEER Cancer Stat Facts: Female Breast Cancer",
+          "where": "Lifetime Risk of Developing Cancer",
+          "cohort": "US SEER registries, 2021-2023 data",
+          "year": 2026,
+          "url": "https://seer.cancer.gov/statfacts/html/breast.html"
+        },
+        "quote": "Lifetime Risk of Developing Cancer : Approximately 13.0 percent of women will be diagnosed with female breast cancer at some point during their lifetime, based on 2021–2023 data."
+      },
+      "with_variant": {
+        "value": 55,
+        "range": null,
+        "ci": [
+          39,
+          68
+        ],
+        "source": {
+          "citation": "Roberts ME et al. JAMA Oncol 2019;5(9):1325-31",
+          "where": "Abstract, Results",
+          "cohort": "75 CDH1 families from commercial-lab clinical/panel testing, not selected on HDGC criteria (penetrance from 41 pedigrees); SIR vs SEER",
+          "year": 2019,
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6604087/"
+        },
+        "quote": "Extrapolated cumulative incidence of gastric cancer at age 80 years was 42% (95% CI, 30%-56%) for men and 33% (95% CI, 21%-43%) for women with pathogenic variants in CDH1, whereas cumulative incidence of female breast cancer was estimated at 55% (95% CI, 39%-68%)."
+      },
+      "ascertainment": "clinic/family",
+      "flags": [
+        "baseline is SEER lifetime risk, not risk by the stated age",
+        "lobular type not separated in this figure",
+        "CARRIERS (Hu 2021, population) CDH1 OR 2.50 (1.01-7.07), lower than this implies",
+        "Hansford 2015 (HDGC-criteria families, PMID 26182300) higher: gastric 70% (59-80) XY, 56% (44-69) XX by 80; breast 42% (23-68)",
+        "Xicola 2019 (unselected panel families, PMID 31296550): 37.2% gastric, 42.9% breast by 80 (sexes pooled)",
+        "GeneReviews CDH1 chapter (NBK1139) blocked by reCAPTCHA; not read"
+      ],
+      "status": "draft",
+      "p3_use": "squares",
+      "p3_first": false,
+      "p3_note": ""
+    },
+    {
+      "gene": "TP53",
+      "outcome": "any cancer by age 70",
+      "age": 70,
+      "complement": "XX",
+      "variant_class": "germline TP53 pathogenic variants (mostly missense, DNA-binding domain)",
+      "missense_note": "TP53 germline variants are mainly missense; Dorling 2021: pathogenic-classed missense carried breast risk similar to truncating.",
+      "baseline": {
+        "value": 20.9,
+        "range": null,
+        "ci": null,
+        "source": {
+          "citation": "SEER Cancer Statistics Review 1975-2017",
+          "where": "Table 2.14, interval risks chained to 70",
+          "cohort": "US SEER",
+          "year": 2020,
+          "url": "https://seer.cancer.gov/archive/csr/1975_2017/results_single/sect_02_table.14.pdf"
+        },
+        "quote": "Any cancer by age 70, chained."
+      },
+      "with_variant": {
+        "value": 98,
+        "range": null,
+        "ci": null,
+        "source": {
+          "citation": "Fortuno C et al. JCO Precis Oncol 2024;8:e2300453",
+          "where": "Results",
+          "cohort": "146 families, 4,028 individuals, corrected for ascertainment",
+          "year": 2024,
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10914239/"
+        },
+        "quote": "cumulative cancer risk by age 70: 98% (XX)"
+      },
+      "ascertainment": "clinic/family",
+      "flags": [
+        "family-ascertained (Li-Fraumeni families)",
+        "no CI in the main text"
+      ],
+      "status": "checked",
+      "p3_use": "squares",
+      "p3_first": true,
+      "p3_note": "'nearly 100%' coded as 100; family-ascertained; baseline is lifetime",
+      "check": {
+        "date": "2026-11-19",
+        "verdict": "replaced, split",
+        "note": "Split by complement from Fortuno 2024, replacing Mai 2016's 'nearly 100% for both sexes' coded as 100. Families with Li-Fraumeni syndrome; people found by testing alone run lower, with no age-based figure yet.",
+        "before": {
+          "baseline": 39.2,
+          "with_variant": 100,
+          "with_variant_source": "Mai PL et al. Cancer 2016;122(23):3673-81"
+        }
+      }
+    },
+    {
+      "gene": "TP53",
+      "outcome": "any cancer by age 70",
+      "age": 70,
+      "complement": "XY",
+      "variant_class": "germline TP53 pathogenic variants (mostly missense, DNA-binding domain)",
+      "missense_note": "TP53 germline variants are mainly missense; Dorling 2021: pathogenic-classed missense carried breast risk similar to truncating.",
+      "baseline": {
+        "value": 21.6,
+        "range": null,
+        "ci": null,
+        "source": {
+          "citation": "SEER Cancer Statistics Review 1975-2017",
+          "where": "Table 2.13, interval risks chained to 70",
+          "cohort": "US SEER",
+          "year": 2020,
+          "url": "https://seer.cancer.gov/archive/csr/1975_2017/results_single/sect_02_table.13.pdf"
+        },
+        "quote": "Any cancer by age 70, chained."
+      },
+      "with_variant": {
+        "value": 92,
+        "range": null,
+        "ci": null,
+        "source": {
+          "citation": "Fortuno C et al. JCO Precis Oncol 2024;8:e2300453",
+          "where": "Results",
+          "cohort": "146 families, 4,028 individuals, corrected for ascertainment",
+          "year": 2024,
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10914239/"
+        },
+        "quote": "cumulative cancer risk by age 70: 92% (XY)"
+      },
+      "ascertainment": "clinic/family",
+      "flags": [
+        "family-ascertained (Li-Fraumeni families)",
+        "no CI in the main text"
+      ],
+      "status": "checked",
+      "p3_use": "squares",
+      "p3_first": true,
+      "p3_note": "'nearly 100%' coded as 100; family-ascertained; baseline is lifetime",
+      "check": {
+        "date": "2026-11-19",
+        "verdict": "replaced, split",
+        "note": "Split by complement from Fortuno 2024, replacing Mai 2016's 'nearly 100% for both sexes' coded as 100. Families with Li-Fraumeni syndrome; people found by testing alone run lower, with no age-based figure yet.",
+        "before": {
+          "baseline": 39.2,
+          "with_variant": 100,
+          "with_variant_source": "Mai PL et al. Cancer 2016;122(23):3673-81"
+        }
+      }
+    },
+    {
+      "gene": "TP53",
+      "outcome": "breast cancer by age 70",
+      "age": 70,
+      "complement": "XX",
+      "variant_class": "germline TP53 pathogenic variants (mostly missense)",
+      "missense_note": "",
+      "baseline": {
+        "value": 13.0,
+        "range": null,
+        "ci": null,
+        "source": {
+          "citation": "SEER Cancer Stat Facts: Female Breast Cancer",
+          "where": "Lifetime Risk of Developing Cancer",
+          "cohort": "US SEER registries, 2021-2023 data",
+          "year": 2026,
+          "url": "https://seer.cancer.gov/statfacts/html/breast.html"
+        },
+        "quote": "Lifetime Risk of Developing Cancer : Approximately 13.0 percent of women will be diagnosed with female breast cancer at some point during their lifetime, based on 2021–2023 data."
+      },
+      "with_variant": {
+        "value": 54,
+        "range": null,
+        "ci": null,
+        "source": {
+          "citation": "Mai PL et al. Cancer 2016;122(23):3673-81",
+          "where": "Abstract, Results",
+          "cohort": "NCI Li-Fraumeni Syndrome Study, 286 TP53+ individuals from 107 families meeting LFS/LFL criteria or with LFS-type tumours (clinic/family)",
+          "year": 2016,
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5115949/"
+        },
+        "quote": "Among females, the cumulative incidence rates by age 70 years for breast cancer, soft tissue sarcoma, brain cancer, and osteosarcoma were 54%, 15%, 6%, and 5%, respectively."
+      },
+      "ascertainment": "clinic/family",
+      "flags": [
+        "baseline is SEER lifetime risk, not risk by age 70; lifetime overstates the baseline by 70",
+        "no CI in abstract",
+        "LFS-family ascertained; likely overstates for population-found carriers; Dorling 2021 TP53 truncating OR 3.06 (0.63-14.91)"
+      ],
+      "status": "draft",
+      "p3_use": "squares",
+      "p3_first": false,
+      "p3_note": ""
+    },
+    {
+      "gene": "MLH1",
+      "outcome": "colorectal cancer by age 70",
+      "age": 70,
+      "complement": "XY",
+      "variant_class": "pathogenic/likely pathogenic (InSiGHT class 4/5), heterozygous",
+      "missense_note": "",
+      "baseline": {
+        "value": 1.7,
+        "range": null,
+        "ci": [
+          1.6,
+          1.7
+        ],
+        "source": {
+          "citation": "Fummey E et al. Estimating cancer risk in carriers of Lynch syndrome variants in UK Biobank. J Med Genet 2024 (jmg-2023-109791)",
+          "cohort": "UK Biobank, 454,756 exome-sequenced participants; 830 path_MMR carriers (InSiGHT-classified); incidentally identified, population-ascertained",
+          "year": 2024,
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11420727/",
+          "where": "Results 3-2 (non-carriers, sexes pooled)"
+        },
+        "quote": "cumulative incidence of CRC by age 70 elevated in path_MMR carriers compared with non-carriers (11.8% (95% CI: 9.5% to 14.6%) vs 1.7% (95% CI: 1.6% to 1.7%))"
+      },
+      "with_variant": {
+        "value": 53.5,
+        "range": null,
+        "ci": [
+          34.7,
+          74.7
+        ],
+        "source": {
+          "citation": "Fummey E et al. Estimating cancer risk in carriers of Lynch syndrome variants in UK Biobank. J Med Genet 2024 (jmg-2023-109791)",
+          "cohort": "UK Biobank, 454,756 exome-sequenced participants; 830 path_MMR carriers (InSiGHT-classified); incidentally identified, population-ascertained",
+          "year": 2024,
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11420727/",
+          "where": "Results 3-3, Figure 5A"
+        },
+        "quote": "men: 53.5%, (95% CI: 34.7% to 74.7%)"
+      },
+      "ascertainment": "population",
+      "flags": [
+        "baseline is non-carriers with sexes pooled; carrier figure is sex-specific",
+        "wide CI (small n)",
+        "clinic comparison: PLSD Table 1 colorectal at 70, MLH1 male 52.8 [45.2-61.6]; at 75: 57.1 [48.7-67.9]"
+      ],
+      "status": "checked",
+      "p3_use": "squares",
+      "p3_first": true,
+      "p3_note": "",
+      "check": {
+        "date": "2026-11-19",
+        "verdict": "kept",
+        "note": "Matches Fummey 2024 (J Med Genet 61(9):861-9, PMC11420727). Baseline is the same UK Biobank cohort's noncarriers, so both sides share its healthy-volunteer bias."
+      }
+    },
+    {
+      "gene": "MLH1",
+      "outcome": "colorectal cancer by age 70",
+      "age": 70,
+      "complement": "XX",
+      "variant_class": "pathogenic/likely pathogenic (InSiGHT class 4/5), heterozygous",
+      "missense_note": "",
+      "baseline": {
+        "value": 1.7,
+        "range": null,
+        "ci": [
+          1.6,
+          1.7
+        ],
+        "source": {
+          "citation": "Fummey E et al. Estimating cancer risk in carriers of Lynch syndrome variants in UK Biobank. J Med Genet 2024 (jmg-2023-109791)",
+          "cohort": "UK Biobank, 454,756 exome-sequenced participants; 830 path_MMR carriers (InSiGHT-classified); incidentally identified, population-ascertained",
+          "year": 2024,
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11420727/",
+          "where": "Results 3-2 (non-carriers, sexes pooled)"
+        },
+        "quote": "cumulative incidence of CRC by age 70 elevated in path_MMR carriers compared with non-carriers (11.8% (95% CI: 9.5% to 14.6%) vs 1.7% (95% CI: 1.6% to 1.7%))"
+      },
+      "with_variant": {
+        "value": 38.2,
+        "range": null,
+        "ci": [
+          23.3,
+          58.4
+        ],
+        "source": {
+          "citation": "Fummey E et al. Estimating cancer risk in carriers of Lynch syndrome variants in UK Biobank. J Med Genet 2024 (jmg-2023-109791)",
+          "cohort": "UK Biobank, 454,756 exome-sequenced participants; 830 path_MMR carriers (InSiGHT-classified); incidentally identified, population-ascertained",
+          "year": 2024,
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11420727/",
+          "where": "Results 3-3, Figure 5A"
+        },
+        "quote": "women: 38.2% (95% CI: 23.3% to 58.4%)"
+      },
+      "ascertainment": "population",
+      "flags": [
+        "paper is internally inconsistent: Discussion gives female MLH1 UKB value as 42.1% (95% CI: 36.2% to 48.6%) and attributes 38.2% to PLSD; Results value used here",
+        "baseline is non-carriers with sexes pooled",
+        "clinic comparison: PLSD Table 1 colorectal at 70, MLH1 female 44.1 [37.4-51.8]",
+        "the paper's Discussion swaps the labels (calls 38.2 PLSD and gives 42.1 for UK Biobank); the CI widths show 38.2 is UK Biobank's"
+      ],
+      "status": "checked",
+      "p3_use": "squares",
+      "p3_first": true,
+      "p3_note": "",
+      "check": {
+        "date": "2026-11-19",
+        "verdict": "kept",
+        "note": "Matches Fummey 2024 (J Med Genet 61(9):861-9, PMC11420727). Baseline is the same UK Biobank cohort's noncarriers, so both sides share its healthy-volunteer bias."
+      }
+    },
+    {
+      "gene": "MLH1",
+      "outcome": "endometrial cancer by age 70",
+      "age": 70,
+      "complement": "XX",
+      "variant_class": "pathogenic/likely pathogenic (InSiGHT class 4/5), heterozygous",
+      "missense_note": "",
+      "baseline": {
+        "value": 1.0,
+        "range": null,
+        "ci": [
+          0.9,
+          1.0
+        ],
+        "source": {
+          "citation": "Fummey E et al. Estimating cancer risk in carriers of Lynch syndrome variants in UK Biobank. J Med Genet 2024 (jmg-2023-109791)",
+          "cohort": "UK Biobank, 454,756 exome-sequenced participants; 830 path_MMR carriers (InSiGHT-classified); incidentally identified, population-ascertained",
+          "year": 2024,
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11420727/",
+          "where": "Results 3-2 (non-carriers)"
+        },
+        "quote": "(13.4% (95% CI: 10.2% to 17.6%) vs 1.0% (95% CI: 0.9% to 1.0%))"
+      },
+      "with_variant": {
+        "value": 43.7,
+        "range": null,
+        "ci": [
+          24.5,
+          69.1
+        ],
+        "source": {
+          "citation": "Fummey E et al. Estimating cancer risk in carriers of Lynch syndrome variants in UK Biobank. J Med Genet 2024 (jmg-2023-109791)",
+          "cohort": "UK Biobank, 454,756 exome-sequenced participants; 830 path_MMR carriers (InSiGHT-classified); incidentally identified, population-ascertained",
+          "year": 2024,
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11420727/",
+          "where": "Discussion (Figure 3)"
+        },
+        "quote": "The cumulative EC incidence by age 70 for path_MLH1 is 43.7% (95% CI: 24.5% to 69.1%) in UKB"
+      },
+      "ascertainment": "population",
+      "flags": [
+        "UKB paper does not state whether the endometrial analysis was restricted to women; non-carrier 1.0% may include men in the denominator (would understate the XX baseline). SEER lifetime uterine risk is 3.1% ('Approximately 3.1 percent of women will be diagnosed with uterine cancer...') if a safer baseline is wanted",
+        "gene-specific EC figures come from the Discussion text (Figure 3), not a table",
+        "clinic comparison: PLSD Table 1 endometrium at 70, MLH1 35.2 [28.8-43.4]; at 75: 37.0 [30.1-46.5]"
+      ],
+      "status": "draft",
+      "p3_use": "squares",
+      "p3_first": false,
+      "p3_note": ""
+    },
+    {
+      "gene": "MSH2",
+      "outcome": "colorectal cancer by age 70",
+      "age": 70,
+      "complement": "any",
+      "variant_class": "pathogenic/likely pathogenic (InSiGHT class 4/5), heterozygous",
+      "missense_note": "",
+      "baseline": {
+        "value": 1.7,
+        "range": null,
+        "ci": [
+          1.6,
+          1.7
+        ],
+        "source": {
+          "citation": "Fummey E et al. Estimating cancer risk in carriers of Lynch syndrome variants in UK Biobank. J Med Genet 2024 (jmg-2023-109791)",
+          "cohort": "UK Biobank, 454,756 exome-sequenced participants; 830 path_MMR carriers (InSiGHT-classified); incidentally identified, population-ascertained",
+          "year": 2024,
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11420727/",
+          "where": "Results 3-2 (non-carriers, sexes pooled)"
+        },
+        "quote": "cumulative incidence of CRC by age 70 elevated in path_MMR carriers compared with non-carriers (11.8% (95% CI: 9.5% to 14.6%) vs 1.7% (95% CI: 1.6% to 1.7%))"
+      },
+      "with_variant": {
+        "value": 31.8,
+        "range": null,
+        "ci": [
+          18.8,
+          50.3
+        ],
+        "source": {
+          "citation": "Fummey E et al. Estimating cancer risk in carriers of Lynch syndrome variants in UK Biobank. J Med Genet 2024 (jmg-2023-109791)",
+          "cohort": "UK Biobank, 454,756 exome-sequenced participants; 830 path_MMR carriers (InSiGHT-classified); incidentally identified, population-ascertained",
+          "year": 2024,
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11420727/",
+          "where": "Results 3-6"
+        },
+        "quote": "path_MSH2 (31.8% (95% CI: 18.8% to 50.3%))"
+      },
+      "ascertainment": "population",
+      "flags": [
+        "UKB sex-specific (Discussion): XY 31.0% (14.9-57.32), XX 32.8% (15.5-60.7); not significantly different",
+        "clinic comparison: PLSD Table 1 at 70, MSH2 female 41.9 [34.9-49.7], male 46.3 [36.9-58.8]"
+      ],
+      "status": "checked",
+      "p3_use": "squares",
+      "p3_first": true,
+      "p3_note": "source also gives XY 31.0 and XX 32.8 (Discussion); pooled kept",
+      "check": {
+        "date": "2026-11-19",
+        "verdict": "kept",
+        "note": "Matches Fummey 2024 (J Med Genet 61(9):861-9, PMC11420727). Baseline is the same UK Biobank cohort's noncarriers, so both sides share its healthy-volunteer bias."
+      }
+    },
+    {
+      "gene": "MSH2",
+      "outcome": "endometrial cancer by age 70",
+      "age": 70,
+      "complement": "XX",
+      "variant_class": "pathogenic/likely pathogenic (InSiGHT class 4/5), heterozygous",
+      "missense_note": "",
+      "baseline": {
+        "value": 1.0,
+        "range": null,
+        "ci": [
+          0.9,
+          1.0
+        ],
+        "source": {
+          "citation": "Fummey E et al. Estimating cancer risk in carriers of Lynch syndrome variants in UK Biobank. J Med Genet 2024 (jmg-2023-109791)",
+          "cohort": "UK Biobank, 454,756 exome-sequenced participants; 830 path_MMR carriers (InSiGHT-classified); incidentally identified, population-ascertained",
+          "year": 2024,
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11420727/",
+          "where": "Results 3-2 (non-carriers)"
+        },
+        "quote": "(13.4% (95% CI: 10.2% to 17.6%) vs 1.0% (95% CI: 0.9% to 1.0%))"
+      },
+      "with_variant": {
+        "value": 23.7,
+        "range": null,
+        "ci": [
+          8.95,
+          54.1
+        ],
+        "source": {
+          "citation": "Fummey E et al. Estimating cancer risk in carriers of Lynch syndrome variants in UK Biobank. J Med Genet 2024 (jmg-2023-109791)",
+          "cohort": "UK Biobank, 454,756 exome-sequenced participants; 830 path_MMR carriers (InSiGHT-classified); incidentally identified, population-ascertained",
+          "year": 2024,
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11420727/",
+          "where": "Discussion (Figure 3)"
+        },
+        "quote": "23.7% (95% CI: 8.95% to 54.1%)"
+      },
+      "ascertainment": "population",
+      "flags": [
+        "UKB paper does not state whether the endometrial analysis was restricted to women; non-carrier 1.0% may include men in the denominator (would understate the XX baseline). SEER lifetime uterine risk is 3.1% ('Approximately 3.1 percent of women will be diagnosed with uterine cancer...') if a safer baseline is wanted",
+        "gene-specific EC figures come from the Discussion text (Figure 3), not a table",
+        "quote is a fragment; full sentence not captured",
+        "clinic comparison much higher: PLSD Table 1 endometrium at 70, MSH2 46.5 [38.3-56.3]"
+      ],
+      "status": "draft",
+      "p3_use": "squares",
+      "p3_first": false,
+      "p3_note": ""
+    },
+    {
+      "gene": "MSH6",
+      "outcome": "colorectal cancer by age 70",
+      "age": 70,
+      "complement": "XY",
+      "variant_class": "pathogenic/likely pathogenic (InSiGHT class 4/5), heterozygous",
+      "missense_note": "",
+      "baseline": {
+        "value": 1.7,
+        "range": null,
+        "ci": [
+          1.6,
+          1.7
+        ],
+        "source": {
+          "citation": "Fummey E et al. Estimating cancer risk in carriers of Lynch syndrome variants in UK Biobank. J Med Genet 2024 (jmg-2023-109791)",
+          "cohort": "UK Biobank, 454,756 exome-sequenced participants; 830 path_MMR carriers (InSiGHT-classified); incidentally identified, population-ascertained",
+          "year": 2024,
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11420727/",
+          "where": "Results 3-2 (non-carriers, sexes pooled)"
+        },
+        "quote": "cumulative incidence of CRC by age 70 elevated in path_MMR carriers compared with non-carriers (11.8% (95% CI: 9.5% to 14.6%) vs 1.7% (95% CI: 1.6% to 1.7%))"
+      },
+      "with_variant": {
+        "value": 14.6,
+        "range": null,
+        "ci": [
+          9.1,
+          23.0
+        ],
+        "source": {
+          "citation": "Fummey E et al. Estimating cancer risk in carriers of Lynch syndrome variants in UK Biobank. J Med Genet 2024 (jmg-2023-109791)",
+          "cohort": "UK Biobank, 454,756 exome-sequenced participants; 830 path_MMR carriers (InSiGHT-classified); incidentally identified, population-ascertained",
+          "year": 2024,
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11420727/",
+          "where": "Discussion"
+        },
+        "quote": "for path_MSH6, 14.6% (95% CI: 9.1% to 23.0%) vs 13.5% (95% CI: 7.1% to 24.8%)"
+      },
+      "ascertainment": "population",
+      "flags": [
+        "second figure in quote (13.5%) is the PLSD comparison",
+        "baseline pooled across sexes",
+        "clinic comparison: PLSD Table 1 at 70, MSH6 male 11.7 [4.7-35.2]"
+      ],
+      "status": "checked",
+      "p3_use": "squares",
+      "p3_first": true,
+      "p3_note": "",
+      "check": {
+        "date": "2026-11-19",
+        "verdict": "kept",
+        "note": "Matches Fummey 2024 (J Med Genet 61(9):861-9, PMC11420727). Baseline is the same UK Biobank cohort's noncarriers, so both sides share its healthy-volunteer bias."
+      }
+    },
+    {
+      "gene": "MSH6",
+      "outcome": "colorectal cancer by age 70",
+      "age": 70,
+      "complement": "XX",
+      "variant_class": "pathogenic/likely pathogenic (InSiGHT class 4/5), heterozygous",
+      "missense_note": "",
+      "baseline": {
+        "value": 1.7,
+        "range": null,
+        "ci": [
+          1.6,
+          1.7
+        ],
+        "source": {
+          "citation": "Fummey E et al. Estimating cancer risk in carriers of Lynch syndrome variants in UK Biobank. J Med Genet 2024 (jmg-2023-109791)",
+          "cohort": "UK Biobank, 454,756 exome-sequenced participants; 830 path_MMR carriers (InSiGHT-classified); incidentally identified, population-ascertained",
+          "year": 2024,
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11420727/",
+          "where": "Results 3-2 (non-carriers, sexes pooled)"
+        },
+        "quote": "cumulative incidence of CRC by age 70 elevated in path_MMR carriers compared with non-carriers (11.8% (95% CI: 9.5% to 14.6%) vs 1.7% (95% CI: 1.6% to 1.7%))"
+      },
+      "with_variant": {
+        "value": 11.0,
+        "range": null,
+        "ci": [
+          6.6,
+          18.1
+        ],
+        "source": {
+          "citation": "Fummey E et al. Estimating cancer risk in carriers of Lynch syndrome variants in UK Biobank. J Med Genet 2024 (jmg-2023-109791)",
+          "cohort": "UK Biobank, 454,756 exome-sequenced participants; 830 path_MMR carriers (InSiGHT-classified); incidentally identified, population-ascertained",
+          "year": 2024,
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11420727/",
+          "where": "Discussion"
+        },
+        "quote": "for path_MSH6 11.0% (95% CI: 6.6% to 18.1%) vs 17.3% (95% CI: 11.2% to 26.3%)"
+      },
+      "ascertainment": "population",
+      "flags": [
+        "second figure in quote (17.3%) is the PLSD comparison",
+        "baseline pooled across sexes",
+        "clinic comparison: PLSD Table 1 at 70, MSH6 female 20.3 [11.8-40.5]"
+      ],
+      "status": "checked",
+      "p3_use": "squares",
+      "p3_first": true,
+      "p3_note": "",
+      "check": {
+        "date": "2026-11-19",
+        "verdict": "kept",
+        "note": "Matches Fummey 2024 (J Med Genet 61(9):861-9, PMC11420727). Baseline is the same UK Biobank cohort's noncarriers, so both sides share its healthy-volunteer bias."
+      }
+    },
+    {
+      "gene": "MSH6",
+      "outcome": "endometrial cancer by age 70",
+      "age": 70,
+      "complement": "XX",
+      "variant_class": "pathogenic/likely pathogenic (InSiGHT class 4/5), heterozygous",
+      "missense_note": "",
+      "baseline": {
+        "value": 1.0,
+        "range": null,
+        "ci": [
+          0.9,
+          1.0
+        ],
+        "source": {
+          "citation": "Fummey E et al. Estimating cancer risk in carriers of Lynch syndrome variants in UK Biobank. J Med Genet 2024 (jmg-2023-109791)",
+          "cohort": "UK Biobank, 454,756 exome-sequenced participants; 830 path_MMR carriers (InSiGHT-classified); incidentally identified, population-ascertained",
+          "year": 2024,
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11420727/",
+          "where": "Results 3-2 (non-carriers)"
+        },
+        "quote": "(13.4% (95% CI: 10.2% to 17.6%) vs 1.0% (95% CI: 0.9% to 1.0%))"
+      },
+      "with_variant": {
+        "value": 32.4,
+        "range": null,
+        "ci": [
+          23.5,
+          43.5
+        ],
+        "source": {
+          "citation": "Fummey E et al. Estimating cancer risk in carriers of Lynch syndrome variants in UK Biobank. J Med Genet 2024 (jmg-2023-109791)",
+          "cohort": "UK Biobank, 454,756 exome-sequenced participants; 830 path_MMR carriers (InSiGHT-classified); incidentally identified, population-ascertained",
+          "year": 2024,
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11420727/",
+          "where": "Discussion (Figure 3)"
+        },
+        "quote": "32.4% (95% CI: 23.5% to 43.5%)"
+      },
+      "ascertainment": "population",
+      "flags": [
+        "UKB paper does not state whether the endometrial analysis was restricted to women; non-carrier 1.0% may include men in the denominator (would understate the XX baseline). SEER lifetime uterine risk is 3.1% ('Approximately 3.1 percent of women will be diagnosed with uterine cancer...') if a safer baseline is wanted",
+        "gene-specific EC figures come from the Discussion text (Figure 3), not a table",
+        "quote is a fragment; full sentence not captured",
+        "endometrial is the main MSH6 risk (sex-limited trait per PLSD)",
+        "clinic comparison: PLSD Table 1 endometrium at 70, MSH6 41.1 [28.6-57.9]"
+      ],
+      "status": "draft",
+      "p3_use": "squares",
+      "p3_first": false,
+      "p3_note": "higher than colorectal for XX; could be the first outcome"
+    },
+    {
+      "gene": "PMS2",
+      "outcome": "colorectal cancer by age 70",
+      "age": 70,
+      "complement": "any",
+      "variant_class": "pathogenic/likely pathogenic (InSiGHT class 4/5), heterozygous",
+      "missense_note": "",
+      "baseline": {
+        "value": 1.7,
+        "range": null,
+        "ci": [
+          1.6,
+          1.7
+        ],
+        "source": {
+          "citation": "Fummey E et al. Estimating cancer risk in carriers of Lynch syndrome variants in UK Biobank. J Med Genet 2024 (jmg-2023-109791)",
+          "cohort": "UK Biobank, 454,756 exome-sequenced participants; 830 path_MMR carriers (InSiGHT-classified); incidentally identified, population-ascertained",
+          "year": 2024,
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11420727/",
+          "where": "Results 3-2 (non-carriers, sexes pooled)"
+        },
+        "quote": "cumulative incidence of CRC by age 70 elevated in path_MMR carriers compared with non-carriers (11.8% (95% CI: 9.5% to 14.6%) vs 1.7% (95% CI: 1.6% to 1.7%))"
+      },
+      "with_variant": {
+        "value": 4.3,
+        "range": null,
+        "ci": [
+          2.4,
+          7.6
+        ],
+        "source": {
+          "citation": "Fummey E et al. Estimating cancer risk in carriers of Lynch syndrome variants in UK Biobank. J Med Genet 2024 (jmg-2023-109791)",
+          "cohort": "UK Biobank, 454,756 exome-sequenced participants; 830 path_MMR carriers (InSiGHT-classified); incidentally identified, population-ascertained",
+          "year": 2024,
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11420727/",
+          "where": "Results 3-6"
+        },
+        "quote": "path_PMS2 (4.3% (95% CI: 2.4% to 7.6%))"
+      },
+      "ascertainment": "population",
+      "flags": [
+        "UKB sex-specific (Discussion): XY 3.4% (1.3-9.0), XX 5.0% (2.5-9.9)",
+        "PLSD did not show a significantly increased cancer risk for PMS2; PLSD Table 1 colorectal at 70 (both sexes) 3.4 [0.6-34.5], at 75 10.4 [2.9-40.8]",
+        "low penetrance: 4 of 100 vs 2 of 100 baseline"
+      ],
+      "status": "checked",
+      "p3_use": "squares",
+      "p3_first": true,
+      "p3_note": "source also gives XY 3.4 and XX 5.0 (Discussion); pooled kept",
+      "check": {
+        "date": "2026-11-19",
+        "verdict": "kept",
+        "note": "Matches Fummey 2024 (J Med Genet 61(9):861-9, PMC11420727). Baseline is the same UK Biobank cohort's noncarriers, so both sides share its healthy-volunteer bias."
+      }
+    },
+    {
+      "gene": "PMS2",
+      "outcome": "endometrial cancer by age 70",
+      "age": 70,
+      "complement": "XX",
+      "variant_class": "pathogenic/likely pathogenic (InSiGHT class 4/5), heterozygous",
+      "missense_note": "",
+      "baseline": {
+        "value": 1.0,
+        "range": null,
+        "ci": [
+          0.9,
+          1.0
+        ],
+        "source": {
+          "citation": "Fummey E et al. Estimating cancer risk in carriers of Lynch syndrome variants in UK Biobank. J Med Genet 2024 (jmg-2023-109791)",
+          "cohort": "UK Biobank, 454,756 exome-sequenced participants; 830 path_MMR carriers (InSiGHT-classified); incidentally identified, population-ascertained",
+          "year": 2024,
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11420727/",
+          "where": "Results 3-2 (non-carriers)"
+        },
+        "quote": "(13.4% (95% CI: 10.2% to 17.6%) vs 1.0% (95% CI: 0.9% to 1.0%))"
+      },
+      "with_variant": {
+        "value": 2.6,
+        "range": null,
+        "ci": [
+          1.07,
+          6.32
+        ],
+        "source": {
+          "citation": "Fummey E et al. Estimating cancer risk in carriers of Lynch syndrome variants in UK Biobank. J Med Genet 2024 (jmg-2023-109791)",
+          "cohort": "UK Biobank, 454,756 exome-sequenced participants; 830 path_MMR carriers (InSiGHT-classified); incidentally identified, population-ascertained",
+          "year": 2024,
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11420727/",
+          "where": "Discussion (Figure 3)"
+        },
+        "quote": "for path_PMS2 2.6% (95% CI: 1.07% to 6.32%) vs 12.7% (95% CI: 5.5% to 27.9%)"
+      },
+      "ascertainment": "population",
+      "flags": [
+        "UKB paper does not state whether the endometrial analysis was restricted to women; non-carrier 1.0% may include men in the denominator (would understate the XX baseline). SEER lifetime uterine risk is 3.1% ('Approximately 3.1 percent of women will be diagnosed with uterine cancer...') if a safer baseline is wanted",
+        "gene-specific EC figures come from the Discussion text (Figure 3), not a table",
+        "second figure in quote (12.7%) is PLSD comparison",
+        "UKB: PMS2 EC curve not significantly different from non-carriers (log rank p=0.059)",
+        "PLSD Table 1 endometrium at 70 (both column) 12.8 [5.2-49.5]"
+      ],
+      "status": "draft",
+      "p3_use": "hold",
+      "p3_first": false,
+      "p3_note": "not above non-carriers in the source"
+    },
+    {
+      "gene": "APC",
+      "outcome": "colorectal cancer by age 45 if untreated",
+      "age": 45,
+      "complement": "any",
+      "variant_class": "pathogenic, outside the attenuated regions (classic FAP)",
+      "missense_note": "",
+      "baseline": {
+        "value": 0.2,
+        "range": null,
+        "ci": null,
+        "source": {
+          "citation": "SEER Cancer Statistics Review 1975-2017",
+          "where": "Table 6.10, age-specific incidence, summed to 45",
+          "cohort": "US SEER",
+          "year": 2020,
+          "url": "https://seer.cancer.gov/archive/csr/1975_2017/results_single/sect_06_table.10.pdf"
+        },
+        "quote": "Colorectal cancer by age 45, from age-specific rates."
+      },
+      "with_variant": {
+        "value": 90,
+        "range": null,
+        "ci": null,
+        "source": {
+          "citation": "NCI PDQ Cancer Genetics Editorial Board. Genetics of Colorectal Cancer (PDQ) - Health Professional Version",
+          "year": 2025,
+          "url": "https://www.cancer.gov/types/colorectal/hp/colorectal-genetics-pdq",
+          "cohort": "summary of published clinic/family-ascertained studies",
+          "where": "Major Genetic Syndromes, Table 3 (ref 1, primary citation not captured)"
+        },
+        "quote": "FAP | 90% by age 45 y"
+      },
+      "ascertainment": "clinic/family",
+      "flags": [
+        "family-ascertained, pre-surveillance",
+        "secondary source (PDQ summary)"
+      ],
+      "status": "checked",
+      "p3_use": "squares",
+      "p3_first": true,
+      "p3_note": "untreated, pre-surveillance figure; baseline lifetime not by 45",
+      "check": {
+        "date": "2026-11-19",
+        "verdict": "baseline corrected, reworded",
+        "note": "90 by 45 is PDQ Table 3 (from Bussey 1975): untreated natural history. Applies to variants outside the attenuated regions.",
+        "before": {
+          "baseline": 3.9,
+          "with_variant": 90,
+          "with_variant_source": "NCI PDQ Cancer Genetics Editorial Board. Genetics of Colorectal Cancer (PDQ) - Health Professional Version"
+        }
+      }
+    },
+    {
+      "gene": "APC",
+      "outcome": "colorectal cancer by age 80",
+      "age": 80,
+      "complement": "any",
+      "variant_class": "pathogenic variant, attenuated FAP phenotype",
+      "missense_note": "",
+      "baseline": {
+        "value": 3.3,
+        "range": null,
+        "ci": null,
+        "source": {
+          "citation": "SEER Cancer Statistics Review 1975-2017",
+          "where": "Tables 6.18-6.20, interval risks chained to 80",
+          "cohort": "US SEER",
+          "year": 2020,
+          "url": "https://seer.cancer.gov/archive/csr/1975_2017/results_single/sect_06_table.18.pdf"
+        },
+        "quote": "Colorectal cancer by age 80, chained."
+      },
+      "with_variant": {
+        "value": 69,
+        "range": null,
+        "ci": null,
+        "source": {
+          "citation": "NCI PDQ Cancer Genetics Editorial Board. Genetics of Colorectal Cancer (PDQ) - Health Professional Version",
+          "year": 2025,
+          "url": "https://www.cancer.gov/types/colorectal/hp/colorectal-genetics-pdq",
+          "cohort": "summary of published clinic/family-ascertained studies",
+          "where": "Major Genetic Syndromes, Table 3 (ref 2, primary citation not captured)"
+        },
+        "quote": "Attenuated FAP | 69% by age 80 y"
+      },
+      "ascertainment": "clinic/family",
+      "flags": [
+        "family-ascertained",
+        "secondary source (PDQ summary)",
+        "codon bounds approximate the regions GeneReviews describes"
+      ],
+      "status": "checked",
+      "p3_use": "squares",
+      "p3_first": true,
+      "p3_note": "attenuated FAP only",
+      "codons": [
+        [
+          1,
+          157
+        ],
+        [
+          312,
+          412
+        ],
+        [
+          1596,
+          2843
+        ]
+      ],
+      "check": {
+        "date": "2026-11-19",
+        "verdict": "baseline corrected, now shown",
+        "note": "Attenuated FAP, 69 by 80 (Burt 2004 via PDQ Table 3). Drawn for variants in codons 1-157, 312-412 (exon 9) and 1596 on, the attenuated regions GeneReviews names.",
+        "before": {
+          "baseline": 3.9,
+          "with_variant": 69,
+          "with_variant_source": "NCI PDQ Cancer Genetics Editorial Board. Genetics of Colorectal Cancer (PDQ) - Health Professional Version"
+        }
+      }
+    },
+    {
+      "gene": "MUTYH",
+      "outcome": "colorectal cancer (age not stated)",
+      "age": null,
+      "complement": "any",
+      "variant_class": "biallelic pathogenic (homozygous or compound heterozygous); MUTYH-associated polyposis",
+      "missense_note": "",
+      "baseline": {
+        "value": 3.9,
+        "range": null,
+        "ci": null,
+        "source": {
+          "citation": "SEER Cancer Stat Facts: Colorectal Cancer",
+          "year": 2025,
+          "url": "https://seer.cancer.gov/statfacts/html/colorect.html",
+          "cohort": "US SEER, 2021-2023 data",
+          "where": "Lifetime risk"
+        },
+        "quote": "Approximately 3.9 percent of men and women will be diagnosed with colorectal cancer at some point during their lifetime"
+      },
+      "with_variant": {
+        "value": 44,
+        "range": [
+          35,
+          53
+        ],
+        "ci": null,
+        "source": {
+          "citation": "NCI PDQ Cancer Genetics Editorial Board. Genetics of Colorectal Cancer (PDQ) - Health Professional Version",
+          "year": 2025,
+          "url": "https://www.cancer.gov/types/colorectal/hp/colorectal-genetics-pdq",
+          "cohort": "summary of published clinic/family-ascertained studies",
+          "where": "Major Genetic Syndromes, Table 3 (ref 7)"
+        },
+        "quote": "MUTYH-associated polyposis | 35% to 53%"
+      },
+      "ascertainment": "clinic/family",
+      "flags": [
+        "point chosen from range (midpoint)",
+        "no age given for the range",
+        "PDQ MAP section elsewhere says biallelic carriers 'still carry a high risk of CRC (35%-75%)' - sources disagree on upper bound",
+        "Win 2014 (Gastroenterology) biallelic age-70 figures exist in full text but full text not accessible (NCBI captcha, Europe PMC 500); not filled from memory",
+        "recessive: biallelic needed for this risk; one copy is the next records"
+      ],
+      "status": "draft",
+      "p3_use": "hold",
+      "p3_first": true,
+      "p3_note": "biallelic only; range with no age. MUTYH is recessive so P3's figure path won't reach it from one variant"
+    },
+    {
+      "gene": "MUTYH",
+      "outcome": "colorectal cancer by age 70",
+      "age": 70,
+      "complement": "XY",
+      "variant_class": "monoallelic (one copy) pathogenic",
+      "missense_note": "",
+      "baseline": {
+        "value": 1.7,
+        "range": null,
+        "ci": [
+          1.6,
+          1.7
+        ],
+        "source": {
+          "citation": "Fummey E et al. Estimating cancer risk in carriers of Lynch syndrome variants in UK Biobank. J Med Genet 2024 (jmg-2023-109791)",
+          "cohort": "UK Biobank, 454,756 exome-sequenced participants; 830 path_MMR carriers (InSiGHT-classified); incidentally identified, population-ascertained",
+          "year": 2024,
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11420727/",
+          "where": "Results 3-2 (non-carriers, sexes pooled)"
+        },
+        "quote": "cumulative incidence of CRC by age 70 elevated in path_MMR carriers compared with non-carriers (11.8% (95% CI: 9.5% to 14.6%) vs 1.7% (95% CI: 1.6% to 1.7%))"
+      },
+      "with_variant": {
+        "value": 7.2,
+        "range": null,
+        "ci": [
+          4.6,
+          11.3
+        ],
+        "source": {
+          "citation": "Win AK et al. Risk of colorectal cancer for carriers of mutations in MUTYH, with and without a family history of cancer. Gastroenterology 2014;146(5):1208-11",
+          "year": 2014,
+          "url": "https://europepmc.org/article/MED/24444654",
+          "cohort": "2332 monoallelic carriers among 9504 relatives of 264 CRC cases with a MUTYH mutation (family ascertained; most carrier status imputed)",
+          "where": "Abstract"
+        },
+        "quote": "CRC risks through 70 years of age of 7.2% for male carriers of monoallelic mutations (95% confidence interval [CI], 4.6%-11.3%)"
+      },
+      "ascertainment": "clinic/family",
+      "flags": [
+        "baseline borrowed from a different study (UK Biobank non-carriers, sexes pooled) to match age 70",
+        "with first-degree relative with CRC by 50: 12.5% (8.6-17.7)",
+        "per PDQ, most carrier status in this study was imputed rather than genotyped",
+        "quote assembled from two adjacent abstract fragments"
+      ],
+      "status": "draft",
+      "p3_use": "hold",
+      "p3_first": false,
+      "p3_note": "one copy; recessive gene, carrier path"
+    },
+    {
+      "gene": "MUTYH",
+      "outcome": "colorectal cancer by age 70",
+      "age": 70,
+      "complement": "XX",
+      "variant_class": "monoallelic (one copy) pathogenic",
+      "missense_note": "",
+      "baseline": {
+        "value": 1.7,
+        "range": null,
+        "ci": [
+          1.6,
+          1.7
+        ],
+        "source": {
+          "citation": "Fummey E et al. Estimating cancer risk in carriers of Lynch syndrome variants in UK Biobank. J Med Genet 2024 (jmg-2023-109791)",
+          "cohort": "UK Biobank, 454,756 exome-sequenced participants; 830 path_MMR carriers (InSiGHT-classified); incidentally identified, population-ascertained",
+          "year": 2024,
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11420727/",
+          "where": "Results 3-2 (non-carriers, sexes pooled)"
+        },
+        "quote": "cumulative incidence of CRC by age 70 elevated in path_MMR carriers compared with non-carriers (11.8% (95% CI: 9.5% to 14.6%) vs 1.7% (95% CI: 1.6% to 1.7%))"
+      },
+      "with_variant": {
+        "value": 5.6,
+        "range": null,
+        "ci": [
+          3.6,
+          8.8
+        ],
+        "source": {
+          "citation": "Win AK et al. Risk of colorectal cancer for carriers of mutations in MUTYH, with and without a family history of cancer. Gastroenterology 2014;146(5):1208-11",
+          "year": 2014,
+          "url": "https://europepmc.org/article/MED/24444654",
+          "cohort": "2332 monoallelic carriers among 9504 relatives of 264 CRC cases with a MUTYH mutation (family ascertained; most carrier status imputed)",
+          "where": "Abstract"
+        },
+        "quote": "5.6% for female carriers of monoallelic mutations (95% CI, 3.6%-8.8%)"
+      },
+      "ascertainment": "clinic/family",
+      "flags": [
+        "baseline borrowed from a different study (UK Biobank non-carriers, sexes pooled) to match age 70",
+        "with first-degree relative with CRC by 50: 10% (6.7-14.4)",
+        "monoallelic risk is only modestly raised; may be inflated by family ascertainment"
+      ],
+      "status": "draft",
+      "p3_use": "hold",
+      "p3_first": false,
+      "p3_note": "one copy; recessive gene, carrier path"
+    },
+    {
+      "gene": "STK11",
+      "outcome": "colorectal cancer by age 65",
+      "age": 65,
+      "complement": "any",
+      "variant_class": "pathogenic variant, Peutz-Jeghers syndrome",
+      "missense_note": "",
+      "baseline": {
+        "value": 1.5,
+        "range": null,
+        "ci": null,
+        "source": {
+          "citation": "ACS Cancer Facts & Figures 2026",
+          "where": "probability of developing invasive cancer by age interval, chained to 65",
+          "cohort": "US, 2019-2022",
+          "year": 2026,
+          "url": "https://www.cancer.org/content/dam/cancer-org/research/cancer-facts-and-statistics/annual-cancer-facts-and-figures/2026/mr7-probability-by-age-2026-branded.pdf"
+        },
+        "quote": "Colorectal cancer by age 65, chained; sexes pooled (XY 1.65, XX 1.29)."
+      },
+      "with_variant": {
+        "value": 39,
+        "range": null,
+        "ci": null,
+        "source": {
+          "citation": "Giardiello FM et al. Gastroenterology 2000;119:1447-53, via NCI PDQ Genetics of Colorectal Cancer, Table 15",
+          "year": 2025,
+          "url": "https://www.cancer.gov/types/colorectal/hp/colorectal-genetics-pdq",
+          "cohort": "summary of published clinic/family-ascertained studies",
+          "where": "Peutz-Jeghers section, Table 15 (refs 8 [Hearle 2006], 559)"
+        },
+        "quote": "Colorectum | 65 | 39"
+      },
+      "ascertainment": "clinic/family",
+      "flags": [
+        "family-ascertained"
+      ],
+      "status": "checked",
+      "p3_use": "squares",
+      "p3_first": true,
+      "p3_note": "secondary source (PDQ); age 65 vs 70 inconsistent in PDQ",
+      "check": {
+        "date": "2026-11-19",
+        "verdict": "baseline corrected, re-cited",
+        "note": "39 is Giardiello 2000's meta-analysis (210 patients, risk from 15 to 64); PDQ Table 3 misattributes it to Hearle 2006.",
+        "before": {
+          "baseline": 3.9,
+          "with_variant": 39,
+          "with_variant_source": "NCI PDQ Cancer Genetics Editorial Board. Genetics of Colorectal Cancer (PDQ) - Health Professional Version"
+        }
+      }
+    },
+    {
+      "gene": "STK11",
+      "outcome": "breast cancer by age 70",
+      "age": 70,
+      "complement": "XX",
+      "variant_class": "pathogenic variant, Peutz-Jeghers syndrome",
+      "missense_note": "",
+      "baseline": {
+        "value": 13.0,
+        "range": null,
+        "ci": null,
+        "source": {
+          "citation": "SEER Cancer Stat Facts: Female Breast Cancer",
+          "year": 2025,
+          "url": "https://seer.cancer.gov/statfacts/html/breast.html",
+          "cohort": "US SEER, 2021-2023 data",
+          "where": "Lifetime risk"
+        },
+        "quote": "Approximately 13.0 percent of women will be diagnosed with female breast cancer at some point during their lifetime"
+      },
+      "with_variant": {
+        "value": 43,
+        "range": [
+          32,
+          54
+        ],
+        "ci": null,
+        "source": {
+          "citation": "NCI PDQ Cancer Genetics Editorial Board. Genetics of Colorectal Cancer (PDQ) - Health Professional Version",
+          "year": 2025,
+          "url": "https://www.cancer.gov/types/colorectal/hp/colorectal-genetics-pdq",
+          "cohort": "summary of published clinic/family-ascertained studies",
+          "where": "Peutz-Jeghers section, Table 15"
+        },
+        "quote": "Breast | 60-70 | 32-54"
+      },
+      "ascertainment": "clinic/family",
+      "flags": [
+        "point chosen from range (midpoint)",
+        "age is a range 60-70 across studies; 70 used",
+        "baseline is SEER lifetime risk, not matched to the with-variant age",
+        "secondary source (PDQ)"
+      ],
+      "status": "draft",
+      "p3_use": "squares",
+      "p3_first": false,
+      "p3_note": "point chosen from range"
+    },
+    {
+      "gene": "PTEN",
+      "outcome": "breast cancer over a lifetime",
+      "age": null,
+      "complement": "XX",
+      "variant_class": "pathogenic/deleterious germline PTEN variant",
+      "missense_note": "",
+      "baseline": {
+        "value": 13.0,
+        "range": null,
+        "ci": null,
+        "source": {
+          "citation": "SEER Cancer Stat Facts: Female Breast Cancer",
+          "year": 2025,
+          "url": "https://seer.cancer.gov/statfacts/html/breast.html",
+          "cohort": "US SEER, 2021-2023 data",
+          "where": "Lifetime risk"
+        },
+        "quote": "Approximately 13.0 percent of women will be diagnosed with female breast cancer at some point during their lifetime"
+      },
+      "with_variant": {
+        "value": 85.2,
+        "range": null,
+        "ci": [
+          71.4,
+          99.1
+        ],
+        "source": {
+          "citation": "Tan MH et al. Lifetime cancer risks in individuals with germline PTEN mutations. Clin Cancer Res 2012;18(2):400-7",
+          "year": 2012,
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3261579/",
+          "cohort": "3399 individuals meeting relaxed International Cowden Consortium PHTS criteria prospectively recruited; 368 PTEN mutation carriers (clinic ascertained)",
+          "where": "Abstract"
+        },
+        "quote": "Estimated lifetime risks were, respectively, 85.2% (95% CI, 71.4%-99.1%)"
+      },
+      "ascertainment": "clinic/family",
+      "flags": [
+        "age endpoint of 'lifetime' not stated in abstract; full text inaccessible (age 70 likely but unverified)",
+        "PDQ Table 14 notes 'other studies suggest 25-50% lifetime' - Tan figure is the high end; strong ascertainment inflation",
+        "SIR 25.4 (19.8-32.0)",
+        "URL is PMC3261579"
+      ],
+      "status": "checked",
+      "p3_use": "hold",
+      "p3_first": true,
+      "p3_note": "no end age stated; high end of published range",
+      "check": {
+        "date": "2026-11-19",
+        "verdict": "held",
+        "note": "No age endpoint; read from Kaplan-Meier curves with probands included; NCCN calls the PTEN figures inflated by ascertainment and gives 40-60% historical. No population figure exists. P3 says it in sentences.",
+        "before": {
+          "baseline": 13.0,
+          "with_variant": 85.2,
+          "with_variant_source": "Tan MH et al. Lifetime cancer risks in individuals with germline PTEN mutations. Clin Cancer Res 2012;18(2):400-7"
+        }
+      }
+    },
+    {
+      "gene": "PTEN",
+      "outcome": "endometrial cancer over a lifetime",
+      "age": null,
+      "complement": "XX",
+      "variant_class": "pathogenic/deleterious germline PTEN variant",
+      "missense_note": "",
+      "baseline": {
+        "value": 3.1,
+        "range": null,
+        "ci": null,
+        "source": {
+          "citation": "SEER Cancer Stat Facts: Uterine Cancer",
+          "year": 2025,
+          "url": "https://seer.cancer.gov/statfacts/html/corp.html",
+          "cohort": "US SEER, 2021-2023 data",
+          "where": "Lifetime risk"
+        },
+        "quote": "Approximately 3.1 percent of women will be diagnosed with uterine cancer at some point during their lifetime"
+      },
+      "with_variant": {
+        "value": 28.2,
+        "range": null,
+        "ci": [
+          17.1,
+          39.3
+        ],
+        "source": {
+          "citation": "Tan MH et al. Lifetime cancer risks in individuals with germline PTEN mutations. Clin Cancer Res 2012;18(2):400-7",
+          "year": 2012,
+          "url": "https://europepmc.org/article/MED/22252256",
+          "cohort": "3399 individuals meeting relaxed International Cowden Consortium PHTS criteria prospectively recruited; 368 PTEN mutation carriers (clinic ascertained)",
+          "where": "Abstract"
+        },
+        "quote": "35.2% (19.7%-50.7%), 28.2% (17.1%-39.3%), 9.0% (3.8%-14.1%) [thyroid, endometrial, colorectal respectively]"
+      },
+      "ascertainment": "clinic/family",
+      "flags": [
+        "age endpoint not stated in abstract",
+        "bracketed order note added by me from the abstract sentence order"
+      ],
+      "status": "draft",
+      "p3_use": "squares",
+      "p3_first": false,
+      "p3_note": ""
+    },
+    {
+      "gene": "PTEN",
+      "outcome": "colorectal cancer over a lifetime",
+      "age": null,
+      "complement": "any",
+      "variant_class": "pathogenic/deleterious germline PTEN variant",
+      "missense_note": "",
+      "baseline": {
+        "value": 3.9,
+        "range": null,
+        "ci": null,
+        "source": {
+          "citation": "SEER Cancer Stat Facts: Colorectal Cancer",
+          "year": 2025,
+          "url": "https://seer.cancer.gov/statfacts/html/colorect.html",
+          "cohort": "US SEER, 2021-2023 data",
+          "where": "Lifetime risk"
+        },
+        "quote": "Approximately 3.9 percent of men and women will be diagnosed with colorectal cancer at some point during their lifetime"
+      },
+      "with_variant": {
+        "value": 9.0,
+        "range": null,
+        "ci": [
+          3.8,
+          14.1
+        ],
+        "source": {
+          "citation": "Tan MH et al. Lifetime cancer risks in individuals with germline PTEN mutations. Clin Cancer Res 2012;18(2):400-7",
+          "year": 2012,
+          "url": "https://europepmc.org/article/MED/22252256",
+          "cohort": "3399 individuals meeting relaxed International Cowden Consortium PHTS criteria prospectively recruited; 368 PTEN mutation carriers (clinic ascertained)",
+          "where": "Abstract"
+        },
+        "quote": "35.2% (19.7%-50.7%), 28.2% (17.1%-39.3%), 9.0% (3.8%-14.1%) [thyroid, endometrial, colorectal respectively]"
+      },
+      "ascertainment": "clinic/family",
+      "flags": [
+        "age endpoint not stated in abstract",
+        "SIR 10.3 (5.6-17.4)"
+      ],
+      "status": "draft",
+      "p3_use": "squares",
+      "p3_first": false,
+      "p3_note": ""
+    },
+    {
+      "gene": "BMPR1A",
+      "outcome": "colorectal cancer by age 60",
+      "age": 60,
+      "complement": "any",
+      "variant_class": "pathogenic variant, juvenile polyposis syndrome (SMAD4/BMPR1A pooled)",
+      "missense_note": "",
+      "baseline": {
+        "value": 3.9,
+        "range": null,
+        "ci": null,
+        "source": {
+          "citation": "SEER Cancer Stat Facts: Colorectal Cancer",
+          "year": 2025,
+          "url": "https://seer.cancer.gov/statfacts/html/colorect.html",
+          "cohort": "US SEER, 2021-2023 data",
+          "where": "Lifetime risk"
+        },
+        "quote": "Approximately 3.9 percent of men and women will be diagnosed with colorectal cancer at some point during their lifetime"
+      },
+      "with_variant": {
+        "value": 43,
+        "range": [
+          17,
+          68
+        ],
+        "ci": null,
+        "source": {
+          "citation": "NCI PDQ Cancer Genetics Editorial Board. Genetics of Colorectal Cancer (PDQ) - Health Professional Version",
+          "year": 2025,
+          "url": "https://www.cancer.gov/types/colorectal/hp/colorectal-genetics-pdq",
+          "cohort": "summary of published clinic/family-ascertained studies",
+          "where": "Major Genetic Syndromes, Table 3 (refs 9, 10)"
+        },
+        "quote": "JPS | 17% to 68% by age 60 y"
+      },
+      "ascertainment": "clinic/family",
+      "flags": [
+        "point chosen from range (midpoint)",
+        "not gene-specific: PDQ groups SMAD4 and BMPR1A for CRC risk",
+        "PDQ JPS section gives a narrower '38% to 68% lifetime risk of developing CRC by age 60 years' - source internally inconsistent on lower bound",
+        "baseline is SEER lifetime risk, not matched to the with-variant age",
+        "GeneReviews juvenile polyposis (NCBI) blocked by captcha"
+      ],
+      "status": "draft",
+      "p3_use": "hold",
+      "p3_first": true,
+      "p3_note": "range 17-68 not gene-specific"
+    },
+    {
+      "gene": "SMAD4",
+      "outcome": "colorectal cancer by age 60",
+      "age": 60,
+      "complement": "any",
+      "variant_class": "pathogenic variant, juvenile polyposis syndrome (SMAD4/BMPR1A pooled)",
+      "missense_note": "",
+      "baseline": {
+        "value": 3.9,
+        "range": null,
+        "ci": null,
+        "source": {
+          "citation": "SEER Cancer Stat Facts: Colorectal Cancer",
+          "year": 2025,
+          "url": "https://seer.cancer.gov/statfacts/html/colorect.html",
+          "cohort": "US SEER, 2021-2023 data",
+          "where": "Lifetime risk"
+        },
+        "quote": "Approximately 3.9 percent of men and women will be diagnosed with colorectal cancer at some point during their lifetime"
+      },
+      "with_variant": {
+        "value": 43,
+        "range": [
+          17,
+          68
+        ],
+        "ci": null,
+        "source": {
+          "citation": "NCI PDQ Cancer Genetics Editorial Board. Genetics of Colorectal Cancer (PDQ) - Health Professional Version",
+          "year": 2025,
+          "url": "https://www.cancer.gov/types/colorectal/hp/colorectal-genetics-pdq",
+          "cohort": "summary of published clinic/family-ascertained studies",
+          "where": "Major Genetic Syndromes, Table 3 (refs 9, 10)"
+        },
+        "quote": "JPS | 17% to 68% by age 60 y"
+      },
+      "ascertainment": "clinic/family",
+      "flags": [
+        "point chosen from range (midpoint)",
+        "not gene-specific: PDQ groups SMAD4 and BMPR1A for CRC risk",
+        "PDQ JPS section gives a narrower '38% to 68% lifetime risk of developing CRC by age 60 years' - source internally inconsistent on lower bound",
+        "baseline is SEER lifetime risk, not matched to the with-variant age",
+        "GeneReviews juvenile polyposis (NCBI) blocked by captcha",
+        "SMAD4: also severe gastric polyposis and HHT (not cumulative-by-age figures here)"
+      ],
+      "status": "draft",
+      "p3_use": "hold",
+      "p3_first": true,
+      "p3_note": "range 17-68 not gene-specific"
+    },
+    {
+      "gene": "LDLR",
+      "outcome": "coronary artery disease by age 75",
+      "age": 75,
+      "complement": "any",
+      "variant_class": "pathogenic/likely pathogenic FH variant (21 of 24 variants in LDLR; also 1 PCSK9, 2 APOB)",
+      "missense_note": "",
+      "baseline": {
+        "value": 13.9,
+        "range": [
+          10.2,
+          24.0
+        ],
+        "ci": null,
+        "source": {
+          "citation": "Fahed AC et al. JAMA Netw Open 2022;5(3):e222687",
+          "where": "Abstract / Results (age-dependent probability); Results (cohort study)",
+          "cohort": "UK Biobank, 39,920 exome-sequenced cohort participants (108 FH P/LP carriers: 21 LDLR, 1 PCSK9, 2 APOB variants)",
+          "year": 2022,
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8928007/"
+        },
+        "quote": "ranging from 10.2% among noncarriers with a favorable lifestyle to 24.0% among noncarriers with an unfavorable lifestyle"
+      },
+      "with_variant": {
+        "value": 43.6,
+        "range": [
+          34.5,
+          66.2
+        ],
+        "ci": null,
+        "source": {
+          "citation": "Fahed AC et al. JAMA Netw Open 2022;5(3):e222687",
+          "where": "Abstract / Results (age-dependent probability); Results (cohort study)",
+          "cohort": "UK Biobank, 39,920 exome-sequenced cohort participants (108 FH P/LP carriers: 21 LDLR, 1 PCSK9, 2 APOB variants)",
+          "year": 2022,
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8928007/"
+        },
+        "quote": "ranging from 34.5% among carriers with a favorable lifestyle to 66.2% among carriers with an unfavorable lifestyle"
+      },
+      "ascertainment": "population",
+      "flags": [
+        "derived: not printed in the paper; Figure 3A not read",
+        "FH genes pooled, mostly LDLR",
+        "the 21 LDLR / 1 PCSK9 / 2 APOB variants are the case-control study's, not the cohort's 108 carriers"
+      ],
+      "status": "checked",
+      "p3_use": "squares",
+      "p3_first": true,
+      "p3_note": "50 and 17 are midpoints of lifestyle strata, not reported values; pooled FH genes",
+      "check": {
+        "date": "2026-11-19",
+        "verdict": "replaced",
+        "note": "Fahed 2022 reports only lifestyle-stratified pairs. Weighted here by the cohort's lifestyle mix (carriers 61.1/20.4/18.5%, noncarriers 58.6/29.7/11.7%), the intermediate group taken as the midpoint of the other two.",
+        "before": {
+          "baseline": 17,
+          "with_variant": 50,
+          "with_variant_source": "Fahed AC et al. JAMA Netw Open 2022;5(3):e222687"
+        }
+      }
+    },
+    {
+      "gene": "LDLR",
+      "outcome": "coronary artery disease during UK Biobank follow-up (no fixed age)",
+      "age": null,
+      "complement": "any",
+      "variant_class": "pathogenic/likely pathogenic FH variant (mostly LDLR)",
+      "missense_note": "",
+      "baseline": {
+        "value": 7.1,
+        "range": null,
+        "ci": null,
+        "source": {
+          "citation": "Fahed AC et al. JAMA Netw Open 2022;5(3):e222687",
+          "where": "Abstract / Results (age-dependent probability); Results (cohort study)",
+          "cohort": "UK Biobank, 39,920 exome-sequenced cohort participants (108 FH P/LP carriers: 21 LDLR, 1 PCSK9, 2 APOB variants)",
+          "year": 2022,
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8928007/"
+        },
+        "quote": "22 of the 108 carriers (20.4%) developed CAD compared with 2832 of 39 812 noncarriers (7.1%)"
+      },
+      "with_variant": {
+        "value": 20.4,
+        "range": null,
+        "ci": null,
+        "source": {
+          "citation": "Fahed AC et al. JAMA Netw Open 2022;5(3):e222687",
+          "where": "Abstract / Results (age-dependent probability); Results (cohort study)",
+          "cohort": "UK Biobank, 39,920 exome-sequenced cohort participants (108 FH P/LP carriers: 21 LDLR, 1 PCSK9, 2 APOB variants)",
+          "year": 2022,
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8928007/"
+        },
+        "quote": "22 of the 108 carriers (20.4%) developed CAD compared with 2832 of 39 812 noncarriers (7.1%)"
+      },
+      "ascertainment": "population",
+      "flags": [
+        "not a cumulative-by-age figure: observed proportion over follow-up in adults recruited at 40-69",
+        "adjusted HR 3.8 (95% CI 2.5-5.8) per paper",
+        "only 108 carriers"
+      ],
+      "status": "draft",
+      "p3_use": "hold",
+      "p3_first": false,
+      "p3_note": "no fixed age"
+    },
+    {
+      "gene": "LDLR",
+      "outcome": "a heart attack, stroke or other atherosclerotic event by age 55",
+      "age": 55,
+      "complement": "any",
+      "variant_class": "monogenic FH variant (LDLR/APOB/PCSK9 pooled)",
+      "missense_note": "",
+      "baseline": {
+        "value": 2.0,
+        "range": null,
+        "ci": null,
+        "source": {
+          "citation": "Asatryan B et al. J Am Heart Assoc 2024 (review), citing Trinder et al. (UK Biobank)",
+          "where": "Review text",
+          "cohort": "UK Biobank (Trinder et al.), monogenic FH variants LDLR/APOB/PCSK9",
+          "year": 2024,
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11935662/"
+        },
+        "quote": "3‐fold increased risk for an atherosclerotic CVD event at ≤55 years of age (6.1% versus 2.0%"
+      },
+      "with_variant": {
+        "value": 6.1,
+        "range": null,
+        "ci": null,
+        "source": {
+          "citation": "Asatryan B et al. J Am Heart Assoc 2024 (review), citing Trinder et al. (UK Biobank)",
+          "where": "Review text",
+          "cohort": "UK Biobank (Trinder et al.), monogenic FH variants LDLR/APOB/PCSK9",
+          "year": 2024,
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11935662/"
+        },
+        "quote": "3‐fold increased risk for an atherosclerotic CVD event at ≤55 years of age (6.1% versus 2.0%"
+      },
+      "ascertainment": "population",
+      "flags": [
+        "quoted second-hand from a review (Asatryan 2024) citing Trinder et al.; primary paper not fetched",
+        "FH genes pooled"
+      ],
+      "status": "draft",
+      "p3_use": "hold",
+      "p3_first": false,
+      "p3_note": "second-hand quote"
+    },
+    {
+      "gene": "MYBPC3",
+      "outcome": "a thickened heart muscle (HCM) by late adulthood (~age 70)",
+      "age": 70,
+      "complement": "any",
+      "variant_class": "pathogenic (ClinVar P) rare variants in HCM genes, aggregate across genes",
+      "missense_note": "MYBPC3 variants are mostly truncating/LoF; McGurk reports predicted premature-termination variants in MYBPC3 among the most penetrant. Individual recurrent variants vary widely (e.g. c.1504C>T p.Arg502Trp 6.4% in UK Biobank; c.26-2A>G 1.0%).",
+      "baseline": {
+        "value": 0.18,
+        "range": null,
+        "ci": [
+          0.15,
+          0.23
+        ],
+        "source": {
+          "citation": "McGurk KA et al. Am J Hum Genet 2023;110(9):1482-95",
+          "where": "Abstract / Results",
+          "cohort": "10,400 HCM and 2,564 DCM cases vs 293,226 UK Biobank + gnomAD reference participants (population reference, case-control penetrance method)",
+          "year": 2023,
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10502871/"
+        },
+        "quote": "an HCM population prevalence estimate of 1 in 543 individuals"
+      },
+      "with_variant": {
+        "value": 23,
+        "range": null,
+        "ci": [
+          17.5,
+          28.8
+        ],
+        "source": {
+          "citation": "McGurk KA et al. Am J Hum Genet 2023;110(9):1482-95",
+          "where": "Abstract / Results",
+          "cohort": "10,400 HCM and 2,564 DCM cases vs 293,226 UK Biobank + gnomAD reference participants (population reference, case-control penetrance method)",
+          "year": 2023,
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10502871/"
+        },
+        "quote": "the penetrance by late adulthood of rare, pathogenic variants (23% for HCM, 35% for DCM)"
+      },
+      "ascertainment": "population",
+      "flags": [
+        "aggregate across all HCM genes, not gene-specific (gene-level values only in Figure 2 / supplement, not read)",
+        "'late adulthood' not a fixed age; UK Biobank recruited 40-69 (mean 56); age 70 is approximate",
+        "baseline is population prevalence, not cumulative incidence by 70",
+        "likely pathogenic variants much lower (~7% per abstract)",
+        "penetrance higher in XY than XX per paper, no numbers in text",
+        "sex-specific HCM prevalence: ~1 in 360 XY (0.28%), ~1 in 1,300 XX (0.08%)"
+      ],
+      "status": "draft",
+      "p3_use": "squares",
+      "p3_first": true,
+      "p3_note": "pooled across HCM genes, not MYBPC3-specific; age approximate"
+    },
+    {
+      "gene": "MYBPC3",
+      "outcome": "a diagnosed thickened heart muscle (HCM) at age 40-69 (cross-sectional)",
+      "age": null,
+      "complement": "any",
+      "variant_class": "pathogenic/likely pathogenic sarcomere-gene variants (aggregate, SARC-HCM-P/LP)",
+      "missense_note": "",
+      "baseline": {
+        "value": 0.07,
+        "range": null,
+        "ci": null,
+        "source": {
+          "citation": "de Marvao A et al. J Am Coll Cardiol 2021",
+          "where": "Table 1 (Known HCM row); Results",
+          "cohort": "UK Biobank, 200,584 exomes; SARC-NEG n=157,922 vs SARC-HCM-P/LP n=493; age 40-69 at recruitment",
+          "year": 2021,
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8434420/"
+        },
+        "quote": "Known HCM | 109 (0.07) | 9 (0.17) | 18 (3.65) [columns: SARC-NEG | SARC-IND | SARC-HCM-P/LP]"
+      },
+      "with_variant": {
+        "value": 3.65,
+        "range": null,
+        "ci": null,
+        "source": {
+          "citation": "de Marvao A et al. J Am Coll Cardiol 2021",
+          "where": "Table 1 (Known HCM row); Results",
+          "cohort": "UK Biobank, 200,584 exomes; SARC-NEG n=157,922 vs SARC-HCM-P/LP n=493; age 40-69 at recruitment",
+          "year": 2021,
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8434420/"
+        },
+        "quote": "Known HCM | 109 (0.07) | 9 (0.17) | 18 (3.65) [columns: SARC-NEG | SARC-IND | SARC-HCM-P/LP]"
+      },
+      "ascertainment": "population",
+      "flags": [
+        "not a cumulative-by-age figure: prevalent diagnosed HCM in adults aged 40-69",
+        "aggregate sarcomere genes, not gene-specific",
+        "on cardiac MRI, LVH >=13 mm in 9/49 carriers (18.4%, 95% CI 9-32%)",
+        "death or MACE by age 70: 21% (16-25%) carriers vs 12% non-carriers per same paper"
+      ],
+      "status": "draft",
+      "p3_use": "hold",
+      "p3_first": false,
+      "p3_note": "snapshot, not risk by an age"
+    },
+    {
+      "gene": "MYH7",
+      "outcome": "a thickened heart muscle (HCM) by late adulthood (~age 70)",
+      "age": 70,
+      "complement": "any",
+      "variant_class": "pathogenic (ClinVar P) rare variants in HCM genes, aggregate across genes",
+      "missense_note": "MYH7 pathogenic variants are mostly missense; gene-specific aggregate not given in text. Example: MYH7 c.3158G>A p.Arg1053Gln estimated penetrance 2.2% (0.9-5.2%).",
+      "baseline": {
+        "value": 0.18,
+        "range": null,
+        "ci": [
+          0.15,
+          0.23
+        ],
+        "source": {
+          "citation": "McGurk KA et al. Am J Hum Genet 2023;110(9):1482-95",
+          "where": "Abstract / Results",
+          "cohort": "10,400 HCM and 2,564 DCM cases vs 293,226 UK Biobank + gnomAD reference participants (population reference, case-control penetrance method)",
+          "year": 2023,
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10502871/"
+        },
+        "quote": "an HCM population prevalence estimate of 1 in 543 individuals"
+      },
+      "with_variant": {
+        "value": 23,
+        "range": null,
+        "ci": [
+          17.5,
+          28.8
+        ],
+        "source": {
+          "citation": "McGurk KA et al. Am J Hum Genet 2023;110(9):1482-95",
+          "where": "Abstract / Results",
+          "cohort": "10,400 HCM and 2,564 DCM cases vs 293,226 UK Biobank + gnomAD reference participants (population reference, case-control penetrance method)",
+          "year": 2023,
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10502871/"
+        },
+        "quote": "the penetrance by late adulthood of rare, pathogenic variants (23% for HCM, 35% for DCM)"
+      },
+      "ascertainment": "population",
+      "flags": [
+        "aggregate across all HCM genes, not gene-specific (gene-level values only in Figure 2 / supplement, not read)",
+        "'late adulthood' not a fixed age; UK Biobank recruited 40-69 (mean 56); age 70 is approximate",
+        "baseline is population prevalence, not cumulative incidence by 70",
+        "likely pathogenic variants much lower (~7% per abstract)",
+        "penetrance higher in XY than XX per paper, no numbers in text",
+        "sex-specific HCM prevalence: ~1 in 360 XY (0.28%), ~1 in 1,300 XX (0.08%)"
+      ],
+      "status": "draft",
+      "p3_use": "squares",
+      "p3_first": true,
+      "p3_note": "pooled across HCM genes, not MYH7-specific; age approximate"
+    },
+    {
+      "gene": "MYH7",
+      "outcome": "a diagnosed thickened heart muscle (HCM) at age 40-69 (cross-sectional)",
+      "age": null,
+      "complement": "any",
+      "variant_class": "pathogenic/likely pathogenic sarcomere-gene variants (aggregate, SARC-HCM-P/LP)",
+      "missense_note": "",
+      "baseline": {
+        "value": 0.07,
+        "range": null,
+        "ci": null,
+        "source": {
+          "citation": "de Marvao A et al. J Am Coll Cardiol 2021",
+          "where": "Table 1 (Known HCM row); Results",
+          "cohort": "UK Biobank, 200,584 exomes; SARC-NEG n=157,922 vs SARC-HCM-P/LP n=493; age 40-69 at recruitment",
+          "year": 2021,
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8434420/"
+        },
+        "quote": "Known HCM | 109 (0.07) | 9 (0.17) | 18 (3.65) [columns: SARC-NEG | SARC-IND | SARC-HCM-P/LP]"
+      },
+      "with_variant": {
+        "value": 3.65,
+        "range": null,
+        "ci": null,
+        "source": {
+          "citation": "de Marvao A et al. J Am Coll Cardiol 2021",
+          "where": "Table 1 (Known HCM row); Results",
+          "cohort": "UK Biobank, 200,584 exomes; SARC-NEG n=157,922 vs SARC-HCM-P/LP n=493; age 40-69 at recruitment",
+          "year": 2021,
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8434420/"
+        },
+        "quote": "Known HCM | 109 (0.07) | 9 (0.17) | 18 (3.65) [columns: SARC-NEG | SARC-IND | SARC-HCM-P/LP]"
+      },
+      "ascertainment": "population",
+      "flags": [
+        "not a cumulative-by-age figure: prevalent diagnosed HCM in adults aged 40-69",
+        "aggregate sarcomere genes, not gene-specific",
+        "on cardiac MRI, LVH >=13 mm in 9/49 carriers (18.4%, 95% CI 9-32%)",
+        "death or MACE by age 70: 21% (16-25%) carriers vs 12% non-carriers per same paper"
+      ],
+      "status": "draft",
+      "p3_use": "hold",
+      "p3_first": false,
+      "p3_note": "snapshot, not risk by an age"
+    },
+    {
+      "gene": "KCNQ1",
+      "outcome": "a first cardiac event (fainting, cardiac arrest or sudden death) by age 40",
+      "age": 40,
+      "complement": "any",
+      "variant_class": "disease-causing variant at the LQT1 locus in LQTS families",
+      "missense_note": "",
+      "baseline": {
+        "value": null,
+        "range": null,
+        "ci": null,
+        "source": null,
+        "quote": "",
+        "note": "no population baseline found in source; general-population risk of syncope/cardiac arrest by 40 not sourced"
+      },
+      "with_variant": {
+        "value": 30,
+        "range": null,
+        "ci": null,
+        "source": {
+          "citation": "Priori SG et al. N Engl J Med 2003;348(19):1866-74",
+          "where": "Abstract",
+          "cohort": "647 patients from 193 genotyped LQTS families (clinic/family ascertained)",
+          "year": 2003,
+          "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID:12736279%20AND%20SRC:MED&resultType=core&format=json"
+        },
+        "quote": "a mutation at the LQT1 locus (30 percent)"
+      },
+      "ascertainment": "clinic/family",
+      "flags": [
+        "baseline missing",
+        "clinic/family ascertained: inflates vs population carriers",
+        "event before age 40 and before therapy; syncope counts as event",
+        "quote is a fragment of the abstract sentence (fetch tool returned fragments)",
+        "population studies (Nauffal/UK Biobank) report QTc shifts, not event penetrance"
+      ],
+      "status": "draft",
+      "p3_use": "hold",
+      "p3_first": true,
+      "p3_note": "no sourced baseline (likely 0 squares, still needs a source); clinic/family"
+    },
+    {
+      "gene": "KCNH2",
+      "outcome": "a first cardiac event (fainting, cardiac arrest or sudden death) by age 40",
+      "age": 40,
+      "complement": "any",
+      "variant_class": "disease-causing variant at the LQT2 locus in LQTS families",
+      "missense_note": "KCNH2 pore-region missense higher risk: not sourced this session",
+      "baseline": {
+        "value": null,
+        "range": null,
+        "ci": null,
+        "source": null,
+        "quote": "",
+        "note": "no population baseline found in source; general-population risk of syncope/cardiac arrest by 40 not sourced"
+      },
+      "with_variant": {
+        "value": 46,
+        "range": null,
+        "ci": null,
+        "source": {
+          "citation": "Priori SG et al. N Engl J Med 2003;348(19):1866-74",
+          "where": "Abstract",
+          "cohort": "647 patients from 193 genotyped LQTS families (clinic/family ascertained)",
+          "year": 2003,
+          "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID:12736279%20AND%20SRC:MED&resultType=core&format=json"
+        },
+        "quote": "a mutation at the LQT2 locus (46 percent)"
+      },
+      "ascertainment": "clinic/family",
+      "flags": [
+        "baseline missing",
+        "clinic/family ascertained: inflates vs population carriers",
+        "event before age 40 and before therapy; syncope counts as event",
+        "quote is a fragment of the abstract sentence (fetch tool returned fragments)",
+        "population studies (Nauffal/UK Biobank) report QTc shifts, not event penetrance"
+      ],
+      "status": "draft",
+      "p3_use": "hold",
+      "p3_first": true,
+      "p3_note": "no sourced baseline; clinic/family"
+    },
+    {
+      "gene": "SCN5A",
+      "outcome": "a first cardiac event (fainting, cardiac arrest or sudden death) by age 40",
+      "age": 40,
+      "complement": "any",
+      "variant_class": "disease-causing variant at the LQT3 locus in LQTS families",
+      "missense_note": "",
+      "baseline": {
+        "value": null,
+        "range": null,
+        "ci": null,
+        "source": null,
+        "quote": "",
+        "note": "no population baseline found in source; general-population risk of syncope/cardiac arrest by 40 not sourced"
+      },
+      "with_variant": {
+        "value": 42,
+        "range": null,
+        "ci": null,
+        "source": {
+          "citation": "Priori SG et al. N Engl J Med 2003;348(19):1866-74",
+          "where": "Abstract",
+          "cohort": "647 patients from 193 genotyped LQTS families (clinic/family ascertained)",
+          "year": 2003,
+          "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID:12736279%20AND%20SRC:MED&resultType=core&format=json"
+        },
+        "quote": "a mutation at the LQT3 locus (42 percent)"
+      },
+      "ascertainment": "clinic/family",
+      "flags": [
+        "baseline missing",
+        "clinic/family ascertained: inflates vs population carriers",
+        "event before age 40 and before therapy; syncope counts as event",
+        "quote is a fragment of the abstract sentence (fetch tool returned fragments)",
+        "population studies (Nauffal/UK Biobank) report QTc shifts, not event penetrance"
+      ],
+      "status": "draft",
+      "p3_use": "hold",
+      "p3_first": true,
+      "p3_note": "no sourced baseline; clinic/family"
+    },
+    {
+      "gene": "SCN5A",
+      "outcome": "Brugada syndrome (clinical diagnosis), no fixed age",
+      "age": null,
+      "complement": "any",
+      "variant_class": "SCN5A variants with severe loss of function on patch clamp (Z <= -6)",
+      "missense_note": "penetrance scales with loss-of-function severity; milder variants lower",
+      "baseline": {
+        "value": null,
+        "range": null,
+        "ci": null,
+        "source": null,
+        "quote": "",
+        "note": "population Brugada prevalence not sourced this session (NCBI GeneReviews blocked by captcha)"
+      },
+      "with_variant": {
+        "value": 24.5,
+        "range": null,
+        "ci": [
+          15.9,
+          37.7
+        ],
+        "source": {
+          "citation": "O'Neill MJ et al. Eur Heart J 2026;47(33):4679-93",
+          "where": "Abstract",
+          "cohort": "SCN5A variants scored by automated patch clamp; BrS cases vs population reference (case-control penetrance estimate)",
+          "year": 2026,
+          "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=PMCID:PMC12678899&resultType=core&format=json"
+        },
+        "quote": "variants with Z ≤ -6 had penetrance of 24.5% (15.9%-37.7% CI)"
+      },
+      "ascertainment": "mixed",
+      "flags": [
+        "not a cumulative-by-age figure",
+        "applies only to most severe functional class, not all P/LP",
+        "case-control derived penetrance",
+        "baseline missing"
+      ],
+      "status": "draft",
+      "p3_use": "hold",
+      "p3_first": false,
+      "p3_note": "most severe loss-of-function class only; no age"
+    },
+    {
+      "gene": "FBN1",
+      "outcome": "an aortic event (dissection or preventive aortic surgery) by about age 50",
+      "age": 50,
+      "complement": "any",
+      "variant_class": "clinically diagnosed Marfan syndrome (genotype not required)",
+      "missense_note": "Franken 2016 EHJ abstract: haploinsufficient FBN1 variants 2.4-fold higher death/dissection risk than dominant-negative (mostly missense)",
+      "baseline": {
+        "value": null,
+        "range": null,
+        "ci": null,
+        "source": null,
+        "quote": "",
+        "note": "population aortic dissection incidence not sourced this session"
+      },
+      "with_variant": {
+        "value": 50,
+        "range": null,
+        "ci": null,
+        "source": {
+          "citation": "Groth KA et al. Clin Res Cardiol 2017 (Aortic events in a nationwide Marfan syndrome cohort)",
+          "where": "Abstract",
+          "cohort": "Danish nationwide registry, 412 patients with clinically diagnosed Marfan syndrome",
+          "year": 2017,
+          "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=TITLE:%22nationwide%20Marfan%20syndrome%20cohort%22&resultType=core&format=json"
+        },
+        "quote": "Fifty percent were event free at age 49.6."
+      },
+      "ascertainment": "clinic/family",
+      "flags": [
+        "clinical Marfan diagnosis, not FBN1 genotype-first; inflates vs unselected carriers",
+        "event includes prophylactic surgery (53.3%) as well as dissection (46.7%)",
+        "age 49.6 rounded to 50",
+        "baseline missing",
+        "no population (biobank) FBN1 penetrance found in searches"
+      ],
+      "status": "draft",
+      "p3_use": "hold",
+      "p3_first": true,
+      "p3_note": "people with a clinical Marfan diagnosis, not gene carriers; no baseline"
+    },
+    {
+      "gene": "PKP2",
+      "outcome": "a definite diagnosis of arrhythmogenic cardiomyopathy (ARVC, Task Force Criteria) at median age ~52",
+      "age": null,
+      "complement": "any",
+      "variant_class": "pathogenic/likely pathogenic desmosomal variant",
+      "missense_note": "",
+      "baseline": {
+        "value": null,
+        "range": null,
+        "ci": null,
+        "source": null,
+        "quote": "",
+        "note": "ARVC population prevalence not given in source; not sourced elsewhere this session"
+      },
+      "with_variant": {
+        "value": 14.3,
+        "range": null,
+        "ci": null,
+        "source": {
+          "citation": "Carruth ED et al. JACC Adv 2026 (Genome-First ARVC Penetrance Is Not Correlated With Lifetime Exercise History)",
+          "where": "Results; Table 1 (Affected gene)",
+          "cohort": "Geisinger MyCode, 113 desmosomal P/LP carriers who completed an exercise survey; median age 52",
+          "year": 2026,
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12869870/"
+        },
+        "quote": "Definite ARVC diagnoses were made in 15 (13%) of these individuals (TFC+). Table 1 Affected gene: PKP2 | TFC+ (n = 15): 5 (33%) | TFC− (n = 98): 30 (31%)"
+      },
+      "ascertainment": "population",
+      "flags": [
+        "gene value derived: 5/35 carriers from Table 1 counts, not reported by authors",
+        "small n; preliminary study",
+        "subset of MyCode carriers who answered an exercise survey",
+        "not a cumulative-by-age figure: cross-sectional, median age 52",
+        "all desmosomal genes pooled: 13%",
+        "baseline missing"
+      ],
+      "status": "draft",
+      "p3_use": "hold",
+      "p3_first": true,
+      "p3_note": "counts derived from a table, small n; no baseline"
+    },
+    {
+      "gene": "DSP",
+      "outcome": "a definite diagnosis of arrhythmogenic cardiomyopathy (ARVC, Task Force Criteria) at median age ~52",
+      "age": null,
+      "complement": "any",
+      "variant_class": "pathogenic/likely pathogenic desmosomal variant",
+      "missense_note": "DSP disease is often left-ventricle-predominant; ARVC Task Force Criteria may miss it",
+      "baseline": {
+        "value": null,
+        "range": null,
+        "ci": null,
+        "source": null,
+        "quote": "",
+        "note": "ARVC population prevalence not given in source; not sourced elsewhere this session"
+      },
+      "with_variant": {
+        "value": 20.0,
+        "range": null,
+        "ci": null,
+        "source": {
+          "citation": "Carruth ED et al. JACC Adv 2026 (Genome-First ARVC Penetrance Is Not Correlated With Lifetime Exercise History)",
+          "where": "Results; Table 1 (Affected gene)",
+          "cohort": "Geisinger MyCode, 113 desmosomal P/LP carriers who completed an exercise survey; median age 52",
+          "year": 2026,
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12869870/"
+        },
+        "quote": "Definite ARVC diagnoses were made in 15 (13%) of these individuals (TFC+). Table 1 Affected gene: DSP | TFC+ (n = 15): 7 (47%) | TFC− (n = 98): 28 (29%)"
+      },
+      "ascertainment": "population",
+      "flags": [
+        "gene value derived: 7/35 carriers from Table 1 counts, not reported by authors",
+        "small n; preliminary study",
+        "subset of MyCode carriers who answered an exercise survey",
+        "not a cumulative-by-age figure: cross-sectional, median age 52",
+        "all desmosomal genes pooled: 13%",
+        "baseline missing"
+      ],
+      "status": "draft",
+      "p3_use": "hold",
+      "p3_first": true,
+      "p3_note": "counts derived from a table, small n; no baseline"
+    },
+    {
+      "gene": "LMNA",
+      "outcome": "heart disease (conduction disease, arrhythmia or cardiomyopathy) by age 60",
+      "age": 60,
+      "complement": "any",
+      "variant_class": "LMNA pathogenic variants in DCM families",
+      "missense_note": "",
+      "baseline": {
+        "value": null,
+        "range": null,
+        "ci": null,
+        "source": null,
+        "quote": "",
+        "note": "no non-carrier comparison in source"
+      },
+      "with_variant": {
+        "value": 100,
+        "range": null,
+        "ci": null,
+        "source": {
+          "citation": "Hasselberg NE et al. Eur Heart J 2018 (Lamin A/C cardiomyopathy: young onset, high penetrance, and frequent heart transplantation)",
+          "where": "Results / Discussion",
+          "cohort": "Oslo referral centre; 79 LMNA genotype-positive subjects followed (48 probands, 31 relatives)",
+          "year": 2018,
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5939624/"
+        },
+        "quote": "The cardiac penetrance in our total LMNA population was 85%, and almost 100% at age 60, which was also reported by others."
+      },
+      "ascertainment": "clinic/family",
+      "flags": [
+        "'almost 100%' recorded as 100",
+        "clinic/family ascertained (DCM probands + relatives), inflates",
+        "baseline missing"
+      ],
+      "status": "draft",
+      "p3_use": "hold",
+      "p3_first": false,
+      "p3_note": "'approaching 100%' clinic/family; no baseline"
+    },
+    {
+      "gene": "LMNA",
+      "outcome": "a weakened, enlarged heart (DCM) by late adulthood (~age 70)",
+      "age": 70,
+      "complement": "any",
+      "variant_class": "pathogenic (ClinVar P) rare variants in DCM genes, aggregate across genes",
+      "missense_note": "McGurk: premature-termination variants in LMNA among the most penetrant; no LMNA-specific number in text",
+      "baseline": {
+        "value": 0.45,
+        "range": null,
+        "ci": [
+          0.39,
+          0.53
+        ],
+        "source": {
+          "citation": "McGurk KA et al. Am J Hum Genet 2023;110(9):1482-95",
+          "where": "Abstract / Results",
+          "cohort": "10,400 HCM and 2,564 DCM cases vs 293,226 UK Biobank + gnomAD reference participants (population reference, case-control penetrance method)",
+          "year": 2023,
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10502871/"
+        },
+        "quote": "a DCM population prevalence of 1 in 220 individuals"
+      },
+      "with_variant": {
+        "value": 35,
+        "range": null,
+        "ci": [
+          21.6,
+          56.8
+        ],
+        "source": {
+          "citation": "McGurk KA et al. Am J Hum Genet 2023;110(9):1482-95",
+          "where": "Abstract / Results",
+          "cohort": "10,400 HCM and 2,564 DCM cases vs 293,226 UK Biobank + gnomAD reference participants (population reference, case-control penetrance method)",
+          "year": 2023,
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10502871/"
+        },
+        "quote": "the penetrance by late adulthood of rare, pathogenic variants (23% for HCM, 35% for DCM)"
+      },
+      "ascertainment": "population",
+      "flags": [
+        "aggregate across DCM genes (dominated by TTN), not LMNA-specific; likely underestimates LMNA",
+        "'late adulthood' approximate",
+        "baseline is prevalence not cumulative incidence"
+      ],
+      "status": "draft",
+      "p3_use": "squares",
+      "p3_first": true,
+      "p3_note": "pooled across DCM genes, not LMNA-specific; age approximate"
+    },
+    {
+      "gene": "TTR",
+      "outcome": "heart failure or cardiomyopathy, at age 50+ (median 64)",
+      "age": 64,
+      "complement": "any",
+      "variant_class": "V122I (p.Val142Ile) heterozygotes, African ancestry",
+      "missense_note": "",
+      "baseline": {
+        "value": 30,
+        "range": null,
+        "ci": null,
+        "source": {
+          "citation": "Damrauer SM et al. JAMA 2019;322(22):2191-2202",
+          "where": "Results",
+          "cohort": "Penn Medicine Biobank cross-sectional cohort, 3,724 African-ancestry participants aged 50+ (116 V122I carriers); median age 64",
+          "year": 2019,
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7081752/"
+        },
+        "quote": "Fifty-one of 116 TTR V122I variant carriers (44%) older than age 50 years had prevalent heart failure or CM ... 1070 of 3608 noncarriers (30%)."
+      },
+      "with_variant": {
+        "value": 44,
+        "range": null,
+        "ci": null,
+        "source": {
+          "citation": "Damrauer SM et al. JAMA 2019;322(22):2191-2202",
+          "where": "Results",
+          "cohort": "Penn Medicine Biobank cross-sectional cohort, 3,724 African-ancestry participants aged 50+ (116 V122I carriers); median age 64",
+          "year": 2019,
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7081752/"
+        },
+        "quote": "Fifty-one of 116 TTR V122I variant carriers (44%) older than age 50 years had prevalent heart failure or CM ... 1070 of 3608 noncarriers (30%)."
+      },
+      "ascertainment": "population",
+      "flags": [
+        "not a cumulative-by-age figure: prevalent HF in a health-system biobank aged 50+ (biobank enriched for sick patients, so baseline high)",
+        "age 64 is cohort median",
+        "V122I carrier frequency 3.1-3.2% in African ancestry",
+        "only 11% of carriers with HF were diagnosed with hATTR-CM",
+        "male carriers 70+: HF/CM 70%, 100% over 80 (eFigures, small n)",
+        "quote joins two sentences with ellipsis",
+        "variant-specific; other TTR variants (e.g. V30M) differ"
+      ],
+      "status": "draft",
+      "p3_use": "hold",
+      "p3_first": true,
+      "p3_note": "snapshot in a health-system biobank, not by an age; V122I only"
+    },
+    {
+      "gene": "RET",
+      "outcome": "medullary thyroid cancer by age 45",
+      "age": 45,
+      "complement": "any",
+      "variant_class": "pathogenic missense at codon 918, ATA highest risk",
+      "missense_note": "RET MEN2 variants are gain-of-function missense; risk and age of onset depend on codon/ATA risk level (highest M918T: MTC <1 y; high C634: <5 y; moderate e.g. V804M much lower, see next record)",
+      "baseline": {
+        "value": 0.02,
+        "range": null,
+        "ci": null,
+        "source": {
+          "citation": "Loveday C et al. J Clin Endocrinol Metab 2018;103(11):4275-82",
+          "where": "Methods, Lifetime risk",
+          "cohort": "US lifetime MTC risk, 1 in ~4100",
+          "year": 2018,
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6194854/"
+        },
+        "quote": "lifetime risk of MTC in the United States of ... one in ~4100 overall; used for age 45, which it bounds"
+      },
+      "with_variant": {
+        "value": 84.3,
+        "range": null,
+        "ci": [
+          51.3,
+          99.1
+        ],
+        "source": {
+          "citation": "West CE et al. JAMA Netw Open 2025;8(6):e2517937",
+          "where": "Results",
+          "cohort": "UK clinical referrals with suspected MEN2, 18 highest-risk carriers",
+          "year": 2025,
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12205402/"
+        },
+        "quote": "68.6% [95% CI, 37.0%-94.5%] and 84.3% [95% CI, 51.3%-99.1%] at age 30 and 45 years for highest-risk variants"
+      },
+      "ascertainment": "clinic/family",
+      "flags": [
+        "family-ascertained",
+        "18 carriers: wide CI"
+      ],
+      "status": "checked",
+      "p3_use": "squares",
+      "p3_first": true,
+      "p3_note": "all pathogenic except V804M; '>90%' coded as 90 (lower bound); lifetime",
+      "codons": [
+        [
+          918,
+          918
+        ]
+      ],
+      "missense": true,
+      "check": {
+        "date": "2026-11-19",
+        "verdict": "replaced, split by tier",
+        "note": "Clinic-referred carriers, without thyroidectomy.",
+        "before": {
+          "baseline": 0.024,
+          "with_variant": 90,
+          "with_variant_source": "Loveday C et al. J Clin Endocrinol Metab 2018;103(11):4275-82"
+        }
+      }
+    },
+    {
+      "gene": "RET",
+      "outcome": "medullary thyroid cancer by age 45",
+      "age": 45,
+      "complement": "any",
+      "variant_class": "pathogenic missense at codon 634 or 883, ATA high risk",
+      "missense_note": "RET MEN2 variants are gain-of-function missense; risk and age of onset depend on codon/ATA risk level (highest M918T: MTC <1 y; high C634: <5 y; moderate e.g. V804M much lower, see next record)",
+      "baseline": {
+        "value": 0.02,
+        "range": null,
+        "ci": null,
+        "source": {
+          "citation": "Loveday C et al. J Clin Endocrinol Metab 2018;103(11):4275-82",
+          "where": "Methods, Lifetime risk",
+          "cohort": "US lifetime MTC risk, 1 in ~4100",
+          "year": 2018,
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6194854/"
+        },
+        "quote": "lifetime risk of MTC in the United States of ... one in ~4100 overall; used for age 45, which it bounds"
+      },
+      "with_variant": {
+        "value": 70.6,
+        "range": null,
+        "ci": [
+          54.5,
+          85.1
+        ],
+        "source": {
+          "citation": "West CE et al. JAMA Netw Open 2025;8(6):e2517937",
+          "where": "Results",
+          "cohort": "UK clinical referrals with suspected MEN2, 35 high-risk carriers",
+          "year": 2025,
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12205402/"
+        },
+        "quote": "84.3% ... at age 30 and 45 years for highest-risk variants, 35.3% ... and 70.6% [95% CI, 54.5%-85.1%] for high-risk variants"
+      },
+      "ascertainment": "clinic/family",
+      "flags": [
+        "family-ascertained"
+      ],
+      "status": "checked",
+      "p3_use": "squares",
+      "p3_first": true,
+      "p3_note": "all pathogenic except V804M; '>90%' coded as 90 (lower bound); lifetime",
+      "codons": [
+        [
+          634,
+          634
+        ],
+        [
+          883,
+          883
+        ]
+      ],
+      "missense": true,
+      "check": {
+        "date": "2026-11-19",
+        "verdict": "replaced, split by tier",
+        "note": "Clinic-referred carriers, without thyroidectomy.",
+        "before": {
+          "baseline": 0.024,
+          "with_variant": 90,
+          "with_variant_source": "Loveday C et al. J Clin Endocrinol Metab 2018;103(11):4275-82"
+        }
+      }
+    },
+    {
+      "gene": "RET",
+      "outcome": "medullary thyroid cancer by age 75",
+      "age": 75,
+      "complement": "any",
+      "variant_class": "pathogenic missense, ATA moderate risk (any codon but 634, 883 and 918)",
+      "missense_note": "RET MEN2 variants are gain-of-function missense; risk and age of onset depend on codon/ATA risk level (highest M918T: MTC <1 y; high C634: <5 y; moderate e.g. V804M much lower, see next record)",
+      "baseline": {
+        "value": 0.02,
+        "range": null,
+        "ci": null,
+        "source": {
+          "citation": "Loveday C et al. J Clin Endocrinol Metab 2018;103(11):4275-82",
+          "where": "Methods, Lifetime risk",
+          "cohort": "US lifetime MTC risk, 1 in ~4100",
+          "year": 2018,
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6194854/"
+        },
+        "quote": "lifetime risk of MTC in the United States of ... one in ~4100 overall; used for age 75, which it bounds"
+      },
+      "with_variant": {
+        "value": 2.2,
+        "range": null,
+        "ci": [
+          0.7,
+          6.9
+        ],
+        "source": {
+          "citation": "West CE et al. JAMA Netw Open 2025;8(6):e2517937",
+          "where": "Abstract, Results",
+          "cohort": "UK Biobank, 169 carriers found by sequencing (168 moderate risk)",
+          "year": 2025,
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12205402/"
+        },
+        "quote": "The Kaplan-Meier estimated medullary thyroid cancer risk by age 75 years in variant carriers in the UK population was 2.2% (95% CI, 0.7%-6.9)"
+      },
+      "ascertainment": "population",
+      "flags": [
+        "Geisinger (US) gives 19.3 by 75 overall and 12.3 for moderate-risk carriers: 2.2 is the low end of genome-first estimates",
+        "clinic-referred carriers of the same variants: 95.7 by 75"
+      ],
+      "status": "checked",
+      "p3_use": "squares",
+      "p3_first": true,
+      "p3_note": "all pathogenic except V804M; '>90%' coded as 90 (lower bound); lifetime",
+      "missense": true,
+      "check": {
+        "date": "2026-11-19",
+        "verdict": "replaced, split by tier",
+        "note": "Loveday's '>90%' only says the counts were consistent with it. Genome-first carriers are almost all moderate risk.",
+        "before": {
+          "baseline": 0.024,
+          "with_variant": 90,
+          "with_variant_source": "Loveday C et al. J Clin Endocrinol Metab 2018;103(11):4275-82"
+        }
+      }
+    },
+    {
+      "gene": "RET",
+      "outcome": "medullary thyroid cancer over a lifetime",
+      "age": null,
+      "complement": "any",
+      "variant_class": "p.Val804Met specifically (ATA moderate risk)",
+      "missense_note": "missense; most frequent pathogenic RET variant; far lower penetrance than ATA high/highest codons",
+      "baseline": {
+        "value": 0.024,
+        "range": null,
+        "ci": null,
+        "source": {
+          "citation": "Loveday C et al. J Clin Endocrinol Metab 2018;103(11):4275-82",
+          "where": "Methods, Lifetime risk",
+          "cohort": "US lifetime MTC risk used by the authors",
+          "year": 2018,
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6194854/"
+        },
+        "quote": "one in ∼2700 for women (one in ∼4100 overall)"
+      },
+      "with_variant": {
+        "value": 4,
+        "range": null,
+        "ci": [
+          0.9,
+          8
+        ],
+        "source": {
+          "citation": "Loveday C et al. J Clin Endocrinol Metab 2018;103(11):4275-82",
+          "where": "Abstract Results; Discussion",
+          "cohort": "population allele-frequency model, ~51,000 non-TCGA ExAC exomes",
+          "year": 2018,
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6194854/"
+        },
+        "quote": "supports a lifetime penetrance of MTC for p.Val804Met of 4% (95% CI, 0.9% to 8%)"
+      },
+      "ascertainment": "population",
+      "flags": [
+        "lifetime, not age-specific",
+        "model-dependent: with a 1-in-1000 baseline assumption the paper gives 12% (3-23%); extreme sensitivity model 46%",
+        "family-ascertained estimate (Rich et al., cited in same paper) is 87% by age 70: 'penetrance of RET p.Val804Met for MTC to age 70 as 87% (95% CI, 71% to 94%)'",
+        "applies to one variant only, not all ATA-moderate variants",
+        "superseded in P3 by the moderate-risk record (West 2025 UK Biobank gives V804M 1.1 by 75)"
+      ],
+      "status": "draft",
+      "p3_use": "squares",
+      "p3_first": false,
+      "p3_note": "p.Val804Met only (ATA moderate)"
+    },
+    {
+      "gene": "RET",
+      "outcome": "pheochromocytoma (adrenal tumour) by age 50",
+      "age": 50,
+      "complement": "any",
+      "variant_class": "codon 634 pathogenic variants (ATA high risk)",
+      "missense_note": "codon-dependent: same abstract says all codon 918 (MEN2B) carriers developed PHEO by 56; codons other than 634/918 <32%",
+      "baseline": {
+        "value": null,
+        "range": null,
+        "ci": null,
+        "source": {
+          "citation": "",
+          "where": "",
+          "cohort": "",
+          "year": null,
+          "url": ""
+        },
+        "quote": ""
+      },
+      "with_variant": {
+        "value": 52,
+        "range": null,
+        "ci": null,
+        "source": {
+          "citation": "Imai T et al. (MEN Consortium of Japan). Eur J Endocrinol 2013;168(5):683-7. PMID 23416954",
+          "where": "Abstract",
+          "cohort": "390 Japanese MEN2 patients with RET data (clinic/registry)",
+          "year": 2013,
+          "url": "https://europepmc.org/abstract/MED/23416954"
+        },
+        "quote": "The penetrance of PHEO was 25% by age 30 years, 52% by age 50 years, and 88% by age 77 years in RET mutation carriers with a codon 634 mutation"
+      },
+      "ascertainment": "clinic/family",
+      "flags": [
+        "read from abstract only (Europe PMC); full text not fetched",
+        "no baseline sourced; pheochromocytoma is very rare in the general population but no cited by-age figure found",
+        "Japanese cohort; C634 subtype (R/Y/G/W) differs"
+      ],
+      "status": "draft",
+      "p3_use": "hold",
+      "p3_first": false,
+      "p3_note": "codon 634 only; no baseline"
+    },
+    {
+      "gene": "VHL",
+      "outcome": "any VHL-related tumour by age 60",
+      "age": 60,
+      "complement": "any",
+      "variant_class": "pathogenic VHL variants / clinically diagnosed VHL",
+      "missense_note": "",
+      "baseline": {
+        "value": null,
+        "range": null,
+        "ci": null,
+        "source": {
+          "citation": "",
+          "where": "",
+          "cohort": "",
+          "year": null,
+          "url": ""
+        },
+        "quote": ""
+      },
+      "with_variant": {
+        "value": 87,
+        "range": null,
+        "ci": [
+          80,
+          92
+        ],
+        "source": {
+          "citation": "Binderup MLM et al. Eur J Hum Genet 2017;25(3):301-7",
+          "where": "Abstract; Table 3 / Figure 2 panel A",
+          "cohort": "Danish national vHL research database, >90% of all diagnosed Danish vHL patients (n=150)",
+          "year": 2017,
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5315510/"
+        },
+        "quote": "We found an overall penetrance of 87% at age 60 years."
+      },
+      "ascertainment": "clinic/family",
+      "flags": [
+        "national but among diagnosed patients/families, not genotype-first",
+        "composite outcome (any manifestation) has no population baseline",
+        "first symptomatic manifestation only: 80% (69-86%) by 60"
+      ],
+      "status": "draft",
+      "p3_use": "hold",
+      "p3_first": false,
+      "p3_note": "no baseline"
+    },
+    {
+      "gene": "VHL",
+      "outcome": "kidney cancer (renal cell carcinoma) by age 60",
+      "age": 60,
+      "complement": "any",
+      "variant_class": "clinically diagnosed VHL (pre-molecular era)",
+      "missense_note": "type 1 vs type 2 (missense, pheochromocytoma-prone) genotypes differ in RCC risk; not separated here",
+      "baseline": {
+        "value": 0.5,
+        "range": null,
+        "ci": null,
+        "source": {
+          "citation": "SEER Cancer Statistics Review 1975-2017",
+          "where": "Tables 11.12-11.14, interval risks chained to 60",
+          "cohort": "US SEER; kidney and renal pelvis",
+          "year": 2020,
+          "url": "https://seer.cancer.gov/archive/csr/1975_2017/results_single/sect_11_table.12.pdf"
+        },
+        "quote": "Kidney cancer by age 60, chained; sexes pooled (XY 0.61, XX 0.34)."
+      },
+      "with_variant": {
+        "value": 69,
+        "range": [
+          40,
+          70
+        ],
+        "ci": null,
+        "source": {
+          "citation": "Maher ER et al. Q J Med 1990;77(283):1151-63. PMID 2274658",
+          "where": "Abstract",
+          "cohort": "152 patients, UK VHL families",
+          "year": 1990,
+          "url": "https://europepmc.org/abstract/MED/2274658"
+        },
+        "quote": "The probability of a patient with von Hippel-Lindau disease developing a cerebellar haemangioblastoma, retinal angioma or renal cell carcinoma by age 60 years was 0.84, 0.7 and 0.69, respectively."
+      },
+      "ascertainment": "clinic/family",
+      "flags": [
+        "family-ascertained, 1990",
+        "baseline counts all kidney cancer"
+      ],
+      "status": "checked",
+      "p3_use": "squares",
+      "p3_first": true,
+      "p3_note": "baseline is to 70, figure to 60; clinic 1990",
+      "check": {
+        "date": "2026-11-19",
+        "verdict": "baseline corrected",
+        "note": "69 by 60 is exactly Maher 1990 (152 UK patients diagnosed clinically). No newer age-60 figure is printed; Ganner 2025's curves are the next source to read.",
+        "before": {
+          "baseline": 0.87,
+          "with_variant": 69,
+          "with_variant_source": "Maher ER et al. Q J Med 1990;77(283):1151-63. PMID 2274658"
+        }
+      }
+    },
+    {
+      "gene": "VHL",
+      "outcome": "a brain/spinal blood-vessel tumour (cerebellar haemangioblastoma) by age 60",
+      "age": 60,
+      "complement": "any",
+      "variant_class": "clinically diagnosed VHL (pre-molecular era)",
+      "missense_note": "",
+      "baseline": {
+        "value": null,
+        "range": null,
+        "ci": null,
+        "source": {
+          "citation": "eviQ VHL risk management",
+          "where": "Lifetime risk table",
+          "cohort": "",
+          "year": 2023,
+          "url": "https://www.eviq.org.au/cancer-genetics/risk-management/397-risk-management-for-von-hippel-lindau-vhl"
+        },
+        "quote": "Cerebellar haemangioblastoma ... General population to age 70: Unable to obtain"
+      },
+      "with_variant": {
+        "value": 84,
+        "range": [
+          60,
+          80
+        ],
+        "ci": null,
+        "source": {
+          "citation": "Maher ER et al. Q J Med 1990;77(283):1151-63. PMID 2274658",
+          "where": "Abstract",
+          "cohort": "152 patients, UK VHL families",
+          "year": 1990,
+          "url": "https://europepmc.org/abstract/MED/2274658"
+        },
+        "quote": "developing a cerebellar haemangioblastoma, retinal angioma or renal cell carcinoma by age 60 years was 0.84, 0.7 and 0.69, respectively."
+      },
+      "ascertainment": "clinic/family",
+      "flags": [
+        "no baseline available (eviQ: 'Unable to obtain')",
+        "eviQ range 60-80% lifetime is lower than Maher 84%",
+        "clinic-ascertained 1990 data"
+      ],
+      "status": "draft",
+      "p3_use": "hold",
+      "p3_first": false,
+      "p3_note": "no baseline"
+    },
+    {
+      "gene": "MEN1",
+      "outcome": "parathyroid tumors over a lifetime",
+      "age": 85,
+      "complement": "any",
+      "variant_class": "pathogenic MEN1 variants (any type)",
+      "missense_note": "",
+      "baseline": {
+        "value": 1,
+        "range": null,
+        "ci": null,
+        "source": {
+          "citation": "eviQ, MEN1 risk management",
+          "where": "Lifetime risk table, general population risk (by age 85)",
+          "cohort": "Australian guideline table",
+          "year": null,
+          "url": "https://www.eviq.org.au/cancer-genetics/adult/risk-management/192-men1-risk-management"
+        },
+        "quote": "Parathyroid adenoma or multi-gland hyperplasia | 90-95% | Less than 1%"
+      },
+      "with_variant": {
+        "value": 90,
+        "range": [
+          90,
+          95
+        ],
+        "ci": null,
+        "source": {
+          "citation": "eviQ, MEN1 risk management",
+          "where": "Lifetime risk table",
+          "cohort": "guideline summary of published (clinic) series",
+          "year": null,
+          "url": "https://www.eviq.org.au/cancer-genetics/adult/risk-management/192-men1-risk-management"
+        },
+        "quote": "Parathyroid adenoma or multi-gland hyperplasia | 90-95% | Less than 1%"
+      },
+      "ascertainment": "clinic/family",
+      "flags": [
+        "point chosen from range",
+        "baseline '<1%' entered as 1 (upper bound)",
+        "age 85 taken from table header; table is a guideline summary, not a primary study",
+        "eviQ notes published penetrance overestimates risk because probands were not excluded (from search snippet, not re-verified on page)",
+        "secondary source: Marx & Lourenco 2018 (PMC6057055) says 'the penetrance of primary hyperparathyroidism (PHPT) in MEN1 is already around 50% by age 20 years'",
+        "GeneReviews MEN1 blocked",
+        "clinic/family-ascertained: true penetrance probably lower; no genome-first MEN1 estimate found",
+        "baseline is an upper bound; Yeh 2013 incidence (PMC3590475) suggests about 2% diagnosed primary hyperparathyroidism by 80, sexes averaged (derived, not printed)"
+      ],
+      "status": "checked",
+      "p3_use": "squares",
+      "p3_first": true,
+      "p3_note": "points chosen from ranges; secondary source (eviQ); lifetime",
+      "check": {
+        "date": "2026-11-19",
+        "verdict": "kept, reworded",
+        "note": "Outcome worded by hand. eviQ (reviewed 25 Sep 2026, after Brandi et al. 2025) gives 90-95% for parathyroid adenoma or multi-gland hyperplasia; Halperin & Tirosh 2025 (Fam Cancer, PMC11742904) give 95% by 80. Baseline kept as eviQ's same-table 'less than 1%' by 85.",
+        "before": {
+          "outcome": "overactive parathyroid glands (primary hyperparathyroidism) over a lifetime"
+        }
+      }
+    },
+    {
+      "gene": "MEN1",
+      "outcome": "a pituitary tumour over a lifetime",
+      "age": 85,
+      "complement": "any",
+      "variant_class": "pathogenic MEN1 variants (any type)",
+      "missense_note": "",
+      "baseline": {
+        "value": 10,
+        "range": null,
+        "ci": null,
+        "source": {
+          "citation": "eviQ, MEN1 risk management",
+          "where": "Lifetime risk table, general population risk (by age 85)",
+          "cohort": "Australian guideline table",
+          "year": null,
+          "url": "https://www.eviq.org.au/cancer-genetics/adult/risk-management/192-men1-risk-management"
+        },
+        "quote": "Pituitary adenoma | All types: 35 to >50% | 10%"
+      },
+      "with_variant": {
+        "value": 40,
+        "range": [
+          35,
+          50
+        ],
+        "ci": null,
+        "source": {
+          "citation": "eviQ, MEN1 risk management",
+          "where": "Lifetime risk table",
+          "cohort": "guideline summary",
+          "year": null,
+          "url": "https://www.eviq.org.au/cancer-genetics/adult/risk-management/192-men1-risk-management"
+        },
+        "quote": "Pituitary adenoma | All types: 35 to >50% | 10%"
+      },
+      "ascertainment": "clinic/family",
+      "flags": [
+        "point chosen from range",
+        "upper end is open ('>50%')",
+        "baseline 10% likely includes incidental microadenomas",
+        "pancreatic/duodenal NET row: 30-80% vs <1% (not recorded separately)"
+      ],
+      "status": "draft",
+      "p3_use": "squares",
+      "p3_first": false,
+      "p3_note": "point chosen from range"
+    },
+    {
+      "gene": "SDHB",
+      "outcome": "paraganglioma or pheochromocytoma by age 60",
+      "age": 60,
+      "complement": "any",
+      "variant_class": "pathogenic SDHB variants (any type), non-probands",
+      "missense_note": "highly destabilising missense variants linked to higher age-related tumour risk (Andrews 2018 abstract)",
+      "baseline": {
+        "value": null,
+        "range": null,
+        "ci": null,
+        "source": {
+          "citation": "",
+          "where": "",
+          "cohort": "",
+          "year": null,
+          "url": ""
+        },
+        "quote": ""
+      },
+      "with_variant": {
+        "value": 22.5,
+        "range": null,
+        "ci": [
+          15.9,
+          28.6
+        ],
+        "source": {
+          "citation": "Andrews KA et al. J Med Genet 2018;55(6):384-94, with correction (PMC6327860)",
+          "where": "Correction notice (replaces abstract/Results 21.8%)",
+          "cohort": "876 UK SDH variant carriers; Kaplan-Meier in non-proband carriers",
+          "year": 2018,
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6327860/"
+        },
+        "quote": "21.8% (95% CI 15.2% to 27.9%) [corrected to] 22.5% (95%CI 15.9% to 28.6%)"
+      },
+      "ascertainment": "clinic/family",
+      "flags": [
+        "non-proband carriers (relatives) reduce but don't remove ascertainment bias",
+        "no population baseline in paper; none sourced",
+        "quote reconstructed from correction notice wording",
+        "Benn 2018 J Med Genet (ExAC, population) ~22% lifetime seen only in search snippet, not fetched",
+        "male carriers higher penetrance (P=0.0087 after correction); no sex-specific values recorded"
+      ],
+      "status": "draft",
+      "p3_use": "hold",
+      "p3_first": false,
+      "p3_note": "no baseline"
+    },
+    {
+      "gene": "SDHB",
+      "outcome": "paraganglioma or pheochromocytoma by age 80",
+      "age": 80,
+      "complement": "any",
+      "variant_class": "pathogenic SDHB variants (any type)",
+      "missense_note": "",
+      "baseline": {
+        "value": null,
+        "range": null,
+        "ci": null,
+        "source": {
+          "citation": "",
+          "where": "",
+          "cohort": "",
+          "year": null,
+          "url": ""
+        },
+        "quote": ""
+      },
+      "with_variant": {
+        "value": 30.6,
+        "range": null,
+        "ci": [
+          26.8,
+          34.7
+        ],
+        "source": {
+          "citation": "Andrews KA et al. J Med Genet 2018;55(6):384-94",
+          "where": "Abstract Results (retrospective cohort analysis correcting for ascertainment)",
+          "cohort": "876 UK SDH variant carriers",
+          "year": 2018,
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5992372/"
+        },
+        "quote": "cumulative tumour risks for SDHB mutation carriers at ages 60 years and 80 years were 23.9% (95% CI 20.9% to 27.4%) and 30.6% (95% CI 26.8% to 34.7%)"
+      },
+      "ascertainment": "mixed",
+      "flags": [
+        "ascertainment-adjusted, but cohort is clinic-derived",
+        "non-proband Kaplan-Meier at 80 is 39% (corrected from 44%) per correction notice",
+        "no baseline",
+        "malignant disease by 60 in non-proband carriers 4.2%; renal tumour by 60 ~4-5% (conflicting figures within paper), not recorded"
+      ],
+      "status": "draft",
+      "p3_use": "hold",
+      "p3_first": true,
+      "p3_note": "no sourced baseline (likely 0 squares, still needs a source)"
+    },
+    {
+      "gene": "HFE",
+      "outcome": "diagnosed haemochromatosis (iron overload) by age 80",
+      "age": 80,
+      "complement": "XY",
+      "variant_class": "two copies of p.Cys282Tyr",
+      "missense_note": "C282Y is missense; H63D and C282Y/H63D compound heterozygotes much lower risk",
+      "baseline": {
+        "value": 0.04,
+        "range": null,
+        "ci": null,
+        "source": {
+          "citation": "Pilling LC et al. BMJ 2019;364:k5222",
+          "where": "Results",
+          "cohort": "UK Biobank, 451,243 European-descent participants aged 40-70, ~7 y follow-up",
+          "year": 2019,
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6334179/"
+        },
+        "quote": "increasing to 15.1% (437/2890) by end of follow-up (versus 0.04% of those with no p.C282Y mutations)"
+      },
+      "with_variant": {
+        "value": 56.4,
+        "range": null,
+        "ci": null,
+        "source": {
+          "citation": "Lucas MR, Atkins JL, Pilling LC, Shearman JD, Melzer D. BMJ Open 2024;14(3):e081926",
+          "where": "Results, men with p.C282Y homozygous genotypes",
+          "cohort": "UK Biobank, cumulative incidence age 40-80",
+          "year": 2024,
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10936495/"
+        },
+        "quote": "Haemochromatosis diagnosis cumulative incidence at age 80 years in men with p.C282Y+/+ was 56.4%."
+      },
+      "ascertainment": "population",
+      "flags": [
+        "baseline is end of ~7 y follow-up, both sexes pooled, from 2019 paper (not by age 80)",
+        "diagnosis is partly a testing/awareness outcome, not purely disease",
+        "UK Biobank healthy-volunteer bias",
+        "baseline is Pilling 2019's end of follow-up, under 0.1 either way"
+      ],
+      "status": "checked",
+      "p3_use": "squares",
+      "p3_first": true,
+      "p3_note": "biallelic C282Y only; recessive gene, so reached by the two-copy path, not one variant",
+      "check": {
+        "date": "2026-11-19",
+        "verdict": "kept",
+        "note": "Verbatim from Lucas 2024, for C282Y homozygotes. HFE is recessive, so P3 never draws it as a dominant figure. C282Y/H63D is far lower (5.4 XY, 2.7 XX)."
+      }
+    },
+    {
+      "gene": "HFE",
+      "outcome": "diagnosed haemochromatosis (iron overload) by age 80",
+      "age": 80,
+      "complement": "XX",
+      "variant_class": "two copies of p.Cys282Tyr",
+      "missense_note": "",
+      "baseline": {
+        "value": 0.04,
+        "range": null,
+        "ci": null,
+        "source": {
+          "citation": "Pilling LC et al. BMJ 2019;364:k5222",
+          "where": "Results",
+          "cohort": "UK Biobank",
+          "year": 2019,
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6334179/"
+        },
+        "quote": "increasing to 15.1% (437/2890) by end of follow-up (versus 0.04% of those with no p.C282Y mutations)"
+      },
+      "with_variant": {
+        "value": 40.5,
+        "range": null,
+        "ci": null,
+        "source": {
+          "citation": "Lucas MR et al. BMJ Open 2024;14(3):e081926",
+          "where": "Results, women with p.C282Y homozygous genotypes",
+          "cohort": "UK Biobank, cumulative incidence age 40-80",
+          "year": 2024,
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10936495/"
+        },
+        "quote": "Diagnosed haemochromatosis cumulative incidence in women with p.C282Y+/+ was 40.5% by age 80 years."
+      },
+      "ascertainment": "population",
+      "flags": [
+        "baseline is end of ~7 y follow-up, sexes pooled (not by age 80)",
+        "diagnosis is partly a testing/awareness outcome",
+        "baseline is Pilling 2019's end of follow-up, under 0.1 either way"
+      ],
+      "status": "checked",
+      "p3_use": "squares",
+      "p3_first": true,
+      "p3_note": "biallelic C282Y only; recessive gene, so reached by the two-copy path, not one variant",
+      "check": {
+        "date": "2026-11-19",
+        "verdict": "kept",
+        "note": "Verbatim from Lucas 2024, for C282Y homozygotes. HFE is recessive, so P3 never draws it as a dominant figure. C282Y/H63D is far lower (5.4 XY, 2.7 XX)."
+      }
+    },
+    {
+      "gene": "HFE",
+      "outcome": "liver disease by age 80",
+      "age": 80,
+      "complement": "XY",
+      "variant_class": "biallelic: p.C282Y homozygous",
+      "missense_note": "",
+      "baseline": {
+        "value": 8.3,
+        "range": null,
+        "ci": null,
+        "source": {
+          "citation": "Lucas MR et al. BMJ Open 2024;14(3):e081926",
+          "where": "Results, men",
+          "cohort": "UK Biobank men without HFE variants",
+          "year": 2024,
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10936495/"
+        },
+        "quote": "Cumulative incidence of 'any liver disease' was 20.3% vs 8.3% without variants."
+      },
+      "with_variant": {
+        "value": 20.3,
+        "range": null,
+        "ci": null,
+        "source": {
+          "citation": "Lucas MR et al. BMJ Open 2024;14(3):e081926",
+          "where": "Results, men",
+          "cohort": "UK Biobank, cumulative incidence age 40-80",
+          "year": 2024,
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10936495/"
+        },
+        "quote": "Cumulative incidence of 'any liver disease' was 20.3% vs 8.3% without variants."
+      },
+      "ascertainment": "population",
+      "flags": [
+        "also: liver cancer 5.5% vs 0.8%, fibrosis/cirrhosis 7.7% vs 1.3% by 80 in men"
+      ],
+      "status": "draft",
+      "p3_use": "squares",
+      "p3_first": false,
+      "p3_note": "biallelic C282Y only"
+    },
+    {
+      "gene": "HFE",
+      "outcome": "liver disease by age 80",
+      "age": 80,
+      "complement": "XX",
+      "variant_class": "biallelic: p.C282Y homozygous",
+      "missense_note": "",
+      "baseline": {
+        "value": 6.75,
+        "range": null,
+        "ci": null,
+        "source": {
+          "citation": "Lucas MR et al. BMJ Open 2024;14(3):e081926",
+          "where": "Results, women",
+          "cohort": "UK Biobank women without HFE variants",
+          "year": 2024,
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10936495/"
+        },
+        "quote": "(8.9% vs 6.75%; HR 1.62, 95% CI: 1.27 to 2.05; p=7.80×10-5)"
+      },
+      "with_variant": {
+        "value": 8.9,
+        "range": null,
+        "ci": null,
+        "source": {
+          "citation": "Lucas MR et al. BMJ Open 2024;14(3):e081926",
+          "where": "Results, women ('any liver disease')",
+          "cohort": "UK Biobank, cumulative incidence age 40-80",
+          "year": 2024,
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10936495/"
+        },
+        "quote": "(8.9% vs 6.75%; HR 1.62, 95% CI: 1.27 to 2.05; p=7.80×10-5)"
+      },
+      "ascertainment": "population",
+      "flags": [
+        "small absolute difference; may look like 'no effect' in 100 squares"
+      ],
+      "status": "draft",
+      "p3_use": "squares",
+      "p3_first": false,
+      "p3_note": "biallelic C282Y only"
+    },
+    {
+      "gene": "HFE",
+      "outcome": "documented iron-overload-related disease (not by a stated age)",
+      "age": null,
+      "complement": "XY",
+      "variant_class": "biallelic: p.C282Y homozygous",
+      "missense_note": "",
+      "baseline": {
+        "value": null,
+        "range": null,
+        "ci": null,
+        "source": {
+          "citation": "",
+          "where": "",
+          "cohort": "",
+          "year": null,
+          "url": ""
+        },
+        "quote": ""
+      },
+      "with_variant": {
+        "value": 28.4,
+        "range": null,
+        "ci": [
+          18.8,
+          40.2
+        ],
+        "source": {
+          "citation": "Allen KJ et al. N Engl J Med 2008;358(3):221-30. PMID 18199861",
+          "where": "Abstract",
+          "cohort": "Melbourne Collaborative Cohort Study, population (C282Y homozygotes followed ~12 y)",
+          "year": 2008,
+          "url": "https://europepmc.org/abstract/MED/18199861"
+        },
+        "quote": "was 28.4% (95% confidence interval [CI], 18.8 to 40.2) for men and 1.2% (95% CI, 0.03 to 6.5) for women"
+      },
+      "ascertainment": "population",
+      "flags": [
+        "not a cumulative-by-age figure",
+        "abstract only",
+        "no non-carrier comparison in abstract",
+        "prefer Lucas 2024 by-80 records for drawing"
+      ],
+      "status": "draft",
+      "p3_use": "hold",
+      "p3_first": false,
+      "p3_note": "not by an age"
+    },
+    {
+      "gene": "HFE",
+      "outcome": "documented iron-overload-related disease (not by a stated age)",
+      "age": null,
+      "complement": "XX",
+      "variant_class": "biallelic: p.C282Y homozygous",
+      "missense_note": "",
+      "baseline": {
+        "value": null,
+        "range": null,
+        "ci": null,
+        "source": {
+          "citation": "",
+          "where": "",
+          "cohort": "",
+          "year": null,
+          "url": ""
+        },
+        "quote": ""
+      },
+      "with_variant": {
+        "value": 1.2,
+        "range": null,
+        "ci": [
+          0.03,
+          6.5
+        ],
+        "source": {
+          "citation": "Allen KJ et al. N Engl J Med 2008;358(3):221-30. PMID 18199861",
+          "where": "Abstract",
+          "cohort": "Melbourne Collaborative Cohort Study, population",
+          "year": 2008,
+          "url": "https://europepmc.org/abstract/MED/18199861"
+        },
+        "quote": "was 28.4% (95% confidence interval [CI], 18.8 to 40.2) for men and 1.2% (95% CI, 0.03 to 6.5) for women"
+      },
+      "ascertainment": "population",
+      "flags": [
+        "not a cumulative-by-age figure",
+        "abstract only",
+        "much lower than Lucas 2024 XX diagnosis 40.5% by 80 (different outcome definitions)"
+      ],
+      "status": "draft",
+      "p3_use": "hold",
+      "p3_first": false,
+      "p3_note": "not by an age"
+    },
+    {
+      "gene": "RYR1",
+      "outcome": "a malignant hyperthermia reaction after exposure to triggering anaesthetics",
+      "age": null,
+      "complement": "any",
+      "variant_class": "nine EMHG-diagnostic RYR1 variants (missense)",
+      "missense_note": "range across the nine variants 25% (p.Arg2454His) to 62.5% (p.Arg614Leu), not significant after correction",
+      "baseline": {
+        "value": null,
+        "range": null,
+        "ci": null,
+        "source": {
+          "citation": "",
+          "where": "",
+          "cohort": "",
+          "year": null,
+          "url": ""
+        },
+        "quote": ""
+      },
+      "with_variant": {
+        "value": 40.6,
+        "range": [
+          25,
+          62.5
+        ],
+        "ci": null,
+        "source": {
+          "citation": "Ibarra Moreno CA et al. Anesthesiology 2019;131(5):983-91",
+          "where": "Abstract Results",
+          "cohort": "125 MH pedigrees, European and Canadian registries; penetrance = probands among carriers exposed to general anaesthesia",
+          "year": 2019,
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9912949/"
+        },
+        "quote": "The overall penetrance of nine RYR1 diagnostic mutations was 40.6% (93 of 229)."
+      },
+      "ascertainment": "clinic/family",
+      "flags": [
+        "not a cumulative-by-age figure: conditional on anaesthetic exposure",
+        "per-exposure likelihood 0.25 among all carriers, 0.76 in probands",
+        "family/registry ascertained",
+        "no baseline (non-carriers rarely react; no cited per-anaesthetic incidence fetched)",
+        "prevalence of MH-causative variants quoted as 1:2,750 in same paper",
+        "population genotype-first (Geisinger/gnomAD) penetrance not found in session"
+      ],
+      "status": "draft",
+      "p3_use": "sentence",
+      "p3_first": true,
+      "p3_note": "risk only on exposure to triggering anaesthetics; not a by-age figure"
+    },
+    {
+      "gene": "CACNA1S",
+      "outcome": "a malignant hyperthermia reaction after exposure to triggering anaesthetics",
+      "age": null,
+      "complement": "any",
+      "variant_class": "EMHG-diagnostic CACNA1S variants",
+      "missense_note": "",
+      "baseline": {
+        "value": null,
+        "range": null,
+        "ci": null,
+        "source": {
+          "citation": "",
+          "where": "",
+          "cohort": "",
+          "year": null,
+          "url": ""
+        },
+        "quote": ""
+      },
+      "with_variant": {
+        "value": null,
+        "range": null,
+        "ci": null,
+        "source": {
+          "citation": "Ibarra Moreno CA et al. Anesthesiology 2019;131(5):983-91",
+          "where": "Introduction",
+          "cohort": "",
+          "year": 2019,
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9912949/"
+        },
+        "quote": ""
+      },
+      "ascertainment": "clinic/family",
+      "flags": [
+        "no CACNA1S-specific penetrance found",
+        "not a cumulative-by-age figure",
+        "tried: Ibarra Moreno 2019, Miller/Gardner 2018 BJA abstract, Europe PMC search for genotype-first MH studies (recent gnomAD/KOVA prevalence only)",
+        "GeneReviews MH susceptibility chapter blocked",
+        "Ibarra Moreno 2019 Introduction says CACNA1S+STAC3 account for <1% of MH cases (paraphrased by fetch tool, not verbatim)"
+      ],
+      "status": "draft",
+      "p3_use": "hold",
+      "p3_first": true,
+      "p3_note": "no figure found"
+    },
+    {
+      "gene": "GLA",
+      "outcome": "a history of cardiovascular disease (assessed around ages 40-70)",
+      "age": null,
+      "complement": "XY",
+      "variant_class": "Fabry disease-causing GLA variants, mostly late-onset (hemizygous)",
+      "missense_note": "classic vs late-onset variants differ greatly; only one classic carrier in cohort",
+      "baseline": {
+        "value": 20,
+        "range": null,
+        "ci": null,
+        "source": {
+          "citation": "Gilchrist M et al. J Med Genet 2023;60(4):391-6",
+          "where": "Results, Clinical characteristics; Table 2",
+          "cohort": "UK Biobank, 200,643 exomes",
+          "year": 2023,
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10086508/"
+        },
+        "quote": "40% of men had a history of cardiovascular disease compared with 20% for the overall biobank cohort"
+      },
+      "with_variant": {
+        "value": 40,
+        "range": null,
+        "ci": null,
+        "source": {
+          "citation": "Gilchrist M et al. J Med Genet 2023;60(4):391-6",
+          "where": "Table 2: 6 (40)",
+          "cohort": "UK Biobank, 15 XY carriers",
+          "year": 2023,
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10086508/"
+        },
+        "quote": "40% of men had a history of cardiovascular disease compared with 20% for the overall biobank cohort"
+      },
+      "ascertainment": "population",
+      "flags": [
+        "not a cumulative-by-age figure (prevalence at assessment, mean carrier age 54.8)",
+        "n=15, p=0.099 (not significant)",
+        "CVD broadly defined, not Fabry-specific",
+        "only 3/36 carriers had a Fabry diagnosis",
+        "classic Fabry in XY is near-fully penetrant per registry data (not sourced here)",
+        "GeneReviews Fabry blocked"
+      ],
+      "status": "draft",
+      "p3_use": "hold",
+      "p3_first": true,
+      "p3_note": "not significant, tiny n, broad outcome"
+    },
+    {
+      "gene": "GLA",
+      "outcome": "a history of cardiovascular disease (assessed around ages 40-70)",
+      "age": null,
+      "complement": "XX",
+      "variant_class": "Fabry disease-causing GLA variants, mostly late-onset (heterozygous)",
+      "missense_note": "",
+      "baseline": {
+        "value": 10,
+        "range": null,
+        "ci": null,
+        "source": {
+          "citation": "Gilchrist M et al. J Med Genet 2023;60(4):391-6",
+          "where": "Results; Table 2",
+          "cohort": "UK Biobank",
+          "year": 2023,
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10086508/"
+        },
+        "quote": "19% of women had a history of cardiovascular disease compared with 10% for the overall biobank cohort"
+      },
+      "with_variant": {
+        "value": 19,
+        "range": null,
+        "ci": null,
+        "source": {
+          "citation": "Gilchrist M et al. J Med Genet 2023;60(4):391-6",
+          "where": "Table 2: 4 (19)",
+          "cohort": "UK Biobank, 21 XX carriers",
+          "year": 2023,
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10086508/"
+        },
+        "quote": "19% of women had a history of cardiovascular disease compared with 10% for the overall biobank cohort"
+      },
+      "ascertainment": "population",
+      "flags": [
+        "not a cumulative-by-age figure",
+        "n=21, p=0.27 (not significant)",
+        "CVD broadly defined"
+      ],
+      "status": "draft",
+      "p3_use": "hold",
+      "p3_first": true,
+      "p3_note": "not significant, tiny n, broad outcome"
+    },
+    {
+      "gene": "OTC",
+      "outcome": "clinically affected by urea cycle disorder (high ammonia episodes or chronic symptoms), not by a stated age",
+      "age": null,
+      "complement": "XX",
+      "variant_class": "pathogenic OTC variants, heterozygous",
+      "missense_note": "serious disease in 32% of females with a severe variant vs 4% with a mild variant",
+      "baseline": {
+        "value": null,
+        "range": null,
+        "ci": null,
+        "source": {
+          "citation": "",
+          "where": "",
+          "cohort": "",
+          "year": null,
+          "url": ""
+        },
+        "quote": ""
+      },
+      "with_variant": {
+        "value": 22,
+        "range": null,
+        "ci": null,
+        "source": {
+          "citation": "Gobin-Limballe S et al. J Inherit Metab Dis 2021;44(5):1235-47. PMID 34014569",
+          "where": "Abstract",
+          "cohort": "130 French families, 289 heterozygous females",
+          "year": 2021,
+          "url": "https://europepmc.org/abstract/MED/34014569"
+        },
+        "quote": "Twenty two percent of the heterozygous females were clinically affected, with episodic (11%), chronic (7.5%), or neonatal forms of the disease (3.5%). Overall mortality rate was 4%."
+      },
+      "ascertainment": "clinic/family",
+      "flags": [
+        "not a cumulative-by-age figure",
+        "abstract only",
+        "family-ascertained",
+        "baseline effectively ~0 (rare disease) but not sourced",
+        "older estimate ~15% lifetime symptomatic seen only in search snippet"
+      ],
+      "status": "draft",
+      "p3_use": "hold",
+      "p3_first": true,
+      "p3_note": "not by an age; no baseline"
+    },
+    {
+      "gene": "OTC",
+      "outcome": "urea cycle disorder (OTC deficiency)",
+      "age": null,
+      "complement": "XY",
+      "variant_class": "pathogenic OTC variants, hemizygous",
+      "missense_note": "severity depends on residual enzyme activity (null variants neonatal-onset, milder variants late-onset)",
+      "baseline": {
+        "value": null,
+        "range": null,
+        "ci": null,
+        "source": {
+          "citation": "",
+          "where": "",
+          "cohort": "",
+          "year": null,
+          "url": ""
+        },
+        "quote": ""
+      },
+      "with_variant": {
+        "value": null,
+        "range": null,
+        "ci": null,
+        "source": {
+          "citation": "",
+          "where": "",
+          "cohort": "",
+          "year": null,
+          "url": ""
+        },
+        "quote": ""
+      },
+      "ascertainment": "clinic/family",
+      "flags": [
+        "could not source: GeneReviews OTC deficiency chapter blocked by NCBI Bookshelf bot check; Europe PMC search found no hemizygous penetrance figure",
+        "not a cumulative-by-age figure"
+      ],
+      "status": "draft",
+      "p3_use": "hold",
+      "p3_first": true,
+      "p3_note": "no figure found"
+    }
+  ],
+  "match": "codons: [first, last] protein positions a record applies to, read from the variant's HGVS p.; missense: the record applies to missense changes only. A record without codons applies to any variant; one with codons wins over it where both fit."
+}

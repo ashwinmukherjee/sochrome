@@ -1,0 +1,13 @@
+node_modules/
+dist/
+.wrangler/
+.env
+.env.*
+!.env.example
+# Commercial typefaces: never committed (THIRD_PARTY.md).
+fonts/
+# The data bundle is built from upstream packs, never committed (README: Data).
+public/data
+shots/
+*.log
+.DS_Store

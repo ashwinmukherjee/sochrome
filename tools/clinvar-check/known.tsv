@@ -1,0 +1,7 @@
+# Known problems, left open on purpose (2026-11-18): each is a judgment call, or a fix in a file
+# another task owns. `npm run clinvar-check -- --known` passes when every problem matches a row here;
+# without --known the check fails on all of them. Remove a row once it's settled.
+# kind	sub (regular expression)	why it's open	who
+wrong claim	^n-labs:	ClinVar's conflict counts are submissions, not labs: "Of five labs" for a variant two labs submitted. Wording is a judgment	owner
+wrong claim	^unseen:	a deletion anchored outside CDS +-8 that reaches into it: the gnomAD pack never held it, so "hasn't been seen" overstates. Rebuild: pack gnomAD by the changed span	rebuild
+overflow	^P1 portrait--substitution-contacts contacts:	"It sits on the surface, where {partners} binds": a long UniProt partner name	owner

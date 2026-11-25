@@ -1,0 +1,126 @@
+{
+  "C1": {
+    "kind": "e2e",
+    "ref": "E2: captions' text and counts, CARRIERS hidden at 0 and with nothing found, the chosen caption after the swap"
+  },
+  "C2": {
+    "kind": "review",
+    "ref": "shots/review/c/list-yours-1440.png"
+  },
+  "C3": {
+    "kind": "e2e",
+    "ref": "E2: the current row's square filled, the text does not move on select"
+  },
+  "C4": {
+    "kind": "e2e",
+    "ref": "E2: row pitch 42 between every pair of rows in the clear"
+  },
+  "C5": {
+    "kind": "e2e",
+    "ref": "E2: caption baseline to first row baseline 56 at 1440"
+  },
+  "C6": {
+    "kind": "review",
+    "ref": "shots/review/c/list-yours-1440.png"
+  },
+  "C7": {
+    "kind": "e2e",
+    "ref": "E2: no scrollbar (offsetWidth equals clientWidth); rows whole in the scrollport"
+  },
+  "C8": {
+    "kind": "e2e",
+    "ref": "E2: +N more counts the rows below; each page starts at the last row seen; Back to top at the end returns to row 0"
+  },
+  "C9": {
+    "kind": "e2e",
+    "ref": "E2: 24 px or more between the list (with +N more) and its sentence, both lists"
+  },
+  "C10": {
+    "kind": "e2e",
+    "ref": "E2: sentence 48 px off the foot; with nothing found, on the first line"
+  },
+  "C11": {
+    "kind": "e2e",
+    "ref": "E2: the three sentences equal the SPEC wordings, the gene count from the result"
+  },
+  "C12": {
+    "kind": "unit",
+    "ref": "src/app/list/order.test.ts"
+  },
+  "C13": {
+    "kind": "review",
+    "ref": "shots/review/c/list-yours-1440.png"
+  },
+  "C14": {
+    "kind": "e2e",
+    "ref": "E2: after 1.8 s the first row is cued with its arrow nudging, its tick still; gone once a room opens"
+  },
+  "C15": {
+    "kind": "e2e",
+    "ref": "E2: a second click on the open row closes it"
+  },
+  "C16": {
+    "kind": "e2e",
+    "ref": "E2: a row's hover sets linking on the list and the ledger, with hot ticks"
+  },
+  "C17": {
+    "kind": "review",
+    "ref": "shots/review/c/list-cue-1440.png"
+  },
+  "C18": {
+    "kind": "review",
+    "ref": "shots/review/c/genes-results-1440.png"
+  },
+  "C19": {
+    "kind": "review",
+    "ref": "shots/review/c/list-yours-1440.png"
+  },
+  "C20": {
+    "kind": "review",
+    "ref": "shots/review/c/list-yours-1440.png"
+  },
+  "C22": {
+    "kind": "review",
+    "ref": "shots/review/c/list-yours-1440.png"
+  },
+  "P1": {
+    "kind": "e2e",
+    "ref": "E2: GENES CHECKED (n) from the gene list, A-Z, +N more, Esc closes"
+  },
+  "P2": {
+    "kind": "e2e",
+    "ref": "E2: gene pitch 28, whole rows, +N more counts the rest, a page down starts at the last row seen"
+  },
+  "P3": {
+    "kind": "e2e",
+    "ref": "E2: BACK 48 px off the foot"
+  },
+  "P4": {
+    "kind": "review",
+    "ref": "shots/review/c/genes-reference-1440.png"
+  },
+  "P5": {
+    "kind": "review",
+    "ref": "shots/review/c/genes-reference-1440.png"
+  },
+  "P6": {
+    "kind": "review",
+    "ref": "shots/review/c/genes-results-1440.png"
+  },
+  "P8": {
+    "kind": "review",
+    "ref": "shots/review/c/genes-results-1440.png"
+  },
+  "P9": {
+    "kind": "review",
+    "ref": "shots/review/c/genes-reference-390.png"
+  },
+  "I1": {
+    "kind": "e2e",
+    "ref": "E2: a tick's hover lights its rows and brings the first into the clear"
+  },
+  "I2": {
+    "kind": "review",
+    "ref": "shots/review/c/list-linked-1440.png"
+  }
+}

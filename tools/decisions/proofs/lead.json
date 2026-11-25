@@ -1,0 +1,102 @@
+{
+  "T1": {
+    "kind": "token",
+    "ref": "src/styles/tokens.css: --ease: cubic-bezier(0.45, 0, 0.15, 1) | --t-fade: 1200ms | --t-move: 1400ms | --t-beat: 600ms | --t-release: 400ms"
+  },
+  "T2": {
+    "kind": "token",
+    "ref": "src/styles/tokens.css: --an-fade: 320ms"
+  },
+  "T3": {
+    "kind": "token",
+    "ref": "src/styles/tokens.css: --an-draw: 400ms | --an-hold: 500ms | --an-read: 1200ms | --an-say: 1120ms | --an-move: 260ms | --an-wave: 45ms | --an-land: 120ms | --an-dolly: 700ms"
+  },
+  "T4": {
+    "kind": "token",
+    "ref": "src/styles/tokens.css: --t-hover: 150ms | --t-press: 120ms"
+  },
+  "K2": {
+    "kind": "token",
+    "ref": "src/styles/tokens.css: --ink: var(--v-text) | --ink-dim: var(--v-text-2) | --ink-bar: var(--v-text-2)"
+  },
+  "K5": {
+    "kind": "token",
+    "ref": "src/styles/tokens.css: --t-1: 11px | --lh-1: 16px | --t-2: 13px | --lh-2: 17px | --t-3: 16px | --lh-3: 22px | --t-4: 20px | --lh-4: 26px | --t-5: 24px | --lh-5: 32px"
+  },
+  "K6": {
+    "kind": "token",
+    "ref": "src/styles/type.css: font-size: var(--caption-size) | letter-spacing: var(--caption-track) | text-transform: uppercase | color: var(--ink-dim)"
+  },
+  "K7": {
+    "kind": "token",
+    "ref": "src/styles/tokens.css: --sp-1: 8px | --sp-2: 16px | --sp-3: 24px | --sp-4: 32px | --sp-5: 48px | --sp-6: 64px | --sp-7: 96px | --sp-8: 128px | --sp-9: 192px | --s4: 4px"
+  },
+  "X4": {
+    "kind": "token",
+    "ref": "src/ledger/ledger.css: fill: var(--v-lit)"
+  },
+  "X13": {
+    "kind": "e2e",
+    "ref": "E7 p3 array"
+  },
+  "X14": {
+    "kind": "e2e",
+    "ref": "P1 (on a real file, NEXT VARIANT from room i of each list stands at room i + 1)"
+  },
+  "X15": {
+    "kind": "token",
+    "ref": "src/app/room/Room.tsx: <Arrow />"
+  },
+  "X18": {
+    "kind": "token",
+    "ref": "src/styles/tokens.css: --stage-h-p3: 424px"
+  },
+  "T5": {
+    "kind": "token",
+    "ref": "src/styles/tokens.css: --t-cue: 1700ms"
+  },
+  "T6": {
+    "kind": "e2e",
+    "ref": "A1: reduced motion: nothing still moving 3 s after arriving on the list, a room or the descent"
+  },
+  "T10": {
+    "kind": "token",
+    "ref": "src/styles/tokens.css: --t-release: 400ms | --t-fade: 1200ms | --t-cue-after: 1800ms"
+  },
+  "K1": {
+    "kind": "token",
+    "ref": "src/styles/tokens.css: --v-paper: #ECEEEF | --v-ground: #E0E2E5 | --v-rail: #D8DBDD | --v-unknown: #B9BCBE | --v-uncertain: #93979A | --v-observed: #44474B | --v-text: #35393D"
+  },
+  "K3": {
+    "kind": "review",
+    "ref": "shots/review/f/list-1440.png"
+  },
+  "K4": {
+    "kind": "review",
+    "ref": "shots/review/d/p1-fold-1440.png"
+  },
+  "K8": {
+    "kind": "token",
+    "ref": "src/styles/type.css: letter-spacing: 0.02em | font-variant-numeric: tabular-nums"
+  },
+  "K9": {
+    "kind": "token",
+    "ref": "src/styles/type.css: text-transform: uppercase"
+  },
+  "K10": {
+    "kind": "token",
+    "ref": "src/styles/tokens.css: --v-lit: #27574D | --v-fall: #A2C2BE"
+  },
+  "X2": {
+    "kind": "e2e",
+    "ref": "E1: the slow-reference case: the count and caption stand while REFERENCE DATA n% reads in NEXT's place"
+  },
+  "X5": {
+    "kind": "token",
+    "ref": "src/styles/tokens.css: --v-fall: #A2C2BE"
+  },
+  "X10": {
+    "kind": "review",
+    "ref": "shots/review/b/sex-row-1440.png"
+  }
+}

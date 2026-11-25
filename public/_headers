@@ -1,0 +1,41 @@
+# Copyright 2026 Ashwin Mukherjee
+# SPDX-License-Identifier: PolyForm-Noncommercial-1.0.0
+# Cloudflare Pages: the headers every response carries, then each folder's cache rule and type.
+# Every rule a path matches applies, and a header two rules set is joined with a comma: a pack's
+# Cache-Control is "no-cache, no-transform", so Cloudflare never re-compresses it.
+# tools/e2e/built.ts serves the build with this file, as Pages reads it.
+
+/*
+  Content-Security-Policy: default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; font-src 'self'; img-src 'self' data:; connect-src 'self'; worker-src 'self'; object-src 'none'; base-uri 'none'; form-action 'none'; frame-ancestors 'none'
+  Referrer-Policy: no-referrer
+  X-Content-Type-Options: nosniff
+  Cross-Origin-Opener-Policy: same-origin
+  Permissions-Policy: camera=(), microphone=(), geolocation=(), browsing-topics=()
+  Strict-Transport-Security: max-age=31536000; includeSubDomains
+
+/assets/*
+  Cache-Control: public, max-age=31536000, immutable
+
+/fonts/*
+  Cache-Control: public, max-age=31536000, immutable
+
+# The icon is fetched once and never asked for again in a session, so no request follows the person's steps.
+# Changing it means a new file name.
+/favicon.svg
+  Cache-Control: public, max-age=31536000, immutable
+
+/apple-touch-icon.png
+  Cache-Control: public, max-age=31536000, immutable
+
+/fonts/*.woff2
+  Content-Type: font/woff2
+
+/data/*
+  Cache-Control: no-cache
+
+/data/*.pack
+  Content-Type: application/octet-stream
+  Cache-Control: no-transform
+
+/data/*.json
+  Content-Type: application/json

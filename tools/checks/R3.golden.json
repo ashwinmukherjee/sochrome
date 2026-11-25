@@ -1,0 +1,5777 @@
+{
+  "cell codon--anchor": {
+    "ids": [
+      "block:c1",
+      "block:c10",
+      "block:c11",
+      "block:c12",
+      "block:c2",
+      "block:c3",
+      "block:c4",
+      "block:c5",
+      "block:c6",
+      "block:c7",
+      "block:c8",
+      "block:c9",
+      "rule:rule",
+      "tick:tick-c1",
+      "tick:tick-c10",
+      "tick:tick-c11",
+      "tick:tick-c12",
+      "tick:tick-c2",
+      "tick:tick-c3",
+      "tick:tick-c4",
+      "tick:tick-c5",
+      "tick:tick-c6",
+      "tick:tick-c7",
+      "tick:tick-c8",
+      "tick:tick-c9",
+      "tick:tick-end"
+    ],
+    "beats": {
+      "establish": {
+        "rest": "0-25",
+        "mid": "0-25"
+      }
+    }
+  },
+  "cell codon--frameshift-del": {
+    "ids": [
+      "block:b23-1",
+      "block:b24-1",
+      "block:b24-2",
+      "block:b24-3",
+      "block:b25-1",
+      "block:b25-2",
+      "block:b38-1",
+      "block:b38-2",
+      "block:b38-3",
+      "block:b39-1",
+      "block:b39-2",
+      "block:b39-3",
+      "block:b40-1",
+      "block:b40-2",
+      "block:b40-3",
+      "block:b40-3~was",
+      "block:b41-1",
+      "block:b41-1~was",
+      "block:b41-2",
+      "block:b41-2~was",
+      "block:c19",
+      "block:c20",
+      "block:c21",
+      "block:c22",
+      "block:c23-cut",
+      "label:break-b25",
+      "rule:rule",
+      "tick:tick-b25",
+      "tick:tick-c19",
+      "tick:tick-c20",
+      "tick:tick-c21",
+      "tick:tick-c22",
+      "tick:tick-c23",
+      "tick:tick-c24",
+      "tick:tick-c38",
+      "tick:tick-c39",
+      "tick:tick-c40",
+      "tick:tick-end"
+    ],
+    "beats": {
+      "establish": {
+        "rest": "0-14,16,18,20-37",
+        "mid": "0-14,16,18,20-37"
+      },
+      "delete": {
+        "rest": "0-14,16,18,20-23,25-37",
+        "mid": "0-14,16,18,20-23,25-37"
+      },
+      "regroup": {
+        "rest": "0-14,16,18,20-23,25-37",
+        "mid": "0-14,16,18,20-23,25-37"
+      },
+      "misread": {
+        "rest": "0-14,16,18,20-23,25-37",
+        "mid": "0-14,16,18,20-23,25-37"
+      },
+      "reveal-stop": {
+        "rest": "0-14,16,18,20-23,25-37",
+        "mid": "0-14,16,18,20-23,25-37"
+      },
+      "settle": {
+        "rest": "0-14,16,18,20-23,25-37",
+        "mid": "0-23,25-37"
+      }
+    }
+  },
+  "cell codon--frameshift-ins": {
+    "ids": [
+      "block:b1756-1",
+      "block:b1756-2",
+      "block:b1756-3",
+      "block:b1757-1",
+      "block:b1757-2",
+      "block:b1757-3",
+      "block:b1827-3",
+      "block:b1828-1",
+      "block:b1828-2",
+      "block:b1828-3",
+      "block:b1829-1",
+      "block:b1829-2",
+      "block:b1829-3",
+      "block:b1829-3~was",
+      "block:b1830-1",
+      "block:b1830-1~was",
+      "block:b1830-2",
+      "block:b1830-2~was",
+      "block:b1830-3",
+      "block:b1830-3~was",
+      "block:c1752",
+      "block:c1753",
+      "block:c1754",
+      "block:c1755",
+      "block:intrusion-1756-1",
+      "label:break-b1758",
+      "rule:rule",
+      "tick:tick-b1758",
+      "tick:tick-c1752",
+      "tick:tick-c1753",
+      "tick:tick-c1754",
+      "tick:tick-c1755",
+      "tick:tick-c1756",
+      "tick:tick-c1757",
+      "tick:tick-c1828",
+      "tick:tick-c1829",
+      "tick:tick-c1830",
+      "tick:tick-end"
+    ],
+    "beats": {
+      "establish": {
+        "rest": "0-12,14,16,18,20-23,25-37",
+        "mid": "0-12,14,16,18,20-23,25-37"
+      },
+      "intrude": {
+        "rest": "0-12,14,16,18,20-37",
+        "mid": "0-12,14,16,18,20-37"
+      },
+      "regroup": {
+        "rest": "0-12,14,16,18,20-37",
+        "mid": "0-12,14,16,18,20-37"
+      },
+      "misread": {
+        "rest": "0-12,14,16,18,20-37",
+        "mid": "0-12,14,16,18,20-37"
+      },
+      "reveal-stop": {
+        "rest": "0-12,14,16,18,20-37",
+        "mid": "0-12,14,16,18,20-37"
+      },
+      "settle": {
+        "rest": "0-12,14,16,18,20-37",
+        "mid": "0-37"
+      }
+    }
+  },
+  "cell codon--nonsense": {
+    "ids": [
+      "block:c3317",
+      "block:c3318",
+      "block:c3319",
+      "block:c3320",
+      "block:c3321",
+      "block:c3322",
+      "block:c3323",
+      "block:c3324",
+      "block:c3325",
+      "block:c3326",
+      "block:c3327",
+      "block:c3327~was",
+      "rule:rule",
+      "tick:tick-c3317",
+      "tick:tick-c3318",
+      "tick:tick-c3319",
+      "tick:tick-c3320",
+      "tick:tick-c3321",
+      "tick:tick-c3322",
+      "tick:tick-c3323",
+      "tick:tick-c3324",
+      "tick:tick-c3325",
+      "tick:tick-c3326",
+      "tick:tick-c3327",
+      "tick:tick-end"
+    ],
+    "beats": {
+      "establish": {
+        "rest": "0-10,12-24",
+        "mid": "0-10,12-24"
+      },
+      "swap-cell": {
+        "rest": "0-10,12-24",
+        "mid": "0-10,12-24"
+      },
+      "flip-stop": {
+        "rest": "0-10,12-24",
+        "mid": "0-10,12-24"
+      },
+      "settle": {
+        "rest": "0-10,12-24",
+        "mid": "0-24"
+      }
+    }
+  },
+  "cell codon--in-frame-del": {
+    "ids": [
+      "block:c503",
+      "block:c504",
+      "block:c505",
+      "block:c506",
+      "block:c507",
+      "block:c508",
+      "block:c509",
+      "block:c510",
+      "block:c511",
+      "block:c512",
+      "block:c513",
+      "block:c514",
+      "rule:rule",
+      "seam:seam-del",
+      "tick:tick-c503",
+      "tick:tick-c504",
+      "tick:tick-c505",
+      "tick:tick-c506",
+      "tick:tick-c507",
+      "tick:tick-c508",
+      "tick:tick-c509",
+      "tick:tick-c510",
+      "tick:tick-c511",
+      "tick:tick-c512",
+      "tick:tick-c513",
+      "tick:tick-end"
+    ],
+    "beats": {
+      "establish": {
+        "rest": "0-12,14-25",
+        "mid": "0-12,14-25"
+      },
+      "delete": {
+        "rest": "0-4,6-12,14-25",
+        "mid": "0-4,6-12,14-25"
+      },
+      "reflow": {
+        "rest": "0-4,6-25",
+        "mid": "0-4,6-25"
+      },
+      "settle": {
+        "rest": "0-4,6-25",
+        "mid": "0-4,6-25"
+      }
+    }
+  },
+  "cell codon--in-frame-ins": {
+    "ids": [
+      "block:c134",
+      "block:c135",
+      "block:c136",
+      "block:c137",
+      "block:c138",
+      "block:c139",
+      "block:c140",
+      "block:c141",
+      "block:c142",
+      "block:c143",
+      "block:c144",
+      "block:intrusion",
+      "rule:rule",
+      "tick:tick-c134",
+      "tick:tick-c135",
+      "tick:tick-c136",
+      "tick:tick-c137",
+      "tick:tick-c138",
+      "tick:tick-c139",
+      "tick:tick-c140",
+      "tick:tick-c141",
+      "tick:tick-c142",
+      "tick:tick-c143",
+      "tick:tick-c144",
+      "tick:tick-end"
+    ],
+    "beats": {
+      "establish": {
+        "rest": "0-10,12-24",
+        "mid": "0-10,12-24"
+      },
+      "admit": {
+        "rest": "0-24",
+        "mid": "0-24"
+      },
+      "reflow": {
+        "rest": "0-24",
+        "mid": "0-24"
+      },
+      "settle": {
+        "rest": "0-24",
+        "mid": "0-24"
+      }
+    }
+  },
+  "cell codon--silent": {
+    "ids": [
+      "block:c1431",
+      "block:c1432",
+      "block:c1433",
+      "block:c1434",
+      "block:c1435",
+      "block:c1436",
+      "block:c1437",
+      "block:c1438",
+      "block:c1439",
+      "block:c1440",
+      "block:c1441",
+      "rule:rule",
+      "tick:tick-c1431",
+      "tick:tick-c1432",
+      "tick:tick-c1433",
+      "tick:tick-c1434",
+      "tick:tick-c1435",
+      "tick:tick-c1436",
+      "tick:tick-c1437",
+      "tick:tick-c1438",
+      "tick:tick-c1439",
+      "tick:tick-c1440",
+      "tick:tick-c1441",
+      "tick:tick-end"
+    ],
+    "beats": {
+      "establish": {
+        "rest": "0-23",
+        "mid": "0-23"
+      },
+      "swap-cell": {
+        "rest": "0-23",
+        "mid": "0-23"
+      },
+      "settle": {
+        "rest": "0-23",
+        "mid": "0-23"
+      }
+    }
+  },
+  "cell codon--stop-loss": {
+    "ids": [
+      "block:c1182",
+      "block:c1183",
+      "block:c1184",
+      "block:c1185",
+      "block:c1186",
+      "block:c1187",
+      "block:c1188",
+      "block:c1189",
+      "block:c1190",
+      "block:c1191",
+      "block:c1192",
+      "block:c1193",
+      "rule:rule",
+      "tick:tick-c1182",
+      "tick:tick-c1183",
+      "tick:tick-c1184",
+      "tick:tick-c1185",
+      "tick:tick-c1186",
+      "tick:tick-c1187",
+      "tick:tick-c1188",
+      "tick:tick-c1189",
+      "tick:tick-c1190",
+      "tick:tick-c1191",
+      "tick:tick-c1192",
+      "tick:tick-c1193",
+      "tick:tick-end"
+    ],
+    "beats": {
+      "establish": {
+        "rest": "0-25",
+        "mid": "0-25"
+      },
+      "dissolve-stop": {
+        "rest": "0-25",
+        "mid": "0-25"
+      },
+      "read-past": {
+        "rest": "0-25",
+        "mid": "0-25"
+      },
+      "reveal-stop": {
+        "rest": "0-25",
+        "mid": "0-25"
+      },
+      "settle": {
+        "rest": "0-25",
+        "mid": "0-25"
+      }
+    }
+  },
+  "cell transcript--establishing": {
+    "ids": [
+      "block:ex10",
+      "block:ex11",
+      "block:ex12",
+      "block:ex13",
+      "block:ex14",
+      "block:ex15",
+      "block:ex16",
+      "block:ex17",
+      "block:ex18",
+      "block:ex19",
+      "block:ex2",
+      "block:ex20",
+      "block:ex21",
+      "block:ex22",
+      "block:ex23",
+      "block:ex3",
+      "block:ex4",
+      "block:ex5",
+      "block:ex6",
+      "block:ex7",
+      "block:ex8",
+      "block:ex9",
+      "rule:rule",
+      "seam:seam-ex10-ex11",
+      "seam:seam-ex11-ex12",
+      "seam:seam-ex12-ex13",
+      "seam:seam-ex13-ex14",
+      "seam:seam-ex14-ex15",
+      "seam:seam-ex15-ex16",
+      "seam:seam-ex16-ex17",
+      "seam:seam-ex17-ex18",
+      "seam:seam-ex18-ex19",
+      "seam:seam-ex19-ex20",
+      "seam:seam-ex2-ex3",
+      "seam:seam-ex20-ex21",
+      "seam:seam-ex21-ex22",
+      "seam:seam-ex22-ex23",
+      "seam:seam-ex3-ex4",
+      "seam:seam-ex4-ex5",
+      "seam:seam-ex5-ex6",
+      "seam:seam-ex6-ex7",
+      "seam:seam-ex7-ex8",
+      "seam:seam-ex8-ex9",
+      "seam:seam-ex9-ex10",
+      "tick:tick-0",
+      "tick:tick-134",
+      "tick:tick-212",
+      "tick:tick-301",
+      "tick:tick-4096",
+      "tick:tick-4185",
+      "tick:tick-4357",
+      "tick:tick-441",
+      "tick:tick-4484",
+      "tick:tick-4675",
+      "tick:tick-4986",
+      "tick:tick-5074",
+      "tick:tick-5152",
+      "tick:tick-5193",
+      "tick:tick-5277",
+      "tick:tick-5332",
+      "tick:tick-5406",
+      "tick:tick-5467",
+      "tick:tick-547",
+      "tick:tick-5592",
+      "tick:tick-593",
+      "tick:tick-670",
+      "tick:tick-80"
+    ],
+    "beats": {
+      "establish-full": {
+        "rest": "0-66",
+        "mid": "0-66"
+      }
+    }
+  },
+  "cell transcript--foreclosed-junction": {
+    "ids": [
+      "block:jx-e0",
+      "block:jx-e1",
+      "block:jx-e2",
+      "block:jx-e3",
+      "block:jx-e4",
+      "block:jx-e5",
+      "block:jx-e6",
+      "block:jx-i1",
+      "block:jx-i10",
+      "block:jx-i11",
+      "block:jx-i12",
+      "block:jx-i13",
+      "block:jx-i2",
+      "block:jx-i3",
+      "block:jx-i3~was",
+      "block:jx-i4",
+      "block:jx-i5",
+      "block:jx-i6",
+      "block:jx-i7",
+      "block:jx-i8",
+      "block:jx-i9",
+      "hair:jx-sig",
+      "hair:jx-sig-a",
+      "hair:jx-sig-z",
+      "rule:jx-rule",
+      "tick:jx-t0",
+      "tick:jx-t1",
+      "tick:jx-t2",
+      "tick:jx-t3",
+      "tick:jx-t4",
+      "tick:jx-t5",
+      "tick:jx-t6"
+    ],
+    "beats": {
+      "establish": {
+        "rest": "0-13,15-20,24-31",
+        "mid": "0-13,15-20,24-31"
+      },
+      "locate": {
+        "rest": "0-13,15-31",
+        "mid": "0-13,15-31"
+      },
+      "hold": {
+        "rest": "0-13,15-31",
+        "mid": "0-31"
+      }
+    }
+  },
+  "cell transcript--skip-frame-broken": {
+    "ids": [
+      "block:ex10",
+      "block:ex10-post",
+      "block:ex10-post~was",
+      "block:ex10-pre",
+      "block:ex5",
+      "block:ex6",
+      "block:ex7",
+      "block:ex8",
+      "block:ex9",
+      "rule:rule",
+      "seam:seam-ex5-ex6",
+      "seam:seam-ex6-ex7",
+      "seam:seam-ex7-ex8",
+      "seam:seam-ex8-ex9",
+      "seam:seam-ex9-ex10",
+      "seam:seam-join",
+      "sliver:stop",
+      "tick:tick-301",
+      "tick:tick-441",
+      "tick:tick-547",
+      "tick:tick-593",
+      "tick:tick-670"
+    ],
+    "beats": {
+      "establish": {
+        "rest": "0,4-14,17-21",
+        "mid": "0,4-14,17-21"
+      },
+      "break-seam": {
+        "rest": "0,4-14,17-21",
+        "mid": "0,4-14,17-21"
+      },
+      "hold": {
+        "rest": "0,4-14,17-21",
+        "mid": "0,4-14,17-21"
+      },
+      "skip-fade": {
+        "rest": "0,4-5,7-10,13-14,17-21",
+        "mid": "0,4-5,7-10,13-14,17-21"
+      },
+      "skip-close": {
+        "rest": "0,4-5,7-10,13-15,17-21",
+        "mid": "0,4-5,7-10,13-14,17-21"
+      },
+      "dwell": {
+        "rest": "0,4-5,7-10,13-15,17-21",
+        "mid": "0,4-5,7-10,13-15,17-21"
+      },
+      "regroup": {
+        "rest": "0,4-5,7-10,13-15,17-21",
+        "mid": "0,4-5,7-10,13-15,17-21"
+      },
+      "reveal-stop": {
+        "rest": "1,3-5,7-10,13-21",
+        "mid": "0,4-5,7-10,13-21"
+      },
+      "settle": {
+        "rest": "1,3-5,7-10,13-21",
+        "mid": "1-5,7-10,13-21"
+      }
+    }
+  },
+  "cell transcript--skip-frame-kept": {
+    "ids": [
+      "block:ex15",
+      "block:ex16",
+      "block:ex17",
+      "block:ex18",
+      "block:ex19",
+      "rule:rule",
+      "seam:seam-ex15-ex16",
+      "seam:seam-ex16-ex17",
+      "seam:seam-ex17-ex18",
+      "seam:seam-ex18-ex19",
+      "seam:seam-join",
+      "tick:tick-4986",
+      "tick:tick-5074",
+      "tick:tick-5152",
+      "tick:tick-5193"
+    ],
+    "beats": {
+      "establish": {
+        "rest": "0-9,11-14",
+        "mid": "0-9,11-14"
+      },
+      "break-seam": {
+        "rest": "0-9,11-14",
+        "mid": "0-9,11-14"
+      },
+      "hold": {
+        "rest": "0-9,11-14",
+        "mid": "0-9,11-14"
+      },
+      "skip-fade": {
+        "rest": "0-1,3-6,9,11-14",
+        "mid": "0-1,3-6,9,11-14"
+      },
+      "skip-close": {
+        "rest": "0-1,3-6,9-14",
+        "mid": "0-1,3-6,9,11-14"
+      },
+      "settle": {
+        "rest": "0-1,3-6,9-14",
+        "mid": "0-1,3-6,9-14"
+      }
+    }
+  },
+  "cell transcript--retain": {
+    "ids": [
+      "block:admitted",
+      "block:ex4",
+      "block:ex5",
+      "block:ex6",
+      "block:ex7",
+      "block:ex7-post",
+      "block:ex7-post~was",
+      "block:ex7-pre",
+      "block:ex8",
+      "block:ex8~was",
+      "block:ex9",
+      "block:ex9~was",
+      "rule:rule",
+      "seam:seam-ex4-ex5",
+      "seam:seam-ex5-ex6",
+      "seam:seam-ex7-ex8",
+      "seam:seam-ex7-ex8~was",
+      "seam:seam-ex8-ex9",
+      "seam:seam-ex8-ex9~was",
+      "seam:seam-hi",
+      "seam:seam-lo",
+      "sliver:stop",
+      "tick:tick-212",
+      "tick:tick-301",
+      "tick:tick-441",
+      "tick:tick-547",
+      "tick:tick-593"
+    ],
+    "beats": {
+      "establish": {
+        "rest": "0-4,8,10,12-15,17,20,22-26",
+        "mid": "0-4,8,10,12-15,17,20,22-26"
+      },
+      "seam-fails": {
+        "rest": "0-4,8,10,12-15,17,20,22-26",
+        "mid": "0-4,8,10,12-15,17,20,22-26"
+      },
+      "hold": {
+        "rest": "0-4,8,10,12-15,17,20,22-26",
+        "mid": "0-4,8,10,12-15,17,20,22-26"
+      },
+      "admit-intron": {
+        "rest": "0-4,8,10,12-15,17,19-20,22-26",
+        "mid": "0-4,8,10,12-15,17,20,22-26"
+      },
+      "regroup": {
+        "rest": "0-4,8,10,12-15,17,19-20,22-26",
+        "mid": "0-4,8,10,12-15,17,19-20,22-26"
+      },
+      "reveal-stop": {
+        "rest": "0-3,5,7-8,10,12-15,17,19-26",
+        "mid": "0-4,8,10,12-15,17,19-26"
+      },
+      "settle": {
+        "rest": "0-3,5,7-8,10,12-15,17,19-26",
+        "mid": "0-3,5-26"
+      }
+    }
+  },
+  "cell transcript--deep-intronic": {
+    "ids": [
+      "block:admitted",
+      "block:admitted-post",
+      "block:admitted-post~was",
+      "block:admitted-pre",
+      "block:ex10",
+      "block:ex11",
+      "block:ex12",
+      "block:ex12~was",
+      "block:ex13",
+      "block:ex13~was",
+      "block:ex14",
+      "block:ex14~was",
+      "hair:intron-hair",
+      "rule:rule",
+      "seam:seam-ex10-ex11",
+      "seam:seam-ex11-ex12",
+      "seam:seam-ex12-ex13",
+      "seam:seam-ex12-ex13~was",
+      "seam:seam-ex13-ex14",
+      "seam:seam-ex13-ex14~was",
+      "seam:seam-hi",
+      "seam:seam-hi~was",
+      "seam:seam-lo",
+      "sliver:stop",
+      "tick:tick-4096",
+      "tick:tick-4185",
+      "tick:tick-4357",
+      "tick:tick-4484"
+    ],
+    "beats": {
+      "establish": {
+        "rest": "4-6,8,10,12-16,18,24-27",
+        "mid": "4-6,8,10,12-16,18,24-27"
+      },
+      "reveal": {
+        "rest": "4-6,8,10,12-14,16,18,24-27",
+        "mid": "4-6,8,10,12-14,16,18,24-27"
+      },
+      "hold": {
+        "rest": "4-6,8,10,12-14,16,18,24-27",
+        "mid": "4-6,8,10,12-14,16,18,24-27"
+      },
+      "mark-chunk": {
+        "rest": "0,4-6,8,10,12-14,16,18,20,22,24-27",
+        "mid": "0,4-6,8,10,12-14,16,18,20,22,24-27"
+      },
+      "splice-in": {
+        "rest": "0,4-6,8,10,13-14,16,18,20,22,24-27",
+        "mid": "0,4-6,8,10,13-14,16,18,20,22,24-27"
+      },
+      "reveal-stop": {
+        "rest": "1,3-6,8,10,13-14,16,18,20,22-27",
+        "mid": "0,4-6,8,10,13-14,16,18,20,22-27"
+      },
+      "settle": {
+        "rest": "1,3-6,8,10,13-14,16,18,20,22-27",
+        "mid": "1-11,13-14,16-27"
+      }
+    }
+  },
+  "cell transcript--double-agent": {
+    "ids": [
+      "bead:mark-address",
+      "block:ex10",
+      "block:ex11",
+      "block:ex12",
+      "block:ex13",
+      "block:ex14",
+      "rule:rule",
+      "seam:seam-ex10-ex11",
+      "seam:seam-ex11-ex12",
+      "seam:seam-ex12-ex13",
+      "seam:seam-ex13-ex14",
+      "tick:tick-4096",
+      "tick:tick-4185",
+      "tick:tick-4357",
+      "tick:tick-4484"
+    ],
+    "beats": {
+      "establish": {
+        "rest": "1-14",
+        "mid": "1-14"
+      },
+      "mark-both": {
+        "rest": "0-14",
+        "mid": "0-14"
+      },
+      "hold": {
+        "rest": "0-14",
+        "mid": "0-14"
+      }
+    }
+  },
+  "cell chain--local-failure": {
+    "ids": [
+      "bead:site",
+      "path:seg-1",
+      "path:seg-1077",
+      "path:seg-1086",
+      "path:seg-423",
+      "path:seg-427",
+      "path:seg-55",
+      "path:seg-853",
+      "path:seg-9"
+    ],
+    "beats": {
+      "establish": {
+        "rest": "0-8",
+        "mid": "0-8"
+      },
+      "locate": {
+        "rest": "0-8",
+        "mid": "0-8"
+      },
+      "dwell": {
+        "rest": "0-8",
+        "mid": "0-8"
+      },
+      "settle": {
+        "rest": "0-8",
+        "mid": "0-8"
+      }
+    }
+  },
+  "cell chain--loose-tails": {
+    "ids": [
+      "bead:site",
+      "path:seg-1",
+      "path:seg-20",
+      "path:seg-25",
+      "path:seg-292",
+      "path:seg-324",
+      "path:seg-355",
+      "path:seg-93"
+    ],
+    "beats": {
+      "establish": {
+        "rest": "0-7",
+        "mid": "0-7"
+      },
+      "locate": {
+        "rest": "0-7",
+        "mid": "0-7"
+      },
+      "dwell": {
+        "rest": "0-7",
+        "mid": "0-7"
+      },
+      "settle": {
+        "rest": "0-7",
+        "mid": "0-7"
+      }
+    }
+  },
+  "cell chain--solid-ground": {
+    "ids": [
+      "bead:site",
+      "path:seg-1",
+      "path:seg-1394",
+      "path:seg-1416",
+      "path:seg-1650",
+      "path:seg-98"
+    ],
+    "beats": {
+      "establish": {
+        "rest": "0-5",
+        "mid": "0-5"
+      },
+      "locate": {
+        "rest": "0-5",
+        "mid": "0-5"
+      },
+      "dwell": {
+        "rest": "0-5",
+        "mid": "0-5"
+      },
+      "settle": {
+        "rest": "0-5",
+        "mid": "0-5"
+      }
+    }
+  },
+  "cell portrait--anchor": {
+    "ids": [
+      "module:m41",
+      "module:m42",
+      "module:m43",
+      "module:m44",
+      "module:m45",
+      "module:m46",
+      "module:m47",
+      "module:m48",
+      "module:m49",
+      "module:m50",
+      "module:m51",
+      "module:m52",
+      "module:m53",
+      "module:m54",
+      "module:m55",
+      "module:m56",
+      "module:m57",
+      "module:m58",
+      "module:m59",
+      "module:m60",
+      "module:m61",
+      "module:m62",
+      "module:m63",
+      "module:m64",
+      "module:m65",
+      "module:m66",
+      "module:m67",
+      "module:m68",
+      "module:m69",
+      "module:m70",
+      "module:m71",
+      "module:m72",
+      "module:m73",
+      "module:m74",
+      "module:m75",
+      "module:m76",
+      "module:m77",
+      "module:m78",
+      "module:m79",
+      "module:m80",
+      "path:t42",
+      "path:t43",
+      "path:t44",
+      "path:t45",
+      "path:t46",
+      "path:t47",
+      "path:t48",
+      "path:t49",
+      "path:t50",
+      "path:t51",
+      "path:t52",
+      "path:t53",
+      "path:t54",
+      "path:t55",
+      "path:t56",
+      "path:t57",
+      "path:t58",
+      "path:t59",
+      "path:t60",
+      "path:t61",
+      "path:t62",
+      "path:t63",
+      "path:t64",
+      "path:t65",
+      "path:t66",
+      "path:t67",
+      "path:t68",
+      "path:t69",
+      "path:t70",
+      "path:t71",
+      "path:t72",
+      "path:t73",
+      "path:t74",
+      "path:t75",
+      "path:t76",
+      "path:t77",
+      "path:t78",
+      "path:t79",
+      "path:t80"
+    ],
+    "beats": {
+      "establish": {
+        "rest": "0-78",
+        "mid": "0-78"
+      }
+    }
+  },
+  "cell portrait--substitution-contacts": {
+    "ids": [
+      "clearing:clearing",
+      "hair:c41",
+      "hair:c41-in",
+      "hair:c65",
+      "hair:c65-in",
+      "hair:c66",
+      "hair:c66-in",
+      "hair:c67",
+      "hair:c67-in",
+      "hair:c68",
+      "hair:c68-in",
+      "module:m41",
+      "module:m42",
+      "module:m43",
+      "module:m44",
+      "module:m45",
+      "module:m46",
+      "module:m47",
+      "module:m48",
+      "module:m49",
+      "module:m50",
+      "module:m51",
+      "module:m52",
+      "module:m53",
+      "module:m54",
+      "module:m55",
+      "module:m56",
+      "module:m57",
+      "module:m58",
+      "module:m59",
+      "module:m60",
+      "module:m61",
+      "module:m62",
+      "module:m63",
+      "module:m64",
+      "module:m65",
+      "module:m66",
+      "module:m67",
+      "module:m68",
+      "module:m69",
+      "module:m70",
+      "module:m71",
+      "module:m72",
+      "module:m73",
+      "module:m74",
+      "module:m75",
+      "module:m76",
+      "module:m77",
+      "module:m78",
+      "module:m79",
+      "module:m80",
+      "module:mark",
+      "path:t42",
+      "path:t43",
+      "path:t44",
+      "path:t45",
+      "path:t46",
+      "path:t47",
+      "path:t48",
+      "path:t49",
+      "path:t50",
+      "path:t51",
+      "path:t52",
+      "path:t53",
+      "path:t54",
+      "path:t55",
+      "path:t56",
+      "path:t57",
+      "path:t58",
+      "path:t59",
+      "path:t60",
+      "path:t61",
+      "path:t62",
+      "path:t63",
+      "path:t64",
+      "path:t65",
+      "path:t66",
+      "path:t67",
+      "path:t68",
+      "path:t69",
+      "path:t70",
+      "path:t71",
+      "path:t72",
+      "path:t73",
+      "path:t74",
+      "path:t75",
+      "path:t76",
+      "path:t77",
+      "path:t78",
+      "path:t79",
+      "path:t80"
+    ],
+    "beats": {
+      "establish": {
+        "rest": "0,11-50,52-90",
+        "mid": "0,11-50,52-90"
+      },
+      "locate": {
+        "rest": "0,11-50,52-90",
+        "mid": "0,11-50,52-90"
+      },
+      "substitute": {
+        "rest": "0,11-30,32-90",
+        "mid": "0,11-90"
+      },
+      "contacts": {
+        "rest": "0-30,32-90",
+        "mid": "0-30,32-90"
+      },
+      "settle": {
+        "rest": "0-30,32-90",
+        "mid": "0-30,32-90"
+      }
+    }
+  },
+  "cell portrait--sealed-removal": {
+    "ids": [
+      "clearing:clearing",
+      "module:m488",
+      "module:m489",
+      "module:m490",
+      "module:m491",
+      "module:m492",
+      "module:m493",
+      "module:m494",
+      "module:m495",
+      "module:m496",
+      "module:m497",
+      "module:m498",
+      "module:m499",
+      "module:m500",
+      "module:m501",
+      "module:m502",
+      "module:m503",
+      "module:m504",
+      "module:m505",
+      "module:m506",
+      "module:m507",
+      "module:m508",
+      "module:m509",
+      "module:m510",
+      "module:m511",
+      "module:m512",
+      "module:m513",
+      "module:m514",
+      "module:m515",
+      "module:m516",
+      "module:m517",
+      "module:m518",
+      "module:m519",
+      "module:m520",
+      "module:m521",
+      "module:m522",
+      "module:m523",
+      "module:m524",
+      "module:m525",
+      "module:m526",
+      "module:m527",
+      "module:mark",
+      "path:seal",
+      "path:t489",
+      "path:t490",
+      "path:t491",
+      "path:t492",
+      "path:t493",
+      "path:t494",
+      "path:t495",
+      "path:t496",
+      "path:t497",
+      "path:t498",
+      "path:t499",
+      "path:t500",
+      "path:t501",
+      "path:t502",
+      "path:t503",
+      "path:t504",
+      "path:t505",
+      "path:t506",
+      "path:t507",
+      "path:t508",
+      "path:t509",
+      "path:t510",
+      "path:t511",
+      "path:t512",
+      "path:t513",
+      "path:t514",
+      "path:t515",
+      "path:t516",
+      "path:t517",
+      "path:t518",
+      "path:t519",
+      "path:t520",
+      "path:t521",
+      "path:t522",
+      "path:t523",
+      "path:t524",
+      "path:t525",
+      "path:t526",
+      "path:t527"
+    ],
+    "beats": {
+      "establish": {
+        "rest": "0-40,43-81",
+        "mid": "0-40,43-81"
+      },
+      "locate": {
+        "rest": "0-40,43-81",
+        "mid": "0-40,43-81"
+      },
+      "identify": {
+        "rest": "0-20,22-41,43-81",
+        "mid": "0-41,43-81"
+      },
+      "dwell": {
+        "rest": "0-20,22-41,43-81",
+        "mid": "0-20,22-41,43-81"
+      },
+      "remove": {
+        "rest": "1-20,22-40,43-61,64-81",
+        "mid": "1-20,22-40,43-61,64-81"
+      },
+      "seal": {
+        "rest": "1-20,22-40,42-61,64-81",
+        "mid": "1-20,22-40,42-61,64-81"
+      },
+      "settle": {
+        "rest": "1-20,22-40,42-61,64-81",
+        "mid": "1-20,22-40,42-61,64-81"
+      }
+    }
+  },
+  "cell portrait--insertion-bulge": {
+    "ids": [
+      "module:ins",
+      "module:m118",
+      "module:m119",
+      "module:m120",
+      "module:m121",
+      "module:m122",
+      "module:m123",
+      "module:m124",
+      "module:m125",
+      "module:m126",
+      "module:m127",
+      "module:m128",
+      "module:m129",
+      "module:m130",
+      "module:m131",
+      "module:m132",
+      "module:m133",
+      "module:m134",
+      "module:m135",
+      "module:m136",
+      "module:m137",
+      "module:m138",
+      "module:m139",
+      "module:m140",
+      "module:m141",
+      "module:m142",
+      "module:m143",
+      "module:m144",
+      "module:m145",
+      "module:m146",
+      "module:m147",
+      "module:m148",
+      "module:m149",
+      "module:m150",
+      "module:m151",
+      "module:m152",
+      "module:m153",
+      "module:m154",
+      "module:m155",
+      "module:m156",
+      "module:m157",
+      "path:detour-back",
+      "path:detour-out",
+      "path:t119",
+      "path:t120",
+      "path:t121",
+      "path:t122",
+      "path:t123",
+      "path:t124",
+      "path:t125",
+      "path:t126",
+      "path:t127",
+      "path:t128",
+      "path:t129",
+      "path:t130",
+      "path:t131",
+      "path:t132",
+      "path:t133",
+      "path:t134",
+      "path:t135",
+      "path:t136",
+      "path:t137",
+      "path:t138",
+      "path:t139",
+      "path:t140",
+      "path:t141",
+      "path:t142",
+      "path:t143",
+      "path:t144",
+      "path:t145",
+      "path:t146",
+      "path:t147",
+      "path:t148",
+      "path:t149",
+      "path:t150",
+      "path:t151",
+      "path:t152",
+      "path:t153",
+      "path:t154",
+      "path:t155",
+      "path:t156",
+      "path:t157"
+    ],
+    "beats": {
+      "establish": {
+        "rest": "1-40,43-81",
+        "mid": "1-40,43-81"
+      },
+      "arrive": {
+        "rest": "0-40,43-81",
+        "mid": "0-40,43-81"
+      },
+      "unjoin": {
+        "rest": "0-40,43-62,64-81",
+        "mid": "0-40,43-62,64-81"
+      },
+      "detour": {
+        "rest": "0-40,42-62,64-81",
+        "mid": "0-40,42-62,64-81"
+      },
+      "return": {
+        "rest": "0-62,64-81",
+        "mid": "0-62,64-81"
+      },
+      "settle": {
+        "rest": "0-62,64-81",
+        "mid": "0-62,64-81"
+      }
+    }
+  },
+  "cell portrait--truncated": {
+    "ids": [
+      "bead:site",
+      "path:seg-1"
+    ],
+    "beats": {
+      "establish": {
+        "rest": "0-1",
+        "mid": "0-1"
+      },
+      "locate": {
+        "rest": "0-1",
+        "mid": "0-1"
+      },
+      "push-in": {
+        "rest": "0-1",
+        "mid": "0-1"
+      },
+      "settle": {
+        "rest": "0-1",
+        "mid": "0-1"
+      }
+    }
+  },
+  "cell portrait--stop-loss-extension": {
+    "ids": [
+      "clearing:clearing",
+      "module:m1147",
+      "module:m1148",
+      "module:m1149",
+      "module:m1150",
+      "module:m1151",
+      "module:m1152",
+      "module:m1153",
+      "module:m1154",
+      "module:m1155",
+      "module:m1156",
+      "module:m1157",
+      "module:m1158",
+      "module:m1159",
+      "module:m1160",
+      "module:m1161",
+      "module:m1162",
+      "module:m1163",
+      "module:m1164",
+      "module:m1165",
+      "module:m1166",
+      "module:m1167",
+      "module:m1168",
+      "module:m1169",
+      "module:m1170",
+      "module:m1171",
+      "module:m1172",
+      "module:m1173",
+      "module:m1174",
+      "module:m1175",
+      "module:m1176",
+      "module:m1177",
+      "module:m1178",
+      "module:m1179",
+      "module:m1180",
+      "module:m1181",
+      "module:m1182",
+      "module:m1183",
+      "module:m1184",
+      "module:m1185",
+      "module:m1186",
+      "module:mark",
+      "module:x1",
+      "module:x2",
+      "module:x3",
+      "module:x4",
+      "module:x5",
+      "path:t1148",
+      "path:t1149",
+      "path:t1150",
+      "path:t1151",
+      "path:t1152",
+      "path:t1153",
+      "path:t1154",
+      "path:t1155",
+      "path:t1156",
+      "path:t1157",
+      "path:t1158",
+      "path:t1159",
+      "path:t1160",
+      "path:t1161",
+      "path:t1162",
+      "path:t1163",
+      "path:t1164",
+      "path:t1165",
+      "path:t1166",
+      "path:t1167",
+      "path:t1168",
+      "path:t1169",
+      "path:t1170",
+      "path:t1171",
+      "path:t1172",
+      "path:t1173",
+      "path:t1174",
+      "path:t1175",
+      "path:t1176",
+      "path:t1177",
+      "path:t1178",
+      "path:t1179",
+      "path:t1180",
+      "path:t1181",
+      "path:t1182",
+      "path:t1183",
+      "path:t1184",
+      "path:t1185",
+      "path:t1186",
+      "path:x-t1",
+      "path:x-t2",
+      "path:x-t3",
+      "path:x-t4",
+      "path:x-t5"
+    ],
+    "beats": {
+      "establish": {
+        "rest": "1-40,47-85",
+        "mid": "1-40,47-85"
+      },
+      "locate": {
+        "rest": "0-40,47-85",
+        "mid": "0-40,47-85"
+      },
+      "identify": {
+        "rest": "0-39,41,47-85",
+        "mid": "0-41,47-85"
+      },
+      "extend": {
+        "rest": "0-39,41-90",
+        "mid": "0-39,41-90"
+      },
+      "settle": {
+        "rest": "0-39,41-90",
+        "mid": "0-39,41-90"
+      }
+    }
+  },
+  "cell portrait--registers": {
+    "ids": [
+      "module:m1629",
+      "module:m1630",
+      "module:m1631",
+      "module:m1632",
+      "module:m1633",
+      "module:m1634",
+      "module:m1635",
+      "module:m1636",
+      "module:m1637",
+      "module:m1638",
+      "module:m1639",
+      "module:m1640",
+      "module:m1641",
+      "module:m1642",
+      "module:m1643",
+      "module:m1644",
+      "module:m1645",
+      "module:m1646",
+      "module:m1647",
+      "module:m1648",
+      "module:m1649",
+      "module:m1650",
+      "module:m1651",
+      "module:m1652",
+      "module:m1653",
+      "module:m1654",
+      "module:m1655",
+      "module:m1656",
+      "module:m1657",
+      "module:m1658",
+      "module:m1659",
+      "module:m1660",
+      "module:m1661",
+      "module:m1662",
+      "module:m1663",
+      "module:m1664",
+      "module:m1665",
+      "module:m1666",
+      "module:m1667",
+      "module:m1668",
+      "path:t1630",
+      "path:t1631",
+      "path:t1632",
+      "path:t1633",
+      "path:t1634",
+      "path:t1635",
+      "path:t1636",
+      "path:t1637",
+      "path:t1638",
+      "path:t1639",
+      "path:t1640",
+      "path:t1641",
+      "path:t1642",
+      "path:t1643",
+      "path:t1644",
+      "path:t1645",
+      "path:t1646",
+      "path:t1647",
+      "path:t1648",
+      "path:t1649",
+      "path:t1650",
+      "path:t1651",
+      "path:t1652",
+      "path:t1653",
+      "path:t1654",
+      "path:t1655",
+      "path:t1656",
+      "path:t1657",
+      "path:t1658",
+      "path:t1659",
+      "path:t1660",
+      "path:t1661",
+      "path:t1662",
+      "path:t1663",
+      "path:t1664",
+      "path:t1665",
+      "path:t1666",
+      "path:t1667",
+      "path:t1668"
+    ],
+    "beats": {
+      "establish": {
+        "rest": "0-78",
+        "mid": "0-78"
+      }
+    }
+  },
+  "cell portrait--absent": {
+    "ids": [
+      "hair:frame-b",
+      "hair:frame-l",
+      "hair:frame-r",
+      "hair:frame-t",
+      "label:s0"
+    ],
+    "beats": {
+      "establish": {
+        "rest": "0-4",
+        "mid": "0-4"
+      }
+    }
+  },
+  "finding chr1:115705205:T:C:CASQ2 #0 portrait--substitution-contacts": {
+    "ids": [
+      "clearing:clearing",
+      "module:m289",
+      "module:m290",
+      "module:m291",
+      "module:m292",
+      "module:m293",
+      "module:m294",
+      "module:m295",
+      "module:m296",
+      "module:m297",
+      "module:m298",
+      "module:m299",
+      "module:m300",
+      "module:m301",
+      "module:m302",
+      "module:m303",
+      "module:m304",
+      "module:m305",
+      "module:m306",
+      "module:m307",
+      "module:m308",
+      "module:m309",
+      "module:m310",
+      "module:m311",
+      "module:m312",
+      "module:m313",
+      "module:m314",
+      "module:m315",
+      "module:m316",
+      "module:m317",
+      "module:m318",
+      "module:m319",
+      "module:m320",
+      "module:m321",
+      "module:m322",
+      "module:m323",
+      "module:m324",
+      "module:m325",
+      "module:m326",
+      "module:m327",
+      "module:m328",
+      "module:mark",
+      "path:t290",
+      "path:t291",
+      "path:t292",
+      "path:t293",
+      "path:t294",
+      "path:t295",
+      "path:t296",
+      "path:t297",
+      "path:t298",
+      "path:t299",
+      "path:t300",
+      "path:t301",
+      "path:t302",
+      "path:t303",
+      "path:t304",
+      "path:t305",
+      "path:t306",
+      "path:t307",
+      "path:t308",
+      "path:t309",
+      "path:t310",
+      "path:t311",
+      "path:t312",
+      "path:t313",
+      "path:t314",
+      "path:t315",
+      "path:t316",
+      "path:t317",
+      "path:t318",
+      "path:t319",
+      "path:t320",
+      "path:t321",
+      "path:t322",
+      "path:t323",
+      "path:t324",
+      "path:t325",
+      "path:t326",
+      "path:t327",
+      "path:t328"
+    ],
+    "beats": {
+      "establish": {
+        "rest": "0-40,42-80",
+        "mid": "0-40,42-80"
+      },
+      "locate": {
+        "rest": "0-40,42-80",
+        "mid": "0-40,42-80"
+      },
+      "substitute": {
+        "rest": "0-20,22-80",
+        "mid": "0-80"
+      },
+      "contacts": {
+        "rest": "0-20,22-80",
+        "mid": "0-20,22-80"
+      },
+      "settle": {
+        "rest": "0-20,22-80",
+        "mid": "0-20,22-80"
+      }
+    }
+  },
+  "finding chr1:201361940:A:G:TNNT2 #0 portrait--substitution-contacts": {
+    "ids": [
+      "clearing:clearing",
+      "hair:c239",
+      "hair:c239-in",
+      "module:m211",
+      "module:m212",
+      "module:m213",
+      "module:m214",
+      "module:m215",
+      "module:m216",
+      "module:m217",
+      "module:m218",
+      "module:m219",
+      "module:m220",
+      "module:m221",
+      "module:m222",
+      "module:m223",
+      "module:m224",
+      "module:m225",
+      "module:m226",
+      "module:m227",
+      "module:m228",
+      "module:m229",
+      "module:m230",
+      "module:m231",
+      "module:m232",
+      "module:m233",
+      "module:m234",
+      "module:m235",
+      "module:m236",
+      "module:m237",
+      "module:m238",
+      "module:m239",
+      "module:m240",
+      "module:m241",
+      "module:m242",
+      "module:m243",
+      "module:m244",
+      "module:m245",
+      "module:m246",
+      "module:m247",
+      "module:m248",
+      "module:m249",
+      "module:m250",
+      "module:mark",
+      "path:t212",
+      "path:t213",
+      "path:t214",
+      "path:t215",
+      "path:t216",
+      "path:t217",
+      "path:t218",
+      "path:t219",
+      "path:t220",
+      "path:t221",
+      "path:t222",
+      "path:t223",
+      "path:t224",
+      "path:t225",
+      "path:t226",
+      "path:t227",
+      "path:t228",
+      "path:t229",
+      "path:t230",
+      "path:t231",
+      "path:t232",
+      "path:t233",
+      "path:t234",
+      "path:t235",
+      "path:t236",
+      "path:t237",
+      "path:t238",
+      "path:t239",
+      "path:t240",
+      "path:t241",
+      "path:t242",
+      "path:t243",
+      "path:t244",
+      "path:t245",
+      "path:t246",
+      "path:t247",
+      "path:t248",
+      "path:t249",
+      "path:t250"
+    ],
+    "beats": {
+      "establish": {
+        "rest": "0,3-42,44-82",
+        "mid": "0,3-42,44-82"
+      },
+      "locate": {
+        "rest": "0,3-42,44-82",
+        "mid": "0,3-42,44-82"
+      },
+      "substitute": {
+        "rest": "0,3-22,24-82",
+        "mid": "0,3-82"
+      },
+      "contacts": {
+        "rest": "0-22,24-82",
+        "mid": "0-22,24-82"
+      },
+      "settle": {
+        "rest": "0-22,24-82",
+        "mid": "0-22,24-82"
+      }
+    }
+  },
+  "finding chr2:29232333:A:T:ALK #0 portrait--substitution-contacts": {
+    "ids": [
+      "clearing:clearing",
+      "hair:c884",
+      "hair:c884-in",
+      "module:m848",
+      "module:m849",
+      "module:m850",
+      "module:m851",
+      "module:m852",
+      "module:m853",
+      "module:m854",
+      "module:m855",
+      "module:m856",
+      "module:m857",
+      "module:m858",
+      "module:m859",
+      "module:m860",
+      "module:m861",
+      "module:m862",
+      "module:m863",
+      "module:m864",
+      "module:m865",
+      "module:m866",
+      "module:m867",
+      "module:m868",
+      "module:m869",
+      "module:m870",
+      "module:m871",
+      "module:m872",
+      "module:m873",
+      "module:m874",
+      "module:m875",
+      "module:m876",
+      "module:m877",
+      "module:m878",
+      "module:m879",
+      "module:m880",
+      "module:m881",
+      "module:m882",
+      "module:m883",
+      "module:m884",
+      "module:m885",
+      "module:m886",
+      "module:m887",
+      "module:mark",
+      "path:t849",
+      "path:t850",
+      "path:t851",
+      "path:t852",
+      "path:t853",
+      "path:t854",
+      "path:t855",
+      "path:t856",
+      "path:t857",
+      "path:t858",
+      "path:t859",
+      "path:t860",
+      "path:t861",
+      "path:t862",
+      "path:t863",
+      "path:t864",
+      "path:t865",
+      "path:t866",
+      "path:t867",
+      "path:t868",
+      "path:t869",
+      "path:t870",
+      "path:t871",
+      "path:t872",
+      "path:t873",
+      "path:t874",
+      "path:t875",
+      "path:t876",
+      "path:t877",
+      "path:t878",
+      "path:t879",
+      "path:t880",
+      "path:t881",
+      "path:t882",
+      "path:t883",
+      "path:t884",
+      "path:t885",
+      "path:t886",
+      "path:t887"
+    ],
+    "beats": {
+      "establish": {
+        "rest": "0,3-42,44-82",
+        "mid": "0,3-42,44-82"
+      },
+      "locate": {
+        "rest": "0,3-42,44-82",
+        "mid": "0,3-42,44-82"
+      },
+      "substitute": {
+        "rest": "0,3-22,24-82",
+        "mid": "0,3-82"
+      },
+      "contacts": {
+        "rest": "0-22,24-82",
+        "mid": "0-22,24-82"
+      },
+      "settle": {
+        "rest": "0-22,24-82",
+        "mid": "0-22,24-82"
+      }
+    }
+  },
+  "finding chr2:151601901:G:A:NEB #0 transcript--double-agent": {
+    "ids": [
+      "bead:mark-address",
+      "block:ex86",
+      "block:ex87",
+      "block:ex88",
+      "block:ex89",
+      "block:ex90",
+      "block:ex91",
+      "rule:rule",
+      "seam:seam-ex86-ex87",
+      "seam:seam-ex87-ex88",
+      "seam:seam-ex88-ex89",
+      "seam:seam-ex89-ex90",
+      "seam:seam-ex90-ex91",
+      "tick:tick-13263",
+      "tick:tick-13368",
+      "tick:tick-13476",
+      "tick:tick-13788",
+      "tick:tick-13992",
+      "tick:tick-14097"
+    ],
+    "beats": {
+      "establish": {
+        "rest": "1-18",
+        "mid": "1-18"
+      },
+      "mark-both": {
+        "rest": "0-18",
+        "mid": "0-18"
+      },
+      "hold": {
+        "rest": "0-18",
+        "mid": "0-18"
+      }
+    }
+  },
+  "finding chr2:151601901:G:A:NEB #1 codon--silent": {
+    "ids": [
+      "block:c4487",
+      "block:c4488",
+      "block:c4489",
+      "block:c4490",
+      "block:c4491",
+      "block:c4492",
+      "block:c4493",
+      "block:c4494",
+      "block:c4495",
+      "block:c4496",
+      "block:c4497",
+      "rule:rule",
+      "tick:tick-c4487",
+      "tick:tick-c4488",
+      "tick:tick-c4489",
+      "tick:tick-c4490",
+      "tick:tick-c4491",
+      "tick:tick-c4492",
+      "tick:tick-c4493",
+      "tick:tick-c4494",
+      "tick:tick-c4495",
+      "tick:tick-c4496",
+      "tick:tick-c4497",
+      "tick:tick-end"
+    ],
+    "beats": {
+      "establish": {
+        "rest": "0-23",
+        "mid": "0-23"
+      },
+      "swap-cell": {
+        "rest": "0-23",
+        "mid": "0-23"
+      },
+      "settle": {
+        "rest": "0-23",
+        "mid": "0-23"
+      }
+    }
+  },
+  "finding chr3:53811209:G:A:CACNA1D #0 portrait--substitution-contacts": {
+    "ids": [
+      "clearing:clearing",
+      "hair:c2101",
+      "hair:c2101-in",
+      "module:m2077",
+      "module:m2078",
+      "module:m2079",
+      "module:m2080",
+      "module:m2081",
+      "module:m2082",
+      "module:m2083",
+      "module:m2084",
+      "module:m2085",
+      "module:m2086",
+      "module:m2087",
+      "module:m2088",
+      "module:m2089",
+      "module:m2090",
+      "module:m2091",
+      "module:m2092",
+      "module:m2093",
+      "module:m2094",
+      "module:m2095",
+      "module:m2096",
+      "module:m2097",
+      "module:m2098",
+      "module:m2099",
+      "module:m2100",
+      "module:m2101",
+      "module:m2102",
+      "module:m2103",
+      "module:m2104",
+      "module:m2105",
+      "module:m2106",
+      "module:m2107",
+      "module:m2108",
+      "module:m2109",
+      "module:m2110",
+      "module:m2111",
+      "module:m2112",
+      "module:m2113",
+      "module:m2114",
+      "module:m2115",
+      "module:m2116",
+      "module:mark",
+      "path:t2078",
+      "path:t2079",
+      "path:t2080",
+      "path:t2081",
+      "path:t2082",
+      "path:t2083",
+      "path:t2084",
+      "path:t2085",
+      "path:t2086",
+      "path:t2087",
+      "path:t2088",
+      "path:t2089",
+      "path:t2090",
+      "path:t2091",
+      "path:t2092",
+      "path:t2093",
+      "path:t2094",
+      "path:t2095",
+      "path:t2096",
+      "path:t2097",
+      "path:t2098",
+      "path:t2099",
+      "path:t2100",
+      "path:t2101",
+      "path:t2102",
+      "path:t2103",
+      "path:t2104",
+      "path:t2105",
+      "path:t2106",
+      "path:t2107",
+      "path:t2108",
+      "path:t2109",
+      "path:t2110",
+      "path:t2111",
+      "path:t2112",
+      "path:t2113",
+      "path:t2114",
+      "path:t2115",
+      "path:t2116"
+    ],
+    "beats": {
+      "establish": {
+        "rest": "0,3-42,44-82",
+        "mid": "0,3-42,44-82"
+      },
+      "locate": {
+        "rest": "0,3-42,44-82",
+        "mid": "0,3-42,44-82"
+      },
+      "substitute": {
+        "rest": "0,3-22,24-82",
+        "mid": "0,3-82"
+      },
+      "contacts": {
+        "rest": "0-22,24-82",
+        "mid": "0-22,24-82"
+      },
+      "settle": {
+        "rest": "0-22,24-82",
+        "mid": "0-22,24-82"
+      }
+    }
+  },
+  "finding chr3:57392028:A:T:DNAH12 #0 chain--local-failure": {
+    "ids": [
+      "bead:site",
+      "path:seg-1"
+    ],
+    "beats": {
+      "establish": {
+        "rest": "0-1",
+        "mid": "0-1"
+      },
+      "locate": {
+        "rest": "0-1",
+        "mid": "0-1"
+      },
+      "dwell": {
+        "rest": "0-1",
+        "mid": "0-1"
+      },
+      "settle": {
+        "rest": "0-1",
+        "mid": "0-1"
+      }
+    }
+  },
+  "finding chr3:57446013:ATAAATAAATAAT:A:DNAH12 #0 transcript--foreclosed-junction": {
+    "ids": [
+      "block:jx-e0",
+      "block:jx-e1",
+      "block:jx-e2",
+      "block:jx-e3",
+      "block:jx-i1",
+      "block:jx-i10",
+      "block:jx-i11",
+      "block:jx-i12",
+      "block:jx-i13",
+      "block:jx-i14",
+      "block:jx-i15",
+      "block:jx-i16",
+      "block:jx-i16~was",
+      "block:jx-i17",
+      "block:jx-i17~was",
+      "block:jx-i18",
+      "block:jx-i19",
+      "block:jx-i2",
+      "block:jx-i20",
+      "block:jx-i3",
+      "block:jx-i4",
+      "block:jx-i5",
+      "block:jx-i6",
+      "block:jx-i7",
+      "block:jx-i8",
+      "block:jx-i9",
+      "hair:jx-sig",
+      "hair:jx-sig-a",
+      "hair:jx-sig-z",
+      "rule:jx-rule",
+      "tick:jx-t0",
+      "tick:jx-t1",
+      "tick:jx-t2",
+      "tick:jx-t3",
+      "tick:jx-t4"
+    ],
+    "beats": {
+      "establish": {
+        "rest": "0-11,13,15-25,29-34",
+        "mid": "0-11,13,15-25,29-34"
+      },
+      "locate": {
+        "rest": "0-11,13,15-34",
+        "mid": "0-11,13,15-34"
+      },
+      "hold": {
+        "rest": "0-11,13,15-34",
+        "mid": "0-34"
+      }
+    }
+  },
+  "finding chr9:136438597:GCCCT:G:INPP5E #0 transcript--foreclosed-junction": {
+    "ids": [
+      "block:jx-e0",
+      "block:jx-e1",
+      "block:jx-e2",
+      "block:jx-e3",
+      "block:jx-e4",
+      "block:jx-e5",
+      "block:jx-e6",
+      "block:jx-i1",
+      "block:jx-i10",
+      "block:jx-i11",
+      "block:jx-i12",
+      "block:jx-i2",
+      "block:jx-i3",
+      "block:jx-i4",
+      "block:jx-i5",
+      "block:jx-i6",
+      "block:jx-i7",
+      "block:jx-i8",
+      "block:jx-i9",
+      "hair:jx-sig",
+      "hair:jx-sig-a",
+      "hair:jx-sig-z",
+      "rule:jx-rule",
+      "tick:jx-t0",
+      "tick:jx-t1",
+      "tick:jx-t2",
+      "tick:jx-t3",
+      "tick:jx-t4",
+      "tick:jx-t5",
+      "tick:jx-t6"
+    ],
+    "beats": {
+      "establish": {
+        "rest": "0-18,22-29",
+        "mid": "0-18,22-29"
+      },
+      "locate": {
+        "rest": "0-29",
+        "mid": "0-29"
+      },
+      "hold": {
+        "rest": "0-29",
+        "mid": "0-29"
+      }
+    }
+  },
+  "finding chr11:121157872:C:G:TECTA #0 portrait--substitution-contacts": {
+    "ids": [
+      "clearing:clearing",
+      "hair:c1441",
+      "hair:c1441-in",
+      "hair:c1442",
+      "hair:c1442-in",
+      "hair:c1461",
+      "hair:c1461-in",
+      "hair:c1462",
+      "hair:c1462-in",
+      "hair:c1463",
+      "hair:c1463-in",
+      "hair:c1464",
+      "hair:c1464-in",
+      "module:m1426",
+      "module:m1427",
+      "module:m1428",
+      "module:m1429",
+      "module:m1430",
+      "module:m1431",
+      "module:m1432",
+      "module:m1433",
+      "module:m1434",
+      "module:m1435",
+      "module:m1436",
+      "module:m1437",
+      "module:m1438",
+      "module:m1439",
+      "module:m1440",
+      "module:m1441",
+      "module:m1442",
+      "module:m1443",
+      "module:m1444",
+      "module:m1445",
+      "module:m1446",
+      "module:m1447",
+      "module:m1448",
+      "module:m1449",
+      "module:m1450",
+      "module:m1451",
+      "module:m1452",
+      "module:m1453",
+      "module:m1454",
+      "module:m1455",
+      "module:m1456",
+      "module:m1457",
+      "module:m1458",
+      "module:m1459",
+      "module:m1460",
+      "module:m1461",
+      "module:m1462",
+      "module:m1463",
+      "module:m1464",
+      "module:m1465",
+      "module:mark",
+      "path:t1427",
+      "path:t1428",
+      "path:t1429",
+      "path:t1430",
+      "path:t1431",
+      "path:t1432",
+      "path:t1433",
+      "path:t1434",
+      "path:t1435",
+      "path:t1436",
+      "path:t1437",
+      "path:t1438",
+      "path:t1439",
+      "path:t1440",
+      "path:t1441",
+      "path:t1442",
+      "path:t1443",
+      "path:t1444",
+      "path:t1445",
+      "path:t1446",
+      "path:t1447",
+      "path:t1448",
+      "path:t1449",
+      "path:t1450",
+      "path:t1451",
+      "path:t1452",
+      "path:t1453",
+      "path:t1454",
+      "path:t1455",
+      "path:t1456",
+      "path:t1457",
+      "path:t1458",
+      "path:t1459",
+      "path:t1460",
+      "path:t1461",
+      "path:t1462",
+      "path:t1463",
+      "path:t1464",
+      "path:t1465"
+    ],
+    "beats": {
+      "establish": {
+        "rest": "0,13-52,54-92",
+        "mid": "0,13-52,54-92"
+      },
+      "locate": {
+        "rest": "0,13-52,54-92",
+        "mid": "0,13-52,54-92"
+      },
+      "substitute": {
+        "rest": "0,13-32,34-92",
+        "mid": "0,13-92"
+      },
+      "contacts": {
+        "rest": "0-32,34-92",
+        "mid": "0-32,34-92"
+      },
+      "settle": {
+        "rest": "0-32,34-92",
+        "mid": "0-32,34-92"
+      }
+    }
+  },
+  "finding chr12:49033325:G:A:KMT2D #0 chain--local-failure": {
+    "ids": [
+      "bead:site",
+      "path:seg-1"
+    ],
+    "beats": {
+      "establish": {
+        "rest": "0-1",
+        "mid": "0-1"
+      },
+      "locate": {
+        "rest": "0-1",
+        "mid": "0-1"
+      },
+      "dwell": {
+        "rest": "0-1",
+        "mid": "0-1"
+      },
+      "settle": {
+        "rest": "0-1",
+        "mid": "0-1"
+      }
+    }
+  },
+  "finding chr2:46905488:G:A:MCFD2 #0 portrait--substitution-contacts": {
+    "ids": [
+      "clearing:clearing",
+      "hair:c143",
+      "hair:c143-in",
+      "module:m107",
+      "module:m108",
+      "module:m109",
+      "module:m110",
+      "module:m111",
+      "module:m112",
+      "module:m113",
+      "module:m114",
+      "module:m115",
+      "module:m116",
+      "module:m117",
+      "module:m118",
+      "module:m119",
+      "module:m120",
+      "module:m121",
+      "module:m122",
+      "module:m123",
+      "module:m124",
+      "module:m125",
+      "module:m126",
+      "module:m127",
+      "module:m128",
+      "module:m129",
+      "module:m130",
+      "module:m131",
+      "module:m132",
+      "module:m133",
+      "module:m134",
+      "module:m135",
+      "module:m136",
+      "module:m137",
+      "module:m138",
+      "module:m139",
+      "module:m140",
+      "module:m141",
+      "module:m142",
+      "module:m143",
+      "module:m144",
+      "module:m145",
+      "module:m146",
+      "module:mark",
+      "path:t108",
+      "path:t109",
+      "path:t110",
+      "path:t111",
+      "path:t112",
+      "path:t113",
+      "path:t114",
+      "path:t115",
+      "path:t116",
+      "path:t117",
+      "path:t118",
+      "path:t119",
+      "path:t120",
+      "path:t121",
+      "path:t122",
+      "path:t123",
+      "path:t124",
+      "path:t125",
+      "path:t126",
+      "path:t127",
+      "path:t128",
+      "path:t129",
+      "path:t130",
+      "path:t131",
+      "path:t132",
+      "path:t133",
+      "path:t134",
+      "path:t135",
+      "path:t136",
+      "path:t137",
+      "path:t138",
+      "path:t139",
+      "path:t140",
+      "path:t141",
+      "path:t142",
+      "path:t143",
+      "path:t144",
+      "path:t145",
+      "path:t146"
+    ],
+    "beats": {
+      "establish": {
+        "rest": "0,3-42,44-82",
+        "mid": "0,3-42,44-82"
+      },
+      "locate": {
+        "rest": "0,3-42,44-82",
+        "mid": "0,3-42,44-82"
+      },
+      "substitute": {
+        "rest": "0,3-34,36-82",
+        "mid": "0,3-82"
+      },
+      "contacts": {
+        "rest": "0-34,36-82",
+        "mid": "0-34,36-82"
+      },
+      "settle": {
+        "rest": "0-34,36-82",
+        "mid": "0-34,36-82"
+      }
+    }
+  },
+  "finding chr2:73449618:A:G:ALMS1 #0 chain--local-failure": {
+    "ids": [
+      "bead:site",
+      "path:seg-1"
+    ],
+    "beats": {
+      "establish": {
+        "rest": "0-1",
+        "mid": "0-1"
+      },
+      "locate": {
+        "rest": "0-1",
+        "mid": "0-1"
+      },
+      "dwell": {
+        "rest": "0-1",
+        "mid": "0-1"
+      },
+      "settle": {
+        "rest": "0-1",
+        "mid": "0-1"
+      }
+    }
+  },
+  "finding chr5:55226608:C:G:MCIDAS #0 chain--local-failure": {
+    "ids": [
+      "bead:site",
+      "path:seg-1",
+      "path:seg-114",
+      "path:seg-126",
+      "path:seg-175",
+      "path:seg-245",
+      "path:seg-276",
+      "path:seg-296",
+      "path:seg-361"
+    ],
+    "beats": {
+      "establish": {
+        "rest": "0-8",
+        "mid": "0-8"
+      },
+      "locate": {
+        "rest": "0-8",
+        "mid": "0-8"
+      },
+      "dwell": {
+        "rest": "0-8",
+        "mid": "0-8"
+      },
+      "settle": {
+        "rest": "0-8",
+        "mid": "0-8"
+      }
+    }
+  },
+  "finding chr5:90855813:C:G:ADGRV1 #0 chain--local-failure": {
+    "ids": [
+      "bead:site",
+      "path:seg-1"
+    ],
+    "beats": {
+      "establish": {
+        "rest": "0-1",
+        "mid": "0-1"
+      },
+      "locate": {
+        "rest": "0-1",
+        "mid": "0-1"
+      },
+      "dwell": {
+        "rest": "0-1",
+        "mid": "0-1"
+      },
+      "settle": {
+        "rest": "0-1",
+        "mid": "0-1"
+      }
+    }
+  },
+  "finding chr10:103139440:C:G:NT5C2 #0 portrait--substitution-contacts": {
+    "ids": [
+      "clearing:clearing",
+      "module:m27",
+      "module:m28",
+      "module:m29",
+      "module:m30",
+      "module:m31",
+      "module:m32",
+      "module:m33",
+      "module:m34",
+      "module:m35",
+      "module:m36",
+      "module:m37",
+      "module:m38",
+      "module:m39",
+      "module:m40",
+      "module:m41",
+      "module:m42",
+      "module:m43",
+      "module:m44",
+      "module:m45",
+      "module:m46",
+      "module:m47",
+      "module:m48",
+      "module:m49",
+      "module:m50",
+      "module:m51",
+      "module:m52",
+      "module:m53",
+      "module:m54",
+      "module:m55",
+      "module:m56",
+      "module:m57",
+      "module:m58",
+      "module:m59",
+      "module:m60",
+      "module:m61",
+      "module:m62",
+      "module:m63",
+      "module:m64",
+      "module:m65",
+      "module:m66",
+      "module:mark",
+      "path:t28",
+      "path:t29",
+      "path:t30",
+      "path:t31",
+      "path:t32",
+      "path:t33",
+      "path:t34",
+      "path:t35",
+      "path:t36",
+      "path:t37",
+      "path:t38",
+      "path:t39",
+      "path:t40",
+      "path:t41",
+      "path:t42",
+      "path:t43",
+      "path:t44",
+      "path:t45",
+      "path:t46",
+      "path:t47",
+      "path:t48",
+      "path:t49",
+      "path:t50",
+      "path:t51",
+      "path:t52",
+      "path:t53",
+      "path:t54",
+      "path:t55",
+      "path:t56",
+      "path:t57",
+      "path:t58",
+      "path:t59",
+      "path:t60",
+      "path:t61",
+      "path:t62",
+      "path:t63",
+      "path:t64",
+      "path:t65",
+      "path:t66"
+    ],
+    "beats": {
+      "establish": {
+        "rest": "0-40,42-80",
+        "mid": "0-40,42-80"
+      },
+      "locate": {
+        "rest": "0-40,42-80",
+        "mid": "0-40,42-80"
+      },
+      "substitute": {
+        "rest": "0-20,22-80",
+        "mid": "0-80"
+      },
+      "contacts": {
+        "rest": "0-20,22-80",
+        "mid": "0-20,22-80"
+      },
+      "settle": {
+        "rest": "0-20,22-80",
+        "mid": "0-20,22-80"
+      }
+    }
+  },
+  "finding chr11:6617154:C:T:TPP1 #0 transcript--foreclosed-junction": {
+    "ids": [
+      "block:jx-e0",
+      "block:jx-e1",
+      "block:jx-e2",
+      "block:jx-e3",
+      "block:jx-e4",
+      "block:jx-e5",
+      "block:jx-e6",
+      "block:jx-i-1",
+      "block:jx-i-10",
+      "block:jx-i-11",
+      "block:jx-i-12",
+      "block:jx-i-2",
+      "block:jx-i-3",
+      "block:jx-i-4",
+      "block:jx-i-5",
+      "block:jx-i-6",
+      "block:jx-i-7",
+      "block:jx-i-8",
+      "block:jx-i-9",
+      "hair:jx-sig",
+      "hair:jx-sig-a",
+      "hair:jx-sig-z",
+      "rule:jx-rule",
+      "seam:jx-join",
+      "tick:jx-t0",
+      "tick:jx-t1",
+      "tick:jx-t2",
+      "tick:jx-t3",
+      "tick:jx-t4",
+      "tick:jx-t5",
+      "tick:jx-t6"
+    ],
+    "beats": {
+      "establish": {
+        "rest": "0-18,22,24-30",
+        "mid": "0-18,22,24-30"
+      },
+      "locate": {
+        "rest": "0-22,24-30",
+        "mid": "0-22,24-30"
+      },
+      "break": {
+        "rest": "0-30",
+        "mid": "0-22,24-30"
+      },
+      "hold": {
+        "rest": "0-30",
+        "mid": "0-30"
+      }
+    }
+  },
+  "finding chr12:102840474:T:C:PAH #0 portrait--substitution-contacts": {
+    "ids": [
+      "clearing:clearing",
+      "hair:c419",
+      "hair:c419-in",
+      "hair:c420",
+      "hair:c420-in",
+      "hair:c421",
+      "hair:c421-in",
+      "hair:c422",
+      "hair:c422-in",
+      "module:m394",
+      "module:m395",
+      "module:m396",
+      "module:m397",
+      "module:m398",
+      "module:m399",
+      "module:m400",
+      "module:m401",
+      "module:m402",
+      "module:m403",
+      "module:m404",
+      "module:m405",
+      "module:m406",
+      "module:m407",
+      "module:m408",
+      "module:m409",
+      "module:m410",
+      "module:m411",
+      "module:m412",
+      "module:m413",
+      "module:m414",
+      "module:m415",
+      "module:m416",
+      "module:m417",
+      "module:m418",
+      "module:m419",
+      "module:m420",
+      "module:m421",
+      "module:m422",
+      "module:m423",
+      "module:m424",
+      "module:m425",
+      "module:m426",
+      "module:m427",
+      "module:m428",
+      "module:m429",
+      "module:m430",
+      "module:m431",
+      "module:m432",
+      "module:m433",
+      "module:mark",
+      "path:t395",
+      "path:t396",
+      "path:t397",
+      "path:t398",
+      "path:t399",
+      "path:t400",
+      "path:t401",
+      "path:t402",
+      "path:t403",
+      "path:t404",
+      "path:t405",
+      "path:t406",
+      "path:t407",
+      "path:t408",
+      "path:t409",
+      "path:t410",
+      "path:t411",
+      "path:t412",
+      "path:t413",
+      "path:t414",
+      "path:t415",
+      "path:t416",
+      "path:t417",
+      "path:t418",
+      "path:t419",
+      "path:t420",
+      "path:t421",
+      "path:t422",
+      "path:t423",
+      "path:t424",
+      "path:t425",
+      "path:t426",
+      "path:t427",
+      "path:t428",
+      "path:t429",
+      "path:t430",
+      "path:t431",
+      "path:t432",
+      "path:t433"
+    ],
+    "beats": {
+      "establish": {
+        "rest": "0,9-48,50-88",
+        "mid": "0,9-48,50-88"
+      },
+      "locate": {
+        "rest": "0,9-48,50-88",
+        "mid": "0,9-48,50-88"
+      },
+      "substitute": {
+        "rest": "0,9-28,30-88",
+        "mid": "0,9-88"
+      },
+      "contacts": {
+        "rest": "0-28,30-88",
+        "mid": "0-28,30-88"
+      },
+      "settle": {
+        "rest": "0-28,30-88",
+        "mid": "0-28,30-88"
+      }
+    }
+  },
+  "finding chr13:25372280:C:G:ATP8A2 #0 chain--local-failure": {
+    "ids": [
+      "bead:site",
+      "path:seg-1",
+      "path:seg-1111",
+      "path:seg-1172",
+      "path:seg-1179",
+      "path:seg-346",
+      "path:seg-356",
+      "path:seg-450",
+      "path:seg-480",
+      "path:seg-56"
+    ],
+    "beats": {
+      "establish": {
+        "rest": "0-9",
+        "mid": "0-9"
+      },
+      "locate": {
+        "rest": "0-9",
+        "mid": "0-9"
+      },
+      "dwell": {
+        "rest": "0-9",
+        "mid": "0-9"
+      },
+      "settle": {
+        "rest": "0-9",
+        "mid": "0-9"
+      }
+    }
+  },
+  "finding chr14:88385844:G:A:SPATA7 #0 transcript--foreclosed-junction": {
+    "ids": [
+      "block:jx-e0",
+      "block:jx-e1",
+      "block:jx-e2",
+      "block:jx-e3",
+      "block:jx-e4",
+      "block:jx-e5",
+      "block:jx-e6",
+      "block:jx-i1",
+      "block:jx-i10",
+      "block:jx-i11",
+      "block:jx-i12",
+      "block:jx-i13",
+      "block:jx-i2",
+      "block:jx-i3",
+      "block:jx-i4",
+      "block:jx-i5",
+      "block:jx-i6",
+      "block:jx-i7",
+      "block:jx-i7~was",
+      "block:jx-i8",
+      "block:jx-i9",
+      "hair:jx-sig",
+      "hair:jx-sig-a",
+      "hair:jx-sig-z",
+      "rule:jx-rule",
+      "tick:jx-t0",
+      "tick:jx-t1",
+      "tick:jx-t2",
+      "tick:jx-t3",
+      "tick:jx-t4",
+      "tick:jx-t5",
+      "tick:jx-t6"
+    ],
+    "beats": {
+      "establish": {
+        "rest": "0-17,19-20,24-31",
+        "mid": "0-17,19-20,24-31"
+      },
+      "locate": {
+        "rest": "0-17,19-31",
+        "mid": "0-17,19-31"
+      },
+      "hold": {
+        "rest": "0-17,19-31",
+        "mid": "0-31"
+      }
+    }
+  },
+  "finding chr16:3589229:G:A:SLX4 #0 chain--local-failure": {
+    "ids": [
+      "bead:site",
+      "path:seg-1",
+      "path:seg-1561",
+      "path:seg-1602",
+      "path:seg-1746",
+      "path:seg-1815",
+      "path:seg-293",
+      "path:seg-372",
+      "path:seg-477",
+      "path:seg-487",
+      "path:seg-608",
+      "path:seg-616",
+      "path:seg-672",
+      "path:seg-787",
+      "path:seg-849",
+      "path:seg-863"
+    ],
+    "beats": {
+      "establish": {
+        "rest": "0-15",
+        "mid": "0-15"
+      },
+      "locate": {
+        "rest": "0-15",
+        "mid": "0-15"
+      },
+      "dwell": {
+        "rest": "0-15",
+        "mid": "0-15"
+      },
+      "settle": {
+        "rest": "0-15",
+        "mid": "0-15"
+      }
+    }
+  },
+  "finding chr17:63484535:G:A:ACE #0 portrait--substitution-contacts": {
+    "ids": [
+      "clearing:clearing",
+      "hair:c635",
+      "hair:c635-in",
+      "module:m619",
+      "module:m620",
+      "module:m621",
+      "module:m622",
+      "module:m623",
+      "module:m624",
+      "module:m625",
+      "module:m626",
+      "module:m627",
+      "module:m628",
+      "module:m629",
+      "module:m630",
+      "module:m631",
+      "module:m632",
+      "module:m633",
+      "module:m634",
+      "module:m635",
+      "module:m636",
+      "module:m637",
+      "module:m638",
+      "module:m639",
+      "module:m640",
+      "module:m641",
+      "module:m642",
+      "module:m643",
+      "module:m644",
+      "module:m645",
+      "module:m646",
+      "module:m647",
+      "module:m648",
+      "module:m649",
+      "module:m650",
+      "module:m651",
+      "module:m652",
+      "module:m653",
+      "module:m654",
+      "module:m655",
+      "module:m656",
+      "module:m657",
+      "module:m658",
+      "module:mark",
+      "path:t620",
+      "path:t621",
+      "path:t622",
+      "path:t623",
+      "path:t624",
+      "path:t625",
+      "path:t626",
+      "path:t627",
+      "path:t628",
+      "path:t629",
+      "path:t630",
+      "path:t631",
+      "path:t632",
+      "path:t633",
+      "path:t634",
+      "path:t635",
+      "path:t636",
+      "path:t637",
+      "path:t638",
+      "path:t639",
+      "path:t640",
+      "path:t641",
+      "path:t642",
+      "path:t643",
+      "path:t644",
+      "path:t645",
+      "path:t646",
+      "path:t647",
+      "path:t648",
+      "path:t649",
+      "path:t650",
+      "path:t651",
+      "path:t652",
+      "path:t653",
+      "path:t654",
+      "path:t655",
+      "path:t656",
+      "path:t657",
+      "path:t658"
+    ],
+    "beats": {
+      "establish": {
+        "rest": "0,3-42,44-82",
+        "mid": "0,3-42,44-82"
+      },
+      "locate": {
+        "rest": "0,3-42,44-82",
+        "mid": "0,3-42,44-82"
+      },
+      "substitute": {
+        "rest": "0,3-22,24-82",
+        "mid": "0,3-82"
+      },
+      "contacts": {
+        "rest": "0-22,24-82",
+        "mid": "0-22,24-82"
+      },
+      "settle": {
+        "rest": "0-22,24-82",
+        "mid": "0-22,24-82"
+      }
+    }
+  },
+  "finding chr17:78466792:C:G:DNAH17 #0 chain--local-failure": {
+    "ids": [
+      "bead:site",
+      "path:seg-1"
+    ],
+    "beats": {
+      "establish": {
+        "rest": "0-1",
+        "mid": "0-1"
+      },
+      "locate": {
+        "rest": "0-1",
+        "mid": "0-1"
+      },
+      "dwell": {
+        "rest": "0-1",
+        "mid": "0-1"
+      },
+      "settle": {
+        "rest": "0-1",
+        "mid": "0-1"
+      }
+    }
+  },
+  "finding chr18:70088101:T:G:RTTN #0 portrait--substitution-contacts": {
+    "ids": [
+      "clearing:clearing",
+      "hair:c1401",
+      "hair:c1401-in",
+      "module:m1377",
+      "module:m1378",
+      "module:m1379",
+      "module:m1380",
+      "module:m1381",
+      "module:m1382",
+      "module:m1383",
+      "module:m1384",
+      "module:m1385",
+      "module:m1386",
+      "module:m1387",
+      "module:m1388",
+      "module:m1389",
+      "module:m1390",
+      "module:m1391",
+      "module:m1392",
+      "module:m1393",
+      "module:m1394",
+      "module:m1395",
+      "module:m1396",
+      "module:m1397",
+      "module:m1398",
+      "module:m1399",
+      "module:m1400",
+      "module:m1401",
+      "module:m1402",
+      "module:m1403",
+      "module:m1404",
+      "module:m1405",
+      "module:m1406",
+      "module:m1407",
+      "module:m1408",
+      "module:m1409",
+      "module:m1410",
+      "module:m1411",
+      "module:m1412",
+      "module:m1413",
+      "module:m1414",
+      "module:m1415",
+      "module:m1416",
+      "module:mark",
+      "path:t1378",
+      "path:t1379",
+      "path:t1380",
+      "path:t1381",
+      "path:t1382",
+      "path:t1383",
+      "path:t1384",
+      "path:t1385",
+      "path:t1386",
+      "path:t1387",
+      "path:t1388",
+      "path:t1389",
+      "path:t1390",
+      "path:t1391",
+      "path:t1392",
+      "path:t1393",
+      "path:t1394",
+      "path:t1395",
+      "path:t1396",
+      "path:t1397",
+      "path:t1398",
+      "path:t1399",
+      "path:t1400",
+      "path:t1401",
+      "path:t1402",
+      "path:t1403",
+      "path:t1404",
+      "path:t1405",
+      "path:t1406",
+      "path:t1407",
+      "path:t1408",
+      "path:t1409",
+      "path:t1410",
+      "path:t1411",
+      "path:t1412",
+      "path:t1413",
+      "path:t1414",
+      "path:t1415",
+      "path:t1416"
+    ],
+    "beats": {
+      "establish": {
+        "rest": "0,3-42,44-82",
+        "mid": "0,3-42,44-82"
+      },
+      "locate": {
+        "rest": "0,3-42,44-82",
+        "mid": "0,3-42,44-82"
+      },
+      "substitute": {
+        "rest": "0,3-22,24-82",
+        "mid": "0,3-82"
+      },
+      "contacts": {
+        "rest": "0-22,24-82",
+        "mid": "0-22,24-82"
+      },
+      "settle": {
+        "rest": "0-22,24-82",
+        "mid": "0-22,24-82"
+      }
+    }
+  },
+  "finding chr22:50244017:T:C:TUBGCP6 #0 chain--local-failure": {
+    "ids": [
+      "bead:site",
+      "path:seg-1",
+      "path:seg-1479",
+      "path:seg-1805",
+      "path:seg-313",
+      "path:seg-331",
+      "path:seg-341",
+      "path:seg-477",
+      "path:seg-496",
+      "path:seg-792"
+    ],
+    "beats": {
+      "establish": {
+        "rest": "0-9",
+        "mid": "0-9"
+      },
+      "locate": {
+        "rest": "0-9",
+        "mid": "0-9"
+      },
+      "dwell": {
+        "rest": "0-9",
+        "mid": "0-9"
+      },
+      "settle": {
+        "rest": "0-9",
+        "mid": "0-9"
+      }
+    }
+  },
+  "finding chr1:26697012:C:A:ARID1A #0 chain--local-failure": {
+    "ids": [
+      "bead:site",
+      "path:seg-1",
+      "path:seg-1012",
+      "path:seg-1106",
+      "path:seg-1641",
+      "path:seg-1741",
+      "path:seg-1813",
+      "path:seg-1859",
+      "path:seg-1957",
+      "path:seg-2022",
+      "path:seg-2049",
+      "path:seg-2209",
+      "path:seg-2223"
+    ],
+    "beats": {
+      "establish": {
+        "rest": "0-12",
+        "mid": "0-12"
+      },
+      "locate": {
+        "rest": "0-12",
+        "mid": "0-12"
+      },
+      "dwell": {
+        "rest": "0-12",
+        "mid": "0-12"
+      },
+      "settle": {
+        "rest": "0-12",
+        "mid": "0-12"
+      }
+    }
+  },
+  "finding chr2:25234286:C:T:DNMT3A #0 portrait--substitution-contacts": {
+    "ids": [
+      "clearing:clearing",
+      "hair:c906",
+      "hair:c906-in",
+      "module:m873",
+      "module:m874",
+      "module:m875",
+      "module:m876",
+      "module:m877",
+      "module:m878",
+      "module:m879",
+      "module:m880",
+      "module:m881",
+      "module:m882",
+      "module:m883",
+      "module:m884",
+      "module:m885",
+      "module:m886",
+      "module:m887",
+      "module:m888",
+      "module:m889",
+      "module:m890",
+      "module:m891",
+      "module:m892",
+      "module:m893",
+      "module:m894",
+      "module:m895",
+      "module:m896",
+      "module:m897",
+      "module:m898",
+      "module:m899",
+      "module:m900",
+      "module:m901",
+      "module:m902",
+      "module:m903",
+      "module:m904",
+      "module:m905",
+      "module:m906",
+      "module:m907",
+      "module:m908",
+      "module:m909",
+      "module:m910",
+      "module:m911",
+      "module:m912",
+      "module:mark",
+      "path:t874",
+      "path:t875",
+      "path:t876",
+      "path:t877",
+      "path:t878",
+      "path:t879",
+      "path:t880",
+      "path:t881",
+      "path:t882",
+      "path:t883",
+      "path:t884",
+      "path:t885",
+      "path:t886",
+      "path:t887",
+      "path:t888",
+      "path:t889",
+      "path:t890",
+      "path:t891",
+      "path:t892",
+      "path:t893",
+      "path:t894",
+      "path:t895",
+      "path:t896",
+      "path:t897",
+      "path:t898",
+      "path:t899",
+      "path:t900",
+      "path:t901",
+      "path:t902",
+      "path:t903",
+      "path:t904",
+      "path:t905",
+      "path:t906",
+      "path:t907",
+      "path:t908",
+      "path:t909",
+      "path:t910",
+      "path:t911",
+      "path:t912"
+    ],
+    "beats": {
+      "establish": {
+        "rest": "0,3-42,44-82",
+        "mid": "0,3-42,44-82"
+      },
+      "locate": {
+        "rest": "0,3-42,44-82",
+        "mid": "0,3-42,44-82"
+      },
+      "substitute": {
+        "rest": "0,3-40,42-82",
+        "mid": "0,3-82"
+      },
+      "contacts": {
+        "rest": "0-40,42-82",
+        "mid": "0-40,42-82"
+      },
+      "settle": {
+        "rest": "0-40,42-82",
+        "mid": "0-40,42-82"
+      }
+    }
+  },
+  "finding chr2:151727692:G:A:NEB #0 transcript--double-agent": {
+    "ids": [
+      "bead:mark-address",
+      "block:ex3",
+      "block:ex4",
+      "block:ex5",
+      "block:ex6",
+      "block:ex7",
+      "block:ex8",
+      "rule:rule",
+      "seam:seam-ex3-ex4",
+      "seam:seam-ex4-ex5",
+      "seam:seam-ex5-ex6",
+      "seam:seam-ex6-ex7",
+      "seam:seam-ex7-ex8",
+      "tick:tick-0",
+      "tick:tick-294",
+      "tick:tick-36",
+      "tick:tick-402",
+      "tick:tick-507",
+      "tick:tick-78"
+    ],
+    "beats": {
+      "establish": {
+        "rest": "1-18",
+        "mid": "1-18"
+      },
+      "mark-both": {
+        "rest": "0-18",
+        "mid": "0-18"
+      },
+      "hold": {
+        "rest": "0-18",
+        "mid": "0-18"
+      }
+    }
+  },
+  "finding chr2:151727692:G:A:NEB #1 chain--local-failure": {
+    "ids": [
+      "bead:site",
+      "path:seg-1"
+    ],
+    "beats": {
+      "establish": {
+        "rest": "0-1",
+        "mid": "0-1"
+      },
+      "locate": {
+        "rest": "0-1",
+        "mid": "0-1"
+      },
+      "dwell": {
+        "rest": "0-1",
+        "mid": "0-1"
+      },
+      "settle": {
+        "rest": "0-1",
+        "mid": "0-1"
+      }
+    }
+  },
+  "finding chr2:161423517:C:CCGGGCG:TBR1 #0 codon--in-frame-ins": {
+    "ids": [
+      "block:c443",
+      "block:c444",
+      "block:c445",
+      "block:c446",
+      "block:c447",
+      "block:c448",
+      "block:c449",
+      "block:c450",
+      "block:c451",
+      "block:c452",
+      "block:c453",
+      "block:intrusion",
+      "block:intrusion-2",
+      "rule:rule",
+      "tick:tick-c443",
+      "tick:tick-c444",
+      "tick:tick-c445",
+      "tick:tick-c446",
+      "tick:tick-c447",
+      "tick:tick-c448",
+      "tick:tick-c449",
+      "tick:tick-c450",
+      "tick:tick-c451",
+      "tick:tick-c452",
+      "tick:tick-c453",
+      "tick:tick-end"
+    ],
+    "beats": {
+      "establish": {
+        "rest": "0-10,13-25",
+        "mid": "0-10,13-25"
+      },
+      "admit": {
+        "rest": "0-25",
+        "mid": "0-25"
+      },
+      "reflow": {
+        "rest": "0-25",
+        "mid": "0-25"
+      },
+      "settle": {
+        "rest": "0-25",
+        "mid": "0-25"
+      }
+    }
+  },
+  "finding chr2:161423517:C:CCGGGCG:TBR1 #1 chain--local-failure": {
+    "ids": [
+      "bead:site",
+      "path:seg-1",
+      "path:seg-201",
+      "path:seg-317",
+      "path:seg-320",
+      "path:seg-345",
+      "path:seg-353",
+      "path:seg-396"
+    ],
+    "beats": {
+      "establish": {
+        "rest": "0-7",
+        "mid": "0-7"
+      },
+      "locate": {
+        "rest": "0-7",
+        "mid": "0-7"
+      },
+      "dwell": {
+        "rest": "0-7",
+        "mid": "0-7"
+      },
+      "settle": {
+        "rest": "0-7",
+        "mid": "0-7"
+      }
+    }
+  },
+  "finding chr4:3148179:A:G:HTT #0 chain--local-failure": {
+    "ids": [
+      "bead:site",
+      "path:seg-1"
+    ],
+    "beats": {
+      "establish": {
+        "rest": "0-1",
+        "mid": "0-1"
+      },
+      "locate": {
+        "rest": "0-1",
+        "mid": "0-1"
+      },
+      "dwell": {
+        "rest": "0-1",
+        "mid": "0-1"
+      },
+      "settle": {
+        "rest": "0-1",
+        "mid": "0-1"
+      }
+    }
+  },
+  "finding chr4:3154286:AT:A:HTT #0 transcript--foreclosed-junction": {
+    "ids": [
+      "block:jx-e0",
+      "block:jx-e1",
+      "block:jx-e2",
+      "block:jx-e3",
+      "block:jx-e4",
+      "block:jx-e5",
+      "block:jx-i-1",
+      "block:jx-i-10",
+      "block:jx-i-11",
+      "block:jx-i-12",
+      "block:jx-i-13",
+      "block:jx-i-14",
+      "block:jx-i-2",
+      "block:jx-i-3",
+      "block:jx-i-4",
+      "block:jx-i-5",
+      "block:jx-i-6",
+      "block:jx-i-6~was",
+      "block:jx-i-7",
+      "block:jx-i-8",
+      "block:jx-i-9",
+      "hair:jx-sig",
+      "hair:jx-sig-a",
+      "hair:jx-sig-z",
+      "rule:jx-rule",
+      "tick:jx-t0",
+      "tick:jx-t1",
+      "tick:jx-t2",
+      "tick:jx-t3",
+      "tick:jx-t4",
+      "tick:jx-t5",
+      "tick:jx-t6"
+    ],
+    "beats": {
+      "establish": {
+        "rest": "0-16,18-20,24-31",
+        "mid": "0-16,18-20,24-31"
+      },
+      "locate": {
+        "rest": "0-16,18-31",
+        "mid": "0-16,18-31"
+      },
+      "hold": {
+        "rest": "0-16,18-31",
+        "mid": "0-31"
+      }
+    }
+  },
+  "finding chr4:54703788:C:T:KIT #0 portrait--substitution-contacts": {
+    "ids": [
+      "clearing:clearing",
+      "hair:c257",
+      "hair:c257-in",
+      "hair:c258",
+      "hair:c258-in",
+      "hair:c259",
+      "hair:c259-in",
+      "module:m254",
+      "module:m255",
+      "module:m256",
+      "module:m257",
+      "module:m258",
+      "module:m259",
+      "module:m260",
+      "module:m261",
+      "module:m262",
+      "module:m263",
+      "module:m264",
+      "module:m265",
+      "module:m266",
+      "module:m267",
+      "module:m268",
+      "module:m269",
+      "module:m270",
+      "module:m271",
+      "module:m272",
+      "module:m273",
+      "module:m274",
+      "module:m275",
+      "module:m276",
+      "module:m277",
+      "module:m278",
+      "module:m279",
+      "module:m280",
+      "module:m281",
+      "module:m282",
+      "module:m283",
+      "module:m284",
+      "module:m285",
+      "module:m286",
+      "module:m287",
+      "module:m288",
+      "module:m289",
+      "module:m290",
+      "module:m291",
+      "module:m292",
+      "module:m293",
+      "module:mark",
+      "path:t255",
+      "path:t256",
+      "path:t257",
+      "path:t258",
+      "path:t259",
+      "path:t260",
+      "path:t261",
+      "path:t262",
+      "path:t263",
+      "path:t264",
+      "path:t265",
+      "path:t266",
+      "path:t267",
+      "path:t268",
+      "path:t269",
+      "path:t270",
+      "path:t271",
+      "path:t272",
+      "path:t273",
+      "path:t274",
+      "path:t275",
+      "path:t276",
+      "path:t277",
+      "path:t278",
+      "path:t279",
+      "path:t280",
+      "path:t281",
+      "path:t282",
+      "path:t283",
+      "path:t284",
+      "path:t285",
+      "path:t286",
+      "path:t287",
+      "path:t288",
+      "path:t289",
+      "path:t290",
+      "path:t291",
+      "path:t292",
+      "path:t293"
+    ],
+    "beats": {
+      "establish": {
+        "rest": "0,7-46,48-86",
+        "mid": "0,7-46,48-86"
+      },
+      "locate": {
+        "rest": "0,7-46,48-86",
+        "mid": "0,7-46,48-86"
+      },
+      "substitute": {
+        "rest": "0,7-26,28-86",
+        "mid": "0,7-86"
+      },
+      "contacts": {
+        "rest": "0-26,28-86",
+        "mid": "0-26,28-86"
+      },
+      "settle": {
+        "rest": "0-26,28-86",
+        "mid": "0-26,28-86"
+      }
+    }
+  },
+  "finding chr4:186274193:G:T:F11 #0 codon--nonsense": {
+    "ids": [
+      "block:c126",
+      "block:c127",
+      "block:c128",
+      "block:c129",
+      "block:c130",
+      "block:c131",
+      "block:c132",
+      "block:c133",
+      "block:c134",
+      "block:c135",
+      "block:c136",
+      "block:c136~was",
+      "rule:rule",
+      "tick:tick-c126",
+      "tick:tick-c127",
+      "tick:tick-c128",
+      "tick:tick-c129",
+      "tick:tick-c130",
+      "tick:tick-c131",
+      "tick:tick-c132",
+      "tick:tick-c133",
+      "tick:tick-c134",
+      "tick:tick-c135",
+      "tick:tick-c136",
+      "tick:tick-end"
+    ],
+    "beats": {
+      "establish": {
+        "rest": "0-10,12-24",
+        "mid": "0-10,12-24"
+      },
+      "swap-cell": {
+        "rest": "0-10,12-24",
+        "mid": "0-10,12-24"
+      },
+      "flip-stop": {
+        "rest": "0-10,12-24",
+        "mid": "0-10,12-24"
+      },
+      "settle": {
+        "rest": "0-10,12-24",
+        "mid": "0-24"
+      }
+    }
+  },
+  "finding chr5:80654887:GCTGCAGCGGCCGCAGCGGCCGCAGCGC:G:MSH3 #0 codon--in-frame-del": {
+    "ids": [
+      "block:c54",
+      "block:c55",
+      "block:c56",
+      "block:c57",
+      "block:c58",
+      "block:c59",
+      "block:c60",
+      "block:c61",
+      "block:c62",
+      "block:c63",
+      "block:c64",
+      "block:c65",
+      "block:c66",
+      "block:c67",
+      "block:c68",
+      "block:c69",
+      "block:c70",
+      "block:c71",
+      "block:c72",
+      "block:c73",
+      "rule:rule",
+      "seam:seam-del",
+      "tick:tick-c54",
+      "tick:tick-c55",
+      "tick:tick-c56",
+      "tick:tick-c57",
+      "tick:tick-c58",
+      "tick:tick-c59",
+      "tick:tick-c60",
+      "tick:tick-c61",
+      "tick:tick-c62",
+      "tick:tick-c63",
+      "tick:tick-c64",
+      "tick:tick-end"
+    ],
+    "beats": {
+      "establish": {
+        "rest": "0-20,22-33",
+        "mid": "0-20,22-33"
+      },
+      "delete": {
+        "rest": "0,10-20,22-33",
+        "mid": "0,10-20,22-33"
+      },
+      "reflow": {
+        "rest": "0,10-33",
+        "mid": "0,10-33"
+      },
+      "settle": {
+        "rest": "0,10-33",
+        "mid": "0,10-33"
+      }
+    }
+  },
+  "finding chr5:80654887:GCTGCAGCGGCCGCAGCGGCCGCAGCGC:G:MSH3 #1 chain--local-failure": {
+    "ids": [
+      "bead:site",
+      "path:seg-1",
+      "path:seg-1032",
+      "path:seg-1054",
+      "path:seg-1127",
+      "path:seg-227",
+      "path:seg-478",
+      "path:seg-489",
+      "path:seg-940",
+      "path:seg-950"
+    ],
+    "beats": {
+      "establish": {
+        "rest": "0-9",
+        "mid": "0-9"
+      },
+      "locate": {
+        "rest": "0-9",
+        "mid": "0-9"
+      },
+      "dwell": {
+        "rest": "0-9",
+        "mid": "0-9"
+      },
+      "settle": {
+        "rest": "0-9",
+        "mid": "0-9"
+      }
+    }
+  },
+  "finding chr7:55173087:G:A:EGFR #0 chain--local-failure": {
+    "ids": [
+      "bead:site",
+      "path:seg-1",
+      "path:seg-29",
+      "path:seg-635",
+      "path:seg-657",
+      "path:seg-670",
+      "path:seg-706",
+      "path:seg-747",
+      "path:seg-762",
+      "path:seg-855",
+      "path:seg-875",
+      "path:seg-984"
+    ],
+    "beats": {
+      "establish": {
+        "rest": "0-11",
+        "mid": "0-11"
+      },
+      "locate": {
+        "rest": "0-11",
+        "mid": "0-11"
+      },
+      "dwell": {
+        "rest": "0-11",
+        "mid": "0-11"
+      },
+      "settle": {
+        "rest": "0-11",
+        "mid": "0-11"
+      }
+    }
+  },
+  "finding chr9:2039844:A:T:SMARCA2 #0 chain--local-failure": {
+    "ids": [
+      "bead:site",
+      "path:seg-1",
+      "path:seg-1006",
+      "path:seg-1199",
+      "path:seg-1231",
+      "path:seg-1284",
+      "path:seg-1379",
+      "path:seg-1397",
+      "path:seg-1423",
+      "path:seg-1507",
+      "path:seg-178",
+      "path:seg-203",
+      "path:seg-339",
+      "path:seg-403",
+      "path:seg-422",
+      "path:seg-495",
+      "path:seg-548",
+      "path:seg-559",
+      "path:seg-595",
+      "path:seg-626",
+      "path:seg-705",
+      "path:seg-908",
+      "path:seg-934",
+      "path:seg-984"
+    ],
+    "beats": {
+      "establish": {
+        "rest": "0-23",
+        "mid": "0-23"
+      },
+      "locate": {
+        "rest": "0-23",
+        "mid": "0-23"
+      },
+      "dwell": {
+        "rest": "0-23",
+        "mid": "0-23"
+      },
+      "settle": {
+        "rest": "0-23",
+        "mid": "0-23"
+      }
+    }
+  },
+  "finding chr9:127467780:G:A:LRSAM1 #0 portrait--substitution-contacts": {
+    "ids": [
+      "clearing:clearing",
+      "hair:c182",
+      "hair:c182-in",
+      "hair:c183",
+      "hair:c183-in",
+      "hair:c185",
+      "hair:c185-in",
+      "hair:c186",
+      "hair:c186-in",
+      "hair:c194",
+      "hair:c194-in",
+      "module:m170",
+      "module:m171",
+      "module:m172",
+      "module:m173",
+      "module:m174",
+      "module:m175",
+      "module:m176",
+      "module:m177",
+      "module:m178",
+      "module:m179",
+      "module:m180",
+      "module:m181",
+      "module:m182",
+      "module:m183",
+      "module:m184",
+      "module:m185",
+      "module:m186",
+      "module:m187",
+      "module:m188",
+      "module:m189",
+      "module:m190",
+      "module:m191",
+      "module:m192",
+      "module:m193",
+      "module:m194",
+      "module:m195",
+      "module:m196",
+      "module:m197",
+      "module:m198",
+      "module:m199",
+      "module:m200",
+      "module:m201",
+      "module:m202",
+      "module:m203",
+      "module:m204",
+      "module:m205",
+      "module:m206",
+      "module:m207",
+      "module:m208",
+      "module:m209",
+      "module:mark",
+      "path:t171",
+      "path:t172",
+      "path:t173",
+      "path:t174",
+      "path:t175",
+      "path:t176",
+      "path:t177",
+      "path:t178",
+      "path:t179",
+      "path:t180",
+      "path:t181",
+      "path:t182",
+      "path:t183",
+      "path:t184",
+      "path:t185",
+      "path:t186",
+      "path:t187",
+      "path:t188",
+      "path:t189",
+      "path:t190",
+      "path:t191",
+      "path:t192",
+      "path:t193",
+      "path:t194",
+      "path:t195",
+      "path:t196",
+      "path:t197",
+      "path:t198",
+      "path:t199",
+      "path:t200",
+      "path:t201",
+      "path:t202",
+      "path:t203",
+      "path:t204",
+      "path:t205",
+      "path:t206",
+      "path:t207",
+      "path:t208",
+      "path:t209"
+    ],
+    "beats": {
+      "establish": {
+        "rest": "0,11-50,52-90",
+        "mid": "0,11-50,52-90"
+      },
+      "locate": {
+        "rest": "0,11-50,52-90",
+        "mid": "0,11-50,52-90"
+      },
+      "substitute": {
+        "rest": "0,11-30,32-90",
+        "mid": "0,11-90"
+      },
+      "contacts": {
+        "rest": "0-30,32-90",
+        "mid": "0-30,32-90"
+      },
+      "settle": {
+        "rest": "0-30,32-90",
+        "mid": "0-30,32-90"
+      }
+    }
+  },
+  "finding chr11:44108232:A:C:EXT2 #0 portrait--substitution-contacts": {
+    "ids": [
+      "clearing:clearing",
+      "hair:c155",
+      "hair:c155-in",
+      "hair:c157",
+      "hair:c157-in",
+      "hair:c170",
+      "hair:c170-in",
+      "hair:c180",
+      "hair:c180-in",
+      "module:m154",
+      "module:m155",
+      "module:m156",
+      "module:m157",
+      "module:m158",
+      "module:m159",
+      "module:m160",
+      "module:m161",
+      "module:m162",
+      "module:m163",
+      "module:m164",
+      "module:m165",
+      "module:m166",
+      "module:m167",
+      "module:m168",
+      "module:m169",
+      "module:m170",
+      "module:m171",
+      "module:m172",
+      "module:m173",
+      "module:m174",
+      "module:m175",
+      "module:m176",
+      "module:m177",
+      "module:m178",
+      "module:m179",
+      "module:m180",
+      "module:m181",
+      "module:m182",
+      "module:m183",
+      "module:m184",
+      "module:m185",
+      "module:m186",
+      "module:m187",
+      "module:m188",
+      "module:m189",
+      "module:m190",
+      "module:m191",
+      "module:m192",
+      "module:m193",
+      "module:mark",
+      "path:t155",
+      "path:t156",
+      "path:t157",
+      "path:t158",
+      "path:t159",
+      "path:t160",
+      "path:t161",
+      "path:t162",
+      "path:t163",
+      "path:t164",
+      "path:t165",
+      "path:t166",
+      "path:t167",
+      "path:t168",
+      "path:t169",
+      "path:t170",
+      "path:t171",
+      "path:t172",
+      "path:t173",
+      "path:t174",
+      "path:t175",
+      "path:t176",
+      "path:t177",
+      "path:t178",
+      "path:t179",
+      "path:t180",
+      "path:t181",
+      "path:t182",
+      "path:t183",
+      "path:t184",
+      "path:t185",
+      "path:t186",
+      "path:t187",
+      "path:t188",
+      "path:t189",
+      "path:t190",
+      "path:t191",
+      "path:t192",
+      "path:t193"
+    ],
+    "beats": {
+      "establish": {
+        "rest": "0,9-48,50-88",
+        "mid": "0,9-48,50-88"
+      },
+      "locate": {
+        "rest": "0,9-48,50-88",
+        "mid": "0,9-48,50-88"
+      },
+      "substitute": {
+        "rest": "0,9-28,30-88",
+        "mid": "0,9-88"
+      },
+      "contacts": {
+        "rest": "0-28,30-88",
+        "mid": "0-28,30-88"
+      },
+      "settle": {
+        "rest": "0-28,30-88",
+        "mid": "0-28,30-88"
+      }
+    }
+  },
+  "finding chr11:108229287:A:G:ATM #0 chain--local-failure": {
+    "ids": [
+      "bead:site",
+      "path:seg-1"
+    ],
+    "beats": {
+      "establish": {
+        "rest": "0-1",
+        "mid": "0-1"
+      },
+      "locate": {
+        "rest": "0-1",
+        "mid": "0-1"
+      },
+      "dwell": {
+        "rest": "0-1",
+        "mid": "0-1"
+      },
+      "settle": {
+        "rest": "0-1",
+        "mid": "0-1"
+      }
+    }
+  },
+  "finding chr12:39330764:G:T:KIF21A #0 chain--local-failure": {
+    "ids": [
+      "bead:site",
+      "path:seg-1",
+      "path:seg-1015",
+      "path:seg-1030",
+      "path:seg-1091",
+      "path:seg-1333",
+      "path:seg-1434",
+      "path:seg-1447",
+      "path:seg-164",
+      "path:seg-1652",
+      "path:seg-172",
+      "path:seg-239",
+      "path:seg-262",
+      "path:seg-404",
+      "path:seg-420",
+      "path:seg-459",
+      "path:seg-478",
+      "path:seg-502",
+      "path:seg-541",
+      "path:seg-547",
+      "path:seg-644",
+      "path:seg-701",
+      "path:seg-713",
+      "path:seg-828",
+      "path:seg-919"
+    ],
+    "beats": {
+      "establish": {
+        "rest": "0-24",
+        "mid": "0-24"
+      },
+      "locate": {
+        "rest": "0-24",
+        "mid": "0-24"
+      },
+      "dwell": {
+        "rest": "0-24",
+        "mid": "0-24"
+      },
+      "settle": {
+        "rest": "0-24",
+        "mid": "0-24"
+      }
+    }
+  },
+  "finding chr14:21391492:C:T:CHD8 #0 portrait--substitution-contacts": {
+    "ids": [
+      "clearing:clearing",
+      "hair:c2341",
+      "hair:c2341-in",
+      "module:m2326",
+      "module:m2327",
+      "module:m2328",
+      "module:m2329",
+      "module:m2330",
+      "module:m2331",
+      "module:m2332",
+      "module:m2333",
+      "module:m2334",
+      "module:m2335",
+      "module:m2336",
+      "module:m2337",
+      "module:m2338",
+      "module:m2339",
+      "module:m2340",
+      "module:m2341",
+      "module:m2342",
+      "module:m2343",
+      "module:m2344",
+      "module:m2345",
+      "module:m2346",
+      "module:m2347",
+      "module:m2348",
+      "module:m2349",
+      "module:m2350",
+      "module:m2351",
+      "module:m2352",
+      "module:m2353",
+      "module:m2354",
+      "module:m2355",
+      "module:m2356",
+      "module:m2357",
+      "module:m2358",
+      "module:m2359",
+      "module:m2360",
+      "module:m2361",
+      "module:m2362",
+      "module:m2363",
+      "module:m2364",
+      "module:m2365",
+      "module:mark",
+      "path:t2327",
+      "path:t2328",
+      "path:t2329",
+      "path:t2330",
+      "path:t2331",
+      "path:t2332",
+      "path:t2333",
+      "path:t2334",
+      "path:t2335",
+      "path:t2336",
+      "path:t2337",
+      "path:t2338",
+      "path:t2339",
+      "path:t2340",
+      "path:t2341",
+      "path:t2342",
+      "path:t2343",
+      "path:t2344",
+      "path:t2345",
+      "path:t2346",
+      "path:t2347",
+      "path:t2348",
+      "path:t2349",
+      "path:t2350",
+      "path:t2351",
+      "path:t2352",
+      "path:t2353",
+      "path:t2354",
+      "path:t2355",
+      "path:t2356",
+      "path:t2357",
+      "path:t2358",
+      "path:t2359",
+      "path:t2360",
+      "path:t2361",
+      "path:t2362",
+      "path:t2363",
+      "path:t2364",
+      "path:t2365"
+    ],
+    "beats": {
+      "establish": {
+        "rest": "0,3-42,44-82",
+        "mid": "0,3-42,44-82"
+      },
+      "locate": {
+        "rest": "0,3-42,44-82",
+        "mid": "0,3-42,44-82"
+      },
+      "substitute": {
+        "rest": "0,3-22,24-82",
+        "mid": "0,3-82"
+      },
+      "contacts": {
+        "rest": "0-22,24-82",
+        "mid": "0-22,24-82"
+      },
+      "settle": {
+        "rest": "0-22,24-82",
+        "mid": "0-22,24-82"
+      }
+    }
+  },
+  "finding chr15:66436743:C:T:MAP2K1 #0 transcript--foreclosed-junction": {
+    "ids": [
+      "block:jx-e0",
+      "block:jx-e1",
+      "block:jx-e2",
+      "block:jx-e3",
+      "block:jx-e4",
+      "block:jx-e5",
+      "block:jx-i-1",
+      "block:jx-i-10",
+      "block:jx-i-11",
+      "block:jx-i-12",
+      "block:jx-i-13",
+      "block:jx-i-14",
+      "block:jx-i-2",
+      "block:jx-i-3",
+      "block:jx-i-3~was",
+      "block:jx-i-4",
+      "block:jx-i-5",
+      "block:jx-i-6",
+      "block:jx-i-7",
+      "block:jx-i-8",
+      "block:jx-i-9",
+      "hair:jx-sig",
+      "hair:jx-sig-a",
+      "hair:jx-sig-z",
+      "rule:jx-rule",
+      "tick:jx-t0",
+      "tick:jx-t1",
+      "tick:jx-t2",
+      "tick:jx-t3",
+      "tick:jx-t4",
+      "tick:jx-t5",
+      "tick:jx-t6"
+    ],
+    "beats": {
+      "establish": {
+        "rest": "0-13,15-20,24-31",
+        "mid": "0-13,15-20,24-31"
+      },
+      "locate": {
+        "rest": "0-13,15-31",
+        "mid": "0-13,15-31"
+      },
+      "hold": {
+        "rest": "0-13,15-31",
+        "mid": "0-31"
+      }
+    }
+  },
+  "finding chr16:2057144:G:A:TSC2 #0 portrait--substitution-contacts": {
+    "ids": [
+      "clearing:clearing",
+      "hair:c264",
+      "hair:c264-in",
+      "hair:c268",
+      "hair:c268-in",
+      "hair:c276",
+      "hair:c276-in",
+      "module:m252",
+      "module:m253",
+      "module:m254",
+      "module:m255",
+      "module:m256",
+      "module:m257",
+      "module:m258",
+      "module:m259",
+      "module:m260",
+      "module:m261",
+      "module:m262",
+      "module:m263",
+      "module:m264",
+      "module:m265",
+      "module:m266",
+      "module:m267",
+      "module:m268",
+      "module:m269",
+      "module:m270",
+      "module:m271",
+      "module:m272",
+      "module:m273",
+      "module:m274",
+      "module:m275",
+      "module:m276",
+      "module:m277",
+      "module:m278",
+      "module:m279",
+      "module:m280",
+      "module:m281",
+      "module:m282",
+      "module:m283",
+      "module:m284",
+      "module:m285",
+      "module:m286",
+      "module:m287",
+      "module:m288",
+      "module:m289",
+      "module:m290",
+      "module:m291",
+      "module:mark",
+      "path:t253",
+      "path:t254",
+      "path:t255",
+      "path:t256",
+      "path:t257",
+      "path:t258",
+      "path:t259",
+      "path:t260",
+      "path:t261",
+      "path:t262",
+      "path:t263",
+      "path:t264",
+      "path:t265",
+      "path:t266",
+      "path:t267",
+      "path:t268",
+      "path:t269",
+      "path:t270",
+      "path:t271",
+      "path:t272",
+      "path:t273",
+      "path:t274",
+      "path:t275",
+      "path:t276",
+      "path:t277",
+      "path:t278",
+      "path:t279",
+      "path:t280",
+      "path:t281",
+      "path:t282",
+      "path:t283",
+      "path:t284",
+      "path:t285",
+      "path:t286",
+      "path:t287",
+      "path:t288",
+      "path:t289",
+      "path:t290",
+      "path:t291"
+    ],
+    "beats": {
+      "establish": {
+        "rest": "0,7-46,48-86",
+        "mid": "0,7-46,48-86"
+      },
+      "locate": {
+        "rest": "0,7-46,48-86",
+        "mid": "0,7-46,48-86"
+      },
+      "substitute": {
+        "rest": "0,7-26,28-86",
+        "mid": "0,7-86"
+      },
+      "contacts": {
+        "rest": "0-26,28-86",
+        "mid": "0-26,28-86"
+      },
+      "settle": {
+        "rest": "0-26,28-86",
+        "mid": "0-26,28-86"
+      }
+    }
+  },
+  "finding chr16:9763191:T:A:GRIN2A #0 chain--local-failure": {
+    "ids": [
+      "bead:site",
+      "path:seg-1",
+      "path:seg-317",
+      "path:seg-334",
+      "path:seg-34",
+      "path:seg-389",
+      "path:seg-402",
+      "path:seg-48",
+      "path:seg-577",
+      "path:seg-60",
+      "path:seg-602",
+      "path:seg-800",
+      "path:seg-813",
+      "path:seg-843"
+    ],
+    "beats": {
+      "establish": {
+        "rest": "0-13",
+        "mid": "0-13"
+      },
+      "locate": {
+        "rest": "0-13",
+        "mid": "0-13"
+      },
+      "dwell": {
+        "rest": "0-13",
+        "mid": "0-13"
+      },
+      "settle": {
+        "rest": "0-13",
+        "mid": "0-13"
+      }
+    }
+  },
+  "finding chr17:62536300:C:T:TLK2 #0 chain--local-failure": {
+    "ids": [
+      "bead:site",
+      "path:seg-1"
+    ],
+    "beats": {
+      "establish": {
+        "rest": "0-1",
+        "mid": "0-1"
+      },
+      "locate": {
+        "rest": "0-1",
+        "mid": "0-1"
+      },
+      "dwell": {
+        "rest": "0-1",
+        "mid": "0-1"
+      },
+      "settle": {
+        "rest": "0-1",
+        "mid": "0-1"
+      }
+    }
+  },
+  "finding chr18:31542752:C:T:DSG2 #0 chain--local-failure": {
+    "ids": [
+      "bead:site",
+      "path:seg-1",
+      "path:seg-53",
+      "path:seg-597",
+      "path:seg-611",
+      "path:seg-629",
+      "path:seg-773",
+      "path:seg-776"
+    ],
+    "beats": {
+      "establish": {
+        "rest": "0-7",
+        "mid": "0-7"
+      },
+      "locate": {
+        "rest": "0-7",
+        "mid": "0-7"
+      },
+      "dwell": {
+        "rest": "0-7",
+        "mid": "0-7"
+      },
+      "settle": {
+        "rest": "0-7",
+        "mid": "0-7"
+      }
+    }
+  },
+  "finding chr20:32234536:G:A:POFUT1 #0 portrait--substitution-contacts": {
+    "ids": [
+      "clearing:clearing",
+      "module:m328",
+      "module:m329",
+      "module:m330",
+      "module:m331",
+      "module:m332",
+      "module:m333",
+      "module:m334",
+      "module:m335",
+      "module:m336",
+      "module:m337",
+      "module:m338",
+      "module:m339",
+      "module:m340",
+      "module:m341",
+      "module:m342",
+      "module:m343",
+      "module:m344",
+      "module:m345",
+      "module:m346",
+      "module:m347",
+      "module:m348",
+      "module:m349",
+      "module:m350",
+      "module:m351",
+      "module:m352",
+      "module:m353",
+      "module:m354",
+      "module:m355",
+      "module:m356",
+      "module:m357",
+      "module:m358",
+      "module:m359",
+      "module:m360",
+      "module:m361",
+      "module:m362",
+      "module:m363",
+      "module:m364",
+      "module:m365",
+      "module:m366",
+      "module:m367",
+      "module:mark",
+      "path:t329",
+      "path:t330",
+      "path:t331",
+      "path:t332",
+      "path:t333",
+      "path:t334",
+      "path:t335",
+      "path:t336",
+      "path:t337",
+      "path:t338",
+      "path:t339",
+      "path:t340",
+      "path:t341",
+      "path:t342",
+      "path:t343",
+      "path:t344",
+      "path:t345",
+      "path:t346",
+      "path:t347",
+      "path:t348",
+      "path:t349",
+      "path:t350",
+      "path:t351",
+      "path:t352",
+      "path:t353",
+      "path:t354",
+      "path:t355",
+      "path:t356",
+      "path:t357",
+      "path:t358",
+      "path:t359",
+      "path:t360",
+      "path:t361",
+      "path:t362",
+      "path:t363",
+      "path:t364",
+      "path:t365",
+      "path:t366",
+      "path:t367"
+    ],
+    "beats": {
+      "establish": {
+        "rest": "0-40,42-80",
+        "mid": "0-40,42-80"
+      },
+      "locate": {
+        "rest": "0-40,42-80",
+        "mid": "0-40,42-80"
+      },
+      "substitute": {
+        "rest": "0-20,22-80",
+        "mid": "0-80"
+      },
+      "contacts": {
+        "rest": "0-20,22-80",
+        "mid": "0-20,22-80"
+      },
+      "settle": {
+        "rest": "0-20,22-80",
+        "mid": "0-20,22-80"
+      }
+    }
+  },
+  "finding chr1:5864452:C:A:NPHP4 #0 portrait--substitution-contacts": {
+    "ids": [
+      "clearing:clearing",
+      "module:m1274",
+      "module:m1275",
+      "module:m1276",
+      "module:m1277",
+      "module:m1278",
+      "module:m1279",
+      "module:m1280",
+      "module:m1281",
+      "module:m1282",
+      "module:m1283",
+      "module:m1284",
+      "module:m1285",
+      "module:m1286",
+      "module:m1287",
+      "module:m1288",
+      "module:m1289",
+      "module:m1290",
+      "module:m1291",
+      "module:m1292",
+      "module:m1293",
+      "module:m1294",
+      "module:m1295",
+      "module:m1296",
+      "module:m1297",
+      "module:m1298",
+      "module:m1299",
+      "module:m1300",
+      "module:m1301",
+      "module:m1302",
+      "module:m1303",
+      "module:m1304",
+      "module:m1305",
+      "module:m1306",
+      "module:m1307",
+      "module:m1308",
+      "module:m1309",
+      "module:m1310",
+      "module:m1311",
+      "module:m1312",
+      "module:m1313",
+      "module:mark",
+      "path:t1275",
+      "path:t1276",
+      "path:t1277",
+      "path:t1278",
+      "path:t1279",
+      "path:t1280",
+      "path:t1281",
+      "path:t1282",
+      "path:t1283",
+      "path:t1284",
+      "path:t1285",
+      "path:t1286",
+      "path:t1287",
+      "path:t1288",
+      "path:t1289",
+      "path:t1290",
+      "path:t1291",
+      "path:t1292",
+      "path:t1293",
+      "path:t1294",
+      "path:t1295",
+      "path:t1296",
+      "path:t1297",
+      "path:t1298",
+      "path:t1299",
+      "path:t1300",
+      "path:t1301",
+      "path:t1302",
+      "path:t1303",
+      "path:t1304",
+      "path:t1305",
+      "path:t1306",
+      "path:t1307",
+      "path:t1308",
+      "path:t1309",
+      "path:t1310",
+      "path:t1311",
+      "path:t1312",
+      "path:t1313"
+    ],
+    "beats": {
+      "establish": {
+        "rest": "0-40,42-80",
+        "mid": "0-40,42-80"
+      },
+      "locate": {
+        "rest": "0-40,42-80",
+        "mid": "0-40,42-80"
+      },
+      "substitute": {
+        "rest": "0-20,22-80",
+        "mid": "0-80"
+      },
+      "contacts": {
+        "rest": "0-20,22-80",
+        "mid": "0-20,22-80"
+      },
+      "settle": {
+        "rest": "0-20,22-80",
+        "mid": "0-20,22-80"
+      }
+    }
+  },
+  "finding chr1:21854286:C:T:HSPG2 #0 chain--local-failure": {
+    "ids": [
+      "bead:site",
+      "path:seg-1"
+    ],
+    "beats": {
+      "establish": {
+        "rest": "0-1",
+        "mid": "0-1"
+      },
+      "locate": {
+        "rest": "0-1",
+        "mid": "0-1"
+      },
+      "dwell": {
+        "rest": "0-1",
+        "mid": "0-1"
+      },
+      "settle": {
+        "rest": "0-1",
+        "mid": "0-1"
+      }
+    }
+  },
+  "finding chr1:184694397:G:A:EDEM3 #0 chain--local-failure": {
+    "ids": [
+      "bead:site",
+      "path:seg-1",
+      "path:seg-42",
+      "path:seg-503",
+      "path:seg-532",
+      "path:seg-551",
+      "path:seg-577",
+      "path:seg-635",
+      "path:seg-645",
+      "path:seg-794"
+    ],
+    "beats": {
+      "establish": {
+        "rest": "0-9",
+        "mid": "0-9"
+      },
+      "locate": {
+        "rest": "0-9",
+        "mid": "0-9"
+      },
+      "dwell": {
+        "rest": "0-9",
+        "mid": "0-9"
+      },
+      "settle": {
+        "rest": "0-9",
+        "mid": "0-9"
+      }
+    }
+  },
+  "finding chr1:207479280:G:A:CR2 #0 transcript--double-agent": {
+    "ids": [
+      "bead:mark-address",
+      "block:ex16",
+      "block:ex17",
+      "block:ex18",
+      "block:ex19",
+      "rule:rule",
+      "seam:seam-ex16-ex17",
+      "seam:seam-ex17-ex18",
+      "seam:seam-ex18-ex19",
+      "tick:tick-3088",
+      "tick:tick-3112",
+      "tick:tick-3188",
+      "tick:tick-3279"
+    ],
+    "beats": {
+      "establish": {
+        "rest": "1-12",
+        "mid": "1-12"
+      },
+      "mark-both": {
+        "rest": "0-12",
+        "mid": "0-12"
+      },
+      "hold": {
+        "rest": "0-12",
+        "mid": "0-12"
+      }
+    }
+  },
+  "finding chr1:207479280:G:A:CR2 #1 chain--local-failure": {
+    "ids": [
+      "bead:site",
+      "path:seg-1"
+    ],
+    "beats": {
+      "establish": {
+        "rest": "0-1",
+        "mid": "0-1"
+      },
+      "locate": {
+        "rest": "0-1",
+        "mid": "0-1"
+      },
+      "dwell": {
+        "rest": "0-1",
+        "mid": "0-1"
+      },
+      "settle": {
+        "rest": "0-1",
+        "mid": "0-1"
+      }
+    }
+  },
+  "finding chr2:209842364:T:G:UNC80 #0 chain--local-failure": {
+    "ids": [
+      "bead:site",
+      "path:seg-1"
+    ],
+    "beats": {
+      "establish": {
+        "rest": "0-1",
+        "mid": "0-1"
+      },
+      "locate": {
+        "rest": "0-1",
+        "mid": "0-1"
+      },
+      "dwell": {
+        "rest": "0-1",
+        "mid": "0-1"
+      },
+      "settle": {
+        "rest": "0-1",
+        "mid": "0-1"
+      }
+    }
+  },
+  "finding chr3:48565433:C:T:COL7A1 #0 chain--local-failure": {
+    "ids": [
+      "bead:site",
+      "path:seg-1"
+    ],
+    "beats": {
+      "establish": {
+        "rest": "0-1",
+        "mid": "0-1"
+      },
+      "locate": {
+        "rest": "0-1",
+        "mid": "0-1"
+      },
+      "dwell": {
+        "rest": "0-1",
+        "mid": "0-1"
+      },
+      "settle": {
+        "rest": "0-1",
+        "mid": "0-1"
+      }
+    }
+  },
+  "finding chr3:57384968:C:G:DNAH12 #0 chain--local-failure": {
+    "ids": [
+      "bead:site",
+      "path:seg-1"
+    ],
+    "beats": {
+      "establish": {
+        "rest": "0-1",
+        "mid": "0-1"
+      },
+      "locate": {
+        "rest": "0-1",
+        "mid": "0-1"
+      },
+      "dwell": {
+        "rest": "0-1",
+        "mid": "0-1"
+      },
+      "settle": {
+        "rest": "0-1",
+        "mid": "0-1"
+      }
+    }
+  },
+  "finding chr10:113623545:C:T:NRAP #0 portrait--substitution-contacts": {
+    "ids": [
+      "clearing:clearing",
+      "hair:c810",
+      "hair:c810-in",
+      "hair:c818",
+      "hair:c818-in",
+      "module:m794",
+      "module:m795",
+      "module:m796",
+      "module:m797",
+      "module:m798",
+      "module:m799",
+      "module:m800",
+      "module:m801",
+      "module:m802",
+      "module:m803",
+      "module:m804",
+      "module:m805",
+      "module:m806",
+      "module:m807",
+      "module:m808",
+      "module:m809",
+      "module:m810",
+      "module:m811",
+      "module:m812",
+      "module:m813",
+      "module:m814",
+      "module:m815",
+      "module:m816",
+      "module:m817",
+      "module:m818",
+      "module:m819",
+      "module:m820",
+      "module:m821",
+      "module:m822",
+      "module:m823",
+      "module:m824",
+      "module:m825",
+      "module:m826",
+      "module:m827",
+      "module:m828",
+      "module:m829",
+      "module:m830",
+      "module:m831",
+      "module:m832",
+      "module:m833",
+      "module:mark",
+      "path:t795",
+      "path:t796",
+      "path:t797",
+      "path:t798",
+      "path:t799",
+      "path:t800",
+      "path:t801",
+      "path:t802",
+      "path:t803",
+      "path:t804",
+      "path:t805",
+      "path:t806",
+      "path:t807",
+      "path:t808",
+      "path:t809",
+      "path:t810",
+      "path:t811",
+      "path:t812",
+      "path:t813",
+      "path:t814",
+      "path:t815",
+      "path:t816",
+      "path:t817",
+      "path:t818",
+      "path:t819",
+      "path:t820",
+      "path:t821",
+      "path:t822",
+      "path:t823",
+      "path:t824",
+      "path:t825",
+      "path:t826",
+      "path:t827",
+      "path:t828",
+      "path:t829",
+      "path:t830",
+      "path:t831",
+      "path:t832",
+      "path:t833"
+    ],
+    "beats": {
+      "establish": {
+        "rest": "0,5-44,46-84",
+        "mid": "0,5-44,46-84"
+      },
+      "locate": {
+        "rest": "0,5-44,46-84",
+        "mid": "0,5-44,46-84"
+      },
+      "substitute": {
+        "rest": "0,5-24,26-84",
+        "mid": "0,5-84"
+      },
+      "contacts": {
+        "rest": "0-24,26-84",
+        "mid": "0-24,26-84"
+      },
+      "settle": {
+        "rest": "0-24,26-84",
+        "mid": "0-24,26-84"
+      }
+    }
+  },
+  "finding chr11:67522626:C:T:CABP2 #0 chain--local-failure": {
+    "ids": [
+      "bead:site",
+      "path:seg-1",
+      "path:seg-147",
+      "path:seg-152",
+      "path:seg-217",
+      "path:seg-72"
+    ],
+    "beats": {
+      "establish": {
+        "rest": "0-5",
+        "mid": "0-5"
+      },
+      "locate": {
+        "rest": "0-5",
+        "mid": "0-5"
+      },
+      "dwell": {
+        "rest": "0-5",
+        "mid": "0-5"
+      },
+      "settle": {
+        "rest": "0-5",
+        "mid": "0-5"
+      }
+    }
+  },
+  "finding chr12:122261398:G:A:VPS33A #0 portrait--substitution-contacts": {
+    "ids": [
+      "clearing:clearing",
+      "module:m100",
+      "module:m101",
+      "module:m102",
+      "module:m103",
+      "module:m104",
+      "module:m105",
+      "module:m106",
+      "module:m107",
+      "module:m108",
+      "module:m109",
+      "module:m110",
+      "module:m111",
+      "module:m112",
+      "module:m113",
+      "module:m114",
+      "module:m115",
+      "module:m116",
+      "module:m117",
+      "module:m118",
+      "module:m119",
+      "module:m120",
+      "module:m121",
+      "module:m122",
+      "module:m123",
+      "module:m124",
+      "module:m125",
+      "module:m126",
+      "module:m127",
+      "module:m128",
+      "module:m129",
+      "module:m130",
+      "module:m131",
+      "module:m132",
+      "module:m133",
+      "module:m134",
+      "module:m135",
+      "module:m96",
+      "module:m97",
+      "module:m98",
+      "module:m99",
+      "module:mark",
+      "path:t100",
+      "path:t101",
+      "path:t102",
+      "path:t103",
+      "path:t104",
+      "path:t105",
+      "path:t106",
+      "path:t107",
+      "path:t108",
+      "path:t109",
+      "path:t110",
+      "path:t111",
+      "path:t112",
+      "path:t113",
+      "path:t114",
+      "path:t115",
+      "path:t116",
+      "path:t117",
+      "path:t118",
+      "path:t119",
+      "path:t120",
+      "path:t121",
+      "path:t122",
+      "path:t123",
+      "path:t124",
+      "path:t125",
+      "path:t126",
+      "path:t127",
+      "path:t128",
+      "path:t129",
+      "path:t130",
+      "path:t131",
+      "path:t132",
+      "path:t133",
+      "path:t134",
+      "path:t135",
+      "path:t97",
+      "path:t98",
+      "path:t99"
+    ],
+    "beats": {
+      "establish": {
+        "rest": "0-40,42-80",
+        "mid": "0-40,42-80"
+      },
+      "locate": {
+        "rest": "0-40,42-80",
+        "mid": "0-40,42-80"
+      },
+      "substitute": {
+        "rest": "0-16,18-80",
+        "mid": "0-80"
+      },
+      "contacts": {
+        "rest": "0-16,18-80",
+        "mid": "0-16,18-80"
+      },
+      "settle": {
+        "rest": "0-16,18-80",
+        "mid": "0-16,18-80"
+      }
+    }
+  },
+  "finding chr13:113117603:A:ACCACTCTCCCCTGTCCGACCGCGGTGCTGGGTGGGTG:F7 #0 transcript--foreclosed-junction": {
+    "ids": [
+      "block:jx-e0",
+      "block:jx-e1",
+      "block:jx-e2",
+      "block:jx-e3",
+      "block:jx-i1",
+      "block:jx-i10",
+      "block:jx-i11",
+      "block:jx-i12",
+      "block:jx-i13",
+      "block:jx-i14",
+      "block:jx-i15",
+      "block:jx-i16",
+      "block:jx-i17",
+      "block:jx-i18",
+      "block:jx-i19",
+      "block:jx-i2",
+      "block:jx-i20",
+      "block:jx-i21",
+      "block:jx-i3",
+      "block:jx-i4",
+      "block:jx-i49",
+      "block:jx-i5",
+      "block:jx-i50",
+      "block:jx-i51",
+      "block:jx-i51~was",
+      "block:jx-i52",
+      "block:jx-i53",
+      "block:jx-i54",
+      "block:jx-i6",
+      "block:jx-i7",
+      "block:jx-i8",
+      "block:jx-i9",
+      "hair:jx-sig",
+      "hair:jx-sig-a",
+      "hair:jx-sig-z",
+      "label:jx-brk",
+      "rule:jx-rule",
+      "tick:jx-t0",
+      "tick:jx-t1",
+      "tick:jx-t2",
+      "tick:jx-t3"
+    ],
+    "beats": {
+      "establish": {
+        "rest": "0-23,25-31,35-40",
+        "mid": "0-23,25-31,35-40"
+      },
+      "locate": {
+        "rest": "0-23,25-40",
+        "mid": "0-23,25-40"
+      },
+      "hold": {
+        "rest": "0-23,25-40",
+        "mid": "0-40"
+      }
+    }
+  },
+  "finding chr14:45185207:TCTTA:T:FANCM #0 transcript--foreclosed-junction": {
+    "ids": [
+      "block:jx-e0",
+      "block:jx-e1",
+      "block:jx-e2",
+      "block:jx-e3",
+      "block:jx-e4",
+      "block:jx-e5",
+      "block:jx-i-1",
+      "block:jx-i-10",
+      "block:jx-i-11",
+      "block:jx-i-12",
+      "block:jx-i-13",
+      "block:jx-i-14",
+      "block:jx-i-2",
+      "block:jx-i-3",
+      "block:jx-i-4",
+      "block:jx-i-5",
+      "block:jx-i-6",
+      "block:jx-i-7",
+      "block:jx-i-8",
+      "block:jx-i-9",
+      "hair:jx-sig",
+      "hair:jx-sig-a",
+      "hair:jx-sig-z",
+      "rule:jx-rule",
+      "tick:jx-t0",
+      "tick:jx-t1",
+      "tick:jx-t2",
+      "tick:jx-t3",
+      "tick:jx-t4",
+      "tick:jx-t5",
+      "tick:jx-t6"
+    ],
+    "beats": {
+      "establish": {
+        "rest": "0-19,23-30",
+        "mid": "0-19,23-30"
+      },
+      "locate": {
+        "rest": "0-30",
+        "mid": "0-30"
+      },
+      "hold": {
+        "rest": "0-30",
+        "mid": "0-30"
+      }
+    }
+  },
+  "finding chr17:38343099:G:A:GPR179 #0 chain--local-failure": {
+    "ids": [
+      "bead:site",
+      "path:seg-1"
+    ],
+    "beats": {
+      "establish": {
+        "rest": "0-1",
+        "mid": "0-1"
+      },
+      "locate": {
+        "rest": "0-1",
+        "mid": "0-1"
+      },
+      "dwell": {
+        "rest": "0-1",
+        "mid": "0-1"
+      },
+      "settle": {
+        "rest": "0-1",
+        "mid": "0-1"
+      }
+    }
+  },
+  "finding chr17:78507336:C:T:DNAH17 #0 chain--local-failure": {
+    "ids": [
+      "bead:site",
+      "path:seg-1"
+    ],
+    "beats": {
+      "establish": {
+        "rest": "0-1",
+        "mid": "0-1"
+      },
+      "locate": {
+        "rest": "0-1",
+        "mid": "0-1"
+      },
+      "dwell": {
+        "rest": "0-1",
+        "mid": "0-1"
+      },
+      "settle": {
+        "rest": "0-1",
+        "mid": "0-1"
+      }
+    }
+  },
+  "finding chr19:42410677:G:A:LIPE #0 portrait--substitution-contacts": {
+    "ids": [
+      "clearing:clearing",
+      "hair:c346",
+      "hair:c346-in",
+      "hair:c354",
+      "hair:c354-in",
+      "module:m330",
+      "module:m331",
+      "module:m332",
+      "module:m333",
+      "module:m334",
+      "module:m335",
+      "module:m336",
+      "module:m337",
+      "module:m338",
+      "module:m339",
+      "module:m340",
+      "module:m341",
+      "module:m342",
+      "module:m343",
+      "module:m344",
+      "module:m345",
+      "module:m346",
+      "module:m347",
+      "module:m348",
+      "module:m349",
+      "module:m350",
+      "module:m351",
+      "module:m352",
+      "module:m353",
+      "module:m354",
+      "module:m355",
+      "module:m356",
+      "module:m357",
+      "module:m358",
+      "module:m359",
+      "module:m360",
+      "module:m361",
+      "module:m362",
+      "module:m363",
+      "module:m364",
+      "module:m365",
+      "module:m366",
+      "module:m367",
+      "module:m368",
+      "module:m369",
+      "module:mark",
+      "path:t331",
+      "path:t332",
+      "path:t333",
+      "path:t334",
+      "path:t335",
+      "path:t336",
+      "path:t337",
+      "path:t338",
+      "path:t339",
+      "path:t340",
+      "path:t341",
+      "path:t342",
+      "path:t343",
+      "path:t344",
+      "path:t345",
+      "path:t346",
+      "path:t347",
+      "path:t348",
+      "path:t349",
+      "path:t350",
+      "path:t351",
+      "path:t352",
+      "path:t353",
+      "path:t354",
+      "path:t355",
+      "path:t356",
+      "path:t357",
+      "path:t358",
+      "path:t359",
+      "path:t360",
+      "path:t361",
+      "path:t362",
+      "path:t363",
+      "path:t364",
+      "path:t365",
+      "path:t366",
+      "path:t367",
+      "path:t368",
+      "path:t369"
+    ],
+    "beats": {
+      "establish": {
+        "rest": "0,5-44,46-84",
+        "mid": "0,5-44,46-84"
+      },
+      "locate": {
+        "rest": "0,5-44,46-84",
+        "mid": "0,5-44,46-84"
+      },
+      "substitute": {
+        "rest": "0,5-24,26-84",
+        "mid": "0,5-84"
+      },
+      "contacts": {
+        "rest": "0-24,26-84",
+        "mid": "0-24,26-84"
+      },
+      "settle": {
+        "rest": "0-24,26-84",
+        "mid": "0-24,26-84"
+      }
+    }
+  },
+  "finding chr22:18922937:CA:C:PRODH #0 transcript--foreclosed-junction": {
+    "ids": [
+      "block:jx-e0",
+      "block:jx-e1",
+      "block:jx-e2",
+      "block:jx-e3",
+      "block:jx-e4",
+      "block:jx-e5",
+      "block:jx-i-1",
+      "block:jx-i-10",
+      "block:jx-i-11",
+      "block:jx-i-12",
+      "block:jx-i-13",
+      "block:jx-i-14",
+      "block:jx-i-2",
+      "block:jx-i-3",
+      "block:jx-i-4",
+      "block:jx-i-5",
+      "block:jx-i-6",
+      "block:jx-i-7",
+      "block:jx-i-7~was",
+      "block:jx-i-8",
+      "block:jx-i-9",
+      "hair:jx-sig",
+      "hair:jx-sig-a",
+      "hair:jx-sig-z",
+      "rule:jx-rule",
+      "tick:jx-t0",
+      "tick:jx-t1",
+      "tick:jx-t2",
+      "tick:jx-t3",
+      "tick:jx-t4",
+      "tick:jx-t5",
+      "tick:jx-t6"
+    ],
+    "beats": {
+      "establish": {
+        "rest": "0-17,19-20,24-31",
+        "mid": "0-17,19-20,24-31"
+      },
+      "locate": {
+        "rest": "0-17,19-31",
+        "mid": "0-17,19-31"
+      },
+      "hold": {
+        "rest": "0-17,19-31",
+        "mid": "0-31"
+      }
+    }
+  },
+  "finding chrX:31180394:A:T:DMD #0 codon--nonsense": {
+    "ids": [
+      "block:c3345",
+      "block:c3346",
+      "block:c3347",
+      "block:c3348",
+      "block:c3349",
+      "block:c3350",
+      "block:c3351",
+      "block:c3352",
+      "block:c3353",
+      "block:c3354",
+      "block:c3355",
+      "block:c3355~was",
+      "rule:rule",
+      "tick:tick-c3345",
+      "tick:tick-c3346",
+      "tick:tick-c3347",
+      "tick:tick-c3348",
+      "tick:tick-c3349",
+      "tick:tick-c3350",
+      "tick:tick-c3351",
+      "tick:tick-c3352",
+      "tick:tick-c3353",
+      "tick:tick-c3354",
+      "tick:tick-c3355",
+      "tick:tick-end"
+    ],
+    "beats": {
+      "establish": {
+        "rest": "0-10,12-24",
+        "mid": "0-10,12-24"
+      },
+      "swap-cell": {
+        "rest": "0-10,12-24",
+        "mid": "0-10,12-24"
+      },
+      "flip-stop": {
+        "rest": "0-10,12-24",
+        "mid": "0-10,12-24"
+      },
+      "settle": {
+        "rest": "0-10,12-24",
+        "mid": "0-24"
+      }
+    }
+  },
+  "finding chrX:22190447:G:A:PHEX #0 codon--nonsense": {
+    "ids": [
+      "block:c521",
+      "block:c522",
+      "block:c523",
+      "block:c524",
+      "block:c525",
+      "block:c526",
+      "block:c527",
+      "block:c528",
+      "block:c529",
+      "block:c530",
+      "block:c531",
+      "block:c531~was",
+      "rule:rule",
+      "tick:tick-c521",
+      "tick:tick-c522",
+      "tick:tick-c523",
+      "tick:tick-c524",
+      "tick:tick-c525",
+      "tick:tick-c526",
+      "tick:tick-c527",
+      "tick:tick-c528",
+      "tick:tick-c529",
+      "tick:tick-c530",
+      "tick:tick-c531",
+      "tick:tick-end"
+    ],
+    "beats": {
+      "establish": {
+        "rest": "0-10,12-24",
+        "mid": "0-10,12-24"
+      },
+      "swap-cell": {
+        "rest": "0-10,12-24",
+        "mid": "0-10,12-24"
+      },
+      "flip-stop": {
+        "rest": "0-10,12-24",
+        "mid": "0-10,12-24"
+      },
+      "settle": {
+        "rest": "0-10,12-24",
+        "mid": "0-24"
+      }
+    }
+  },
+  "finding chrX:153725495:T:TGGCTCCTGC:ABCD1 #0 codon--in-frame-ins": {
+    "ids": [
+      "block:c73",
+      "block:c74",
+      "block:c75",
+      "block:c76",
+      "block:c77",
+      "block:c78",
+      "block:c79",
+      "block:c80",
+      "block:c81",
+      "block:c82",
+      "block:c83",
+      "block:intrusion",
+      "block:intrusion-2",
+      "block:intrusion-3",
+      "rule:rule",
+      "tick:tick-c73",
+      "tick:tick-c74",
+      "tick:tick-c75",
+      "tick:tick-c76",
+      "tick:tick-c77",
+      "tick:tick-c78",
+      "tick:tick-c79",
+      "tick:tick-c80",
+      "tick:tick-c81",
+      "tick:tick-c82",
+      "tick:tick-c83",
+      "tick:tick-end"
+    ],
+    "beats": {
+      "establish": {
+        "rest": "0-10,14-26",
+        "mid": "0-10,14-26"
+      },
+      "admit": {
+        "rest": "0-26",
+        "mid": "0-26"
+      },
+      "reflow": {
+        "rest": "0-26",
+        "mid": "0-26"
+      },
+      "settle": {
+        "rest": "0-26",
+        "mid": "0-26"
+      }
+    }
+  },
+  "finding chrX:153725495:T:TGGCTCCTGC:ABCD1 #1 portrait--insertion-bulge": {
+    "ids": [
+      "module:ins",
+      "module:ins1",
+      "module:ins2",
+      "module:m57",
+      "module:m58",
+      "module:m59",
+      "module:m60",
+      "module:m61",
+      "module:m62",
+      "module:m63",
+      "module:m64",
+      "module:m65",
+      "module:m66",
+      "module:m67",
+      "module:m68",
+      "module:m69",
+      "module:m70",
+      "module:m71",
+      "module:m72",
+      "module:m73",
+      "module:m74",
+      "module:m75",
+      "module:m76",
+      "module:m77",
+      "module:m78",
+      "module:m79",
+      "module:m80",
+      "module:m81",
+      "module:m82",
+      "module:m83",
+      "module:m84",
+      "module:m85",
+      "module:m86",
+      "module:m87",
+      "module:m88",
+      "module:m89",
+      "module:m90",
+      "module:m91",
+      "module:m92",
+      "module:m93",
+      "module:m94",
+      "module:m95",
+      "module:m96",
+      "path:detour-back",
+      "path:detour-out",
+      "path:detour-out1",
+      "path:detour-out2",
+      "path:t58",
+      "path:t59",
+      "path:t60",
+      "path:t61",
+      "path:t62",
+      "path:t63",
+      "path:t64",
+      "path:t65",
+      "path:t66",
+      "path:t67",
+      "path:t68",
+      "path:t69",
+      "path:t70",
+      "path:t71",
+      "path:t72",
+      "path:t73",
+      "path:t74",
+      "path:t75",
+      "path:t76",
+      "path:t77",
+      "path:t78",
+      "path:t79",
+      "path:t80",
+      "path:t81",
+      "path:t82",
+      "path:t83",
+      "path:t84",
+      "path:t85",
+      "path:t86",
+      "path:t87",
+      "path:t88",
+      "path:t89",
+      "path:t90",
+      "path:t91",
+      "path:t92",
+      "path:t93",
+      "path:t94",
+      "path:t95",
+      "path:t96"
+    ],
+    "beats": {
+      "establish": {
+        "rest": "3-42,47-85",
+        "mid": "3-42,47-85"
+      },
+      "arrive": {
+        "rest": "0-42,47-85",
+        "mid": "0-42,47-85"
+      },
+      "unjoin": {
+        "rest": "0-42,47-66,68-85",
+        "mid": "0-42,47-66,68-85"
+      },
+      "detour": {
+        "rest": "0-66,68-85",
+        "mid": "0-66,68-85"
+      },
+      "return": {
+        "rest": "0-66,68-85",
+        "mid": "0-66,68-85"
+      },
+      "settle": {
+        "rest": "0-66,68-85",
+        "mid": "0-66,68-85"
+      }
+    }
+  }
+}

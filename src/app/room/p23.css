@@ -1,0 +1,335 @@
+/* Copyright 2026 Ashwin Mukherjee */
+/* SPDX-License-Identifier: PolyForm-Noncommercial-1.0.0 */
+/* P2 and P3 in the room's pinned frame: the claim box, the evidence bars, the hundred people. Numbers come from P23Values.ts. */
+
+/* ── What both panels put in the room's pinned frame ── */
+
+/* The room's frame is a column hung from its stations; a panel adds its boxes to that column, under the question. */
+.p23 {
+  display: flex;
+  flex-direction: column;
+  flex: none;
+  min-width: 0;
+}
+
+/* Every claim sits in the same box, so a swap moves nothing. */
+.p23-claims {
+  display: grid;
+  flex: none;
+  height: var(--claim-zone);
+  max-width: var(--w-spine);
+}
+[data-panel="p2"] .p23-claims {
+  max-width: var(--w-spine-p2);
+}
+.p23-claim {
+  grid-area: 1 / 1;
+  margin: 0;
+  opacity: 0;
+  transition: opacity var(--t-swap) var(--ease);
+}
+.p23-claim[data-on] {
+  opacity: 1;
+}
+
+/* The air between the claim and the stage. */
+.p23-aside {
+  display: flex;
+  align-items: center;
+  flex: none;
+  height: var(--claim-to-stage);
+}
+
+.p23-stage {
+  flex: none;
+  width: 100%;
+  max-width: var(--stage-w);
+  margin: 0 0 var(--gap-below);
+}
+
+/* A ledger row's two lines: what it is, then the sentence. */
+.p23-ledger {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: var(--stage-w);
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.p23-row {
+  display: grid;
+  gap: var(--p23-row-gap);
+  align-items: start;
+  padding: var(--p23-row-pad);
+  opacity: 0;
+  transition:
+    opacity var(--t-swap) var(--ease),
+    background-color var(--t-hover);
+}
+.p23-row[data-on] {
+  opacity: 1;
+}
+/* The rows are the app explaining its chart, so sans, as the list's sentence is, held to the narrative's measure so a
+   line stays readable. */
+.p23-row-text {
+  display: block;
+  min-width: 0;
+  max-inline-size: var(--w-spine);
+}
+.p23-row-name,
+.p23-row-says {
+  display: block;
+  font-family: var(--sans);
+  font-size: var(--p23-row-size);
+  line-height: var(--p23-row-line);
+}
+.p23-row-name {
+  color: var(--ink);
+}
+.p23-row-says {
+  color: var(--ink-dim);
+}
+/* P2's strength word is a value off the chart, so it takes the poles' setting; its sentence stays the app's sans. */
+.p2-row .p23-row-name {
+  font-family: var(--mono);
+  font-size: var(--p2-pole-size);
+  letter-spacing: var(--p2-pole-track);
+  text-transform: uppercase;
+}
+
+/* ── P2: the evidence ── */
+
+.p2-chart {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows:
+    var(--p2-bars-top) var(--p2-bars-h) calc(var(--p2-rule) - var(--p2-bars-top) - var(--p2-bars-h))
+    var(--p2-poles) 1fr;
+  height: var(--stage-h-p2);
+}
+
+/* A direction is a hue: toward harmful, toward harmless, or none. */
+[data-dir="1"] {
+  --hue: var(--v-path);
+}
+[data-dir="-1"] {
+  --hue: var(--v-benign);
+}
+[data-dir="0"] {
+  --hue: var(--ink-outline);
+}
+
+/* Each arm grows out from the centre; its first bar stands half the seam off it. */
+.p2-arm {
+  grid-row: 2;
+  display: flex;
+  min-width: 0;
+}
+.p2-arm[data-dir="-1"] {
+  grid-column: 1;
+  flex-direction: row-reverse;
+}
+.p2-arm[data-dir="1"] {
+  grid-column: 2;
+}
+.p2-bar {
+  flex: none;
+  width: 0;
+  background: color-mix(in srgb, var(--hue) var(--p2-fill), transparent);
+  transition:
+    width var(--t-beat) var(--ease),
+    margin var(--t-beat) var(--ease),
+    background-color var(--t-press),
+    opacity var(--t-hover);
+}
+.p2-bar[data-on] {
+  width: calc(var(--pts) / var(--p2-half) * 100%);
+}
+.p2-arm[data-dir="1"] .p2-bar[data-on] {
+  margin-left: var(--lead);
+}
+.p2-arm[data-dir="-1"] .p2-bar[data-on] {
+  margin-right: var(--lead);
+}
+.p2-bar[data-lit] {
+  background: color-mix(in srgb, var(--hue) var(--p2-lit), transparent);
+}
+
+/* The rule is an axis between two named poles; the tick is the origin both arms grow from. */
+.p2-rule {
+  grid-area: 4 / 1 / 5 / 3;
+  align-self: start;
+  height: 1px;
+  background: var(--ink-outline);
+}
+.p2-tick {
+  grid-area: 3 / 1 / 5 / 3;
+  justify-self: center;
+  align-self: start;
+  width: 1px;
+  height: var(--p2-tick);
+  margin-top: calc(var(--p2-rule) - var(--p2-bars-top) - var(--p2-bars-h) - var(--p2-tick) / 2);
+  background: var(--ink-outline);
+}
+.p2-poles {
+  grid-area: 4 / 1 / 5 / 3;
+  display: flex;
+  align-items: baseline;
+  font-family: var(--mono);
+  font-size: var(--p2-pole-size);
+  line-height: 1;
+  letter-spacing: var(--p2-pole-track);
+  text-transform: uppercase;
+}
+.p2-poles::before {
+  content: "";
+  display: inline-block;
+  width: 0;
+  height: var(--p2-poles);
+}
+.p2-pole {
+  flex: 1 1 0;
+  color: var(--hue);
+}
+.p2-pole[data-dir="0"] {
+  text-align: center;
+  color: var(--ink-dim);
+}
+.p2-pole[data-dir="1"] {
+  text-align: right;
+}
+
+.p2-ledger {
+  gap: var(--p2-between);
+}
+.p2-row {
+  grid-template-columns: var(--p2-mark) 1fr;
+}
+.p2-square {
+  display: block;
+  width: var(--p2-square);
+  height: var(--p2-square);
+  margin-top: calc((var(--p23-row-line) - var(--p2-square)) / 2);
+  background: color-mix(in srgb, var(--hue) var(--p2-fill), transparent);
+  transition: background-color var(--t-press);
+}
+
+/* One hover rule: bars are many marks of one kind, so the one pointed at steps up and the rest step back. */
+[data-panel="p2"][data-paired] [data-pair][data-on]:not([data-lit]) {
+  opacity: var(--p2-dim);
+}
+.p2-row[data-lit] {
+  background: color-mix(in srgb, var(--hue) var(--p2-tint), transparent);
+}
+.p2-row[data-lit] .p2-square {
+  background: color-mix(in srgb, var(--hue) var(--p2-lit), transparent);
+}
+
+/* A short screen has room under the chart for one row. The row for the bar the reader is on stands in the
+   ledger's place; the others wait in that same place, unseen and out of the pointer's way. They keep their
+   turn in the tab order, and a row a key lands on is paired, so it is the one shown. */
+@media (max-width: 800px) and (max-height: 700px) {
+  .p2-ledger {
+    display: grid;
+    align-items: start;
+  }
+  .p2-row {
+    grid-area: 1 / 1;
+  }
+  [data-panel="p2"] .p2-ledger .p2-row[data-pair]:not([data-now]) {
+    opacity: 0;
+    pointer-events: none;
+  }
+}
+
+/* ── P3: the hundred ── */
+
+.p3-figure {
+  display: flex;
+  flex-direction: column;
+  min-height: var(--stage-h-p3);
+  padding-top: var(--p3-array-top);
+}
+
+/* A population, not a grid: each person is a square in a tile one pitch wide, so the gap is wider than
+   the square. The tiles are the hover targets and abut; the array overhangs the stage by half a gap, which
+   puts the first square on the stage's edge. */
+.p3-array {
+  --p3-span: calc((var(--p3-cols) - 1) * var(--p3-pitch) + var(--p3-cell));
+  display: grid;
+  grid-template-columns: repeat(var(--p3-cols), 1fr);
+  margin: calc(-50% * (var(--p3-pitch) - var(--p3-cell)) / var(--p3-span));
+}
+/* On a phone, the array's squares are larger: the gap half a square. */
+@media (max-width: 800px) {
+  .p3-array {
+    --p3-cell: var(--p3-cell-phone);
+  }
+}
+.p3-cell {
+  display: grid;
+  place-items: center;
+  aspect-ratio: 1;
+}
+.p3-cell::before {
+  content: "";
+  width: calc(100% * var(--p3-cell) / var(--p3-pitch));
+  aspect-ratio: 1;
+  background: var(--p3-ink-none);
+}
+
+/* Hue says whose: the people who get it anyway are dark grey, the variant's share verdigris, the rest light grey. */
+[data-panel="p3"] {
+  --p3-ink-baseline: color-mix(in srgb, var(--v-observed) var(--p3-baseline), transparent);
+  --p3-ink-added: color-mix(in srgb, var(--v-terminal) var(--p3-added), transparent);
+  --p3-ink-none: color-mix(in srgb, var(--v-unknown) var(--p3-none), var(--ground));
+}
+/* Nothing fades in P3: the three groups are already distinct, so the one pointed at only steps up. */
+[data-panel="p3"][data-paired="baseline"] {
+  --p3-ink-baseline: color-mix(in srgb, var(--v-observed) var(--p3-baseline-lit), transparent);
+}
+[data-panel="p3"][data-paired="added"] {
+  --p3-ink-added: color-mix(in srgb, var(--v-terminal) var(--p3-added-lit), transparent);
+}
+[data-panel="p3"][data-paired="none"] {
+  --p3-ink-none: color-mix(in srgb, var(--v-unknown) var(--p3-none-lit), var(--ground));
+}
+/* A person takes their group's ink in one step when the count reaches them. */
+.p3-cell[data-on][data-pair="baseline"]::before,
+.p3-key[data-pair="baseline"] {
+  background: var(--p3-ink-baseline);
+}
+.p3-cell[data-on][data-pair="added"]::before,
+.p3-key[data-pair="added"] {
+  background: var(--p3-ink-added);
+}
+
+.p3-ledger {
+  gap: var(--p3-between);
+  margin-top: var(--p3-ledger-gap);
+}
+/* The padding is the hover target's; the equal negative margin keeps the key on the stage's edge. */
+.p3-row {
+  grid-template-columns: var(--p3-key) 1fr;
+  margin: var(--p23-row-inset);
+}
+.p3-row .p23-row-name {
+  white-space: nowrap;
+}
+.p3-key {
+  display: block;
+  width: var(--p3-key);
+  height: var(--p3-key);
+  margin-top: calc((var(--p23-row-line) - var(--p3-key)) / 2);
+  background: var(--p3-ink-none);
+}
+.p3-row[data-lit][data-pair="baseline"] {
+  background: color-mix(in srgb, var(--v-observed) var(--p3-tint-baseline), transparent);
+}
+.p3-row[data-lit][data-pair="added"] {
+  background: color-mix(in srgb, var(--v-terminal) var(--p3-tint-added), transparent);
+}
+.p3-row[data-lit][data-pair="none"] {
+  background: color-mix(in srgb, var(--v-unknown) var(--p3-tint-none), transparent);
+}

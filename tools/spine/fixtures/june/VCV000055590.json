@@ -1,0 +1,24 @@
+{
+  "clinvar_id": "VCV000055590",
+  "variation_id": "55590",
+  "hgvs_c": "c.547+1G>T",
+  "hgvs_full": "NM_007294.4(BRCA1):c.547+1G>T",
+  "gene": "BRCA1",
+  "uniprot": "P38398",
+  "mane_transcript": "NM_007294.4",
+  "clinvar_classification": "Pathogenic",
+  "review_status": "reviewed by expert panel",
+  "review_stars": 3,
+  "last_evaluated": "2019/06/18 00:00",
+  "submissions": 14,
+  "variant_type": "single nucleotide variant",
+  "canonical_spdi": "NC_000017.11:43099773:C:A",
+  "grch38": {
+    "chr": "17",
+    "start": 43099774,
+    "stop": 43099774,
+    "cytogenetic": "17q21.31"
+  },
+  "selection_note": "transcript--skip-frame-broken. Already drawn by brief 2's reference cell with its accession hardcoded in the generator and no fixture behind it; fetched now so the lane's reference variant is backed by a record like every other.",
+  "source": "NCBI ClinVar esummary, fetched by tools/fetch-variants.py"
+}

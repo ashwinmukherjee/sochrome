@@ -1,0 +1,1977 @@
+{
+  "chr1:26697012:C:A:ARID1A": {
+    "key": "1:26697012:C:A",
+    "gene": "ARID1A",
+    "chrom": "1",
+    "hgvs_c": "c.609C>A",
+    "consequence": "missense_variant",
+    "clinvar": {
+      "id": "2918821",
+      "clnsig": "Uncertain_significance",
+      "class": "uncertain",
+      "review": "single",
+      "revstat": "criteria provided, single submitter",
+      "stars": 1,
+      "conf": null
+    },
+    "gnomad": {
+      "af": 0.0002122089936165139,
+      "af_global": 0.000036929301131749526,
+      "pop": "afr",
+      "nhomalt": 0,
+      "filter": "PASS"
+    },
+    "am": {
+      "score": 0.5333333333333333,
+      "am_class": "ambiguous"
+    },
+    "mode": "AD",
+    "patterns": {
+      "AD": {
+        "label": "Coffin-Siris syndrome",
+        "validity": "Definitive"
+      }
+    },
+    "set": "yours",
+    "zygosity": "het",
+    "copiesX": 1,
+    "p1": {
+      "consequence": "missense",
+      "hgvs_c": "c.609C>A",
+      "hgvs_p": "p.His203Gln",
+      "fate": null,
+      "plen": 2285,
+      "runsOn": false,
+      "lost": null,
+      "skip": null
+    },
+    "dosage": {
+      "hi": "3",
+      "lofKnown": 107
+    }
+  },
+  "chr2:25234286:C:T:DNMT3A": {
+    "key": "2:25234286:C:T",
+    "gene": "DNMT3A",
+    "chrom": "2",
+    "hgvs_c": "c.2732G>A",
+    "consequence": "missense_variant",
+    "clinvar": {
+      "id": "4279874",
+      "clnsig": "Uncertain_significance",
+      "class": "uncertain",
+      "review": "multiple",
+      "revstat": "criteria provided, multiple submitters, no conflicts",
+      "stars": 2,
+      "conf": null
+    },
+    "gnomad": {
+      "af": 0.000002699310016396339,
+      "af_global": 0.0000020537099771900102,
+      "pop": "nfe",
+      "nhomalt": 0,
+      "filter": "PASS"
+    },
+    "am": {
+      "score": 0.9921568627450981,
+      "am_class": "likely_pathogenic"
+    },
+    "mode": "AD",
+    "patterns": {
+      "AD": {
+        "label": "Tatton-Brown-Rahman overgrowth syndrome",
+        "validity": "Definitive"
+      }
+    },
+    "set": "yours",
+    "zygosity": "het",
+    "copiesX": 1,
+    "p1": {
+      "consequence": "missense",
+      "hgvs_c": "c.2732G>A",
+      "hgvs_p": "p.Cys911Tyr",
+      "fate": null,
+      "plen": 912,
+      "runsOn": false,
+      "lost": null,
+      "skip": null
+    },
+    "dosage": {
+      "hi": "3",
+      "lofKnown": 130
+    }
+  },
+  "chr2:151727692:G:A:NEB": {
+    "key": "2:151727692:G:A",
+    "gene": "NEB",
+    "chrom": "2",
+    "hgvs_c": "c.293C>T",
+    "consequence": "missense_variant",
+    "clinvar": {
+      "id": "704072",
+      "clnsig": "Conflicting_classifications_of_pathogenicity",
+      "class": "conflicting",
+      "review": "conflicting",
+      "revstat": "criteria provided, conflicting classifications",
+      "stars": 1,
+      "conf": {
+        "Uncertain_significance": 2,
+        "Likely_benign": 2
+      }
+    },
+    "gnomad": {
+      "af": 0.0001749479997670278,
+      "af_global": 0.0001069330028258264,
+      "pop": "mid",
+      "nhomalt": 0,
+      "filter": "PASS"
+    },
+    "am": {
+      "score": 0.10196078431372549,
+      "am_class": "likely_benign"
+    },
+    "mode": "AD",
+    "patterns": {
+      "AR": {
+        "label": "nemaline myopathy 2",
+        "validity": "Definitive"
+      },
+      "AD": {
+        "label": "autosomal dominant nebulin-related myopathy",
+        "validity": "Moderate"
+      }
+    },
+    "set": "yours",
+    "zygosity": "het",
+    "copiesX": 1,
+    "p1": {
+      "consequence": "missense",
+      "hgvs_c": "c.293C>T",
+      "hgvs_p": "p.Pro98Leu",
+      "fate": null,
+      "plen": 8525,
+      "runsOn": false,
+      "lost": null,
+      "skip": null
+    },
+    "dosage": {
+      "hi": null,
+      "lofKnown": 1622
+    }
+  },
+  "chr2:161423517:C:CCGGGCG:TBR1": {
+    "key": "2:161423517:C:CCGGGCG",
+    "gene": "TBR1",
+    "chrom": "2",
+    "hgvs_c": "c.1351_1356dup",
+    "consequence": "inframe_insertion",
+    "clinvar": {
+      "id": "1770602",
+      "clnsig": "Benign",
+      "class": "benign",
+      "review": "single",
+      "revstat": "criteria provided, single submitter",
+      "stars": 1,
+      "conf": null
+    },
+    "gnomad": {
+      "af": 0.000263611989794299,
+      "af_global": 0.0001953610044438392,
+      "pop": "amr",
+      "nhomalt": 0,
+      "filter": "PASS"
+    },
+    "am": null,
+    "mode": "AD",
+    "patterns": {
+      "AD": {
+        "label": "complex neurodevelopmental disorder",
+        "validity": "Definitive"
+      }
+    },
+    "set": "yours",
+    "zygosity": "het",
+    "copiesX": 1,
+    "p1": {
+      "consequence": "inframe_indel",
+      "hgvs_c": "c.1351_1356dup",
+      "hgvs_p": "p.Ala451_Gly452dup",
+      "fate": null,
+      "plen": 682,
+      "runsOn": false,
+      "lost": null,
+      "skip": null
+    },
+    "dosage": {
+      "hi": "3",
+      "lofKnown": 51
+    }
+  },
+  "chr3:57446013:ATAAATAAATAAT:A:DNAH12": {
+    "key": "3:57446013:ATAAATAAATAAT:A",
+    "gene": "DNAH12",
+    "chrom": "3",
+    "hgvs_c": "c.4179+6_4179+17del",
+    "consequence": "splice_region_variant",
+    "clinvar": null,
+    "gnomad": null,
+    "am": null,
+    "mode": "AR",
+    "patterns": {
+      "AR": {
+        "label": "spermatogenic failure",
+        "validity": "Definitive"
+      }
+    },
+    "set": "yours",
+    "zygosity": "hom",
+    "copiesX": 1,
+    "p1": {
+      "consequence": "splice_region",
+      "hgvs_c": "c.4179+6_4179+17del",
+      "hgvs_p": null,
+      "fate": null,
+      "plen": 3960,
+      "runsOn": false,
+      "lost": null,
+      "skip": null
+    },
+    "dosage": {
+      "hi": null,
+      "lofKnown": 6
+    }
+  },
+  "chr4:3148179:A:G:HTT": {
+    "key": "4:3148179:A:G",
+    "gene": "HTT",
+    "chrom": "4",
+    "hgvs_c": "c.3470A>G",
+    "consequence": "missense_variant",
+    "clinvar": {
+      "id": "1368874",
+      "clnsig": "Uncertain_significance",
+      "class": "uncertain",
+      "review": "multiple",
+      "revstat": "criteria provided, multiple submitters, no conflicts",
+      "stars": 2,
+      "conf": null
+    },
+    "gnomad": {
+      "af": 0.00006245150143513456,
+      "af_global": 0.00009326099825557321,
+      "pop": "nfe",
+      "nhomalt": 1,
+      "filter": "PASS"
+    },
+    "am": {
+      "score": 0.21176470588235294,
+      "am_class": "likely_benign"
+    },
+    "mode": "AD",
+    "patterns": {
+      "AD": {
+        "label": "Huntington disease",
+        "validity": "Definitive"
+      }
+    },
+    "set": "yours",
+    "zygosity": "compound_het_unphased",
+    "copiesX": 1,
+    "p1": {
+      "consequence": "missense",
+      "hgvs_c": "c.3470A>G",
+      "hgvs_p": "p.Asp1157Gly",
+      "fate": null,
+      "plen": 3142,
+      "runsOn": false,
+      "lost": null,
+      "skip": null
+    },
+    "dosage": {
+      "hi": null,
+      "lofKnown": 6
+    }
+  },
+  "chr4:3154286:AT:A:HTT": {
+    "key": "4:3154286:AT:A",
+    "gene": "HTT",
+    "chrom": "4",
+    "hgvs_c": "c.3499-3del",
+    "consequence": "splice_region_variant",
+    "clinvar": {
+      "id": "1657392",
+      "clnsig": "Benign",
+      "class": "benign",
+      "review": "single",
+      "revstat": "criteria provided, single submitter",
+      "stars": 1,
+      "conf": null
+    },
+    "gnomad": {
+      "af": 0.00006093800038797781,
+      "af_global": 0.0000901891035027802,
+      "pop": "nfe",
+      "nhomalt": 1,
+      "filter": "PASS"
+    },
+    "am": null,
+    "mode": "AD",
+    "patterns": {
+      "AD": {
+        "label": "Huntington disease",
+        "validity": "Definitive"
+      }
+    },
+    "set": "yours",
+    "zygosity": "compound_het_unphased",
+    "copiesX": 1,
+    "p1": {
+      "consequence": "splice_region",
+      "hgvs_c": "c.3499-3del",
+      "hgvs_p": null,
+      "fate": null,
+      "plen": 3142,
+      "runsOn": false,
+      "lost": null,
+      "skip": null
+    },
+    "dosage": {
+      "hi": null,
+      "lofKnown": 6
+    }
+  },
+  "chr4:54703788:C:T:KIT": {
+    "key": "4:54703788:C:T",
+    "gene": "KIT",
+    "chrom": "4",
+    "hgvs_c": "c.821C>T",
+    "consequence": "missense_variant",
+    "clinvar": {
+      "id": "41604",
+      "clnsig": "Conflicting_classifications_of_pathogenicity",
+      "class": "conflicting",
+      "review": "conflicting",
+      "revstat": "criteria provided, conflicting classifications",
+      "stars": 1,
+      "conf": {
+        "Uncertain_significance": 5,
+        "Benign": 4,
+        "Likely_benign": 3
+      }
+    },
+    "gnomad": {
+      "af": 0.0008721320191398263,
+      "af_global": 0.0004270350036676973,
+      "pop": "amr",
+      "nhomalt": 0,
+      "filter": "PASS"
+    },
+    "am": {
+      "score": 0.08235294117647059,
+      "am_class": "likely_benign"
+    },
+    "mode": "AD",
+    "patterns": {
+      "AD": {
+        "label": "gastrointestinal stromal tumor",
+        "validity": "Definitive"
+      }
+    },
+    "set": "yours",
+    "zygosity": "het",
+    "copiesX": 1,
+    "p1": {
+      "consequence": "missense",
+      "hgvs_c": "c.821C>T",
+      "hgvs_p": "p.Thr274Met",
+      "fate": null,
+      "plen": 976,
+      "runsOn": false,
+      "lost": null,
+      "skip": null
+    },
+    "dosage": {
+      "hi": "3",
+      "lofKnown": 55
+    }
+  },
+  "chr4:186274193:G:T:F11": {
+    "key": "4:186274193:G:T",
+    "gene": "F11",
+    "chrom": "4",
+    "hgvs_c": "c.403G>T",
+    "consequence": "nonsense",
+    "clinvar": {
+      "id": "11891",
+      "clnsig": "Pathogenic",
+      "class": "pathogenic",
+      "review": "multiple",
+      "revstat": "criteria provided, multiple submitters, no conflicts",
+      "stars": 2,
+      "conf": null
+    },
+    "gnomad": {
+      "af": 0.0008668520022183657,
+      "af_global": 0.0005041409749537706,
+      "pop": "mid",
+      "nhomalt": 6,
+      "filter": "PASS"
+    },
+    "am": null,
+    "mode": "SD",
+    "patterns": {
+      "SD": {
+        "label": "congenital factor XI deficiency",
+        "validity": "Definitive"
+      }
+    },
+    "set": "yours",
+    "zygosity": "het",
+    "copiesX": 1,
+    "p1": {
+      "consequence": "stop_gained",
+      "hgvs_c": "c.403G>T",
+      "hgvs_p": "p.Glu135Ter",
+      "fate": "destroyed",
+      "plen": 625,
+      "runsOn": false,
+      "lost": 0.784,
+      "skip": null
+    },
+    "dosage": {
+      "hi": null,
+      "lofKnown": 204
+    }
+  },
+  "chr5:80654887:GCTGCAGCGGCCGCAGCGGCCGCAGCGC:G:MSH3": {
+    "key": "5:80654887:GCTGCAGCGGCCGCAGCGGCCGCAGCGC:G",
+    "gene": "MSH3",
+    "chrom": "5",
+    "hgvs_c": "c.162_188del",
+    "consequence": "inframe_deletion",
+    "clinvar": {
+      "id": "1319200",
+      "clnsig": "Uncertain_significance",
+      "class": "uncertain",
+      "review": "single",
+      "revstat": "criteria provided, single submitter",
+      "stars": 1,
+      "conf": null
+    },
+    "gnomad": {
+      "af": null,
+      "af_global": 0,
+      "pop": "unknown(0)",
+      "nhomalt": 0,
+      "filter": "AC0"
+    },
+    "am": null,
+    "mode": "AR",
+    "patterns": {
+      "AR": {
+        "label": "familial adenomatous polyposis 4",
+        "validity": "Definitive"
+      }
+    },
+    "set": "yours",
+    "zygosity": "hom",
+    "copiesX": 1,
+    "p1": {
+      "consequence": "inframe_indel",
+      "hgvs_c": "c.162_188del",
+      "hgvs_p": "p.Ala55_Pro63del",
+      "fate": null,
+      "plen": 1137,
+      "runsOn": false,
+      "lost": null,
+      "skip": null
+    },
+    "dosage": {
+      "hi": null,
+      "lofKnown": 501
+    }
+  },
+  "chr7:55173087:G:A:EGFR": {
+    "key": "7:55173087:G:A",
+    "gene": "EGFR",
+    "chrom": "7",
+    "hgvs_c": "c.2024G>A",
+    "consequence": "missense_variant",
+    "clinvar": {
+      "id": "134025",
+      "clnsig": "Conflicting_classifications_of_pathogenicity",
+      "class": "conflicting",
+      "review": "conflicting",
+      "revstat": "criteria provided, conflicting classifications",
+      "stars": 1,
+      "conf": {
+        "Uncertain_significance": 6,
+        "Likely_benign": 2
+      }
+    },
+    "gnomad": {
+      "af": 0.0006037299754098058,
+      "af_global": 0.0002622439933475107,
+      "pop": "amr",
+      "nhomalt": 0,
+      "filter": "PASS"
+    },
+    "am": {
+      "score": 0.13725490196078433,
+      "am_class": "likely_benign"
+    },
+    "mode": "AD",
+    "patterns": {
+      "AD": {
+        "label": "non-small cell lung carcinoma",
+        "validity": "Definitive"
+      }
+    },
+    "set": "yours",
+    "zygosity": "het",
+    "copiesX": 1,
+    "p1": {
+      "consequence": "missense",
+      "hgvs_c": "c.2024G>A",
+      "hgvs_p": "p.Arg675Gln",
+      "fate": null,
+      "plen": 1210,
+      "runsOn": false,
+      "lost": null,
+      "skip": null
+    },
+    "dosage": {
+      "hi": "0",
+      "lofKnown": 46
+    }
+  },
+  "chr9:2039844:A:T:SMARCA2": {
+    "key": "9:2039844:A:T",
+    "gene": "SMARCA2",
+    "chrom": "9",
+    "hgvs_c": "c.734A>T",
+    "consequence": "missense_variant",
+    "clinvar": {
+      "id": "912952",
+      "clnsig": "Benign",
+      "class": "benign",
+      "review": "multiple",
+      "revstat": "criteria provided, multiple submitters, no conflicts",
+      "stars": 2,
+      "conf": null
+    },
+    "gnomad": {
+      "af": 0.000012594899999385234,
+      "af_global": 0.00007118710345821455,
+      "pop": "nfe",
+      "nhomalt": 0,
+      "filter": "PASS"
+    },
+    "am": {
+      "score": 0.10980392156862745,
+      "am_class": "likely_benign"
+    },
+    "mode": "AD",
+    "patterns": {
+      "AD": {
+        "label": "intellectual disability-sparse hair-brachydactyly syndrome",
+        "validity": "Definitive"
+      }
+    },
+    "set": "yours",
+    "zygosity": "het",
+    "copiesX": 1,
+    "p1": {
+      "consequence": "missense",
+      "hgvs_c": "c.734A>T",
+      "hgvs_p": "p.Gln245Leu",
+      "fate": null,
+      "plen": 1590,
+      "runsOn": false,
+      "lost": null,
+      "skip": null
+    },
+    "dosage": {
+      "hi": "0",
+      "lofKnown": 2
+    }
+  },
+  "chr9:127467780:G:A:LRSAM1": {
+    "key": "9:127467780:G:A",
+    "gene": "LRSAM1",
+    "chrom": "9",
+    "hgvs_c": "c.569G>A",
+    "consequence": "missense_variant",
+    "clinvar": {
+      "id": "234876",
+      "clnsig": "Benign/Likely_benign",
+      "class": "benign-likely",
+      "review": "multiple",
+      "revstat": "criteria provided, multiple submitters, no conflicts",
+      "stars": 2,
+      "conf": null
+    },
+    "gnomad": {
+      "af": 0.00008963250002125278,
+      "af_global": 0.00011657099821604788,
+      "pop": "afr",
+      "nhomalt": 1,
+      "filter": "PASS"
+    },
+    "am": {
+      "score": 0.058823529411764705,
+      "am_class": "likely_benign"
+    },
+    "mode": "AD",
+    "patterns": {
+      "AD": {
+        "label": "Charcot-Marie-Tooth disease axonal type 2P",
+        "validity": "Definitive"
+      }
+    },
+    "set": "yours",
+    "zygosity": "het",
+    "copiesX": 1,
+    "p1": {
+      "consequence": "missense",
+      "hgvs_c": "c.569G>A",
+      "hgvs_p": "p.Arg190Gln",
+      "fate": null,
+      "plen": 723,
+      "runsOn": false,
+      "lost": null,
+      "skip": null
+    },
+    "dosage": {
+      "hi": null,
+      "lofKnown": 64
+    }
+  },
+  "chr9:136438597:GCCCT:G:INPP5E": {
+    "key": "9:136438597:GCCCT:G",
+    "gene": "INPP5E",
+    "chrom": "9",
+    "hgvs_c": "c.812+7_812+10del",
+    "consequence": "splice_region_variant",
+    "clinvar": {
+      "id": "261203",
+      "clnsig": "Benign",
+      "class": "benign",
+      "review": "multiple",
+      "revstat": "criteria provided, multiple submitters, no conflicts",
+      "stars": 2,
+      "conf": null
+    },
+    "gnomad": null,
+    "am": null,
+    "mode": "AR",
+    "patterns": {
+      "AR": {
+        "label": "Joubert syndrome 1",
+        "validity": "Definitive"
+      }
+    },
+    "set": "yours",
+    "zygosity": "hom",
+    "copiesX": 1,
+    "p1": {
+      "consequence": "splice_region",
+      "hgvs_c": "c.812+7_812+10del",
+      "hgvs_p": null,
+      "fate": null,
+      "plen": 644,
+      "runsOn": false,
+      "lost": null,
+      "skip": null
+    },
+    "dosage": {
+      "hi": "30",
+      "lofKnown": 55
+    }
+  },
+  "chr11:44108232:A:C:EXT2": {
+    "key": "11:44108232:A:C",
+    "gene": "EXT2",
+    "chrom": "11",
+    "hgvs_c": "c.520A>C",
+    "consequence": "missense_variant",
+    "clinvar": {
+      "id": "134208",
+      "clnsig": "Conflicting_classifications_of_pathogenicity",
+      "class": "conflicting",
+      "review": "conflicting",
+      "revstat": "criteria provided, conflicting classifications",
+      "stars": 1,
+      "conf": {
+        "Uncertain_significance": 2,
+        "Benign": 2,
+        "Likely_benign": 4
+      }
+    },
+    "gnomad": {
+      "af": 0.00029676599660888314,
+      "af_global": 0.00029510099557228386,
+      "pop": "nfe",
+      "nhomalt": 0,
+      "filter": "PASS"
+    },
+    "am": {
+      "score": 0.047058823529411764,
+      "am_class": "likely_benign"
+    },
+    "mode": "AD",
+    "patterns": {
+      "AD": {
+        "label": "exostoses, multiple, type 2",
+        "validity": "Definitive"
+      }
+    },
+    "set": "yours",
+    "zygosity": "het",
+    "copiesX": 1,
+    "p1": {
+      "consequence": "missense",
+      "hgvs_c": "c.520A>C",
+      "hgvs_p": "p.Met174Leu",
+      "fate": null,
+      "plen": 718,
+      "runsOn": false,
+      "lost": null,
+      "skip": null
+    },
+    "dosage": {
+      "hi": "3",
+      "lofKnown": 179
+    }
+  },
+  "chr11:108229287:A:G:ATM": {
+    "key": "11:108229287:A:G",
+    "gene": "ATM",
+    "chrom": "11",
+    "hgvs_c": "c.295A>G",
+    "consequence": "missense_variant",
+    "clinvar": {
+      "id": "127364",
+      "clnsig": "Conflicting_classifications_of_pathogenicity",
+      "class": "conflicting",
+      "review": "conflicting",
+      "revstat": "criteria provided, conflicting classifications",
+      "stars": 1,
+      "conf": {
+        "Uncertain_significance": 7,
+        "Benign": 1,
+        "Likely_benign": 7
+      }
+    },
+    "gnomad": {
+      "af": 0.0006262299721129239,
+      "af_global": 0.00010058600310003385,
+      "pop": "amr",
+      "nhomalt": 1,
+      "filter": "PASS"
+    },
+    "am": {
+      "score": 0.10588235294117647,
+      "am_class": "likely_benign"
+    },
+    "mode": "AD",
+    "patterns": {
+      "AR": {
+        "label": "ataxia telangiectasia",
+        "validity": "Definitive"
+      },
+      "AD": {
+        "label": "ATM-related cancer predisposition",
+        "validity": "Definitive"
+      }
+    },
+    "set": "yours",
+    "zygosity": "het",
+    "copiesX": 1,
+    "p1": {
+      "consequence": "missense",
+      "hgvs_c": "c.295A>G",
+      "hgvs_p": "p.Ser99Gly",
+      "fate": null,
+      "plen": 3056,
+      "runsOn": false,
+      "lost": null,
+      "skip": null
+    },
+    "dosage": {
+      "hi": "3",
+      "lofKnown": 3017
+    }
+  },
+  "chr12:39330764:G:T:KIF21A": {
+    "key": "12:39330764:G:T",
+    "gene": "KIF21A",
+    "chrom": "12",
+    "hgvs_c": "c.3301C>A",
+    "consequence": "missense_variant",
+    "clinvar": {
+      "id": "2344016",
+      "clnsig": "Conflicting_classifications_of_pathogenicity",
+      "class": "conflicting",
+      "review": "conflicting",
+      "revstat": "criteria provided, conflicting classifications",
+      "stars": 1,
+      "conf": {
+        "Uncertain_significance": 1,
+        "Benign": 1
+      }
+    },
+    "gnomad": {
+      "af": 0.000005396439973992528,
+      "af_global": 0.00001778779915184714,
+      "pop": "nfe",
+      "nhomalt": 0,
+      "filter": "PASS"
+    },
+    "am": {
+      "score": 0.4666666666666667,
+      "am_class": "ambiguous"
+    },
+    "mode": "AD",
+    "patterns": {
+      "AD": {
+        "label": "congenital fibrosis of extraocular muscles",
+        "validity": "Definitive"
+      }
+    },
+    "set": "yours",
+    "zygosity": "het",
+    "copiesX": 1,
+    "p1": {
+      "consequence": "missense",
+      "hgvs_c": "c.3301C>A",
+      "hgvs_p": "p.Leu1101Ile",
+      "fate": null,
+      "plen": 1674,
+      "runsOn": false,
+      "lost": null,
+      "skip": null
+    },
+    "dosage": {
+      "hi": null,
+      "lofKnown": 3
+    }
+  },
+  "chr14:21391492:C:T:CHD8": {
+    "key": "14:21391492:C:T",
+    "gene": "CHD8",
+    "chrom": "14",
+    "hgvs_c": "c.7036G>A",
+    "consequence": "missense_variant",
+    "clinvar": {
+      "id": "196943",
+      "clnsig": "Benign/Likely_benign",
+      "class": "benign-likely",
+      "review": "multiple",
+      "revstat": "criteria provided, multiple submitters, no conflicts",
+      "stars": 2,
+      "conf": null
+    },
+    "gnomad": {
+      "af": 0.0001187230009236373,
+      "af_global": 0.0007320729782804847,
+      "pop": "nfe",
+      "nhomalt": 12,
+      "filter": "PASS"
+    },
+    "am": {
+      "score": 0.45098039215686275,
+      "am_class": "ambiguous"
+    },
+    "mode": "AD",
+    "patterns": {
+      "AD": {
+        "label": "complex neurodevelopmental disorder",
+        "validity": "Definitive"
+      }
+    },
+    "set": "yours",
+    "zygosity": "het",
+    "copiesX": 1,
+    "p1": {
+      "consequence": "missense",
+      "hgvs_c": "c.7036G>A",
+      "hgvs_p": "p.Glu2346Lys",
+      "fate": null,
+      "plen": 2581,
+      "runsOn": false,
+      "lost": null,
+      "skip": null
+    },
+    "dosage": {
+      "hi": "3",
+      "lofKnown": 190
+    }
+  },
+  "chr15:66436743:C:T:MAP2K1": {
+    "key": "15:66436743:C:T",
+    "gene": "MAP2K1",
+    "chrom": "15",
+    "hgvs_c": "c.292-3C>T",
+    "consequence": "splice_region_variant",
+    "clinvar": {
+      "id": "216570",
+      "clnsig": "Benign/Likely_benign",
+      "class": "benign-likely",
+      "review": "multiple",
+      "revstat": "criteria provided, multiple submitters, no conflicts",
+      "stars": 2,
+      "conf": null
+    },
+    "gnomad": {
+      "af": 0.00004472069849725813,
+      "af_global": 0.00007114720210665837,
+      "pop": "amr",
+      "nhomalt": 0,
+      "filter": "PASS"
+    },
+    "am": null,
+    "mode": "AD",
+    "patterns": {
+      "AD": {
+        "label": "cardiofaciocutaneous syndrome",
+        "validity": "Definitive"
+      }
+    },
+    "set": "yours",
+    "zygosity": "het",
+    "copiesX": 1,
+    "p1": {
+      "consequence": "splice_region",
+      "hgvs_c": "c.292-3C>T",
+      "hgvs_p": null,
+      "fate": null,
+      "plen": 393,
+      "runsOn": false,
+      "lost": null,
+      "skip": null
+    },
+    "dosage": {
+      "hi": "0",
+      "lofKnown": 0
+    }
+  },
+  "chr16:2057144:G:A:TSC2": {
+    "key": "16:2057144:G:A",
+    "gene": "TSC2",
+    "chrom": "16",
+    "hgvs_c": "c.814G>A",
+    "consequence": "missense_variant",
+    "clinvar": {
+      "id": "238093",
+      "clnsig": "Benign/Likely_benign",
+      "class": "benign-likely",
+      "review": "multiple",
+      "revstat": "criteria provided, multiple submitters, no conflicts",
+      "stars": 2,
+      "conf": null
+    },
+    "gnomad": {
+      "af": 0.00018923099560197443,
+      "af_global": 0.00008932279888540506,
+      "pop": "sas",
+      "nhomalt": 0,
+      "filter": "PASS"
+    },
+    "am": {
+      "score": 0.3176470588235294,
+      "am_class": "likely_benign"
+    },
+    "mode": "AD",
+    "patterns": {},
+    "set": "yours",
+    "zygosity": "het",
+    "copiesX": 1,
+    "p1": {
+      "consequence": "missense",
+      "hgvs_c": "c.814G>A",
+      "hgvs_p": "p.Ala272Thr",
+      "fate": null,
+      "plen": 1807,
+      "runsOn": false,
+      "lost": null,
+      "skip": null
+    },
+    "dosage": {
+      "hi": "3",
+      "lofKnown": 949
+    }
+  },
+  "chr16:9763191:T:A:GRIN2A": {
+    "key": "16:9763191:T:A",
+    "gene": "GRIN2A",
+    "chrom": "16",
+    "hgvs_c": "c.4353A>T",
+    "consequence": "missense_variant",
+    "clinvar": {
+      "id": "285768",
+      "clnsig": "Conflicting_classifications_of_pathogenicity",
+      "class": "conflicting",
+      "review": "conflicting",
+      "revstat": "criteria provided, conflicting classifications",
+      "stars": 1,
+      "conf": {
+        "Uncertain_significance": 1,
+        "Benign": 1,
+        "Likely_benign": 2
+      }
+    },
+    "gnomad": {
+      "af": 0.000009893709830066655,
+      "af_global": 0.00005746829992858693,
+      "pop": "nfe",
+      "nhomalt": 0,
+      "filter": "PASS"
+    },
+    "am": {
+      "score": 0.8509803921568627,
+      "am_class": "likely_pathogenic"
+    },
+    "mode": "AD",
+    "patterns": {
+      "AD": {
+        "label": "complex neurodevelopmental disorder",
+        "validity": "Definitive"
+      }
+    },
+    "set": "yours",
+    "zygosity": "het",
+    "copiesX": 1,
+    "p1": {
+      "consequence": "missense",
+      "hgvs_c": "c.4353A>T",
+      "hgvs_p": "p.Arg1451Ser",
+      "fate": null,
+      "plen": 1464,
+      "runsOn": false,
+      "lost": null,
+      "skip": null
+    },
+    "dosage": {
+      "hi": "3",
+      "lofKnown": 142
+    }
+  },
+  "chr17:62536300:C:T:TLK2": {
+    "key": "17:62536300:C:T",
+    "gene": "TLK2",
+    "chrom": "17",
+    "hgvs_c": "c.494C>T",
+    "consequence": "missense_variant",
+    "clinvar": null,
+    "gnomad": {
+      "af": 0.0005231950199231505,
+      "af_global": 0.00016361300367861986,
+      "pop": "mid",
+      "nhomalt": 1,
+      "filter": "PASS"
+    },
+    "am": {
+      "score": 0.09411764705882353,
+      "am_class": "likely_benign"
+    },
+    "mode": "AD",
+    "patterns": {
+      "AD": {
+        "label": "complex neurodevelopmental disorder",
+        "validity": "Definitive"
+      }
+    },
+    "set": "yours",
+    "zygosity": "het",
+    "copiesX": 1,
+    "p1": {
+      "consequence": "missense",
+      "hgvs_c": "c.494C>T",
+      "hgvs_p": "p.Ala165Val",
+      "fate": null,
+      "plen": 750,
+      "runsOn": false,
+      "lost": null,
+      "skip": null
+    },
+    "dosage": {
+      "hi": null,
+      "lofKnown": 54
+    }
+  },
+  "chr18:31542752:C:T:DSG2": {
+    "key": "18:31542752:C:T",
+    "gene": "DSG2",
+    "chrom": "18",
+    "hgvs_c": "c.2234C>T",
+    "consequence": "missense_variant",
+    "clinvar": {
+      "id": "179312",
+      "clnsig": "Conflicting_classifications_of_pathogenicity",
+      "class": "conflicting",
+      "review": "conflicting",
+      "revstat": "criteria provided, conflicting classifications",
+      "stars": 1,
+      "conf": {
+        "Uncertain_significance": 2,
+        "Likely_benign": 5
+      }
+    },
+    "gnomad": {
+      "af": 0.00013417999434750527,
+      "af_global": 0.0000314680983137805,
+      "pop": "amr",
+      "nhomalt": 0,
+      "filter": "PASS"
+    },
+    "am": {
+      "score": 0.06666666666666667,
+      "am_class": "likely_benign"
+    },
+    "mode": "AD",
+    "patterns": {
+      "AD": {
+        "label": "arrhythmogenic right ventricular cardiomyopathy",
+        "validity": "Definitive"
+      }
+    },
+    "set": "yours",
+    "zygosity": "het",
+    "copiesX": 1,
+    "p1": {
+      "consequence": "missense",
+      "hgvs_c": "c.2234C>T",
+      "hgvs_p": "p.Thr745Met",
+      "fate": null,
+      "plen": 1118,
+      "runsOn": false,
+      "lost": null,
+      "skip": null
+    },
+    "dosage": {
+      "hi": "2",
+      "lofKnown": 104
+    }
+  },
+  "chr20:32234536:G:A:POFUT1": {
+    "key": "20:32234536:G:A",
+    "gene": "POFUT1",
+    "chrom": "20",
+    "hgvs_c": "c.1042G>A",
+    "consequence": "missense_variant",
+    "clinvar": {
+      "id": "1592932",
+      "clnsig": "Benign",
+      "class": "benign",
+      "review": "multiple",
+      "revstat": "criteria provided, multiple submitters, no conflicts",
+      "stars": 2,
+      "conf": null
+    },
+    "gnomad": {
+      "af": 0.00019245699513703585,
+      "af_global": 0.0008483009878546,
+      "pop": "nfe",
+      "nhomalt": 16,
+      "filter": "PASS"
+    },
+    "am": {
+      "score": 0.17254901960784313,
+      "am_class": "likely_benign"
+    },
+    "mode": "AD",
+    "patterns": {
+      "AD": {
+        "label": "Dowling-Degos disease 2",
+        "validity": "Definitive"
+      }
+    },
+    "set": "yours",
+    "zygosity": "het",
+    "copiesX": 1,
+    "p1": {
+      "consequence": "missense",
+      "hgvs_c": "c.1042G>A",
+      "hgvs_p": "p.Asp348Asn",
+      "fate": null,
+      "plen": 388,
+      "runsOn": false,
+      "lost": null,
+      "skip": null
+    },
+    "dosage": {
+      "hi": null,
+      "lofKnown": 6
+    }
+  },
+  "chr1:5864452:C:A:NPHP4": {
+    "key": "1:5864452:C:A",
+    "gene": "NPHP4",
+    "chrom": "1",
+    "hgvs_c": "c.3882G>T",
+    "consequence": "missense_variant",
+    "clinvar": {
+      "id": "969225",
+      "clnsig": "Uncertain_significance",
+      "class": "uncertain",
+      "review": "multiple",
+      "revstat": "criteria provided, multiple submitters, no conflicts",
+      "stars": 2,
+      "conf": null
+    },
+    "gnomad": {
+      "af": 0.00006868450145702809,
+      "af_global": 0.00002132130066456739,
+      "pop": "amr",
+      "nhomalt": 0,
+      "filter": "PASS"
+    },
+    "am": {
+      "score": 0.6235294117647059,
+      "am_class": "likely_pathogenic"
+    },
+    "mode": "AR",
+    "patterns": {
+      "AR": {
+        "label": "nephronophthisis 4",
+        "validity": "Definitive"
+      }
+    },
+    "set": "yours",
+    "zygosity": "het",
+    "copiesX": 1,
+    "p1": {
+      "consequence": "missense",
+      "hgvs_c": "c.3882G>T",
+      "hgvs_p": "p.Arg1294Ser",
+      "fate": null,
+      "plen": 1426,
+      "runsOn": false,
+      "lost": null,
+      "skip": null
+    },
+    "dosage": {
+      "hi": null,
+      "lofKnown": 138
+    }
+  },
+  "chr1:21854286:C:T:HSPG2": {
+    "key": "1:21854286:C:T",
+    "gene": "HSPG2",
+    "chrom": "1",
+    "hgvs_c": "c.6346G>A",
+    "consequence": "missense_variant",
+    "clinvar": {
+      "id": "295812",
+      "clnsig": "Conflicting_classifications_of_pathogenicity",
+      "class": "conflicting",
+      "review": "conflicting",
+      "revstat": "criteria provided, conflicting classifications",
+      "stars": 1,
+      "conf": {
+        "Uncertain_significance": 4,
+        "Benign": 1,
+        "Likely_benign": 1
+      }
+    },
+    "gnomad": {
+      "af": 0.0001295870024478063,
+      "af_global": 0.00014467000437434763,
+      "pop": "amr",
+      "nhomalt": 0,
+      "filter": "PASS"
+    },
+    "am": {
+      "score": 0.41568627450980394,
+      "am_class": "ambiguous"
+    },
+    "mode": "AR",
+    "patterns": {
+      "AR": {
+        "label": "Schwartz-Jampel syndrome type 1",
+        "validity": "Definitive"
+      }
+    },
+    "set": "yours",
+    "zygosity": "het",
+    "copiesX": 1,
+    "p1": {
+      "consequence": "missense",
+      "hgvs_c": "c.6346G>A",
+      "hgvs_p": "p.Val2116Met",
+      "fate": null,
+      "plen": 4391,
+      "runsOn": false,
+      "lost": null,
+      "skip": null
+    },
+    "dosage": {
+      "hi": null,
+      "lofKnown": 77
+    }
+  },
+  "chr1:184694397:G:A:EDEM3": {
+    "key": "1:184694397:G:A",
+    "gene": "EDEM3",
+    "chrom": "1",
+    "hgvs_c": "c.2465C>T",
+    "consequence": "missense_variant",
+    "clinvar": null,
+    "gnomad": {
+      "af": 0.0001740949956001714,
+      "af_global": 0.000542470021173358,
+      "pop": "mid",
+      "nhomalt": 7,
+      "filter": "PASS"
+    },
+    "am": {
+      "score": 0.06274509803921569,
+      "am_class": "likely_benign"
+    },
+    "mode": "AR",
+    "patterns": {
+      "AR": {
+        "label": "congenital disorder of glycosylation, type 2v",
+        "validity": "Strong"
+      }
+    },
+    "set": "yours",
+    "zygosity": "het",
+    "copiesX": 1,
+    "p1": {
+      "consequence": "missense",
+      "hgvs_c": "c.2465C>T",
+      "hgvs_p": "p.Ser822Leu",
+      "fate": null,
+      "plen": 932,
+      "runsOn": false,
+      "lost": null,
+      "skip": null
+    },
+    "dosage": {
+      "hi": null,
+      "lofKnown": 11
+    }
+  },
+  "chr1:207479280:G:A:CR2": {
+    "key": "1:207479280:G:A",
+    "gene": "CR2",
+    "chrom": "1",
+    "hgvs_c": "c.3112G>A",
+    "consequence": "missense_variant",
+    "clinvar": {
+      "id": "2500016",
+      "clnsig": "Uncertain_significance",
+      "class": "uncertain",
+      "review": "single",
+      "revstat": "criteria provided, single submitter",
+      "stars": 1,
+      "conf": null
+    },
+    "gnomad": {
+      "af": 9.117169952332915e-7,
+      "af_global": 0.000002769590082607465,
+      "pop": "nfe",
+      "nhomalt": 0,
+      "filter": "PASS"
+    },
+    "am": {
+      "score": 0.12549019607843137,
+      "am_class": "likely_benign"
+    },
+    "mode": "AR",
+    "patterns": {
+      "AR": {
+        "label": "immunodeficiency, common variable, 7",
+        "validity": "Definitive"
+      }
+    },
+    "set": "yours",
+    "zygosity": "het",
+    "copiesX": 1,
+    "p1": {
+      "consequence": "missense",
+      "hgvs_c": "c.3112G>A",
+      "hgvs_p": "p.Gly1038Ser",
+      "fate": null,
+      "plen": 1092,
+      "runsOn": false,
+      "lost": null,
+      "skip": null
+    },
+    "dosage": {
+      "hi": null,
+      "lofKnown": 53
+    }
+  },
+  "chr2:209842364:T:G:UNC80": {
+    "key": "2:209842364:T:G",
+    "gene": "UNC80",
+    "chrom": "2",
+    "hgvs_c": "c.3372T>G",
+    "consequence": "missense_variant",
+    "clinvar": {
+      "id": "1561818",
+      "clnsig": "Benign/Likely_benign",
+      "class": "benign-likely",
+      "review": "multiple",
+      "revstat": "criteria provided, multiple submitters, no conflicts",
+      "stars": 2,
+      "conf": null
+    },
+    "gnomad": {
+      "af": 0.00008066670125117525,
+      "af_global": 0.00038181699346750975,
+      "pop": "nfe",
+      "nhomalt": 5,
+      "filter": "PASS"
+    },
+    "am": {
+      "score": 0.996078431372549,
+      "am_class": "likely_pathogenic"
+    },
+    "mode": "AR",
+    "patterns": {
+      "AR": {
+        "label": "hypotonia, infantile, with psychomotor retardation and characteristic facies 2",
+        "validity": "Definitive"
+      }
+    },
+    "set": "yours",
+    "zygosity": "het",
+    "copiesX": 1,
+    "p1": {
+      "consequence": "missense",
+      "hgvs_c": "c.3372T>G",
+      "hgvs_p": "p.Ser1124Arg",
+      "fate": null,
+      "plen": 3324,
+      "runsOn": false,
+      "lost": null,
+      "skip": null
+    },
+    "dosage": {
+      "hi": "30",
+      "lofKnown": 103
+    }
+  },
+  "chr3:48565433:C:T:COL7A1": {
+    "key": "3:48565433:C:T",
+    "gene": "COL7A1",
+    "chrom": "3",
+    "hgvs_c": "c.8504G>A",
+    "consequence": "missense_variant",
+    "clinvar": {
+      "id": "345793",
+      "clnsig": "Conflicting_classifications_of_pathogenicity",
+      "class": "conflicting",
+      "review": "conflicting",
+      "revstat": "criteria provided, conflicting classifications",
+      "stars": 1,
+      "conf": {
+        "Uncertain_significance": 1,
+        "Benign": 1,
+        "Likely_benign": 2
+      }
+    },
+    "gnomad": {
+      "af": 0.00034758399124257267,
+      "af_global": 0.0005062050186097622,
+      "pop": "mid",
+      "nhomalt": 7,
+      "filter": "PASS"
+    },
+    "am": {
+      "score": 0.08627450980392157,
+      "am_class": "likely_benign"
+    },
+    "mode": "AR",
+    "patterns": {
+      "AR": {
+        "label": "recessive dystrophic epidermolysis bullosa",
+        "validity": "Definitive"
+      }
+    },
+    "set": "yours",
+    "zygosity": "het",
+    "copiesX": 1,
+    "p1": {
+      "consequence": "missense",
+      "hgvs_c": "c.8504G>A",
+      "hgvs_p": "p.Arg2835His",
+      "fate": null,
+      "plen": 2944,
+      "runsOn": false,
+      "lost": null,
+      "skip": null
+    },
+    "dosage": {
+      "hi": null,
+      "lofKnown": 549
+    }
+  },
+  "chr3:57384968:C:G:DNAH12": {
+    "key": "3:57384968:C:G",
+    "gene": "DNAH12",
+    "chrom": "3",
+    "hgvs_c": "c.7721G>C",
+    "consequence": "missense_variant",
+    "clinvar": null,
+    "gnomad": {
+      "af": null,
+      "af_global": 0,
+      "pop": "unknown(0)",
+      "nhomalt": 0,
+      "filter": "AC0"
+    },
+    "am": null,
+    "mode": "AR",
+    "patterns": {
+      "AR": {
+        "label": "spermatogenic failure",
+        "validity": "Definitive"
+      }
+    },
+    "set": "yours",
+    "zygosity": "het",
+    "copiesX": 1,
+    "p1": {
+      "consequence": "missense",
+      "hgvs_c": "c.7721G>C",
+      "hgvs_p": "p.Arg2574Thr",
+      "fate": null,
+      "plen": 3960,
+      "runsOn": false,
+      "lost": null,
+      "skip": null
+    },
+    "dosage": {
+      "hi": null,
+      "lofKnown": 6
+    }
+  },
+  "chr10:113623545:C:T:NRAP": {
+    "key": "10:113623545:C:T",
+    "gene": "NRAP",
+    "chrom": "10",
+    "hgvs_c": "c.2441G>A",
+    "consequence": "missense_variant",
+    "clinvar": {
+      "id": "2361523",
+      "clnsig": "Conflicting_classifications_of_pathogenicity",
+      "class": "conflicting",
+      "review": "conflicting",
+      "revstat": "criteria provided, conflicting classifications",
+      "stars": 1,
+      "conf": {
+        "Uncertain_significance": 1,
+        "Likely_benign": 2
+      }
+    },
+    "gnomad": {
+      "af": 0.000053088500862941146,
+      "af_global": 0.00027515398687683046,
+      "pop": "nfe",
+      "nhomalt": 2,
+      "filter": "PASS"
+    },
+    "am": {
+      "score": 0.1803921568627451,
+      "am_class": "likely_benign"
+    },
+    "mode": "AR",
+    "patterns": {
+      "AR": {
+        "label": "dilated cardiomyopathy",
+        "validity": "Strong"
+      }
+    },
+    "set": "yours",
+    "zygosity": "het",
+    "copiesX": 1,
+    "p1": {
+      "consequence": "missense",
+      "hgvs_c": "c.2441G>A",
+      "hgvs_p": "p.Arg814Lys",
+      "fate": null,
+      "plen": 1730,
+      "runsOn": false,
+      "lost": null,
+      "skip": null
+    },
+    "dosage": {
+      "hi": null,
+      "lofKnown": 18
+    }
+  },
+  "chr11:67522626:C:T:CABP2": {
+    "key": "11:67522626:C:T",
+    "gene": "CABP2",
+    "chrom": "11",
+    "hgvs_c": "c.133G>A",
+    "consequence": "missense_variant",
+    "clinvar": {
+      "id": "3262652",
+      "clnsig": "Likely_benign",
+      "class": "likely-benign",
+      "review": "single",
+      "revstat": "criteria provided, single submitter",
+      "stars": 1,
+      "conf": null
+    },
+    "gnomad": {
+      "af": 0.0002240650064777583,
+      "af_global": 0.000047251698561012745,
+      "pop": "eas",
+      "nhomalt": 0,
+      "filter": "PASS"
+    },
+    "am": {
+      "score": 0.06274509803921569,
+      "am_class": "likely_benign"
+    },
+    "mode": "AR",
+    "patterns": {
+      "AR": {
+        "label": "nonsyndromic genetic hearing loss",
+        "validity": "Definitive"
+      }
+    },
+    "set": "yours",
+    "zygosity": "het",
+    "copiesX": 1,
+    "p1": {
+      "consequence": "missense",
+      "hgvs_c": "c.133G>A",
+      "hgvs_p": "p.Val45Ile",
+      "fate": null,
+      "plen": 220,
+      "runsOn": false,
+      "lost": null,
+      "skip": null
+    },
+    "dosage": {
+      "hi": "30",
+      "lofKnown": 3
+    }
+  },
+  "chr12:122261398:G:A:VPS33A": {
+    "key": "12:122261398:G:A",
+    "gene": "VPS33A",
+    "chrom": "12",
+    "hgvs_c": "c.346C>T",
+    "consequence": "missense_variant",
+    "clinvar": {
+      "id": "1168584",
+      "clnsig": "Benign",
+      "class": "benign",
+      "review": "multiple",
+      "revstat": "criteria provided, multiple submitters, no conflicts",
+      "stars": 2,
+      "conf": null
+    },
+    "gnomad": {
+      "af": 0.00042581799789331853,
+      "af_global": 0.000738933973480016,
+      "pop": "amr",
+      "nhomalt": 10,
+      "filter": "PASS"
+    },
+    "am": {
+      "score": 0.7803921568627451,
+      "am_class": "likely_pathogenic"
+    },
+    "mode": "AR",
+    "patterns": {
+      "AR": {
+        "label": "mucopolysaccharidosis-plus syndrome",
+        "validity": "Definitive"
+      }
+    },
+    "set": "yours",
+    "zygosity": "het",
+    "copiesX": 1,
+    "p1": {
+      "consequence": "missense",
+      "hgvs_c": "c.346C>T",
+      "hgvs_p": "p.Arg116Cys",
+      "fate": null,
+      "plen": 596,
+      "runsOn": false,
+      "lost": null,
+      "skip": null
+    },
+    "dosage": {
+      "hi": null,
+      "lofKnown": 0
+    }
+  },
+  "chr13:113117603:A:ACCACTCTCCCCTGTCCGACCGCGGTGCTGGGTGGGTG:F7": {
+    "key": "13:113117603:A:ACCACTCTCCCCTGTCCGACCGCGGTGCTGGGTGGGTG",
+    "gene": "F7",
+    "chrom": "13",
+    "hgvs_c": "c.739+15_739+51dup",
+    "consequence": "splice_region_variant",
+    "clinvar": null,
+    "gnomad": null,
+    "am": null,
+    "mode": "AR",
+    "patterns": {
+      "AR": {
+        "label": "factor VII deficiency",
+        "validity": "Definitive"
+      }
+    },
+    "set": "yours",
+    "zygosity": "het",
+    "copiesX": 1,
+    "p1": {
+      "consequence": "splice_region",
+      "hgvs_c": "c.739+15_739+51dup",
+      "hgvs_p": null,
+      "fate": null,
+      "plen": 444,
+      "runsOn": false,
+      "lost": null,
+      "skip": null
+    },
+    "dosage": {
+      "hi": "30",
+      "lofKnown": 25
+    }
+  },
+  "chr14:45185207:TCTTA:T:FANCM": {
+    "key": "14:45185207:TCTTA:T",
+    "gene": "FANCM",
+    "chrom": "14",
+    "hgvs_c": "c.4516-5_4516-2del",
+    "consequence": "splice_region_variant",
+    "clinvar": {
+      "id": "261387",
+      "clnsig": "Benign/Likely_benign",
+      "class": "benign-likely",
+      "review": "multiple",
+      "revstat": "criteria provided, multiple submitters, no conflicts",
+      "stars": 2,
+      "conf": null
+    },
+    "gnomad": null,
+    "am": null,
+    "mode": "AR",
+    "patterns": {
+      "AR": {
+        "label": "FANCM Fanconi-like genomic instability disorder",
+        "validity": "Definitive"
+      }
+    },
+    "set": "yours",
+    "zygosity": "het",
+    "copiesX": 1,
+    "p1": {
+      "consequence": "splice_region",
+      "hgvs_c": "c.4516-5_4516-2del",
+      "hgvs_p": null,
+      "fate": null,
+      "plen": 2048,
+      "runsOn": false,
+      "lost": null,
+      "skip": null
+    },
+    "dosage": {
+      "hi": "30",
+      "lofKnown": 177
+    }
+  },
+  "chr17:38343099:G:A:GPR179": {
+    "key": "17:38343099:G:A",
+    "gene": "GPR179",
+    "chrom": "17",
+    "hgvs_c": "c.691C>T",
+    "consequence": "missense_variant",
+    "clinvar": {
+      "id": "323032",
+      "clnsig": "Conflicting_classifications_of_pathogenicity",
+      "class": "conflicting",
+      "review": "conflicting",
+      "revstat": "criteria provided, conflicting classifications",
+      "stars": 1,
+      "conf": {
+        "Uncertain_significance": 1,
+        "Benign": 1,
+        "Likely_benign": 1
+      }
+    },
+    "gnomad": {
+      "af": 0.0000854324025567621,
+      "af_global": 0.0004624249995686114,
+      "pop": "nfe",
+      "nhomalt": 8,
+      "filter": "PASS"
+    },
+    "am": {
+      "score": 0.09803921568627451,
+      "am_class": "likely_benign"
+    },
+    "mode": "AR",
+    "patterns": {
+      "AR": {
+        "label": "GPR179-related retinopathy",
+        "validity": "Definitive"
+      }
+    },
+    "set": "yours",
+    "zygosity": "het",
+    "copiesX": 1,
+    "p1": {
+      "consequence": "missense",
+      "hgvs_c": "c.691C>T",
+      "hgvs_p": "p.Pro231Ser",
+      "fate": null,
+      "plen": 2367,
+      "runsOn": false,
+      "lost": null,
+      "skip": null
+    },
+    "dosage": {
+      "hi": "30",
+      "lofKnown": 50
+    }
+  },
+  "chr17:78507336:C:T:DNAH17": {
+    "key": "17:78507336:C:T",
+    "gene": "DNAH17",
+    "chrom": "17",
+    "hgvs_c": "c.4618G>A",
+    "consequence": "missense_variant",
+    "clinvar": null,
+    "gnomad": {
+      "af": 0.00022359400463756174,
+      "af_global": 0.00040774300578050315,
+      "pop": "amr",
+      "nhomalt": 5,
+      "filter": "PASS"
+    },
+    "am": {
+      "score": 0.3843137254901961,
+      "am_class": "ambiguous"
+    },
+    "mode": "AR",
+    "patterns": {
+      "AR": {
+        "label": "spermatogenic failure 39",
+        "validity": "Definitive"
+      }
+    },
+    "set": "yours",
+    "zygosity": "het",
+    "copiesX": 1,
+    "p1": {
+      "consequence": "missense",
+      "hgvs_c": "c.4618G>A",
+      "hgvs_p": "p.Val1540Met",
+      "fate": null,
+      "plen": 4462,
+      "runsOn": false,
+      "lost": null,
+      "skip": null
+    },
+    "dosage": {
+      "hi": null,
+      "lofKnown": 25
+    }
+  },
+  "chr19:42410677:G:A:LIPE": {
+    "key": "19:42410677:G:A",
+    "gene": "LIPE",
+    "chrom": "19",
+    "hgvs_c": "c.1049C>T",
+    "consequence": "missense_variant",
+    "clinvar": {
+      "id": "2353491",
+      "clnsig": "Uncertain_significance",
+      "class": "uncertain",
+      "review": "single",
+      "revstat": "criteria provided, single submitter",
+      "stars": 1,
+      "conf": null
+    },
+    "gnomad": {
+      "af": 0.0002465150028001517,
+      "af_global": 0.00020275700080674142,
+      "pop": "amr",
+      "nhomalt": 1,
+      "filter": "PASS"
+    },
+    "am": {
+      "score": 0.17254901960784313,
+      "am_class": "likely_benign"
+    },
+    "mode": "AR",
+    "patterns": {
+      "AR": {
+        "label": "LIPE-related familial partial lipodystrophy",
+        "validity": "Definitive"
+      }
+    },
+    "set": "yours",
+    "zygosity": "het",
+    "copiesX": 1,
+    "p1": {
+      "consequence": "missense",
+      "hgvs_c": "c.1049C>T",
+      "hgvs_p": "p.Pro350Leu",
+      "fate": null,
+      "plen": 1076,
+      "runsOn": false,
+      "lost": null,
+      "skip": null
+    },
+    "dosage": {
+      "hi": null,
+      "lofKnown": 8
+    }
+  },
+  "chr22:18922937:CA:C:PRODH": {
+    "key": "22:18922937:CA:C",
+    "gene": "PRODH",
+    "chrom": "22",
+    "hgvs_c": "c.733-5del",
+    "consequence": "splice_region_variant",
+    "clinvar": {
+      "id": "1164746",
+      "clnsig": "Benign/Likely_benign",
+      "class": "benign-likely",
+      "review": "multiple",
+      "revstat": "criteria provided, multiple submitters, no conflicts",
+      "stars": 2,
+      "conf": null
+    },
+    "gnomad": null,
+    "am": null,
+    "mode": "AR",
+    "patterns": {
+      "AR": {
+        "label": "hyperprolinemia type 1",
+        "validity": "Definitive"
+      }
+    },
+    "set": "yours",
+    "zygosity": "het",
+    "copiesX": 1,
+    "p1": {
+      "consequence": "splice_region",
+      "hgvs_c": "c.733-5del",
+      "hgvs_p": null,
+      "fate": null,
+      "plen": 600,
+      "runsOn": false,
+      "lost": null,
+      "skip": null
+    },
+    "dosage": {
+      "hi": "30",
+      "lofKnown": 14
+    }
+  }
+}

@@ -1,0 +1,254 @@
+/* Copyright 2026 Ashwin Mukherjee */
+/* SPDX-License-Identifier: PolyForm-Noncommercial-1.0.0 */
+/* Generated from tokens.ts by tools/tokens.ts. Edit tokens.ts, never this file. */
+
+:root {
+  --v-void: #131617;
+  --v-paper: #ECEEEF;
+  --v-ground: #E0E2E5;
+  --v-rail: #D8DBDD;
+  --v-unknown: #B9BCBE;
+  --v-uncertain: #93979A;
+  --v-observed: #44474B;
+  --v-text: #35393D;
+  --v-text-2: #5E6063;
+  --v-axis: #4B4E52;
+  --v-faint: #5D6064;
+  --v-outline: #797C80;
+  --v-terminal-ref: #22262A;
+  --v-terminal: #27574D;
+  --v-predicted: #548C85;
+  --v-fill: #BCD8D5;
+  --v-lit: #27574D;
+  --v-read: #27574D;
+  --v-fall: #A2C2BE;
+  --v-halo: #BCD8D5;
+  --v-path: #B4281E;
+  --v-benign: #0461A7;
+  --ground: var(--v-ground);
+  --apparatus-ground: var(--v-rail);
+  --ink: var(--v-text);
+  --ink-dim: var(--v-text-2);
+  --ink-bar: var(--v-text-2);
+  --ink-outline: var(--v-outline);
+  --hair: var(--v-rail);
+  --sp-1: 8px;
+  --sp-2: 16px;
+  --sp-3: 24px;
+  --sp-4: 32px;
+  --sp-5: 48px;
+  --sp-6: 64px;
+  --sp-7: 96px;
+  --sp-8: 128px;
+  --sp-9: 192px;
+  --s4: 4px;
+  --t-1: 11px;
+  --lh-1: 16px;
+  --t-2: 13px;
+  --lh-2: 17px;
+  --t-3: 16px;
+  --lh-3: 22px;
+  --t-4: 20px;
+  --lh-4: 26px;
+  --t-5: 24px;
+  --lh-5: 32px;
+  --t-serif-l: var(--t-5);
+  --lh-serif-l: var(--lh-5);
+  --t-serif-m: var(--t-4);
+  --lh-serif-m: var(--lh-4);
+  --t-sans-body: var(--t-3);
+  --lh-sans-body: var(--lh-3);
+  --t-mono-row: var(--t-2);
+  --lh-mono-row: var(--lh-2);
+  --t-mono-note: var(--t-1);
+  --lh-mono-note: var(--lh-1);
+  --caption-size: var(--t-1);
+  --caption-track: 0.16em;
+  --caption-offset: 56px;
+  --rail-mark: 9px;
+  --lane-label-box: 15px;
+  --sans: "Inter Variable", system-ui, sans-serif;
+  --serif: "Source Serif 4 Variable", Georgia, serif;
+  --mono: "IBM Plex Mono", ui-monospace, Menlo, monospace;
+  --ease: cubic-bezier(0.45, 0, 0.15, 1);
+  --t-fade: 1200ms;
+  --t-move: 1400ms;
+  --t-beat: 600ms;
+  --t-release: 400ms;
+  --t-swap: 300ms;
+  --t-arrive: 320ms;
+  --t-turn: 280ms;
+  --t-hover: 150ms;
+  --t-press: 120ms;
+  --t-cue: 1700ms;
+  --t-cue-after: 1800ms;
+  --an-draw: 400ms;
+  --an-hold: 500ms;
+  --an-read: 1200ms;
+  --an-say: 1120ms;
+  --an-move: 260ms;
+  --an-wave: 45ms;
+  --an-land: 120ms;
+  --an-fade: 320ms;
+  --an-dolly: 700ms;
+  --tw: var(--t-fade);
+  --wall: 44px;
+  --col-w: 300px;
+  --col-zone: 384px;
+  --station-q: 80px;
+  --station-c: 112px;
+  --claim-zone: 120px;
+  --station-s: 272px;
+  --station-r: 352px;
+  --gap-below: 48px;
+  --stage-w: 768px;
+  --stage-h-p1: 384px;
+  --stage-h-p2: 192px;
+  --stage-h-p3: 424px;
+  --w-spine: 540px;
+  --w-spine-p2: 620px;
+  --p3-array-top: 32px;
+  --p3-ledger-gap: 64px;
+  --claim-to-stage: calc(var(--station-s) - var(--station-c) - var(--claim-zone));
+  --rail-top: var(--station-q);
+  --first-line: 132px;
+  --pitch: clamp(23px, calc((100dvh - 2 * var(--first-line)) / 22), 36px);
+  --list-pitch: 42px;
+  --strip-h: 48px;
+  --strip-base: 30px;
+  --hover-recede: 0.4;
+  --cue-travel: 3px;
+  --p3-cols: 20;
+  --og-layout: 100%;
+  --og-gutter: 10px;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --v-void: #131617;
+    --v-paper: #131617;
+    --v-ground: #1B1E20;
+    --v-rail: #232629;
+    --v-unknown: #3F4346;
+    --v-uncertain: #65686C;
+    --v-observed: #B9BCBE;
+    --v-text: #D5D7DA;
+    --v-text-2: #898D8F;
+    --v-axis: #A0A4A6;
+    --v-faint: #8A8D90;
+    --v-outline: #6C6F73;
+    --v-terminal-ref: #E3E5E8;
+    --v-terminal: #B0DBD7;
+    --v-predicted: #71A49C;
+    --v-fill: #233E37;
+    --v-lit: #B0DBD7;
+    --v-read: #71A49C;
+    --v-fall: #2C4944;
+    --v-halo: #33695F;
+    --v-path: #DA5547;
+    --v-benign: #488ACB;
+}
+}
+
+:root[data-theme="dark"] {
+  --v-void: #131617;
+  --v-paper: #131617;
+  --v-ground: #1B1E20;
+  --v-rail: #232629;
+  --v-unknown: #3F4346;
+  --v-uncertain: #65686C;
+  --v-observed: #B9BCBE;
+  --v-text: #D5D7DA;
+  --v-text-2: #898D8F;
+  --v-axis: #A0A4A6;
+  --v-faint: #8A8D90;
+  --v-outline: #6C6F73;
+  --v-terminal-ref: #E3E5E8;
+  --v-terminal: #B0DBD7;
+  --v-predicted: #71A49C;
+  --v-fill: #233E37;
+  --v-lit: #B0DBD7;
+  --v-read: #71A49C;
+  --v-fall: #2C4944;
+  --v-halo: #33695F;
+  --v-path: #DA5547;
+  --v-benign: #488ACB;
+}
+
+:root[data-typeface="suisse"] {
+  --sans: "Suisse Intl", system-ui, sans-serif;
+  --serif: "Suisse Works", Georgia, serif;
+  --mono: "Suisse Mono", ui-monospace, Menlo, monospace;
+}
+
+@media (min-width: 490px) {
+  :root {
+    --og-layout: 490px;
+    --og-gutter: 10px;
+    --og-col: 30px;
+}
+}
+
+@media (min-width: 740px) {
+  :root {
+    --og-layout: 740px;
+    --og-gutter: 20px;
+    --og-col: 40px;
+}
+}
+
+@media (min-width: 980px) {
+  :root {
+    --og-layout: 980px;
+    --og-gutter: 20px;
+    --og-col: 60px;
+}
+}
+
+@media (min-width: 1800px) {
+  :root {
+    --og-layout: 1220px;
+    --og-gutter: 20px;
+    --og-col: 80px;
+}
+}
+
+@media (max-width: 800px) {
+  :root {
+    --wall: 20px;
+    --col-zone: 0px;
+    --station-q: 40px;
+    --station-c: 64px;
+    --claim-zone: 104px;
+    --station-s: 192px;
+    --station-r: 232px;
+    --gap-below: 24px;
+    --stage-h-p1: 320px;
+    --stage-h-p2: 192px;
+    --stage-h-p3: 360px;
+    --p3-array-top: 16px;
+    --p3-ledger-gap: 24px;
+    --stage-w: calc(100vw - 2 * var(--wall));
+    --w-spine: var(--stage-w);
+    --w-spine-p2: var(--stage-w);
+    --t-serif-l: var(--t-4);
+    --lh-serif-l: var(--lh-4);
+    --t-serif-m: var(--t-3);
+    --lh-serif-m: var(--lh-3);
+    --p3-cols: 20;
+    --ledger-pitch-min: 12px;
+}
+}
+
+@media (max-width: 800px) and (max-height: 700px) {
+  :root {
+    --station-q: 32px;
+    --station-c: 56px;
+    --station-s: 176px;
+    --station-r: 216px;
+    --gap-below: 16px;
+    --stage-h-p3: 336px;
+    --p3-array-top: 16px;
+    --p3-ledger-gap: 24px;
+}
+}

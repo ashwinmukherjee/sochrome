@@ -1,0 +1,90 @@
+{
+  "R18": {
+    "kind": "assert",
+    "ref": "E7 p2 arms, length, bars, fill, no weight off the chart"
+  },
+  "R19": {
+    "kind": "e2e",
+    "ref": "E7 pairing by hover at 1440 and by tap at 390 and 320: p2 pair"
+  },
+  "R20": {
+    "kind": "assert",
+    "ref": "E7 p2 row"
+  },
+  "R21": {
+    "kind": "assert",
+    "ref": "E7 p2 poles"
+  },
+  "R22": {
+    "kind": "assert",
+    "ref": "E7 p3 array"
+  },
+  "R23": {
+    "kind": "e2e",
+    "ref": "E7 the wave"
+  },
+  "R24": {
+    "kind": "assert",
+    "ref": "E7 p3 inks, and p3 pair while a group is paired"
+  },
+  "R25": {
+    "kind": "e2e",
+    "ref": "E7 liveness: a group pairs only once coloured, and scrolling back above it lets go"
+  },
+  "R26": {
+    "kind": "assert",
+    "ref": "E7 p3 ledger, and p3 pair for the tint"
+  },
+  "R27": {
+    "kind": "assert",
+    "ref": "E7 p3 spacing"
+  },
+  "R28": {
+    "kind": "assert",
+    "ref": "C2 rules: a P3 of lines alone is never about the tool, a harmless one says only its lead; E7 frame claim: its lines are the claim spine"
+  },
+  "M12": {
+    "kind": "e2e",
+    "ref": "E7 pairing by tap at 390 and 320"
+  },
+  "V3": {
+    "kind": "review",
+    "ref": "shots/review/e/p2-pathogenic-1440.png"
+  },
+  "V4": {
+    "kind": "review",
+    "ref": "shots/review/e/p2-pathogenic-open-1440.png"
+  },
+  "V5": {
+    "kind": "assert",
+    "ref": "C2 rules: P2's claims run opening, verdict, then the condition only when settled harmful"
+  },
+  "V6": {
+    "kind": "review",
+    "ref": "shots/review/e/p2-pathogenic-1440.png"
+  },
+  "V7": {
+    "kind": "review",
+    "ref": "shots/review/e/p2-uncertain-1440.png"
+  },
+  "V8": {
+    "kind": "assert",
+    "ref": "C2 rules: P3 never opens on That or So; a figure opens on the model line"
+  },
+  "V9": {
+    "kind": "review",
+    "ref": "shots/review/e/p3-carrier-1440.png"
+  },
+  "V10": {
+    "kind": "review",
+    "ref": "shots/review/e/p3-carrier-beat1-1440.png"
+  },
+  "V11": {
+    "kind": "assert",
+    "ref": "C2 rules: very likely harmful; About 1 in N people carry it"
+  },
+  "V12": {
+    "kind": "assert",
+    "ref": "C2 rules: no subtype number in a saved or drafted name; every line fits under every drafted name"
+  }
+}

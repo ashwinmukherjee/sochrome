@@ -1,0 +1,12 @@
+cff-version: 1.2.0
+message: "If you refer to this work, please cite it as below."
+title: "%NAME%"
+type: software
+authors:
+  - family-names: "Mukherjee"
+    given-names: "Ashwin"
+version: "%VERSION%"
+date-released: "%YEAR%-11-18"
+license: "PolyForm-Noncommercial-1.0.0"
+url: "https://%DOMAIN%"
+abstract: "A web app that reads a whole-genome file on the person's own device and shows what each rare change in condition-linked genes does to the gene's protein."

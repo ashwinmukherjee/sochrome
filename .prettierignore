@@ -1,0 +1,16 @@
+dist/
+node_modules/
+public/data/
+fonts/
+shots/
+package-lock.json
+LICENSE
+LICENSE-CONTENT
+THIRD_PARTY.md
+third-party-licenses.txt
+test/fixtures/
+src/copy/json/
+tools/clinvar-check/*.tsv
+tools/decisions/ledger.json
+src/styles/tokens.css
+tools/checks/R3.golden.json

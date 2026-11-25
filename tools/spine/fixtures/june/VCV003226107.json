@@ -1,0 +1,18 @@
+{
+  "clinvar_id": "VCV003226107",
+  "variation_id": "3226107",
+  "hgvs_c": "c.1590A>C",
+  "hgvs_p": "p.Glu530Asp",
+  "gene": "BRCA1",
+  "uniprot": "P38398",
+  "mane_transcript": "NM_007294.4",
+  "isoform": "P38398 (canonical)",
+  "clinvar_classification": "Uncertain significance",
+  "consequence_so": "missense_variant",
+  "consequence_all": ["missense variant", "intron variant"],
+  "structure_map": {
+    "kind": "residue",
+    "residues": [530],
+    "reason": null
+  }
+}

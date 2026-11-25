@@ -1,0 +1,67 @@
+/* Copyright 2026 Ashwin Mukherjee */
+/* SPDX-License-Identifier: PolyForm-Noncommercial-1.0.0 */
+/* Linked only when the typeface token is "suisse". The files are commercial and never in the repo (THIRD_PARTY.md). */
+
+@font-face {
+  font-family: "Suisse Intl";
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+  src: url("/fonts/SuisseIntl-Light.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Suisse Intl";
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  src: url("/fonts/SuisseIntl-Regular.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Suisse Intl";
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+  src: url("/fonts/SuisseIntl-Medium.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Suisse Works";
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  src: url("/fonts/SuisseWorks-Regular.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Suisse Works";
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+  src: url("/fonts/SuisseWorks-Italic.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Suisse Works";
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+  src: url("/fonts/SuisseWorks-Medium.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Suisse Mono";
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+  src: url("/fonts/SuisseMono-Thin.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Suisse Mono";
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  src: url("/fonts/SuisseMono-Regular.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Suisse Mono";
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+  src: url("/fonts/SuisseMono-Bold.woff2") format("woff2");
+}

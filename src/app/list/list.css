@@ -1,0 +1,266 @@
+/* Copyright 2026 Ashwin Mukherjee */
+/* SPDX-License-Identifier: PolyForm-Noncommercial-1.0.0 */
+/* The list and the genes page in the apparatus column. */
+
+/* The list fills the column's rows: the captions on the rail, the rows from the first line, the sentence at the foot. */
+.list,
+.genes-page {
+  grid-row: 1 / -1;
+  display: grid;
+  grid-template-rows: subgrid;
+  min-width: 0;
+  --pad: var(--s4);
+}
+
+.list-captions,
+.genes-caption {
+  grid-row: 1;
+  margin: 0;
+  white-space: nowrap;
+}
+
+/* The two captions in the caption's own setting: the chosen one in ink, the other at the faint grey. */
+.list-tab {
+  font: inherit;
+  letter-spacing: inherit;
+  text-transform: inherit;
+  line-height: inherit;
+  color: var(--ink-dim);
+  transition: color var(--t-hover) ease;
+}
+.list-tab:hover {
+  color: var(--ink-dim);
+}
+.list-tab[aria-pressed="true"] {
+  color: var(--ink);
+}
+.list-tab[aria-pressed="true"] {
+  cursor: default;
+}
+.list-tab-carriers {
+  margin-left: 28px;
+}
+/* The caption stands on a zero-height strut; its hit area is the capitals' height and a little air. */
+.list-tab {
+  position: relative;
+}
+.list-tab::after {
+  content: "";
+  position: absolute;
+  inset: calc(-1 * var(--lh-1)) calc(-1 * var(--s4)) calc(-1 * var(--s4));
+}
+
+/* From the first line (a row's centre) to the foot, the sentence bottom-aligned where EXPLORE stood. */
+.list-body,
+.genes-body {
+  grid-row: 3 / -1;
+  contain: size;
+  display: flex;
+  flex-direction: column;
+  margin-top: calc(var(--lh-mono-row) / -2);
+  padding-bottom: var(--sp-5);
+  min-height: 0;
+}
+.list-body.nothing {
+  margin-top: calc(var(--lh-2) / -2);
+}
+
+.list-room,
+.genes-room {
+  flex: 1 1 0;
+  min-height: 0;
+  overflow: hidden;
+  margin: calc(-1 * var(--pad)) calc(-1 * var(--pad)) 0;
+  padding: var(--pad) var(--pad) 0;
+  animation: list-arrive var(--t-arrive) ease both;
+}
+
+/* The rows scroll with no scrollbar and snap whole; the padding keeps the focus ring in view. */
+.list-rows,
+.genes-rows {
+  display: flex;
+  flex-direction: column;
+  gap: calc(var(--list-pitch) - var(--lh-mono-row));
+  overflow-y: auto;
+  overflow-x: hidden;
+  box-sizing: content-box;
+  margin: calc(-1 * var(--pad));
+  padding: var(--pad);
+  scroll-padding-top: var(--pad);
+  scroll-snap-type: y mandatory;
+  scrollbar-width: none;
+}
+.list-rows::-webkit-scrollbar,
+.genes-rows::-webkit-scrollbar {
+  display: none;
+}
+
+/* A row: gene and variant in one quiet mono line, its box pinned so the pitch holds. */
+.list-row {
+  flex: 0 0 auto;
+  display: flex;
+  align-items: baseline;
+  gap: var(--sp-1);
+  height: var(--lh-mono-row);
+  text-align: left;
+  white-space: nowrap;
+  scroll-snap-align: start;
+  transition:
+    color var(--t-press) ease,
+    opacity var(--t-hover) ease;
+}
+.list-row:hover,
+.list-row.is-current,
+.list-row.is-hot,
+.list-row.is-cue {
+  color: var(--ink);
+}
+/* While something is pointed at, the rows it is not step back as the ledger's ticks do, the open row with them:
+   colour answers what is pointed at, the Bold what is open. */
+.list-rows.linking .list-row:not(.is-hot),
+.list-rows.linking ~ .list-more:not(.settling) {
+  opacity: var(--hover-recede);
+}
+/* In a room the list is the way to the next one, not something to read: the rows other than the open one step back
+   as far, "+N more" with them, until the pointer comes anywhere into the apparatus. */
+.frame-apparatus:not(:hover) .list-rows.in-room .list-row:not(.is-current),
+.frame-apparatus:not(:hover) .list-rows.in-room ~ .list-more:not(.settling) {
+  opacity: var(--hover-recede);
+}
+.list-row:focus-visible,
+.list-more:focus-visible,
+.genes-row:focus-visible,
+.genes-more:focus-visible,
+.genes-back:focus-visible,
+.list-tab:focus-visible {
+  outline: 1px solid var(--ink-dim);
+  outline-offset: 3px;
+}
+
+/* The open row: the mono's Bold at full ink, no mark beside it. The mono's advance is the same in every weight, so
+   nothing shifts on select. */
+.list-row.is-current {
+  font-weight: 700;
+}
+
+/* "+N more" in the next row's slot, in the row's setting. */
+.list-more,
+.genes-more {
+  align-self: flex-start;
+  margin-top: calc(var(--list-pitch) - var(--lh-mono-row));
+  color: var(--ink-dim);
+  transition:
+    color var(--t-press) ease,
+    opacity var(--t-hover) ease;
+}
+/* While the room's height moves (a phone's band opening) its count would run through every height on the way.
+   Hidden by visibility too: an arrival's fade sets the opacity while it runs. */
+.list-more.settling,
+.genes-more.settling {
+  opacity: 0;
+  visibility: hidden;
+  transition: none;
+}
+/* Hovered, at full ink, as a row is. */
+.list-more:hover,
+.genes-more:hover {
+  color: var(--ink);
+}
+
+/* The list stops a clear gap above its sentence. */
+.list-sentence {
+  margin: var(--sp-3) 0 0;
+  animation: list-arrive var(--t-arrive) ease both;
+}
+.list-body.nothing .list-sentence {
+  margin: 0;
+}
+
+/* The one arrow, as tall as the capitals, on the baseline, stroked in the text's colour. */
+svg.arrow {
+  display: inline-block;
+  width: 0.86em;
+  height: 0.72em;
+  overflow: visible;
+  vertical-align: baseline;
+}
+svg.arrow path {
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.3px;
+  vector-effect: non-scaling-stroke;
+  stroke-linecap: square;
+  stroke-linejoin: miter;
+}
+svg.arrow-back {
+  transform: scaleX(-1);
+}
+
+/* The first variant's cue: its arrow nudges the way it points, as every first-sight arrow does. */
+.cue-arr {
+  display: inline-block;
+  margin-left: 0.4em;
+  animation: cue-nudge var(--t-cue) ease-in-out infinite;
+}
+@keyframes list-arrive {
+  from {
+    opacity: 0;
+  }
+}
+
+/* The genes page: rows at the genes' pitch, BACK at the foot on the left. */
+.genes-page {
+  --list-pitch: var(--gene-pitch);
+}
+.genes-rows {
+  gap: 0;
+}
+.genes-row {
+  flex: 0 0 auto;
+  display: flex;
+  align-items: center;
+  height: var(--gene-pitch);
+  text-align: left;
+  cursor: default;
+  scroll-snap-align: start;
+  transition: color var(--t-hover) ease;
+}
+.genes-row:hover,
+.genes-row:focus-visible {
+  color: var(--ink);
+}
+.genes-more {
+  margin-top: 0;
+  height: var(--gene-pitch);
+}
+.genes-room {
+  margin-bottom: var(--gene-pitch);
+}
+.genes-body {
+  margin-top: calc(var(--gene-pitch) / -2);
+}
+/* The set's sentence at the column's foot, over BACK, as the list's stands at its foot. */
+.genes-sentence {
+  margin: 0 0 var(--sp-3);
+}
+.genes-back {
+  align-self: flex-start;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  height: var(--lane-label-box);
+  color: var(--ink);
+  transition: color var(--t-hover) ease;
+}
+.genes-back:hover {
+  color: var(--ink-bar);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .cue-arr,
+  .list-room,
+  .genes-room,
+  .list-sentence {
+    animation: none;
+  }
+}

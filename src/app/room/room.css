@@ -1,0 +1,315 @@
+/* Copyright 2026 Ashwin Mukherjee */
+/* SPDX-License-Identifier: PolyForm-Noncommercial-1.0.0 */
+/* The room: three panels that pin in turn, each laid out on stations measured from its pinned frame's top. */
+
+/* The room is its own scroll box, so it opens at scroll 0 with nothing above it and nothing else moves under it. */
+.room {
+  /* The pinned frame's height. A host that puts something above the room sets this to what is left. */
+  --room-h: 100dvh;
+  /* The bezel's active station is a track this tall, in a row on the 8 px module. */
+  --bz-bar: 22px;
+  --bz-row: var(--sp-3);
+  /* The strip kept clear for the bezel on the right, wherever the bezel shows. */
+  --bz-gutter: calc(var(--rail-mark) + var(--sp-4));
+  /* From the ink to the caption under it: room enough under the protein's squares. */
+  --ink-to-caption: var(--sp-3);
+
+  position: relative;
+  grid-row: 1 / -1;
+  container-type: inline-size;
+  block-size: var(--room-h);
+  overflow: hidden auto;
+  overscroll-behavior: contain;
+}
+/* Focused only so the keys scroll it: it is a page, not a control, and draws no ring. */
+.room:focus {
+  outline: none;
+}
+
+/* ── Switching rooms: clear, change, arrive (the graphic alone), say (the copy). ── */
+.room-pane {
+  transition: opacity var(--an-fade) ease;
+}
+.room[data-phase="clearing"] .room-pane,
+.room[data-phase="empty"] .room-pane {
+  opacity: 0;
+}
+.room-copy {
+  transition: opacity var(--an-fade) ease;
+}
+.room[data-phase="empty"] .room-copy,
+.room[data-phase="arriving"] .room-copy {
+  opacity: 0;
+}
+
+/* ── A panel: its scrub and its hold in scroll, and the frame that pins over them. ── */
+.panel {
+  --scrub: calc(var(--room-h) * var(--pace) * var(--scrub-scale, 1));
+  --hold: calc(var(--room-h) * var(--hold-vh));
+  position: relative;
+  block-size: calc(var(--room-h) + var(--scrub) + var(--hold));
+}
+/* P1's scroll is its copy's own length, hold included. */
+.panel-p1 {
+  block-size: calc(var(--room-h) + var(--scroll, 0px));
+}
+/* Content hangs from the stations and never centres vertically: nothing above the stage's foot can move. Across, it
+   is one column the stage's width, set left inside and centred in the specimen, as the lobby's ledger is, so a wide
+   screen's right half is never left empty. */
+.panel-inner {
+  position: sticky;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  min-block-size: var(--room-h);
+  padding: 0 max(var(--wall), (100% - var(--stage-w)) / 2) var(--sp-5);
+  padding-inline-end: max(var(--wall) + var(--bz-gutter), (100% - var(--stage-w)) / 2);
+}
+
+/* The question's baseline stands on its station by a strut; its box ends where the claim begins. */
+.panel-q {
+  display: flex;
+  align-items: baseline;
+  flex: none;
+  block-size: var(--station-c);
+  margin: 0;
+}
+.panel-q::before {
+  content: "";
+  inline-size: 0;
+  block-size: var(--station-q);
+}
+/* Orientation, not the claim: the same serif at the same size, softened. */
+.q-text {
+  max-inline-size: var(--w-spine);
+  margin: 0;
+  font-family: var(--serif);
+  font-weight: 400;
+  font-size: var(--t-serif-l);
+  line-height: var(--lh-serif-l);
+  color: var(--ink-dim);
+}
+
+/* The claim zone is a fixed box, three lines reserved: a short claim hangs from its top and the stage never moves up. */
+.claim-stack {
+  position: relative;
+  flex: none;
+  max-inline-size: var(--w-spine);
+  block-size: var(--claim-zone);
+  margin: 0 0 var(--claim-to-stage);
+  overflow: visible;
+}
+.panel-p2 .claim-stack {
+  max-inline-size: var(--w-spine-p2);
+}
+/* Lines are stacked and crossfade in place. */
+.claim-line {
+  position: absolute;
+  inset: 0;
+  margin: 0;
+  font-weight: 400;
+}
+/* Two sentences in one claim break apart, so each reads on its own. */
+.claim-sent {
+  display: block;
+}
+.claim-sent + .claim-sent {
+  margin-top: 0.8em;
+}
+
+/* The stage box never resizes to its content, and type in it never compresses: overflow shows, and is reported. */
+.stage {
+  display: grid;
+  align-content: center;
+  justify-items: stretch;
+  flex: none;
+  inline-size: var(--stage-w);
+  max-inline-size: 100%;
+  margin: 0 0 var(--gap-below);
+}
+/* P1 and P3 are top-aligned, so a register that grows spends its growth downward; P2 centres. */
+.stage-p1 {
+  position: relative;
+  block-size: var(--stage-h-p1);
+  align-content: start;
+}
+.stage-p2 {
+  block-size: var(--stage-h-p2);
+}
+.stage-p3 {
+  block-size: var(--stage-h-p3);
+  align-content: start;
+}
+
+/* ── P1: a room's drawings share the stage, one at a time. The scroll shows each, and each line, in its turn. ── */
+.p1-drawing {
+  grid-area: 1 / 1;
+  min-inline-size: 0;
+  visibility: hidden;
+}
+.panel-p1 .claim-line[data-d] {
+  visibility: hidden;
+}
+/* The drawing floats its ink inside its own box: the box is offset so the ink, not the box, meets the station. */
+.p1-drawing {
+  position: relative;
+}
+.p1-host {
+  margin-top: calc(var(--station-r) - var(--station-s) - var(--ink-top, 0px));
+}
+/* The caption under the drawing, since the narration's first line already says what the drawing is: a fixed gap
+   under the lowest its ink reaches, the name and then the range. */
+.p1-caption {
+  position: absolute;
+  inset-block-start: calc(var(--station-r) - var(--station-s) + var(--ink-h, 0px) + var(--ink-to-caption));
+  inset-inline-start: 0;
+  display: flex;
+  align-items: baseline;
+  gap: var(--sp-3);
+  margin: 0;
+  white-space: nowrap;
+  /* Data, so mono, as the evidence chart's poles are. */
+  font-family: var(--mono);
+}
+/* The name in ink, the range at the faint grey: what it is, then where. */
+.p1-caption span:first-child {
+  color: var(--ink);
+}
+.p1-caption span + span {
+  color: var(--ink-dim);
+}
+/* Where the bezel has gone (under 840 px, as on a phone) the name and the range stack, the range a caption line under
+   the name; wider, a caption too long for its line stacks the same (P1Panel measures it). */
+.p1-drawing[data-stack] .p1-caption {
+  flex-direction: column;
+  gap: 0;
+}
+@media (max-width: 839px) {
+  .p1-caption {
+    flex-direction: column;
+    gap: 0;
+  }
+}
+
+/* ── The scroll cue: at the foot of the first frame, gone after the first scroll. ── */
+.room-cue {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--s4);
+  inline-size: min(var(--stage-w), 100%);
+  margin: auto 0 0;
+  pointer-events: none;
+  transition:
+    opacity var(--t-release) ease,
+    transform var(--t-release) ease;
+}
+.room-cue .arr {
+  --cue-x: 0;
+  --cue-y: 1;
+  color: var(--ink-dim);
+  animation: cue-nudge var(--t-cue) ease-in-out infinite;
+}
+.room[data-scrolled="on"] .room-cue,
+.room:not([data-phase="rest"]) .room-cue {
+  opacity: 0;
+}
+.room[data-scrolled="on"] .room-cue {
+  transform: translateY(var(--sp-1));
+}
+
+/* ── The way on: at the last panel's foot, its right edge on the stage's. The scroll sets its opacity. ── */
+.room-next {
+  display: flex;
+  justify-content: flex-end;
+  align-items: baseline;
+  inline-size: min(var(--stage-w), 100%);
+  margin: auto 0 0;
+  opacity: 0;
+  transition: color var(--t-press) ease;
+}
+.room-next:hover,
+.room-next:focus-visible {
+  color: var(--ink-bar);
+}
+.room-next .arr {
+  display: inline-block;
+  margin-inline-start: 0.4em;
+}
+/* Its first-use cue: once landed, full ink and a nudging arrow. */
+.room-next.cue {
+  color: var(--ink);
+}
+.room-next.cue:hover,
+.room-next.cue:focus-visible {
+  color: var(--ink-bar);
+}
+.room-next.cue .arr {
+  animation: cue-nudge var(--t-cue) ease-in-out infinite;
+}
+.room .arrow {
+  display: block;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1;
+}
+
+/* ── The bezel: where the reader is among the three panels. It rides the scroll box's top edge. ── */
+.bezel-anchor {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  block-size: 0;
+}
+.bezel {
+  position: absolute;
+  top: calc(var(--room-h) / 2);
+  right: var(--wall);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: var(--sp-2);
+  transform: translateY(-50%);
+}
+.bz-item {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  block-size: var(--bz-row);
+}
+/* One width: a mark only ever changes height. */
+.bz-mark {
+  position: relative;
+  flex: none;
+  inline-size: var(--rail-mark);
+  block-size: var(--rail-mark);
+  overflow: hidden;
+  background: var(--ink-outline);
+  transition:
+    block-size var(--t-hover) ease,
+    background-color var(--t-hover) ease;
+}
+.bz-item[data-state="active"] .bz-mark {
+  block-size: var(--bz-bar);
+}
+/* The active mark is a track: its fill follows the scroll directly, so it reads as a position. */
+.bz-mark::after {
+  content: "";
+  position: absolute;
+  inset: 0 0 auto;
+  block-size: calc(var(--bz-p, 0) * 100%);
+  background: var(--ink);
+}
+.bz-item[data-state="done"] .bz-mark {
+  background: var(--ink);
+}
+/* The bezel shows wherever the list stands beside the room, the stage giving up its strip; under 840 px it goes. */
+@media (max-width: 839px) {
+  .bezel-anchor {
+    display: none;
+  }
+  .panel-inner {
+    padding-inline-end: max(var(--wall), (100% - var(--stage-w)) / 2);
+  }
+}

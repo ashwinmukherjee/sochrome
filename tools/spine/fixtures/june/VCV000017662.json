@@ -1,0 +1,18 @@
+{
+  "clinvar_id": "VCV000017662",
+  "variation_id": "17662",
+  "hgvs_c": "c.68_69del",
+  "hgvs_p": "p.Glu23fs",
+  "gene": "BRCA1",
+  "uniprot": "P38398",
+  "mane_transcript": "NM_007294.4",
+  "isoform": "P38398 (canonical)",
+  "clinvar_classification": "Pathogenic",
+  "consequence_so": "frameshift_variant",
+  "consequence_all": ["frameshift variant", "5 prime UTR variant", "non-coding transcript variant"],
+  "structure_map": {
+    "kind": "cut",
+    "residues": [23, 39],
+    "reason": "frame breaks at residue 23; first downstream stop at residue 39 (p.(...fsTer17), computed from the MANE CDS). Sequence C-terminal to the break is not the reference protein."
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "clinvar_id": "VCV000017661",
+  "variation_id": "17661",
+  "hgvs_c": "c.181T>G",
+  "hgvs_p": "p.Cys61Gly",
+  "common_name": "C61G",
+  "gene": "BRCA1",
+  "uniprot": "P38398",
+  "mane_transcript": "NM_007294.4",
+  "isoform": "P38398 (canonical)",
+  "clinvar_classification": "Pathogenic",
+  "consequence_so": "missense_variant",
+  "consequence_all": ["missense variant"],
+  "grch38": {
+    "chr": "17",
+    "pos": 43106487,
+    "cytogenetic": "17q21.31",
+    "display": "chr17:43,106,487"
+  },
+  "structure_map": {
+    "kind": "substitution",
+    "residues": [61],
+    "reason": "Cys61 is a zinc-coordinating cysteine in the RING-type zinc finger (UniProt Zinc finger 24-65); in the AlphaFold model its sulfur converges with C39 (3.68 Angstrom) and C64 (3.67 Angstrom) on a buried anchor. C61G is annotated pathogenic and abolishes BAP1 interaction (UniProt Natural variant at 61; dbSNP rs28897672). Resolved from ClinVar VCV000017661 on 2026-07-21."
+  }
+}

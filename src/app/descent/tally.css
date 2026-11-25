@@ -1,0 +1,220 @@
+/* Copyright 2026 Ashwin Mukherjee */
+/* SPDX-License-Identifier: PolyForm-Noncommercial-1.0.0 */
+/* The tally in the apparatus column: the counts from the first line down, the step forward in the bottom right. */
+
+/* The tally fills the column's rows, as the list will: its caption on the rail, its first count on the first line. */
+.tally {
+  grid-row: 1 / -1;
+  grid-column: 1;
+  display: grid;
+  grid-template-rows: subgrid;
+  min-width: 0;
+  animation: tally-in var(--t-fade) ease both;
+}
+@keyframes tally-in {
+  from {
+    opacity: 0;
+  }
+}
+.tally-caption {
+  grid-row: 1;
+  margin: 0;
+  white-space: nowrap;
+}
+
+/* Proximity carries the association: a count's caption close under it, the next count four times as far. */
+.tally-cuts {
+  grid-row: 3;
+  grid-column: 1;
+  align-self: start;
+  display: flex;
+  flex-direction: column;
+  gap: var(--sp-4);
+  margin: calc(var(--lh-mono-row) / -2) 0 0;
+  padding: 0;
+  list-style: none;
+}
+.tally-cut {
+  display: grid;
+  row-gap: var(--sp-1);
+}
+/* The band's sizer is the phone's alone. */
+.tally-sizer {
+  display: none;
+}
+/* Plain wrapping: balanced lines would stop short of the wall the step forward stands on. */
+.tally-says {
+  margin: 0;
+}
+
+/* Number and caption part by value only. A cut not yet reached holds its slot, unseen. */
+.tally-n,
+.tally-says {
+  opacity: 0;
+  transition:
+    opacity var(--t-fade) ease,
+    color var(--t-fade) ease;
+}
+/* Passed cuts' lines at the dim grey; the line being read a step darker (D4). */
+.tally-says {
+  color: var(--ink-dim);
+}
+.tally-cut.seen .tally-n,
+.tally-cut.seen .tally-says {
+  opacity: 1;
+}
+/* Arriving, the caption follows its number by a beat; leaving, both go at once. */
+.tally-cut.seen .tally-says {
+  transition-delay: var(--t-beat), 0ms;
+}
+.tally-cut.seen.counting .tally-says {
+  opacity: 0;
+  transition-delay: 0ms;
+}
+.tally-cut.now .tally-n {
+  color: var(--ink);
+}
+.tally-cut.now .tally-says {
+  color: var(--ink-dim);
+}
+.tally-cut.unread .tally-n {
+  color: var(--ink-dim);
+}
+
+/* The step forward: the caption's setting, its box a foot above the column's foot, its arrow's edge on the wall. */
+.tally-nav {
+  grid-row: 3;
+  grid-column: 1;
+  align-self: end;
+  display: grid;
+  justify-items: end;
+  align-items: center;
+  height: var(--lane-label-box);
+}
+/* The step forward and the reference data's progress take turns in one corner. */
+.tally-nav > * {
+  grid-area: 1 / 1;
+}
+.tally-next {
+  display: flex;
+  align-items: center;
+  height: var(--lane-label-box);
+  opacity: 0;
+  pointer-events: none;
+  transition:
+    opacity var(--t-fade) ease,
+    color var(--t-press) ease;
+}
+.tally-next.on {
+  opacity: 1;
+  pointer-events: auto;
+}
+.tally-next:hover,
+.tally-next:focus-visible {
+  color: var(--ink-bar);
+}
+/* Its first arrival waits for the first caption to have come in. */
+.tally[data-state="all"] .tally-next.on {
+  transition-delay: var(--t-cue-after), 0ms;
+}
+.tally-reference {
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+}
+
+/* NEXT and EXPLORE share one cell, right-aligned, and crossfade. */
+.tally-words {
+  display: grid;
+  justify-items: end;
+}
+.tally-words span {
+  grid-area: 1 / 1;
+  white-space: nowrap;
+  transition: opacity var(--t-fade) ease;
+}
+.tally-word-last,
+.tally-next.last .tally-word-next {
+  opacity: 0;
+}
+.tally-next.last .tally-word-last {
+  opacity: 1;
+}
+
+.tally-arrow {
+  display: inline-block;
+  margin-left: 0.4em;
+}
+.tally .arrow {
+  display: inline-block;
+  width: 0.86em;
+  height: 0.72em;
+  overflow: visible;
+  vertical-align: baseline;
+}
+.tally .arrow path {
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.3px;
+  vector-effect: non-scaling-stroke;
+  stroke-linecap: square;
+  stroke-linejoin: miter;
+}
+.tally .arrow-back {
+  transform: scaleX(-1);
+}
+
+/* First sight: until it has been used it stands at full ink, its arrow nudging toward where it goes. */
+.tally-next.fresh {
+  color: var(--ink);
+}
+.tally-next.fresh:hover,
+.tally-next.fresh:focus-visible {
+  color: var(--ink-bar);
+}
+.tally-next.fresh .tally-arrow {
+  animation: cue-nudge var(--t-cue) ease-in-out infinite;
+}
+
+/* The genes count in the second cut's line (phones): the landing's link, told from the sentence by value alone. */
+.tally-genes {
+  color: var(--ink);
+  text-decoration: none;
+  text-underline-offset: 3px;
+}
+.tally-genes:focus-visible {
+  text-decoration: underline 1px var(--ink);
+}
+
+/* No step back on screen: the laptop keeps every earlier cut in view, and the left arrow key and the browser's
+   back step back a cut on any screen (each cut is its own history entry). */
+
+@media (prefers-reduced-motion: reduce) {
+  .tally,
+  .tally-next.fresh .tally-arrow {
+    animation: none;
+  }
+}
+
+/* On the phone the apparatus is a strip: the cut the descent is on, and the steps under it. */
+@media (max-width: 800px) {
+  .tally {
+    display: flex;
+    flex-direction: column;
+    gap: var(--sp-2);
+    padding: var(--sp-3) 0 var(--sp-2);
+  }
+  .tally-caption {
+    align-self: flex-start;
+    line-height: var(--lh-1);
+  }
+  .tally-cuts {
+    margin: 0;
+  }
+  .tally-cut:not(.now) {
+    display: none;
+  }
+  .tally-nav {
+    align-self: stretch;
+    margin-top: auto;
+  }
+}

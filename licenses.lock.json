@@ -1,0 +1,16 @@
+{
+  "LICENSE": {
+    "spdx": "PolyForm-Noncommercial-1.0.0",
+    "source": "https://polyformproject.org/licenses/noncommercial/1.0.0.txt",
+    "fetched": "2026-11-18",
+    "sha256": "ffcca38841adb694b6f380647e15f17c446a4d1656fed51a1e2041d064c94cc8",
+    "prefixLines": 2
+  },
+  "LICENSE-CONTENT": {
+    "spdx": "CC-BY-NC-ND-4.0",
+    "source": "https://creativecommons.org/licenses/by-nc-nd/4.0/legalcode.txt",
+    "fetched": "2026-11-18",
+    "sha256": "38762e3777f4ec00a6f769062a7c3f704fb78ce08303ecff88558da4c49cf9ea",
+    "prefixLines": 0
+  }
+}

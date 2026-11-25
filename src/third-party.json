@@ -1,0 +1,237 @@
+{
+  "note": "The one record of everything this app uses that is not its own. THIRD_PARTY.md and public/credits.txt are generated from it (npm run third-party). Flags are never resolved silently.",
+  "data": [
+    {
+      "name": "ClinVar",
+      "by": "NCBI, National Library of Medicine",
+      "version": "GRCh38 release 2026-10-19",
+      "licence": "Public domain (US government work)",
+      "link": "https://www.ncbi.nlm.nih.gov/clinvar/",
+      "terms": "https://www.ncbi.nlm.nih.gov/home/about/policies/",
+      "redistribution": "permitted",
+      "shipped": true,
+      "credit": "ClinVar (NCBI, National Library of Medicine), GRCh38 release 2026-10-19. Landrum MJ et al., Nucleic Acids Res 2018;46:D1062. ncbi.nlm.nih.gov/clinvar",
+      "flags": []
+    },
+    {
+      "name": "gnomAD",
+      "by": "Broad Institute",
+      "version": "v4.1 exomes",
+      "licence": "CC0 1.0",
+      "link": "https://gnomad.broadinstitute.org/",
+      "terms": "https://gnomad.broadinstitute.org/policies",
+      "redistribution": "permitted",
+      "shipped": true,
+      "credit": "This tool includes data from the gnomAD v4.1 release (Broad Institute). Chen S et al., Nature 2024;625:92. gnomad.broadinstitute.org",
+      "flags": [
+        "The name never appears in a product or feature name, and no gnomAD logo is used: credit only.",
+        "No SpliceAI or Pangolin fields are carried (CC BY-NC 4.0)."
+      ]
+    },
+    {
+      "name": "AlphaMissense",
+      "by": "Google DeepMind",
+      "version": "Zenodo record 10813168 (v3)",
+      "licence": "CC BY 4.0",
+      "link": "https://zenodo.org/records/10813168",
+      "terms": "https://creativecommons.org/licenses/by/4.0/",
+      "redistribution": "permitted with attribution; changes indicated",
+      "shipped": true,
+      "credit": "AlphaMissense predictions, Copyright 2023 DeepMind Technologies Limited, licensed under CC BY 4.0 (creativecommons.org/licenses/by/4.0). Source: zenodo.org/records/10813168. Repacked and rounded for this app. Cheng J et al., Science 2023;381:eadg7492. Not validated for clinical use.",
+      "flags": []
+    },
+    {
+      "name": "MANE Select",
+      "by": "NCBI RefSeq and EMBL-EBI Ensembl",
+      "version": "v1.5",
+      "licence": "Public domain (NCBI) and open (EMBL-EBI terms of use)",
+      "link": "https://www.ncbi.nlm.nih.gov/refseq/MANE/",
+      "terms": "",
+      "redistribution": "permitted",
+      "shipped": true,
+      "credit": "MANE Select v1.5 (NCBI RefSeq and EMBL-EBI Ensembl). Morales J et al., Nature 2022;604:310.",
+      "flags": []
+    },
+    {
+      "name": "Human reference genome GRCh38",
+      "by": "Genome Reference Consortium, obtained as hg38 from the UCSC Genome Browser",
+      "version": "GCA_000001405.15",
+      "licence": "Public domain (sequence); UCSC download terms",
+      "link": "https://genome.ucsc.edu/",
+      "terms": "",
+      "redistribution": "permitted",
+      "shipped": true,
+      "credit": "Human reference genome GRCh38 (Genome Reference Consortium, GenBank GCA_000001405.15), obtained as hg38 from the UCSC Genome Browser (genome.ucsc.edu).",
+      "flags": []
+    },
+    {
+      "name": "ClinGen",
+      "by": "Clinical Genome Resource",
+      "version": "accessed 2026-10-20",
+      "licence": "CC0 1.0",
+      "link": "https://clinicalgenome.org/",
+      "registry": "https://cspec.genome.network/",
+      "terms": "",
+      "redistribution": "permitted",
+      "shipped": true,
+      "credit": "ClinGen (Clinical Genome Resource): gene-disease validity, dosage sensitivity and variant curation expert panel specifications (CSpec), accessed 2026-10-20. clinicalgenome.org. Rehm HL et al., N Engl J Med 2015;372:2235.",
+      "flags": ["No ClinGen logo is used."]
+    },
+    {
+      "name": "ACMG secondary findings list",
+      "by": "American College of Medical Genetics and Genomics",
+      "version": "SF v3.3",
+      "licence": "Published gene list, used as published",
+      "link": "https://doi.org/10.1016/j.gim.2025.101454",
+      "terms": "",
+      "redistribution": "the list of gene names only",
+      "shipped": true,
+      "credit": "ACMG SF v3.3 gene list: Lee K et al., Genet Med 2025;27:101454 (American College of Medical Genetics and Genomics). Gene list used as published; not endorsed by ACMG.",
+      "flags": []
+    },
+    {
+      "name": "UniProtKB",
+      "by": "UniProt Consortium",
+      "version": "2025 release",
+      "licence": "CC BY 4.0",
+      "link": "https://www.uniprot.org/",
+      "terms": "",
+      "redistribution": "permitted with attribution; changes indicated",
+      "shipped": true,
+      "credit": "UniProtKB (UniProt Consortium), licensed under CC BY 4.0. Gene descriptions in this app are summarised and rewritten from UniProt function annotations. UniProt Consortium, Nucleic Acids Res 2025;53:D609.",
+      "flags": []
+    },
+    {
+      "name": "AlphaFold Protein Structure Database",
+      "by": "EMBL-EBI and Google DeepMind",
+      "version": "as cached 2026-11",
+      "licence": "CC BY 4.0",
+      "link": "https://alphafold.ebi.ac.uk/",
+      "terms": "",
+      "redistribution": "permitted with attribution; changes indicated",
+      "shipped": true,
+      "credit": "Predicted protein structures from the AlphaFold Protein Structure Database (EMBL-EBI and Google DeepMind), Copyright 2021 DeepMind Technologies Limited, licensed under CC BY 4.0. Jumper J et al., Nature 2021;596:583. Varadi M et al., Nucleic Acids Res 2024;52:D368.",
+      "flags": []
+    },
+    {
+      "name": "Mondo Disease Ontology",
+      "by": "Monarch Initiative, through the EMBL-EBI Ontology Lookup Service",
+      "version": "as cached 2026-11",
+      "licence": "CC BY 4.0",
+      "link": "https://mondo.monarchinitiative.org/",
+      "terms": "",
+      "redistribution": "permitted with attribution; changes indicated",
+      "shipped": true,
+      "credit": "Mondo Disease Ontology (Monarch Initiative), licensed under CC BY 4.0, accessed through the EMBL-EBI Ontology Lookup Service. Condition names in this app are adapted from Mondo labels and definitions. Vasilevsky NA et al., Genetics 2025 (doi:10.1093/genetics/iyaf215).",
+      "flags": []
+    },
+    {
+      "name": "Genome in a Bottle sample genomes",
+      "by": "NIST Genome in a Bottle Consortium",
+      "version": "v4.2.1 benchmark, GRCh38",
+      "licence": "Public (NIST); donor consent differs by sample",
+      "link": "https://www.nist.gov/programs-projects/genome-bottle",
+      "terms": "",
+      "redistribution": "HG002: consented for commercial redistribution (Personal Genome Project).",
+      "shipped": true,
+      "credit": "Sample genomes HG001 (NA12878), HG002 (NA24385) and HG003 (NA24149) from the NIST Genome in a Bottle Consortium (nist.gov/programs-projects/genome-bottle). Benchmark calls filtered and repacked for this app. The HG002 and HG003 donors consented through the Personal Genome Project. Zook JM et al., Sci Data 2016;3:160025.",
+      "flags": []
+    },
+    {
+      "name": "Risk figures quoted from papers",
+      "by": "SEER, UK Biobank studies, and the papers cited beside each figure",
+      "version": "see src/copy/json/sources/figures.json",
+      "licence": "Facts quoted with citation",
+      "link": "",
+      "sources": [
+        "https://seer.cancer.gov/",
+        "https://www.cancer.gov/",
+        "https://www.cancer.org/",
+        "https://www.eviq.org.au/",
+        "https://pubmed.ncbi.nlm.nih.gov/",
+        "https://pmc.ncbi.nlm.nih.gov/",
+        "https://europepmc.org/",
+        "https://www.ebi.ac.uk/"
+      ],
+      "terms": "",
+      "redistribution": "numbers and citations only",
+      "shipped": true,
+      "credit": "Risk figures are quoted from the published studies named beside each one.",
+      "flags": [
+        "CHECKED, not by a clinician: every figure P3 draws was checked against its source and newer studies on 2026-11-19 and approved for the proof of concept. Figures from clinic families say so in P3."
+      ]
+    }
+  ],
+  "models": [
+    {
+      "name": "AlphaGenome",
+      "by": "Google DeepMind",
+      "version": "not used",
+      "licence": "Non-commercial terms; bans clinical or health-expertise claims",
+      "link": "https://deepmind.google/science/alphagenome/",
+      "redistribution": "not permitted",
+      "shipped": false,
+      "credit": "",
+      "flags": []
+    },
+    {
+      "name": "Claude",
+      "by": "Anthropic",
+      "version": "used offline, at authoring time only",
+      "licence": "Commercial API terms",
+      "link": "https://www.anthropic.com/",
+      "redistribution": "outputs are the author's",
+      "shipped": false,
+      "credit": "",
+      "flags": [
+        "Gene lines and condition names were drafted with a language model from UniProt and Mondo text, then reviewed. Nothing is generated at runtime, and the app calls no model or API."
+      ]
+    }
+  ],
+  "fonts": [
+    {
+      "name": "Suisse Intl, Suisse Works, Suisse Mono",
+      "by": "Swiss Typefaces",
+      "version": "woff2, from the owner's order",
+      "licence": "Commercial EULA",
+      "link": "https://www.swisstypefaces.com/",
+      "redistribution": "not permitted; web use only under the owner's licence",
+      "shipped": true,
+      "credit": "",
+      "flags": []
+    },
+    {
+      "name": "Inter",
+      "by": "Rasmus Andersson, via Fontsource",
+      "version": "@fontsource-variable/inter",
+      "licence": "SIL OFL 1.1",
+      "link": "https://rsms.me/inter/",
+      "redistribution": "permitted",
+      "shipped": false,
+      "credit": "Inter, Copyright The Inter Project Authors, SIL Open Font License 1.1.",
+      "flags": ["Stand-in for Suisse Intl, not in use: built in only when the typeface token is \"standin\"."]
+    },
+    {
+      "name": "Source Serif 4",
+      "by": "Adobe, via Fontsource",
+      "version": "@fontsource-variable/source-serif-4",
+      "licence": "SIL OFL 1.1",
+      "link": "https://github.com/adobe-fonts/source-serif",
+      "redistribution": "permitted",
+      "shipped": false,
+      "credit": "Source Serif 4, Copyright Adobe, SIL Open Font License 1.1.",
+      "flags": ["Stand-in for Suisse Works, not in use: built in only when the typeface token is \"standin\"."]
+    },
+    {
+      "name": "IBM Plex Mono",
+      "by": "IBM, via Fontsource",
+      "version": "@fontsource/ibm-plex-mono",
+      "licence": "SIL OFL 1.1",
+      "link": "https://github.com/IBM/plex",
+      "redistribution": "permitted",
+      "shipped": false,
+      "credit": "IBM Plex Mono, Copyright IBM Corp., SIL Open Font License 1.1.",
+      "flags": ["Stand-in for Suisse Mono, not in use: built in only when the typeface token is \"standin\"."]
+    }
+  ]
+}

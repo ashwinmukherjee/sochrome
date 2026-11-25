@@ -1,0 +1,3 @@
+# Every page may be indexed: the site is one page, and a person's genome never reaches an address.
+User-agent: *
+Allow: /

@@ -1,0 +1,18 @@
+{
+  "clinvar_id": "VCV003904100",
+  "variation_id": "3904100",
+  "hgvs_c": "c.547+2T>G",
+  "hgvs_p": null,
+  "gene": "BRCA1",
+  "uniprot": "P38398",
+  "mane_transcript": "NM_007294.4",
+  "isoform": "P38398 (canonical)",
+  "clinvar_classification": "Pathogenic",
+  "consequence_so": "splice_donor_variant",
+  "consequence_all": ["splice donor variant", "intron variant"],
+  "structure_map": {
+    "kind": "none",
+    "residues": null,
+    "reason": "canonical splice-site variant (c.547+2T>G); consequence is on the transcript, not a residue. Protein effect (exon skipping / frameshift) is not determined by the variant alone, so no structural position is asserted."
+  }
+}

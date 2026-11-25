@@ -1,0 +1,297 @@
+/* Copyright 2026 Ashwin Mukherjee */
+/* SPDX-License-Identifier: PolyForm-Noncommercial-1.0.0 */
+/* The shell's own marks, and how each apparatus view folds into the strip on a phone. */
+
+html {
+  scroll-behavior: smooth;
+}
+
+.strip-chev {
+  display: none;
+}
+
+/* How many genes the person left out, under the ledger on a results page. */
+.left-out {
+  grid-row: last / foot;
+  align-self: start;
+  margin: 0 var(--wall);
+}
+
+@media (max-width: 800px) {
+  .shell {
+    /* A corner control stands this far from the screen's foot. */
+    --controls-foot: 28px;
+    /* The caption row's box: its baseline at the strip's depth, its line box ending just under. */
+    --caption-row: calc(var(--strip-base) + var(--s4));
+    /* Where a browser can, a row of any height folds on the strip's clock; elsewhere it folds at once. */
+    interpolate-size: allow-keywords;
+  }
+  /* Folded, the descent's strip holds the cut it is on: its count's row, and up to four lines of caption. */
+  .shell[data-at="descent"] {
+    --strip-fold: calc(var(--caption-row) + var(--sp-1) + 4 * 18px + var(--sp-2));
+  }
+
+  /* ˄ and ˅ at the strip's right, in a row-square box; in flow, so it rides the band's top as the band scrolls. */
+  .strip-chev {
+    position: sticky;
+    inset-block-start: 0;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    inline-size: var(--strip-h);
+    block-size: var(--strip-h);
+    margin: 0 calc(-1 * var(--wall)) calc(-1 * var(--strip-h)) auto;
+  }
+  .strip-chev svg {
+    display: block;
+    overflow: visible;
+    fill: none;
+    stroke: var(--ink-outline);
+    stroke-width: 1;
+  }
+  /* Nothing to fold to: no chevron. */
+  .shell[data-strip="whole"] .strip-chev,
+  .shell[data-strip="band"] .strip-chev {
+    display: none;
+  }
+
+  /* Every view flows in the band; its caption is the band's first row. */
+  .shell > .frame-apparatus > .landing,
+  .shell:not([data-strip="whole"]) > .frame-apparatus > .list,
+  .shell > .frame-apparatus > .genes-page,
+  .shell > .frame-apparatus > .tally {
+    display: block;
+    block-size: auto;
+    padding: 0;
+  }
+  .shell > .frame-apparatus .on-rail {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    column-gap: 28px;
+    max-block-size: calc(var(--caption-row) + var(--lh-1));
+    min-block-size: var(--caption-row);
+    margin: 0 var(--strip-h) var(--sp-3) 0;
+    line-height: var(--lh-1);
+    overflow: hidden;
+  }
+  .shell > .frame-apparatus .on-rail::before {
+    content: "";
+    inline-size: 0;
+    block-size: var(--strip-base);
+    margin-inline-end: -28px;
+  }
+  .shell[data-strip="whole"] > .frame-apparatus .on-rail,
+  .shell[data-strip="band"] > .frame-apparatus .on-rail {
+    margin-inline-end: 0;
+  }
+  .shell .list-tab-carriers {
+    margin-left: 0;
+  }
+
+  /* The list: rows a thumb tall, their baseline at the strip's depth, so a folded row sits where the caption sat.
+     Folded or open over a room, every row stands in the band's flow. */
+  .shell:not([data-strip="whole"]) .list-body {
+    display: block;
+    contain: none;
+    margin: 0;
+    padding: 0;
+  }
+  .shell .list-rows,
+  .shell .genes-rows {
+    gap: 0;
+  }
+  /* Standing alone: the desktop's column, the screen tall. The captions at the top and the sentence at the foot
+     stay put while the rows page between them, "+N more" under the last whole one. */
+  .shell[data-strip="whole"] > .frame-apparatus > .list,
+  .shell[data-strip="whole"] > .frame-apparatus > .genes-page {
+    display: flex;
+    flex-direction: column;
+    block-size: 100dvh;
+  }
+  .shell[data-strip="whole"] > .frame-apparatus > .list > .list-captions,
+  .shell[data-strip="whole"] > .frame-apparatus > .genes-page > .genes-caption {
+    align-self: stretch;
+  }
+  .shell[data-strip="whole"] .list-body,
+  .shell[data-strip="whole"] .genes-body {
+    display: flex;
+    flex: 1 1 0;
+    flex-direction: column;
+    min-block-size: 0;
+    margin: 0;
+    padding: 0 0 var(--sp-3);
+  }
+  .shell:not([data-strip="whole"]) .list-room {
+    flex: none;
+    overflow: visible;
+  }
+  .shell:not([data-strip="whole"]) .list-rows {
+    overflow: visible;
+    /* The pager sizes the scrollport for the column standing alone; folded, every row stands. */
+    block-size: auto !important;
+  }
+  .shell:not([data-strip="whole"]) .list-more {
+    display: none;
+  }
+  /* It arrives with the list. Shown again as the strip unfolds over a room, it starts from nothing, so the count
+     it had folded never shows before the pager has measured the rows. */
+  .shell[data-strip="whole"] .list-more {
+    animation: list-arrive var(--t-arrive) ease both;
+  }
+  .shell .list-row {
+    block-size: var(--strip-h);
+    overflow: visible clip;
+    transition: color var(--t-press) ease;
+  }
+  .shell .list-row::after {
+    content: "";
+    inline-size: 0;
+    block-size: var(--strip-base);
+  }
+  .shell .list-sentence {
+    margin: var(--sp-3) 0 0;
+  }
+  /* The genes page's sentence stands over BACK, as on desktop. */
+  .shell .genes-sentence {
+    margin-block-end: var(--sp-3);
+  }
+  .shell:not([data-strip="whole"]) .list-sentence {
+    display: none;
+  }
+  /* Unfolded into the list (from a room), it stands whole at once and fades in, as it arrives from the descent. */
+  .shell[data-strip="whole"] .list-captions,
+  .shell[data-strip="whole"] .list-body {
+    animation: list-arrive var(--t-arrive) ease both;
+  }
+  /* Folded onto the chosen row, the captions and every other row go at once and the row fades in where it stands;
+     the next room's row takes its place the same way. */
+  .shell[data-strip="closed"] .list-row.is-current {
+    animation: list-arrive var(--t-arrive) ease both;
+  }
+  .shell[data-strip="closed"] .list-captions,
+  .shell[data-strip="closed"] .tally-caption,
+  .shell[data-strip="closed"] .list-row:not(.is-current) {
+    max-block-size: 0;
+    min-block-size: 0;
+    block-size: 0;
+    margin-block: 0;
+    opacity: 0;
+    pointer-events: none;
+  }
+
+  /* The tally: each cut a count's row and its caption. Folded, the cut the descent is on; open, every cut reached. */
+  .shell .tally-cuts {
+    gap: 0;
+    margin: 0;
+  }
+  .shell .tally-cut.seen {
+    display: grid;
+    block-size: auto;
+    padding-bottom: var(--sp-2);
+    overflow: clip;
+    transition:
+      block-size var(--an-fade) ease,
+      padding var(--an-fade) ease,
+      opacity var(--an-fade) ease;
+  }
+  .shell .tally-n {
+    display: flex;
+    align-items: baseline;
+    block-size: var(--caption-row);
+  }
+  .shell .tally-n::before {
+    content: "";
+    inline-size: 0;
+    block-size: var(--strip-base);
+  }
+  .shell[data-strip="closed"] .tally-cut.seen:not(.now) {
+    block-size: 0;
+    padding-bottom: 0;
+    opacity: 0;
+  }
+  /* The descent's band: YOUR VARIANTS, the cut's count and its line, then BACK and NEXT at its foot, as much
+     air under them as over YOUR VARIANTS. Every cut stands in one cell, the others unseen, so the band is as
+     tall as this genome's longest cut at this width: it, and the ledger under it, never moves as the descent
+     steps. */
+  .shell[data-strip="band"] .tally {
+    padding-block-end: var(--sp-3);
+  }
+  .shell[data-strip="band"] .tally-cuts {
+    display: grid;
+  }
+  .shell[data-strip="band"] .tally-cut,
+  .shell[data-strip="band"] .tally-cut.seen {
+    display: grid;
+    grid-area: 1 / 1;
+    align-content: start;
+  }
+  .shell[data-strip="band"] .tally-cut:not(.now) {
+    visibility: hidden;
+  }
+  /* The sizer stands in the cuts' cell, unseen, its lines sharing one cell under its count: it is as tall as the
+     longest. */
+  .shell[data-strip="band"] .tally-sizer {
+    display: grid;
+    grid-area: 1 / 1;
+    align-content: start;
+    row-gap: var(--sp-1);
+    visibility: hidden;
+  }
+  .shell[data-strip="band"] .tally-sizer .tally-says {
+    grid-area: 2 / 1;
+  }
+  /* YOUR VARIANTS stands as far over its count as YOUR GENOME over row 1: the two labels read as one pair. */
+  .shell[data-strip="band"] > .frame-apparatus .tally-caption {
+    min-block-size: 0;
+    max-block-size: none;
+    margin: 0;
+  }
+  .shell[data-strip="band"] .tally-cuts {
+    margin-block-start: var(--sp-1);
+  }
+  .shell[data-strip="band"] .tally-n {
+    block-size: auto;
+  }
+  .shell[data-strip="band"] .tally-n::before {
+    display: none;
+  }
+  .shell[data-strip="band"] .tally-cut.seen {
+    padding-bottom: 0;
+  }
+  /* NEXT at the screen's foot, under the ledger, where a thumb is; it alone takes a tap there, in a thumb-sized
+     box around its word. No BACK: each cut is its own history entry, so the browser's back steps back a cut, as
+     the left arrow key does on desktop, where no BACK stands either. */
+  .shell .tally-nav {
+    position: absolute;
+    inset: auto var(--wall) var(--controls-foot);
+    z-index: 2;
+    margin: 0;
+    pointer-events: none;
+  }
+  .shell .tally-next {
+    padding-block: 15px;
+    margin-block: -15px;
+  }
+  /* The sex row, until the read reaches X records, and for a file with none: unseen in its kept place. It fades
+     in as its chromosome starts to fill, as every bar's fill arrives; it is never seen fading out, so a drawing
+     made while it is unseen never shows it. Its parts take the fade, so the row's own opacity stays the linked
+     highlighting's. */
+  .shell:not([data-sex-row="none"]) .ledger-svg .row.sex > * {
+    transition: opacity var(--t-fade) ease;
+  }
+  .shell[data-sex-row="none"] .ledger-svg .row.sex > * {
+    opacity: 0;
+    pointer-events: none;
+  }
+
+  .left-out {
+    margin: var(--sp-2) var(--wall) 0;
+  }
+
+  /* The room's pinned frame is the screen under the folded strip. */
+  .shell > .frame-specimen > .room {
+    --room-h: calc(100dvh - var(--strip-h));
+  }
+}

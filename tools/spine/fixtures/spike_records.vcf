@@ -1,0 +1,20 @@
+##fileformat=VCFv4.2
+##FILTER=<ID=PASS,Description="All filters passed">
+##contig=<ID=chr7,length=159345973>
+##contig=<ID=chr16,length=90338345>
+##contig=<ID=chr17,length=83257441>
+##INFO=<ID=SPIKE,Number=0,Type=Flag,Description="Spike-in variant for testing">
+##FORMAT=<ID=GT,Number=1,Type=String,Description="Genotype">
+#CHROM	POS	ID	REF	ALT	QUAL	FILTER	INFO	FORMAT	HG001
+chr7	117531036	spike_cftr_dup413	C	CCTA	50	PASS	SPIKE	GT	0/1
+chr7	117559590	spike_cftr_f508del	ATCT	A	50	PASS	SPIKE	GT	0/1
+chr16	23636299	spike_palb2_h83d	G	C	50	PASS	SPIKE	GT	0/1
+chr16	23638093	spike_palb2_s29g	T	C	50	PASS	SPIKE	GT	0/1
+chr17	43057062	spike_dup5266	T	TG	50	PASS	SPIKE	GT	0/1
+chr17	43086839	spike_intronic	G	A,T	50	PASS	SPIKE	GT	0/1
+chr17	43093941	spike_e530d	T	G	50	PASS	SPIKE	GT	0/1
+chr17	43099773	spike_splice2	A	C	50	PASS	SPIKE	GT	0/1
+chr17	43099774	spike_splice	C	A	50	PASS	SPIKE	GT	0/1
+chr17	43099892	spike_del442	GGTAAAGAACA	G	50	PASS	SPIKE	GT	0/1
+chr17	43106487	spike_missense	A	C	50	PASS	SPIKE	GT	0/1
+chr17	43124029	spike_delag	TCT	T	50	PASS	SPIKE	GT	0/1

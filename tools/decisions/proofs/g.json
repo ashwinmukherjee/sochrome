@@ -1,0 +1,10 @@
+{
+  "V14": {
+    "kind": "assert",
+    "ref": "Q1 (the product's name in src/brand.ts alone); E1 reads each refusal from the page with BRAND.name"
+  },
+  "V15": {
+    "kind": "assert",
+    "ref": "Q1 (no \" · \" in any string or JSX text under src/, the renderer's gallery aside)"
+  }
+}

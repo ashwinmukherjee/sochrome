@@ -1,0 +1,9 @@
+chrom	pos_normalized	ref_normalized	alt_normalized	spike_pos	spike_ref	spike_alt	hgvs_c	hgvs_p	gene	transcript	consequence	splice_distance	clinvar_clnsig	clinvar_stars	clinvar_varid	gnomad_af_grpmax	gnomad_grpmax_pop	alphamissense_score	alphamissense_class	notes
+chr17	43124027	ACT	A	43124029	TCT	T	c.68_69del	p.Glu23fs	BRCA1	NM_007294.4	frameshift		Pathogenic	3	17662	0.000174	mid			right-shifted +2bp in spike-in; multi-allelic=no
+chr17	43106487	A	C	43106487	A	C	c.181T>G	p.Cys61Gly	BRCA1	NM_007294.4	missense		Pathogenic	3	17661	0.0000208	nfe	0.9904	likely_pathogenic	minus strand: A>C plus = T>G sense
+chr17	43099774	C	A	43099774	C	A	c.547+1G>T		BRCA1	NM_007294.4	splice_donor	1	Pathogenic	3	55590	0.00000182	nfe			splice donor +1; GT>TT on sense strand
+chr17	43086839	G	A	43086839	G	A,T	c.4185+4105C>T		BRCA1	NM_007294.4	intronic		Conflicting_classifications_of_pathogenicity	1	632611				deep intronic; multi-allelic spike with dummy ALT=T; absent from gnomAD exomes	
+chr17	43057062	T	TG	43057062	T	TG	c.5266dup	p.Gln1756fs	BRCA1	NM_007294.4	frameshift		Pathogenic	3	17677					5382insC; dup in a G run, 3' rule on minus strand
+chr17	43099892	GGTAAAGAACA	G	43099892	GGTAAAGAACA	G	c.442-22_442-13del		BRCA1	NM_007294.4	intronic	13	Pathogenic	3	246362					intronic 10 bp deletion; outside the shipped reference (CDS ± 8 bp)
+chr7	117531036	C	CCTA	117531036	C	CCTA	c.413_415dup	p.Leu138dup	CFTR	NM_000492.4	inframe_indel		Pathogenic	3	53905					plus strand: left-aligned input, 3' shift to c.413_415
+chr7	117559590	ATCT	A	117559590	ATCT	A	c.1521_1523del	p.Phe508del	CFTR	NM_000492.4	inframe_indel		Pathogenic	4	7105					F508del; plus strand, 3' rule at c. and p.

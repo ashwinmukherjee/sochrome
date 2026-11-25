@@ -1,0 +1,682 @@
+{
+ "decisions": {
+  "verdict": {
+   "pick": 0,
+   "note": ""
+  },
+  "condition": {
+   "pick": 0,
+   "note": ""
+  },
+  "carriers": {
+   "pick": 0,
+   "note": ""
+  },
+  "unsettled": {
+   "pick": 0,
+   "note": ""
+  },
+  "who": {
+   "pick": 0,
+   "note": ""
+  }
+ },
+ "kinds": {
+  "p3-figure": {
+   "lines": [
+    {
+     "id": "s35",
+     "unit": "beat:hundred",
+     "when": [],
+     "t": "Picture 100 people who carry this variant."
+    },
+    {
+     "id": "s36",
+     "unit": "beat:baseline",
+     "when": [],
+     "t": "About {baseline} of them would get {outcome} anyway, as people without it do."
+    },
+    {
+     "id": "s37",
+     "unit": "beat:added",
+     "when": [],
+     "t": "Because of this variant, about {added} more do: {total} in all."
+    },
+    {
+     "id": "s38",
+     "unit": "beat:hold",
+     "when": [],
+     "t": "No genome can say which of the 100 any one person is."
+    },
+    {
+     "id": "s39",
+     "unit": "row:baseline",
+     "when": [],
+     "t": "About {baseline} in 100 get {outcome}, with or without this variant."
+    },
+    {
+     "id": "s40",
+     "unit": "row:added",
+     "when": [],
+     "t": "This variant adds about {added} in 100, for {total} in all."
+    },
+    {
+     "id": "s41",
+     "unit": "row:none",
+     "when": [],
+     "t": "The other {none} in 100 don't, even with this variant."
+    }
+   ],
+   "status": "seed",
+   "note": ""
+  },
+  "p3-harmful": {
+   "lines": [
+    {
+     "id": "s42",
+     "unit": "lead:1",
+     "when": [],
+     "t": "This variant is {verdict}, and one copy can be enough to cause {condition}."
+    },
+    {
+     "id": "s43",
+     "unit": "lead:2",
+     "when": [],
+     "t": "How often it does isn't known well enough to give a number."
+    }
+   ],
+   "status": "seed",
+   "note": ""
+  },
+  "p3-carrier": {
+   "lines": [
+    {
+     "id": "s44",
+     "unit": "lead:1",
+     "when": [],
+     "t": "You carry one copy of this variant, and {condition} takes two altered copies."
+    },
+    {
+     "id": "s45",
+     "unit": "lead:2",
+     "when": [],
+     "t": "One on its own doesn't cause it, though it can matter for your children."
+    }
+   ],
+   "status": "seed",
+   "note": ""
+  },
+  "p3-two-copies": {
+   "lines": [
+    {
+     "id": "s46",
+     "unit": "lead:1",
+     "when": [],
+     "t": "Both of your copies of this gene carry this variant."
+    },
+    {
+     "id": "s47",
+     "unit": "lead:2",
+     "when": [],
+     "t": "In this gene, two altered copies are what cause {condition}."
+    }
+   ],
+   "status": "seed",
+   "note": ""
+  },
+  "p3-two-changes": {
+   "lines": [
+    {
+     "id": "s48",
+     "unit": "lead:1",
+     "when": [],
+     "t": "You carry this variant and a second harmful change in the same gene."
+    },
+    {
+     "id": "s49",
+     "unit": "lead:2",
+     "when": [],
+     "t": "On different copies they would cause {condition}; on the same copy they wouldn't, and this kind of reading can't tell which."
+    }
+   ],
+   "status": "seed",
+   "note": ""
+  },
+  "p3-one-x": {
+   "lines": [
+    {
+     "id": "s50",
+     "unit": "lead:1",
+     "when": [],
+     "t": "This gene sits on the X chromosome, and you have one copy of X."
+    },
+    {
+     "id": "s51",
+     "unit": "lead:2",
+     "when": [],
+     "t": "So this one altered copy can be enough to cause {condition}."
+    }
+   ],
+   "status": "seed",
+   "note": ""
+  },
+  "p3-two-x": {
+   "lines": [
+    {
+     "id": "s52",
+     "unit": "lead:1",
+     "when": [],
+     "t": "This gene sits on the X chromosome, and this variant is on one of your two copies."
+    },
+    {
+     "id": "s53",
+     "unit": "lead:2",
+     "when": [],
+     "t": "With {condition}, the other copy doesn't always make up for it."
+    }
+   ],
+   "status": "seed",
+   "note": ""
+  },
+  "p3-not-known": {
+   "lines": [
+    {
+     "id": "s54",
+     "unit": "lead:1",
+     "when": [],
+     "t": "Until it's known whether this variant is harmful, there's no risk to give for it."
+    }
+   ],
+   "status": "seed",
+   "note": ""
+  },
+  "p3-harmless": {
+   "lines": [
+    {
+     "id": "s55",
+     "unit": "lead:1",
+     "when": [],
+     "t": "This variant isn't known to raise anyone's risk."
+    },
+    {
+     "id": "s56",
+     "unit": "lead:2",
+     "when": [],
+     "t": "Whatever your chances were, it leaves them where they were."
+    }
+   ],
+   "status": "seed",
+   "note": ""
+  },
+  "p2-frame": {
+   "lines": [
+    {
+     "id": "s1",
+     "unit": "open",
+     "when": [],
+     "t": "Here is the evidence on whether this variant is harmful, weighed piece by piece."
+    },
+    {
+     "id": "s2",
+     "unit": "verdict",
+     "when": [
+      "!chart:uncertain",
+      "!chart:differs",
+      "!chart:labs-open"
+     ],
+     "t": "Together, the evidence says this variant is {verdict}."
+    },
+    {
+     "id": "s3",
+     "unit": "verdict",
+     "when": [
+      "chart:labs-open",
+      "!chart:uncertain"
+     ],
+     "t": "The evidence here leans {lean}, but no lab has reached a verdict."
+    },
+    {
+     "id": "s4",
+     "unit": "verdict",
+     "when": [
+      "chart:uncertain",
+      "!chart:differs"
+     ],
+     "t": "There isn't enough evidence to say whether this variant is harmful."
+    },
+    {
+     "id": "s5",
+     "unit": "verdict",
+     "when": [
+      "chart:differs",
+      "!chart:uncertain"
+     ],
+     "t": "On the evidence here, this variant looks {verdict}, but labs that have seen more call it {labcall}."
+    },
+    {
+     "id": "s6",
+     "unit": "verdict",
+     "when": [
+      "chart:differs",
+      "chart:uncertain"
+     ],
+     "t": "There isn't enough evidence here to decide, but labs that have seen more call it {labcall}."
+    }
+   ],
+   "status": "seed",
+   "note": "I could see how the first line may be somewhat confusing"
+  },
+  "p2-labs": {
+   "lines": [
+    {
+     "id": "s7",
+     "unit": "bar:labs",
+     "when": [
+      "review:expert",
+      "!labs:no-weight"
+     ],
+     "t": "A panel of specialists reviewed the evidence and calls it {labcall}."
+    },
+    {
+     "id": "s8",
+     "unit": "bar:labs",
+     "when": [
+      "review:multiple",
+      "!labs:no-weight"
+     ],
+     "t": "Several labs reviewed it independently, and all call it {labcall}."
+    },
+    {
+     "id": "s9",
+     "unit": "bar:labs",
+     "when": [
+      "review:single",
+      "!labs:no-weight"
+     ],
+     "t": "A clinical lab reviewed it and calls it {labcall}."
+    },
+    {
+     "id": "s10",
+     "unit": "bar:labs",
+     "when": [
+      "review:none",
+      "!labs:no-weight"
+     ],
+     "t": "A lab has classified it as {labcall}."
+    },
+    {
+     "id": "s11",
+     "unit": "bar:labs",
+     "when": [
+      "uncertain",
+      "!review:single"
+     ],
+     "t": "Labs that reviewed it classify it as uncertain, so their view counts neither way."
+    },
+    {
+     "id": "s12",
+     "unit": "bar:labs",
+     "when": [
+      "uncertain",
+      "review:single"
+     ],
+     "t": "The lab that reviewed it classifies it as uncertain, so its view counts neither way."
+    },
+    {
+     "id": "s13",
+     "unit": "bar:labs",
+     "when": [
+      "disagree"
+     ],
+     "t": "Of {labs} labs that reviewed it, {split}, so together their view counts neither way."
+    },
+    {
+     "id": "s14",
+     "unit": "bar:labs",
+     "when": [
+      "unclassified"
+     ],
+     "t": "No lab has classified it yet."
+    }
+   ],
+   "status": "seed",
+   "note": "all of these lines are hedged so much that beyond honesty, they read as clueless. phrases like \"evidence not shown here\" and \"didn't share its reasoning\" don't instill any sort of confidence at all. noticed this more broadly in the labs' bar."
+  },
+  "p2-rarity": {
+   "lines": [
+    {
+     "id": "s15",
+     "unit": "bar:rarity",
+     "when": [
+      "rarity:harmless-stand-alone"
+     ],
+     "t": "{Carriers} carry it, far too many for it to cause a rare condition, and that alone settles it."
+    },
+    {
+     "id": "s16",
+     "unit": "bar:rarity",
+     "when": [
+      "rarity:harmless-strong"
+     ],
+     "t": "{Carriers} carry it, more than a cause of a rare condition could be."
+    },
+    {
+     "id": "s17",
+     "unit": "bar:rarity",
+     "when": [
+      "rarity:harmful-supporting",
+      "freq:unseen"
+     ],
+     "t": "It hasn't been seen among {db} tested, which leans slightly toward harmful."
+    },
+    {
+     "id": "s18",
+     "unit": "bar:rarity",
+     "when": [
+      "rarity:harmful-supporting",
+      "!freq:unseen"
+     ],
+     "t": "{Carriers} carry it, rare enough to lean slightly toward harmful."
+    },
+    {
+     "id": "s19",
+     "unit": "bar:rarity",
+     "when": [
+      "rarity:no-weight"
+     ],
+     "t": "{Carriers} carry it, which doesn't point either way."
+    }
+   ],
+   "status": "seed",
+   "note": ""
+  },
+  "p2-predict": {
+   "lines": [
+    {
+     "id": "s20",
+     "unit": "bar:predict",
+     "when": [
+      "predict:harmful-strong"
+     ],
+     "t": "A computer prediction says the swap almost certainly damages the protein."
+    },
+    {
+     "id": "s21",
+     "unit": "bar:predict",
+     "when": [
+      "predict:harmful-moderate"
+     ],
+     "t": "A computer prediction says the swap very likely damages the protein."
+    },
+    {
+     "id": "s22",
+     "unit": "bar:predict",
+     "when": [
+      "predict:harmful-supporting"
+     ],
+     "t": "A computer prediction says the swap likely damages the protein."
+    },
+    {
+     "id": "s23",
+     "unit": "bar:predict",
+     "when": [
+      "predict:harmless-moderate"
+     ],
+     "t": "A computer prediction says the protein very likely tolerates the swap."
+    },
+    {
+     "id": "s24",
+     "unit": "bar:predict",
+     "when": [
+      "predict:harmless-supporting"
+     ],
+     "t": "A computer prediction says the protein likely tolerates the swap."
+    },
+    {
+     "id": "s25",
+     "unit": "bar:predict",
+     "when": [
+      "predict:no-weight"
+     ],
+     "t": "A computer prediction can't tell whether the swap damages the protein, so it doesn't count."
+    }
+   ],
+   "status": "seed",
+   "note": ""
+  },
+  "p2-protein": {
+   "lines": [
+    {
+     "id": "s26",
+     "unit": "bar:protein",
+     "when": [
+      "protein:destroyed",
+      "!protein:mech-none"
+     ],
+     "t": "It cuts the protein short, and the cell destroys the shortened message, so this copy makes no protein."
+    },
+    {
+     "id": "s27",
+     "unit": "bar:protein",
+     "when": [
+      "protein:no-stop",
+      "!protein:mech-none"
+     ],
+     "t": "It shifts the reading so no stop is ever reached, and the cell destroys the message."
+    },
+    {
+     "id": "s28",
+     "unit": "bar:protein",
+     "when": [
+      "protein:escapes-large",
+      "!protein:mech-none"
+     ],
+     "t": "It cuts the protein short, but the message escapes the cell's clean-up, so a protein missing {lost} of its length is made."
+    },
+    {
+     "id": "s29",
+     "unit": "bar:protein",
+     "when": [
+      "protein:escapes-small",
+      "!protein:mech-none"
+     ],
+     "t": "It cuts the protein short by only a little, so most of the protein is still made."
+    },
+    {
+     "id": "s30",
+     "unit": "bar:protein",
+     "when": [
+      "protein:skip-out",
+      "!protein:mech-none"
+     ],
+     "t": "It breaks a signal for joining the gene's pieces, so a piece is likely skipped and everything after it misread."
+    },
+    {
+     "id": "s31",
+     "unit": "bar:protein",
+     "when": [
+      "protein:skip-in-large",
+      "!protein:mech-none"
+     ],
+     "t": "It breaks a signal for joining the gene's pieces, so a piece is likely skipped, removing {skipped} of the protein."
+    },
+    {
+     "id": "s32",
+     "unit": "bar:protein",
+     "when": [
+      "protein:skip-in-small",
+      "!protein:mech-none"
+     ],
+     "t": "It breaks a signal for joining the gene's pieces, so a small piece of the protein is likely skipped."
+    },
+    {
+     "id": "s33",
+     "unit": "bar:protein",
+     "when": [
+      "protein:skip-unknown",
+      "!protein:mech-none"
+     ],
+     "t": "It breaks a signal for joining the gene's pieces, but what that does to the protein isn't known."
+    },
+    {
+     "id": "s34",
+     "unit": "bar:protein",
+     "when": [
+      "protein:mech-none"
+     ],
+     "t": "It cuts the protein short, but losing this gene isn't known to cause disease, so it doesn't count."
+    }
+   ],
+   "status": "seed",
+   "note": ""
+  }
+ },
+ "conditions": {
+  "phenylketonuria": {
+   "name": "phenylketonuria (PKU)",
+   "about": "in which the body can't break down part of protein",
+   "ok": false
+  },
+  "congenital factor XI deficiency": {
+   "name": "factor XI deficiency",
+   "about": "which causes bleeding after injury or surgery",
+   "ok": false
+  },
+  "neuronal ceroid lipofuscinosis": {
+   "name": "Batten disease",
+   "about": "which damages the brain and eyes",
+   "ok": false
+  },
+  "CDKL5 disorder": {
+   "name": "CDKL5 deficiency disorder",
+   "about": "a severe epilepsy that starts in infancy",
+   "ok": false
+  },
+  "hyperinsulinism due to glucokinase deficiency": {
+   "name": "congenital hyperinsulinism",
+   "about": "which causes low blood sugar",
+   "ok": false
+  },
+  "Brown-Vialetto-van Laere syndrome 2": {
+   "name": "Brown-Vialetto-Van Laere syndrome",
+   "about": "which damages the nerves for hearing and movement",
+   "ok": false
+  },
+  "von Hippel-Lindau disease": {
+   "name": "von Hippel-Lindau disease",
+   "about": "which causes tumors in several organs",
+   "ok": false
+  },
+  "Fabry disease": {
+   "name": "Fabry disease",
+   "about": "which damages the kidneys, heart and nerves",
+   "ok": false
+  },
+  "Sotos syndrome": {
+   "name": "Sotos syndrome",
+   "about": "an overgrowth condition of childhood",
+   "ok": false
+  },
+  "congenital thrombotic thrombocytopenic purpura": {
+   "name": "congenital TTP",
+   "about": "a disorder that causes small blood clots",
+   "ok": false
+  },
+  "FOXG1 disorder": {
+   "name": "FOXG1 syndrome",
+   "about": "a severe disorder of early brain development",
+   "ok": false
+  },
+  "autosomal recessive polycystic kidney disease": {
+   "name": "recessive polycystic kidney disease",
+   "about": "which causes cysts in the kidneys and liver",
+   "ok": false
+  },
+  "CHRNG-associated hypo-akinesia disorder of prenatal onset": {
+   "name": "multiple pterygium syndrome",
+   "about": "which limits a baby's movement before birth",
+   "ok": false
+  },
+  "infantile convulsions and choreoathetosis": {
+   "name": "infantile convulsions and choreoathetosis",
+   "about": "seizures in babies and movement attacks later",
+   "ok": false
+  },
+  "Leigh syndrome": {
+   "name": "Leigh syndrome",
+   "about": "a disorder of the brain's energy supply",
+   "ok": false
+  },
+  "citrullinemia type I": {
+   "name": "citrullinemia",
+   "about": "which lets ammonia build up in the blood",
+   "ok": false
+  },
+  "neutropenia": {
+   "name": "neutropenia",
+   "about": "a shortage of white blood cells",
+   "ok": false
+  },
+  "telangiectasia, hereditary hemorrhagic, type 2": {
+   "name": "hereditary hemorrhagic telangiectasia (HHT)",
+   "about": "which causes fragile blood vessels that bleed",
+   "ok": false
+  },
+  "cystic fibrosis": {
+   "name": "cystic fibrosis",
+   "about": "",
+   "ok": false
+  },
+  "X-linked complex neurodevelopmental disorder": {
+   "name": "X-linked complex neurodevelopmental disorder",
+   "about": "which affects learning and can cause seizures",
+   "ok": false
+  },
+  "lissencephaly spectrum disorders": {
+   "name": "lissencephaly",
+   "about": "in which the brain's surface fails to fold",
+   "ok": false
+  },
+  "BRCA1-related cancer predisposition": {
+   "name": "hereditary breast and ovarian cancer",
+   "about": "",
+   "ok": false
+  },
+  "BRCA2-related cancer predisposition": {
+   "name": "hereditary breast and ovarian cancer",
+   "about": "",
+   "ok": false
+  },
+  "Lynch syndrome": {
+   "name": "Lynch syndrome",
+   "about": "an inherited risk of colon and uterine cancer",
+   "ok": false
+  },
+  "Li-Fraumeni syndrome": {
+   "name": "Li-Fraumeni syndrome",
+   "about": "an inherited risk of many kinds of cancer",
+   "ok": false
+  },
+  "hypercholesterolemia, familial, 1": {
+   "name": "familial hypercholesterolemia",
+   "about": "inherited high cholesterol",
+   "ok": false
+  },
+  "hypertrophic cardiomyopathy": {
+   "name": "hypertrophic cardiomyopathy",
+   "about": "a thickening of the heart muscle",
+   "ok": false
+  },
+  "long QT syndrome": {
+   "name": "long QT syndrome",
+   "about": "a disorder of the heart's rhythm",
+   "ok": false
+  },
+  "familial thoracic aortic aneurysm and aortic dissection": {
+   "name": "thoracic aortic aneurysm and dissection",
+   "about": "a weakening of the body's main artery",
+   "ok": false
+  }
+ },
+ "flags": {}
+}

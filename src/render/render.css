@@ -1,0 +1,39 @@
+/* Copyright 2026 Ashwin Mukherjee */
+/* SPDX-License-Identifier: PolyForm-Noncommercial-1.0.0 */
+/* What a drawing needs from its page and cannot say as an SVG attribute. Every ink is a token. */
+
+/* Never transform .mk-svg or an ancestor: one viewBox unit is one px, which is what keeps a hairline a hairline. */
+.mk-svg {
+  display: block;
+  /* Registers paint into the bleed either side of the stage. */
+  overflow: visible;
+}
+
+.mk-svg .mono {
+  font-family: var(--mono);
+}
+
+/* The identifier (SPEC: the halo): a dark core on a ring of the halo's ink, in every lane. */
+.mk-svg rect[data-mark="bead"] {
+  stroke: var(--v-halo);
+  stroke-width: 5px;
+  paint-order: stroke;
+}
+/* The clear ground behind a located residue or site is the halo: it still masks what it covers. */
+.mk-svg rect[data-mark="clearing"] {
+  fill: var(--v-halo);
+  stroke: none;
+}
+/* A silent change's cell is an identifier turned inside out: dark outline, the halo's ink inside. */
+.mk-svg rect[data-mark="swap"] {
+  fill: var(--v-halo);
+}
+
+/* The variant's own material takes the variant's ink; its halo underlay keeps the halo's. */
+.mk-svg g[data-delta] :not([data-halo]) {
+  stroke: var(--v-predicted);
+}
+/* A join the variant made, or one beside material it changed. */
+.mk-svg line[data-delta-seam] {
+  stroke: var(--v-predicted);
+}

@@ -1,0 +1,18 @@
+{
+  "clinvar_id": "VCV000188076",
+  "variation_id": "188076",
+  "hgvs_c": "c.85A>G",
+  "hgvs_p": "p.Ser29Gly",
+  "gene": "PALB2",
+  "uniprot": "Q86YC2",
+  "mane_transcript": "NM_024675.4",
+  "isoform": "Q86YC2 (canonical)",
+  "clinvar_classification": "Conflicting classifications of pathogenicity",
+  "consequence_so": "missense_variant",
+  "consequence_all": ["missense variant"],
+  "structure_map": {
+    "kind": "residue",
+    "residues": [29],
+    "reason": null
+  }
+}

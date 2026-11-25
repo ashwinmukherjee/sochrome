@@ -1,0 +1,78 @@
+{
+  "R1": {
+    "kind": "e2e",
+    "ref": "tools/e2e/room-shots.ts (R1: the three panels' questions); shots/review/d/p1-fold-open-1440.png"
+  },
+  "R2": {
+    "kind": "e2e",
+    "ref": "tools/e2e/room-shots.ts (R2: question baseline 80, claim 112 and 120, stage 272, gap 48, ink 352, measured from the pinned frame's top)"
+  },
+  "R3": {
+    "kind": "e2e",
+    "ref": "tools/e2e/room-shots.ts (R3: P1's stage 768 x 384; the P2 and P3 stage boxes 192 and 424)"
+  },
+  "R4": { "kind": "e2e", "ref": "tools/e2e/room-shots.ts (R4: claim spine 540; P2's 620)" },
+  "R5": {
+    "kind": "e2e",
+    "ref": "tools/e2e/room-shots.ts (R5: the question's size, ink and alpha); shots/review/d/p1-fold-open-1440.png"
+  },
+  "R6": {
+    "kind": "e2e",
+    "ref": "tools/e2e/room-shots.ts (R6: the claim's setting, 0.8em between sentences, one line fully up per state); shots/review/d/p1-fold-1440.png"
+  },
+  "R7": {
+    "kind": "e2e",
+    "ref": "tools/e2e/room-shots.ts (R7: nothing in P1 is scaled; every fixture drawing fits the desktop stage; the phone stage's spills are printed, and data-overflow marks them on the page)"
+  },
+  "R8": { "kind": "e2e", "ref": "tools/e2e/room-shots.ts (R8: stage alignment start, center, start)" },
+  "R9": {
+    "kind": "e2e",
+    "ref": "tools/e2e/room-shots.ts (R9: a panel is a screen, 2.6 screens of scrub and 0.3 of hold; its frame pins; P3's scrub is scaled by its sentence count)"
+  },
+  "R10": {
+    "kind": "e2e",
+    "ref": "tools/e2e/room-shots.ts (R10: a room opens at scroll 0 with its first line alone, and so does the next); shots/review/d/p1-fold-open-1440.png"
+  },
+  "R11": {
+    "kind": "e2e",
+    "ref": "tools/e2e/room-shots.ts (R11: clearing, empty, arriving, saying, rest at 320 ms each; at once with reduced motion; back to the list after the clear)"
+  },
+  "R12": {
+    "kind": "e2e",
+    "ref": "tools/e2e/room-shots.ts (R12: hidden until the hold, then on the stage's right edge in the caption role, 48 from the foot; the last finding goes back); shots/review/d/p3-next-1440.png"
+  },
+  "R13": {
+    "kind": "e2e",
+    "ref": "tools/e2e/room-shots.ts (R13: the cue once landed, 1.7 s nudge, gone after first use); shots/review/d/p3-next-1440.png"
+  },
+  "R14": {
+    "kind": "e2e",
+    "ref": "tools/e2e/room-shots.ts (R14: the way on opens the list's next finding; the host supplies the order through RoomProps.next)"
+  },
+  "R15": {
+    "kind": "e2e",
+    "ref": "tools/e2e/room-shots.ts (R15: SCROLL in the caption role, 1.7 s bob, kept at 24 px and gone past it, back for a fresh room); shots/review/d/p1-fold-open-1440.png"
+  },
+  "R17": {
+    "kind": "e2e",
+    "ref": "tools/e2e/room-shots.ts (R17: the bezel's three stations on desktop, none at phone width; the beat ruler is not built); shots/review/d/p1-codon-1440.png"
+  },
+  "T7": { "kind": "assert", "ref": "C1 (every hand-off half at least 45 px of scroll, on the reference screen)" },
+  "T8": {
+    "kind": "token",
+    "ref": "src/contracts/constants.ts PACING.HANDOFF_PX and BREATH_PX, the only values src/copy/p1/schedule.ts reads; C1 runs the pacing on them"
+  },
+  "T9": {
+    "kind": "e2e",
+    "ref": "tools/e2e/room-shots.ts (R9: P2's scrub is PACING.PACE screens; P1's scroll is its copy's own length, by pace())"
+  },
+  "I4": {
+    "kind": "e2e",
+    "ref": "tools/e2e/room-shots.ts (R15 and R13: the scroll cue shows only at rest and goes on the first scroll; the way on cues only once landed, and never after its first use)"
+  },
+  "V1": { "kind": "review", "ref": "shots/review/d/p1-fold-1440.png" },
+  "V2": {
+    "kind": "assert",
+    "ref": "C1 (a second drawing never opens on the gene line); shots/review/d/p1-second-1440.png"
+  }
+}

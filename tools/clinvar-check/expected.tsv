@@ -1,0 +1,3002 @@
+# expected facts, from scripts/p1-grid/classify.py (independent of the spine). Built by oracle.py.
+variation_id	scope	loc	effect	aa	fate	skip_exon	skip_inframe	exon_kind	plen	tx_ok
+652362	in	cds	missense	1429					2045	True
+1087402	in	spans_exon_intron	-			24	False	coding	2045	True
+5008286	in	cds	missense	1528					2045	True
+793156	in	cds	synonymous						2045	True
+541212	in	cds	synonymous						2045	True
+60490	in	cds	frameshift	118	escape:single-exon				329	True
+4165728	in	cds	missense	652					728	True
+2029193	in	cds	synonymous						326	True
+162434	in	start	start_lost	1					326	True
+1312170	in	cds	missense	587					925	True
+594321	in	cds	missense	724					1426	True
+1265345	out	beyond-8							854	True
+510813	in	cds	synonymous						1006	True
+3995011	in	cds	missense	450					1673	True
+1925581	in	cds	synonymous						1673	True
+1606637	in	cds	synonymous						255	True
+2891618	in	cds	missense	337					1566	True
+4945862	in	exon_edge	synonymous						1566	True
+753166	in	cds	missense	150					1044	True
+2976044	in	cds	synonymous						1044	True
+1374970	in	cds	missense	2532					2549	True
+1151339	in	cds	inframe_ins	2437					2549	True
+660037	in	cds	missense	1964					2549	True
+2767680	in	cds	missense	1522					2549	True
+1514398	in	cds	missense	69					2549	True
+194071	in	cds	missense	594					656	True
+3253124	in	cds	missense	319					3664	True
+642673	in	cds	frameshift	1179	escape:last-exon				1180	True
+1752328	in	cds	missense	208					280	True
+4281646	in	cds	frameshift	190	nmd				280	True
+468236	in	spans_exon_intron	-			6	True	coding	280	True
+516651	out	beyond-8							280	True
+1040371	in	cds	missense	163					581	True
+555056	in	exon_edge	inframe_ins	217					524	True
+4688903	in	cds	missense	386					524	True
+2119834	in	cds	stop_gained	477	escape:last-exon				524	True
+295722	in	cds	synonymous						4391	True
+4372594	out	beyond-8							191	True
+4761001	in	cds	synonymous						251	True
+1307920	in	exon_edge	missense	394					876	True
+4042170	in	cds	missense	494					876	True
+3679	in	cds	missense	257					348	True
+4962683	in	splice_site	-			9	True	coding	602	True
+1392055	in	cds	missense	516					556	True
+2164073	in	cds	missense	530					556	True
+4167596	in	cds	missense	126					372	True
+1338026	in	cds	synonymous						2285	True
+4407753	in	splice_site	-			15	False	coding	2285	True
+4749829	in	cds	missense	2040					2285	True
+4964036	in	cds	missense	2097					2285	True
+1898634	in	cds	missense	922					1603	True
+3817930	in	cds	missense	157					528	True
+2195435	in	cds	missense	118					193	True
+3609183	out	beyond-8							695	True
+515240	in	cds	synonymous						492	True
+2436010	in	cds	missense	15					492	True
+2243469	in	cds	missense	204					3432	True
+1547041	in	cds	synonymous						3432	True
+1973434	in	splice_site	-			46	False	coding	3432	True
+1312320	in	cds	missense	2793					3432	True
+161857	in	cds	missense	193					633	True
+75	in	cds	missense	304					367	True
+630487	in	cds	missense	162					521	True
+2026521	in	cds	frameshift	77	nmd				521	True
+1795274	in	cds	missense	63					521	True
+4113498	in	cds	missense	41					521	True
+495215	in	exon_edge	synonymous						282	True
+1161229	in	cds	synonymous						660	True
+160066	in	cds	synonymous						1288	True
+2927311	in	cds	missense	235					319	True
+2019274	in	cds	synonymous						658	True
+3893904	in	cds	inframe_del	310					692	True
+1424851	in	cds	missense	1364					2140	True
+2757224	in	splice_site	-			6	False	coding	507	True
+658837	in	cds	inframe_ins	332					533	True
+372493	in	cds	frameshift	298	nmd				533	True
+876132	in	cds	synonymous						533	True
+3572943	in	cds	missense	85					533	True
+799225	in	cds	synonymous						421	True
+3234594	out	beyond-8							421	True
+2777938	in	cds	missense	177					421	True
+3376985	in	cds	missense	512					675	True
+4079895	in	cds	missense	65					297	True
+377407	in	cds	missense	1882					2273	True
+197055	in	cds	missense	1850					2273	True
+99330	in	cds	missense	1640					2273	True
+871798	in	exon_edge	inframe_del	1417					2273	True
+99263	in	cds	stop_gained	1412	nmd				2273	True
+969178	in	cds	missense	1357					2273	True
+4900123	in	exon_edge	missense	646					2273	True
+99479	in	cds	inframe_del	223					2273	True
+835857	in	cds	missense	52					2273	True
+3128718	in	cds	missense	874					1261	True
+998107	in	cds	missense	627					1532	True
+1726582	in	cds	frameshift	1258	nmd				1532	True
+526593	in	cds	missense	1297					1532	True
+291391	out	beyond-8							482	True
+948350	in	cds	missense	252					499	True
+1505556	in	cds	inframe_del	148					499	True
+157717	in	cds	synonymous						739	True
+4884795	in	start	start_lost	1					739	True
+3393351	in	cds	missense	28					189	True
+3252704	in	cds	missense	226					241	True
+4798332	in	cds	missense	35					399	True
+1349856	in	cds	synonymous						1023	True
+1307523	in	cds	missense	83					360	True
+134981	in	cds	missense	2325					2471	True
+4121698	in	cds	missense	2096					2471	True
+596701	in	cds	synonymous						2471	True
+2692363	in	cds	stop_gained	4	nmd:start-proximal				259	True
+30465	out	beyond-8							174	True
+30464	out	beyond-8							174	True
+3605419	in	cds	synonymous						718	True
+560551	in	cds	missense	1403					1410	True
+560558	in	cds	missense	1220					1410	True
+560573	in	cds	missense	650					1410	True
+2316035	in	cds	missense	21					502	True
+758968	in	cds	synonymous						502	True
+2049029	in	cds	missense	335					502	True
+1342841	out	beyond-8							1226	True
+2170446	in	cds	missense	434					1226	True
+2140446	in	splice_region	-			2	False	coding	587	True
+4288	in	cds	missense	483					536	True
+4290	in	exon_edge	missense	409					536	True
+4320	in	cds	missense	403					536	True
+3252349	in	cds	missense	1434					2964	True
+975492	in	cds	missense	59					2964	True
+4758807	in	cds	synonymous						664	True
+636306	in	exon_edge	missense	270					664	True
+476823	in	cds	frameshift	479	nmd				664	True
+665846	in	cds	missense	48					379	True
+515328	in	cds	synonymous						1020	True
+875181	in	cds	missense	282					477	True
+2971414	in	cds	stop_gained	442	escape:last-exon				477	True
+1930306	in	cds	missense	441					463	True
+293282	out	beyond-8							463	True
+2574681	in	cds	missense	159					248	True
+4758359	in	cds	missense	163					169	True
+3627838	in	cds	synonymous						855	True
+4711794	in	cds	synonymous						855	True
+2990353	in	cds	synonymous						430	True
+2505290	in	cds	stop_gained	425	escape:last-exon				504	True
+1342203	in	cds	missense	380					504	True
+2570628	in	cds	stop_gained	272	escape:last-exon				504	True
+1723171	in	cds	inframe_ins	163					504	True
+4879182	in	cds	missense	310					464	True
+1302076	in	cds	missense	81					583	True
+4697711	in	cds	missense	2181					2313	True
+1743172	in	cds	missense	16					531	True
+1440445	in	cds	missense	50					531	True
+4738414	in	cds	missense	195					531	True
+875858	in	cds	missense	6					1231	True
+4291314	in	cds	missense	218					1231	True
+4291371	in	splice_site	-			9	True	coding	1231	True
+16556	in	cds	synonymous						1231	True
+4291442	in	cds	stop_gained	673	nmd				1231	True
+4291478	in	exon_edge	frameshift	806	nmd				1231	True
+1163684	in	cds	missense	1119					1231	True
+4291567	in	cds	stop_gained	1139	nmd				1231	True
+4291573	in	cds	stop_gained	1149	escape:near-last-junction				1231	True
+988141	in	cds	missense	1182					1231	True
+16563	in	cds	stop_gained	1198	escape:last-exon				1231	True
+16546	in	spans_cds_utr	-						1231	True
+2570747	in	cds	missense	1226					1231	True
+876612	in	cds	missense	410					661	True
+523815	in	cds	stop_gained	2190	nmd				3477	True
+1991480	in	splice_site	-			5	True	coding	1406	True
+4794296	in	cds	synonymous						1873	True
+2922553	in	cds	missense	1439					1873	True
+633665	in	cds	frameshift	1330	nmd				1873	True
+3074107	in	cds	missense	1201					1873	True
+17626	in	exon_edge	missense	1086					1873	True
+1594529	in	cds	synonymous						1873	True
+2882429	in	cds	synonymous						1092	True
+4291204	in	splice_site	-			1	False	start-exon	377	True
+4291201	in	cds	stop_gained	127	nmd				377	True
+4291207	in	splice_site	-			4	False	coding	377	True
+4291270	in	cds	missense	137					377	True
+4291208	in	splice_site	-			4	False	coding	377	True
+4291170	in	cds	missense	217					377	True
+4291181	in	cds	frameshift	254	nmd				377	True
+1343345	in	cds	frameshift	274	nmd				377	True
+591989	in	cds	missense	225					989	True
+617855	in	cds	synonymous						555	True
+876860	out	beyond-8							555	True
+986970	in	cds	stop_gained	4376	nmd				5202	True
+2902188	in	cds	synonymous						5202	True
+2679574	in	splice_site	-			40	False	coding	5202	True
+2121799	in	cds	synonymous						5202	True
+4062581	in	cds	synonymous						5202	True
+4938669	in	cds	missense	1192					5202	True
+1725673	in	cds	frameshift	808	nmd				5202	True
+5015607	in	cds	frameshift	336	nmd				5202	True
+2358	in	cds	synonymous						5202	True
+1487961	in	cds	missense	830					1393	True
+2639936	in	cds	missense	47					761	False
+4942169	out	beyond-8							439	True
+2078	in	cds	missense	36					439	True
+2101617	in	cds	stop_gained	75	escape:last-exon				439	True
+1968141	in	cds	frameshift	69	nmd				356	True
+807360	in	cds	missense	246					377	True
+4703667	in	cds	synonymous						377	True
+377433	in	cds	missense	102					377	True
+1518583	in	cds	missense	153					426	True
+4663398	in	cds	inframe_del	81					426	True
+3603226	out	beyond-8							155	True
+3719706	in	splice_region	-			32	True	coding	3801	True
+296414	in	cds	missense	936					3801	True
+1129773	in	cds	synonymous						3801	True
+2325363	in	cds	missense	452					894	True
+4805504	in	cds	missense	2110					4967	True
+628286	in	cds	synonymous						4967	True
+178125	in	cds	synonymous						4967	True
+1693205	in	cds	missense	4665					4967	True
+1391510	in	cds	missense	357					510	True
+485567	in	cds	missense	5					510	True
+4397825	in	splice_region	-			7	False	coding	713	True
+3358380	out	beyond-8							713	True
+1723386	out	beyond-8							479	True
+1205872	in	splice_site	-			9	True	coding	479	True
+3893458	in	cds	missense	40					531	True
+1339431	in	cds	missense	33					118	True
+432104	in	splice_site	-			2	False	coding	118	True
+2476152	in	cds	missense	388					1479	True
+2536916	in	cds	missense	225					441	True
+2198242	in	cds	missense	1419					1771	True
+3235078	in	splice_site	-			29	True	coding	1771	True
+1422983	in	cds	missense	1127					1771	True
+3004620	in	cds	synonymous						1771	True
+1157148	in	splice_site	-			23	False	coding	1771	True
+2634439	out	beyond-8							1771	True
+3486698	in	cds	missense	201					824	True
+2417447	in	cds	synonymous						926	True
+262597	in	exon_edge	inframe_del	320					926	True
+333381	in	cds	synonymous						1170	True
+4862332	in	cds	missense	4148					4563	True
+2933769	in	cds	synonymous						4563	True
+2930266	in	cds	missense	3982					4563	True
+4613659	in	cds	missense	3406					4563	True
+1746660	in	cds	missense	1766					4563	True
+2294548	in	cds	missense	1641					4563	True
+3336812	in	cds	missense	1048					4563	True
+4789297	in	cds	missense	574					4563	True
+3762708	in	cds	synonymous						4563	True
+4243610	in	cds	synonymous						912	True
+4278684	in	cds	missense	619					912	True
+424352	in	splice_site	-			9	True	coding	912	True
+3654294	in	cds	missense	193					1435	True
+2392692	in	cds	missense	851					1997	True
+4879941	in	splice_site	-			22	True	coding	1997	True
+4879922	in	cds	missense	449					1997	True
+4879961	in	cds	missense	397					1997	True
+4954163	in	cds	missense	143					886	True
+3844625	in	cds	missense	115					1016	True
+3508213	in	cds	missense	122					1016	True
+2663408	in	cds	missense	417					2225	True
+2855936	in	cds	synonymous						2225	True
+1658430	in	cds	synonymous						2225	True
+2722561	in	cds	synonymous						523	True
+2125191	in	splice_site	-			28	False	coding	1749	True
+2004034	in	cds	missense	665					1749	True
+4991249	in	cds	missense	35					1749	True
+3855124	in	stop	stop_lost	1621	ext:41				1620	True
+538258	in	cds	missense	1372					1620	True
+1406414	in	cds	missense	1334					1620	True
+4870273	in	cds	stop_gained	1159	nmd				1620	True
+895174	in	cds	synonymous						1620	True
+1036585	in	cds	missense	914					1620	True
+239801	in	cds	synonymous						1620	True
+412921	in	cds	synonymous						1620	True
+700254	in	splice_region	-			8	False	coding	1620	True
+4085681	in	cds	synonymous						1620	True
+4085682	in	cds	synonymous						1620	True
+2750295	in	cds	missense	178					1620	True
+2876262	in	cds	synonymous						543	True
+898365	in	cds	synonymous						543	True
+3896352	in	start	start_lost	1					543	True
+2863098	in	cds	synonymous						1333	True
+3639809	in	cds	missense	973					1333	True
+1423204	in	cds	missense	663					1333	True
+3656524	out	beyond-8							651	True
+4975	out	beyond-8							651	True
+4287596	in	cds	frameshift	339	nmd				858	True
+3222119	in	cds	missense	18					314	True
+3398622	in	cds	missense	67					934	True
+91050	in	cds	inframe_del	92					934	True
+3891721	in	cds	missense	289					934	True
+1755	in	cds	stop_gained	406	nmd				934	True
+2676712	in	cds	missense	466					934	True
+1771962	in	cds	frameshift	470	nmd				934	True
+1757	in	cds	inframe_del	596					934	True
+3072568	in	cds	missense	614					934	True
+2447339	in	cds	missense	657					934	True
+1789361	in	cds	frameshift	769	nmd				934	True
+821770	in	cds	inframe_del	919					934	True
+1734372	in	cds	frameshift	125	nmd				1360	True
+89531	in	splice_site	-			3	False	coding	1360	True
+958041	in	cds	missense	215					1360	True
+1766446	in	cds	frameshift	310	nmd				1360	True
+419942	in	cds	missense	406					1360	True
+1121453	in	cds	synonymous						1360	True
+416156	in	cds	synonymous						1360	True
+4727362	in	cds	frameshift	680	nmd				1360	True
+3398958	in	cds	missense	1116					1360	True
+89379	in	cds	inframe_del	1129					1360	True
+233242	in	cds	synonymous						1360	True
+1732907	in	cds	stop_gained	1194	nmd				1360	True
+218071	in	cds	frameshift	1254	nmd				1360	True
+89500	in	splice_site	-			9	False	coding	1360	True
+89518	in	cds	frameshift	1358	escape:last-exon				1360	True
+510862	in	stop	synonymous						1360	True
+3670039	out	beyond-8							1360	True
+862752	in	exon_edge	missense	1377					1507	True
+93596	in	cds	synonymous						1507	True
+4514656	in	cds	stop_gained	558	nmd				1507	True
+1598073	in	cds	synonymous						1507	True
+1711500	out	beyond-8							375	True
+253304	in	cds	inframe_ins	593					835	True
+3347909	in	cds	missense	162					835	True
+942345	in	cds	missense	2					835	True
+1008985	in	cds	missense	395					403	True
+2499988	in	start	start_lost	1					532	True
+336861	out	beyond-8							699	True
+2983086	in	splice_site	-			6	False	coding	513	True
+4591900	in	cds	missense	494					513	True
+3661397	in	cds	frameshift	267	nmd				2119	True
+1014515	in	cds	missense	158					261	True
+4059119	in	cds	missense	33					4168	True
+1443757	in	cds	missense	1564					4168	True
+867044	in	cds	stop_gained	1645	nmd				4168	True
+2171343	in	cds	missense	2150					4168	True
+1545657	in	cds	synonymous						4168	True
+860093	in	cds	missense	2471					4168	True
+1285131	in	cds	frameshift	3421	nmd				4168	True
+2782993	in	cds	synonymous						4168	True
+4886941	in	exon_edge	frameshift	272	extension				277	True
+2579152	in	cds	frameshift	1685	escape:last-exon				1795	True
+1536295	in	cds	synonymous						107	True
+95358	in	cds	missense	613					837	True
+2486397	in	cds	missense	529					4158	True
+413243	in	cds	synonymous						238	True
+864030	in	cds	missense	38					238	True
+2345367	in	cds	missense	529					2136	True
+2848	in	cds	missense	236					775	True
+4230889	in	cds	missense	263					775	True
+960850	in	cds	missense	401					775	True
+4956153	out	beyond-8							694	True
+2734254	in	cds	missense	547					694	True
+265467	in	cds	missense	563					694	True
+4956299	in	cds	missense	426					500	True
+2088865	in	exon_edge	missense	423					677	True
+330748	in	cds	missense	261					999	True
+1169710	in	cds	missense	498					999	True
+330775	out	beyond-8							999	True
+1492536	in	cds	synonymous						593	True
+1600552	in	cds	missense	443					1214	True
+2709820	in	cds	missense	236					1214	True
+661350	in	cds	frameshift	196	nmd				1214	True
+1320072	in	splice_site	-			2	False	start-exon	1214	True
+3703753	in	cds	missense	358					1727	True
+4079385	in	cds	inframe_ins	7983					8525	True
+3878587	in	cds	missense	7969					8525	True
+1111368	in	cds	synonymous						8525	True
+2181752	in	cds	missense	7258					8525	True
+4058692	in	cds	missense	7131					8525	True
+387861	in	cds	synonymous						8525	True
+2188189	in	cds	synonymous						8525	True
+2980590	in	cds	frameshift	3516	nmd				8525	True
+1937985	in	cds	missense	2796					8525	True
+557417	in	cds	inframe_ins	2375					8525	True
+2261731	in	cds	missense	1980					8525	True
+652481	in	cds	missense	1856					8525	True
+4957060	out	beyond-8							8525	True
+5010435	in	cds	frameshift	541	nmd				8525	True
+2869987	in	cds	synonymous						509	True
+2017105	in	cds	missense	202					509	True
+3453780	in	cds	missense	59					682	True
+5017869	in	cds	multi-missense	198					682	True
+860770	in	cds	missense	385					1025	True
+1167599	in	exon_edge	missense	365					1025	True
+1384688	in	cds	missense	316					1025	True
+951163	in	cds	missense	1828					2000	True
+1339119	in	cds	missense	922					2005	True
+207001	in	splice_site	-			23	True	coding	2005	True
+4987213	in	cds	missense	1997					2005	True
+4505419	in	cds	missense	946					1316	True
+3463244	in	cds	missense	807					1316	True
+1355750	in	cds	missense	727					1316	True
+4984304	in	cds	missense	464					1316	True
+1224931	out	beyond-8							1316	True
+1495803	in	cds	missense	3					1316	True
+2631532	in	start	start_lost	1					1316	True
+1475981	in	cds	missense	1677					2009	True
+68632	in	cds	missense	1450					2009	True
+2035368	in	cds	missense	1322					2009	True
+2779481	in	cds	missense	217					2009	True
+1618071	in	cds	synonymous						594	True
+1086729	in	cds	synonymous						520	True
+1675151	in	cds	missense	184					503	True
+2080823	in	cds	missense	12					503	True
+974781	in	cds	missense	369					459	True
+805938	in	splice_site	-			4	False	coding	263	True
+562095	in	cds	inframe_del	303					352	True
+1043872	in	cds	missense	35933					35991	True
+1067620	in	cds	frameshift	34690	nmd				35991	True
+3755971	in	cds	synonymous						35991	True
+4795237	in	cds	missense	33413					35991	True
+2430575	in	cds	inframe_del	33261					35991	True
+467706	in	cds	missense	32920					35991	True
+263602	in	cds	missense	32527					35991	True
+1284329	in	cds	missense	29553					35991	True
+2505118	in	splice_site	-			328	True	coding	35991	True
+4682292	in	cds	missense	28702					35991	True
+4795233	in	cds	missense	28434					35991	True
+47438	in	cds	missense	28175					35991	True
+202915	in	cds	missense	27620					35991	True
+1158182	in	cds	synonymous						35991	True
+2151408	in	cds	synonymous						35991	True
+2036305	in	cds	synonymous						35991	True
+534990	in	cds	missense	22838					35991	True
+3363053	in	splice_site	-			319	True	coding	35991	True
+4072613	in	cds	missense	21807					35991	True
+4958223	out	beyond-8							35991	True
+2474059	in	cds	synonymous						35991	True
+238820	in	cds	missense	20899					35991	True
+3573750	in	cds	missense	18320					35991	True
+1795243	in	cds	missense	18157					35991	True
+47064	in	cds	synonymous						35991	True
+4080780	in	cds	missense	16178					35991	True
+467199	in	cds	missense	16099					35991	True
+4987742	in	exon_edge	synonymous						35991	True
+2934412	in	exon_edge	synonymous						35991	True
+1093830	in	cds	synonymous						35991	True
+1982651	in	splice_site	-			166	True	coding	35991	True
+797230	in	cds	synonymous						35991	True
+2953150	in	cds	synonymous						35991	True
+1049006	in	splice_site	-			112	True	coding	35991	True
+4958576	in	cds	missense	10135					35991	True
+466958	in	cds	missense	9041					35991	True
+404907	in	cds	missense	8730					35991	True
+1334894	in	cds	missense	8336					35991	True
+1284689	in	cds	synonymous						35991	True
+4786874	in	cds	synonymous						35991	True
+404752	in	cds	missense	6825					35991	True
+466877	in	cds	synonymous						35991	True
+3362995	in	cds	frameshift	6425	nmd				35991	True
+413065	in	cds	missense	5743					35991	True
+4958657	in	cds	missense	5582					35991	True
+1299940	out	beyond-8							35991	True
+3766969	in	cds	missense	1148					35991	True
+809109	in	cds	inframe_ins	396					35991	True
+1046573	in	cds	missense	450					532	True
+3074621	in	cds	missense	1117					1466	True
+3268712	in	cds	missense	1299					1466	True
+101338	in	stop	stop_lost	1467	ext:45				1466	True
+2015295	in	exon_edge	missense	485					1499	True
+1139267	in	cds	synonymous						571	True
+424194	in	cds	inframe_del	374					386	True
+1357930	in	cds	synonymous						386	True
+1999934	in	cds	synonymous						750	True
+3757202	in	cds	missense	372					750	True
+1982516	in	cds	missense	134					750	True
+254100	in	cds	inframe_del	417					1572	True
+7763	out	beyond-8							479	True
+3721251	in	cds	synonymous						479	True
+1038758	in	cds	missense	50					408	True
+895141	in	cds	missense	843					1657	True
+1597428	in	cds	synonymous						1657	True
+934105	in	cds	missense	52					1657	True
+3992152	in	cds	missense	919					1038	True
+3078630	in	cds	missense	84					223	True
+1150573	in	cds	synonymous						199	True
+1540629	in	cds	synonymous						3324	True
+4065364	in	start	inframe_del	2					1500	True
+965009	in	cds	missense	295					1500	True
+1143876	in	cds	synonymous						1500	True
+1789574	in	cds	missense	774					777	True
+3988410	in	cds	missense	766					777	True
+1721236	in	cds	missense	458					777	True
+237817	in	cds	missense	429					777	True
+628847	in	cds	missense	327					777	True
+1709911	in	splice_site	-			3	False	coding	777	True
+481394	in	cds	frameshift	25	nmd				777	True
+2233530	in	cds	missense	1941					2477	True
+591660	in	cds	multi-missense	15					2477	True
+3000129	in	cds	missense	134					531	True
+3002793	in	cds	frameshift	358	nmd				531	True
+1619048	in	cds	synonymous						417	True
+1575229	in	cds	synonymous						417	True
+842781	in	cds	missense	68					324	True
+451514	in	exon_edge	missense	213					470	True
+2565371	in	cds	synonymous						470	True
+1569793	in	cds	synonymous						3267	True
+4960042	in	cds	missense	1738					3267	True
+1970026	in	cds	missense	2045					3267	True
+2117607	in	cds	missense	2969					3267	True
+3910254	in	cds	missense	424					484	True
+721793	in	cds	synonymous						484	True
+4960204	in	cds	synonymous						768	True
+4960268	in	cds	frameshift	844	nmd				1690	True
+3586033	in	cds	missense	627					1670	True
+804575	in	exon_edge	synonymous						1670	True
+1810216	in	splice_site	-			43	False	coding	1670	True
+1502877	in	cds	missense	1665					1670	True
+3329013	in	cds	missense	329					2067	True
+960110	in	cds	missense	700					713	True
+531935	in	cds	missense	43					885	True
+1635646	in	cds	synonymous						3177	True
+844328	in	cds	missense	1918					3177	True
+1549034	in	cds	synonymous						3177	True
+807620	in	cds	frameshift	405	nmd				1791	True
+245928	in	exon_edge	missense	347					1791	True
+662604	in	cds	missense	22					1791	True
+383367	in	cds	missense	10					392	True
+4711457	in	cds	synonymous						374	True
+2968857	in	cds	synonymous						2758	True
+3777357	in	cds	missense	1328					2758	True
+1716643	in	cds	missense	1777					2758	True
+1969369	in	cds	missense	2679					2758	True
+2019288	in	cds	synonymous						1442	True
+3907406	in	cds	missense	830					1220	True
+1083428	in	cds	synonymous						1451	True
+3059927	in	splice_site	-			15	True	coding	1451	True
+3588201	in	cds	missense	899					1451	True
+384098	in	cds	synonymous						213	True
+1250118	out	beyond-8							1243	True
+2228309	in	cds	missense	90					475	True
+3899539	in	cds	missense	91					648	True
+1760964	in	cds	synonymous						400	True
+518601	in	cds	missense	371					400	True
+2785595	in	cds	synonymous						940	True
+3915736	out	beyond-8							523	True
+4809021	in	cds	synonymous						448	True
+2236430	in	cds	missense	366					448	True
+4295207	in	splice_site	-			21	False	coding	1115	True
+920747	in	start	start_lost	1					567	True
+392457	out	beyond-8							567	True
+1414271	in	cds	missense	625					677	True
+4782561	in	cds	missense	448					677	True
+1473187	in	cds	inframe_del	147					677	True
+1419594	in	splice_site	-			3	False	coding	677	True
+997649	in	cds	missense	24					756	True
+90352	in	cds	inframe_del	262					756	True
+433865	in	cds	frameshift	413	nmd				756	True
+17080	in	cds	inframe_del	616					756	True
+90108	in	stop	stop_lost	757	ext:36				756	True
+4763981	in	cds	synonymous						2015	True
+201496	in	cds	missense	1180					2015	True
+657420	in	cds	synonymous						2015	True
+67691	in	cds	missense	615					2015	True
+3338801	in	cds	stop_gained	301	nmd				2015	True
+4539788	in	cds	inframe_del	23					781	True
+4722756	in	cds	synonymous						621	True
+60516	in	cds	stop_gained	201	nmd				621	True
+4702084	in	cds	synonymous						349	True
+2326173	in	cds	missense	449					903	True
+952927	in	cds	missense	193					195	True
+345619	in	cds	synonymous						2754	True
+4277723	in	cds	stop_gained	985	nmd				2754	True
+4872726	in	cds	synonymous						2564	True
+3257057	in	cds	missense	855					2564	True
+684692	in	cds	frameshift	891	nmd				1105	True
+684691	in	cds	missense	526					1105	True
+5020261	in	cds	missense	209					1194	True
+4791286	in	cds	missense	70					314	True
+2202150	in	cds	missense	2835					2944	True
+2734507	in	exon_edge	synonymous						2944	True
+4818425	in	cds	stop_gained	96	nmd				403	True
+2725125	in	cds	synonymous						403	True
+2180383	in	cds	missense	5					403	True
+735466	in	cds	synonymous						895	True
+1084114	in	cds	synonymous						360	True
+3339036	in	cds	missense	111					360	True
+1951511	in	cds	synonymous						350	True
+1358961	in	cds	missense	231					440	True
+478505	in	cds	missense	2939					4265	True
+565363	in	cds	missense	3125					4265	True
+2253712	in	cds	missense	3439					4265	True
+1054119	in	cds	missense	558					729	True
+3818887	in	exon_edge	missense	42					729	True
+2435243	in	cds	missense	273					676	True
+4962994	in	cds	synonymous						2161	True
+2109534	in	cds	missense	1271					2161	True
+3083565	in	cds	missense	1739					3960	True
+4963104	in	cds	missense	341					2602	True
+4299496	in	splice_site	-			14	True	coding	2602	True
+2965222	in	cds	missense	1428					2602	True
+3589500	in	cds	frameshift	269	escape:last-exon				305	True
+3396337	in	cds	missense	365					526	True
+4786390	in	cds	frameshift	443	escape:last-exon				526	True
+2113893	in	cds	missense	459					526	True
+1720320	in	cds	missense	465					526	True
+587696	in	splice_site	-			15	False	coding	677	True
+3851453	in	cds	missense	441					677	True
+1370189	in	cds	missense	574					702	True
+346805	in	cds	synonymous						213	True
+4992693	in	cds	missense	56					186	True
+978983	in	cds	frameshift	782	nmd				1241	True
+638663	in	cds	missense	621					741	True
+4699561	in	splice_site	-			4	False	coding	445	True
+960814	in	exon_edge	missense	427					598	True
+30797	in	start	start_lost	1					546	True
+520012	in	cds	missense	1582					1914	True
+4801757	in	cds	missense	1082					1914	True
+546943	in	cds	missense	776					1914	True
+1714454	in	cds	missense	5					1914	True
+2675843	in	cds	missense	401					480	True
+4857872	in	cds	missense	125					480	True
+242468	in	start	start_lost	1					621	True
+2179435	in	exon_edge	synonymous						621	True
+3775051	in	cds	inframe_del	102					177	True
+4088263	in	cds	stop_gained	150	escape:last-exon				177	True
+3588385	out	beyond-8							1241	True
+1476291	in	cds	missense	250					348	True
+866186	in	stop	stop_lost	349	ext:51				348	True
+265745	in	cds	missense	371					404	True
+1724929	in	cds	stop_gained	275	nmd				1004	True
+2162774	in	cds	missense	742					1004	True
+343766	in	cds	synonymous						1065	True
+3233439	in	cds	missense	424					2180	True
+1477907	in	exon_edge	synonymous						750	True
+1385867	in	cds	missense	543					777	True
+4105911	in	cds	missense	1107					1239	True
+4053208	in	cds	missense	985					1239	True
+3394327	in	cds	synonymous						1239	True
+4053092	in	cds	missense	135					1239	True
+3933862	in	cds	missense	317					1074	True
+1686249	in	cds	missense	447					514	True
+1126596	in	cds	synonymous						514	True
+802022	in	splice_site	-			8	False	coding	514	True
+872659	in	cds	stop_gained	509	nmd				725	True
+756475	in	cds	synonymous						721	True
+2765566	in	cds	synonymous						721	True
+3064907	in	cds	inframe_del	223					438	True
+3379521	in	cds	missense	106					353	True
+573	in	cds	frameshift	498	escape:last-exon				644	True
+2546692	out	beyond-8							728	True
+344417	out	beyond-8							680	True
+1598330	in	cds	synonymous						181	True
+2038344	in	cds	synonymous						1015	True
+2575079	in	cds	missense	418					1015	True
+194662	in	cds	inframe_del	574					1015	True
+1691850	in	cds	stop_gained	684	nmd				1015	True
+1579554	in	cds	missense	29					1256	True
+639529	in	start	start_lost	1					653	True
+555941	out	beyond-8							653	True
+552694	out	beyond-8							653	True
+2432720	in	cds	missense	114					653	True
+2734635	in	cds	inframe_del	175					653	True
+426817	in	cds	missense	223					653	True
+4808742	in	cds	synonymous						806	True
+4857826	in	exon_edge	inframe_ins	248					806	True
+65562	in	stop	stop_lost	807	ext:101				806	True
+65564	in	stop	stop_lost	807	ext:101				806	True
+4976498	out	beyond-8							1365	True
+1328024	in	cds	inframe_del	18					3142	True
+1690808	in	cds	inframe_ins	18					3142	True
+1605277	in	cds	synonymous						3142	True
+1610344	out	beyond-8							3142	True
+1703994	in	cds	synonymous						504	True
+1299819	in	cds	missense	202					303	True
+1592236	in	cds	synonymous						1308	True
+2930973	in	cds	synonymous						1308	True
+2012129	in	splice_site	-			9	False	coding	992	True
+1328285	in	splice_site	-			5	True	coding	890	True
+809616	in	cds	missense	243					890	True
+4966307	out	beyond-8							890	True
+212610	in	cds	missense	381					890	True
+3981552	in	cds	missense	446					890	True
+2151424	in	cds	missense	451					890	True
+591231	in	cds	missense	538					890	True
+1439835	in	cds	missense	559					890	True
+2734644	in	cds	missense	569					890	True
+1498172	in	cds	missense	148					348	True
+2938894	in	cds	synonymous						1620	True
+1561597	in	cds	synonymous						1620	True
+5016019	in	cds	stop_gained	584	nmd				1620	True
+1508718	in	cds	missense	1055					1620	True
+1939677	in	cds	synonymous						865	True
+3757525	in	cds	frameshift	421	nmd				1342	True
+2177035	in	cds	missense	1077					1342	True
+2207442	in	cds	missense	624					1147	True
+2028768	in	cds	synonymous						223	True
+1764879	in	cds	missense	295					314	True
+3345118	in	cds	inframe_ins	257					314	True
+1758454	in	cds	inframe_ins	250					314	True
+92660	in	start	start_lost	1					318	True
+2849638	in	start	start_lost	1					1089	True
+1023557	in	splice_region	-			8	False	coding	1089	True
+528499	in	cds	missense	474					1089	True
+13544	in	cds	inframe_del	842					1089	True
+3416447	in	cds	missense	986					1089	True
+1729098	in	cds	missense	1074					1089	True
+690313	in	cds	synonymous						318	True
+2449411	in	cds	missense	67					363	True
+4851555	in	exon_edge	missense	2584					2603	True
+430719	in	cds	synonymous						2603	True
+4307532	in	splice_site	-			2	False	coding	2603	True
+18189	in	cds	missense	138					609	True
+18222	in	splice_site	-			13	False	coding	609	True
+2999579	in	cds	synonymous						4012	True
+2798235	in	cds	frameshift	306	nmd				4012	True
+3008195	in	cds	synonymous						4012	True
+1313056	in	cds	missense	249					488	True
+2074714	in	cds	missense	365					371	True
+60537	in	cds	missense	293					371	True
+4813738	in	cds	frameshift	1981	nmd				3526	True
+3024725	in	cds	synonymous						1301	True
+4820725	in	cds	synonymous						1301	True
+3842728	in	cds	missense	1160					1301	True
+40115	in	cds	inframe_ins	103					968	True
+1934320	in	cds	missense	377					968	True
+3682189	in	cds	synonymous						968	True
+350063	out	beyond-8							140	True
+2092475	in	cds	synonymous						969	True
+2693607	in	cds	inframe_ins	102					893	True
+802083	in	cds	frameshift	196	nmd				314	True
+1901628	in	cds	synonymous						583	True
+4280481	in	cds	frameshift	438	nmd				583	True
+4280458	in	cds	missense	429					583	True
+452535	in	cds	stop_gained	411	nmd				583	True
+1162966	in	splice_site	-			11	False	coding	583	True
+4280443	in	cds	stop_gained	354	nmd				583	True
+2734668	in	splice_site	-			7	True	coding	583	True
+2734669	in	cds	frameshift	298	nmd				583	True
+3589762	in	cds	missense	255					583	True
+2768136	in	cds	frameshift	202	nmd				583	True
+1802728	in	cds	missense	188					583	True
+2683648	in	cds	frameshift	38	nmd:start-proximal				583	True
+286534	in	cds	frameshift	27	nmd:start-proximal				583	True
+2007681	in	cds	missense	173					324	True
+956026	in	cds	missense	571					3957	True
+4968316	in	cds	missense	2636					3957	True
+1737428	in	cds	missense	3880					3957	True
+1432873	in	cds	missense	3894					3957	True
+2565317	in	cds	stop_gained	3921	nmd				3957	True
+4538734	in	cds	missense	62					533	True
+4890783	in	cds	missense	957					5093	True
+2433100	in	cds	missense	3884					5093	True
+1144822	in	cds	synonymous						710	True
+4816886	in	stop	stop_lost	711	ext:17				710	True
+475717	in	cds	synonymous						893	True
+1378439	in	cds	missense	149					4983	True
+2030894	in	cds	synonymous						4983	True
+1547001	in	cds	synonymous						4983	True
+2771476	in	cds	synonymous						2852	True
+1435932	in	cds	synonymous						2852	True
+16418	in	cds	stop_gained	347	escape:last-exon				644	True
+3590340	in	cds	synonymous						644	True
+3626953	in	cds	synonymous						453	True
+591824	in	cds	missense	463					617	True
+1695921	in	cds	inframe_del	142					494	True
+446669	in	splice_site	-			30	False	coding	1286	True
+266058	in	cds	stop_gained	161	nmd				1286	True
+618244	in	cds	synonymous						1286	True
+4094118	in	cds	missense	208					638	True
+3848961	in	cds	missense	3742					4588	True
+1577295	in	cds	synonymous						4588	True
+2203601	in	splice_site	-			5	True	coding	664	True
+942690	in	cds	missense	216					664	True
+1081116	in	cds	synonymous						664	True
+2030808	in	cds	missense	24					634	True
+1468443	in	cds	inframe_del	279					634	True
+1686800	in	splice_site	-			10	True	coding	1132	True
+1695955	in	cds	missense	570					1132	True
+1403437	in	cds	missense	559					1132	True
+2932737	in	cds	missense	232					1132	True
+3238585	in	cds	synonymous						1132	True
+375479	out	beyond-8							1132	True
+3349872	in	splice_site	-			13	True	coding	620	True
+4317416	in	cds	stop_gained	106	nmd				767	True
+2970460	in	cds	frameshift	303	nmd				698	True
+407247	in	cds	stop_gained	4444	nmd				4624	True
+1556266	in	cds	synonymous						4624	True
+1458102	in	cds	stop_gained	3450	nmd				4624	True
+2723552	in	splice_region	-			61	True	coding	4624	True
+2704599	out	beyond-8							4624	True
+3056502	in	exon_edge	synonymous						4624	True
+1382812	in	cds	missense	1432					4624	True
+5010870	in	cds	frameshift	1340	nmd				4624	True
+2761132	in	cds	missense	1203					4624	True
+525379	in	cds	frameshift	1156	nmd				4624	True
+1264959	out	beyond-8							3097	True
+3369029	in	cds	inframe_ins	2312					3097	True
+4981070	in	cds	missense	2384					3097	True
+254125	in	cds	frameshift	174	nmd				352	True
+847333	in	cds	missense	5					497	True
+589143	in	cds	missense	104					2804	True
+2800719	in	splice_region	-			8	False	coding	2804	True
+2572011	in	cds	missense	1313					2804	True
+4969986	in	cds	missense	2696					2804	True
+1454445	in	cds	frameshift	3187	extension				3251	True
+2911970	in	cds	synonymous						3251	True
+353567	out	beyond-8							1097	True
+1142426	in	cds	synonymous						1097	True
+3412891	in	cds	missense	499					520	True
+461368	in	cds	inframe_del	67					890	True
+3372022	in	cds	missense	66					175	True
+556621	in	cds	inframe_del	188					396	True
+3029455	in	cds	frameshift	166	nmd				1215	True
+1670690	in	cds	synonymous						1215	True
+1301612	out	beyond-8							472	True
+1907959	in	cds	missense	274					724	True
+446500	in	splice_site	-			11	True	coding	724	True
+3257869	in	cds	inframe_ins	451					724	True
+3257870	in	cds	inframe_ins	456					724	True
+800720	in	cds	frameshift	712	nmd				2468	True
+3542610	in	cds	missense	1345					2468	True
+551981	in	cds	inframe_del	114					556	True
+3051016	in	splice_site	-			14	False	stop-exon	556	True
+3881	in	cds	missense	543					556	True
+2806200	in	cds	missense	321					533	True
+1717335	in	cds	missense	297					533	True
+1802961	in	cds	inframe_ins	62					1137	True
+1692664	in	cds	inframe_ins	62					1137	True
+1703028	in	cds	inframe_ins	63					1137	True
+959893	in	cds	missense	887					1137	True
+2133859	in	cds	missense	1004					1137	True
+1671053	in	cds	synonymous						1137	True
+1467841	in	cds	missense	45					3396	True
+970233	in	cds	missense	86					3396	True
+1668372	in	cds	missense	709					3396	True
+1025276	in	cds	missense	1011					3396	True
+3679833	in	cds	synonymous						3396	True
+1441503	in	cds	missense	2865					3396	True
+1350338	in	exon_edge	missense	3355					3396	True
+904715	in	cds	missense	67					6306	True
+499556	in	cds	missense	792					6306	True
+2754551	in	cds	missense	815					6306	True
+2835282	in	cds	synonymous						6306	True
+3692463	in	cds	synonymous						6306	True
+4072424	in	cds	frameshift	1630	nmd				6306	True
+2982248	in	cds	frameshift	2615	nmd				6306	True
+2421025	in	cds	missense	3841					6306	True
+3087961	in	cds	missense	4473					6306	True
+4243446	in	cds	missense	4872					6306	True
+1444827	in	cds	missense	5170					6306	True
+1487676	in	cds	missense	5264					6306	True
+2732375	in	cds	synonymous						6306	True
+196984	in	cds	missense	1237					1564	True
+82400	out	beyond-8							2843	True
+1748355	in	cds	frameshift	186	nmd				2843	True
+82562	out	beyond-8							2843	True
+1142186	in	cds	synonymous						2843	True
+1727262	in	cds	missense	1024					2843	True
+822	in	cds	missense	1307					2843	True
+1005007	in	cds	missense	1439					2843	True
+3148221	in	cds	synonymous						2843	True
+1347404	in	cds	missense	2052					2843	True
+140994	in	cds	inframe_ins	2118					2843	True
+3254016	in	cds	synonymous						2843	True
+489498	in	cds	missense	2622					2843	True
+2952790	in	cds	synonymous						736	True
+3858801	in	cds	missense	355					736	True
+841938	in	cds	missense	29					539	True
+204853	in	cds	missense	3					539	True
+350645	in	cds	missense	353					1140	True
+3670760	in	cds	stop_gained	1424	nmd				2912	True
+566126	in	cds	missense	538					2912	True
+2082849	in	cds	synonymous						1166	True
+4258853	in	cds	missense	456					1166	True
+2200855	in	cds	missense	63					1166	True
+6425	in	start	start_lost	1					557	True
+5012106	in	cds	frameshift	83	nmd				557	True
+1504606	in	cds	missense	217					906	True
+971463	in	cds	missense	301					906	True
+4841645	in	cds	missense	345					906	True
+1773119	in	cds	missense	346					906	True
+2043136	in	cds	synonymous						1272	True
+907121	out	beyond-8							1288	True
+2085834	in	cds	missense	1256					1288	True
+2480	in	splice_site	-			6	False	coding	1288	True
+4787265	in	cds	synonymous						739	True
+1326261	in	cds	inframe_ins	459					739	True
+2889632	out	beyond-8							972	True
+760881	in	cds	synonymous						972	True
+2031692	in	cds	synonymous						972	True
+3369838	in	exon_edge	missense	172					489	True
+3368949	in	cds	missense	115					1489	True
+3004011	in	cds	missense	190					1489	True
+870769	in	cds	frameshift	216	nmd				1489	True
+3896736	in	cds	frameshift	977	nmd				1489	True
+2995454	in	cds	synonymous						290	True
+567125	in	cds	missense	221					290	True
+1294206	out	beyond-8							290	True
+2004689	in	cds	stop_gained	76	nmd				620	True
+1039448	in	cds	missense	150					620	True
+4871901	in	cds	frameshift	227	nmd				1253	True
+2795725	in	cds	missense	895					1253	True
+3015629	in	cds	synonymous						1830	True
+4884856	in	cds	synonymous						1830	True
+1475266	in	cds	missense	1146					1830	True
+542614	in	cds	missense	1329					1830	True
+280919	in	cds	frameshift	283	nmd				911	True
+3212900	in	cds	missense	119					267	True
+234931	in	cds	inframe_del	91					639	True
+3511223	in	cds	missense	316					615	True
+369462	out	beyond-8							615	True
+3500514	in	cds	synonymous						622	True
+684548	in	cds	missense	95					327	True
+2480078	in	cds	missense	163					877	True
+2443591	in	cds	missense	351					445	True
+2882187	in	cds	synonymous						445	True
+1594294	in	cds	synonymous						2871	True
+3386663	in	cds	missense	1148					2871	True
+926547	in	cds	synonymous						2871	True
+534308	in	cds	missense	1634					2871	True
+44960	in	cds	inframe_del	2704					2871	True
+3606385	in	cds	missense	630					648	True
+2920630	in	exon_edge	missense	35					648	True
+4278547	in	cds	missense	981					1246	True
+3675517	in	cds	missense	1043					1047	True
+9	in	cds	missense	282					348	True
+3467639	in	cds	missense	310					1063	True
+1990474	in	cds	missense	905					1063	True
+1424522	in	cds	missense	721					1246	True
+403510	in	stop	stop_lost	687	ext:17				686	True
+4693867	in	cds	synonymous						686	True
+2878073	in	cds	synonymous						1736	True
+2980857	in	cds	missense	284					1736	True
+3777154	in	cds	stop_gained	1106	nmd				1343	True
+2621175	in	cds	missense	1478					2671	True
+3287001	in	cds	missense	1851					2671	True
+1351672	in	cds	missense	506					536	True
+402768	in	cds	synonymous						4707	True
+572515	in	cds	missense	3857					4707	True
+3189961	out	beyond-8							636	True
+3338635	in	cds	frameshift	144	escape:last-exon				281	True
+1126812	in	cds	synonymous						980	True
+1802028	in	cds	missense	378					602	True
+3056369	out	beyond-8							346	True
+136216	in	cds	missense	809					985	True
+1086418	in	cds	synonymous						750	True
+92681	in	cds	missense	532					750	True
+5007071	in	exon_edge	frameshift	128	nmd				750	True
+203861	in	cds	inframe_ins	125					750	True
+1521234	in	splice_site	-			62	False	coding	4074	True
+555954	out	beyond-8							4074	True
+1255544	in	cds	missense	2510					4074	True
+438689	in	splice_site	-			47	False	coding	4074	True
+959380	in	cds	missense	1269					4074	True
+1991979	in	cds	synonymous						4074	True
+3889492	in	cds	missense	1170					4074	True
+458592	in	cds	stop_gained	937	nmd				4074	True
+1558500	in	cds	synonymous						4074	True
+3348730	in	cds	missense	463					4074	True
+3780434	in	cds	missense	275					4074	True
+909294	in	cds	missense	19					4074	True
+1110249	in	cds	synonymous						7818	True
+796761	in	cds	synonymous						7818	True
+1779078	in	cds	missense	5649					7818	True
+1757279	in	cds	frameshift	4493	nmd				7818	True
+1124347	out	beyond-8							7818	True
+1199213	in	exon_edge	missense	406					7818	True
+70495	in	exon_edge	missense	80					237	True
+1106651	in	cds	synonymous						3144	True
+1112238	in	cds	synonymous						3144	True
+4892592	in	cds	frameshift	1606	nmd				3144	True
+798439	in	cds	synonymous						3144	True
+724735	in	cds	missense	1422					3144	True
+846934	in	cds	frameshift	1324	nmd				3144	True
+2843994	out	beyond-8							3144	True
+3511173	in	cds	missense	455					3144	True
+2726203	in	cds	stop_gained	126	nmd				540	True
+1404043	in	cds	stop_gained	321	nmd				692	True
+1687183	in	cds	missense	770					1285	True
+3027851	in	cds	synonymous						797	True
+1562506	in	cds	synonymous						797	True
+3698134	in	cds	missense	551					797	True
+3061945	in	cds	inframe_del	237					797	True
+4893271	in	cds	missense	126					314	True
+1691426	in	cds	missense	71					392	True
+1044868	in	cds	missense	289					392	True
+713326	in	exon_edge	missense	88					946	True
+3475138	in	cds	missense	1967					2723	True
+2858596	in	splice_site	-			7	True	coding	578	True
+2700573	in	splice_site	-			6	False	coding	578	True
+437484	in	cds	missense	584					621	True
+3663726	in	cds	synonymous						621	True
+3057122	in	cds	missense	166					867	True
+2725726	in	cds	frameshift	387	nmd				697	True
+50993	in	cds	frameshift	422	nmd				907	True
+3712802	in	cds	missense	593					716	True
+164971	in	start	start_lost	1					52	True
+3056676	out	beyond-8							1143	True
+1030072	in	cds	stop_gained	498	nmd				729	True
+3075857	in	cds	frameshift	355	nmd				729	True
+1350817	in	cds	missense	1349					3122	True
+3607215	in	cds	synonymous						3122	True
+2909696	in	cds	missense	45					925	True
+702124	in	cds	missense	309					639	True
+667111	in	cds	synonymous						639	True
+570926	in	cds	missense	547					639	True
+4894067	in	cds	missense	811					1196	True
+1466073	in	cds	missense	633					1196	True
+4894078	in	cds	missense	601					1196	True
+961645	in	cds	missense	125					323	True
+7783	in	cds	stop_gained	232	nmd				323	True
+3651088	in	cds	synonymous						331	True
+522120	in	stop	stop_lost	450	ext:31				449	True
+3026900	in	cds	missense	7627					8797	True
+1413229	in	cds	missense	7549					8797	True
+1380617	in	cds	missense	7106					8797	True
+290220	in	cds	missense	6728					8797	True
+1425145	in	cds	missense	6657					8797	True
+2436639	in	cds	missense	6328					8797	True
+705027	in	cds	synonymous						8797	True
+2690189	in	cds	missense	4875					8797	True
+1368961	in	cds	missense	3397					8797	True
+355936	in	cds	missense	740					8797	True
+2737397	in	cds	inframe_del	398					2372	True
+1801134	in	cds	missense	443					2372	True
+2389702	in	cds	missense	534					2372	True
+521793	in	cds	stop_gained	1184	nmd				2372	True
+2657066	in	cds	missense	1497					2372	True
+208654	in	cds	frameshift	1514	nmd				2372	True
+3384099	in	cds	stop_gained	1576	nmd				2372	True
+1683799	in	cds	missense	1617					2372	True
+3945673	in	cds	missense	1774					2372	True
+2017513	in	cds	frameshift	2291	escape:last-exon				2372	True
+2584436	in	cds	stop_gained	447	nmd				654	True
+2527188	in	cds	missense	312					418	True
+4749825	in	cds	missense	520					810	True
+235089	in	cds	inframe_del	601					723	True
+658136	in	cds	missense	606					855	True
+1105600	in	cds	synonymous						807	True
+1655727	in	cds	synonymous						807	True
+1697532	out	beyond-8							862	True
+946606	in	exon_edge	missense	669					862	True
+823176	in	cds	missense	311					862	True
+922791	in	cds	synonymous						862	True
+923168	in	cds	missense	242					862	True
+4667289	in	cds	missense	161					862	True
+444713	in	cds	missense	6					320	True
+1680813	in	cds	missense	32					451	True
+1783500	in	cds	missense	655					4516	True
+2893333	in	cds	synonymous						4516	True
+2917665	in	cds	synonymous						4516	True
+525362	in	cds	missense	1124					4516	True
+2606929	in	exon_edge	missense	1256					4516	True
+2736607	out	beyond-8							4516	True
+2900047	in	cds	missense	1761					4516	True
+2728676	in	splice_region	-			34	False	coding	4516	True
+3083523	in	cds	missense	2880					4516	True
+1542408	out	beyond-8							4516	True
+3102840	in	cds	missense	283					496	True
+4692536	in	cds	synonymous						496	True
+2269744	in	cds	missense	83					335	True
+588681	in	cds	inframe_ins	73					335	True
+1202627	in	cds	inframe_ins	127					388	True
+3358631	in	cds	missense	72					887	True
+3055651	in	cds	inframe_del	250					1512	True
+2720834	in	cds	missense	544					1512	True
+1323018	in	cds	frameshift	1146	escape:last-exon				1580	True
+1769650	in	cds	missense	437					465	True
+981653	in	cds	missense	393					465	True
+36267	in	cds	missense	316					465	True
+36229	in	cds	missense	188					465	True
+36210	in	cds	missense	85					465	True
+2865338	in	cds	synonymous						519	True
+2700240	in	cds	synonymous						519	True
+1537553	in	cds	synonymous						480	True
+4824466	in	splice_site	-			12	False	coding	1210	True
+45224	in	cds	missense	719					1210	True
+177720	in	cds	inframe_del	746					1210	True
+177933	in	cds	inframe_del	747					1210	True
+177684	in	cds	inframe_del	747					1210	True
+177822	in	cds	inframe_del	747					1210	True
+177955	in	cds	inframe_ins	769					1210	True
+177654	in	cds	inframe_ins	770					1210	True
+177911	in	cds	inframe_ins	771					1210	True
+163374	in	cds	frameshift	770	nmd				1210	True
+163377	in	cds	inframe_ins	772					1210	True
+45263	in	cds	inframe_ins	773					1210	True
+836818	in	cds	missense	916					1210	True
+135517	out	beyond-8							1210	True
+561040	in	cds	missense	153					289	True
+978068	in	cds	missense	177					289	True
+559579	in	cds	missense	178					289	True
+956498	in	cds	missense	258					289	True
+702569	in	cds	synonymous						1259	True
+2657575	in	cds	missense	120					724	True
+498480	in	cds	missense	424					677	True
+909658	in	cds	synonymous						205	True
+4656788	out	beyond-8							1279	True
+2690838	in	cds	missense	463					964	True
+1145140	in	cds	synonymous						1283	True
+93102	in	cds	inframe_ins	654					1283	True
+558080	in	cds	inframe_del	510					1283	True
+4818416	in	cds	frameshift	299	nmd				1283	True
+2677615	in	cds	frameshift	189	nmd				1283	True
+3361554	in	cds	missense	1487					1589	True
+554715	in	cds	frameshift	1218	escape:last-exon				1589	True
+3437122	in	cds	missense	961					1589	True
+3949673	in	cds	synonymous						1589	True
+1337940	in	cds	missense	1107					1584	True
+4159431	in	cds	missense	26					1584	True
+456841	in	cds	synonymous						1366	True
+4783362	in	cds	missense	448					1366	True
+2925412	in	exon_edge	synonymous						1366	True
+2102222	in	cds	synonymous						675	True
+4832154	in	cds	missense	27					675	True
+1701061	in	splice_site	-			12	True	coding	561	True
+2582043	in	cds	missense	67					3873	True
+2170974	in	cds	synonymous						3873	True
+3774286	in	cds	missense	1378					3873	True
+3631698	out	beyond-8							453	True
+4077175	in	splice_site	-			13	True	coding	453	True
+4062220	in	cds	missense	408					801	True
+2291467	in	cds	missense	709					1035	True
+3031990	in	cds	synonymous						1035	True
+2242753	in	cds	missense	845					987	True
+4897170	in	cds	missense	491					987	True
+1720602	in	cds	missense	2796					3460	True
+847618	in	cds	missense	1677					3460	True
+3765807	in	cds	missense	409					1858	True
+3701745	in	cds	synonymous						1858	True
+1358603	in	cds	missense	535					829	True
+3601768	in	cds	stop_gained	78	nmd				780	True
+3339201	in	cds	missense	93					780	True
+550607	in	cds	missense	163					780	True
+1090918	in	cds	synonymous						780	True
+3608319	in	cds	missense	499					780	True
+2052487	out	beyond-8							1390	True
+2453396	in	cds	missense	489					1390	True
+1409165	in	cds	missense	837					1390	True
+2107031	in	cds	missense	1090					1390	True
+446117	in	cds	missense	1234					1390	True
+802355	in	cds	missense	1380					1390	True
+48688	in	cds	missense	117					1480	True
+7109	in	cds	missense	117					1480	True
+53905	in	cds	inframe_ins	138					1480	True
+4001831	in	cds	synonymous						1480	True
+38799	in	splice_site	-			4	True	coding	1480	True
+48692	in	cds	missense	178					1480	True
+38494	in	splice_site	-			5	True	coding	1480	True
+555386	in	cds	missense	204					1480	True
+7139	in	cds	missense	334					1480	True
+7110	in	cds	missense	347					1480	True
+1705266	out	beyond-8							1480	True
+7106	in	cds	inframe_del	506					1480	True
+7105	in	cds	inframe_del	508					1480	True
+7112	in	splice_site	-			12	False	coding	1480	True
+40190	in	cds	missense	549					1480	True
+7122	in	cds	stop_gained	553	nmd				1480	True
+7113	in	exon_edge	missense	560					1480	True
+1706064	in	cds	stop_gained	588	nmd				1480	True
+53405	in	cds	missense	619					1480	True
+38493	in	cds	frameshift	684	nmd				1480	True
+53601	in	cds	missense	977					1480	True
+634830	in	cds	inframe_del	1004					1480	True
+7137	in	cds	stop_gained	1162	nmd				1480	True
+35868	in	cds	frameshift	1177	nmd				1480	True
+7136	in	cds	missense	1303					1480	True
+1718712	in	cds	missense	415					634	True
+4741100	in	cds	missense	414					634	True
+4332968	in	splice_site	-			13	False	coding	634	True
+1003943	in	cds	frameshift	96	nmd				634	True
+1634686	in	cds	synonymous						599	True
+29592	in	cds	missense	193					2725	True
+4812654	in	cds	missense	428					2725	True
+3758612	in	cds	missense	621					2725	True
+3763076	in	cds	missense	785					2725	True
+839904	in	cds	missense	1335					2725	True
+4897895	in	cds	synonymous						2725	True
+4759875	in	cds	missense	504					923	True
+1933426	in	cds	missense	367					923	True
+1426556	in	cds	missense	106					766	True
+467794	in	cds	missense	139					422	True
+1746008	in	cds	synonymous						247	True
+3426305	in	cds	synonymous						247	True
+2443374	in	cds	missense	398					1331	True
+1316542	in	cds	missense	820					1331	True
+128805	in	cds	synonymous						1331	True
+1519161	in	cds	missense	1205					1331	True
+1608789	in	splice_region	-			23	True	coding	1331	True
+695876	in	cds	synonymous						1331	True
+3710544	in	cds	missense	563					751	True
+1550428	in	splice_site	-			8	False	coding	1159	True
+1055024	in	cds	missense	560					1159	True
+1492770	in	cds	missense	282					1159	True
+67354	in	start	start_lost	1					1159	True
+4694023	in	cds	synonymous						4911	True
+134801	in	cds	missense	3325					4911	True
+3906815	in	cds	missense	2262					4911	True
+2582027	in	cds	missense	1884					4911	True
+2658226	in	cds	synonymous						4911	True
+2658242	in	cds	synonymous						4911	True
+2037663	in	cds	synonymous						1066	True
+446630	in	cds	inframe_ins	835					1066	True
+56711	in	cds	synonymous						286	True
+4052771	in	cds	missense	367					835	True
+499423	in	cds	missense	405					835	True
+1284506	in	cds	missense	568					2400	True
+429335	in	cds	missense	248					443	True
+2955075	in	cds	synonymous						395	True
+3953171	in	cds	missense	83					191	True
+1503080	in	cds	stop_gained	391	nmd				727	True
+642354	in	cds	frameshift	329	nmd				1432	True
+4346663	in	splice_site	-			19	False	coding	1432	True
+845463	in	cds	missense	1021					1432	True
+2505406	in	cds	frameshift	747	escape:last-exon				822	True
+235087	in	splice_site	-			14	True	coding	822	True
+3595605	in	cds	synonymous						822	True
+362898	in	cds	missense	263					822	True
+362958	out	beyond-8							1880	True
+2439037	in	cds	missense	85					1880	True
+725886	in	cds	missense	1890					2004	True
+493478	in	cds	stop_gained	99	nmd				2004	True
+748197	in	cds	missense	529					756	True
+496551	out	beyond-8							635	True
+975712	in	cds	missense	110					635	True
+860945	in	cds	missense	2172					4128	True
+1743351	in	cds	missense	161					4128	True
+3595658	in	cds	missense	287					414	True
+1581431	in	cds	inframe_ins	317					414	True
+1444647	in	cds	missense	464					2997	True
+588516	in	cds	missense	1310					2997	True
+945371	in	splice_site	-			24	True	coding	2997	True
+1934080	in	cds	missense	2357					2997	True
+95809	in	cds	missense	2362					2997	True
+2147748	in	cds	missense	2413					2997	True
+851662	in	cds	missense	2582					2997	True
+2428500	in	cds	frameshift	794	nmd				1226	True
+363664	in	cds	synonymous						592	True
+363665	out	beyond-8							592	True
+637503	in	start	start_lost	1					358	True
+3193045	in	cds	missense	1683					3616	True
+4900910	in	cds	synonymous						3616	True
+4059621	in	cds	missense	18					305	True
+751068	in	cds	synonymous						809	True
+4349003	in	exon_edge	stop_gained	332	nmd				754	True
+656448	in	cds	missense	279					754	True
+2815015	in	cds	synonymous						754	True
+640303	in	cds	missense	5					754	True
+917961	in	exon_edge	missense	136					995	True
+1367	in	splice_site	-			9	False	coding	995	True
+4901080	in	cds	missense	916					995	True
+426457	in	start	start_lost	1					333	True
+550597	out	beyond-8							3997	True
+262657	out	beyond-8							3997	True
+551135	in	exon_edge	frameshift	437	nmd				3997	True
+1143378	in	cds	synonymous						3997	True
+1714781	in	cds	missense	1577					3997	True
+3345424	in	exon_edge	missense	2152					3997	True
+970667	in	cds	missense	2180					3997	True
+4815969	in	cds	stop_gained	2362	nmd				3997	True
+2092685	in	cds	missense	2780					3997	True
+2438649	in	cds	missense	222					1151	True
+3345881	in	cds	inframe_del	293					746	True
+3003388	in	cds	synonymous						872	True
+545511	in	cds	frameshift	708	nmd				1148	True
+4065629	in	cds	missense	379					503	True
+3901152	in	splice_site	-			1	False	start-exon	503	True
+599204	in	splice_site	-			1	True	start-exon	559	True
+2116578	in	cds	inframe_del	3500					4547	True
+196817	in	cds	missense	2836					4547	True
+3420275	in	cds	missense	2490					4547	True
+4627959	in	cds	missense	2135					4547	True
+2154904	in	cds	inframe_ins	1421					4547	True
+2042610	in	cds	missense	646					4547	True
+3753303	in	cds	missense	64					4547	True
+473204	in	cds	missense	179					445	True
+2617518	in	cds	missense	583					647	True
+2865710	in	cds	stop_gained	1135	nmd				1208	True
+2064654	in	cds	missense	1074					1208	True
+1480993	in	cds	missense	1063					1208	True
+4705962	in	cds	missense	887					1208	True
+960750	in	cds	missense	807					1208	True
+459396	in	cds	missense	796					1208	True
+1477307	in	cds	missense	727					1208	True
+1633394	in	cds	synonymous						1208	True
+4152438	in	cds	missense	138					1208	True
+3654176	in	cds	missense	9					1208	True
+514203	out	beyond-8							2099	True
+4014266	in	cds	missense	1202					2099	True
+645825	in	exon_edge	missense	1741					2099	True
+1130482	in	exon_edge	synonymous						2099	True
+914909	in	cds	synonymous						1590	True
+1754734	in	cds	inframe_del	222					1590	True
+126353	in	cds	inframe_del	223					1590	True
+436800	in	cds	inframe_ins	223					1590	True
+827772	in	cds	missense	1014					1590	True
+1311855	in	cds	missense	79					494	True
+2563911	in	cds	synonymous						156	True
+183759	in	cds	inframe_ins	113					156	True
+2375731	in	cds	missense	715					1124	True
+4902899	in	cds	synonymous						1045	True
+3669558	in	cds	missense	59					1045	True
+2195239	in	cds	synonymous						699	True
+2738684	in	cds	synonymous						699	True
+2958491	in	cds	synonymous						422	True
+4022506	in	cds	missense	560					622	True
+1066184	in	cds	inframe_del	530					622	True
+929698	in	cds	stop_gained	510	nmd				622	True
+2167948	in	cds	missense	400					622	True
+4535064	in	cds	synonymous						1719	True
+3638803	in	cds	synonymous						760	True
+4874088	in	cds	missense	94					459	True
+3683335	in	cds	synonymous						459	True
+1992437	in	cds	synonymous						705	True
+976880	in	cds	missense	103					370	True
+976943	in	cds	missense	165					370	True
+1706529	in	cds	frameshift	347	nmd				464	True
+2555584	in	cds	missense	226					338	True
+2909967	in	cds	synonymous						558	True
+557891	out	beyond-8							558	True
+512209	in	cds	synonymous						558	True
+2836189	in	cds	missense	1437					1447	True
+392004	in	cds	missense	1363					1447	True
+2449635	in	splice_region	-			22	True	coding	1447	True
+1733442	in	cds	missense	1212					1447	True
+642694	in	cds	missense	1014					1447	True
+3655958	in	cds	synonymous						1447	True
+2449621	in	cds	synonymous						1447	True
+1541071	in	cds	synonymous						1447	True
+1414893	in	cds	missense	434					1447	True
+2914983	out	beyond-8							1447	True
+1764681	in	cds	synonymous						1447	True
+415496	in	cds	synonymous						1447	True
+1147537	in	cds	synonymous						1447	True
+2853852	in	cds	missense	71					1447	True
+3352257	out	beyond-8							1447	True
+4870603	in	cds	missense	43					1550	True
+558173	in	splice_site	-			5	False	coding	273	True
+4026295	in	cds	missense	326					373	True
+213862	in	cds	inframe_del	17					503	True
+2788350	in	cds	missense	57					503	True
+2160012	in	cds	synonymous						503	True
+4070864	in	cds	missense	241					503	True
+2179328	in	cds	synonymous						416	True
+1513244	in	cds	missense	81					869	True
+2106173	in	cds	synonymous						907	True
+364715	in	cds	synonymous						653	True
+850975	in	cds	missense	246					653	True
+5007380	in	cds	frameshift	526	nmd				1893	True
+4881498	in	splice_site	-			2	False	coding	1893	True
+3077283	in	cds	missense	212					1285	True
+3660991	in	splice_site	-			2	False	coding	402	True
+1572513	in	spans_exon_intron	-			6	False	coding	402	True
+2699126	out	beyond-8							723	True
+378691	in	cds	synonymous						594	True
+528078	in	cds	synonymous						658	True
+458329	in	cds	missense	406					658	True
+4540093	in	cds	missense	257					658	True
+3572927	in	cds	missense	65					864	True
+2499424	in	cds	synonymous						864	True
+4904678	in	cds	missense	401					864	True
+2101836	in	cds	missense	1921					2477	True
+2431377	in	exon_edge	missense	127					277	True
+2563475	in	cds	missense	126					538	True
+2563477	in	cds	missense	12					538	True
+3709168	in	cds	missense	297					412	True
+982897	in	splice_site	-			5	True	coding	725	True
+1098278	in	cds	inframe_del	715					725	True
+2950989	in	cds	missense	1793					2677	True
+3761983	in	cds	missense	632					2677	True
+446191	in	cds	missense	274					2677	True
+576245	in	cds	missense	978					1164	True
+1159721	in	cds	synonymous						1164	True
+48859	in	cds	stop_gained	655	nmd				1164	True
+2693971	in	cds	missense	395					1164	True
+4905167	in	cds	frameshift	254	nmd				1164	True
+1585086	out	beyond-8							1164	True
+2053640	in	cds	inframe_del	127					1164	True
+2823539	in	splice_region	-			9	False	stop-exon	300	True
+2716409	in	cds	synonymous						300	True
+4541504	in	cds	stop_gained	617	nmd				1371	True
+574186	in	cds	missense	115					1838	True
+3716004	in	cds	missense	233					1838	True
+2190493	in	cds	missense	607					1838	True
+3730374	in	cds	missense	740					1838	True
+2571345	in	cds	missense	1151					1838	True
+930854	in	splice_site	-			2	True	coding	1235	True
+834844	in	cds	missense	368					1235	True
+3681595	in	cds	missense	2292					2555	True
+2840924	in	cds	missense	2066					2555	True
+3053167	in	cds	synonymous						2555	True
+4843312	in	cds	missense	1740					2555	True
+2413167	in	splice_site	-			18	False	coding	2555	True
+509495	in	cds	synonymous						2555	True
+1039617	in	cds	missense	145					2555	True
+3706596	in	cds	missense	41					2555	True
+259977	in	cds	inframe_ins	18					278	True
+1031955	in	cds	missense	332					699	True
+3652142	in	start	start_lost	1					938	True
+2748611	in	splice_site	-			10	False	coding	938	True
+1187821	in	cds	inframe_del	162					711	True
+462984	in	cds	synonymous						1298	True
+1112481	in	cds	synonymous						1298	True
+437337	in	exon_edge	synonymous						602	True
+3598319	in	cds	frameshift	205	nmd				444	True
+301125	in	cds	synonymous						444	True
+39563	in	start	start_lost	1					919	True
+3501523	in	cds	missense	423					919	True
+1927753	in	cds	missense	605					919	True
+208863	in	splice_site	-			14	False	coding	919	True
+3364050	in	cds	synonymous						577	True
+1411744	in	cds	missense	47					338	True
+4065805	in	cds	synonymous						692	True
+3241282	in	cds	frameshift	200	nmd				692	True
+1465086	in	splice_site	-			4	True	coding	692	True
+709447	in	cds	missense	249					288	True
+4283254	in	splice_region	-			2	False	coding	288	True
+708080	in	start	start_lost	1					288	True
+4579379	in	cds	synonymous						1710	True
+2888675	in	cds	synonymous						1710	True
+4698845	in	cds	synonymous						525	True
+1681360	in	cds	missense	695					1044	True
+496763	in	cds	stop_gained	550	nmd				647	True
+4975933	in	cds	missense	370					582	True
+580433	in	cds	inframe_del	13					1114	True
+13952	out	beyond-8							1114	True
+405538	in	cds	missense	45					1114	True
+2717019	out	beyond-8							1114	True
+1771950	in	cds	missense	470					1114	True
+543756	in	cds	inframe_del	645					1114	True
+486338	in	cds	missense	832					1114	True
+2432097	in	cds	missense	278					429	True
+750095	in	cds	synonymous						1247	True
+2125373	in	cds	frameshift	918	nmd				1493	True
+1725200	in	cds	frameshift	385	nmd				1493	True
+461449	in	cds	stop_gained	548	nmd				748	True
+3425437	in	cds	synonymous						686	True
+2051537	in	splice_region	-			4	False	coding	1320	True
+1778123	in	cds	missense	564					1320	True
+1380140	in	cds	missense	809					1320	True
+2108623	in	splice_site	-			19	False	coding	1320	True
+2600129	in	cds	missense	252					621	True
+4737338	in	cds	synonymous						555	True
+3596685	in	cds	frameshift	22	nmd				104	True
+130341	in	cds	missense	158					475	True
+2859337	in	cds	synonymous						3354	True
+2082016	in	cds	missense	611					3354	True
+2694599	in	cds	stop_gained	1640	nmd				3354	True
+1620252	in	cds	synonymous						3354	True
+1064754	in	cds	frameshift	2660	nmd				3354	True
+3352542	out	beyond-8							3354	True
+2999554	in	cds	synonymous						3354	True
+1210322	in	exon_edge	synonymous						524	True
+30527	in	cds	frameshift	1007	nmd				2073	True
+591013	in	cds	inframe_del	1091					2073	True
+1421609	in	cds	missense	637					1236	True
+1564046	out	beyond-8							1236	True
+2895130	in	cds	inframe_ins	20					1236	True
+549572	in	cds	missense	1131					1390	True
+3598115	in	cds	missense	74					130	True
+2977526	in	cds	synonymous						1067	True
+3682899	in	cds	missense	117					505	True
+2095994	in	cds	missense	12					395	True
+1768600	in	cds	synonymous						727	True
+2824907	in	cds	missense	26					532	True
+1339370	in	cds	frameshift	86	nmd				532	True
+1487329	in	cds	missense	194					532	True
+3379168	in	cds	synonymous						532	True
+2915994	in	cds	synonymous						558	True
+492723	out	beyond-8							403	True
+1330033	out	beyond-8							403	True
+4856217	in	cds	missense	109					403	True
+2674393	in	cds	frameshift	226	nmd				403	True
+827401	in	splice_site	-			8	True	coding	403	True
+536565	in	cds	synonymous						403	True
+428265	in	stop	stop_lost	404	ext:8				403	True
+3075535	in	cds	missense	326					377	True
+4047472	in	cds	missense	206					399	True
+3108177	out	beyond-8							399	True
+2123340	in	cds	missense	73					858	True
+3370774	in	cds	missense	132					557	True
+301757	in	cds	missense	732					795	True
+1583537	in	cds	synonymous						795	True
+1389879	in	cds	missense	328					607	True
+2048286	in	cds	synonymous						510	True
+1151542	in	cds	synonymous						456	True
+1460892	in	cds	missense	16					410	True
+3379983	out	beyond-8							394	True
+1940082	in	cds	missense	231					684	True
+4694813	out	beyond-8							684	True
+1045175	in	cds	inframe_ins	780					1033	True
+627122	in	cds	missense	231					775	True
+2004060	in	cds	missense	514					775	True
+298562	in	cds	synonymous						775	True
+1588237	in	cds	synonymous						484	True
+4854684	in	cds	frameshift	474	escape:last-exon				551	True
+3055941	out	beyond-8							561	True
+1299260	in	cds	frameshift	49	nmd				1227	True
+3350089	in	spans_cds_utr	-						92	True
+4797053	in	cds	synonymous						582	True
+414917	in	cds	synonymous						582	True
+7415	out	beyond-8							619	True
+3324977	in	cds	missense	544					619	True
+993816	out	beyond-8							821	True
+1406176	in	cds	missense	113					265	True
+426170	in	exon_edge	frameshift	97	nmd				629	True
+2820359	in	cds	missense	172					189	True
+830080	out	beyond-8							189	True
+40438	in	cds	missense	89					189	True
+120223	in	cds	inframe_ins	70					189	True
+4073692	in	cds	missense	862					910	True
+3035082	in	cds	synonymous						736	True
+728165	in	cds	synonymous						180	True
+211186	out	beyond-8							110	True
+1099695	out	beyond-8							497	True
+629171	in	exon_edge	synonymous						676	True
+817280	in	cds	frameshift	232	nmd				676	True
+3893245	in	cds	frameshift	485	nmd				676	True
+2417114	in	cds	synonymous						305	True
+1090683	in	cds	inframe_del	184					305	True
+1591652	in	cds	inframe_del	186					305	True
+403496	in	cds	missense	3					716	True
+4792809	in	cds	synonymous						716	True
+15164	in	cds	missense	134					147	True
+15317	in	cds	missense	102					147	True
+15185	in	cds	inframe_del	94					147	True
+15259	in	cds	missense	98					147	True
+15147	in	cds	missense	90					147	True
+15374	in	cds	inframe_del	57					147	True
+15247	in	cds	inframe_del	8					147	True
+281329	in	cds	inframe_del	37					631	True
+1139226	in	cds	synonymous						631	True
+419889	in	cds	missense	372					563	True
+137699	in	cds	synonymous						563	True
+3012078	in	cds	synonymous						1849	True
+476915	in	cds	synonymous						1849	True
+916834	in	splice_site	-			13	True	coding	1849	True
+551506	in	cds	missense	365					390	True
+158683	in	cds	missense	229					390	True
+1676326	in	cds	synonymous						390	True
+1338558	in	cds	frameshift	111	escape:single-exon				390	True
+751300	in	cds	synonymous						1581	True
+4062516	in	cds	missense	32					899	True
+3383831	in	cds	missense	1895					2913	True
+447617	in	cds	synonymous						585	True
+2826671	in	splice_site	-			10	False	coding	1129	True
+8781	in	cds	missense	46					194	True
+2163	in	cds	missense	432					913	True
+468839	in	cds	missense	699					913	True
+1206379	in	cds	missense	436					436	True
+800455	in	cds	stop_gained	271	nmd				436	True
+1343922	in	cds	missense	54					436	True
+492990	in	start	start_lost	1					436	True
+3982474	in	cds	synonymous						522	False
+2641721	out	beyond-8							574	True
+4911239	in	cds	synonymous						574	True
+2943088	in	cds	missense	35					1043	True
+961035	in	cds	inframe_del	661					1043	True
+3016391	in	cds	missense	459					718	True
+878589	out	beyond-8							364	True
+839476	in	cds	missense	272					336	True
+3212142	in	cds	missense	254					681	True
+13310	out	beyond-8							622	True
+4541618	in	cds	frameshift	1236	nmd				1274	True
+4759609	in	cds	missense	1079					1274	True
+161301	in	cds	missense	1046					1274	True
+1301741	in	splice_site	-			22	True	coding	1274	True
+4911570	in	cds	missense	489					1274	True
+2574108	in	cds	stop_gained	427	nmd				1274	True
+3341275	in	cds	inframe_del	134					270	True
+3341262	in	cds	missense	106					270	True
+2504788	in	cds	missense	116					371	True
+1206404	in	cds	frameshift	94	nmd				500	True
+3078665	in	cds	missense	67					968	True
+770974	in	cds	frameshift	264	escape:last-exon				611	True
+126297	in	splice_site	-			5	False	stop-exon	145	True
+3041762	out	beyond-8							585	True
+2735625	in	cds	missense	99					585	True
+955214	in	cds	missense	500					585	True
+1708672	in	cds	missense	863					944	True
+590355	in	cds	missense	514					944	True
+3993286	in	cds	missense	245					462	True
+3599930	in	cds	missense	206					462	True
+143859	in	cds	stop_gained	180	nmd				462	True
+1040287	in	cds	missense	159					663	True
+3787101	in	cds	missense	322					609	True
+1925081	in	cds	synonymous						842	True
+1617855	in	cds	synonymous						842	True
+5012310	in	cds	frameshift	342	nmd				842	True
+4374059	in	cds	missense	167					842	True
+428041	in	cds	stop_gained	556	escape:last-exon				610	True
+280564	in	cds	frameshift	446	escape:last-exon				610	True
+2008792	in	cds	frameshift	139	nmd				610	True
+4646474	in	cds	frameshift	138	nmd				610	True
+457320	in	cds	synonymous						610	True
+2450234	in	cds	missense	78					610	True
+2020637	in	splice_region	-			23	True	coding	963	True
+2708846	in	cds	frameshift	117	nmd				593	True
+1978417	in	cds	missense	319					484	True
+1701172	in	cds	missense	527					2390	True
+2858298	in	cds	synonymous						1178	True
+3539386	out	beyond-8							1178	True
+879485	in	cds	synonymous						1178	True
+770051	in	cds	missense	100					275	True
+3600156	in	cds	frameshift	276	nmd				464	True
+1376902	in	cds	missense	90					830	True
+2023995	in	splice_site	-			17	True	coding	830	True
+450538	in	cds	missense	503					1615	True
+1910021	in	cds	missense	1230					1615	True
+3076911	in	cds	missense	570					773	True
+2548321	in	cds	missense	243					773	True
+1264772	out	beyond-8							993	True
+4821887	in	cds	synonymous						1849	True
+3385008	in	cds	missense	463					1849	True
+3030806	in	cds	synonymous						1849	True
+4630849	in	cds	missense	20					1849	True
+1047373	in	cds	inframe_ins	446					475	True
+4065816	in	cds	synonymous						475	True
+520689	in	cds	missense	119					475	True
+4086746	in	cds	missense	1030					1258	True
+1518930	in	cds	missense	1202					2353	True
+4218905	in	cds	missense	105					640	True
+2881289	in	cds	synonymous						640	True
+3065409	in	cds	missense	406					2215	True
+2708481	in	cds	synonymous						2215	True
+1629783	in	cds	synonymous						2215	True
+306227	in	cds	missense	11					526	True
+1644462	out	beyond-8							195	True
+3185249	in	cds	missense	436					529	True
+4000982	in	cds	missense	183					500	True
+4226336	in	cds	missense	287					500	True
+1975238	in	cds	missense	335					500	True
+306546	out	beyond-8							643	True
+1531034	in	cds	missense	242					4307	True
+5015253	in	cds	stop_gained	1786	nmd				4307	True
+5019923	in	cds	missense	2533					4307	True
+446538	in	cds	inframe_del	2591					4307	True
+2247081	in	cds	missense	422					427	True
+489528	in	cds	missense	93					3056	True
+236703	in	splice_region	-			4	False	coding	3056	True
+524440	in	cds	synonymous						3056	True
+479002	in	cds	synonymous						3056	True
+2049658	in	cds	missense	509					3056	True
+4843919	in	spans_exon_intron	-			10	True	coding	3056	True
+4169146	in	cds	stop_gained	572	nmd				3056	True
+2840170	in	cds	missense	644					3056	True
+2863022	in	cds	synonymous						3056	True
+1801532	in	cds	stop_gained	844	nmd				3056	True
+1436293	in	cds	inframe_ins	1034					3056	True
+1732546	in	cds	missense	1183					3056	True
+4168542	in	cds	frameshift	1185	nmd				3056	True
+4294292	in	exon_edge	synonymous						3056	True
+414529	in	cds	synonymous						3056	True
+230900	in	cds	missense	1924					3056	True
+3131077	in	cds	missense	1944					3056	True
+4882688	in	exon_edge	missense	2066					3056	True
+485182	in	exon_edge	synonymous						3056	True
+2568209	in	cds	stop_gained	2281	nmd				3056	True
+3253741	in	cds	synonymous						3056	True
+1209849	in	cds	frameshift	2318	nmd				3056	True
+1603337	in	cds	synonymous						3056	True
+921514	in	cds	missense	2384					3056	True
+1121285	in	cds	synonymous						3056	True
+246403	in	cds	missense	3043					3056	True
+524412	in	cds	frameshift	3049	extension				3056	True
+838778	in	stop	stop_lost	3057	ext:29				3056	True
+3147989	in	stop	stop_lost	3057	ext:29				3056	True
+722440	in	cds	synonymous						618	True
+2944022	out	beyond-8							159	True
+2121804	in	splice_region	-			3	False	coding	145	True
+1061769	in	cds	missense	10					1460	True
+4736997	in	cds	synonymous						1460	True
+4992121	in	cds	missense	244					1460	True
+302679	out	beyond-8							182	True
+1482467	in	cds	missense	492					3972	True
+1806293	in	cds	frameshift	811	nmd				3972	True
+3362660	in	cds	missense	1219					3972	True
+191274	in	cds	frameshift	2523	nmd				3972	True
+3673391	in	cds	missense	3025					3972	True
+2873890	in	cds	missense	3366					3972	True
+1165119	out	beyond-8							941	True
+1432375	in	cds	synonymous						941	True
+2838711	in	cds	synonymous						941	True
+4219892	in	cds	synonymous						906	True
+3995975	in	cds	missense	597					906	True
+1486006	in	cds	missense	784					906	True
+4766659	in	cds	missense	861					906	True
+499754	in	cds	frameshift	195	escape:last-exon				243	True
+779437	in	cds	inframe_ins	445					517	True
+2663030	in	cds	missense	967					2155	True
+3790094	in	cds	missense	1092					1386	True
+2821892	out	utr	-						372	True
+3532490	in	cds	synonymous						419	True
+862123	in	cds	synonymous						2382	True
+4915010	in	cds	missense	723					1137	True
+1040078	in	cds	missense	256					1137	True
+3671220	in	cds	synonymous						2138	True
+456973	in	cds	missense	1613					2138	True
+3994412	in	cds	synonymous						2138	True
+2577324	in	exon_edge	synonymous						2813	True
+100177	in	cds	inframe_ins	405					2813	True
+97683	in	cds	missense	95					455	True
+2823604	in	cds	synonymous						260	True
+662511	in	cds	missense	238					260	True
+4873103	in	cds	synonymous						1912	True
+4822611	in	cds	missense	191					1190	True
+2541666	in	cds	missense	356					1190	True
+4683712	in	cds	inframe_del	484					1190	True
+3055682	in	cds	inframe_del	488					1190	True
+2595979	in	cds	missense	575					1190	True
+3669259	in	cds	missense	54					198	True
+4723990	in	cds	frameshift	101	nmd				198	True
+2689163	in	cds	synonymous						1484	True
+4382738	in	splice_site	-			2	True	coding	103	True
+1781491	out	beyond-8							500	True
+2996318	in	cds	missense	1115					1549	True
+1500143	in	cds	missense	103					1549	True
+1206277	out	beyond-8							763	True
+3535704	in	cds	synonymous						188	True
+1031443	in	splice_site	-			14	False	coding	906	True
+1017	in	splice_site	-			15	True	coding	903	True
+4619887	in	cds	missense	872					903	True
+640418	out	beyond-8							837	True
+3076022	in	cds	frameshift	7	nmd:start-proximal				837	True
+2531849	in	cds	missense	926					1674	True
+3291893	in	cds	missense	20					2527	True
+3662971	in	cds	missense	667					2527	True
+3229561	in	cds	synonymous						2527	True
+2447265	in	cds	missense	986					2527	True
+3292074	in	cds	missense	1690					2527	True
+1940	in	cds	missense	2019					2527	True
+1755701	in	cds	missense	2278					2527	True
+1755898	in	cds	missense	2292					2527	True
+2739355	in	stop	stop_lost	1488	ext:34				1487	True
+4850919	in	exon_edge	missense	1295					1487	True
+1160590	in	cds	synonymous						1487	True
+2025723	in	cds	frameshift	1209	nmd				1487	True
+4916354	out	beyond-8							1487	True
+2110405	in	cds	synonymous						1487	True
+2748750	in	cds	missense	889					1487	True
+4869162	in	cds	missense	476					1487	True
+134725	in	cds	missense	4657					5537	True
+2703950	in	cds	missense	4468					5537	True
+1346506	in	cds	missense	4337					5537	True
+1444898	in	cds	inframe_del	4322					5537	True
+2755566	in	cds	frameshift	4132	nmd				5537	True
+638279	in	cds	frameshift	3542	nmd				5537	True
+835334	in	cds	missense	2618					5537	True
+2112681	in	cds	missense	2525					5537	True
+2414475	in	cds	synonymous						5537	True
+521871	in	cds	stop_gained	1495	nmd				5537	True
+4916665	in	cds	missense	1300					5537	True
+2570828	in	cds	synonymous						5537	True
+1565010	in	cds	missense	1105					5537	True
+2642963	in	cds	synonymous						5537	True
+1635689	out	beyond-8							5537	True
+4044493	in	splice_site	-			8	False	coding	5537	True
+2642996	in	cds	stop_gained	53	nmd				561	True
+515043	in	cds	synonymous						1980	True
+1131118	in	cds	synonymous						1980	True
+1678595	in	exon_edge	missense	257					503	True
+464756	in	exon_edge	frameshift	417	nmd				503	True
+568542	in	cds	missense	62					545	True
+729894	in	stop	stop_lost	546	ext:14				545	True
+4293248	in	cds	missense	689					1245	True
+4527571	in	start	start_lost	1					847	True
+3005296	in	exon_edge	missense	43					1032	True
+3379098	in	cds	synonymous						303	True
+1077560	in	cds	synonymous						729	True
+266067	in	cds	frameshift	706	escape:near-last-junction				729	True
+2102240	in	splice_site	-			10	True	coding	552	True
+515788	in	cds	synonymous						185	True
+2636441	in	cds	synonymous						723	True
+939862	in	cds	missense	145					723	True
+760216	in	cds	synonymous						723	True
+3412679	in	cds	missense	378					2353	True
+4980573	in	cds	missense	841					2299	True
+372319	in	cds	frameshift	2465	escape:last-exon				2479	True
+461787	in	splice_site	-			47	True	coding	2479	True
+982093	in	cds	missense	1572					2479	True
+3241127	in	cds	frameshift	1000	nmd				2479	True
+991349	in	cds	missense	776					2479	True
+1990927	in	cds	synonymous						2479	True
+126269	in	cds	missense	277					2479	True
+155770	in	cds	inframe_del	67					478	True
+4767911	in	cds	synonymous						199	True
+3778413	in	cds	missense	992					3096	True
+2188154	in	cds	missense	61					589	True
+1182980	in	splice_site	-			3	False	coding	589	True
+623268	in	cds	frameshift	1163	nmd				1256	True
+4541740	in	cds	missense	786					1256	True
+558793	in	cds	missense	621					1256	True
+2054074	in	cds	missense	508					1256	True
+2554725	in	cds	missense	27					1256	True
+102656	in	cds	stop_gained	120	nmd				452	True
+552279	in	cds	inframe_del	42					452	True
+1344593	in	splice_site	-			25	False	coding	1133	True
+559220	in	cds	missense	7					167	True
+203822	in	cds	inframe_ins	193					250	True
+3574217	in	cds	inframe_del	13					250	True
+2925505	in	start	start_lost	1					396	True
+546074	in	stop	stop_lost	397	ext:34				396	True
+126465	in	cds	inframe_ins	524					871	True
+215918	in	cds	missense	516					871	True
+2146243	in	cds	synonymous						592	True
+4918580	in	cds	synonymous						1155	True
+976652	in	cds	inframe_ins	20					1155	True
+3055440	in	cds	frameshift	14	nmd:start-proximal				1155	True
+1487290	in	cds	missense	95					593	True
+1333718	in	cds	missense	265					593	True
+1028467	in	cds	missense	83					723	True
+451351	in	cds	stop_gained	2186	escape:last-exon				2210	True
+2887716	in	exon_edge	missense	1653					2210	True
+1722316	in	cds	frameshift	1338	nmd				2210	True
+2742229	in	cds	synonymous						2210	True
+946382	in	cds	frameshift	172	extension				196	True
+2201925	in	cds	missense	138					412	True
+1342949	in	start	start_lost	1					631	True
+1338407	in	cds	inframe_ins	8					631	True
+3648920	in	cds	missense	84					631	True
+3893277	in	exon_edge	inframe_del	174					631	True
+1802524	in	cds	synonymous						631	True
+2855285	in	cds	missense	306					631	True
+3703890	in	cds	synonymous						631	True
+617650	in	cds	frameshift	444	nmd				631	True
+882253	in	cds	synonymous						631	True
+1687077	in	cds	inframe_ins	622					631	True
+3160623	in	cds	missense	1598					1966	True
+4271986	in	cds	missense	279					393	True
+4785499	in	cds	frameshift	689	extension				697	True
+423897	in	cds	missense	255					856	True
+2186251	in	splice_region	-			5	False	coding	427	True
+1535569	in	cds	synonymous						2286	True
+937575	in	splice_site	-			42	False	coding	2286	True
+3717834	in	cds	missense	1933					2286	True
+4088246	in	splice_site	-			36	True	coding	2286	True
+1142309	in	cds	synonymous						2286	True
+749970	in	cds	synonymous						2286	True
+838006	in	cds	missense	770					2286	True
+580057	in	cds	missense	755					2286	True
+950815	in	cds	missense	717					2286	True
+405584	in	cds	missense	692					2286	True
+1353149	in	cds	missense	190					2286	True
+3422072	in	cds	missense	180					2286	True
+3011110	in	cds	missense	157					2286	True
+4919293	in	cds	synonymous						1377	True
+4856982	in	cds	missense	196					226	True
+4068621	in	cds	missense	102					226	True
+1540581	in	cds	synonymous						226	True
+4856989	in	cds	missense	61					226	True
+1801837	in	cds	missense	42					283	True
+2636093	in	cds	missense	464					498	True
+1445997	in	cds	missense	8					3418	True
+381157	in	cds	synonymous						3418	True
+1400453	in	exon_edge	missense	143					3418	True
+568479	in	splice_site	-			10	True	coding	3418	True
+266642	in	cds	frameshift	510	nmd				3418	True
+548419	in	cds	stop_gained	711	nmd				3418	True
+2468561	in	cds	synonymous						3418	True
+2692047	in	cds	synonymous						3418	True
+3725480	in	cds	frameshift	1264	nmd				3418	True
+3636466	in	cds	missense	1267					3418	True
+2987788	in	cds	inframe_del	1277					3418	True
+1762013	in	cds	synonymous						3418	True
+230287	in	cds	missense	2827					3418	True
+52725	in	cds	missense	3002					3418	True
+38215	in	exon_edge	synonymous						3418	True
+3636570	in	cds	missense	3298					3418	True
+4919714	in	cds	missense	75					2967	True
+2518477	in	cds	missense	248					2967	True
+2442216	in	cds	missense	1157					2967	True
+3575902	in	cds	missense	308					467	True
+996154	out	beyond-8							467	True
+312184	out	beyond-8							301	True
+421906	in	cds	frameshift	112	nmd				928	True
+1996473	in	cds	missense	148					928	True
+4842600	in	cds	missense	150					928	True
+802979	out	beyond-8							928	True
+2137502	in	cds	frameshift	593	nmd				928	True
+1004456	in	cds	missense	613					928	True
+1458469	in	cds	frameshift	629	nmd				928	True
+527898	in	exon_edge	missense	737					928	True
+1308069	in	cds	missense	1194					1465	True
+962980	in	cds	missense	1010					1465	True
+3576303	in	cds	frameshift	823	nmd				1465	True
+861197	in	cds	missense	350					1465	True
+1454215	in	cds	frameshift	200	escape:last-exon				358	True
+423209	in	cds	missense	258					358	True
+1120076	in	cds	synonymous						841	True
+1647634	in	cds	synonymous						728	True
+1507490	in	cds	missense	225					728	True
+1942886	in	cds	missense	234					728	True
+1486707	in	cds	missense	406					728	True
+4390497	in	splice_site	-			14	False	coding	1262	True
+881016	in	cds	synonymous						1186	True
+4810312	in	cds	synonymous						1186	True
+4083139	in	cds	missense	374					1186	True
+2157431	in	cds	missense	1069					1669	True
+258251	in	cds	synonymous						1669	True
+3348035	in	cds	inframe_ins	1012					1669	True
+1176976	out	beyond-8							1669	True
+2044794	in	cds	missense	227					1669	True
+3177688	in	cds	missense	250					329	True
+3382510	in	exon_edge	missense	22					444	True
+255221	out	beyond-8							444	True
+975204	in	cds	inframe_del	2497					2581	True
+2502560	in	cds	missense	2248					2581	True
+3731056	in	cds	missense	1421					2581	True
+2806082	in	cds	missense	101					2581	True
+56348	in	cds	inframe_del	36					511	True
+1315174	in	cds	missense	1905					1939	True
+312844	in	cds	synonymous						1939	True
+312848	in	cds	missense	1667					1939	True
+1329253	in	splice_site	-			9	False	coding	1939	True
+1228493	in	splice_site	-			33	False	coding	1935	True
+4717816	in	cds	synonymous						1935	True
+177696	in	cds	missense	858					1935	True
+2807601	in	cds	missense	656					1935	True
+2664345	in	cds	missense	196					1935	True
+2700665	in	cds	missense	138					489	True
+3015649	in	cds	missense	139					489	True
+137389	in	cds	synonymous						489	True
+1483714	in	cds	missense	151					489	True
+3601052	in	cds	missense	516					550	True
+313147	in	cds	missense	10					401	True
+4254651	in	cds	missense	820					2048	True
+1445392	in	cds	missense	824					2048	True
+1476407	in	cds	missense	1734					2048	True
+4871183	in	cds	missense	2001					2048	True
+2150489	in	cds	missense	816					837	True
+2161879	in	cds	stop_gained	1273	escape:last-exon				1332	True
+2086204	in	splice_site	-			2	False	coding	463	True
+965809	in	cds	frameshift	289	escape:last-exon				408	True
+2163080	in	cds	missense	244					408	True
+313360	out	beyond-8							250	True
+700219	in	cds	synonymous						250	True
+633689	in	cds	missense	227					284	True
+661495	in	cds	frameshift	964	escape:last-exon				988	True
+2805321	in	cds	stop_gained	552	nmd				988	True
+3699207	in	cds	missense	732					935	True
+666545	in	cds	missense	432					914	True
+3264066	in	cds	missense	55					914	True
+100734	in	splice_site	-			4	True	coding	151	True
+887440	out	beyond-8							1821	True
+1418714	in	cds	missense	1650					1821	True
+4733587	in	cds	synonymous						1821	True
+1400184	in	cds	missense	388					454	True
+3377487	in	splice_site	-			15	True	coding	493	True
+2739344	in	cds	missense	154					562	True
+92497	in	cds	missense	562					685	True
+92509	in	cds	missense	248					685	True
+1072645	in	cds	stop_gained	13	nmd:start-proximal				685	True
+930561	in	cds	frameshift	305	nmd				515	True
+3006422	in	splice_site	-			18	False	coding	1979	True
+3973852	in	cds	missense	674					1979	True
+1235890	out	beyond-8							1979	True
+2123222	in	cds	missense	1853					1922	True
+758406	in	cds	synonymous						1922	True
+477199	in	cds	missense	1430					1922	True
+821142	in	cds	inframe_ins	811					1922	True
+4869744	in	cds	inframe_del	733					1922	True
+1052710	in	cds	missense	547					1922	True
+4712388	in	cds	frameshift	198	nmd				1922	True
+3602778	in	cds	frameshift	58	nmd				1922	True
+4884139	in	cds	inframe_del	642					894	True
+2690488	in	cds	missense	163					414	True
+2419554	in	cds	missense	8					579	True
+2664972	in	cds	missense	451					4646	True
+30031	in	cds	missense	1518					4646	True
+618610	in	cds	missense	1542					4646	True
+2663064	in	cds	missense	2416					4646	True
+2737769	in	cds	synonymous						4646	True
+3374923	in	cds	synonymous						4646	True
+625931	in	cds	missense	3936					4646	True
+1681856	in	cds	missense	29					193	True
+2492990	in	cds	missense	74					193	True
+4092649	in	cds	missense	1565					1882	True
+1008055	in	cds	missense	1180					1249	True
+2070771	in	exon_edge	missense	142					904	True
+2832533	in	cds	missense	746					904	True
+1197059	in	cds	inframe_ins	745					1249	True
+4681016	in	cds	missense	330					1249	True
+1337139	in	cds	inframe_del	159					1249	True
+1803086	in	cds	frameshift	821	escape:last-exon				872	True
+390176	in	cds	synonymous						872	True
+1443517	in	cds	missense	404					473	True
+1061850	in	cds	missense	939					1625	True
+1701916	in	cds	frameshift	281	nmd				377	True
+133778	in	cds	frameshift	348	nmd				1050	True
+6769	in	splice_region	-			11	False	coding	1050	True
+6767	in	splice_site	-			11	False	coding	1050	True
+6768	in	cds	frameshift	611	nmd				1050	True
+1781949	in	cds	synonymous						1050	True
+4277791	in	cds	frameshift	936	nmd				1050	True
+2199197	out	beyond-8							423	True
+1587177	in	cds	synonymous						1508	True
+1656817	in	cds	synonymous						821	True
+556764	in	splice_site	-			8	False	coding	821	True
+499203	in	cds	missense	480					821	True
+2438807	in	cds	frameshift	577	nmd				821	True
+4924392	in	cds	synonymous						1227	True
+4078220	in	cds	missense	718					1227	True
+3976947	in	cds	missense	1337					1749	True
+534908	in	cds	synonymous						2443	True
+1104586	in	cds	synonymous						2443	True
+522810	in	cds	stop_gained	971	nmd				2443	True
+41296	in	cds	stop_gained	899	nmd				2443	True
+4924575	in	cds	frameshift	557	nmd				2443	True
+2830460	in	cds	synonymous						1099	True
+887395	in	cds	missense	1069					1099	True
+1763801	in	cds	stop_gained	2849	escape:last-exon				2871	True
+1763101	in	cds	missense	2790					2871	True
+200125	in	cds	missense	2669					2871	True
+1220219	in	cds	stop_gained	2509	nmd				2871	True
+549304	in	splice_site	-			47	True	coding	2871	True
+2091329	in	cds	frameshift	1590	nmd				2871	True
+547322	in	cds	missense	1513					2871	True
+2137699	in	splice_site	-			24	True	coding	2871	True
+920036	in	cds	missense	814					2871	True
+1424684	in	exon_edge	frameshift	765	nmd				2871	True
+549027	in	cds	stop_gained	527	nmd				2871	True
+571414	in	cds	stop_gained	434	nmd				2871	True
+2829066	in	splice_region	-			20	True	coding	1710	True
+2722101	in	cds	synonymous						1137	True
+3297873	in	cds	synonymous						1880	True
+1192812	out	beyond-8							706	True
+2436994	in	cds	missense	124					706	True
+1731048	in	cds	synonymous						284	True
+2632932	out	beyond-8							284	True
+1179583	out	beyond-8							389	True
+1047455	in	cds	missense	3					496	True
+3445912	in	cds	synonymous						496	True
+1746922	in	cds	missense	178					496	True
+2983469	in	cds	missense	199					496	True
+690412	in	cds	missense	205					496	True
+471763	in	cds	missense	272					496	True
+690427	in	cds	frameshift	439	extension				496	True
+1772179	in	cds	missense	473					496	True
+996155	out	beyond-8							425	True
+213801	in	cds	missense	106					425	True
+549889	in	cds	stop_gained	239	nmd				425	True
+3065115	in	stop	stop_lost	312	ext:31				311	True
+3776266	in	cds	frameshift	209	escape:last-exon				311	True
+2695951	in	cds	synonymous						410	True
+4815624	in	cds	frameshift	322	nmd				410	True
+2757676	in	splice_region	-			12	False	coding	529	True
+3922	in	cds	missense	247					529	True
+30606	in	cds	missense	58					529	True
+3358580	in	cds	inframe_del	399					519	True
+289273	in	cds	missense	852					1203	True
+2005758	in	cds	missense	231					1203	True
+660429	in	cds	missense	217					1203	True
+3524308	in	cds	synonymous						1203	True
+560691	in	cds	missense	23					1203	True
+1033919	in	cds	missense	32					423	True
+990304	in	cds	synonymous						419	True
+11868	in	cds	missense	341					419	True
+371623	in	stop	stop_lost	420	ext:36				419	True
+1359121	in	cds	missense	787					1120	True
+2896816	in	cds	synonymous						1101	True
+3533196	in	cds	missense	167					1705	True
+3670690	in	splice_site	-			14	False	stop-exon	1705	True
+1174827	in	cds	frameshift	1641	escape:last-exon				1705	True
+4926374	in	cds	stop_gained	2414	nmd				2568	True
+1018550	in	cds	missense	636					1328	True
+1479726	in	cds	missense	910					1328	True
+557594	in	cds	inframe_del	161					1417	True
+1766931	in	cds	synonymous						1417	True
+2683833	in	cds	stop_gained	971	nmd				1417	True
+1155884	in	cds	synonymous						1417	True
+1408540	in	cds	frameshift	325	nmd				1828	True
+3627108	out	beyond-8							569	True
+2818282	in	cds	synonymous						569	True
+15624	out	beyond-8							142	True
+15858	in	cds	inframe_del	39					142	True
+15775	in	cds	missense	75					142	True
+1442859	in	cds	missense	168					581	True
+3578658	in	cds	missense	373					1462	True
+2884460	in	cds	missense	234					1462	True
+1373991	in	cds	missense	106					1462	True
+2645922	in	cds	synonymous						1337	True
+1426759	in	cds	missense	56					304	True
+65051	in	cds	synonymous						1807	True
+65135	in	cds	inframe_del	264					1807	True
+49969	in	cds	synonymous						1807	True
+65167	in	cds	missense	387					1807	True
+65251	in	splice_site	-			13	False	coding	1807	True
+647861	in	cds	missense	664					1807	True
+2087204	in	cds	missense	730					1807	True
+966695	in	cds	missense	957					1807	True
+238010	in	cds	synonymous						1807	True
+65041	out	beyond-8							1807	True
+49805	in	cds	stop_gained	1505	nmd				1807	True
+3183562	in	cds	synonymous						1807	True
+64907	in	splice_site	-			37	False	coding	1807	True
+1743833	in	cds	missense	1630					1807	True
+49443	in	exon_edge	missense	1690					1807	True
+4192205	in	cds	missense	1704					1807	True
+49353	in	exon_edge	frameshift	1718	extension				1807	True
+3232194	in	cds	inframe_del	1791					1807	True
+4879605	in	cds	inframe_ins	3695					4303	True
+4995496	in	exon_edge	frameshift	3308	nmd				4303	True
+4847587	in	cds	missense	2992					4303	True
+3901581	in	cds	synonymous						4303	True
+4852961	in	cds	missense	1378					4303	True
+599151	in	cds	frameshift	449	nmd				4303	True
+4526737	in	cds	stop_gained	305	nmd				4303	True
+1321801	in	cds	synonymous						4303	True
+427740	in	cds	missense	43					4303	True
+2806924	out	beyond-8							1704	True
+207507	in	cds	frameshift	159	nmd				559	True
+1022087	in	cds	missense	281					1834	True
+3077347	in	cds	missense	1319					2442	True
+702357	out	beyond-8							246	True
+4850032	in	cds	stop_gained	60	nmd				1102	True
+1581173	in	cds	missense	1011					1464	True
+3018048	in	cds	synonymous						1464	True
+2008236	in	cds	missense	547					1464	True
+98472	in	cds	synonymous						1464	True
+98450	in	cds	synonymous						1464	True
+983445	in	cds	inframe_del	151					1464	True
+4064807	in	cds	frameshift	379	nmd				1130	True
+1495397	in	exon_edge	synonymous						916	True
+1087407	in	cds	synonymous						916	True
+317823	in	cds	missense	834					916	True
+645946	in	cds	missense	868					916	True
+950941	in	cds	missense	874					916	True
+1171124	in	cds	synonymous						1972	True
+1739127	in	cds	synonymous						1972	True
+1172233	in	cds	synonymous						1972	True
+3008838	out	beyond-8							1503	True
+379290	in	cds	missense	600					1503	True
+2176522	in	exon_edge	frameshift	442	nmd				640	True
+1368192	in	cds	missense	547					1139	True
+3579920	in	cds	missense	376					649	True
+422428	in	cds	missense	1096					1186	True
+389104	in	cds	synonymous						1186	True
+126660	in	cds	synonymous						1186	True
+830168	in	exon_edge	inframe_del	832					1186	True
+410164	in	cds	frameshift	686	nmd				1186	True
+1364989	in	cds	missense	393					1186	True
+2006813	in	cds	missense	343					1186	True
+3773508	in	cds	frameshift	331	nmd				1186	True
+185844	in	cds	missense	275					1186	True
+2790707	in	cds	synonymous						538	True
+4622052	in	cds	missense	206					538	True
+4929184	in	cds	synonymous						1618	True
+457949	in	cds	missense	387					438	True
+4064810	in	cds	frameshift	253	nmd				438	True
+2542873	in	cds	missense	61					233	True
+671218	out	beyond-8							340	True
+1686101	in	stop	stop_lost	341	ext:28				340	True
+789617	in	cds	synonymous						461	True
+5017387	in	splice_region	-			4	True	coding	3230	True
+2499784	in	cds	missense	71					3230	True
+3257119	in	cds	missense	534					3230	True
+2064127	in	cds	missense	2373					3230	True
+1549707	in	cds	synonymous						3230	True
+318932	in	cds	missense	28					406	True
+1613781	in	cds	synonymous						288	True
+2163593	in	cds	missense	189					526	True
+1710530	out	beyond-8							1013	True
+1710532	out	beyond-8							1013	True
+1134828	in	cds	synonymous						1013	True
+4693	in	cds	missense	675					1013	True
+97856	in	cds	missense	825					1013	True
+4692	in	cds	missense	881					1013	True
+4412718	in	splice_site	-			18	False	coding	956	True
+4156448	in	cds	missense	904					1315	True
+1266081	in	cds	synonymous						819	True
+3408883	in	cds	missense	656					819	True
+4542034	in	cds	missense	95					318	True
+1694450	in	cds	stop_gained	194	nmd				687	True
+5827	in	splice_site	-			5	False	coding	687	True
+3028370	in	cds	synonymous						1251	True
+320099	in	cds	inframe_ins	369					1251	True
+4930298	in	cds	frameshift	31	nmd				1251	True
+4819935	in	splice_site	-			19	True	coding	2376	True
+1712246	in	splice_site	-			4	True	coding	187	True
+5009910	in	cds	missense	504					727	True
+2046276	in	cds	missense	174					1435	True
+1981992	in	exon_edge	missense	290					1435	True
+1771373	in	cds	missense	258					458	True
+2057411	in	cds	synonymous						458	True
+3479863	in	cds	missense	137					458	True
+2566761	in	cds	missense	66					458	True
+142455	in	cds	inframe_ins	11					882	True
+220798	in	cds	inframe_ins	11					882	True
+132769	in	exon_edge	missense	55					882	True
+184984	in	cds	missense	437					882	True
+1284934	in	splice_site	-			9	True	coding	882	True
+1037702	in	cds	frameshift	218	nmd				968	True
+239034	in	cds	missense	170					968	True
+2442053	in	cds	missense	265					789	True
+2471345	in	cds	missense	762					5121	True
+855862	in	cds	missense	282					1221	True
+1708910	out	beyond-8							414	True
+3729264	in	cds	frameshift	246	nmd				597	True
+5031	in	cds	stop_gained	483	nmd				597	True
+2054004	in	cds	missense	281					1052	True
+2729798	in	splice_region	-			6	False	coding	1052	True
+1344596	in	cds	stop_gained	260	nmd				725	True
+418948	in	cds	inframe_ins	2497					2521	True
+2431216	in	cds	missense	2496					2521	True
+721509	in	splice_region	-			50	False	coding	2521	True
+3388682	in	cds	synonymous						2521	True
+811021	in	cds	synonymous						2521	True
+4416905	out	beyond-8							2521	True
+1639128	in	cds	synonymous						546	True
+210649	in	cds	missense	471					546	True
+3489782	in	cds	missense	487					546	True
+3255153	in	splice_site	-			9	False	coding	522	True
+2680471	in	cds	frameshift	416	nmd				576	True
+2137862	in	cds	inframe_del	462					576	True
+3022042	in	cds	missense	1055					2663	True
+3234811	in	cds	missense	47					795	True
+1631353	in	cds	synonymous						1455	True
+555307	in	cds	stop_gained	1198	nmd				1455	True
+4254237	in	cds	synonymous						1455	True
+526361	in	cds	missense	559					1455	True
+4254338	in	cds	synonymous						1455	True
+1630160	out	beyond-8							1455	True
+4619315	in	cds	missense	54					1455	True
+1088061	in	splice_region	-			2	False	coding	1455	True
+14310	out	beyond-8							450	True
+735984	in	cds	synonymous						478	True
+4857718	in	cds	inframe_del	1361					2335	True
+3028456	in	cds	synonymous						2335	True
+1042415	in	cds	inframe_del	349					367	True
+371515	in	stop	stop_lost	368	ext:54				367	True
+4538996	in	start	start_lost	1					652	True
+1338214	in	cds	frameshift	616	escape:last-exon				652	True
+474896	in	splice_site	-			5	False	coding	655	True
+1152627	in	cds	synonymous						655	True
+2680183	in	cds	missense	413					655	True
+2507419	in	splice_site	-			13	True	coding	655	True
+166646	in	splice_site	-			15	False	coding	655	True
+960315	in	cds	missense	555					655	True
+1707710	in	stop	stop_lost	656	ext:54				655	True
+156517	in	cds	missense	389					393	True
+2029296	in	spans_exon_intron	-			9	False	coding	393	True
+2819586	in	cds	synonymous						393	True
+2592176	in	cds	synonymous						393	True
+3242233	in	cds	frameshift	267	nmd				393	True
+634761	in	cds	inframe_del	218					393	True
+1493863	in	cds	inframe_ins	205					393	True
+230758	in	cds	missense	160					393	True
+3764815	in	cds	inframe_del	152					393	True
+142158	in	cds	inframe_del	30					393	True
+1174720	in	cds	inframe_del	752					1643	True
+4614508	in	cds	frameshift	1220	nmd				2000	True
+1955248	in	cds	missense	286					1103	True
+2928723	in	cds	synonymous						1103	True
+1468196	in	cds	synonymous						1103	True
+846394	in	cds	missense	640					1217	True
+3837081	in	cds	missense	450					1217	True
+4933691	in	cds	missense	1951					2007	True
+321669	in	cds	synonymous						1941	True
+1402691	in	cds	missense	891					1941	True
+591720	in	cds	stop_gained	95	nmd				301	True
+1624213	in	cds	missense	1581					4486	True
+1389270	in	cds	missense	1640					4486	True
+1383578	in	cds	missense	2994					4486	True
+3348142	in	cds	missense	4185					4486	True
+3835688	in	cds	frameshift	286	escape:last-exon				443	True
+5302	in	cds	missense	104					293	True
+1775450	in	cds	synonymous						579	True
+415626	in	cds	synonymous						579	True
+851074	in	cds	missense	19					579	True
+1292809	out	beyond-8							579	True
+4993202	in	cds	missense	1154					1906	True
+1739470	in	cds	synonymous						1906	True
+4987944	in	cds	missense	1609					1906	True
+2808842	in	cds	stop_gained	57	nmd				3530	True
+2853389	in	cds	synonymous						3530	True
+2810814	in	cds	synonymous						3530	True
+3608680	out	beyond-8							3530	True
+3682266	in	cds	missense	2245					3530	True
+2919342	in	cds	synonymous						3530	True
+3034139	in	cds	stop_gained	2574	nmd				3530	True
+500847	in	cds	synonymous						3530	True
+2884452	in	cds	synonymous						3530	True
+322190	out	beyond-8							3530	True
+2815362	in	cds	missense	323					648	True
+439741	in	cds	synonymous						648	True
+2062663	in	cds	missense	330					692	True
+3931491	in	cds	missense	641					1004	True
+1771751	in	cds	synonymous						2839	True
+457714	in	cds	missense	156					2839	True
+481978	in	cds	missense	481					2839	True
+232763	in	cds	synonymous						2839	True
+3879119	in	cds	frameshift	909	nmd				2839	True
+1795265	in	cds	missense	910					2839	True
+1048681	in	cds	inframe_del	1022					2839	True
+996447	in	exon_edge	frameshift	1066	nmd				2839	True
+581691	in	cds	missense	1488					2839	True
+2818667	in	cds	missense	1511					2839	True
+527559	in	cds	missense	1651					2839	True
+4934581	in	cds	frameshift	1691	nmd				2839	True
+2579314	in	cds	synonymous						2839	True
+3769588	in	cds	frameshift	1826	nmd				2839	True
+5018826	in	cds	frameshift	1892	nmd				2839	True
+404554	in	cds	missense	2229					2839	True
+404497	in	cds	missense	2462					2839	True
+229883	in	cds	missense	239					328	True
+581983	in	cds	missense	232					328	True
+2448042	in	cds	inframe_del	202					328	True
+1345065	out	beyond-8							328	True
+410565	in	cds	missense	26					328	True
+660936	in	cds	missense	15					328	True
+1297600	out	beyond-8							557	True
+1802526	in	splice_region	-			7	True	coding	557	True
+635602	in	cds	frameshift	374	nmd				557	True
+3032773	in	cds	missense	40					557	True
+453011	in	cds	missense	21					557	True
+2623077	in	cds	missense	1498					2367	True
+1919759	in	cds	missense	893					2367	True
+808255	in	cds	stop_gained	525	nmd				2367	True
+1355684	in	cds	missense	412					2367	True
+587470	in	start	start_lost	1					167	True
+282451	in	cds	missense	33					167	True
+191776	in	cds	missense	105					167	True
+3799021	in	cds	missense	338					411	True
+463432	in	cds	stop_gained	253	nmd				411	True
+55835	in	cds	frameshift	192	nmd				411	True
+55833	in	splice_site	-			5	True	coding	411	True
+1405883	in	cds	stop_gained	129	nmd				743	True
+280979	in	cds	missense	441					743	True
+266016	in	cds	frameshift	649	escape:last-exon				743	True
+558022	in	cds	synonymous						357	True
+2784905	in	cds	frameshift	335	extension				357	True
+868674	in	cds	synonymous						1863	True
+55568	in	cds	missense	1804					1863	True
+868041	in	cds	missense	1795					1863	True
+125768	in	splice_site	-			17	True	coding	1863	True
+252884	in	cds	missense	1703					1863	True
+868653	in	cds	missense	1702					1863	True
+868943	in	cds	missense	1677					1863	True
+868883	in	cds	missense	1657					1863	True
+865405	in	cds	missense	1636					1863	True
+548730	in	cds	inframe_del	1612					1863	True
+548276	in	cds	frameshift	1567	nmd				1863	True
+266404	in	cds	frameshift	1253	nmd				1863	True
+54871	in	cds	missense	1137					1863	True
+54806	in	cds	frameshift	1086	nmd				1863	True
+3226126	in	cds	synonymous						1863	True
+266199	in	cds	frameshift	636	nmd				1863	True
+2585844	in	cds	missense	627					1863	True
+37430	in	cds	inframe_del	616					1863	True
+1203083	in	cds	stop_gained	465	nmd				1863	True
+812549	in	cds	missense	297					1863	True
+55702	in	cds	synonymous						1863	True
+55700	in	cds	missense	263					1863	True
+2736598	in	cds	stop_gained	203	nmd				1863	True
+993048	in	cds	synonymous						1863	True
+423798	in	cds	stop_gained	208	nmd				534	True
+4027568	in	cds	synonymous						346	True
+1709489	in	cds	inframe_del	681					764	True
+4935389	in	cds	missense	436					764	True
+976698	in	cds	missense	35					593	True
+589992	in	cds	missense	268					593	True
+1879019	in	splice_site	-			28	True	coding	1039	True
+626948	in	cds	inframe_del	335					1039	True
+4846785	in	splice_site	-			25	False	coding	972	True
+1961551	in	cds	missense	120					972	True
+5000392	in	cds	missense	421					432	True
+190342	in	cds	inframe_ins	128					432	True
+386436	in	cds	synonymous						1105	True
+3355876	in	cds	missense	845					1105	True
+2581085	in	cds	inframe_del	730					788	True
+2059470	in	cds	missense	628					1051	True
+2964082	in	cds	synonymous						1051	True
+290930	in	cds	missense	64					387	True
+4231945	in	cds	synonymous						1464	True
+3826630	in	cds	missense	787					2377	True
+988188	in	start	start_lost	1					567	True
+4280361	in	cds	frameshift	203	nmd				567	True
+424621	in	cds	frameshift	243	nmd				567	True
+4280363	in	exon_edge	missense	248					567	True
+217682	in	cds	missense	165					559	True
+3789881	in	cds	missense	363					783	True
+1749313	in	exon_edge	missense	191					376	True
+6822	in	cds	missense	258					376	True
+891702	in	cds	missense	789					964	True
+1341403	in	cds	inframe_ins	104					546	True
+1341455	in	cds	stop_gained	374	escape:last-exon				546	True
+1793295	in	splice_site	-			18	False	coding	1249	True
+4845186	in	cds	missense	853					1249	True
+1154374	in	cds	synonymous						1249	True
+4216255	in	cds	missense	754					1249	True
+1659970	in	splice_site	-			16	False	coding	1249	True
+2774996	in	cds	frameshift	719	nmd				1249	True
+1785695	in	cds	missense	697					1249	True
+234737	in	cds	missense	106					1249	True
+489817	in	cds	missense	65					1249	True
+1679014	out	beyond-8							1249	True
+3341401	in	cds	missense	2158					2174	True
+2582137	in	cds	missense	1543					2174	True
+1223702	in	cds	inframe_ins	1511					2174	True
+3366843	in	cds	missense	671					750	True
+4632619	in	cds	missense	1722					2074	True
+2067784	in	cds	missense	778					1306	True
+1697280	in	cds	inframe_del	1707					1836	True
+92864	in	cds	synonymous						1836	True
+1961028	out	beyond-8							843	True
+2451655	in	cds	missense	189					843	True
+935911	in	cds	missense	136					843	True
+2648142	in	cds	missense	1833					2920	True
+3684327	out	beyond-8							381	True
+626260	out	beyond-8							381	True
+239384	in	cds	synonymous						381	True
+3720816	in	cds	missense	252					381	True
+692092	in	cds	stop_gained	319	escape:last-exon				509	True
+4426234	in	stop	stop_lost	510	ext:49				509	True
+2449177	in	cds	missense	347					605	True
+3514585	in	cds	missense	65					491	True
+1368188	in	cds	frameshift	354	extension				392	True
+2999699	out	beyond-8							1090	True
+2170204	in	cds	synonymous						660	True
+998385	in	cds	missense	186					827	True
+692327	in	cds	missense	3595					4462	True
+4242325	in	cds	missense	494					4462	True
+3041923	in	cds	synonymous						4462	True
+962004	in	exon_edge	missense	521					1142	True
+162850	in	cds	synonymous						1142	True
+1087502	in	cds	synonymous						952	True
+456435	in	cds	missense	246					952	True
+4876576	in	cds	synonymous						952	True
+1398691	in	cds	missense	825					952	True
+1411931	in	cds	missense	912					952	True
+574052	in	splice_site	-			19	True	coding	952	True
+402486	out	beyond-8							502	True
+2856030	in	cds	synonymous						502	True
+3583142	in	cds	synonymous						375	True
+3324770	in	cds	missense	85					1192	True
+2987517	in	cds	synonymous						1192	True
+2507847	in	cds	missense	982					1192	True
+737808	in	exon_edge	synonymous						1192	True
+1671685	out	beyond-8							2005	True
+39859	in	exon_edge	synonymous						2005	True
+326588	out	beyond-8							896	True
+4938204	in	cds	synonymous						797	True
+641775	in	cds	synonymous						595	True
+4796748	in	splice_region	-			15	False	coding	1278	True
+5013874	in	cds	frameshift	705	nmd				1278	True
+1509189	in	cds	missense	85					1278	True
+1482644	in	cds	missense	10					1278	True
+3532768	in	cds	missense	859					865	True
+1455441	in	cds	synonymous						906	True
+2024891	in	cds	stop_gained	331	nmd				901	True
+1549853	in	cds	synonymous						901	True
+1449286	in	cds	missense	133					901	True
+4803001	in	cds	missense	159					1118	True
+1119816	in	cds	synonymous						1118	True
+466329	in	cds	missense	370					1118	True
+921622	in	cds	synonymous						1118	True
+534677	in	cds	missense	558					1118	True
+927083	in	cds	missense	739					1118	True
+3505436	in	cds	missense	888					1118	True
+3221943	in	cds	missense	1058					1118	True
+1003548	in	cds	missense	1095					1118	True
+3440402	in	cds	missense	816					2248	True
+4838635	in	cds	missense	1000					2248	True
+4717422	in	cds	synonymous						888	True
+4886058	in	cds	missense	1570					1622	True
+1196900	in	cds	missense	220					1596	True
+2788343	in	cds	missense	279					1596	True
+1468708	in	cds	missense	304					1596	True
+3730992	in	cds	missense	419					1596	True
+2129966	in	cds	missense	1475					1596	True
+1035603	in	cds	missense	2282					2579	True
+1415245	in	cds	missense	1921					2579	True
+466246	in	cds	synonymous						2579	True
+1018301	in	cds	missense	920					2579	True
+1022553	in	cds	missense	883					2579	True
+267452	in	start	start_lost	1					2579	True
+326833	in	cds	missense	1924					2273	True
+594689	in	cds	missense	1645					2273	True
+30990	in	cds	stop_gained	1572	nmd				2273	True
+1461881	in	cds	missense	1314					2273	True
+163919	in	cds	frameshift	768	nmd				2273	True
+4762718	in	cds	synonymous						2273	True
+4938992	in	splice_region	-			11	True	coding	2273	True
+2125365	in	cds	missense	298					552	True
+1109784	in	cds	synonymous						552	True
+24826	in	cds	frameshift	348	nmd				552	True
+413434	in	exon_edge	synonymous						552	True
+219788	in	cds	frameshift	505	escape:last-exon				552	True
+327175	out	beyond-8							552	True
+327213	out	beyond-8							552	True
+4939091	in	cds	missense	619					1447	True
+3336961	in	cds	frameshift	318	nmd				671	True
+2833268	in	cds	missense	116					671	True
+862645	in	cds	missense	285					824	True
+259796	in	cds	synonymous						510	True
+658070	in	cds	missense	825					931	True
+947079	in	cds	missense	578					931	True
+1723841	in	cds	missense	63					2226	True
+4033986	in	cds	missense	51					889	True
+4939400	in	cds	synonymous						889	True
+2810644	in	cds	missense	96					433	True
+371789	in	splice_region	-			6	False	coding	433	True
+184573	in	cds	synonymous						433	True
+2705197	in	cds	missense	361					433	True
+127698	in	cds	missense	376					433	True
+3236726	out	beyond-8							433	True
+1438148	in	cds	synonymous						213	True
+21065	in	exon_edge	synonymous						236	True
+1098274	in	spans_exon_intron	-			2	False	coding	236	True
+1305363	in	cds	synonymous						236	True
+2969604	in	cds	synonymous						184	True
+498656	in	cds	synonymous						312	True
+4293073	in	cds	frameshift	591	nmd				1096	True
+1904531	in	cds	missense	178					1663	True
+1049578	in	cds	missense	517					1382	True
+2401216	in	cds	missense	358					1382	True
+1556474	in	cds	synonymous						580	True
+1106958	in	cds	synonymous						580	True
+1905175	in	cds	missense	425					580	True
+2158824	in	cds	missense	287					1365	True
+623923	in	cds	missense	1219					1365	True
+2185136	in	cds	stop_gained	337	nmd				593	True
+1637950	out	beyond-8							593	True
+2089693	in	cds	missense	582					593	True
+760688	in	cds	missense	241					282	True
+765714	in	cds	synonymous						1632	True
+889424	in	cds	missense	296					1632	True
+3257824	in	cds	inframe_del	255					353	True
+2699115	in	cds	missense	145					870	True
+2920349	in	exon_edge	synonymous						870	True
+1790391	in	cds	missense	793					870	True
+1755735	in	cds	inframe_ins	229					1647	True
+2973355	in	cds	inframe_ins	233					1647	True
+2749867	in	cds	synonymous						1647	True
+470239	in	cds	synonymous						1647	True
+2870455	in	cds	synonymous						1647	True
+480627	in	cds	missense	1336					1647	True
+2705188	in	cds	inframe_del	1576					1647	True
+2006877	out	beyond-8							1647	True
+250969	in	start	start_lost	1					860	True
+929013	in	cds	missense	32					860	True
+226329	in	cds	inframe_del	218					860	True
+251669	in	cds	missense	370					860	True
+430788	in	cds	inframe_ins	610					860	True
+3537735	in	cds	missense	798					860	True
+2730940	in	cds	synonymous						2047	True
+2072389	in	cds	inframe_del	1194					2047	True
+4014223	in	cds	missense	1074					2047	True
+2185106	in	cds	synonymous						535	True
+2726230	out	beyond-8							1011	True
+1404053	in	cds	frameshift	322	nmd				1011	True
+1489779	in	cds	missense	95					299	True
+2696207	in	cds	synonymous						438	True
+801019	in	cds	inframe_del	184					438	True
+982716	in	cds	frameshift	74	nmd				502	True
+4279723	in	cds	missense	878					1469	True
+9222	in	cds	inframe_del	239					2321	True
+4687927	in	cds	stop_gained	103	nmd				2321	True
+4233191	in	cds	missense	1358					1885	True
+4006113	in	cds	missense	1254					1885	True
+1378451	in	cds	inframe_del	309					492	True
+4850773	in	cds	missense	811					1703	True
+3638704	in	cds	stop_gained	716	nmd				1124	True
+988323	in	cds	inframe_ins	312					358	True
+3976572	in	cds	missense	320					640	True
+1507805	in	cds	missense	398					626	True
+1804798	in	cds	missense	362					2715	True
+2962725	in	cds	missense	848					2715	True
+2094983	in	cds	synonymous						2715	True
+2767632	in	splice_site	-			28	False	coding	2715	True
+3901562	in	cds	missense	2289					2715	True
+5004195	in	cds	frameshift	470	nmd				1241	True
+1101580	in	cds	synonymous						1241	True
+1701034	in	cds	inframe_del	277					1523	True
+3816077	in	cds	missense	1014					1523	True
+133245	in	cds	missense	328					5038	True
+12968	in	cds	missense	403					5038	True
+982438	in	splice_site	-			17	False	coding	5038	True
+2060258	in	cds	synonymous						5038	True
+3072862	in	exon_edge	synonymous						5038	True
+133175	in	exon_edge	missense	2342					5038	True
+133183	in	cds	missense	2355					5038	True
+65979	in	cds	missense	2452					5038	True
+133206	in	cds	missense	2508					5038	True
+840575	in	cds	missense	2542					5038	True
+133240	in	cds	missense	3104					5038	True
+1042465	in	cds	missense	3762					5038	True
+133012	in	cds	missense	3772					5038	True
+1902350	in	cds	synonymous						5038	True
+450482	in	cds	inframe_ins	4314					5038	True
+3382725	in	cds	missense	4556					5038	True
+12979	in	cds	missense	4796					5038	True
+590457	in	cds	inframe_ins	4849					5038	True
+12982	in	cds	missense	4861					5038	True
+12975	in	cds	missense	4898					5038	True
+133098	in	cds	missense	4973					5038	True
+1919631	in	cds	synonymous						353	True
+3257835	in	cds	inframe_ins	77					481	True
+4886113	in	cds	stop_gained	1443	escape:last-exon				1461	True
+329274	in	cds	missense	542					1461	True
+1511845	in	cds	missense	327					445	True
+2571045	in	stop	stop_lost	1014	ext:None				1013	True
+55923	in	cds	stop_gained	183	escape:last-exon				548	True
+2649966	in	cds	missense	762					2517	True
+3492905	in	cds	missense	1699					2517	True
+4942789	in	cds	synonymous						425	True
+4224950	in	cds	missense	376					425	True
+1602962	out	beyond-8							579	True
+3691838	in	cds	synonymous						579	True
+329508	in	cds	missense	616					760	True
+2675035	in	cds	frameshift	603	nmd				760	True
+3276229	in	cds	synonymous						760	True
+2258247	in	cds	missense	396					828	True
+2060640	in	cds	synonymous						919	True
+2714438	in	cds	synonymous						707	True
+3681685	in	cds	synonymous						1336	True
+4685124	in	cds	missense	239					1336	True
+2863480	in	cds	synonymous						1336	True
+3361112	in	cds	frameshift	130	escape:last-exon				175	True
+1077617	in	cds	synonymous						737	True
+382413	in	cds	synonymous						737	True
+2443501	in	cds	inframe_del	1064					2036	True
+3346053	in	cds	frameshift	1179	nmd				2036	True
+208868	in	cds	inframe_ins	1467					2036	True
+1162844	in	cds	missense	311					521	True
+377243	in	cds	missense	244					521	True
+577088	in	cds	missense	88					1107	True
+537057	in	cds	missense	185					1107	True
+2760698	in	cds	synonymous						1107	True
+1753500	in	cds	missense	408					1107	True
+469331	in	cds	synonymous						1107	True
+4630846	in	cds	missense	1314					2161	True
+2372250	in	cds	missense	802					2161	True
+1473742	in	cds	missense	318					589	True
+636190	in	cds	missense	408					499	True
+4278162	in	cds	missense	525					753	True
+703973	in	cds	synonymous						278	True
+636992	in	cds	frameshift	209	escape:last-exon				210	True
+3390266	in	cds	stop_gained	29	nmd:start-proximal				210	True
+1171571	out	beyond-8							210	True
+238685	in	cds	frameshift	470	escape:last-exon				541	True
+1040304	in	cds	missense	325					469	True
+14746	in	cds	missense	32					194	True
+1796634	in	cds	synonymous						1216	True
+4682207	out	beyond-8							1216	True
+31640	in	cds	missense	633					1206	True
+1991196	in	cds	missense	210					570	True
+3230613	in	cds	synonymous						1218	True
+3663873	in	cds	missense	246					1218	True
+708005	in	cds	missense	301					344	True
+445625	out	beyond-8							895	True
+1345314	in	cds	missense	138					457	True
+4843640	in	cds	missense	121					1541	True
+591967	in	cds	frameshift	498	nmd				1541	True
+2838694	in	cds	synonymous						1541	True
+2702525	in	cds	synonymous						853	True
+898842	in	cds	missense	146					853	True
+4449085	in	cds	synonymous						853	True
+1455945	in	cds	frameshift	582	nmd				854	True
+1519709	in	cds	inframe_del	543					862	True
+1003791	in	exon_edge	synonymous						862	True
+1001917	in	cds	missense	189					2442	True
+659887	in	cds	frameshift	492	nmd				626	True
+1957371	in	cds	missense	416					626	True
+1430255	in	exon_edge	synonymous						626	True
+2180771	in	cds	inframe_del	240					626	True
+2100242	in	cds	synonymous						626	True
+1157444	in	cds	synonymous						696	True
+525058	in	cds	synonymous						696	True
+451220	in	cds	missense	76					696	True
+3850454	in	cds	missense	167					262	True
+3383935	out	beyond-8							452	True
+1220810	out	beyond-8							452	True
+435437	in	cds	inframe_del	157					452	True
+3238969	in	splice_site	-			6	False	coding	452	True
+447514	in	cds	synonymous						452	True
+994899	in	cds	missense	420					452	True
+2709658	in	start	start_lost	1					363	True
+64650	in	splice_site	-			11	True	coding	578	True
+3819621	in	cds	missense	449					1234	True
+338746	out	beyond-8							1785	True
+953176	in	cds	missense	661					858	True
+4813524	in	cds	inframe_del	326					858	True
+2010674	in	cds	missense	233					1102	True
+769474	in	cds	synonymous						451	True
+2623466	in	cds	missense	2671					3695	True
+3351655	in	cds	missense	2141					3695	True
+3117527	in	cds	missense	1636					3695	True
+1926029	in	cds	missense	530					3695	True
+2819384	in	cds	missense	8					684	True
+205038	in	cds	missense	576					627	True
+4695253	in	cds	missense	822					872	True
+1458660	in	splice_site	-			6	True	coding	872	True
+2022701	in	cds	inframe_del	173					872	True
+1023279	in	cds	missense	22					872	True
+2883923	out	beyond-8							463	True
+2933797	in	exon_edge	synonymous						1300	True
+2925143	in	splice_region	-			27	False	coding	1300	True
+4825669	in	cds	synonymous						1300	True
+2930414	in	exon_edge	synonymous						1300	True
+2069338	in	cds	missense	1093					1300	True
+4876230	in	cds	inframe_del	78					154	True
+2817285	in	cds	missense	93					154	True
+4533811	in	cds	inframe_ins	723					1147	True
+3158175	in	cds	missense	217					1147	True
+2108796	out	beyond-8							1311	True
+2926059	out	beyond-8							1311	True
+1504166	in	cds	missense	1225					1311	True
+862404	in	cds	missense	1068					1311	True
+999098	in	cds	missense	183					1311	True
+1684584	out	beyond-8							515	True
+2428779	in	cds	missense	114					557	True
+3724357	in	cds	synonymous						2426	True
+2178705	in	cds	inframe_ins	750					2426	True
+2058154	in	cds	inframe_del	834					2426	True
+2184360	in	cds	inframe_del	1270					2426	True
+1806375	in	cds	frameshift	1379	nmd				2426	True
+1291324	in	cds	frameshift	2413	escape:last-exon				2426	True
+1659459	in	cds	synonymous						480	True
+2634012	in	cds	frameshift	346	extension				480	True
+561246	in	cds	missense	178					480	True
+212088	in	cds	synonymous						480	True
+1063856	in	splice_site	-			4	False	coding	480	True
+1439261	in	splice_region	-			4	False	coding	480	True
+1200483	out	beyond-8							480	True
+1096041	in	cds	synonymous						873	True
+2112739	in	cds	synonymous						873	True
+1117320	in	cds	synonymous						873	True
+4714854	in	cds	stop_gained	360	nmd				754	True
+898535	in	cds	synonymous						453	True
+2871965	in	splice_site	-			2	False	start-exon	453	True
+471358	in	cds	synonymous						551	True
+2752999	in	cds	missense	181					551	True
+554230	in	cds	frameshift	126	nmd				551	True
+1051834	in	cds	missense	225					256	True
+4980613	out	beyond-8							1339	True
+2010998	in	cds	missense	98					1339	True
+1434257	in	cds	missense	754					1339	True
+258298	in	cds	missense	838					1028	True
+286003	in	cds	synonymous						1019	True
+844254	in	cds	missense	357					1019	True
+374470	in	cds	synonymous						1019	True
+450506	in	cds	inframe_ins	551					1019	True
+93931	in	cds	synonymous						1019	True
+3636132	in	cds	synonymous						1019	True
+898264	out	beyond-8							1019	True
+2011109	in	cds	missense	1323					1980	True
+2607172	in	cds	missense	272					1980	True
+517931	in	cds	missense	17					3336	True
+2077294	in	cds	frameshift	441	nmd				3336	True
+977838	in	splice_site	-			8	False	coding	3336	True
+2832016	in	cds	synonymous						3336	True
+3356143	in	cds	missense	634					3336	True
+4979726	in	cds	missense	926					3336	True
+5002254	in	cds	synonymous						3336	True
+2317405	in	cds	missense	1381					3336	True
+4981166	in	cds	synonymous						3336	True
+2772287	in	cds	synonymous						3336	True
+5001675	in	cds	missense	2529					3336	True
+2871014	in	cds	synonymous						3336	True
+5000655	in	cds	stop_gained	2666	nmd				3336	True
+2652841	in	cds	synonymous						511	True
+900072	out	beyond-8							305	True
+3587787	in	cds	missense	469					600	True
+2231852	in	exon_edge	missense	274					311	True
+2845425	in	cds	synonymous						840	True
+1772381	in	cds	frameshift	476	nmd				840	True
+2171127	in	cds	synonymous						840	True
+1775121	in	cds	synonymous						840	True
+2862744	in	cds	missense	305					385	True
+4778056	in	cds	synonymous						2567	True
+2871495	in	cds	synonymous						708	True
+4947282	out	beyond-8							708	True
+4975725	in	cds	missense	475					1320	True
+229861	in	exon_edge	missense	304					543	True
+4114285	in	cds	missense	768					949	True
+1937632	in	cds	inframe_del	737					1020	True
+1788128	in	cds	frameshift	745	escape:last-exon				1020	True
+1525733	in	cds	missense	837					1020	True
+2138431	in	splice_site	-			8	True	coding	595	True
+412217	in	cds	missense	340					595	True
+412212	in	cds	missense	466					595	True
+3404995	in	cds	missense	467					595	True
+3626369	in	exon_edge	inframe_ins	483					595	True
+2073048	out	beyond-8							595	True
+561064	in	stop	stop_lost	596	ext:45				595	True
+1015224	in	cds	missense	126					427	True
+3805193	in	cds	missense	409					427	True
+1533414	in	cds	missense	647					1032	True
+4992170	in	cds	missense	325					1032	True
+1141227	in	cds	synonymous						1603	True
+197663	in	cds	synonymous						211	True
+844402	in	cds	missense	320					756	True
+1100743	in	cds	synonymous						756	True
+3004273	in	cds	synonymous						288	True
+2954692	in	cds	missense	403					447	True
+634950	in	cds	synonymous						398	True
+6081	in	cds	inframe_del	388					398	True
+178424	in	cds	missense	1939					1960	True
+2142338	in	cds	missense	1773					1960	True
+2904341	in	cds	synonymous						1960	True
+1233289	out	beyond-8							1960	True
+2495418	in	cds	missense	646					897	True
+4947751	in	cds	frameshift	297	nmd				802	True
+2798072	in	cds	synonymous						192	True
+2874807	in	cds	synonymous						806	True
+4458899	out	beyond-8							1833	True
+4458910	in	exon_edge	missense	337					484	True
+2788762	in	cds	missense	2044					2414	True
+1485495	in	cds	missense	283					780	True
+2991660	in	cds	missense	716					780	True
+1303646	in	exon_edge	missense	254					411	True
+3676622	in	cds	missense	1815					1960	True
+2816847	in	cds	missense	1573					1960	True
+990759	in	cds	missense	404					421	True
+2892770	out	beyond-8							377	True
+2859959	in	cds	missense	1589					1819	True
+861233	in	cds	missense	785					1819	True
+1519870	in	cds	missense	578					1819	True
+838817	in	cds	missense	185					1819	True
+1532191	in	cds	synonymous						1819	True
+4070716	in	cds	missense	326					482	True
+282932	in	cds	missense	466					509	True
+2831980	in	cds	synonymous						509	True
+1288825	out	beyond-8							589	True
+4486448	in	cds	missense	413					589	True
+2737073	in	cds	missense	391					589	True
+1723854	in	cds	missense	155					589	True
+409642	in	cds	missense	105					760	True
+4879770	in	splice_site	-			16	True	coding	1762	True
+591622	out	beyond-8							859	True
+4481413	in	splice_site	-			4	True	coding	160	True
+2445599	in	cds	frameshift	38	nmd				1651	True
+4119687	in	cds	missense	1204					1651	True
+4482640	in	start	start_lost	1					960	True
+156087	in	splice_site	-			7	True	coding	960	True
+143812	out	beyond-8							224	True
+4482787	out	beyond-8							224	True
+930627	out	beyond-8							224	True
+4976892	in	cds	frameshift	5	nmd				224	True
+4070502	in	cds	inframe_del	161					390	True
+4484241	in	cds	synonymous						740	True
+944842	in	exon_edge	synonymous						749	True
+2065761	in	splice_site	-			11	True	coding	749	True
+1459874	in	cds	stop_gained	530	nmd				749	True
+4485553	in	exon_edge	missense	160					472	True
+4485679	in	cds	missense	127					805	True
+2171752	in	cds	missense	145					406	True
+1190909	in	cds	missense	458					562	True
+210331	in	cds	inframe_ins	155					562	True
+2050777	in	cds	inframe_del	102					562	True
+4486706	in	exon_edge	missense	26					559	True
+284461	in	cds	stop_gained	3354	nmd				3685	True
+4487042	in	cds	missense	3146					3685	True
+1275601	out	beyond-8							3685	True
+1989994	in	cds	missense	2540					3685	True
+4685658	in	cds	inframe_del	2281					3685	True
+1490594	in	cds	missense	1565					3685	True
+1154526	in	cds	synonymous						3685	True
+1685737	in	cds	frameshift	1324	nmd				3685	True
+526053	in	cds	missense	922					3685	True
+2145701	in	cds	missense	832					3685	True
+409942	in	cds	stop_gained	693	nmd				3685	True
+618597	in	cds	stop_gained	546	nmd				3685	True
+98764	out	beyond-8							1152	True
+3900756	in	stop	stop_lost	1153	ext:38				1152	True
+1981435	in	cds	inframe_del	1049					1152	True
+1204380	in	cds	inframe_del	1037					1152	True
+1919122	in	cds	inframe_del	1007					1152	True
+1695290	in	cds	inframe_del	993					1152	True
+1575633	in	cds	inframe_ins	981					1152	True
+3028592	in	cds	synonymous						1152	True
+803970	in	cds	missense	250					1152	True
+2099210	in	cds	stop_gained	184	nmd				1152	True
+4949839	in	cds	frameshift	176	nmd				1152	True
+4072388	in	cds	stop_gained	64	nmd				1152	True
+1105631	in	splice_region	-			3	False	coding	354	True
+97248	in	cds	missense	188					354	True
+4525897	in	cds	missense	188					354	True
+4073617	in	cds	frameshift	1382	nmd				1755	True
+4534865	in	cds	missense	162					1755	True
+1710892	in	cds	missense	888					2554	True
+1699125	in	stop	stop_lost	2555	ext:5				2554	True
+4755484	in	cds	missense	528					662	True
+2504187	in	cds	missense	816					926	True
+3019930	in	cds	missense	512					926	True
+2577632	in	cds	missense	546					1453	True
+4851710	in	cds	missense	802					1453	True
+4489938	in	exon_edge	missense	1345					1453	True
+1556722	in	cds	synonymous						705	True
+4748244	in	cds	synonymous						329	True
+3690334	in	cds	synonymous						230	True
+1074601	in	splice_site	-			11	False	coding	502	True
+1093294	in	cds	missense	8					360	True
+620005	in	start	start_lost	1					360	True
+769231	in	cds	synonymous						1966	True
+647073	in	cds	missense	347					431	True
+579097	in	start	start_lost	1					1560	True
+4773694	in	cds	synonymous						1488	True
+3702320	in	cds	synonymous						1233	True
+180197	in	cds	inframe_del	268					1233	True
+4747924	in	cds	synonymous						1233	True
+2182109	in	cds	synonymous						4374	True
+1702580	in	cds	missense	71					4374	True
+4493593	in	stop	stop_lost	1025	ext:34				1024	True
+436310	in	cds	missense	782					1024	True
+1308073	in	cds	missense	257					606	True
+214092	out	beyond-8							587	True
+2722986	in	cds	missense	58					523	True
+4711692	in	cds	missense	371					1135	True
+3043532	in	cds	inframe_del	57					920	True
+3047828	in	cds	inframe_del	58					920	True
+1556388	in	cds	inframe_del	58					920	True
+1403739	in	cds	inframe_ins	58					920	True
+1076800	in	cds	stop_gained	355	nmd				920	True
+1167648	in	cds	inframe_del	457					920	True
+4626677	in	splice_site	-			19	False	coding	802	True
+727174	in	cds	synonymous						802	True
+419664	in	cds	missense	182					369	True
+2804389	in	cds	synonymous						2177	True
+4951394	in	cds	synonymous						2177	True
+2838986	in	cds	missense	1551					2177	True
+4527633	in	cds	missense	1949					2177	True
+3634972	in	cds	missense	2004					2177	True
+445536	in	cds	inframe_ins	2102					2177	True
+380606	out	beyond-8							283	True
+637196	in	cds	frameshift	37	escape:last-exon				283	True
+423372	in	cds	inframe_ins	176					283	True
+637163	in	cds	frameshift	210	escape:last-exon				283	True
+1485289	in	cds	missense	1387					1516	True
+1050098	in	cds	missense	628					1516	True
+1573736	in	cds	missense	795					2492	True
+2428036	in	cds	missense	793					2492	True
+1018147	out	beyond-8							335	True
+1726836	in	cds	stop_gained	138	nmd				1500	True
+11786	in	splice_site	-			6	False	coding	1500	True
+2571504	in	splice_site	-			8	False	coding	1500	True
+1133260	in	splice_region	-			10	True	coding	1500	True
+11788	in	cds	missense	1019					1500	True
+913158	in	cds	synonymous						1802	True
+3601654	in	cds	stop_gained	114	escape:single-exon				361	True
+4499699	in	cds	missense	60					807	True
+4951962	in	cds	missense	617					1148	True
+1968879	in	cds	synonymous						1148	True
+3620324	in	cds	synonymous						1148	True
+858791	in	splice_region	-			16	False	coding	659	True
+4813411	in	cds	missense	160					449	True
+942389	in	cds	missense	170					318	True
+988118	in	cds	missense	509					1691	True
+1516172	in	cds	missense	769					1691	True
+1154639	in	cds	synonymous						1691	True
+3894584	in	cds	stop_gained	1475	nmd				1691	True
+4952378	in	cds	missense	32					670	True
+1304492	in	cds	missense	185					544	True
+210836	in	cds	missense	286					366	True
+509860	in	cds	synonymous						1137	True
+385290	out	beyond-8							1137	True
+2184734	in	cds	missense	314					1137	True
+3681555	out	beyond-8							1137	True
+4464817	in	cds	missense	649					1137	True
+1139351	in	cds	inframe_ins	932					1137	True
+238294	in	cds	inframe_del	933					1137	True
+431802	in	cds	missense	1091					1137	True
+2699062	in	cds	missense	64					483	True
+2193098	in	cds	missense	194					410	True
+2661329	in	cds	synonymous						410	True
+1174497	in	start	start_lost	1					410	True
+1475318	in	cds	missense	55					895	True
+4799701	in	cds	synonymous						894	True
+4468226	in	splice_site	-			35	False	coding	1593	True
+4469884	in	cds	missense	539					901	True
+2857044	in	cds	synonymous						364	True
+4470741	in	cds	missense	453					613	True
+162484	in	cds	missense	440					613	True
+988290	in	cds	frameshift	443	nmd				580	True
+198600	in	cds	missense	230					365	True
+10036	in	cds	missense	74					218	True
+2504467	in	cds	missense	656					679	True
+804089	in	cds	missense	37					461	True
+4475205	in	exon_edge	missense	362					1311	True
+1328033	in	cds	synonymous						1311	True
+3256087	in	cds	frameshift	528	escape:last-exon				550	True
+2791647	in	cds	synonymous						603	True
+716183	in	cds	synonymous						603	True
+2583097	in	splice_site	-			6	False	coding	635	True
+4477015	in	cds	missense	440					635	True
+3066424	in	cds	missense	552					635	True
+420900	in	cds	inframe_del	75					745	True
+656053	in	cds	inframe_ins	78					745	True
+1050613	in	cds	missense	230					745	True
+1299210	in	cds	frameshift	278	nmd				745	True
+3052289	in	cds	frameshift	387	nmd				745	True
+11294	in	splice_site	-			7	False	coding	745	True
+4851383	in	splice_region	-			3	True	coding	1257	True
+3047519	in	splice_site	-			13	False	coding	2035	True
+4286445	in	exon_edge	inframe_del	712					2035	True
+156614	in	cds	inframe_del	380					498	True
+1240746	in	cds	synonymous						498	True
+143317	in	cds	missense	366					498	True
+3066399	in	cds	missense	191					498	True
+156661	in	start	start_lost	1					498	True
+3603133	in	cds	missense	1692					2647	True
+2947584	in	cds	missense	1510					2647	True
+387435	in	cds	missense	602					2647	True
+29990	in	cds	missense	206					214	True
+2506891	in	cds	stop_gained	166	nmd				292	True
+1928480	in	cds	missense	385					470	True
+5020888	in	cds	missense	358					515	True
+1722665	in	cds	inframe_del	334					515	True
+11450	in	stop	stop_lost	420	ext:27				419	True
+2978099	in	cds	synonymous						514	True
+5004672	in	cds	missense	1783					2351	True
+1172825	in	cds	missense	1716					2351	True

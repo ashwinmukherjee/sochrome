@@ -1,0 +1,24 @@
+{
+  "clinvar_id": "VCV000632611",
+  "variation_id": "632611",
+  "hgvs_c": "c.4185+4105C>T",
+  "hgvs_full": "NM_007294.4(BRCA1):c.4185+4105C>T",
+  "gene": "BRCA1",
+  "uniprot": "P38398",
+  "mane_transcript": "NM_007294.4",
+  "clinvar_classification": "Conflicting classifications of pathogenicity",
+  "review_status": "criteria provided, conflicting classifications",
+  "review_stars": 1,
+  "last_evaluated": "2025/08/17 00:00",
+  "submissions": 7,
+  "variant_type": "single nucleotide variant",
+  "canonical_spdi": "NC_000017.11:43086838:G:A",
+  "grch38": {
+    "chr": "17",
+    "start": 43086839,
+    "stop": 43086839,
+    "cytogenetic": "17q21.31"
+  },
+  "selection_note": "transcript--deep-intronic, NAMED by the brief. ONE STAR (criteria provided, conflicting classifications) and it ships anyway, because the brief names it rather than asking for it to be selected. Its RNA evidence is nonetheless quantitative and is what the cell draws: 'creates a cryptic donor site that results in the addition of 114 nucleotides and a premature termination codon' (Ambry; Montalban G et al. J Med Genet 2019 56:63-74, PMID 30472649).",
+  "source": "NCBI ClinVar esummary, fetched by tools/fetch-variants.py"
+}

@@ -1,0 +1,1580 @@
+[
+ {
+  "id": "L1",
+  "section": "Landing",
+  "decision": "The explanation stands in the apparatus between the tally's walls, first sentence on the question line",
+  "value": "top = `--rail-top` − 14 px; sans `--t-2` 13/18, `--ink-dim`, 16 apart",
+  "owner": "B",
+  "proof": null
+ },
+ {
+  "id": "L2",
+  "section": "Landing",
+  "decision": "The four lines, in order: what it does; the scope line; known/not known; stays on this computer",
+  "value": "\"This tool reads your genome and finds the few variants that could affect you.\" / \"It checks 2,132 genes known to be linked to a condition.\" / \"For each one, it shows what is known about it, and what is not.\" / \"Your genome stays on this computer. Nothing is sent anywhere.\"",
+  "owner": "B",
+  "proof": null,
+  "amended": "The last line is the accepted privacy line (\"Your genome is read on this device, and nothing about it is sent anywhere.\"), and the not-a-test line is added after the third."
+ },
+ {
+  "id": "L3",
+  "section": "Landing",
+  "decision": "The scope line's count is the link to the genes page, underlined",
+  "value": "underline 1 px `--ink-faint`, offset 3 px; hover underline `--ink`; text `--ink`",
+  "owner": "B",
+  "proof": null,
+  "amended": "2026-11-19: no underline; the count in `--ink` against the sentence's `--ink-dim`, underlined on keyboard focus only; pointed at, it lays the genes checked over the empty ledger in the neutral ink"
+ },
+ {
+  "id": "L4",
+  "section": "Landing",
+  "decision": "The actions: one line centred in the specimen, caption token; actions `--ink`, \"or\" `--ink-axis`, hover `--ink-bar`",
+  "value": "colour 120 ms",
+  "owner": "B",
+  "proof": null,
+  "amended": "2026-11-19: the actions stand in the apparatus as two rows 32 under the explanation, at every size; the specimen holds the empty ledger"
+ },
+ {
+  "id": "L5",
+  "section": "Landing",
+  "decision": "Phone landing: the actions as two rows under the explanation, no \"or\"; explanation runs to the wall",
+  "value": "rows 16 apart, 32 below the explanation; right edge `--wall` 20",
+  "owner": "B",
+  "proof": null,
+  "amended": "2026-11-19: every size as the phone (L4); the column's foot holds CREDITS, or BACK from the question"
+ },
+ {
+  "id": "L6",
+  "section": "Landing",
+  "decision": "The picker accepts .vcf and .vcf.gz (and bare .gz)",
+  "value": "`accept=\".vcf,.vcf.gz,.gz\"`",
+  "owner": "B",
+  "proof": null
+ },
+ {
+  "id": "L7",
+  "section": "Landing",
+  "decision": "Opt-in before the read: LOAD YOUR GENOME first asks once, in the actions' place and setting; explanation stays; VIEW A SAMPLE skips it; leaving out drops the genes before the read so every count stays true",
+  "value": "\"{n} of the genes are linked to {cancer}, {heart}, or {brain}.\" / \"Some people would rather not know about these.\" / INCLUDE THEM or LEAVE THEM OUT; desktop block max-width 360, left-aligned, 16 gaps",
+  "owner": "B",
+  "proof": null,
+  "amended": "2026-11-19: the question stands in the explanation's place, its answers under it; BACK at the column's foot returns"
+ },
+ {
+  "id": "L8",
+  "section": "Landing",
+  "decision": "Refusals in the actions' place: two sentences in the explanation's setting, then CHOOSE ANOTHER FILE OR VIEW A SAMPLE (phone: two rows)",
+  "value": "layout",
+  "owner": "B",
+  "proof": null,
+  "amended": "2026-11-19: a refusal stands in the explanation's place, its two ways under it as two rows"
+ },
+ {
+  "id": "L9",
+  "section": "Landing",
+  "decision": "Refusal wording (SPEC points at bench.ts for it)",
+  "value": "chip: \"This is raw data from a chip-based test, like 23andMe's.\" / \"A chip reads a few hundred thousand set places, not a whole genome, so {name} can't read it.\" · raw: \"This file holds sequencing reads, before the variants in them have been found.\" / \"{name} reads the VCF file made from them. Most providers offer one to download.\" · grch37: \"This file is mapped to an older version of the reference genome, GRCh37.\" / \"{name} reads files mapped to the current one, GRCh38. Some providers offer both.\" · no-build: \"This file doesn't say which version of the reference genome it's mapped to.\" / \"{name} reads files mapped to GRCh38, and can't check this one.\" · multi: \"This file holds more than one person's genome.\" / \"{name} reads one person at a time. A file with only yours will work.\" · no-sample: \"This file lists variants, but not anyone's genome.\" / \"{name} needs a VCF file of one person's genome.\" · unreadable: \"{name} can't read this file.\" / \"It reads VCF files from whole-genome sequencing, ending in .vcf or .vcf.gz.\" · broken: \"{name} stopped partway through this file, which looks damaged or cut short.\" / \"Nothing from it was kept. Downloading it again usually fixes this.\"",
+  "owner": "B",
+  "proof": null,
+  "amended": "The refusals name the product from the brand constant, never a written name."
+ },
+ {
+  "id": "L10",
+  "section": "Landing",
+  "decision": "Actions ⇄ question ⇄ refusal swap with the actions' own fade",
+  "value": "300 ms out, swap, 300 ms in",
+  "owner": "B",
+  "proof": null
+ },
+ {
+  "id": "L11",
+  "section": "Landing",
+  "decision": "Esc on the question or a refusal returns to the two actions; closing the picker with no file does too",
+  "value": "keydown Escape; picker `cancel`",
+  "owner": "B",
+  "proof": null
+ },
+ {
+  "id": "L12",
+  "section": "Landing",
+  "decision": "No tally, no Next, no arrow keys on the landing; its only way on is its action",
+  "value": "—",
+  "owner": "B",
+  "proof": null
+ },
+ {
+  "id": "L13",
+  "section": "Landing",
+  "decision": "Captions, ledger and tally are hidden on the landing (the tally's first count would read 0)",
+  "value": "opacity 0",
+  "owner": "B",
+  "proof": null,
+  "amended": "2026-11-19: the ledger stands on the landing, empty: YOUR GENOME, every row an outline, a row named on hover with no count; the tally stays hidden; a row pointed at reads \"not read yet\" where its count will stand; the sex row's pair settles from XX/XY once the read knows it (XY: XX/ fades; XX: XX/ fades, the Y turns to X; X: both fade)"
+ },
+ {
+  "id": "L14",
+  "section": "Landing",
+  "decision": "The arrival in three beats: release (explanation and actions fade together), ground (both captions, unread ledger, a grey 0 arrive at once and stand), read (bars fill and count runs, the 0 stepping to `--ink`)",
+  "value": "400 ms, 1200 ms, then the read; the 0 at `--ink-dim` during ground",
+  "owner": "B",
+  "proof": null,
+  "amended": "2026-11-19: release fades the landing's column; the ledger is already standing, so ground brings the tally's caption and the read fills the outlined rows"
+ },
+ {
+  "id": "L15",
+  "section": "Landing",
+  "decision": "YOUR GENOME's parentheses name the genome; a name change fades out and in",
+  "value": "\" (HG002)\" uppercase, nbsp before; 600 ms",
+  "owner": "B",
+  "proof": null
+ },
+ {
+  "id": "L16",
+  "section": "Landing",
+  "decision": "A file that breaks mid-read stops the fill where it broke, holds, returns to the landing with the \"broken\" refusal; nothing kept",
+  "value": "hold 1400 ms",
+  "owner": "B",
+  "proof": null
+ },
+ {
+  "id": "L17",
+  "section": "Landing",
+  "decision": "Slow reference data: the count and caption stand, NEXT's corner reads REFERENCE DATA n% in NEXT's setting until NEXT can take it; the download starts on the landing",
+  "value": "tabular numerals; NEXT hidden meanwhile",
+  "owner": "B",
+  "proof": null,
+  "amended": "The reference download starts when LOAD YOUR GENOME is chosen, not on the landing (the privacy rule)."
+ },
+ {
+  "id": "D1",
+  "section": "Descent and tally",
+  "decision": "States named for this flow",
+  "value": "landing, loading, all, coding, protein, rare, yours, list",
+  "owner": "B",
+  "proof": null
+ },
+ {
+  "id": "D2",
+  "section": "Descent and tally",
+  "decision": "One tally group per cut: the count alone, flush on the list's text edge, in the list row's setting; a plain-words caption under it",
+  "value": "count mono 13/17, 0.02em, tabular; caption sans 13/18",
+  "owner": "B",
+  "proof": null
+ },
+ {
+  "id": "D3",
+  "section": "Descent and tally",
+  "decision": "Proximity carries the association",
+  "value": "8 count→caption, 32 between cuts",
+  "owner": "B",
+  "proof": null
+ },
+ {
+  "id": "D4",
+  "section": "Descent and tally",
+  "decision": "Number and caption part by value only",
+  "value": "current: `--ink` / `--ink-dim`; earlier: `--ink-dim` / `--ink-axis`",
+  "owner": "B",
+  "proof": null,
+  "amended": "2026-11-21: current: count `--ink`, caption `--ink-axis`; earlier: both `--ink-dim`. Since the 19 Nov contrast change axis is the darker grey, so the line being read takes it and the passed ones step back to dim."
+ },
+ {
+  "id": "D5",
+  "section": "Descent and tally",
+  "decision": "Arriving, the caption fades in a beat after its number; leaving, both at once",
+  "value": "600 ms delay, 1200 ms fade",
+  "owner": "B",
+  "proof": null
+ },
+ {
+  "id": "D6",
+  "section": "Descent and tally",
+  "decision": "The first count's caption waits until the count has landed, not while it runs",
+  "value": "delay 0 while counting, then 600",
+  "owner": "B",
+  "proof": null
+ },
+ {
+  "id": "D7",
+  "section": "Descent and tally",
+  "decision": "Cuts not yet reached hold their slots unseen (nothing reflows)",
+  "value": "opacity 0",
+  "owner": "B",
+  "proof": null
+ },
+ {
+  "id": "D8",
+  "section": "Descent and tally",
+  "decision": "Tally captions, written from the sample's own counts (coding marked TEMPORARY)",
+  "value": "all: \"Places where your genome differs from the reference genome.\" · coding: \"{share} of them fall in the parts of your genome that spell out a protein. The marks show where they are.\" · protein: \"{share} of those change the protein. The rest leave it as it was.\" · rare: \"Carried by fewer than 1 in 500 people. Each mark is now one variant, worth a closer look.\" · yours: \"In genes where a single altered copy can be enough to cause a condition. The other {n} are carriers: in genes where a condition takes two altered copies.\"",
+  "owner": "B",
+  "proof": null
+ },
+ {
+  "id": "D9",
+  "section": "Descent and tally",
+  "decision": "Shares in words",
+  "value": "<0.1% \"Under 0.1%\"; <1% \"Under 1%\"; 40-60% \"About half\"; else \"About N%\"",
+  "owner": "B",
+  "proof": null
+ },
+ {
+  "id": "D10",
+  "section": "Descent and tally",
+  "decision": "Rare with none rare reads differently",
+  "value": "\"None of those is rare: each is carried by more than 1 in 500 people.\"",
+  "owner": "B",
+  "proof": null
+ },
+ {
+  "id": "D11",
+  "section": "Descent and tally",
+  "decision": "Rare is the first cut where a mark is one variant (the survivors widen to say so); before it marks are density",
+  "value": "—",
+  "owner": "B",
+  "proof": null
+ },
+ {
+  "id": "D12",
+  "section": "Descent and tally",
+  "decision": "The count shown at rare is after gene validity (cut 5)",
+  "value": "`counts.validity`",
+  "owner": "B",
+  "proof": null
+ },
+ {
+  "id": "D13",
+  "section": "Descent and tally",
+  "decision": "Nothing rare: the last cut is stepped over by Next, ← and play, and Next reads EXPLORE at rare",
+  "value": "`skipSplit`",
+  "owner": "B",
+  "proof": null
+ },
+ {
+  "id": "D14",
+  "section": "Descent and tally",
+  "decision": "The tally spans the apparatus between two walls: the list's text edge and the same inset from the right edge",
+  "value": "—",
+  "owner": "B",
+  "proof": null
+ },
+ {
+  "id": "D15",
+  "section": "Descent and tally",
+  "decision": "No `text-wrap: pretty` on tally captions or the explanation (Safari breaks every line early)",
+  "value": "plain wrapping",
+  "owner": "B",
+  "proof": null
+ },
+ {
+  "id": "D16",
+  "section": "Descent and tally",
+  "decision": "Next: bottom right of the apparatus, NEXT VARIANT's setting, from all until the list; first arrival waits for the first caption; EXPLORE on the last cut, crossfading",
+  "value": "box bottom `--sp-5` 48; height `--lane-label-box` 15; delay 1800 ms",
+  "owner": "B",
+  "proof": null,
+  "amended": "2026-11-21: on a phone NEXT stands alone at the screen's foot under the ledger; no BACK on any screen."
+ },
+ {
+  "id": "D17",
+  "section": "Descent and tally",
+  "decision": "Next on first sight stands at `--ink` with its arrow nudging; once used, the caption token's `--ink-axis` and still",
+  "value": "nudge 3 px, opacity .55↔1, 1.7 s ease-in-out",
+  "owner": "B",
+  "proof": null
+ },
+ {
+  "id": "D18",
+  "section": "Descent and tally",
+  "decision": "The arrow stays on NEXT → and EXPLORE →, inline after the word, its right edge on the wall",
+  "value": "gap 0.4em",
+  "owner": "B",
+  "proof": null
+ },
+ {
+  "id": "D19",
+  "section": "Descent and tally",
+  "decision": "← and → keys step the descent (not while typing in a field)",
+  "value": "ArrowLeft / ArrowRight",
+  "owner": "B",
+  "proof": null
+ },
+ {
+  "id": "D20",
+  "section": "Descent and tally",
+  "decision": "Arriving at the list always opens on YOUR VARIANTS; CARRIERS is a choice made there",
+  "value": "—",
+  "owner": "B",
+  "proof": null
+ },
+ {
+  "id": "D21",
+  "section": "Descent and tally",
+  "decision": "Loading under reduced motion: no wipe; each bar turns solid when its chromosome is done",
+  "value": "—",
+  "owner": "B",
+  "proof": null
+ },
+ {
+  "id": "D22",
+  "section": "Descent and tally",
+  "decision": "File order: autosomes, then X for XX and XY alike; Y never drawn",
+  "value": "`fileChroms`",
+  "owner": "B",
+  "proof": null
+ },
+ {
+  "id": "D23",
+  "section": "Descent and tally",
+  "decision": "Every cut's caption and count are true for any genome (computed, never authored per sample)",
+  "value": "—",
+  "owner": "B",
+  "proof": null
+ },
+ {
+  "id": "G1",
+  "section": "Ledger",
+  "decision": "The ledger fills the frame; pitch from the window",
+  "value": "(height − 2·inset)/22, clamp 23-36",
+  "owner": "B",
+  "proof": null
+ },
+ {
+  "id": "G2",
+  "section": "Ledger",
+  "decision": "Track geometry from the pitch",
+  "value": "bar = clamp(6, round(0.3·pitch), 11); grow = max(2, round(bar·0.25)); 16 air above row 1; tracks start 96, numbers' right edge 80",
+  "owner": "B",
+  "proof": null
+ },
+ {
+  "id": "G3",
+  "section": "Ledger",
+  "decision": "One scale for every row (the longest chromosome), so bars keep true proportion; ticks 1 px at round(pos·k), kept inside the bar",
+  "value": "—",
+  "owner": "B",
+  "proof": null
+ },
+ {
+  "id": "G4",
+  "section": "Ledger",
+  "decision": "Survivors paint over the fallen (marks ordered by level)",
+  "value": "—",
+  "owner": "B",
+  "proof": null
+ },
+ {
+  "id": "G5",
+  "section": "Ledger",
+  "decision": "The bar's grey is the block-fill rung, the same as pending: before the read and after the cuts the bar is one grey",
+  "value": "`--v-unknown` (13.7 L* off ground light, 17.1 dark)",
+  "owner": "B",
+  "proof": null
+ },
+ {
+  "id": "G6",
+  "section": "Ledger",
+  "decision": "The ledger's motion",
+  "value": "ease `cubic-bezier(0.45, 0, 0.15, 1)`; fade 1200, move 1400, beat 600",
+  "owner": "B",
+  "proof": null
+ },
+ {
+  "id": "G7",
+  "section": "Ledger",
+  "decision": "The fallen tint goes on the base under the marks, never on the ink layer over them",
+  "value": "—",
+  "owner": "B",
+  "proof": null
+ },
+ {
+  "id": "G8",
+  "section": "Ledger",
+  "decision": "Rare: survivors 3 px wide, reaching `--e` past the bar; the widening waits for the fade",
+  "value": "`--tw` = 1200",
+  "owner": "B",
+  "proof": null
+ },
+ {
+  "id": "G9",
+  "section": "Ledger",
+  "decision": "The last cut: carriers fall like every cut's fallen, to ground and back to 1 px; no third style (standing or fallen)",
+  "value": "—",
+  "owner": "B",
+  "proof": null
+ },
+ {
+  "id": "G10",
+  "section": "Ledger",
+  "decision": "Swapping lists swaps standing ticks at once, without the widening",
+  "value": "`.instant` for two frames",
+  "owner": "B",
+  "proof": null
+ },
+ {
+  "id": "G11",
+  "section": "Ledger",
+  "decision": "Linked highlighting on the ledger: the row in focus stays, every other row (bar, ticks, number) steps back",
+  "value": "others opacity 0.4, 150 ms",
+  "owner": "B",
+  "proof": null
+ },
+ {
+  "id": "G12",
+  "section": "Ledger",
+  "decision": "A lit variant's tick grows taller; only a single variant grows, never a chromosome's set (size marks the one, value marks a set); other listed ticks step back to `--mid`, not to ground",
+  "value": "reach `--e2` = round(grow·2.5); `--mid` = `--v-uncertain`",
+  "owner": "B",
+  "proof": null
+ },
+ {
+  "id": "G13",
+  "section": "Ledger",
+  "decision": "In the list state ticks answer at hover speed; the cuts keep their own durations",
+  "value": "150 ms",
+  "owner": "B",
+  "proof": null
+ },
+ {
+  "id": "G14",
+  "section": "Ledger",
+  "decision": "The rows' key on hover: \"Chromosome\" left of the number, \"{n} variant(s)\" right of the bar at the same gap; the number steps to `--ink`; the count sums to the tally",
+  "value": "`--t-1` mono, `--ink`, tabular; 150 ms; sex row \"Chromosomes\", count X+Y",
+  "owner": "B",
+  "proof": null,
+  "amended": "2026-11-21: on a phone nothing names a row (no numbers); the rows' key is the desktop's."
+ },
+ {
+  "id": "G15",
+  "section": "Ledger",
+  "decision": "The rows' key is live from all on, never during the read; pointing at a variant names its chromosome only; in the list a chromosome also lights its variants",
+  "value": "—",
+  "owner": "B",
+  "proof": null
+ },
+ {
+  "id": "G16",
+  "section": "Ledger",
+  "decision": "A row's hover band",
+  "value": "the pitch around its bar, from the numbers' left − 4 to the bar's end + 48",
+  "owner": "B",
+  "proof": null
+ },
+ {
+  "id": "G17",
+  "section": "Ledger",
+  "decision": "Tick hit areas: either side of the mark, 3× its height, live only when the ticks are a menu (the list)",
+  "value": "`HIT` 6 px",
+  "owner": "B",
+  "proof": null
+ },
+ {
+  "id": "G18",
+  "section": "Ledger",
+  "decision": "Coincident marks draw as one: same level, within 1 px of their run's first, take its column",
+  "value": "—",
+  "owner": "B",
+  "proof": null
+ },
+ {
+  "id": "G19",
+  "section": "Ledger",
+  "decision": "One mark, one group; clicking the mark opens the group's first",
+  "value": "—",
+  "owner": "B",
+  "proof": null
+ },
+ {
+  "id": "G20",
+  "section": "Ledger",
+  "decision": "Hovering a tick brings its row into the clear (least scroll); the current row stays in view",
+  "value": "smooth unless reduced motion",
+  "owner": "B",
+  "proof": null
+ },
+ {
+  "id": "G21",
+  "section": "Ledger",
+  "decision": "Loading's head has a hard edge",
+  "value": "—",
+  "owner": "B",
+  "proof": null
+ },
+ {
+  "id": "G22",
+  "section": "Ledger",
+  "decision": "Motion off or reduced: every state is a static end state",
+  "value": "transitions none",
+  "owner": "B",
+  "proof": null
+ },
+ {
+  "id": "G23",
+  "section": "Ledger",
+  "decision": "A resize rebuilds the ledger in its current state without motion",
+  "value": "debounce 120 ms",
+  "owner": "B",
+  "proof": null
+ },
+ {
+  "id": "G24",
+  "section": "Ledger",
+  "decision": "The footnote: \"2,132 genes checked\", a row's air under the last row on the tracks' start, the annotation register; no underline (nothing else uses one for a control)",
+  "value": "`--t-1` mono 16 line, `--ink-dim`, hover `--ink` 150 ms; top = last row's bottom + pitch",
+  "owner": "B",
+  "proof": null,
+  "amended": "2026-11-22: no footnote on any screen. The descent's second cut names the count in its line, and that count is the way to the genes page everywhere, as the landing's is; pointing at it lays the genes over the ledger. Before: 2026-11-21, the footnote under the ledger on desktop, its hover laying the genes over it."
+ },
+ {
+  "id": "G25",
+  "section": "Ledger",
+  "decision": "The footnote's hover lays the genes over your genome as one layer",
+  "value": "in 150 ms, out 1200 ms; each gene tick at 0.45",
+  "owner": "B",
+  "proof": null,
+  "amended": "2026-11-22: the layer is laid by pointing at the genes count in the descent's line, as on the landing, the footnote gone. Before: 2026-11-19, out as quick as in, 150 ms."
+ },
+ {
+  "id": "G26",
+  "section": "Ledger",
+  "decision": "The sex row: one bar at X's true length for XX and XY, the label standing from the start; \"none\" turns to an outline with a note once the autosomes are read",
+  "value": "outline 1 px `--ink-faint`; \"x and y not in this file.\"",
+  "owner": "B",
+  "proof": null,
+  "amended": "Reversed 2026-11-19: the 23rd row names the sex-chromosome pair, as each bar is one of a pair: XX, XY (one X and Y records), X (one X, no Y), from the file; a sample's donor's pair; XX/XY when a person's file has no X. Its hover key is \"Chromosomes\" (\"Chromosome\" for X alone; 2026-11-19, was \"Sex chromosomes\"). With no X in the file the bar is an outline and \"not in this file\" shows on hover only; no standing note. Supersedes BACKLOG:58-59's \"never displayed\" for the ledger."
+ },
+ {
+  "id": "G27",
+  "section": "Ledger",
+  "decision": "YOUR GENOME: caption token on the `--rail-top` strut, left edge on the tracks' start; gone in a room",
+  "value": "fade 1200",
+  "owner": "B",
+  "proof": null,
+  "amended": "2026-11-21: on a phone the tracks start on the wall, so YOUR GENOME stands on the wall over them, with YOUR VARIANTS above on the same line. From 801 to 960 the room right of the bars narrows with the column (the wall at 801, 136 from 960), so the bars keep their length; YOUR GENOME stays on the tracks' start at every width."
+ },
+ {
+  "id": "C1",
+  "section": "List and captions",
+  "decision": "Two captions: YOUR VARIANTS (n) and CARRIERS (n); counts and CARRIERS stand only with the list; CARRIERS hidden at 0",
+  "value": "chosen `--ink-axis`, other `--ink-faint`, hover `--ink-axis` 150 ms; CARRIERS 28 px right; count after a nbsp",
+  "owner": "C",
+  "proof": null,
+  "amended": "2026-11-19: the chosen caption steps up to `--ink`, so with the faint grey at 4.5:1 the choice still reads by value alone"
+ },
+ {
+  "id": "C2",
+  "section": "List and captions",
+  "decision": "A row is gene + variant in one quiet mono line",
+  "value": "both mono 13/17 (box pinned), 0.02em, `--ink-dim`; hover `--ink` 120 ms; current `--ink`",
+  "owner": "C",
+  "proof": null
+ },
+ {
+  "id": "C3",
+  "section": "List and captions",
+  "decision": "Selection square: hangs in the gutter left of the text, baseline-aligned, filled only on the current row; never on hover, no hollow state; nothing shifts on select",
+  "value": "9 px, 8 px left of text, `--ink`",
+  "owner": "C",
+  "proof": null,
+  "amended": "2026-11-21: no selection square. The open row is the mono's Bold at full ink (no Medium ships); the mono's advance is the same in every weight, so nothing shifts."
+ },
+ {
+  "id": "C4",
+  "section": "List and captions",
+  "decision": "Row pitch",
+  "value": "42 (gap 25 on a 17 px box)",
+  "owner": "C",
+  "proof": null
+ },
+ {
+  "id": "C5",
+  "section": "List and captions",
+  "decision": "Caption to first row, baseline to baseline: deliberately more than the pitch so the caption is never read as a row",
+  "value": "`--caption-offset` 56",
+  "owner": "C",
+  "proof": null
+ },
+ {
+  "id": "C6",
+  "section": "List and captions",
+  "decision": "The caption sits on `--rail-top` (= question baseline) by a zero-width strut",
+  "value": "80 px",
+  "owner": "C",
+  "proof": null
+ },
+ {
+  "id": "C7",
+  "section": "List and captions",
+  "decision": "The list scrolls with no scrollbar; rows snap whole",
+  "value": "`scroll-snap-type: y mandatory`",
+  "owner": "C",
+  "proof": null
+ },
+ {
+  "id": "C8",
+  "section": "List and captions",
+  "decision": "\"+N more\" in the next row's slot, the row's setting; click pages down keeping the last row seen as the first; at the end it reads \"Back to top\"",
+  "value": "`--ink-faint`, hover `--ink-dim`; smooth unless reduced motion",
+  "owner": "C",
+  "proof": null
+ },
+ {
+  "id": "C9",
+  "section": "List and captions",
+  "decision": "The list stops a clear gap above its sentence, \"+N more\" included, re-fitted when the sentence changes height",
+  "value": "24 px",
+  "owner": "C",
+  "proof": null
+ },
+ {
+  "id": "C10",
+  "section": "List and captions",
+  "decision": "The list's sentence at the column's foot, bottom-aligned where EXPLORE stood; with nothing listed it takes the first row's place",
+  "value": "bottom `--sp-5` 48; sans 13/18 `--ink-dim`",
+  "owner": "C",
+  "proof": null
+ },
+ {
+  "id": "C11",
+  "section": "List and captions",
+  "decision": "The sentence's wording (three cases)",
+  "value": "as SPEC",
+  "owner": "C",
+  "proof": null
+ },
+ {
+  "id": "C12",
+  "section": "List and captions",
+  "decision": "Order by evidence, not risk: ClinVar class, review stars, AlphaMissense, position",
+  "value": "rank P 0, P/LP 1, LP 2, Conflicting 3, VUS 4, not in ClinVar 5, LB 6, B/LB 7, B 8; stars desc; AM desc (none = 0.5); then genome order",
+  "owner": "C",
+  "proof": null,
+  "amended": "2026-11-22: the sample the landing offers opens on five rooms chosen for their drawings, then the evidence's order; a person's own list keeps the evidence's order alone."
+ },
+ {
+  "id": "C13",
+  "section": "List and captions",
+  "decision": "The rows arrive with a plain fade (placeholder)",
+  "value": "1200 ms",
+  "owner": "C",
+  "proof": null
+ },
+ {
+  "id": "C14",
+  "section": "List and captions",
+  "decision": "The first variant's cue: once the list has landed, the first row at `--ink` with an arrow, the arrow and its tick pulsing together; loops until a room first opens, then never again; paused while stepped back",
+  "value": "after 1800 ms; pulse 1.7 s, tick opacity .55↔1",
+  "owner": "C",
+  "proof": null
+ },
+ {
+  "id": "C15",
+  "section": "List and captions",
+  "decision": "Clicking the open room's own row closes the room; any other row opens or switches",
+  "value": "—",
+  "owner": "C",
+  "proof": null
+ },
+ {
+  "id": "C16",
+  "section": "List and captions",
+  "decision": "While linking, lit rows at `--ink`, the others step to `--ink-axis`",
+  "value": "—",
+  "owner": "C",
+  "proof": null
+ },
+ {
+  "id": "C17",
+  "section": "List and captions",
+  "decision": "One drawn arrow for every forward cue, sized to the text it follows",
+  "value": "SVG 12×10, 0.86em × 0.72em, stroke 1.3 px non-scaling, square caps, `currentColor`, 0.4em gap",
+  "owner": "C",
+  "proof": null
+ },
+ {
+  "id": "C18",
+  "section": "List and captions",
+  "decision": "← BACK uses the same arrow mirrored",
+  "value": "gap 6 px",
+  "owner": "C",
+  "proof": null
+ },
+ {
+  "id": "C19",
+  "section": "List and captions",
+  "decision": "Keyboard focus on rows",
+  "value": "outline 1 px `--ink-dim`, offset 3 px",
+  "owner": "C",
+  "proof": null
+ },
+ {
+  "id": "C20",
+  "section": "List and captions",
+  "decision": "No verdict word anywhere in the apparatus; the classification lives in P2",
+  "value": "—",
+  "owner": "C",
+  "proof": null
+ },
+ {
+  "id": "C21",
+  "section": "List and captions",
+  "decision": "The tab shows the product name alone until a variant is chosen, then names it",
+  "value": "—",
+  "owner": "F",
+  "proof": null,
+  "amended": "2026-11-22: the tab title is the product's name on every route, a sample's too. Before: the privacy rule kept it to the name on every file route, and a sample's room named its variant."
+ },
+ {
+  "id": "C22",
+  "section": "List and captions",
+  "decision": "Whose words go where: the machine's in the apparatus, narration in the specimen",
+  "value": "—",
+  "owner": "C",
+  "proof": null
+ },
+ {
+  "id": "P1",
+  "section": "Genes page",
+  "decision": "Anatomy: caption GENES CHECKED (n), genes A-Z from the first line, \"+N more\", ← BACK at the foot; back, swipe and Esc close it",
+  "value": "—",
+  "owner": "C",
+  "proof": null
+ },
+ {
+  "id": "P2",
+  "section": "Genes page",
+  "decision": "Gene rows: whole rows only, from the first line to two rows above BACK; \"+N more\"/\"Back to top\" pages by a screen less one row",
+  "value": "pitch 28; mono 13, `--ink-dim`, hover `--ink` 150 ms",
+  "owner": "C",
+  "proof": null
+ },
+ {
+  "id": "P3",
+  "section": "Genes page",
+  "decision": "← BACK on EXPLORE's row and type, on the left, at full ink",
+  "value": "`--ink`, hover `--ink-bar` 150 ms; bottom 48",
+  "owner": "C",
+  "proof": null
+ },
+ {
+  "id": "P4",
+  "section": "Genes page",
+  "decision": "The reference: neutral bars, no variants, a tick per gene in the neutral ink; the hovered gene widens as a variant does at rare, the rest step well back",
+  "value": "bars `--v-unknown`; ticks `--v-terminal-ref` at 0.45; hovered 1, 3× wide reaching `--e`; others 0.12",
+  "owner": "C",
+  "proof": null,
+  "amended": "2026-11-21: the reference draws the landing's outlines, not neutral bars, so the genes' ticks keep the contrast the landing's preview gave them; on a phone, the landing to the genes page is a page turn (the strip stands at once, the page fades in)."
+ },
+ {
+  "id": "P5",
+  "section": "Genes page",
+  "decision": "From the landing: a page turn (fade out, swap with no transitions so nothing recolours in view, fade in)",
+  "value": "280 ms each way",
+  "owner": "C",
+  "proof": null
+ },
+ {
+  "id": "P6",
+  "section": "Genes page",
+  "decision": "From results: your ledger stays with the genes over it, your ticks stepped out, their hit areas off, the cue's pulse off; no page turn",
+  "value": "ticks out 300 ms",
+  "owner": "C",
+  "proof": null
+ },
+ {
+  "id": "P7",
+  "section": "Genes page",
+  "decision": "The page is a history entry; BACK goes back through history when it pushed one",
+  "value": "`#genes` push",
+  "owner": "F",
+  "proof": null,
+  "amended": "The route is #/genes."
+ },
+ {
+  "id": "P8",
+  "section": "Genes page",
+  "decision": "The column and REFERENCE GENOME fade; everything else in both columns steps out",
+  "value": "600 ms",
+  "owner": "C",
+  "proof": null
+ },
+ {
+  "id": "P9",
+  "section": "Genes page",
+  "decision": "On the phone the reference draws X whole, labelled \"X\": the reference has an X like any genome",
+  "value": "no \"not in this file\"",
+  "owner": "C",
+  "proof": null
+ },
+ {
+  "id": "R1",
+  "section": "Rooms: the P1/P2/P3 shell",
+  "decision": "Each panel's question",
+  "value": "P1 \"What does this variant do?\" · P2 \"How sure are we?\" · P3 \"What does it mean for you?\"",
+  "owner": "D",
+  "proof": null
+ },
+ {
+  "id": "R2",
+  "section": "Rooms: the P1/P2/P3 shell",
+  "decision": "Stations measured from the pinned frame's top, never from content",
+  "value": "question baseline 80, claim top 112, claim zone 120 (3 lines), stage top 272, gap below 48, ink 352",
+  "owner": "D",
+  "proof": null
+ },
+ {
+  "id": "R3",
+  "section": "Rooms: the P1/P2/P3 shell",
+  "decision": "Stage boxes never resize to content",
+  "value": "width 768; heights P1 384, P2 192, P3 424",
+  "owner": "D",
+  "proof": null
+ },
+ {
+  "id": "R4",
+  "section": "Rooms: the P1/P2/P3 shell",
+  "decision": "Claim spine width; P2's wider",
+  "value": "540; P2 620",
+  "owner": "D",
+  "proof": null
+ },
+ {
+  "id": "R5",
+  "section": "Rooms: the P1/P2/P3 shell",
+  "decision": "The question: serif at the claim's size, demoted by the secondary grey",
+  "value": "24/32 (`data-qsize=\"same\"`), `--ink-dim` (2026-11-21: was `--v-uncertain` at 0.78)",
+  "owner": "D",
+  "proof": null
+ },
+ {
+  "id": "R6",
+  "section": "Rooms: the P1/P2/P3 shell",
+  "decision": "The claim: serif, stacked lines crossfading in place; two sentences break apart",
+  "value": "24/32, −0.01em, `--v-text`, `text-wrap: pretty`; 0.8em between sentences",
+  "owner": "D",
+  "proof": null
+ },
+ {
+  "id": "R7",
+  "section": "Rooms: the P1/P2/P3 shell",
+  "decision": "Type never compresses: only a type-free graphic (P1 trace, P3 array) gives up height to fit; overflow is reported, not hidden",
+  "value": "—",
+  "owner": "D",
+  "proof": null
+ },
+ {
+  "id": "R8",
+  "section": "Rooms: the P1/P2/P3 shell",
+  "decision": "P1 and P3 stages are top-aligned (a growing register spends growth downward); P2 centres",
+  "value": "—",
+  "owner": "D",
+  "proof": null
+ },
+ {
+  "id": "R9",
+  "section": "Rooms: the P1/P2/P3 shell",
+  "decision": "Panels pin (sticky) over their scrub, then a short hold before release; P3's scrub scales with its sentence count",
+  "value": "editorial scrub 260vh, hold 30vh",
+  "owner": "D",
+  "proof": null
+ },
+ {
+  "id": "R10",
+  "section": "Rooms: the P1/P2/P3 shell",
+  "decision": "A room opens fresh at scroll 0 on the reference frame; nothing above it to scroll back to",
+  "value": "—",
+  "owner": "D",
+  "proof": null
+ },
+ {
+  "id": "R11",
+  "section": "Rooms: the P1/P2/P3 shell",
+  "decision": "Switching rooms in four beats: clear, change (the rail moves only while the stage is empty), arrive (graphic alone), say (copy); to the list beats 1-3",
+  "value": "each `--an-fade` 320 ms; reduced motion swaps at once; latest click wins",
+  "owner": "D",
+  "proof": null
+ },
+ {
+  "id": "R12",
+  "section": "Rooms: the P1/P2/P3 shell",
+  "decision": "NEXT VARIANT at P3's foot, right-aligned to the stage edge, caption token, arriving after every row and line of the panel; on the last variant BACK TO YOUR VARIANTS",
+  "value": "hover `--ink-bar` 120 ms",
+  "owner": "D",
+  "proof": null
+ },
+ {
+  "id": "R13",
+  "section": "Rooms: the P1/P2/P3 shell",
+  "decision": "NEXT VARIANT's first-use cue: once landed, `--ink` and a nudging arrow; retired for good on first use",
+  "value": "nudge 1.7 s",
+  "owner": "D",
+  "proof": null
+ },
+ {
+  "id": "R14",
+  "section": "Rooms: the P1/P2/P3 shell",
+  "decision": "NEXT VARIANT follows the list's order, so the guided path starts from the best-established finding",
+  "value": "—",
+  "owner": "D",
+  "proof": null
+ },
+ {
+  "id": "R15",
+  "section": "Rooms: the P1/P2/P3 shell",
+  "decision": "The rooms' scroll cue reads SCROLL, in the caption token; its arrow bobs; gone after the first scroll, back for a fresh room",
+  "value": "bob 3 px, 1.7 s; dismiss past 24 px",
+  "owner": "D",
+  "proof": null
+ },
+ {
+  "id": "R16",
+  "section": "Rooms: the P1/P2/P3 shell",
+  "decision": "In a room the tally, Next, YOUR GENOME, the footnote and the rows' key are gone",
+  "value": "—",
+  "owner": "F",
+  "proof": null
+ },
+ {
+  "id": "R17",
+  "section": "Rooms: the P1/P2/P3 shell",
+  "decision": "Desktop rooms carry the bezel (EFFECT / EVIDENCE / ODDS); the beat ruler only behind `?nav=ruler`",
+  "value": "—",
+  "owner": "D",
+  "proof": null
+ },
+ {
+  "id": "R18",
+  "section": "Rooms: the P1/P2/P3 shell",
+  "decision": "P2 bars: one per evidence row, arms out from the centre (pathogenic right, benign left), length = its points; abstaining rows as dashed ghosts",
+  "value": "sibling gap 2, seam gap 2; fill 0.45; ghost 12×14, gap 6",
+  "owner": "E",
+  "proof": null
+ },
+ {
+  "id": "R19",
+  "section": "Rooms: the P1/P2/P3 shell",
+  "decision": "P2 hover pairs a bar and its row both ways; the others dim; the hovered row takes a tint; a row's square is its bar's ink",
+  "value": "dim 0.6; tint 8% of the direction hue; square 0.45 → 1",
+  "owner": "E",
+  "proof": null
+ },
+ {
+  "id": "R20",
+  "section": "Rooms: the P1/P2/P3 shell",
+  "decision": "P2 ledger row: square · tier word (sentence case) / sentence under it",
+  "value": "mono 12/19; square 9 px; padding 4 6",
+  "owner": "E",
+  "proof": null
+ },
+ {
+  "id": "R21",
+  "section": "Rooms: the P1/P2/P3 shell",
+  "decision": "P2's rule names its poles",
+  "value": "BENIGN · UNCERTAIN · PATHOGENIC, mono 10 caps 0.08em, 24 below the rule",
+  "owner": "E",
+  "proof": null
+ },
+ {
+  "id": "R22",
+  "section": "Rooms: the P1/P2/P3 shell",
+  "decision": "P3 array: a population, not a grid (gap wider than the cell)",
+  "value": "desktop 20 cols, pitch 51 / cell 22.5 units (~39.5 / 17 px at 768); phone 10 cols",
+  "owner": "E",
+  "proof": null,
+  "amended": "2026-11-21: on phones the array is 20 × 5 with a cell of 34 on the pitch of 51, the gap half a square, so the whole panel stands on screen; desktop keeps the gap wider than the cell."
+ },
+ {
+  "id": "R23",
+  "section": "Rooms: the P1/P2/P3 shell",
+  "decision": "P3 cells arrive one whole person at a time in reading order, linear, at their resting value (no landing flare)",
+  "value": "9 ms per cell, 300 ms ramp",
+  "owner": "E",
+  "proof": null
+ },
+ {
+  "id": "R24",
+  "section": "Rooms: the P1/P2/P3 shell",
+  "decision": "P3 inks at rest and on hover",
+  "value": "baseline `--v-observed` 0.78 → 0.9; variant's share `--v-terminal` (verdigris) 0.7 → 0.9; unaffected 60% block grey → 82%",
+  "owner": "E",
+  "proof": null
+ },
+ {
+  "id": "R25",
+  "section": "Rooms: the P1/P2/P3 shell",
+  "decision": "A P3 group is hoverable once its squares are coloured; scrolling back above it clears the hover",
+  "value": "—",
+  "owner": "E",
+  "proof": null
+ },
+ {
+  "id": "R26",
+  "section": "Rooms: the P1/P2/P3 shell",
+  "decision": "P3 ledger row: key · label / sentence; the hovered row takes a light tint of its squares' colour",
+  "value": "mono 12/19, key 12 px, padding 4 6 with equal negative margin; tint 14% / 22% / 22%",
+  "owner": "E",
+  "proof": null
+ },
+ {
+  "id": "R27",
+  "section": "Rooms: the P1/P2/P3 shell",
+  "decision": "P3 spacing; no datum under the array",
+  "value": "stage top → array 32, array → ledger 64, row 2×19 + 16",
+  "owner": "E",
+  "proof": null
+ },
+ {
+  "id": "R28",
+  "section": "Rooms: the P1/P2/P3 shell",
+  "decision": "A foreclosed P3 says the true thing about the person and stops: never about the tool, never \"this panel\", \"usually\", \"normally\"; optional parts only as needed (a shown-and-declined figure, a pointer to P2, one source line); a benign panel has only the lead",
+  "value": "serif spine, like every claim",
+  "owner": "E",
+  "proof": null
+ },
+ {
+  "id": "R29",
+  "section": "Rooms: the P1/P2/P3 shell",
+  "decision": "Back and forward walk list ⇄ room with no reload; the URL is replaced on load and pushed per change; a URL naming an unknown variant lands on the list",
+  "value": "—",
+  "owner": "F",
+  "proof": null
+ },
+ {
+  "id": "M1",
+  "section": "Phone",
+  "decision": "The strip rule on every page",
+  "value": "—",
+  "owner": "F",
+  "proof": null,
+  "amended": "2026-11-21: on a phone the descent never folds. Its apparatus is a band of fixed height (YOUR VARIANTS, the cut's count and line, sized to every cut's longest line, so nothing under it moves as the descent steps) with no chevron. The list standing alone is the desktop's column the screen tall: captions at the top, the sentence at the foot, the rows paging between with \"+N more\"; folded over a room as before, and back from a room it keeps its scroll."
+ },
+ {
+  "id": "M2",
+  "section": "Phone",
+  "decision": "One breakpoint",
+  "value": "≤ 600 px",
+  "owner": "F",
+  "proof": null,
+  "amended": "2026-11-21: the one breakpoint is ≤ 800 px (BREAKPOINT_PHONE). From 601 to 800 the two columns overlapped the room's question with its claim and shrank the ledger's bars to stubs."
+ },
+ {
+  "id": "M3",
+  "section": "Phone",
+  "decision": "The phone token table: same names, restated values",
+  "value": "wall 20; stage 100vw − 40; claim 20/26, question 16/22; station-q 100, station-c 128, claim zone 104 (4 lines), stage top 256, ink 296; gap below 24; stages P1 272, P2 192, P3 520; P3 array top 24, ledger gap 32",
+  "owner": "F",
+  "proof": null
+ },
+ {
+  "id": "M4",
+  "section": "Phone",
+  "decision": "Strip rows a thumb tall, text baseline at a fixed depth so the folded row sits where the caption sat",
+  "value": "row 48; baseline 30",
+  "owner": "F",
+  "proof": null
+ },
+ {
+  "id": "M5",
+  "section": "Phone",
+  "decision": "The band's height changes on one clock with its rows (folded, open over a page, open whole)",
+  "value": "`--an-fade` 320 ms",
+  "owner": "F",
+  "proof": null,
+  "amended": "2026-11-22: on a phone nothing slides. The band, its captions and rows take their new size at once; the list fades in as the strip unfolds (`--t-arrive`, 320 ms), the chosen row as it folds, and the room under it on its own arrival. Before: 2026-11-21, the arrival from the landing and back to it stood at once and faded; other changes of the band's height ran on `--an-fade`."
+ },
+ {
+  "id": "M6",
+  "section": "Phone",
+  "decision": "A row tap folds the strip in one motion onto the tapped row: caption and other rows collapse together",
+  "value": "—",
+  "owner": "F",
+  "proof": null
+ },
+ {
+  "id": "M7",
+  "section": "Phone",
+  "decision": "The page under an open strip recedes",
+  "value": "opacity 0.22 (`--recede`)",
+  "owner": "F",
+  "proof": null,
+  "amended": "2026-11-22: no open strip remains, so no page recedes under one: over a room the strip leads to the list itself, and every other page stands whole or as the descent's band."
+ },
+ {
+  "id": "M8",
+  "section": "Phone",
+  "decision": "˄/˅ at the strip's right in a row-square box, the ruler's end strokes; hidden when there's nothing to fold to",
+  "value": "48 box; 1 px `--ink-faint`",
+  "owner": "F",
+  "proof": null
+ },
+ {
+  "id": "M9",
+  "section": "Phone",
+  "decision": "No nav component on a phone; the specimen takes the full width",
+  "value": "bezel hidden",
+  "owner": "F",
+  "proof": null
+ },
+ {
+  "id": "M10",
+  "section": "Phone",
+  "decision": "Phone frame: the specimen's label 32 under the strip, the ledger 32 under it, at least 48 above the controls' row; controls 28 from the foot; numbers in a 20 px column + 12 gutter; the sex row's note under its row",
+  "value": "—",
+  "owner": "F",
+  "proof": null,
+  "amended": "2026-11-21: on a phone the ledger takes the height under the band (all rows, pitch from 12 to 36), its last row 24 above NEXT, which stands alone 28 from the foot (no BACK: the browser's back and the left arrow key step back a cut). No row numbers and no footnote on a phone: the second cut's genes count is the way to the genes page. The 23rd row stands only where the file has X records, its place kept. One left edge: YOUR VARIANTS, its count, YOUR GENOME and the tracks on the wall."
+ },
+ {
+  "id": "M11",
+  "section": "Phone",
+  "decision": "Phone list rows a thumb tall; gene rows shorter; tabs 28 apart",
+  "value": "rows 48; gene rows 32; tabs 24 above rows",
+  "owner": "F",
+  "proof": null
+ },
+ {
+  "id": "M12",
+  "section": "Phone",
+  "decision": "Tap to pair in P2 and P3",
+  "value": "—",
+  "owner": "E",
+  "proof": null
+ },
+ {
+  "id": "T1",
+  "section": "Motion and timing",
+  "decision": "The descent's clock",
+  "value": "fade 1200, move 1400, beat 600, dark 400; ease `cubic-bezier(0.45, 0, 0.15, 1)`",
+  "owner": "lead",
+  "proof": null
+ },
+ {
+  "id": "T2",
+  "section": "Motion and timing",
+  "decision": "UI crossfades (pane swap, strip fold) on one token",
+  "value": "`--an-fade` 320 ms",
+  "owner": "lead",
+  "proof": null
+ },
+ {
+  "id": "T3",
+  "section": "Motion and timing",
+  "decision": "Room beat tokens",
+  "value": "draw 400, hold 500, read 1200, say 1120, move 260, wave 45 per unit, land 120, dolly 700",
+  "owner": "lead",
+  "proof": null
+ },
+ {
+  "id": "T4",
+  "section": "Motion and timing",
+  "decision": "Hover answers are quick",
+  "value": "linking 150 ms; button colour 120 ms",
+  "owner": "lead",
+  "proof": null
+ },
+ {
+  "id": "T5",
+  "section": "Motion and timing",
+  "decision": "Every cue's motion",
+  "value": "1.7 s ease-in-out loop, 3 px, opacity .55 ↔ 1; off under reduced motion",
+  "owner": "lead",
+  "proof": null
+ },
+ {
+  "id": "T6",
+  "section": "Motion and timing",
+  "decision": "Reduced motion: no loading wipe, no ledger transitions, no cue animation, room swaps at once",
+  "value": "—",
+  "owner": "lead",
+  "proof": null
+ },
+ {
+  "id": "T7",
+  "section": "Motion and timing",
+  "decision": "A crossfade under scroll has a floor in px of scroll",
+  "value": "each ≥ 20 px; half a hand-off ≥ 45 px",
+  "owner": "D",
+  "proof": null
+ },
+ {
+  "id": "T8",
+  "section": "Motion and timing",
+  "decision": "Copy hand-off and breath",
+  "value": "188 / 94 px",
+  "owner": "D",
+  "proof": null
+ },
+ {
+  "id": "T9",
+  "section": "Motion and timing",
+  "decision": "Rooms' scroll length (editorial)",
+  "value": "2.6 viewports",
+  "owner": "D",
+  "proof": null
+ },
+ {
+  "id": "T10",
+  "section": "Motion and timing",
+  "decision": "Arrival and Next first-fade timings",
+  "value": "400 / 1200; Next waits 1800",
+  "owner": "lead",
+  "proof": null
+ },
+ {
+  "id": "K1",
+  "section": "Colour and type tokens",
+  "decision": "The grey ramp, light and dark",
+  "value": "light paper #ECEEEF, ground #E0E2E5, rail #D8DBDD, unknown #B9BCBE, uncertain #93979A, predicted #6A6D71, observed #44474B, terminal #22262A, text #35393D, text-2 #74777A, void #131617; dark void #131617, ground #1B1E20, rail #232629, unknown #3F4346, uncertain #65686C, predicted #8D9194, observed #B9BCBE, terminal #E3E5E8, text #D5D7DA, text-2 #838789",
+  "owner": "lead",
+  "proof": null,
+  "amended": "text-2 is #5E6063 (light) and #898D8F (dark): the nearest greys that reach 4.5:1 on the apparatus ground (check A1)."
+ },
+ {
+  "id": "K2",
+  "section": "Colour and type tokens",
+  "decision": "Chrome rungs; the label rung is always monochrome, never a coloured ink",
+  "value": "`--ink` = text, `--ink-dim` = text-2, `--ink-faint` = unknown, `--ink-axis` = uncertain, `--ink-bar` = text-2",
+  "owner": "lead",
+  "proof": null,
+  "amended": "2026-11-21: text takes two levels, `--ink` and `--ink-dim`; `--ink-axis` and `--ink-faint` retired and the question set in `--ink-dim`. Before: 2026-11-19: `--ink-axis` = axis (#4B4E52 light, #A0A4A6 dark), `--ink-faint` = faint (#5D6064, #8A8D90), both at 4.5:1 or more on every ground (A1 fails anything under); was axis = text-2, faint = unknown (1.4-1.7:1)"
+ },
+ {
+  "id": "K3",
+  "section": "Colour and type tokens",
+  "decision": "The chrome's ramp, lightest to darkest: caption < resting row < selected row",
+  "value": "—",
+  "owner": "lead",
+  "proof": null
+ },
+ {
+  "id": "K4",
+  "section": "Colour and type tokens",
+  "decision": "Marks take rungs opaquely (alpha doesn't keep L* and accumulates on overlap)",
+  "value": "—",
+  "owner": "lead",
+  "proof": null
+ },
+ {
+  "id": "K5",
+  "section": "Colour and type tokens",
+  "decision": "Type ladder; rules read roles, never steps; type inside a graphic never scales",
+  "value": "11/16, 13/17, 16/22, 20/26, 24/32",
+  "owner": "lead",
+  "proof": null
+ },
+ {
+  "id": "K6",
+  "section": "Colour and type tokens",
+  "decision": "The caption token for everything that merely labels",
+  "value": "Suisse Intl 11, 0.16em, uppercase, `--ink-axis`",
+  "owner": "lead",
+  "proof": null
+ },
+ {
+  "id": "K7",
+  "section": "Colour and type tokens",
+  "decision": "Spacing on the 8 px module; 4 only for chrome",
+  "value": "8, 16, 24, 32, 48, 64, 96, 128, 192; `--s4` 4",
+  "owner": "lead",
+  "proof": null
+ },
+ {
+  "id": "K8",
+  "section": "Colour and type tokens",
+  "decision": "Mono data is tracked and tabular",
+  "value": "0.02em; `tabular-nums` on counts",
+  "owner": "lead",
+  "proof": null
+ },
+ {
+  "id": "K9",
+  "section": "Colour and type tokens",
+  "decision": "Labels are written in sentence case and set uppercase by CSS",
+  "value": "—",
+  "owner": "lead",
+  "proof": null
+ },
+ {
+  "id": "K10",
+  "section": "Colour and type tokens",
+  "decision": "Ledger roles",
+  "value": "`--lit` the verdigris ink, `--mid` uncertain, `--pend` unknown, `--gnd` unknown, `--fall` faint rung",
+  "owner": "lead",
+  "proof": null
+ },
+ {
+  "id": "K11",
+  "section": "Colour and type tokens",
+  "decision": "The ground follows the OS; a stored choice wins; both theme attributes set before first paint; no visible theme toggle",
+  "value": "`prefers-color-scheme`",
+  "owner": "F",
+  "proof": null,
+  "amended": "No stored theme: nothing is written to storage (the privacy rule). The ground follows the OS; ?theme= overrides it for checks."
+ },
+ {
+  "id": "K12",
+  "section": "Colour and type tokens",
+  "decision": "Page chrome",
+  "value": "body colour transition 180 ms; `overscroll-behavior: none`; smooth scroll",
+  "owner": "F",
+  "proof": null
+ },
+ {
+  "id": "K13",
+  "section": "Colour and type tokens",
+  "decision": "The apparatus column has its own ground; on a phone it moves onto the strip",
+  "value": "`--ag-fill` = rail",
+  "owner": "F",
+  "proof": null
+ },
+ {
+  "id": "I1",
+  "section": "Interaction and navigation",
+  "decision": "One hover grammar: point at a thing, its marks light in every view at once; the rest steps back one level, never hidden",
+  "value": "—",
+  "owner": "C",
+  "proof": null
+ },
+ {
+  "id": "I2",
+  "section": "Interaction and navigation",
+  "decision": "A variant wins over the chromosome it sits on",
+  "value": "—",
+  "owner": "C",
+  "proof": null
+ },
+ {
+  "id": "I3",
+  "section": "Interaction and navigation",
+  "decision": "Pointer targets exist only when they lead somewhere: no rows' key during the read, no tick hit areas before the list",
+  "value": "—",
+  "owner": "B",
+  "proof": null
+ },
+ {
+  "id": "I4",
+  "section": "Interaction and navigation",
+  "decision": "Cues: one at a time, after the panel's motion has settled, retired for good on first use",
+  "value": "—",
+  "owner": "D",
+  "proof": null
+ },
+ {
+  "id": "I5",
+  "section": "Interaction and navigation",
+  "decision": "Esc closes the side trips",
+  "value": "genes page (code); a room (REBUILD only)",
+  "owner": "F",
+  "proof": null
+ },
+ {
+  "id": "I6",
+  "section": "Interaction and navigation",
+  "decision": "History: every state change is a push; arriving writes (replaces) the URL",
+  "value": "—",
+  "owner": "F",
+  "proof": null
+ },
+ {
+  "id": "I7",
+  "section": "Interaction and navigation",
+  "decision": "Strip taps: tap the folded strip to unfold; an item folds onto it; a tap on the receded page folds it",
+  "value": "—",
+  "owner": "F",
+  "proof": null,
+  "amended": "2026-11-22: the folded strip over a room is the only fold left; a tap on it (or its chevron) leads to the list itself, the screen tall. Before: 2026-11-21, over a room it led to the list, elsewhere it unfolded over the receded page."
+ },
+ {
+  "id": "I8",
+  "section": "Interaction and navigation",
+  "decision": "A step forward retires its own first-sight cue",
+  "value": "—",
+  "owner": "B",
+  "proof": null
+ },
+ {
+  "id": "V1",
+  "section": "Copy and voice",
+  "decision": "The voice, round 1 (opening line, \"This variant\", truthful line, AP numbers, caption's terms, \"isn't known\", American, one sentence per line)",
+  "value": "—",
+  "owner": "D",
+  "proof": null
+ },
+ {
+  "id": "V2",
+  "section": "Copy and voice",
+  "decision": "A second drawing in a room opens on where we are, not the gene line again",
+  "value": "\"On the protein, …\"",
+  "owner": "D",
+  "proof": null
+ },
+ {
+  "id": "V3",
+  "section": "Copy and voice",
+  "decision": "P2 lines: one plain clause, or two joined by \"and\" or \"but\"; no semicolons or colons; the subject first; no insider names",
+  "value": "—",
+  "owner": "E",
+  "proof": null
+ },
+ {
+  "id": "V4",
+  "section": "Copy and voice",
+  "decision": "P2's opening says what's about to happen and leaves the reading to the chart",
+  "value": "—",
+  "owner": "E",
+  "proof": null
+ },
+ {
+  "id": "V5",
+  "section": "Copy and voice",
+  "decision": "P2's last beat names what it's harmful for, a breath after the verdict, settled harmful only; P3 then says how much",
+  "value": "—",
+  "owner": "E",
+  "proof": null
+ },
+ {
+  "id": "V6",
+  "section": "Copy and voice",
+  "decision": "The labs' bar states who reviewed it and what they concluded; it doesn't apologise; weight is the bar's length, not hedging",
+  "value": "—",
+  "owner": "E",
+  "proof": null
+ },
+ {
+  "id": "V7",
+  "section": "Copy and voice",
+  "decision": "A fact, then a short sentence on what it means",
+  "value": "—",
+  "owner": "E",
+  "proof": null
+ },
+ {
+  "id": "V8",
+  "section": "Copy and voice",
+  "decision": "P3's first line stands on its own (no \"that\", \"so\"), frames a new question and moves the story on; later lines may refer back within P3",
+  "value": "model: \"Picture 100 people who carry this variant.\"",
+  "owner": "E",
+  "proof": null
+ },
+ {
+  "id": "V9",
+  "section": "Copy and voice",
+  "decision": "P3 opens on your copies (P2 already gave the verdict and the condition)",
+  "value": "—",
+  "owner": "E",
+  "proof": null
+ },
+ {
+  "id": "V10",
+  "section": "Copy and voice",
+  "decision": "One idea per beat (the carrier: your situation, the rule, the consequence)",
+  "value": "—",
+  "owner": "E",
+  "proof": null
+ },
+ {
+  "id": "V11",
+  "section": "Copy and voice",
+  "decision": "Verdict words, condition naming, carriers frequency, name only once settled, who P3 talks about",
+  "value": "\"very likely harmful\"; \"About 1 in 4,700 people\"",
+  "owner": "E",
+  "proof": null
+ },
+ {
+  "id": "V12",
+  "section": "Copy and voice",
+  "decision": "Condition names: the real name people use, a short description once at first mention, no subtype numbers",
+  "value": "—",
+  "owner": "E",
+  "proof": null
+ },
+ {
+  "id": "V13",
+  "section": "Copy and voice",
+  "decision": "The apparatus speaks in the Economist's register: terse, concrete",
+  "value": "—",
+  "owner": "B",
+  "proof": null
+ },
+ {
+  "id": "V14",
+  "section": "Copy and voice",
+  "decision": "Copy names the product from one constant (refusals say \"{name}\")",
+  "value": "—",
+  "owner": "G",
+  "proof": null
+ },
+ {
+  "id": "V15",
+  "section": "Copy and voice",
+  "decision": "No \" · \" strung onto labels",
+  "value": "—",
+  "owner": "G",
+  "proof": null
+ },
+ {
+  "id": "X2",
+  "section": "Conflicts: resolved 2026-11-18",
+  "decision": "No conflict: \"REFERENCE DATA 64%\" is a moment of the count up",
+  "value": "",
+  "owner": "lead",
+  "proof": null
+ },
+ {
+  "id": "X4",
+  "section": "Conflicts: resolved 2026-11-18",
+  "decision": "The ledger's ink is verdigris (SPEC), not the pinned grey",
+  "value": "",
+  "owner": "lead",
+  "proof": null
+ },
+ {
+  "id": "X5",
+  "section": "Conflicts: resolved 2026-11-18",
+  "decision": "Fallen marks keep their hue at the faint rung (SPEC)",
+  "value": "",
+  "owner": "lead",
+  "proof": null
+ },
+ {
+  "id": "X10",
+  "section": "Conflicts: resolved 2026-11-18",
+  "decision": "The \"x and y not in this file.\" note is 11 px, the smallest rung",
+  "value": "",
+  "owner": "lead",
+  "proof": null
+ },
+ {
+  "id": "X13",
+  "section": "Conflicts: resolved 2026-11-18",
+  "decision": "P3's array is 20 × 5 on desktop and 10 × 10 at ≤ 600 px (the deck); REBUILD §2.3g's \"10×10\" is wrong",
+  "value": "",
+  "owner": "lead",
+  "proof": null,
+  "amended": "2026-11-21: P3's array is 20 × 5 at every width; on phones its squares are larger (cell 34 on pitch 51)."
+ },
+ {
+  "id": "X14",
+  "section": "Conflicts: resolved 2026-11-18",
+  "decision": "NEXT VARIANT follows the list's order",
+  "value": "",
+  "owner": "lead",
+  "proof": null
+ },
+ {
+  "id": "X15",
+  "section": "Conflicts: resolved 2026-11-18",
+  "decision": "NEXT VARIANT carries the arrow, as NEXT → and EXPLORE →",
+  "value": "",
+  "owner": "lead",
+  "proof": null
+ },
+ {
+  "id": "X18",
+  "section": "Conflicts: resolved 2026-11-18",
+  "decision": "P3's stage is 424 tall (deck.css)",
+  "value": "",
+  "owner": "lead",
+  "proof": null
+ }
+]

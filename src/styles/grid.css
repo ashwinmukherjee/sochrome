@@ -1,0 +1,157 @@
+/* Copyright 2026 Ashwin Mukherjee */
+/* SPDX-License-Identifier: PolyForm-Noncommercial-1.0.0 */
+/* One frame for both columns: the apparatus and the specimen share the same rows, by construction. */
+
+/* The page: the apparatus on the left, the specimen taking the rest. */
+.frame {
+  display: grid;
+  grid-template-columns: var(--col-zone) minmax(0, 1fr);
+  min-height: 100dvh;
+}
+
+/* A column of the frame. Its children sit on the shared lines:
+   the caption's baseline on --rail-top, the first line at --first-line, rows --pitch or --list-pitch apart. */
+.frame-apparatus,
+.frame-specimen {
+  position: relative;
+  display: grid;
+  grid-template-rows:
+    [top] var(--rail-top) [rail] calc(var(--first-line) - var(--rail-top)) [first] minmax(0, 1fr)
+    [last] var(--sp-5) [foot];
+  min-width: 0;
+}
+
+.frame-apparatus {
+  background: var(--apparatus-ground);
+  padding: 0 var(--wall);
+}
+
+/* A caption stands on the rail by a zero-height strut, so its baseline is the line itself. */
+.on-rail {
+  grid-row: top / rail;
+  align-self: end;
+  line-height: 0;
+}
+/* The strut. With no box in the line, a line of no height centres its letters on the rail instead. */
+.on-rail::before {
+  content: "";
+  display: inline-block;
+}
+
+/* At phone width the apparatus is no longer a column: one column, the specimen under it. */
+@media (max-width: 800px) {
+  .frame {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
+
+/* ── The composed app's frame. Everything below is the shell's: a dev page's bare frame keeps the rules above. ── */
+
+.shell {
+  /* What the folded strip is tall, on a phone: one row, unless a view says more. */
+  --strip-fold: var(--strip-h);
+  position: relative;
+}
+/* Each column is placed by name, so the shell's corner link can share the specimen's cell. */
+.shell > .frame-apparatus {
+  grid-column: 1;
+  grid-row: 1;
+}
+.shell > .frame-specimen {
+  grid-column: 2;
+  grid-row: 1;
+}
+
+/* The strip rule: at phone width the apparatus folds to a strip across the top and the specimen takes the
+   full width under it. Folded over a room, the strip holds the variant it is on; the descent's band stands over
+   its ledger; with nothing chosen (the landing, the list, the genes page) it is the whole screen. The frame's
+   data-strip says which. */
+@media (max-width: 800px) {
+  .shell {
+    grid-template-rows: auto minmax(0, 1fr);
+    block-size: 100dvh;
+    min-height: 0;
+    overflow: hidden;
+    isolation: isolate;
+  }
+
+  /* The band takes the apparatus ground. It is not a containing block: a view's corner controls stand on the frame.
+     It changes size at once, never on a clock: a change of page on a phone fades, and nothing slides. */
+  .shell > .frame-apparatus {
+    position: static;
+    display: block;
+    min-block-size: var(--strip-fold);
+    overflow: hidden;
+  }
+  .shell[data-strip="whole"] > .frame-apparatus {
+    min-block-size: 100dvh;
+    max-block-size: 100dvh;
+    overflow-y: auto;
+  }
+
+  /* The specimen's label stands 32 under the strip, and the ledger's first line 32 under the label's top. Its
+     pitch fits the screen with 48 clear above the controls' row, which stands 28 from the foot. */
+  .shell > .frame-specimen {
+    --label-top: var(--sp-4);
+    --controls-foot: 28px;
+    --below-ledger: calc(var(--sp-3) + var(--sp-5) + var(--lane-label-box) + var(--controls-foot));
+    --rail-top: calc(var(--label-top) + var(--lh-1) - var(--s4));
+    --first-line: calc(var(--label-top) + var(--sp-4));
+    --pitch: clamp(23px, calc((100dvh - var(--strip-fold) - var(--first-line) - var(--below-ledger)) / 23), 36px);
+    grid-column: 1;
+    grid-row: 2;
+    /* Under whatever the apparatus stands in the screen's corners. */
+    z-index: -1;
+    overflow: hidden auto;
+  }
+
+  /* Under the descent's band the ledger takes the height that is left: row 1 on the first line, the last row a
+     gap of air over the screen's foot, 22 pitches between them; the pitch from the specimen's own height (its
+     container), down to the phone's floor. */
+  /* The arrival on a phone is the desktop's page turn: the landing's words fade (release), the band and the
+     ledger stand in their places at once, unseen, and fade in over the ground beat. Nothing slides. */
+  .shell[data-strip="band"] > .frame-apparatus {
+    min-block-size: 0;
+    transition: none;
+  }
+  /* And back: the landing takes the whole screen at once, and its words fade in where they stand. */
+  .shell[data-at="landing"] > .frame-apparatus {
+    transition: none;
+  }
+  .shell[data-at="landing"] > .frame-apparatus > .landing {
+    animation: ground-in var(--t-swap) ease both;
+  }
+  :root[data-beat="ground"] .shell[data-strip="band"] > .frame-specimen {
+    animation: ground-in var(--t-fade) ease both;
+  }
+  /* The landing's ground stays under the specimen as it arrives and gives way over the same beat, so the band's
+     edge comes in with everything else instead of standing at once. */
+  :root[data-beat="ground"] .shell[data-strip="band"] > .frame-apparatus::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    background: var(--apparatus-ground);
+    pointer-events: none;
+    animation: ground-out var(--t-fade) ease both;
+  }
+  .shell[data-strip="band"] > .frame-specimen {
+    /* Under the last row: air, then the steps' row at the screen's foot. */
+    --below-ledger: calc(var(--sp-3) + var(--lane-label-box) + var(--controls-foot));
+    container-type: size;
+  }
+  .shell[data-strip="band"] > .frame-specimen > * {
+    --pitch: clamp(var(--ledger-pitch-min), calc((100cqb - var(--first-line) - var(--below-ledger)) / 22), 36px);
+  }
+}
+
+@keyframes ground-in {
+  from {
+    opacity: 0;
+  }
+}
+@keyframes ground-out {
+  to {
+    opacity: 0;
+  }
+}

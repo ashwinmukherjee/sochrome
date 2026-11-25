@@ -1,0 +1,4963 @@
+{
+ "built": "2026-11-18",
+ "about": "Copy-number test cases for the P2/P3 lab, shaped as src/copy23/model.ts Facts with a cnv field (src/copy23/cnv.ts). Written by scripts/cnv/cnv-facts.ts.",
+ "cases": [
+  {
+   "key": "cnv:160889:PRRT2",
+   "gene": "PRRT2",
+   "chrom": "16",
+   "hgvs_c": null,
+   "consequence": "copy_number_loss",
+   "clinvar": {
+    "id": "160889",
+    "clnsig": "Pathogenic",
+    "class": "pathogenic",
+    "review": "multiple",
+    "revstat": "criteria provided, multiple submitters, no conflicts",
+    "stars": 2,
+    "conf": null
+   },
+   "gnomad": null,
+   "am": null,
+   "mode": "AD",
+   "patterns": {
+    "AD": {
+     "label": "infantile convulsions and choreoathetosis",
+     "validity": "Definitive"
+    }
+   },
+   "condition": {
+    "label": "infantile convulsions and choreoathetosis",
+    "moi": "AD",
+    "validity": "Definitive",
+    "others": 0
+   },
+   "set": "sampled",
+   "stratum": "whole-gene loss, HI 3, harmful, several labs or a panel",
+   "zygosity": "het",
+   "copiesX": 2,
+   "p1": null,
+   "dosage": {
+    "hi": "3",
+    "lofKnown": 114
+   },
+   "cnv": {
+    "dir": "loss",
+    "type": "copy number loss",
+    "name": "GRCh38/hg38 16p11.2(chr16:29662633-30179247)x1",
+    "chrom": "16",
+    "start": 29662633,
+    "end": 30179247,
+    "size": 516615,
+    "copies": 1,
+    "copiesStated": true,
+    "transcript": "NM_145239.3",
+    "where": "whole",
+    "whole": true,
+    "exons": null,
+    "fullExons": 3,
+    "share": 1,
+    "inFrame": null,
+    "plen": 340,
+    "genes": 1,
+    "others": [],
+    "rating": {
+     "hi": "3",
+     "ts": "0",
+     "hiDisease": "MONDO:0100024",
+     "tsDisease": null
+    },
+    "region": null,
+    "overlaps": {
+     "harmful": 30,
+     "uncertain": 0,
+     "harmless": 0
+    },
+    "rarity": {
+     "measured": false,
+     "source": "gnomAD-SV v4 (not in the bundle yet)"
+    },
+    "condition": null
+   }
+  },
+  {
+   "key": "cnv:89149:MSH6",
+   "gene": "MSH6",
+   "chrom": "2",
+   "hgvs_c": null,
+   "consequence": "copy_number_loss",
+   "clinvar": {
+    "id": "89149",
+    "clnsig": "Pathogenic",
+    "class": "pathogenic",
+    "review": "expert",
+    "revstat": "reviewed by expert panel",
+    "stars": 3,
+    "conf": null
+   },
+   "gnomad": null,
+   "am": null,
+   "mode": "AD,AR",
+   "patterns": {
+    "AR": {
+     "label": "mismatch repair cancer syndrome 1",
+     "validity": "Definitive"
+    },
+    "AD": {
+     "label": "Lynch syndrome",
+     "validity": "Definitive"
+    }
+   },
+   "condition": {
+    "label": "mismatch repair cancer syndrome 1",
+    "moi": "AR",
+    "validity": "Definitive",
+    "others": 1
+   },
+   "set": "sampled",
+   "stratum": "whole-gene loss, HI 3, harmful, several labs or a panel",
+   "zygosity": "het",
+   "copiesX": 2,
+   "p1": null,
+   "dosage": {
+    "hi": "3",
+    "lofKnown": 1793
+   },
+   "cnv": {
+    "dir": "loss",
+    "type": "Deletion",
+    "name": "NM_000179.2(MSH6):c.(?_-152)_(*93_?)del",
+    "chrom": "2",
+    "start": 47783082,
+    "end": 47806953,
+    "size": 23872,
+    "copies": 1,
+    "copiesStated": false,
+    "transcript": "NM_000179.3",
+    "where": "whole",
+    "whole": true,
+    "exons": null,
+    "fullExons": 10,
+    "share": 1,
+    "inFrame": null,
+    "plen": 1360,
+    "genes": 1,
+    "others": [],
+    "rating": {
+     "hi": "3",
+     "ts": "0",
+     "hiDisease": "MONDO:0005835",
+     "tsDisease": null
+    },
+    "region": null,
+    "overlaps": {
+     "harmful": 3,
+     "uncertain": 0,
+     "harmless": 0
+    },
+    "rarity": {
+     "measured": false,
+     "source": "gnomAD-SV v4 (not in the bundle yet)"
+    },
+    "condition": null
+   }
+  },
+  {
+   "key": "cnv:60363:CHD7",
+   "gene": "CHD7",
+   "chrom": "8",
+   "hgvs_c": null,
+   "consequence": "copy_number_loss",
+   "clinvar": {
+    "id": "60363",
+    "clnsig": "Pathogenic",
+    "class": "pathogenic",
+    "review": "single",
+    "revstat": "criteria provided, single submitter",
+    "stars": 1,
+    "conf": null
+   },
+   "gnomad": null,
+   "am": null,
+   "mode": "AD",
+   "patterns": {
+    "AD": {
+     "label": "CHARGE syndrome",
+     "validity": "Definitive"
+    }
+   },
+   "condition": {
+    "label": "CHARGE syndrome",
+    "moi": "AD",
+    "validity": "Definitive",
+    "others": 0
+   },
+   "set": "sampled",
+   "stratum": "whole-gene loss, HI 3, harmful, one lab",
+   "zygosity": "het",
+   "copiesX": 2,
+   "p1": null,
+   "dosage": {
+    "hi": "3",
+    "lofKnown": 632
+   },
+   "cnv": {
+    "dir": "loss",
+    "type": "copy number loss",
+    "name": "GRCh38/hg38 8q12.1-12.3(chr8:56925812-61691859)x1",
+    "chrom": "8",
+    "start": 56925812,
+    "end": 61691859,
+    "size": 4766048,
+    "copies": 1,
+    "copiesStated": true,
+    "transcript": "NM_017780.4",
+    "where": "whole",
+    "whole": true,
+    "exons": null,
+    "fullExons": 37,
+    "share": 1,
+    "inFrame": null,
+    "plen": 2997,
+    "genes": 1,
+    "others": [],
+    "rating": {
+     "hi": "3",
+     "ts": "0",
+     "hiDisease": "MONDO:0008965",
+     "tsDisease": null
+    },
+    "region": null,
+    "overlaps": {
+     "harmful": 1,
+     "uncertain": 0,
+     "harmless": 0
+    },
+    "rarity": {
+     "measured": false,
+     "source": "gnomAD-SV v4 (not in the bundle yet)"
+    },
+    "condition": null
+   }
+  },
+  {
+   "key": "cnv:417442:SMARCA4",
+   "gene": "SMARCA4",
+   "chrom": "19",
+   "hgvs_c": null,
+   "consequence": "copy_number_loss",
+   "clinvar": {
+    "id": "417442",
+    "clnsig": "Pathogenic",
+    "class": "pathogenic",
+    "review": "single",
+    "revstat": "criteria provided, single submitter",
+    "stars": 1,
+    "conf": null
+   },
+   "gnomad": null,
+   "am": null,
+   "mode": "AD",
+   "patterns": {
+    "AD": {
+     "label": "rhabdoid tumor predisposition syndrome 2",
+     "validity": "Definitive"
+    }
+   },
+   "condition": {
+    "label": "rhabdoid tumor predisposition syndrome 2",
+    "moi": "AD",
+    "validity": "Definitive",
+    "others": 1
+   },
+   "set": "sampled",
+   "stratum": "whole-gene loss, HI 3, harmful, one lab",
+   "zygosity": "het",
+   "copiesX": 2,
+   "p1": null,
+   "dosage": {
+    "hi": "3",
+    "lofKnown": 194
+   },
+   "cnv": {
+    "dir": "loss",
+    "type": "Deletion",
+    "name": "NC_000019.10:g.(?_10984121)_(11062282_?)del",
+    "chrom": "19",
+    "start": 10984121,
+    "end": 11062282,
+    "size": 78162,
+    "copies": 1,
+    "copiesStated": false,
+    "transcript": "NM_003072.5",
+    "where": "whole",
+    "whole": true,
+    "exons": null,
+    "fullExons": 34,
+    "share": 1,
+    "inFrame": null,
+    "plen": 1647,
+    "genes": 1,
+    "others": [],
+    "rating": {
+     "hi": "3",
+     "ts": "0",
+     "hiDisease": "MONDO:0013224",
+     "tsDisease": null
+    },
+    "region": null,
+    "overlaps": {
+     "harmful": 0,
+     "uncertain": 0,
+     "harmless": 0
+    },
+    "rarity": {
+     "measured": false,
+     "source": "gnomAD-SV v4 (not in the bundle yet)"
+    },
+    "condition": null
+   }
+  },
+  {
+   "key": "cnv:237937:TP53",
+   "gene": "TP53",
+   "chrom": "17",
+   "hgvs_c": null,
+   "consequence": "copy_number_loss",
+   "clinvar": {
+    "id": "237937",
+    "clnsig": "Pathogenic",
+    "class": "pathogenic",
+    "review": "single",
+    "revstat": "criteria provided, single submitter",
+    "stars": 1,
+    "conf": null
+   },
+   "gnomad": null,
+   "am": null,
+   "mode": "AD",
+   "patterns": {
+    "AD": {
+     "label": "Li-Fraumeni syndrome",
+     "validity": "Definitive"
+    }
+   },
+   "condition": {
+    "label": "Li-Fraumeni syndrome",
+    "moi": "AD",
+    "validity": "Definitive",
+    "others": 0
+   },
+   "set": "sampled",
+   "stratum": "whole-gene loss, HI 3, a gene likely to get a figure",
+   "zygosity": "het",
+   "copiesX": 2,
+   "p1": null,
+   "dosage": {
+    "hi": "3",
+    "lofKnown": 607
+   },
+   "cnv": {
+    "dir": "loss",
+    "type": "Deletion",
+    "name": "NC_000017.11:g.(?_7668402)_(7687550_?)del",
+    "chrom": "17",
+    "start": 7668402,
+    "end": 7687550,
+    "size": 19149,
+    "copies": 1,
+    "copiesStated": false,
+    "transcript": "NM_000546.6",
+    "where": "whole",
+    "whole": true,
+    "exons": null,
+    "fullExons": 10,
+    "share": 1,
+    "inFrame": null,
+    "plen": 393,
+    "genes": 1,
+    "others": [],
+    "rating": {
+     "hi": "3",
+     "ts": "0",
+     "hiDisease": "MONDO:0018875",
+     "tsDisease": null
+    },
+    "region": null,
+    "overlaps": {
+     "harmful": 3,
+     "uncertain": 0,
+     "harmless": 0
+    },
+    "rarity": {
+     "measured": false,
+     "source": "gnomAD-SV v4 (not in the bundle yet)"
+    },
+    "condition": null
+   }
+  },
+  {
+   "key": "cnv:646392:CTNNA1",
+   "gene": "CTNNA1",
+   "chrom": "5",
+   "hgvs_c": null,
+   "consequence": "copy_number_loss",
+   "clinvar": {
+    "id": "646392",
+    "clnsig": "Uncertain_significance",
+    "class": "uncertain",
+    "review": "single",
+    "revstat": "criteria provided, single submitter",
+    "stars": 1,
+    "conf": null
+   },
+   "gnomad": null,
+   "am": null,
+   "mode": "AD",
+   "patterns": {
+    "AD": {
+     "label": "CTNNA1-related diffuse gastric and lobular breast cancer syndrome",
+     "validity": "Definitive"
+    }
+   },
+   "condition": {
+    "label": "CTNNA1-related diffuse gastric and lobular breast cancer syndrome",
+    "moi": "AD",
+    "validity": "Definitive",
+    "others": 1
+   },
+   "set": "sampled",
+   "stratum": "whole-gene loss, HI 3, uncertain",
+   "zygosity": "het",
+   "copiesX": 2,
+   "p1": null,
+   "dosage": {
+    "hi": "3",
+    "lofKnown": 201
+   },
+   "cnv": {
+    "dir": "loss",
+    "type": "Deletion",
+    "name": "NC_000005.10:g.(?_138781915)_(138934099_?)del",
+    "chrom": "5",
+    "start": 138781915,
+    "end": 138934099,
+    "size": 152185,
+    "copies": 1,
+    "copiesStated": false,
+    "transcript": "NM_001903.5",
+    "where": "whole",
+    "whole": true,
+    "exons": null,
+    "fullExons": 17,
+    "share": 1,
+    "inFrame": null,
+    "plen": 906,
+    "genes": 1,
+    "others": [],
+    "rating": {
+     "hi": "3",
+     "ts": "0",
+     "hiDisease": "MONDO:0018502",
+     "tsDisease": null
+    },
+    "region": null,
+    "overlaps": {
+     "harmful": 0,
+     "uncertain": 0,
+     "harmless": 0
+    },
+    "rarity": {
+     "measured": false,
+     "source": "gnomAD-SV v4 (not in the bundle yet)"
+    },
+    "condition": null
+   }
+  },
+  {
+   "key": "cnv:656838:DPM1",
+   "gene": "DPM1",
+   "chrom": "20",
+   "hgvs_c": null,
+   "consequence": "copy_number_loss",
+   "clinvar": {
+    "id": "656838",
+    "clnsig": "Pathogenic",
+    "class": "pathogenic",
+    "review": "single",
+    "revstat": "criteria provided, single submitter",
+    "stars": 1,
+    "conf": null
+   },
+   "gnomad": null,
+   "am": null,
+   "mode": "AR",
+   "patterns": {
+    "AR": {
+     "label": "congenital disorder of glycosylation type 1E",
+     "validity": "Definitive"
+    }
+   },
+   "condition": {
+    "label": "congenital disorder of glycosylation type 1E",
+    "moi": "AR",
+    "validity": "Definitive",
+    "others": 0
+   },
+   "set": "sampled",
+   "stratum": "whole-gene loss, HI 30 (recessive), harmful",
+   "zygosity": "het",
+   "copiesX": 2,
+   "p1": null,
+   "dosage": {
+    "hi": "30",
+    "lofKnown": 12
+   },
+   "cnv": {
+    "dir": "loss",
+    "type": "Deletion",
+    "name": "NC_000020.11:g.(?_50934864)_(50958574_?)del",
+    "chrom": "20",
+    "start": 50934864,
+    "end": 50958574,
+    "size": 23711,
+    "copies": 1,
+    "copiesStated": false,
+    "transcript": "NM_003859.3",
+    "where": "whole",
+    "whole": true,
+    "exons": null,
+    "fullExons": 9,
+    "share": 1,
+    "inFrame": null,
+    "plen": 260,
+    "genes": 1,
+    "others": [],
+    "rating": {
+     "hi": "30",
+     "ts": "0",
+     "hiDisease": "MONDO:0012123",
+     "tsDisease": null
+    },
+    "region": null,
+    "overlaps": {
+     "harmful": 1,
+     "uncertain": 0,
+     "harmless": 0
+    },
+    "rarity": {
+     "measured": false,
+     "source": "gnomAD-SV v4 (not in the bundle yet)"
+    },
+    "condition": null
+   }
+  },
+  {
+   "key": "cnv:457933:CLN8",
+   "gene": "CLN8",
+   "chrom": "8",
+   "hgvs_c": null,
+   "consequence": "copy_number_loss",
+   "clinvar": {
+    "id": "457933",
+    "clnsig": "Pathogenic",
+    "class": "pathogenic",
+    "review": "single",
+    "revstat": "criteria provided, single submitter",
+    "stars": 1,
+    "conf": null
+   },
+   "gnomad": null,
+   "am": null,
+   "mode": "AR",
+   "patterns": {
+    "AR": {
+     "label": "neuronal ceroid lipofuscinosis",
+     "validity": "Definitive"
+    }
+   },
+   "condition": {
+    "label": "neuronal ceroid lipofuscinosis",
+    "moi": "AR",
+    "validity": "Definitive",
+    "others": 0
+   },
+   "set": "sampled",
+   "stratum": "whole-gene loss, HI 30 (recessive), harmful",
+   "zygosity": "het",
+   "copiesX": 2,
+   "p1": null,
+   "dosage": {
+    "hi": "30",
+    "lofKnown": 53
+   },
+   "cnv": {
+    "dir": "loss",
+    "type": "Deletion",
+    "name": "NC_000008.11:g.(?_1771035)_(1780587_?)del",
+    "chrom": "8",
+    "start": 1771035,
+    "end": 1780587,
+    "size": 9553,
+    "copies": 1,
+    "copiesStated": false,
+    "transcript": "NM_018941.4",
+    "where": "whole",
+    "whole": true,
+    "exons": null,
+    "fullExons": 2,
+    "share": 1,
+    "inFrame": null,
+    "plen": 286,
+    "genes": 1,
+    "others": [],
+    "rating": {
+     "hi": "30",
+     "ts": "Not yet evaluated",
+     "hiDisease": "MONDO:0010830",
+     "tsDisease": null
+    },
+    "region": null,
+    "overlaps": {
+     "harmful": 11,
+     "uncertain": 0,
+     "harmless": 0
+    },
+    "rarity": {
+     "measured": false,
+     "source": "gnomAD-SV v4 (not in the bundle yet)"
+    },
+    "condition": null
+   }
+  },
+  {
+   "key": "cnv:4851952:HBA1",
+   "gene": "HBA1",
+   "chrom": "16",
+   "hgvs_c": null,
+   "consequence": "copy_number_loss",
+   "clinvar": {
+    "id": "4851952",
+    "clnsig": "Pathogenic",
+    "class": "pathogenic",
+    "review": "single",
+    "revstat": "criteria provided, single submitter",
+    "stars": 1,
+    "conf": null
+   },
+   "gnomad": null,
+   "am": null,
+   "mode": "AD,AR",
+   "patterns": {
+    "AR": {
+     "label": "HBA1-related alpha thalassemia spectrum",
+     "validity": "Definitive"
+    },
+    "AD": {
+     "label": "unstable hemoglobin disease",
+     "validity": "Moderate"
+    }
+   },
+   "condition": {
+    "label": "HBA1-related alpha thalassemia spectrum",
+    "moi": "AR",
+    "validity": "Definitive",
+    "others": 2
+   },
+   "set": "sampled",
+   "stratum": "whole-gene loss, HI 30, both copies (x0)",
+   "zygosity": "hom",
+   "copiesX": 2,
+   "p1": null,
+   "dosage": {
+    "hi": "30",
+    "lofKnown": 69
+   },
+   "cnv": {
+    "dir": "loss",
+    "type": "copy number loss",
+    "name": "GRCh38/hg38 16p13.3(chr16:154253-180583)x0",
+    "chrom": "16",
+    "start": 154253,
+    "end": 180583,
+    "size": 26331,
+    "copies": 0,
+    "copiesStated": true,
+    "transcript": "NM_000558.5",
+    "where": "whole",
+    "whole": true,
+    "exons": null,
+    "fullExons": 3,
+    "share": 1,
+    "inFrame": null,
+    "plen": 142,
+    "genes": 2,
+    "others": [
+     "HBA2"
+    ],
+    "rating": {
+     "hi": "30",
+     "ts": "0",
+     "hiDisease": "MONDO:0011399",
+     "tsDisease": null
+    },
+    "region": null,
+    "overlaps": {
+     "harmful": 7,
+     "uncertain": 0,
+     "harmless": 0
+    },
+    "rarity": {
+     "measured": false,
+     "source": "gnomAD-SV v4 (not in the bundle yet)"
+    },
+    "condition": null
+   }
+  },
+  {
+   "key": "cnv:662854:POT1",
+   "gene": "POT1",
+   "chrom": "7",
+   "hgvs_c": null,
+   "consequence": "copy_number_loss",
+   "clinvar": {
+    "id": "662854",
+    "clnsig": "Pathogenic",
+    "class": "pathogenic",
+    "review": "single",
+    "revstat": "criteria provided, single submitter",
+    "stars": 1,
+    "conf": null
+   },
+   "gnomad": null,
+   "am": null,
+   "mode": "AD",
+   "patterns": {
+    "AD": {
+     "label": "tumor predisposition syndrome 3",
+     "validity": "Definitive"
+    }
+   },
+   "condition": {
+    "label": "tumor predisposition syndrome 3",
+    "moi": "AD",
+    "validity": "Definitive",
+    "others": 0
+   },
+   "set": "sampled",
+   "stratum": "whole-gene loss, HI 2",
+   "zygosity": "het",
+   "copiesX": 2,
+   "p1": null,
+   "dosage": {
+    "hi": "2",
+    "lofKnown": 144
+   },
+   "cnv": {
+    "dir": "loss",
+    "type": "Deletion",
+    "name": "NC_000007.14:g.(?_124823952)_(124897183_?)del",
+    "chrom": "7",
+    "start": 124823952,
+    "end": 124897183,
+    "size": 73232,
+    "copies": 1,
+    "copiesStated": false,
+    "transcript": "NM_015450.3",
+    "where": "whole",
+    "whole": true,
+    "exons": null,
+    "fullExons": 15,
+    "share": 1,
+    "inFrame": null,
+    "plen": 634,
+    "genes": 1,
+    "others": [],
+    "rating": {
+     "hi": "2",
+     "ts": "0",
+     "hiDisease": "MONDO:0014368",
+     "tsDisease": null
+    },
+    "region": null,
+    "overlaps": {
+     "harmful": 0,
+     "uncertain": 0,
+     "harmless": 0
+    },
+    "rarity": {
+     "measured": false,
+     "source": "gnomAD-SV v4 (not in the bundle yet)"
+    },
+    "condition": null
+   }
+  },
+  {
+   "key": "cnv:2579249:CRX",
+   "gene": "CRX",
+   "chrom": "19",
+   "hgvs_c": null,
+   "consequence": "copy_number_loss",
+   "clinvar": {
+    "id": "2579249",
+    "clnsig": "Uncertain_significance",
+    "class": "uncertain",
+    "review": "single",
+    "revstat": "criteria provided, single submitter",
+    "stars": 1,
+    "conf": null
+   },
+   "gnomad": null,
+   "am": null,
+   "mode": "AD",
+   "patterns": {
+    "AD": {
+     "label": "cone-rod dystrophy 2",
+     "validity": "Definitive"
+    }
+   },
+   "condition": {
+    "label": "cone-rod dystrophy 2",
+    "moi": "AD",
+    "validity": "Definitive",
+    "others": 0
+   },
+   "set": "sampled",
+   "stratum": "whole-gene loss, HI 0-1, uncertain",
+   "zygosity": "het",
+   "copiesX": 2,
+   "p1": null,
+   "dosage": {
+    "hi": "1",
+    "lofKnown": 118
+   },
+   "cnv": {
+    "dir": "loss",
+    "type": "copy number loss",
+    "name": "GRCh38/hg38 19q13.33(chr19:47834312-47840923)x1",
+    "chrom": "19",
+    "start": 47834312,
+    "end": 47840923,
+    "size": 6612,
+    "copies": 1,
+    "copiesStated": true,
+    "transcript": "NM_000554.6",
+    "where": "whole",
+    "whole": true,
+    "exons": null,
+    "fullExons": 3,
+    "share": 1,
+    "inFrame": null,
+    "plen": 299,
+    "genes": 1,
+    "others": [],
+    "rating": {
+     "hi": "1",
+     "ts": "0",
+     "hiDisease": "MONDO:1040064",
+     "tsDisease": null
+    },
+    "region": null,
+    "overlaps": {
+     "harmful": 0,
+     "uncertain": 3,
+     "harmless": 0
+    },
+    "rarity": {
+     "measured": false,
+     "source": "gnomAD-SV v4 (not in the bundle yet)"
+    },
+    "condition": null
+   }
+  },
+  {
+   "key": "cnv:57167:IRF4",
+   "gene": "IRF4",
+   "chrom": "6",
+   "hgvs_c": null,
+   "consequence": "copy_number_loss",
+   "clinvar": {
+    "id": "57167",
+    "clnsig": "Benign",
+    "class": "benign",
+    "review": "single",
+    "revstat": "criteria provided, single submitter",
+    "stars": 1,
+    "conf": null
+   },
+   "gnomad": null,
+   "am": null,
+   "mode": "AD",
+   "patterns": {
+    "AD": {
+     "label": "combined immunodeficiency",
+     "validity": "Definitive"
+    }
+   },
+   "condition": {
+    "label": "combined immunodeficiency",
+    "moi": "AD",
+    "validity": "Definitive",
+    "others": 0
+   },
+   "set": "sampled",
+   "stratum": "whole-gene loss, HI 0-1, harmless",
+   "zygosity": "het",
+   "copiesX": 2,
+   "p1": null,
+   "dosage": {
+    "hi": "1",
+    "lofKnown": 0
+   },
+   "cnv": {
+    "dir": "loss",
+    "type": "copy number loss",
+    "name": "GRCh38/hg38 6p25.3(chr6:259528-439290)x1",
+    "chrom": "6",
+    "start": 259528,
+    "end": 439290,
+    "size": 179763,
+    "copies": 1,
+    "copiesStated": true,
+    "transcript": "NM_002460.4",
+    "where": "whole",
+    "whole": true,
+    "exons": null,
+    "fullExons": 8,
+    "share": 1,
+    "inFrame": null,
+    "plen": 451,
+    "genes": 1,
+    "others": [],
+    "rating": {
+     "hi": "1",
+     "ts": "0",
+     "hiDisease": "MONDO:0015131",
+     "tsDisease": null
+    },
+    "region": null,
+    "overlaps": {
+     "harmful": 1,
+     "uncertain": 0,
+     "harmless": 0
+    },
+    "rarity": {
+     "measured": false,
+     "source": "gnomAD-SV v4 (not in the bundle yet)"
+    },
+    "condition": null
+   }
+  },
+  {
+   "key": "cnv:1878430:CHAMP1",
+   "gene": "CHAMP1",
+   "chrom": "13",
+   "hgvs_c": null,
+   "consequence": "copy_number_loss",
+   "clinvar": {
+    "id": "1878430",
+    "clnsig": "Pathogenic",
+    "class": "pathogenic",
+    "review": "single",
+    "revstat": "criteria provided, single submitter",
+    "stars": 1,
+    "conf": null
+   },
+   "gnomad": null,
+   "am": null,
+   "mode": "AD",
+   "patterns": {
+    "AD": {
+     "label": "complex neurodevelopmental disorder",
+     "validity": "Definitive"
+    }
+   },
+   "condition": {
+    "label": "complex neurodevelopmental disorder",
+    "moi": "AD",
+    "validity": "Definitive",
+    "others": 0
+   },
+   "set": "sampled",
+   "stratum": "whole-gene loss, HI 0-1, harmful (labs)",
+   "zygosity": "het",
+   "copiesX": 2,
+   "p1": null,
+   "dosage": {
+    "hi": "1",
+    "lofKnown": 48
+   },
+   "cnv": {
+    "dir": "loss",
+    "type": "Deletion",
+    "name": "Single allele",
+    "chrom": "13",
+    "start": 114131061,
+    "end": 114364328,
+    "size": 233268,
+    "copies": 1,
+    "copiesStated": false,
+    "transcript": "NM_032436.4",
+    "where": "whole",
+    "whole": true,
+    "exons": null,
+    "fullExons": 1,
+    "share": 1,
+    "inFrame": null,
+    "plen": 812,
+    "genes": 1,
+    "others": [],
+    "rating": {
+     "hi": "1",
+     "ts": "0",
+     "hiDisease": "MONDO:0100038",
+     "tsDisease": null
+    },
+    "region": null,
+    "overlaps": {
+     "harmful": 0,
+     "uncertain": 0,
+     "harmless": 0
+    },
+    "rarity": {
+     "measured": false,
+     "source": "gnomAD-SV v4 (not in the bundle yet)"
+    },
+    "condition": null
+   }
+  },
+  {
+   "key": "cnv:154303:TXNL4A",
+   "gene": "TXNL4A",
+   "chrom": "18",
+   "hgvs_c": null,
+   "consequence": "copy_number_loss",
+   "clinvar": {
+    "id": "154303",
+    "clnsig": "Pathogenic",
+    "class": "pathogenic",
+    "review": "none",
+    "revstat": "no assertion criteria provided",
+    "stars": 0,
+    "conf": null
+   },
+   "gnomad": null,
+   "am": null,
+   "mode": "AR",
+   "patterns": {
+    "AR": {
+     "label": "choanal atresia-hearing loss-cardiac defects-craniofacial dysmorphism syndrome",
+     "validity": "Definitive"
+    }
+   },
+   "condition": {
+    "label": "choanal atresia-hearing loss-cardiac defects-craniofacial dysmorphism syndrome",
+    "moi": "AR",
+    "validity": "Definitive",
+    "others": 0
+   },
+   "set": "sampled",
+   "stratum": "whole-gene loss, unrated, harmful (labs)",
+   "zygosity": "het",
+   "copiesX": 2,
+   "p1": null,
+   "dosage": {
+    "hi": null,
+    "lofKnown": 7
+   },
+   "cnv": {
+    "dir": "loss",
+    "type": "copy number loss",
+    "name": "GRCh38/hg38 18q23(chr18:75946906-80252149)x1",
+    "chrom": "18",
+    "start": 75946906,
+    "end": 80252149,
+    "size": 4305244,
+    "copies": 1,
+    "copiesStated": true,
+    "transcript": "NM_006701.5",
+    "where": "whole",
+    "whole": true,
+    "exons": null,
+    "fullExons": 3,
+    "share": 1,
+    "inFrame": null,
+    "plen": 142,
+    "genes": 1,
+    "others": [],
+    "rating": {
+     "hi": null,
+     "ts": null,
+     "hiDisease": null,
+     "tsDisease": null
+    },
+    "region": null,
+    "overlaps": {
+     "harmful": 8,
+     "uncertain": 0,
+     "harmless": 0
+    },
+    "rarity": {
+     "measured": false,
+     "source": "gnomAD-SV v4 (not in the bundle yet)"
+    },
+    "condition": null
+   }
+  },
+  {
+   "key": "cnv:34538:NPHP1",
+   "gene": "NPHP1",
+   "chrom": "2",
+   "hgvs_c": null,
+   "consequence": "copy_number_loss",
+   "clinvar": {
+    "id": "34538",
+    "clnsig": "Benign",
+    "class": "benign",
+    "review": "none",
+    "revstat": "no assertion criteria provided",
+    "stars": 0,
+    "conf": null
+   },
+   "gnomad": null,
+   "am": null,
+   "mode": "AR",
+   "patterns": {
+    "AR": {
+     "label": "nephronophthisis 1",
+     "validity": "Definitive"
+    }
+   },
+   "condition": {
+    "label": "nephronophthisis 1",
+    "moi": "AR",
+    "validity": "Definitive",
+    "others": 0
+   },
+   "set": "sampled",
+   "stratum": "whole-gene loss, unrated, harmless",
+   "zygosity": "het",
+   "copiesX": 2,
+   "p1": null,
+   "dosage": {
+    "hi": null,
+    "lofKnown": 93
+   },
+   "cnv": {
+    "dir": "loss",
+    "type": "copy number loss",
+    "name": "GRCh38/hg38 2q13(chr2:110025659-110207160)x1",
+    "chrom": "2",
+    "start": 110025659,
+    "end": 110207160,
+    "size": 181502,
+    "copies": 1,
+    "copiesStated": true,
+    "transcript": "NM_001128178.3",
+    "where": "whole",
+    "whole": true,
+    "exons": null,
+    "fullExons": 20,
+    "share": 1,
+    "inFrame": null,
+    "plen": 677,
+    "genes": 1,
+    "others": [],
+    "rating": {
+     "hi": null,
+     "ts": null,
+     "hiDisease": null,
+     "tsDisease": null
+    },
+    "region": null,
+    "overlaps": {
+     "harmful": 10,
+     "uncertain": 7,
+     "harmless": 6
+    },
+    "rarity": {
+     "measured": false,
+     "source": "gnomAD-SV v4 (not in the bundle yet)"
+    },
+    "condition": null
+   }
+  },
+  {
+   "key": "cnv:150647:PCSK9",
+   "gene": "PCSK9",
+   "chrom": "1",
+   "hgvs_c": null,
+   "consequence": "copy_number_loss",
+   "clinvar": {
+    "id": "150647",
+    "clnsig": "Pathogenic",
+    "class": "pathogenic",
+    "review": "none",
+    "revstat": "no assertion criteria provided",
+    "stars": 0,
+    "conf": null
+   },
+   "gnomad": null,
+   "am": null,
+   "mode": "AD",
+   "patterns": {
+    "AD": {
+     "label": "hypercholesterolemia, autosomal dominant, 3",
+     "validity": "Definitive"
+    }
+   },
+   "condition": {
+    "label": "hypercholesterolemia, autosomal dominant, 3",
+    "moi": "AD",
+    "validity": "Definitive",
+    "others": 0
+   },
+   "set": "sampled",
+   "stratum": "whole-gene loss, HI 40 (unlikely)",
+   "zygosity": "het",
+   "copiesX": 2,
+   "p1": null,
+   "dosage": {
+    "hi": "40",
+    "lofKnown": 1
+   },
+   "cnv": {
+    "dir": "loss",
+    "type": "copy number loss",
+    "name": "GRCh38/hg38 1p32.3-31.3(chr1:53627272-64248854)x1",
+    "chrom": "1",
+    "start": 53627272,
+    "end": 64248854,
+    "size": 10621583,
+    "copies": 1,
+    "copiesStated": true,
+    "transcript": "NM_174936.4",
+    "where": "whole",
+    "whole": true,
+    "exons": null,
+    "fullExons": 12,
+    "share": 1,
+    "inFrame": null,
+    "plen": 692,
+    "genes": 9,
+    "others": [
+     "DHCR24",
+     "BSND",
+     "MYSM1",
+     "NFIA",
+     "DOCK7",
+     "ANGPTL3",
+     "ALG6",
+     "PGM1"
+    ],
+    "rating": {
+     "hi": "40",
+     "ts": "0",
+     "hiDisease": "MONDO:0011369",
+     "tsDisease": null
+    },
+    "region": null,
+    "overlaps": {
+     "harmful": 0,
+     "uncertain": 0,
+     "harmless": 0
+    },
+    "rarity": {
+     "measured": false,
+     "source": "gnomAD-SV v4 (not in the bundle yet)"
+    },
+    "condition": null
+   }
+  },
+  {
+   "key": "cnv:146861:NDP",
+   "gene": "NDP",
+   "chrom": "X",
+   "hgvs_c": null,
+   "consequence": "copy_number_loss",
+   "clinvar": {
+    "id": "146861",
+    "clnsig": "Pathogenic",
+    "class": "pathogenic",
+    "review": "none",
+    "revstat": "no assertion criteria provided",
+    "stars": 0,
+    "conf": null
+   },
+   "gnomad": null,
+   "am": null,
+   "mode": "XL",
+   "patterns": {
+    "XL": {
+     "label": "Norrie disease",
+     "validity": "Definitive"
+    }
+   },
+   "condition": {
+    "label": "Norrie disease",
+    "moi": "XL",
+    "validity": "Definitive",
+    "others": 0
+   },
+   "set": "sampled",
+   "stratum": "whole-gene loss, many genes",
+   "zygosity": "het",
+   "copiesX": 2,
+   "p1": null,
+   "dosage": {
+    "hi": "3",
+    "lofKnown": 33
+   },
+   "cnv": {
+    "dir": "loss",
+    "type": "copy number loss",
+    "name": "GRCh38/hg38 Xp22.33-q28(chrX:10701-156003229)x1",
+    "chrom": "X",
+    "start": 10701,
+    "end": 156003229,
+    "size": 155992529,
+    "copies": 1,
+    "copiesStated": true,
+    "transcript": "NM_000266.4",
+    "where": "whole",
+    "whole": true,
+    "exons": null,
+    "fullExons": 2,
+    "share": 1,
+    "inFrame": null,
+    "plen": 133,
+    "genes": 149,
+    "others": [
+     "CSF2RA",
+     "ARSL",
+     "NLGN4X",
+     "ANOS1",
+     "GPR143",
+     "CLCN4",
+     "MID1",
+     "MSL3",
+     "FRMPD4",
+     "OFD1",
+     "FANCB",
+     "PIGA",
+     "AP1S2",
+     "NHS",
+     "CDKL5",
+     "RS1",
+     "PDHA1",
+     "RPS6KA3",
+     "CNKSR2",
+     "SMPX",
+     "MBTPS2",
+     "SMS",
+     "PHEX",
+     "PTCHD1",
+     "EIF2S3",
+     "ZFX",
+     "PDK3",
+     "ARX",
+     "IL1RAPL1",
+     "GK",
+     "DMD",
+     "RPGR",
+     "OTC",
+     "BCOR",
+     "ATP6AP2",
+     "USP9X",
+     "DDX3X",
+     "NYX",
+     "CASK",
+     "MAOA",
+     "KDM6A",
+     "RP2",
+     "NDUFB11",
+     "RBM10",
+     "SYN1",
+     "FTSJ1",
+     "PORCN",
+     "EBP",
+     "WAS",
+     "GATA1",
+     "PQBP1",
+     "SLC35A2",
+     "TFE3",
+     "WDR45",
+     "CACNA1F",
+     "FOXP3",
+     "CLCN5",
+     "KDM5C",
+     "IQSEC2",
+     "SMC1A",
+     "HSD17B10",
+     "HUWE1",
+     "PHF8",
+     "FGD1",
+     "MAGED2",
+     "ALAS2",
+     "UBQLN2",
+     "ARHGEF9",
+     "AMER1",
+     "ZC4H2",
+     "MSN",
+     "AR",
+     "OPHN1",
+     "EFNB1",
+     "DLG3",
+     "IL2RG",
+     "MED12",
+     "GJB1",
+     "NONO",
+     "HDAC8",
+     "PHKA1",
+     "SLC16A2",
+     "NEXMIF",
+     "ATRX",
+     "MAGT1",
+     "ATP7A",
+     "TBX22",
+     "BRWD3",
+     "POU3F4",
+     "ZNF711",
+     "CHM",
+     "PCDH19",
+     "TIMM8A",
+     "BTK",
+     "GLA",
+     "HNRNPH2",
+     "PLP1",
+     "DNAAF6",
+     "PRPS1",
+     "COL4A5",
+     "ACSL4",
+     "PAK3",
+     "DCX",
+     "ALG13",
+     "DOCK11",
+     "UBE2A",
+     "UPF3B",
+     "LAMP2",
+     "CUL4B",
+     "GRIA3",
+     "THOC2",
+     "XIAP",
+     "SH2D1A",
+     "OCRL",
+     "SASH3",
+     "ZDHHC9",
+     "ELF4",
+     "AIFM1",
+     "GPC3",
+     "PHF6",
+     "HPRT1",
+     "SLC9A6",
+     "CD40LG",
+     "ZIC3",
+     "F9",
+     "FMR1",
+     "AFF2",
+     "IDS",
+     "MTM1",
+     "BGN",
+     "SLC6A8",
+     "BCAP31",
+     "ABCD1",
+     "L1CAM",
+     "NAA10",
+     "HCFC1",
+     "MECP2",
+     "OPN1LW",
+     "OPN1MW",
+     "FLNA",
+     "RPL10",
+     "TAFAZZIN",
+     "ATP6AP1",
+     "G6PD",
+     "IKBKG",
+     "DKC1",
+     "F8",
+     "RAB39B"
+    ],
+    "rating": {
+     "hi": "3",
+     "ts": "0",
+     "hiDisease": "MONDO:0010691",
+     "tsDisease": null
+    },
+    "region": null,
+    "overlaps": {
+     "harmful": 1,
+     "uncertain": 0,
+     "harmless": 0
+    },
+    "rarity": {
+     "measured": false,
+     "source": "gnomAD-SV v4 (not in the bundle yet)"
+    },
+    "condition": null
+   }
+  },
+  {
+   "key": "cnv:4852040:KANSL1",
+   "gene": "KANSL1",
+   "chrom": "17",
+   "hgvs_c": null,
+   "consequence": "copy_number_loss",
+   "clinvar": {
+    "id": "4852040",
+    "clnsig": "Pathogenic",
+    "class": "pathogenic",
+    "review": "single",
+    "revstat": "criteria provided, single submitter",
+    "stars": 1,
+    "conf": null
+   },
+   "gnomad": null,
+   "am": null,
+   "mode": "AD",
+   "patterns": {
+    "AD": {
+     "label": "Koolen-de Vries syndrome",
+     "validity": "Definitive"
+    }
+   },
+   "condition": {
+    "label": "Koolen-de Vries syndrome",
+    "moi": "AD",
+    "validity": "Definitive",
+    "others": 0
+   },
+   "set": "sampled",
+   "stratum": "loss, holding a whole ClinGen region",
+   "zygosity": "het",
+   "copiesX": 2,
+   "p1": null,
+   "dosage": {
+    "hi": "3",
+    "lofKnown": 93
+   },
+   "cnv": {
+    "dir": "loss",
+    "type": "copy number loss",
+    "name": "GRCh38/hg38 17q21.31(chr17:45608559-46133622)x1",
+    "chrom": "17",
+    "start": 45608559,
+    "end": 46133622,
+    "size": 525064,
+    "copies": 1,
+    "copiesStated": true,
+    "transcript": "NM_015443.4",
+    "where": "end",
+    "whole": false,
+    "exons": {
+     "first": 3,
+     "last": 15,
+     "of": 15
+    },
+    "fullExons": 13,
+    "share": 0.6115,
+    "inFrame": false,
+    "plen": 1105,
+    "genes": 1,
+    "others": [],
+    "rating": {
+     "hi": "3",
+     "ts": "0",
+     "hiDisease": "MONDO:0012496",
+     "tsDisease": null
+    },
+    "region": {
+     "id": "ISCA-37420",
+     "name": "17q21.31 recurrent (KdVS) region (includes KANSL1)",
+     "score": "3",
+     "disease": "MONDO:0012496"
+    },
+    "overlaps": {
+     "harmful": 17,
+     "uncertain": 1,
+     "harmless": 1
+    },
+    "rarity": {
+     "measured": false,
+     "source": "gnomAD-SV v4 (not in the bundle yet)"
+    },
+    "condition": {
+     "id": "MONDO:0012496",
+     "label": "Koolen-de Vries syndrome"
+    }
+   }
+  },
+  {
+   "key": "cnv:3779415:BRCA1",
+   "gene": "BRCA1",
+   "chrom": "17",
+   "hgvs_c": null,
+   "consequence": "copy_number_loss",
+   "clinvar": {
+    "id": "3779415",
+    "clnsig": "Pathogenic",
+    "class": "pathogenic",
+    "review": "single",
+    "revstat": "criteria provided, single submitter",
+    "stars": 1,
+    "conf": null
+   },
+   "gnomad": null,
+   "am": null,
+   "mode": "AD,AR",
+   "patterns": {
+    "AD": {
+     "label": "BRCA1-related cancer predisposition",
+     "validity": "Definitive"
+    },
+    "AR": {
+     "label": "Fanconi anemia, complementation group S",
+     "validity": "Definitive"
+    }
+   },
+   "condition": {
+    "label": "BRCA1-related cancer predisposition",
+    "moi": "AD",
+    "validity": "Definitive",
+    "others": 1
+   },
+   "set": "sampled",
+   "stratum": "partial loss, inside, off step, HI 3, harmful",
+   "zygosity": "het",
+   "copiesX": 2,
+   "p1": null,
+   "dosage": {
+    "hi": "3",
+    "lofKnown": 3157
+   },
+   "cnv": {
+    "dir": "loss",
+    "type": "Deletion",
+    "name": "NM_007294.4(BRCA1):c.5153-79_5193+1del",
+    "chrom": "17",
+    "start": 43063332,
+    "end": 43063452,
+    "size": 121,
+    "copies": 1,
+    "copiesStated": false,
+    "transcript": "NM_007294.4",
+    "where": "inside",
+    "whole": false,
+    "exons": {
+     "first": 18,
+     "last": 18,
+     "of": 23
+    },
+    "fullExons": 1,
+    "share": 0.0073,
+    "inFrame": false,
+    "plen": 1863,
+    "genes": 1,
+    "others": [],
+    "rating": {
+     "hi": "3",
+     "ts": "0",
+     "hiDisease": "MONDO:0700268",
+     "tsDisease": null
+    },
+    "region": null,
+    "overlaps": {
+     "harmful": 33,
+     "uncertain": 0,
+     "harmless": 0
+    },
+    "rarity": {
+     "measured": false,
+     "source": "gnomAD-SV v4 (not in the bundle yet)"
+    },
+    "condition": null
+   }
+  },
+  {
+   "key": "cnv:665635:PMS2",
+   "gene": "PMS2",
+   "chrom": "7",
+   "hgvs_c": null,
+   "consequence": "copy_number_loss",
+   "clinvar": {
+    "id": "665635",
+    "clnsig": "Pathogenic",
+    "class": "pathogenic",
+    "review": "single",
+    "revstat": "criteria provided, single submitter",
+    "stars": 1,
+    "conf": null
+   },
+   "gnomad": null,
+   "am": null,
+   "mode": "AD,AR",
+   "patterns": {
+    "AD": {
+     "label": "Lynch syndrome",
+     "validity": "Definitive"
+    },
+    "AR": {
+     "label": "mismatch repair cancer syndrome 1",
+     "validity": "Definitive"
+    }
+   },
+   "condition": {
+    "label": "Lynch syndrome",
+    "moi": "AD",
+    "validity": "Definitive",
+    "others": 1
+   },
+   "set": "sampled",
+   "stratum": "partial loss, inside, off step, HI 3, harmful",
+   "zygosity": "het",
+   "copiesX": 2,
+   "p1": null,
+   "dosage": {
+    "hi": "3",
+    "lofKnown": 655
+   },
+   "cnv": {
+    "dir": "loss",
+    "type": "Deletion",
+    "name": "NC_000007.14:g.(?_5986749)_(5989965_?)del",
+    "chrom": "7",
+    "start": 5986749,
+    "end": 5989965,
+    "size": 3217,
+    "copies": 1,
+    "copiesStated": false,
+    "transcript": "NM_000535.7",
+    "where": "inside",
+    "whole": false,
+    "exons": {
+     "first": 10,
+     "last": 11,
+     "of": 15
+    },
+    "fullExons": 2,
+    "share": 0.3932,
+    "inFrame": false,
+    "plen": 862,
+    "genes": 1,
+    "others": [],
+    "rating": {
+     "hi": "3",
+     "ts": "0",
+     "hiDisease": "MONDO:0005835",
+     "tsDisease": null
+    },
+    "region": null,
+    "overlaps": {
+     "harmful": 26,
+     "uncertain": 0,
+     "harmless": 0
+    },
+    "rarity": {
+     "measured": false,
+     "source": "gnomAD-SV v4 (not in the bundle yet)"
+    },
+    "condition": null
+   }
+  },
+  {
+   "key": "cnv:440437:BRCA1",
+   "gene": "BRCA1",
+   "chrom": "17",
+   "hgvs_c": null,
+   "consequence": "copy_number_loss",
+   "clinvar": {
+    "id": "440437",
+    "clnsig": "Pathogenic",
+    "class": "pathogenic",
+    "review": "single",
+    "revstat": "criteria provided, single submitter",
+    "stars": 1,
+    "conf": null
+   },
+   "gnomad": null,
+   "am": null,
+   "mode": "AD,AR",
+   "patterns": {
+    "AD": {
+     "label": "BRCA1-related cancer predisposition",
+     "validity": "Definitive"
+    },
+    "AR": {
+     "label": "Fanconi anemia, complementation group S",
+     "validity": "Definitive"
+    }
+   },
+   "condition": {
+    "label": "BRCA1-related cancer predisposition",
+    "moi": "AD",
+    "validity": "Definitive",
+    "others": 1
+   },
+   "set": "sampled",
+   "stratum": "partial loss, inside, off step, HI 3, harmful",
+   "zygosity": "het",
+   "copiesX": 2,
+   "p1": null,
+   "dosage": {
+    "hi": "3",
+    "lofKnown": 3157
+   },
+   "cnv": {
+    "dir": "loss",
+    "type": "Deletion",
+    "name": "NC_000017.10:g.(41249307_41251791)_(41251898_41256138)del",
+    "chrom": "17",
+    "start": 43097290,
+    "end": 43104121,
+    "size": 6832,
+    "copies": 1,
+    "copiesStated": false,
+    "transcript": "NM_007294.4",
+    "where": "inside",
+    "whole": false,
+    "exons": {
+     "first": 7,
+     "last": 7,
+     "of": 23
+    },
+    "fullExons": 1,
+    "share": 0.019,
+    "inFrame": false,
+    "plen": 1863,
+    "genes": 1,
+    "others": [],
+    "rating": {
+     "hi": "3",
+     "ts": "0",
+     "hiDisease": "MONDO:0700268",
+     "tsDisease": null
+    },
+    "region": null,
+    "overlaps": {
+     "harmful": 55,
+     "uncertain": 0,
+     "harmless": 0
+    },
+    "rarity": {
+     "measured": false,
+     "source": "gnomAD-SV v4 (not in the bundle yet)"
+    },
+    "condition": null
+   }
+  },
+  {
+   "key": "cnv:648523:CAPN3",
+   "gene": "CAPN3",
+   "chrom": "15",
+   "hgvs_c": null,
+   "consequence": "copy_number_loss",
+   "clinvar": {
+    "id": "648523",
+    "clnsig": "Pathogenic",
+    "class": "pathogenic",
+    "review": "single",
+    "revstat": "criteria provided, single submitter",
+    "stars": 1,
+    "conf": null
+   },
+   "gnomad": null,
+   "am": null,
+   "mode": "AD,AR",
+   "patterns": {
+    "AR": {
+     "label": "autosomal recessive limb-girdle muscular dystrophy",
+     "validity": "Definitive"
+    },
+    "AD": {
+     "label": "muscular dystrophy, limb-girdle, autosomal dominant",
+     "validity": "Definitive"
+    }
+   },
+   "condition": {
+    "label": "autosomal recessive limb-girdle muscular dystrophy",
+    "moi": "AR",
+    "validity": "Definitive",
+    "others": 1
+   },
+   "set": "sampled",
+   "stratum": "partial loss, inside, off step, HI 30, harmful",
+   "zygosity": "het",
+   "copiesX": 2,
+   "p1": null,
+   "dosage": {
+    "hi": "30",
+    "lofKnown": 257
+   },
+   "cnv": {
+    "dir": "loss",
+    "type": "Deletion",
+    "name": "NC_000015.10:g.(?_42394246)_(42394351_?)del",
+    "chrom": "15",
+    "start": 42394246,
+    "end": 42394351,
+    "size": 106,
+    "copies": 1,
+    "copiesStated": false,
+    "transcript": "NM_000070.3",
+    "where": "inside",
+    "whole": false,
+    "exons": {
+     "first": 8,
+     "last": 8,
+     "of": 24
+    },
+    "fullExons": 1,
+    "share": 0.0349,
+    "inFrame": false,
+    "plen": 821,
+    "genes": 1,
+    "others": [],
+    "rating": {
+     "hi": "30",
+     "ts": "0",
+     "hiDisease": "MONDO:0015152",
+     "tsDisease": null
+    },
+    "region": null,
+    "overlaps": {
+     "harmful": 4,
+     "uncertain": 0,
+     "harmless": 0
+    },
+    "rarity": {
+     "measured": false,
+     "source": "gnomAD-SV v4 (not in the bundle yet)"
+    },
+    "condition": null
+   }
+  },
+  {
+   "key": "cnv:461739:AHI1",
+   "gene": "AHI1",
+   "chrom": "6",
+   "hgvs_c": null,
+   "consequence": "copy_number_loss",
+   "clinvar": {
+    "id": "461739",
+    "clnsig": "Pathogenic",
+    "class": "pathogenic",
+    "review": "single",
+    "revstat": "criteria provided, single submitter",
+    "stars": 1,
+    "conf": null
+   },
+   "gnomad": null,
+   "am": null,
+   "mode": "AR",
+   "patterns": {
+    "AR": {
+     "label": "Joubert syndrome 3",
+     "validity": "Definitive"
+    }
+   },
+   "condition": {
+    "label": "Joubert syndrome 3",
+    "moi": "AR",
+    "validity": "Definitive",
+    "others": 0
+   },
+   "set": "sampled",
+   "stratum": "partial loss, inside, off step, HI 30, harmful",
+   "zygosity": "het",
+   "copiesX": 2,
+   "p1": null,
+   "dosage": {
+    "hi": "30",
+    "lofKnown": 225
+   },
+   "cnv": {
+    "dir": "loss",
+    "type": "Deletion",
+    "name": "NC_000006.12:g.(?_135457583)_(135465286_?)del",
+    "chrom": "6",
+    "start": 135457583,
+    "end": 135465286,
+    "size": 7704,
+    "copies": 1,
+    "copiesStated": false,
+    "transcript": "NM_001134831.2",
+    "where": "inside",
+    "whole": false,
+    "exons": {
+     "first": 8,
+     "last": 9,
+     "of": 29
+    },
+    "fullExons": 1,
+    "share": 0.0872,
+    "inFrame": false,
+    "plen": 1196,
+    "genes": 1,
+    "others": [],
+    "rating": {
+     "hi": "30",
+     "ts": "0",
+     "hiDisease": "MONDO:0012078",
+     "tsDisease": null
+    },
+    "region": null,
+    "overlaps": {
+     "harmful": 2,
+     "uncertain": 0,
+     "harmless": 0
+    },
+    "rarity": {
+     "measured": false,
+     "source": "gnomAD-SV v4 (not in the bundle yet)"
+    },
+    "condition": null
+   }
+  },
+  {
+   "key": "cnv:951:DOCK8",
+   "gene": "DOCK8",
+   "chrom": "9",
+   "hgvs_c": null,
+   "consequence": "copy_number_loss",
+   "clinvar": {
+    "id": "951",
+    "clnsig": "Pathogenic",
+    "class": "pathogenic",
+    "review": "none",
+    "revstat": "no assertion criteria provided",
+    "stars": 0,
+    "conf": null
+   },
+   "gnomad": null,
+   "am": null,
+   "mode": "AR",
+   "patterns": {
+    "AR": {
+     "label": "combined immunodeficiency due to DOCK8 deficiency",
+     "validity": "Definitive"
+    }
+   },
+   "condition": {
+    "label": "combined immunodeficiency due to DOCK8 deficiency",
+    "moi": "AR",
+    "validity": "Definitive",
+    "others": 0
+   },
+   "set": "sampled",
+   "stratum": "partial loss, inside, in step, large",
+   "zygosity": "het",
+   "copiesX": 2,
+   "p1": null,
+   "dosage": {
+    "hi": null,
+    "lofKnown": 81
+   },
+   "cnv": {
+    "dir": "loss",
+    "type": "Deletion",
+    "name": "NC_000009.12:g.311735_398140del",
+    "chrom": "9",
+    "start": 311734,
+    "end": 398139,
+    "size": 86406,
+    "copies": 1,
+    "copiesStated": false,
+    "transcript": "NM_203447.4",
+    "where": "inside",
+    "whole": false,
+    "exons": {
+     "first": 6,
+     "last": 25,
+     "of": 48
+    },
+    "fullExons": 20,
+    "share": 0.4114,
+    "inFrame": true,
+    "plen": 2099,
+    "genes": 1,
+    "others": [],
+    "rating": {
+     "hi": null,
+     "ts": null,
+     "hiDisease": null,
+     "tsDisease": null
+    },
+    "region": null,
+    "overlaps": {
+     "harmful": 13,
+     "uncertain": 5,
+     "harmless": 0
+    },
+    "rarity": {
+     "measured": false,
+     "source": "gnomAD-SV v4 (not in the bundle yet)"
+    },
+    "condition": null
+   }
+  },
+  {
+   "key": "cnv:153947:WWOX",
+   "gene": "WWOX",
+   "chrom": "16",
+   "hgvs_c": null,
+   "consequence": "copy_number_loss",
+   "clinvar": {
+    "id": "153947",
+    "clnsig": "Likely_benign",
+    "class": "likely-benign",
+    "review": "none",
+    "revstat": "no assertion criteria provided",
+    "stars": 0,
+    "conf": null
+   },
+   "gnomad": null,
+   "am": null,
+   "mode": "AR",
+   "patterns": {
+    "AR": {
+     "label": "genetic developmental and epileptic encephalopathy",
+     "validity": "Definitive"
+    }
+   },
+   "condition": {
+    "label": "genetic developmental and epileptic encephalopathy",
+    "moi": "AR",
+    "validity": "Definitive",
+    "others": 0
+   },
+   "set": "sampled",
+   "stratum": "partial loss, inside, in step, large",
+   "zygosity": "het",
+   "copiesX": 2,
+   "p1": null,
+   "dosage": {
+    "hi": "30",
+    "lofKnown": 47
+   },
+   "cnv": {
+    "dir": "loss",
+    "type": "copy number loss",
+    "name": "GRCh38/hg38 16q23.1(chr16:78185441-78554635)x1",
+    "chrom": "16",
+    "start": 78185441,
+    "end": 78554635,
+    "size": 369195,
+    "copies": 1,
+    "copiesStated": true,
+    "transcript": "NM_016373.4",
+    "where": "inside",
+    "whole": false,
+    "exons": {
+     "first": 6,
+     "last": 8,
+     "of": 9
+    },
+    "fullExons": 3,
+    "share": 0.4337,
+    "inFrame": true,
+    "plen": 414,
+    "genes": 1,
+    "others": [],
+    "rating": {
+     "hi": "30",
+     "ts": "0",
+     "hiDisease": "MONDO:0013687",
+     "tsDisease": null
+    },
+    "region": null,
+    "overlaps": {
+     "harmful": 8,
+     "uncertain": 1,
+     "harmless": 0
+    },
+    "rarity": {
+     "measured": false,
+     "source": "gnomAD-SV v4 (not in the bundle yet)"
+    },
+    "condition": null
+   }
+  },
+  {
+   "key": "cnv:1050463:NBN",
+   "gene": "NBN",
+   "chrom": "8",
+   "hgvs_c": null,
+   "consequence": "copy_number_loss",
+   "clinvar": {
+    "id": "1050463",
+    "clnsig": "Likely_pathogenic",
+    "class": "likely-pathogenic",
+    "review": "none",
+    "revstat": "no assertion criteria provided",
+    "stars": 0,
+    "conf": null
+   },
+   "gnomad": null,
+   "am": null,
+   "mode": "AR",
+   "patterns": {
+    "AR": {
+     "label": "Nijmegen breakage syndrome",
+     "validity": "Definitive"
+    }
+   },
+   "condition": {
+    "label": "Nijmegen breakage syndrome",
+    "moi": "AR",
+    "validity": "Definitive",
+    "others": 0
+   },
+   "set": "sampled",
+   "stratum": "partial loss, inside, in step, small",
+   "zygosity": "het",
+   "copiesX": 2,
+   "p1": null,
+   "dosage": {
+    "hi": null,
+    "lofKnown": 426
+   },
+   "cnv": {
+    "dir": "loss",
+    "type": "Deletion",
+    "name": "NM_002485.5(NBN):c.2071-1175_2184+2del",
+    "chrom": "8",
+    "start": 89943251,
+    "end": 89944541,
+    "size": 1291,
+    "copies": 1,
+    "copiesStated": false,
+    "transcript": "NM_002485.5",
+    "where": "inside",
+    "whole": false,
+    "exons": {
+     "first": 14,
+     "last": 14,
+     "of": 16
+    },
+    "fullExons": 1,
+    "share": 0.0503,
+    "inFrame": true,
+    "plen": 754,
+    "genes": 1,
+    "others": [],
+    "rating": {
+     "hi": null,
+     "ts": null,
+     "hiDisease": null,
+     "tsDisease": null
+    },
+    "region": null,
+    "overlaps": {
+     "harmful": 4,
+     "uncertain": 0,
+     "harmless": 0
+    },
+    "rarity": {
+     "measured": false,
+     "source": "gnomAD-SV v4 (not in the bundle yet)"
+    },
+    "condition": null
+   }
+  },
+  {
+   "key": "cnv:375572:NT5C2",
+   "gene": "NT5C2",
+   "chrom": "10",
+   "hgvs_c": null,
+   "consequence": "copy_number_loss",
+   "clinvar": {
+    "id": "375572",
+    "clnsig": "Pathogenic",
+    "class": "pathogenic",
+    "review": "none",
+    "revstat": "no assertion criteria provided",
+    "stars": 0,
+    "conf": null
+   },
+   "gnomad": null,
+   "am": null,
+   "mode": "AR",
+   "patterns": {
+    "AR": {
+     "label": "complex hereditary spastic paraplegia",
+     "validity": "Definitive"
+    }
+   },
+   "condition": {
+    "label": "complex hereditary spastic paraplegia",
+    "moi": "AR",
+    "validity": "Definitive",
+    "others": 0
+   },
+   "set": "sampled",
+   "stratum": "partial loss, inside, in step, small",
+   "zygosity": "het",
+   "copiesX": 2,
+   "p1": null,
+   "dosage": {
+    "hi": null,
+    "lofKnown": 17
+   },
+   "cnv": {
+    "dir": "loss",
+    "type": "Deletion",
+    "name": "NM_001351169.2(NT5C2):c.771+573_814-298del",
+    "chrom": "10",
+    "start": 103094753,
+    "end": 103096718,
+    "size": 1966,
+    "copies": 1,
+    "copiesStated": false,
+    "transcript": "NM_001351169.2",
+    "where": "inside",
+    "whole": false,
+    "exons": {
+     "first": 12,
+     "last": 12,
+     "of": 19
+    },
+    "fullExons": 1,
+    "share": 0.0249,
+    "inFrame": true,
+    "plen": 561,
+    "genes": 1,
+    "others": [],
+    "rating": {
+     "hi": null,
+     "ts": null,
+     "hiDisease": null,
+     "tsDisease": null
+    },
+    "region": null,
+    "overlaps": {
+     "harmful": 1,
+     "uncertain": 0,
+     "harmless": 0
+    },
+    "rarity": {
+     "measured": false,
+     "source": "gnomAD-SV v4 (not in the bundle yet)"
+    },
+    "condition": null
+   }
+  },
+  {
+   "key": "cnv:3249711:RS1",
+   "gene": "RS1",
+   "chrom": "X",
+   "hgvs_c": null,
+   "consequence": "copy_number_loss",
+   "clinvar": {
+    "id": "3249711",
+    "clnsig": "Pathogenic",
+    "class": "pathogenic",
+    "review": "none",
+    "revstat": "no assertion criteria provided",
+    "stars": 0,
+    "conf": null
+   },
+   "gnomad": null,
+   "am": null,
+   "mode": "XL",
+   "patterns": {
+    "XL": {
+     "label": "X-linked retinoschisis",
+     "validity": "Definitive"
+    }
+   },
+   "condition": {
+    "label": "X-linked retinoschisis",
+    "moi": "XL",
+    "validity": "Definitive",
+    "others": 0
+   },
+   "set": "sampled",
+   "stratum": "partial loss, the gene's start",
+   "zygosity": "het",
+   "copiesX": 2,
+   "p1": null,
+   "dosage": {
+    "hi": "3",
+    "lofKnown": 99
+   },
+   "cnv": {
+    "dir": "loss",
+    "type": "Deletion",
+    "name": "NC_000023.11:g.(18656759_18657639)_(18672069_?)del",
+    "chrom": "X",
+    "start": 18657639,
+    "end": 18672069,
+    "size": 14431,
+    "copies": 1,
+    "copiesStated": false,
+    "transcript": "NM_000330.4",
+    "where": "start",
+    "whole": false,
+    "exons": {
+     "first": 1,
+     "last": 2,
+     "of": 6
+    },
+    "fullExons": 2,
+    "share": 0.1156,
+    "inFrame": true,
+    "plen": 224,
+    "genes": 1,
+    "others": [],
+    "rating": {
+     "hi": "3",
+     "ts": "0",
+     "hiDisease": "MONDO:0010725",
+     "tsDisease": null
+    },
+    "region": null,
+    "overlaps": {
+     "harmful": 3,
+     "uncertain": 0,
+     "harmless": 0
+    },
+    "rarity": {
+     "measured": false,
+     "source": "gnomAD-SV v4 (not in the bundle yet)"
+    },
+    "condition": null
+   }
+  },
+  {
+   "key": "cnv:152385:NRXN1",
+   "gene": "NRXN1",
+   "chrom": "2",
+   "hgvs_c": null,
+   "consequence": "copy_number_loss",
+   "clinvar": {
+    "id": "152385",
+    "clnsig": "Pathogenic",
+    "class": "pathogenic",
+    "review": "none",
+    "revstat": "no assertion criteria provided",
+    "stars": 0,
+    "conf": null
+   },
+   "gnomad": null,
+   "am": null,
+   "mode": "AD",
+   "patterns": {
+    "AD": {
+     "label": "complex neurodevelopmental disorder",
+     "validity": "Definitive"
+    }
+   },
+   "condition": {
+    "label": "complex neurodevelopmental disorder",
+    "moi": "AD",
+    "validity": "Definitive",
+    "others": 0
+   },
+   "set": "sampled",
+   "stratum": "partial loss, the gene's start",
+   "zygosity": "het",
+   "copiesX": 2,
+   "p1": null,
+   "dosage": {
+    "hi": "3",
+    "lofKnown": 56
+   },
+   "cnv": {
+    "dir": "loss",
+    "type": "copy number loss",
+    "name": "GRCh38/hg38 2p16.3(chr2:50624294-51265729)x1",
+    "chrom": "2",
+    "start": 50624294,
+    "end": 51265729,
+    "size": 641436,
+    "copies": 1,
+    "copiesStated": true,
+    "transcript": "NM_001330078.2",
+    "where": "start",
+    "whole": false,
+    "exons": {
+     "first": 2,
+     "last": 5,
+     "of": 23
+    },
+    "fullExons": 4,
+    "share": 0.1839,
+    "inFrame": false,
+    "plen": 1507,
+    "genes": 1,
+    "others": [],
+    "rating": {
+     "hi": "3",
+     "ts": "0",
+     "hiDisease": "MONDO:0100038",
+     "tsDisease": null
+    },
+    "region": null,
+    "overlaps": {
+     "harmful": 25,
+     "uncertain": 0,
+     "harmless": 0
+    },
+    "rarity": {
+     "measured": false,
+     "source": "gnomAD-SV v4 (not in the bundle yet)"
+    },
+    "condition": null
+   }
+  },
+  {
+   "key": "cnv:152005:GATA4",
+   "gene": "GATA4",
+   "chrom": "8",
+   "hgvs_c": null,
+   "consequence": "copy_number_loss",
+   "clinvar": {
+    "id": "152005",
+    "clnsig": "Pathogenic",
+    "class": "pathogenic",
+    "review": "none",
+    "revstat": "no assertion criteria provided",
+    "stars": 0,
+    "conf": null
+   },
+   "gnomad": null,
+   "am": null,
+   "mode": "AD",
+   "patterns": {
+    "AD": {
+     "label": "GATA4-related congenital heart disease with or without pancreatic hypoplasia or diabetes",
+     "validity": "Definitive"
+    }
+   },
+   "condition": {
+    "label": "GATA4-related congenital heart disease with or without pancreatic hypoplasia or diabetes",
+    "moi": "AD",
+    "validity": "Definitive",
+    "others": 0
+   },
+   "set": "sampled",
+   "stratum": "partial loss, the gene's end, several pieces",
+   "zygosity": "het",
+   "copiesX": 2,
+   "p1": null,
+   "dosage": {
+    "hi": "3",
+    "lofKnown": 13
+   },
+   "cnv": {
+    "dir": "loss",
+    "type": "copy number loss",
+    "name": "GRCh38/hg38 8p23.1(chr8:11739235-11803434)x1",
+    "chrom": "8",
+    "start": 11739235,
+    "end": 11803434,
+    "size": 64200,
+    "copies": 1,
+    "copiesStated": true,
+    "transcript": "NM_001308093.3",
+    "where": "end",
+    "whole": false,
+    "exons": {
+     "first": 3,
+     "last": 7,
+     "of": 7
+    },
+    "fullExons": 5,
+    "share": 0.5375,
+    "inFrame": false,
+    "plen": 443,
+    "genes": 1,
+    "others": [],
+    "rating": {
+     "hi": "3",
+     "ts": "0",
+     "hiDisease": "MONDO:0011938",
+     "tsDisease": null
+    },
+    "region": null,
+    "overlaps": {
+     "harmful": 9,
+     "uncertain": 0,
+     "harmless": 0
+    },
+    "rarity": {
+     "measured": false,
+     "source": "gnomAD-SV v4 (not in the bundle yet)"
+    },
+    "condition": null
+   }
+  },
+  {
+   "key": "cnv:90057:MLH1",
+   "gene": "MLH1",
+   "chrom": "3",
+   "hgvs_c": null,
+   "consequence": "copy_number_loss",
+   "clinvar": {
+    "id": "90057",
+    "clnsig": "Pathogenic",
+    "class": "pathogenic",
+    "review": "expert",
+    "revstat": "reviewed by expert panel",
+    "stars": 3,
+    "conf": null
+   },
+   "gnomad": null,
+   "am": null,
+   "mode": "AD,AR",
+   "patterns": {
+    "AD": {
+     "label": "Lynch syndrome",
+     "validity": "Definitive"
+    },
+    "AR": {
+     "label": "mismatch repair cancer syndrome 1",
+     "validity": "Definitive"
+    }
+   },
+   "condition": {
+    "label": "Lynch syndrome",
+    "moi": "AD",
+    "validity": "Definitive",
+    "others": 1
+   },
+   "set": "sampled",
+   "stratum": "partial loss, the last piece only",
+   "zygosity": "het",
+   "copiesX": 2,
+   "p1": null,
+   "dosage": {
+    "hi": "3",
+    "lofKnown": 1167
+   },
+   "cnv": {
+    "dir": "loss",
+    "type": "Deletion",
+    "name": "NM_000249.3(MLH1):c.2104-?_*(193_?)del",
+    "chrom": "3",
+    "start": 37050486,
+    "end": 37050846,
+    "size": 361,
+    "copies": 1,
+    "copiesStated": false,
+    "transcript": "NM_000249.4",
+    "where": "last-exon",
+    "whole": false,
+    "exons": {
+     "first": 19,
+     "last": 19,
+     "of": 19
+    },
+    "fullExons": 1,
+    "share": 0.074,
+    "inFrame": true,
+    "plen": 756,
+    "genes": 1,
+    "others": [],
+    "rating": {
+     "hi": "3",
+     "ts": "0",
+     "hiDisease": "MONDO:0005835",
+     "tsDisease": null
+    },
+    "region": null,
+    "overlaps": {
+     "harmful": 24,
+     "uncertain": 0,
+     "harmless": 0
+    },
+    "rarity": {
+     "measured": false,
+     "source": "gnomAD-SV v4 (not in the bundle yet)"
+    },
+    "condition": null
+   }
+  },
+  {
+   "key": "cnv:974884:TPM3",
+   "gene": "TPM3",
+   "chrom": "1",
+   "hgvs_c": null,
+   "consequence": "copy_number_loss",
+   "clinvar": {
+    "id": "974884",
+    "clnsig": "Likely_pathogenic",
+    "class": "likely-pathogenic",
+    "review": "single",
+    "revstat": "criteria provided, single submitter",
+    "stars": 1,
+    "conf": null
+   },
+   "gnomad": null,
+   "am": null,
+   "mode": "AD,AR",
+   "patterns": {
+    "AD": {
+     "label": "TPM3-related myopathy",
+     "validity": "Definitive"
+    },
+    "AR": {
+     "label": "TPM3-related myopathy",
+     "validity": "Definitive"
+    }
+   },
+   "condition": {
+    "label": "TPM3-related myopathy",
+    "moi": "AD",
+    "validity": "Definitive",
+    "others": 0
+   },
+   "set": "sampled",
+   "stratum": "partial loss, unrated gene, off step",
+   "zygosity": "het",
+   "copiesX": 2,
+   "p1": null,
+   "dosage": {
+    "hi": null,
+    "lofKnown": 8
+   },
+   "cnv": {
+    "dir": "loss",
+    "type": "Deletion",
+    "name": "NM_152263.4(TPM3):c.377+863_775+422del",
+    "chrom": "1",
+    "start": 154169978,
+    "end": 154175252,
+    "size": 5275,
+    "copies": 1,
+    "copiesStated": false,
+    "transcript": "NM_152263.4",
+    "where": "inside",
+    "whole": false,
+    "exons": {
+     "first": 4,
+     "last": 8,
+     "of": 10
+    },
+    "fullExons": 5,
+    "share": 0.4639,
+    "inFrame": false,
+    "plen": 285,
+    "genes": 1,
+    "others": [],
+    "rating": {
+     "hi": null,
+     "ts": null,
+     "hiDisease": null,
+     "tsDisease": null
+    },
+    "region": null,
+    "overlaps": {
+     "harmful": 1,
+     "uncertain": 0,
+     "harmless": 0
+    },
+    "rarity": {
+     "measured": false,
+     "source": "gnomAD-SV v4 (not in the bundle yet)"
+    },
+    "condition": null
+   }
+  },
+  {
+   "key": "cnv:850409:FANCA",
+   "gene": "FANCA",
+   "chrom": "16",
+   "hgvs_c": null,
+   "consequence": "copy_number_loss",
+   "clinvar": {
+    "id": "850409",
+    "clnsig": "Pathogenic",
+    "class": "pathogenic",
+    "review": "single",
+    "revstat": "criteria provided, single submitter",
+    "stars": 1,
+    "conf": null
+   },
+   "gnomad": null,
+   "am": null,
+   "mode": "AR",
+   "patterns": {
+    "AR": {
+     "label": "Fanconi anemia complementation group A",
+     "validity": "Definitive"
+    }
+   },
+   "condition": {
+    "label": "Fanconi anemia complementation group A",
+    "moi": "AR",
+    "validity": "Definitive",
+    "others": 0
+   },
+   "set": "sampled",
+   "stratum": "partial loss, unrated gene, off step",
+   "zygosity": "het",
+   "copiesX": 2,
+   "p1": null,
+   "dosage": {
+    "hi": null,
+    "lofKnown": 546
+   },
+   "cnv": {
+    "dir": "loss",
+    "type": "Deletion",
+    "name": "NM_000135.4(FANCA):c.284-1328_705del",
+    "chrom": "16",
+    "start": 89805284,
+    "end": 89812399,
+    "size": 7116,
+    "copies": 1,
+    "copiesStated": false,
+    "transcript": "NM_000135.4",
+    "where": "inside",
+    "whole": false,
+    "exons": {
+     "first": 4,
+     "last": 7,
+     "of": 43
+    },
+    "fullExons": 3,
+    "share": 0.0966,
+    "inFrame": false,
+    "plen": 1455,
+    "genes": 1,
+    "others": [],
+    "rating": {
+     "hi": null,
+     "ts": null,
+     "hiDisease": null,
+     "tsDisease": null
+    },
+    "region": null,
+    "overlaps": {
+     "harmful": 11,
+     "uncertain": 4,
+     "harmless": 0
+    },
+    "rarity": {
+     "measured": false,
+     "source": "gnomAD-SV v4 (not in the bundle yet)"
+    },
+    "condition": null
+   }
+  },
+  {
+   "key": "cnv:155474:NOTCH2",
+   "gene": "NOTCH2",
+   "chrom": "1",
+   "hgvs_c": null,
+   "consequence": "copy_number_loss",
+   "clinvar": {
+    "id": "155474",
+    "clnsig": "Uncertain_significance",
+    "class": "uncertain",
+    "review": "none",
+    "revstat": "no assertion criteria provided",
+    "stars": 0,
+    "conf": null
+   },
+   "gnomad": null,
+   "am": null,
+   "mode": "AD",
+   "patterns": {
+    "AD": {
+     "label": "Alagille syndrome",
+     "validity": "Definitive"
+    }
+   },
+   "condition": {
+    "label": "Alagille syndrome",
+    "moi": "AD",
+    "validity": "Definitive",
+    "others": 1
+   },
+   "set": "sampled",
+   "stratum": "partial loss, HI 0-1, off step",
+   "zygosity": "het",
+   "copiesX": 2,
+   "p1": null,
+   "dosage": {
+    "hi": "0",
+    "lofKnown": 81
+   },
+   "cnv": {
+    "dir": "loss",
+    "type": "copy number loss",
+    "name": "GRCh38/hg38 1p12(chr1:120007131-120068631)x1",
+    "chrom": "1",
+    "start": 120007131,
+    "end": 120068631,
+    "size": 61501,
+    "copies": 1,
+    "copiesStated": true,
+    "transcript": "NM_024408.4",
+    "where": "inside",
+    "whole": false,
+    "exons": {
+     "first": 2,
+     "last": 2,
+     "of": 34
+    },
+    "fullExons": 1,
+    "share": 0.0111,
+    "inFrame": false,
+    "plen": 2471,
+    "genes": 1,
+    "others": [],
+    "rating": {
+     "hi": "0",
+     "ts": "0",
+     "hiDisease": "MONDO:0012439",
+     "tsDisease": null
+    },
+    "region": null,
+    "overlaps": {
+     "harmful": 0,
+     "uncertain": 0,
+     "harmless": 0
+    },
+    "rarity": {
+     "measured": false,
+     "source": "gnomAD-SV v4 (not in the bundle yet)"
+    },
+    "condition": null
+   }
+  },
+  {
+   "key": "cnv:627512:GP1BB",
+   "gene": "GP1BB",
+   "chrom": "22",
+   "hgvs_c": null,
+   "consequence": "copy_number_loss",
+   "clinvar": {
+    "id": "627512",
+    "clnsig": "Conflicting_classifications_of_pathogenicity",
+    "class": "conflicting",
+    "review": "conflicting",
+    "revstat": "criteria provided, conflicting classifications",
+    "stars": 1,
+    "conf": {
+     "Pathogenic": 1,
+     "Uncertain_significance": 1
+    }
+   },
+   "gnomad": null,
+   "am": null,
+   "mode": "AR",
+   "patterns": {
+    "AR": {
+     "label": "Bernard-Soulier syndrome",
+     "validity": "Definitive"
+    }
+   },
+   "condition": {
+    "label": "Bernard-Soulier syndrome",
+    "moi": "AR",
+    "validity": "Definitive",
+    "others": 0
+   },
+   "set": "sampled",
+   "stratum": "loss, labs disagree",
+   "zygosity": "het",
+   "copiesX": 2,
+   "p1": null,
+   "dosage": {
+    "hi": "30",
+    "lofKnown": 20
+   },
+   "cnv": {
+    "dir": "loss",
+    "type": "Deletion",
+    "name": "NC_000022.11:g.19721912_19724790del",
+    "chrom": "22",
+    "start": 19721912,
+    "end": 19724790,
+    "size": 2879,
+    "copies": 1,
+    "copiesStated": false,
+    "transcript": "NM_000407.5",
+    "where": "whole",
+    "whole": true,
+    "exons": null,
+    "fullExons": 2,
+    "share": 1,
+    "inFrame": null,
+    "plen": 206,
+    "genes": 1,
+    "others": [],
+    "rating": {
+     "hi": "30",
+     "ts": "Not yet evaluated",
+     "hiDisease": "MONDO:0009276",
+     "tsDisease": null
+    },
+    "region": null,
+    "overlaps": {
+     "harmful": 2,
+     "uncertain": 0,
+     "harmless": 0
+    },
+    "rarity": {
+     "measured": false,
+     "source": "gnomAD-SV v4 (not in the bundle yet)"
+    },
+    "condition": null
+   }
+  },
+  {
+   "key": "cnv:221704:MARVELD2",
+   "gene": "MARVELD2",
+   "chrom": "5",
+   "hgvs_c": null,
+   "consequence": "copy_number_loss",
+   "clinvar": {
+    "id": "221704",
+    "clnsig": "Benign",
+    "class": "benign",
+    "review": "single",
+    "revstat": "criteria provided, single submitter",
+    "stars": 1,
+    "conf": null
+   },
+   "gnomad": null,
+   "am": null,
+   "mode": "AR",
+   "patterns": {
+    "AR": {
+     "label": "nonsyndromic genetic hearing loss",
+     "validity": "Definitive"
+    }
+   },
+   "condition": {
+    "label": "nonsyndromic genetic hearing loss",
+    "moi": "AR",
+    "validity": "Definitive",
+    "others": 0
+   },
+   "set": "sampled",
+   "stratum": "partial loss, harmless",
+   "zygosity": "het",
+   "copiesX": 2,
+   "p1": null,
+   "dosage": {
+    "hi": "30",
+    "lofKnown": 35
+   },
+   "cnv": {
+    "dir": "loss",
+    "type": "copy number loss",
+    "name": "GRCh38/hg38 5q13.2(chr5:69424592-69579800)x1",
+    "chrom": "5",
+    "start": 69424592,
+    "end": 69579800,
+    "size": 155209,
+    "copies": 1,
+    "copiesStated": true,
+    "transcript": "NM_001038603.3",
+    "where": "end",
+    "whole": false,
+    "exons": {
+     "first": 3,
+     "last": 7,
+     "of": 7
+    },
+    "fullExons": 5,
+    "share": 0.3166,
+    "inFrame": true,
+    "plen": 558,
+    "genes": 1,
+    "others": [],
+    "rating": {
+     "hi": "30",
+     "ts": "0",
+     "hiDisease": "MONDO:0012420",
+     "tsDisease": null
+    },
+    "region": null,
+    "overlaps": {
+     "harmful": 1,
+     "uncertain": 0,
+     "harmless": 0
+    },
+    "rarity": {
+     "measured": false,
+     "source": "gnomAD-SV v4 (not in the bundle yet)"
+    },
+    "condition": null
+   }
+  },
+  {
+   "key": "cnv:224608:NDE1",
+   "gene": "NDE1",
+   "chrom": "16",
+   "hgvs_c": null,
+   "consequence": "copy_number_loss",
+   "clinvar": {
+    "id": "224608",
+    "clnsig": "Pathogenic",
+    "class": "pathogenic",
+    "review": "none",
+    "revstat": "no assertion criteria provided",
+    "stars": 0,
+    "conf": null
+   },
+   "gnomad": null,
+   "am": null,
+   "mode": "AR",
+   "patterns": {
+    "AR": {
+     "label": "microcephaly with lissencephaly and/or hydranencephaly",
+     "validity": "Definitive"
+    }
+   },
+   "condition": {
+    "label": "microcephaly with lissencephaly and/or hydranencephaly",
+    "moi": "AR",
+    "validity": "Definitive",
+    "others": 0
+   },
+   "set": "sampled",
+   "stratum": "partial loss, no assertion criteria",
+   "zygosity": "het",
+   "copiesX": 2,
+   "p1": null,
+   "dosage": {
+    "hi": "30",
+    "lofKnown": 5
+   },
+   "cnv": {
+    "dir": "loss",
+    "type": "Deletion",
+    "name": "NM_017668.3(NDE1):c.-43-3548_83+622del",
+    "chrom": "16",
+    "start": 15661188,
+    "end": 15665483,
+    "size": 4296,
+    "copies": 1,
+    "copiesStated": false,
+    "transcript": "NM_017668.3",
+    "where": "start",
+    "whole": false,
+    "exons": {
+     "first": 2,
+     "last": 2,
+     "of": 9
+    },
+    "fullExons": 1,
+    "share": 0.0823,
+    "inFrame": false,
+    "plen": 335,
+    "genes": 1,
+    "others": [],
+    "rating": {
+     "hi": "30",
+     "ts": "0",
+     "hiDisease": "MONDO:0013527",
+     "tsDisease": null
+    },
+    "region": null,
+    "overlaps": {
+     "harmful": 19,
+     "uncertain": 4,
+     "harmless": 0
+    },
+    "rarity": {
+     "measured": false,
+     "source": "gnomAD-SV v4 (not in the bundle yet)"
+    },
+    "condition": null
+   }
+  },
+  {
+   "key": "cnv:3710:LDLR",
+   "gene": "LDLR",
+   "chrom": "19",
+   "hgvs_c": null,
+   "consequence": "copy_number_loss",
+   "clinvar": {
+    "id": "3710",
+    "clnsig": "Pathogenic",
+    "class": "pathogenic",
+    "review": "multiple",
+    "revstat": "criteria provided, multiple submitters, no conflicts",
+    "stars": 2,
+    "conf": null
+   },
+   "gnomad": null,
+   "am": null,
+   "mode": "SD",
+   "patterns": {
+    "SD": {
+     "label": "hypercholesterolemia, familial, 1",
+     "validity": "Definitive"
+    }
+   },
+   "condition": {
+    "label": "hypercholesterolemia, familial, 1",
+    "moi": "SD",
+    "validity": "Definitive",
+    "others": 0
+   },
+   "set": "sampled",
+   "stratum": "loss, several labs agree",
+   "zygosity": "het",
+   "copiesX": 2,
+   "p1": null,
+   "dosage": {
+    "hi": "3",
+    "lofKnown": 849
+   },
+   "cnv": {
+    "dir": "loss",
+    "type": "Deletion",
+    "name": "FH French Canadian 5",
+    "chrom": "19",
+    "start": 11089616,
+    "end": 11105219,
+    "size": 15604,
+    "copies": 1,
+    "copiesStated": false,
+    "transcript": "NM_000527.5",
+    "where": "inside",
+    "whole": false,
+    "exons": {
+     "first": 2,
+     "last": 3,
+     "of": 18
+    },
+    "fullExons": 2,
+    "share": 0.0952,
+    "inFrame": true,
+    "plen": 860,
+    "genes": 1,
+    "others": [],
+    "rating": {
+     "hi": "3",
+     "ts": "0",
+     "hiDisease": "MONDO:0007750",
+     "tsDisease": null
+    },
+    "region": null,
+    "overlaps": {
+     "harmful": 20,
+     "uncertain": 0,
+     "harmless": 0
+    },
+    "rarity": {
+     "measured": false,
+     "source": "gnomAD-SV v4 (not in the bundle yet)"
+    },
+    "condition": null
+   }
+  },
+  {
+   "key": "cnv:254067:CHEK2",
+   "gene": "CHEK2",
+   "chrom": "22",
+   "hgvs_c": null,
+   "consequence": "copy_number_loss",
+   "clinvar": {
+    "id": "254067",
+    "clnsig": "Uncertain_significance",
+    "class": "uncertain",
+    "review": "multiple",
+    "revstat": "criteria provided, multiple submitters, no conflicts",
+    "stars": 2,
+    "conf": null
+   },
+   "gnomad": null,
+   "am": null,
+   "mode": "AD",
+   "patterns": {
+    "AD": {
+     "label": "CHEK2-related cancer predisposition",
+     "validity": "Definitive"
+    }
+   },
+   "condition": {
+    "label": "CHEK2-related cancer predisposition",
+    "moi": "AD",
+    "validity": "Definitive",
+    "others": 0
+   },
+   "set": "sampled",
+   "stratum": "loss, several labs agree",
+   "zygosity": "het",
+   "copiesX": 2,
+   "p1": null,
+   "dosage": {
+    "hi": "3",
+    "lofKnown": 754
+   },
+   "cnv": {
+    "dir": "loss",
+    "type": "Deletion",
+    "name": "NM_007194.3(CHEK2):c.1462-?_1542+?del",
+    "chrom": "22",
+    "start": 28689135,
+    "end": 28689215,
+    "size": 81,
+    "copies": 1,
+    "copiesStated": false,
+    "transcript": "NM_007194.4",
+    "where": "inside",
+    "whole": false,
+    "exons": {
+     "first": 14,
+     "last": 14,
+     "of": 15
+    },
+    "fullExons": 1,
+    "share": 0.0496,
+    "inFrame": true,
+    "plen": 543,
+    "genes": 1,
+    "others": [],
+    "rating": {
+     "hi": "3",
+     "ts": "0",
+     "hiDisease": "MONDO:0016419",
+     "tsDisease": null
+    },
+    "region": null,
+    "overlaps": {
+     "harmful": 11,
+     "uncertain": 0,
+     "harmless": 0
+    },
+    "rarity": {
+     "measured": false,
+     "source": "gnomAD-SV v4 (not in the bundle yet)"
+    },
+    "condition": null
+   }
+  },
+  {
+   "key": "cnv:160879:HNF1B",
+   "gene": "HNF1B",
+   "chrom": "17",
+   "hgvs_c": null,
+   "consequence": "copy_number_gain",
+   "clinvar": {
+    "id": "160879",
+    "clnsig": "Pathogenic",
+    "class": "pathogenic",
+    "review": "multiple",
+    "revstat": "criteria provided, multiple submitters, no conflicts",
+    "stars": 2,
+    "conf": null
+   },
+   "gnomad": null,
+   "am": null,
+   "mode": "AD",
+   "patterns": {
+    "AD": {
+     "label": "renal cysts and diabetes syndrome",
+     "validity": "Definitive"
+    }
+   },
+   "condition": {
+    "label": "renal cysts and diabetes syndrome",
+    "moi": "AD",
+    "validity": "Definitive",
+    "others": 0
+   },
+   "set": "sampled",
+   "stratum": "gain, several labs agree",
+   "zygosity": "het",
+   "copiesX": 2,
+   "p1": null,
+   "dosage": {
+    "hi": "3",
+    "lofKnown": 156
+   },
+   "cnv": {
+    "dir": "gain",
+    "type": "copy number gain",
+    "name": "GRCh38/hg38 17q12(chr17:36357258-37889296)x3",
+    "chrom": "17",
+    "start": 36357258,
+    "end": 37889296,
+    "size": 1532039,
+    "copies": 3,
+    "copiesStated": true,
+    "transcript": "NM_000458.4",
+    "where": "whole",
+    "whole": true,
+    "exons": null,
+    "fullExons": 9,
+    "share": 1,
+    "inFrame": null,
+    "plen": 557,
+    "genes": 1,
+    "others": [],
+    "rating": {
+     "hi": "3",
+     "ts": "0",
+     "hiDisease": "MONDO:0007669",
+     "tsDisease": null
+    },
+    "region": {
+     "id": "ISCA-37432",
+     "name": "17q12 recurrent (RCAD syndrome) region (includes HNF1B)",
+     "score": "3",
+     "disease": "MONDO:0013796"
+    },
+    "overlaps": {
+     "harmful": 10,
+     "uncertain": 0,
+     "harmless": 0
+    },
+    "rarity": {
+     "measured": false,
+     "source": "gnomAD-SV v4 (not in the bundle yet)"
+    },
+    "condition": {
+     "id": "MONDO:0013796",
+     "label": "chromosome 17q12 duplication syndrome"
+    }
+   }
+  },
+  {
+   "key": "cnv:90486:MSH2",
+   "gene": "MSH2",
+   "chrom": "2",
+   "hgvs_c": null,
+   "consequence": "copy_number_loss",
+   "clinvar": {
+    "id": "90486",
+    "clnsig": "Pathogenic",
+    "class": "pathogenic",
+    "review": "expert",
+    "revstat": "reviewed by expert panel",
+    "stars": 3,
+    "conf": null
+   },
+   "gnomad": null,
+   "am": null,
+   "mode": "AD,AR",
+   "patterns": {
+    "AD": {
+     "label": "Lynch syndrome",
+     "validity": "Definitive"
+    },
+    "AR": {
+     "label": "mismatch repair cancer syndrome 1",
+     "validity": "Definitive"
+    }
+   },
+   "condition": {
+    "label": "Lynch syndrome",
+    "moi": "AD",
+    "validity": "Definitive",
+    "others": 1
+   },
+   "set": "sampled",
+   "stratum": "loss, expert panel",
+   "zygosity": "het",
+   "copiesX": 2,
+   "p1": null,
+   "dosage": {
+    "hi": "3",
+    "lofKnown": 1457
+   },
+   "cnv": {
+    "dir": "loss",
+    "type": "Deletion",
+    "name": "NM_000251.1(MSH2):c.-1753_645+922del",
+    "chrom": "2",
+    "start": 47401439,
+    "end": 47411294,
+    "size": 9856,
+    "copies": 1,
+    "copiesStated": false,
+    "transcript": "NM_000251.3",
+    "where": "start",
+    "whole": false,
+    "exons": {
+     "first": 1,
+     "last": 3,
+     "of": 16
+    },
+    "fullExons": 3,
+    "share": 0.2299,
+    "inFrame": true,
+    "plen": 934,
+    "genes": 1,
+    "others": [],
+    "rating": {
+     "hi": "3",
+     "ts": "0",
+     "hiDisease": "MONDO:0005835",
+     "tsDisease": null
+    },
+    "region": null,
+    "overlaps": {
+     "harmful": 80,
+     "uncertain": 0,
+     "harmless": 0
+    },
+    "rarity": {
+     "measured": false,
+     "source": "gnomAD-SV v4 (not in the bundle yet)"
+    },
+    "condition": null
+   }
+  },
+  {
+   "key": "cnv:66104:CFTR",
+   "gene": "CFTR",
+   "chrom": "7",
+   "hgvs_c": null,
+   "consequence": "copy_number_loss",
+   "clinvar": {
+    "id": "66104",
+    "clnsig": "Pathogenic",
+    "class": "pathogenic",
+    "review": "expert",
+    "revstat": "reviewed by expert panel",
+    "stars": 3,
+    "conf": null
+   },
+   "gnomad": null,
+   "am": null,
+   "mode": "AR",
+   "patterns": {
+    "AR": {
+     "label": "cystic fibrosis",
+     "validity": "Definitive"
+    }
+   },
+   "condition": {
+    "label": "cystic fibrosis",
+    "moi": "AR",
+    "validity": "Definitive",
+    "others": 0
+   },
+   "set": "sampled",
+   "stratum": "loss, expert panel",
+   "zygosity": "het",
+   "copiesX": 2,
+   "p1": null,
+   "dosage": {
+    "hi": "30",
+    "lofKnown": 826
+   },
+   "cnv": {
+    "dir": "loss",
+    "type": "Deletion",
+    "name": "NM_000492.4(CFTR):c.3964-78_4242+577del",
+    "chrom": "7",
+    "start": 117664607,
+    "end": 117666138,
+    "size": 1532,
+    "copies": 1,
+    "copiesStated": false,
+    "transcript": "NM_000492.4",
+    "where": "inside",
+    "whole": false,
+    "exons": {
+     "first": 25,
+     "last": 26,
+     "of": 27
+    },
+    "fullExons": 2,
+    "share": 0.0628,
+    "inFrame": true,
+    "plen": 1480,
+    "genes": 1,
+    "others": [],
+    "rating": {
+     "hi": "30",
+     "ts": "Not yet evaluated",
+     "hiDisease": "MONDO:0009061",
+     "tsDisease": null
+    },
+    "region": null,
+    "overlaps": {
+     "harmful": 5,
+     "uncertain": 0,
+     "harmless": 0
+    },
+    "rarity": {
+     "measured": false,
+     "source": "gnomAD-SV v4 (not in the bundle yet)"
+    },
+    "condition": null
+   }
+  },
+  {
+   "key": "cnv:455849:DMD",
+   "gene": "DMD",
+   "chrom": "X",
+   "hgvs_c": null,
+   "consequence": "copy_number_loss",
+   "clinvar": {
+    "id": "455849",
+    "clnsig": "Pathogenic",
+    "class": "pathogenic",
+    "review": "single",
+    "revstat": "criteria provided, single submitter",
+    "stars": 1,
+    "conf": null
+   },
+   "gnomad": null,
+   "am": null,
+   "mode": "XL",
+   "patterns": {
+    "XL": {
+     "label": "progressive muscular dystrophy",
+     "validity": "Definitive"
+    }
+   },
+   "condition": {
+    "label": "progressive muscular dystrophy",
+    "moi": "XL",
+    "validity": "Definitive",
+    "others": 0
+   },
+   "set": "sampled",
+   "stratum": "loss on X, one copy of X (scenario)",
+   "zygosity": "hemi",
+   "copiesX": 1,
+   "p1": null,
+   "dosage": {
+    "hi": "3",
+    "lofKnown": 1552
+   },
+   "cnv": {
+    "dir": "loss",
+    "type": "Deletion",
+    "name": "NC_000023.11:g.(?_33211262)_(33211366_?)del",
+    "chrom": "X",
+    "start": 33211262,
+    "end": 33211366,
+    "size": 105,
+    "copies": 1,
+    "copiesStated": false,
+    "transcript": "NM_004006.3",
+    "where": "start",
+    "whole": false,
+    "exons": {
+     "first": 1,
+     "last": 1,
+     "of": 79
+    },
+    "fullExons": 1,
+    "share": 0.0028,
+    "inFrame": false,
+    "plen": 3685,
+    "genes": 1,
+    "others": [],
+    "rating": {
+     "hi": "3",
+     "ts": "0",
+     "hiDisease": "MONDO:0010679",
+     "tsDisease": null
+    },
+    "region": null,
+    "overlaps": {
+     "harmful": 5,
+     "uncertain": 0,
+     "harmless": 0
+    },
+    "rarity": {
+     "measured": false,
+     "source": "gnomAD-SV v4 (not in the bundle yet)"
+    },
+    "condition": null
+   },
+   "scenario": true
+  },
+  {
+   "key": "cnv:455849:DMD:xx",
+   "gene": "DMD",
+   "chrom": "X",
+   "hgvs_c": null,
+   "consequence": "copy_number_loss",
+   "clinvar": {
+    "id": "455849",
+    "clnsig": "Pathogenic",
+    "class": "pathogenic",
+    "review": "single",
+    "revstat": "criteria provided, single submitter",
+    "stars": 1,
+    "conf": null
+   },
+   "gnomad": null,
+   "am": null,
+   "mode": "XL",
+   "patterns": {
+    "XL": {
+     "label": "progressive muscular dystrophy",
+     "validity": "Definitive"
+    }
+   },
+   "condition": {
+    "label": "progressive muscular dystrophy",
+    "moi": "XL",
+    "validity": "Definitive",
+    "others": 0
+   },
+   "set": "sampled",
+   "stratum": "loss on X, two copies of X (scenario)",
+   "zygosity": "het",
+   "copiesX": 2,
+   "p1": null,
+   "dosage": {
+    "hi": "3",
+    "lofKnown": 1552
+   },
+   "cnv": {
+    "dir": "loss",
+    "type": "Deletion",
+    "name": "NC_000023.11:g.(?_33211262)_(33211366_?)del",
+    "chrom": "X",
+    "start": 33211262,
+    "end": 33211366,
+    "size": 105,
+    "copies": 1,
+    "copiesStated": false,
+    "transcript": "NM_004006.3",
+    "where": "start",
+    "whole": false,
+    "exons": {
+     "first": 1,
+     "last": 1,
+     "of": 79
+    },
+    "fullExons": 1,
+    "share": 0.0028,
+    "inFrame": false,
+    "plen": 3685,
+    "genes": 1,
+    "others": [],
+    "rating": {
+     "hi": "3",
+     "ts": "0",
+     "hiDisease": "MONDO:0010679",
+     "tsDisease": null
+    },
+    "region": null,
+    "overlaps": {
+     "harmful": 5,
+     "uncertain": 0,
+     "harmless": 0
+    },
+    "rarity": {
+     "measured": false,
+     "source": "gnomAD-SV v4 (not in the bundle yet)"
+    },
+    "condition": null
+   },
+   "scenario": true
+  },
+  {
+   "key": "cnv:152902:PLP1",
+   "gene": "PLP1",
+   "chrom": "X",
+   "hgvs_c": null,
+   "consequence": "copy_number_gain",
+   "clinvar": {
+    "id": "152902",
+    "clnsig": "Pathogenic",
+    "class": "pathogenic",
+    "review": "none",
+    "revstat": "no assertion criteria provided",
+    "stars": 0,
+    "conf": null
+   },
+   "gnomad": null,
+   "am": null,
+   "mode": "XL",
+   "patterns": {
+    "XL": {
+     "label": "Pelizaeus-Merzbacher spectrum disorder",
+     "validity": "Definitive"
+    }
+   },
+   "condition": {
+    "label": "Pelizaeus-Merzbacher spectrum disorder",
+    "moi": "XL",
+    "validity": "Definitive",
+    "others": 0
+   },
+   "set": "sampled",
+   "stratum": "whole-gene gain, TS 3 (or a TS 3 region)",
+   "zygosity": "het",
+   "copiesX": 2,
+   "p1": null,
+   "dosage": {
+    "hi": "3",
+    "lofKnown": 51
+   },
+   "cnv": {
+    "dir": "gain",
+    "type": "copy number gain",
+    "name": "GRCh38/hg38 Xq22.2(chrX:103602874-103881017)x2",
+    "chrom": "X",
+    "start": 103602874,
+    "end": 103881017,
+    "size": 278144,
+    "copies": 2,
+    "copiesStated": true,
+    "transcript": "NM_000533.5",
+    "where": "whole",
+    "whole": true,
+    "exons": null,
+    "fullExons": 7,
+    "share": 1,
+    "inFrame": null,
+    "plen": 277,
+    "genes": 1,
+    "others": [],
+    "rating": {
+     "hi": "3",
+     "ts": "3",
+     "hiDisease": "MONDO:0010714",
+     "tsDisease": "MONDO:0010714"
+    },
+    "region": null,
+    "overlaps": {
+     "harmful": 1,
+     "uncertain": 0,
+     "harmless": 0
+    },
+    "rarity": {
+     "measured": false,
+     "source": "gnomAD-SV v4 (not in the bundle yet)"
+    },
+    "condition": {
+     "id": "MONDO:0010714",
+     "label": "Pelizaeus-Merzbacher spectrum disorder"
+    }
+   }
+  },
+  {
+   "key": "cnv:150055:PLP1",
+   "gene": "PLP1",
+   "chrom": "X",
+   "hgvs_c": null,
+   "consequence": "copy_number_gain",
+   "clinvar": {
+    "id": "150055",
+    "clnsig": "Pathogenic",
+    "class": "pathogenic",
+    "review": "none",
+    "revstat": "no assertion criteria provided",
+    "stars": 0,
+    "conf": null
+   },
+   "gnomad": null,
+   "am": null,
+   "mode": "XL",
+   "patterns": {
+    "XL": {
+     "label": "Pelizaeus-Merzbacher spectrum disorder",
+     "validity": "Definitive"
+    }
+   },
+   "condition": {
+    "label": "Pelizaeus-Merzbacher spectrum disorder",
+    "moi": "XL",
+    "validity": "Definitive",
+    "others": 0
+   },
+   "set": "sampled",
+   "stratum": "whole-gene gain, TS 3 (or a TS 3 region)",
+   "zygosity": "het",
+   "copiesX": 2,
+   "p1": null,
+   "dosage": {
+    "hi": "3",
+    "lofKnown": 51
+   },
+   "cnv": {
+    "dir": "gain",
+    "type": "copy number gain",
+    "name": "GRCh38/hg38 Xq22.2(chrX:103404405-103913265)x2",
+    "chrom": "X",
+    "start": 103404405,
+    "end": 103913265,
+    "size": 508861,
+    "copies": 2,
+    "copiesStated": true,
+    "transcript": "NM_000533.5",
+    "where": "whole",
+    "whole": true,
+    "exons": null,
+    "fullExons": 7,
+    "share": 1,
+    "inFrame": null,
+    "plen": 277,
+    "genes": 1,
+    "others": [],
+    "rating": {
+     "hi": "3",
+     "ts": "3",
+     "hiDisease": "MONDO:0010714",
+     "tsDisease": "MONDO:0010714"
+    },
+    "region": null,
+    "overlaps": {
+     "harmful": 1,
+     "uncertain": 0,
+     "harmless": 0
+    },
+    "rarity": {
+     "measured": false,
+     "source": "gnomAD-SV v4 (not in the bundle yet)"
+    },
+    "condition": {
+     "id": "MONDO:0010714",
+     "label": "Pelizaeus-Merzbacher spectrum disorder"
+    }
+   }
+  },
+  {
+   "key": "cnv:58604:GFER",
+   "gene": "GFER",
+   "chrom": "16",
+   "hgvs_c": null,
+   "consequence": "copy_number_gain",
+   "clinvar": {
+    "id": "58604",
+    "clnsig": "Pathogenic",
+    "class": "pathogenic",
+    "review": "single",
+    "revstat": "criteria provided, single submitter",
+    "stars": 1,
+    "conf": null
+   },
+   "gnomad": null,
+   "am": null,
+   "mode": "AR",
+   "patterns": {
+    "AR": {
+     "label": "mitochondrial disease",
+     "validity": "Definitive"
+    }
+   },
+   "condition": {
+    "label": "mitochondrial disease",
+    "moi": "AR",
+    "validity": "Definitive",
+    "others": 0
+   },
+   "set": "sampled",
+   "stratum": "whole-gene gain, TS 0, harmful (labs)",
+   "zygosity": "het",
+   "copiesX": 2,
+   "p1": null,
+   "dosage": {
+    "hi": "30",
+    "lofKnown": 4
+   },
+   "cnv": {
+    "dir": "gain",
+    "type": "copy number gain",
+    "name": "GRCh38/hg38 16p13.3(chr16:1816283-2020966)x3",
+    "chrom": "16",
+    "start": 1816283,
+    "end": 2020966,
+    "size": 204684,
+    "copies": 3,
+    "copiesStated": true,
+    "transcript": "NM_005262.3",
+    "where": "whole",
+    "whole": true,
+    "exons": null,
+    "fullExons": 3,
+    "share": 1,
+    "inFrame": null,
+    "plen": 205,
+    "genes": 1,
+    "others": [],
+    "rating": {
+     "hi": "30",
+     "ts": "0",
+     "hiDisease": "MONDO:0013116",
+     "tsDisease": null
+    },
+    "region": null,
+    "overlaps": {
+     "harmful": 0,
+     "uncertain": 0,
+     "harmless": 0
+    },
+    "rarity": {
+     "measured": false,
+     "source": "gnomAD-SV v4 (not in the bundle yet)"
+    },
+    "condition": null
+   }
+  },
+  {
+   "key": "cnv:417552:PRSS1",
+   "gene": "PRSS1",
+   "chrom": "7",
+   "hgvs_c": null,
+   "consequence": "copy_number_gain",
+   "clinvar": {
+    "id": "417552",
+    "clnsig": "Likely_pathogenic",
+    "class": "likely-pathogenic",
+    "review": "single",
+    "revstat": "criteria provided, single submitter",
+    "stars": 1,
+    "conf": null
+   },
+   "gnomad": null,
+   "am": null,
+   "mode": "AD",
+   "patterns": {
+    "AD": {
+     "label": "hereditary chronic pancreatitis",
+     "validity": "Definitive"
+    }
+   },
+   "condition": {
+    "label": "hereditary chronic pancreatitis",
+    "moi": "AD",
+    "validity": "Definitive",
+    "others": 0
+   },
+   "set": "sampled",
+   "stratum": "whole-gene gain, TS 0, harmful (labs)",
+   "zygosity": "het",
+   "copiesX": 2,
+   "p1": null,
+   "dosage": {
+    "hi": "0",
+    "lofKnown": 0
+   },
+   "cnv": {
+    "dir": "gain",
+    "type": "Duplication",
+    "name": "NC_000007.13:g.(?_142457319)_(142460927_?)dup",
+    "chrom": "7",
+    "start": 142749468,
+    "end": 142753076,
+    "size": 3609,
+    "copies": 3,
+    "copiesStated": false,
+    "transcript": "NM_002769.5",
+    "where": "whole",
+    "whole": true,
+    "exons": null,
+    "fullExons": 5,
+    "share": 1,
+    "inFrame": null,
+    "plen": 247,
+    "genes": 1,
+    "others": [],
+    "rating": {
+     "hi": "0",
+     "ts": "0",
+     "hiDisease": null,
+     "tsDisease": null
+    },
+    "region": null,
+    "overlaps": {
+     "harmful": 1,
+     "uncertain": 0,
+     "harmless": 0
+    },
+    "rarity": {
+     "measured": false,
+     "source": "gnomAD-SV v4 (not in the bundle yet)"
+    },
+    "condition": null
+   }
+  },
+  {
+   "key": "cnv:152719:IGF2",
+   "gene": "IGF2",
+   "chrom": "11",
+   "hgvs_c": null,
+   "consequence": "copy_number_gain",
+   "clinvar": {
+    "id": "152719",
+    "clnsig": "Uncertain_significance",
+    "class": "uncertain",
+    "review": "none",
+    "revstat": "no assertion criteria provided",
+    "stars": 0,
+    "conf": null
+   },
+   "gnomad": null,
+   "am": null,
+   "mode": "AD",
+   "patterns": {
+    "AD": {
+     "label": "Silver-Russell syndrome 3",
+     "validity": "Definitive"
+    }
+   },
+   "condition": {
+    "label": "Silver-Russell syndrome 3",
+    "moi": "AD",
+    "validity": "Definitive",
+    "others": 0
+   },
+   "set": "sampled",
+   "stratum": "whole-gene gain, TS 0, uncertain",
+   "zygosity": "het",
+   "copiesX": 2,
+   "p1": null,
+   "dosage": {
+    "hi": "0",
+    "lofKnown": 14
+   },
+   "cnv": {
+    "dir": "gain",
+    "type": "copy number gain",
+    "name": "GRCh38/hg38 11p15.5(chr11:2127344-2159430)x3",
+    "chrom": "11",
+    "start": 2127344,
+    "end": 2159430,
+    "size": 32087,
+    "copies": 3,
+    "copiesStated": true,
+    "transcript": "NM_000612.6",
+    "where": "whole",
+    "whole": true,
+    "exons": null,
+    "fullExons": 3,
+    "share": 1,
+    "inFrame": null,
+    "plen": 180,
+    "genes": 1,
+    "others": [],
+    "rating": {
+     "hi": "0",
+     "ts": "0",
+     "hiDisease": null,
+     "tsDisease": null
+    },
+    "region": null,
+    "overlaps": {
+     "harmful": 0,
+     "uncertain": 0,
+     "harmless": 0
+    },
+    "rarity": {
+     "measured": false,
+     "source": "gnomAD-SV v4 (not in the bundle yet)"
+    },
+    "condition": null
+   }
+  },
+  {
+   "key": "cnv:147295:SYCE1",
+   "gene": "SYCE1",
+   "chrom": "10",
+   "hgvs_c": null,
+   "consequence": "copy_number_gain",
+   "clinvar": {
+    "id": "147295",
+    "clnsig": "Benign",
+    "class": "benign",
+    "review": "none",
+    "revstat": "no assertion criteria provided",
+    "stars": 0,
+    "conf": null
+   },
+   "gnomad": null,
+   "am": null,
+   "mode": "AR",
+   "patterns": {
+    "AR": {
+     "label": "SYCE1-related gametogenic failure",
+     "validity": "Definitive"
+    }
+   },
+   "condition": {
+    "label": "SYCE1-related gametogenic failure",
+    "moi": "AR",
+    "validity": "Definitive",
+    "others": 0
+   },
+   "set": "sampled",
+   "stratum": "whole-gene gain, harmless",
+   "zygosity": "het",
+   "copiesX": 2,
+   "p1": null,
+   "dosage": {
+    "hi": null,
+    "lofKnown": 1
+   },
+   "cnv": {
+    "dir": "gain",
+    "type": "copy number gain",
+    "name": "GRCh38/hg38 10q26.3(chr10:133440535-133620674)x3",
+    "chrom": "10",
+    "start": 133440535,
+    "end": 133620674,
+    "size": 180140,
+    "copies": 3,
+    "copiesStated": true,
+    "transcript": "NM_001143764.3",
+    "where": "whole",
+    "whole": true,
+    "exons": null,
+    "fullExons": 13,
+    "share": 1,
+    "inFrame": null,
+    "plen": 351,
+    "genes": 1,
+    "others": [],
+    "rating": {
+     "hi": null,
+     "ts": null,
+     "hiDisease": null,
+     "tsDisease": null
+    },
+    "region": null,
+    "overlaps": {
+     "harmful": 0,
+     "uncertain": 2,
+     "harmless": 2
+    },
+    "rarity": {
+     "measured": false,
+     "source": "gnomAD-SV v4 (not in the bundle yet)"
+    },
+    "condition": null
+   }
+  },
+  {
+   "key": "cnv:155336:BTD",
+   "gene": "BTD",
+   "chrom": "3",
+   "hgvs_c": null,
+   "consequence": "copy_number_gain",
+   "clinvar": {
+    "id": "155336",
+    "clnsig": "Likely_benign",
+    "class": "likely-benign",
+    "review": "none",
+    "revstat": "no assertion criteria provided",
+    "stars": 0,
+    "conf": null
+   },
+   "gnomad": null,
+   "am": null,
+   "mode": "AR",
+   "patterns": {
+    "AR": {
+     "label": "biotinidase deficiency",
+     "validity": "Definitive"
+    }
+   },
+   "condition": {
+    "label": "biotinidase deficiency",
+    "moi": "AR",
+    "validity": "Definitive",
+    "others": 1
+   },
+   "set": "sampled",
+   "stratum": "whole-gene gain, harmless",
+   "zygosity": "het",
+   "copiesX": 2,
+   "p1": null,
+   "dosage": {
+    "hi": null,
+    "lofKnown": 120
+   },
+   "cnv": {
+    "dir": "gain",
+    "type": "copy number gain",
+    "name": "GRCh38/hg38 3p25.1-24.3(chr3:15304910-16372771)x3",
+    "chrom": "3",
+    "start": 15304910,
+    "end": 16372771,
+    "size": 1067862,
+    "copies": 3,
+    "copiesStated": true,
+    "transcript": "NM_001370658.1",
+    "where": "whole",
+    "whole": true,
+    "exons": null,
+    "fullExons": 3,
+    "share": 1,
+    "inFrame": null,
+    "plen": 523,
+    "genes": 1,
+    "others": [],
+    "rating": {
+     "hi": null,
+     "ts": null,
+     "hiDisease": null,
+     "tsDisease": null
+    },
+    "region": null,
+    "overlaps": {
+     "harmful": 0,
+     "uncertain": 0,
+     "harmless": 0
+    },
+    "rarity": {
+     "measured": false,
+     "source": "gnomAD-SV v4 (not in the bundle yet)"
+    },
+    "condition": null
+   }
+  },
+  {
+   "key": "cnv:57794:DZIP1L",
+   "gene": "DZIP1L",
+   "chrom": "3",
+   "hgvs_c": null,
+   "consequence": "copy_number_gain",
+   "clinvar": {
+    "id": "57794",
+    "clnsig": "Uncertain_significance",
+    "class": "uncertain",
+    "review": "single",
+    "revstat": "criteria provided, single submitter",
+    "stars": 1,
+    "conf": null
+   },
+   "gnomad": null,
+   "am": null,
+   "mode": "AR",
+   "patterns": {
+    "AR": {
+     "label": "autosomal recessive polycystic kidney disease",
+     "validity": "Definitive"
+    }
+   },
+   "condition": {
+    "label": "autosomal recessive polycystic kidney disease",
+    "moi": "AR",
+    "validity": "Definitive",
+    "others": 0
+   },
+   "set": "sampled",
+   "stratum": "whole-gene gain, unrated",
+   "zygosity": "het",
+   "copiesX": 2,
+   "p1": null,
+   "dosage": {
+    "hi": null,
+    "lofKnown": 11
+   },
+   "cnv": {
+    "dir": "gain",
+    "type": "copy number gain",
+    "name": "GRCh38/hg38 3q22.3(chr3:137593514-138443019)x3",
+    "chrom": "3",
+    "start": 137593514,
+    "end": 138443019,
+    "size": 849506,
+    "copies": 3,
+    "copiesStated": true,
+    "transcript": "NM_173543.3",
+    "where": "whole",
+    "whole": true,
+    "exons": null,
+    "fullExons": 15,
+    "share": 1,
+    "inFrame": null,
+    "plen": 767,
+    "genes": 1,
+    "others": [],
+    "rating": {
+     "hi": null,
+     "ts": null,
+     "hiDisease": null,
+     "tsDisease": null
+    },
+    "region": null,
+    "overlaps": {
+     "harmful": 0,
+     "uncertain": 0,
+     "harmless": 0
+    },
+    "rarity": {
+     "measured": false,
+     "source": "gnomAD-SV v4 (not in the bundle yet)"
+    },
+    "condition": null
+   }
+  },
+  {
+   "key": "cnv:530382:BRIP1",
+   "gene": "BRIP1",
+   "chrom": "17",
+   "hgvs_c": null,
+   "consequence": "copy_number_gain",
+   "clinvar": {
+    "id": "530382",
+    "clnsig": "Likely_pathogenic",
+    "class": "likely-pathogenic",
+    "review": "single",
+    "revstat": "criteria provided, single submitter",
+    "stars": 1,
+    "conf": null
+   },
+   "gnomad": null,
+   "am": null,
+   "mode": "AD,AR",
+   "patterns": {
+    "AR": {
+     "label": "Fanconi anemia complementation group J",
+     "validity": "Definitive"
+    },
+    "AD": {
+     "label": "familial ovarian cancer",
+     "validity": "Definitive"
+    }
+   },
+   "condition": {
+    "label": "Fanconi anemia complementation group J",
+    "moi": "AR",
+    "validity": "Definitive",
+    "others": 1
+   },
+   "set": "sampled",
+   "stratum": "partial gain, inside, off step, HI 3",
+   "zygosity": "het",
+   "copiesX": 2,
+   "p1": null,
+   "dosage": {
+    "hi": "3",
+    "lofKnown": 672
+   },
+   "cnv": {
+    "dir": "gain",
+    "type": "Duplication",
+    "name": "NC_000017.10:g.(?_59861625)_(59937274_?)dup",
+    "chrom": "17",
+    "start": 61784264,
+    "end": 61859913,
+    "size": 75650,
+    "copies": 3,
+    "copiesStated": false,
+    "transcript": "NM_032043.3",
+    "where": "inside",
+    "whole": false,
+    "exons": {
+     "first": 3,
+     "last": 11,
+     "of": 20
+    },
+    "fullExons": 9,
+    "share": 0.4093,
+    "inFrame": false,
+    "plen": 1249,
+    "genes": 1,
+    "others": [],
+    "rating": {
+     "hi": "3",
+     "ts": "0",
+     "hiDisease": "MONDO:0016248",
+     "tsDisease": null
+    },
+    "region": null,
+    "overlaps": {
+     "harmful": 2,
+     "uncertain": 10,
+     "harmless": 0
+    },
+    "rarity": {
+     "measured": false,
+     "source": "gnomAD-SV v4 (not in the bundle yet)"
+    },
+    "condition": null
+   }
+  },
+  {
+   "key": "cnv:217111:NF1",
+   "gene": "NF1",
+   "chrom": "17",
+   "hgvs_c": null,
+   "consequence": "copy_number_gain",
+   "clinvar": {
+    "id": "217111",
+    "clnsig": "Pathogenic",
+    "class": "pathogenic",
+    "review": "none",
+    "revstat": "no assertion criteria provided",
+    "stars": 0,
+    "conf": null
+   },
+   "gnomad": null,
+   "am": null,
+   "mode": "AD",
+   "patterns": {
+    "AD": {
+     "label": "neurofibromatosis type 1",
+     "validity": "Definitive"
+    }
+   },
+   "condition": {
+    "label": "neurofibromatosis type 1",
+    "moi": "AD",
+    "validity": "Definitive",
+    "others": 0
+   },
+   "set": "sampled",
+   "stratum": "partial gain, inside, off step, HI 3",
+   "zygosity": "het",
+   "copiesX": 2,
+   "p1": null,
+   "dosage": {
+    "hi": "3",
+    "lofKnown": 3811
+   },
+   "cnv": {
+    "dir": "gain",
+    "type": "Duplication",
+    "name": "NM_000267.3(NF1):c.3496+57_4772+2639dup",
+    "chrom": "17",
+    "start": 31232938,
+    "end": 31267978,
+    "size": 35041,
+    "copies": 3,
+    "copiesStated": false,
+    "transcript": "NM_001042492.3",
+    "where": "inside",
+    "whole": false,
+    "exons": {
+     "first": 27,
+     "last": 36,
+     "of": 58
+    },
+    "fullExons": 10,
+    "share": 0.1572,
+    "inFrame": false,
+    "plen": 2839,
+    "genes": 1,
+    "others": [],
+    "rating": {
+     "hi": "3",
+     "ts": "0",
+     "hiDisease": "MONDO:0018975",
+     "tsDisease": null
+    },
+    "region": null,
+    "overlaps": {
+     "harmful": 5,
+     "uncertain": 4,
+     "harmless": 0
+    },
+    "rarity": {
+     "measured": false,
+     "source": "gnomAD-SV v4 (not in the bundle yet)"
+    },
+    "condition": null
+   }
+  },
+  {
+   "key": "cnv:3244134:RB1",
+   "gene": "RB1",
+   "chrom": "13",
+   "hgvs_c": null,
+   "consequence": "copy_number_gain",
+   "clinvar": {
+    "id": "3244134",
+    "clnsig": "Pathogenic",
+    "class": "pathogenic",
+    "review": "single",
+    "revstat": "criteria provided, single submitter",
+    "stars": 1,
+    "conf": null
+   },
+   "gnomad": null,
+   "am": null,
+   "mode": "AD",
+   "patterns": {
+    "AD": {
+     "label": "retinoblastoma",
+     "validity": "Definitive"
+    }
+   },
+   "condition": {
+    "label": "retinoblastoma",
+    "moi": "AD",
+    "validity": "Definitive",
+    "others": 0
+   },
+   "set": "sampled",
+   "stratum": "partial gain, inside, off step, HI 3",
+   "zygosity": "het",
+   "copiesX": 2,
+   "p1": null,
+   "dosage": {
+    "hi": "3",
+    "lofKnown": 598
+   },
+   "cnv": {
+    "dir": "gain",
+    "type": "Duplication",
+    "name": "NC_000013.10:g.(?_49027119)_(49030495_?)dup",
+    "chrom": "13",
+    "start": 48452983,
+    "end": 48456359,
+    "size": 3377,
+    "copies": 3,
+    "copiesStated": false,
+    "transcript": "NM_000321.3",
+    "where": "inside",
+    "whole": false,
+    "exons": {
+     "first": 18,
+     "last": 19,
+     "of": 27
+    },
+    "fullExons": 2,
+    "share": 0.0951,
+    "inFrame": false,
+    "plen": 928,
+    "genes": 1,
+    "others": [],
+    "rating": {
+     "hi": "3",
+     "ts": "0",
+     "hiDisease": "MONDO:0008380",
+     "tsDisease": null
+    },
+    "region": null,
+    "overlaps": {
+     "harmful": 0,
+     "uncertain": 0,
+     "harmless": 0
+    },
+    "rarity": {
+     "measured": false,
+     "source": "gnomAD-SV v4 (not in the bundle yet)"
+    },
+    "condition": null
+   }
+  },
+  {
+   "key": "cnv:149188:IL1RAPL1",
+   "gene": "IL1RAPL1",
+   "chrom": "X",
+   "hgvs_c": null,
+   "consequence": "copy_number_gain",
+   "clinvar": {
+    "id": "149188",
+    "clnsig": "Uncertain_significance",
+    "class": "uncertain",
+    "review": "none",
+    "revstat": "no assertion criteria provided",
+    "stars": 0,
+    "conf": null
+   },
+   "gnomad": null,
+   "am": null,
+   "mode": "XL",
+   "patterns": {
+    "XL": {
+     "label": "X-linked complex neurodevelopmental disorder",
+     "validity": "Definitive"
+    }
+   },
+   "condition": {
+    "label": "X-linked complex neurodevelopmental disorder",
+    "moi": "XL",
+    "validity": "Definitive",
+    "others": 0
+   },
+   "set": "sampled",
+   "stratum": "partial gain, inside, in step",
+   "zygosity": "het",
+   "copiesX": 2,
+   "p1": null,
+   "dosage": {
+    "hi": "3",
+    "lofKnown": 19
+   },
+   "cnv": {
+    "dir": "gain",
+    "type": "copy number gain",
+    "name": "GRCh38/hg38 Xp21.2(chrX:29415178-29922758)x2",
+    "chrom": "X",
+    "start": 29415178,
+    "end": 29922758,
+    "size": 507581,
+    "copies": 2,
+    "copiesStated": true,
+    "transcript": "NM_014271.4",
+    "where": "inside",
+    "whole": false,
+    "exons": {
+     "first": 6,
+     "last": 8,
+     "of": 11
+    },
+    "fullExons": 3,
+    "share": 0.1693,
+    "inFrame": true,
+    "plen": 696,
+    "genes": 1,
+    "others": [],
+    "rating": {
+     "hi": "3",
+     "ts": "0",
+     "hiDisease": "MONDO:0010256",
+     "tsDisease": null
+    },
+    "region": null,
+    "overlaps": {
+     "harmful": 0,
+     "uncertain": 2,
+     "harmless": 0
+    },
+    "rarity": {
+     "measured": false,
+     "source": "gnomAD-SV v4 (not in the bundle yet)"
+    },
+    "condition": null
+   }
+  },
+  {
+   "key": "cnv:151494:SMCHD1",
+   "gene": "SMCHD1",
+   "chrom": "18",
+   "hgvs_c": null,
+   "consequence": "copy_number_gain",
+   "clinvar": {
+    "id": "151494",
+    "clnsig": "Likely_benign",
+    "class": "likely-benign",
+    "review": "none",
+    "revstat": "no assertion criteria provided",
+    "stars": 0,
+    "conf": null
+   },
+   "gnomad": null,
+   "am": null,
+   "mode": "AD",
+   "patterns": {
+    "AD": {
+     "label": "arhinia, choanal atresia, and microphthalmia",
+     "validity": "Definitive"
+    }
+   },
+   "condition": {
+    "label": "arhinia, choanal atresia, and microphthalmia",
+    "moi": "AD",
+    "validity": "Definitive",
+    "others": 0
+   },
+   "set": "sampled",
+   "stratum": "partial gain, one end in the gene",
+   "zygosity": "het",
+   "copiesX": 2,
+   "p1": null,
+   "dosage": {
+    "hi": null,
+    "lofKnown": 77
+   },
+   "cnv": {
+    "dir": "gain",
+    "type": "copy number gain",
+    "name": "GRCh38/hg38 18p11.32(chr18:2549225-2700108)x3",
+    "chrom": "18",
+    "start": 2549225,
+    "end": 2700108,
+    "size": 150884,
+    "copies": 3,
+    "copiesStated": true,
+    "transcript": "NM_015295.3",
+    "where": "start",
+    "whole": false,
+    "exons": {
+     "first": 1,
+     "last": 10,
+     "of": 48
+    },
+    "fullExons": 10,
+    "share": 0.223,
+    "inFrame": false,
+    "plen": 2005,
+    "genes": 1,
+    "others": [],
+    "rating": {
+     "hi": null,
+     "ts": null,
+     "hiDisease": null,
+     "tsDisease": null
+    },
+    "region": null,
+    "overlaps": {
+     "harmful": 1,
+     "uncertain": 2,
+     "harmless": 0
+    },
+    "rarity": {
+     "measured": false,
+     "source": "gnomAD-SV v4 (not in the bundle yet)"
+    },
+    "condition": null
+   }
+  },
+  {
+   "key": "cnv:153336:PAK3",
+   "gene": "PAK3",
+   "chrom": "X",
+   "hgvs_c": null,
+   "consequence": "copy_number_gain",
+   "clinvar": {
+    "id": "153336",
+    "clnsig": "Uncertain_significance",
+    "class": "uncertain",
+    "review": "none",
+    "revstat": "no assertion criteria provided",
+    "stars": 0,
+    "conf": null
+   },
+   "gnomad": null,
+   "am": null,
+   "mode": "XL",
+   "patterns": {
+    "XL": {
+     "label": "X-linked complex neurodevelopmental disorder",
+     "validity": "Definitive"
+    }
+   },
+   "condition": {
+    "label": "X-linked complex neurodevelopmental disorder",
+    "moi": "XL",
+    "validity": "Definitive",
+    "others": 0
+   },
+   "set": "sampled",
+   "stratum": "partial gain, one end in the gene",
+   "zygosity": "het",
+   "copiesX": 2,
+   "p1": null,
+   "dosage": {
+    "hi": "3",
+    "lofKnown": 13
+   },
+   "cnv": {
+    "dir": "gain",
+    "type": "copy number gain",
+    "name": "GRCh38/hg38 Xq23(chrX:110132832-111177628)x3",
+    "chrom": "X",
+    "start": 110132832,
+    "end": 111177628,
+    "size": 1044797,
+    "copies": 3,
+    "copiesStated": true,
+    "transcript": "NM_002578.5",
+    "where": "start",
+    "whole": false,
+    "exons": {
+     "first": 5,
+     "last": 11,
+     "of": 18
+    },
+    "fullExons": 7,
+    "share": 0.5076,
+    "inFrame": false,
+    "plen": 544,
+    "genes": 1,
+    "others": [],
+    "rating": {
+     "hi": "3",
+     "ts": "0",
+     "hiDisease": "MONDO:0020119",
+     "tsDisease": null
+    },
+    "region": null,
+    "overlaps": {
+     "harmful": 1,
+     "uncertain": 1,
+     "harmless": 0
+    },
+    "rarity": {
+     "measured": false,
+     "source": "gnomAD-SV v4 (not in the bundle yet)"
+    },
+    "condition": null
+   }
+  },
+  {
+   "key": "cnv:644270:SYNE1",
+   "gene": "SYNE1",
+   "chrom": "6",
+   "hgvs_c": null,
+   "consequence": "copy_number_gain",
+   "clinvar": {
+    "id": "644270",
+    "clnsig": "Uncertain_significance",
+    "class": "uncertain",
+    "review": "single",
+    "revstat": "criteria provided, single submitter",
+    "stars": 1,
+    "conf": null
+   },
+   "gnomad": null,
+   "am": null,
+   "mode": "AR",
+   "patterns": {
+    "AR": {
+     "label": "autosomal recessive ataxia, Beauce type",
+     "validity": "Definitive"
+    }
+   },
+   "condition": {
+    "label": "autosomal recessive ataxia, Beauce type",
+    "moi": "AR",
+    "validity": "Definitive",
+    "others": 1
+   },
+   "set": "sampled",
+   "stratum": "partial gain, uncertain",
+   "zygosity": "het",
+   "copiesX": 2,
+   "p1": null,
+   "dosage": {
+    "hi": null,
+    "lofKnown": 314
+   },
+   "cnv": {
+    "dir": "gain",
+    "type": "Duplication",
+    "name": "NC_000006.11:g.(?_152443551)_(152534914_?)dup",
+    "chrom": "6",
+    "start": 152122416,
+    "end": 152213779,
+    "size": 91364,
+    "copies": 3,
+    "copiesStated": false,
+    "transcript": "NM_182961.4",
+    "where": "end",
+    "whole": false,
+    "exons": {
+     "first": 123,
+     "last": 146,
+     "of": 146
+    },
+    "fullExons": 24,
+    "share": 0.1534,
+    "inFrame": false,
+    "plen": 8797,
+    "genes": 1,
+    "others": [],
+    "rating": {
+     "hi": null,
+     "ts": null,
+     "hiDisease": null,
+     "tsDisease": null
+    },
+    "region": null,
+    "overlaps": {
+     "harmful": 0,
+     "uncertain": 0,
+     "harmless": 0
+    },
+    "rarity": {
+     "measured": false,
+     "source": "gnomAD-SV v4 (not in the bundle yet)"
+    },
+    "condition": null
+   }
+  }
+ ]
+}

@@ -1,0 +1,3913 @@
+{
+ "about": "ClinGen VCEP frequency thresholds (BA1, BS1, PM2) for genes in the validity table with a Released CSpec specification. Read by hand from each spec's criterion text; op/value/metric is the threshold as the panel wrote it. metric: faf_grpmax = filtering allele frequency (lower 95% CI) in the highest group (popmax/GroupMax); af_grpmax = raw allele frequency in the highest group; af_grpmax_upper95 = upper 95% CI of it; af_total = all of gnomAD; af_males = in males; af_unspecified = the text says only \"allele frequency\"/\"MAF\". op absent = not seen; count_le = an allele-count rule.",
+ "retrieved": "2026-11-18",
+ "source": "ClinGen Criteria Specification Registry, https://cspec.genome.network/cspec/api/svis?detail=high (index) and /cspec/api/SequenceVariantInterpretation/id/<GN id>?detail=high (each spec); raw copies in raw/cspec/",
+ "general": {
+  "BA1": {
+   "op": "gt",
+   "metric": "af_grpmax",
+   "source": "Ghosh et al. 2018, Hum Mutat 39:1525-1530 (ClinGen SVI), abstract: BA1 is \"a variant with minor allele frequency [MAF] > 0.05\". The continental-dataset, >=2,000 alleles and >=5 alleles conditions are quoted from it by VCEP specs (e.g. GN008); not read in the paper itself",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/30311383/"
+  },
+  "BS1": {
+   "op": "ge",
+   "metric": "af_grpmax",
+   "source": "none: ACMG 2015 says only \"allele frequency is greater than expected for disorder\"; 1% is a placeholder (contracts/constants.ts RARITY)",
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4544753/"
+  },
+  "PM2": {
+   "op": "le",
+   "metric": "af_grpmax",
+   "strength": "supporting",
+   "source": "strength from ClinGen SVI PM2 recommendation v1.0 (approved 2020-09-04): PM2 downgraded to Supporting; it sets no frequency number. 1 in 100,000 is a placeholder (contracts/constants.ts RARITY)",
+   "url": "https://www.clinicalgenome.org/site/assets/files/5182/pm2_-_svi_recommendation_-_approved_sept2020.pdf"
+  }
+ },
+ "genes": 132,
+ "released_specs_without_usable_rule": {
+  "note": "none: every validity.tsv gene with a Released spec has a row. Released specs with no applicable frequency rule (POLG GN014, MRAS GN087, RMRP GN088, GALT GN158) are for genes not in validity.tsv"
+ },
+ "thresholds": [
+  {
+   "gene": "MYH7",
+   "vcep": "Cardiomyopathy Variant Curation Expert Panel",
+   "spec": "GN002",
+   "version": "2.0",
+   "spec_updated": "2024-04-22",
+   "url": "https://cspec.genome.network/cspec/ui/svi/doc/GN002",
+   "api": "https://cspec.genome.network/cspec/api/SequenceVariantInterpretation/id/GN002?detail=high",
+   "ba1": {
+    "op": "ge",
+    "value": 0.001,
+    "metric": "faf_grpmax"
+   },
+   "bs1": {
+    "op": "ge",
+    "value": 0.0001,
+    "metric": "faf_grpmax"
+   },
+   "pm2": {
+    "op": "le",
+    "value": 4e-05,
+    "metric": "af_grpmax_upper95",
+    "note": "upper bound of the 95% CI of the GroupMax AF; ~ at most 1 allele in a non-founder group"
+   },
+   "uses_faf": true
+  },
+  {
+   "gene": "PTEN",
+   "vcep": "PTEN Variant Curation Expert Panel",
+   "spec": "GN003",
+   "version": "3.2",
+   "spec_updated": "2026-04-06",
+   "url": "https://cspec.genome.network/cspec/ui/svi/doc/GN003",
+   "api": "https://cspec.genome.network/cspec/api/SequenceVariantInterpretation/id/GN003?detail=high",
+   "ba1": {
+    "op": "gt",
+    "value": 0.00056,
+    "metric": "faf_grpmax"
+   },
+   "bs1": {
+    "op": "ge",
+    "value": 4.3e-05,
+    "metric": "faf_grpmax"
+   },
+   "bs1_supporting": {
+    "op": "ge",
+    "value": 4.3e-06,
+    "metric": "af_unspecified"
+   },
+   "pm2": {
+    "op": "lt",
+    "value": 1e-05,
+    "metric": "af_unspecified",
+    "note": "<0.00002 in a sub-population if several alleles there"
+   },
+   "uses_faf": true
+  },
+  {
+   "gene": "CDH23",
+   "vcep": "Hearing Loss Variant Curation Expert Panel",
+   "spec": "GN005",
+   "version": "2.0",
+   "spec_updated": "2022-03-30",
+   "url": "https://cspec.genome.network/cspec/ui/svi/doc/GN005",
+   "api": "https://cspec.genome.network/cspec/api/SequenceVariantInterpretation/id/GN005?detail=high",
+   "pattern": "AR",
+   "ba1": {
+    "op": "ge",
+    "value": 0.005,
+    "metric": "af_unspecified"
+   },
+   "bs1": {
+    "op": "ge",
+    "value": 0.003,
+    "metric": "af_unspecified"
+   },
+   "bs1_supporting": {
+    "op": "ge",
+    "value": 0.0007,
+    "metric": "af_unspecified"
+   },
+   "pm2": {
+    "op": "le",
+    "value": 7e-05,
+    "metric": "af_unspecified",
+    "note": "absent or <=0.007%"
+   },
+   "uses_faf": false
+  },
+  {
+   "gene": "CDH23",
+   "vcep": "Hearing Loss Variant Curation Expert Panel",
+   "spec": "GN005",
+   "version": "2.0",
+   "spec_updated": "2022-03-30",
+   "url": "https://cspec.genome.network/cspec/ui/svi/doc/GN005",
+   "api": "https://cspec.genome.network/cspec/api/SequenceVariantInterpretation/id/GN005?detail=high",
+   "pattern": "AD",
+   "ba1": {
+    "op": "ge",
+    "value": 0.001,
+    "metric": "af_unspecified"
+   },
+   "bs1": {
+    "op": "ge",
+    "value": 0.0002,
+    "metric": "af_unspecified"
+   },
+   "pm2": {
+    "op": "le",
+    "value": 2e-05,
+    "metric": "af_unspecified",
+    "note": "absent or <=0.002%"
+   },
+   "uses_faf": false
+  },
+  {
+   "gene": "COCH",
+   "vcep": "Hearing Loss Variant Curation Expert Panel",
+   "spec": "GN005",
+   "version": "2.0",
+   "spec_updated": "2022-03-30",
+   "url": "https://cspec.genome.network/cspec/ui/svi/doc/GN005",
+   "api": "https://cspec.genome.network/cspec/api/SequenceVariantInterpretation/id/GN005?detail=high",
+   "pattern": "AR",
+   "ba1": {
+    "op": "ge",
+    "value": 0.005,
+    "metric": "af_unspecified"
+   },
+   "bs1": {
+    "op": "ge",
+    "value": 0.003,
+    "metric": "af_unspecified"
+   },
+   "bs1_supporting": {
+    "op": "ge",
+    "value": 0.0007,
+    "metric": "af_unspecified"
+   },
+   "pm2": {
+    "op": "le",
+    "value": 7e-05,
+    "metric": "af_unspecified",
+    "note": "absent or <=0.007%"
+   },
+   "uses_faf": false
+  },
+  {
+   "gene": "COCH",
+   "vcep": "Hearing Loss Variant Curation Expert Panel",
+   "spec": "GN005",
+   "version": "2.0",
+   "spec_updated": "2022-03-30",
+   "url": "https://cspec.genome.network/cspec/ui/svi/doc/GN005",
+   "api": "https://cspec.genome.network/cspec/api/SequenceVariantInterpretation/id/GN005?detail=high",
+   "pattern": "AD",
+   "ba1": {
+    "op": "ge",
+    "value": 0.001,
+    "metric": "af_unspecified"
+   },
+   "bs1": {
+    "op": "ge",
+    "value": 0.0002,
+    "metric": "af_unspecified"
+   },
+   "pm2": {
+    "op": "le",
+    "value": 2e-05,
+    "metric": "af_unspecified",
+    "note": "absent or <=0.002%"
+   },
+   "uses_faf": false
+  },
+  {
+   "gene": "GJB2",
+   "vcep": "Hearing Loss Variant Curation Expert Panel",
+   "spec": "GN005",
+   "version": "2.0",
+   "spec_updated": "2022-03-30",
+   "url": "https://cspec.genome.network/cspec/ui/svi/doc/GN005",
+   "api": "https://cspec.genome.network/cspec/api/SequenceVariantInterpretation/id/GN005?detail=high",
+   "pattern": "AR",
+   "ba1": {
+    "op": "ge",
+    "value": 0.005,
+    "metric": "af_unspecified"
+   },
+   "bs1": {
+    "op": "ge",
+    "value": 0.003,
+    "metric": "af_unspecified"
+   },
+   "bs1_supporting": {
+    "op": "ge",
+    "value": 0.0007,
+    "metric": "af_unspecified"
+   },
+   "pm2": {
+    "op": "le",
+    "value": 7e-05,
+    "metric": "af_unspecified",
+    "note": "absent or <=0.007%"
+   },
+   "uses_faf": false
+  },
+  {
+   "gene": "GJB2",
+   "vcep": "Hearing Loss Variant Curation Expert Panel",
+   "spec": "GN005",
+   "version": "2.0",
+   "spec_updated": "2022-03-30",
+   "url": "https://cspec.genome.network/cspec/ui/svi/doc/GN005",
+   "api": "https://cspec.genome.network/cspec/api/SequenceVariantInterpretation/id/GN005?detail=high",
+   "pattern": "AD",
+   "ba1": {
+    "op": "ge",
+    "value": 0.001,
+    "metric": "af_unspecified"
+   },
+   "bs1": {
+    "op": "ge",
+    "value": 0.0002,
+    "metric": "af_unspecified"
+   },
+   "pm2": {
+    "op": "le",
+    "value": 2e-05,
+    "metric": "af_unspecified",
+    "note": "absent or <=0.002%"
+   },
+   "uses_faf": false
+  },
+  {
+   "gene": "KCNQ4",
+   "vcep": "Hearing Loss Variant Curation Expert Panel",
+   "spec": "GN005",
+   "version": "2.0",
+   "spec_updated": "2022-03-30",
+   "url": "https://cspec.genome.network/cspec/ui/svi/doc/GN005",
+   "api": "https://cspec.genome.network/cspec/api/SequenceVariantInterpretation/id/GN005?detail=high",
+   "pattern": "AR",
+   "ba1": {
+    "op": "ge",
+    "value": 0.005,
+    "metric": "af_unspecified"
+   },
+   "bs1": {
+    "op": "ge",
+    "value": 0.003,
+    "metric": "af_unspecified"
+   },
+   "bs1_supporting": {
+    "op": "ge",
+    "value": 0.0007,
+    "metric": "af_unspecified"
+   },
+   "pm2": {
+    "op": "le",
+    "value": 7e-05,
+    "metric": "af_unspecified",
+    "note": "absent or <=0.007%"
+   },
+   "uses_faf": false
+  },
+  {
+   "gene": "KCNQ4",
+   "vcep": "Hearing Loss Variant Curation Expert Panel",
+   "spec": "GN005",
+   "version": "2.0",
+   "spec_updated": "2022-03-30",
+   "url": "https://cspec.genome.network/cspec/ui/svi/doc/GN005",
+   "api": "https://cspec.genome.network/cspec/api/SequenceVariantInterpretation/id/GN005?detail=high",
+   "pattern": "AD",
+   "ba1": {
+    "op": "ge",
+    "value": 0.001,
+    "metric": "af_unspecified"
+   },
+   "bs1": {
+    "op": "ge",
+    "value": 0.0002,
+    "metric": "af_unspecified"
+   },
+   "pm2": {
+    "op": "le",
+    "value": 2e-05,
+    "metric": "af_unspecified",
+    "note": "absent or <=0.002%"
+   },
+   "uses_faf": false
+  },
+  {
+   "gene": "MYO6",
+   "vcep": "Hearing Loss Variant Curation Expert Panel",
+   "spec": "GN005",
+   "version": "2.0",
+   "spec_updated": "2022-03-30",
+   "url": "https://cspec.genome.network/cspec/ui/svi/doc/GN005",
+   "api": "https://cspec.genome.network/cspec/api/SequenceVariantInterpretation/id/GN005?detail=high",
+   "pattern": "AR",
+   "ba1": {
+    "op": "ge",
+    "value": 0.005,
+    "metric": "af_unspecified"
+   },
+   "bs1": {
+    "op": "ge",
+    "value": 0.003,
+    "metric": "af_unspecified"
+   },
+   "bs1_supporting": {
+    "op": "ge",
+    "value": 0.0007,
+    "metric": "af_unspecified"
+   },
+   "pm2": {
+    "op": "le",
+    "value": 7e-05,
+    "metric": "af_unspecified",
+    "note": "absent or <=0.007%"
+   },
+   "uses_faf": false
+  },
+  {
+   "gene": "MYO6",
+   "vcep": "Hearing Loss Variant Curation Expert Panel",
+   "spec": "GN005",
+   "version": "2.0",
+   "spec_updated": "2022-03-30",
+   "url": "https://cspec.genome.network/cspec/ui/svi/doc/GN005",
+   "api": "https://cspec.genome.network/cspec/api/SequenceVariantInterpretation/id/GN005?detail=high",
+   "pattern": "AD",
+   "ba1": {
+    "op": "ge",
+    "value": 0.001,
+    "metric": "af_unspecified"
+   },
+   "bs1": {
+    "op": "ge",
+    "value": 0.0002,
+    "metric": "af_unspecified"
+   },
+   "pm2": {
+    "op": "le",
+    "value": 2e-05,
+    "metric": "af_unspecified",
+    "note": "absent or <=0.002%"
+   },
+   "uses_faf": false
+  },
+  {
+   "gene": "MYO7A",
+   "vcep": "Hearing Loss Variant Curation Expert Panel",
+   "spec": "GN005",
+   "version": "2.0",
+   "spec_updated": "2022-03-30",
+   "url": "https://cspec.genome.network/cspec/ui/svi/doc/GN005",
+   "api": "https://cspec.genome.network/cspec/api/SequenceVariantInterpretation/id/GN005?detail=high",
+   "pattern": "AR",
+   "ba1": {
+    "op": "ge",
+    "value": 0.005,
+    "metric": "af_unspecified"
+   },
+   "bs1": {
+    "op": "ge",
+    "value": 0.003,
+    "metric": "af_unspecified"
+   },
+   "bs1_supporting": {
+    "op": "ge",
+    "value": 0.0007,
+    "metric": "af_unspecified"
+   },
+   "pm2": {
+    "op": "le",
+    "value": 7e-05,
+    "metric": "af_unspecified",
+    "note": "absent or <=0.007%"
+   },
+   "uses_faf": false
+  },
+  {
+   "gene": "MYO7A",
+   "vcep": "Hearing Loss Variant Curation Expert Panel",
+   "spec": "GN005",
+   "version": "2.0",
+   "spec_updated": "2022-03-30",
+   "url": "https://cspec.genome.network/cspec/ui/svi/doc/GN005",
+   "api": "https://cspec.genome.network/cspec/api/SequenceVariantInterpretation/id/GN005?detail=high",
+   "pattern": "AD",
+   "ba1": {
+    "op": "ge",
+    "value": 0.001,
+    "metric": "af_unspecified"
+   },
+   "bs1": {
+    "op": "ge",
+    "value": 0.0002,
+    "metric": "af_unspecified"
+   },
+   "pm2": {
+    "op": "le",
+    "value": 2e-05,
+    "metric": "af_unspecified",
+    "note": "absent or <=0.002%"
+   },
+   "uses_faf": false
+  },
+  {
+   "gene": "SLC26A4",
+   "vcep": "Hearing Loss Variant Curation Expert Panel",
+   "spec": "GN005",
+   "version": "2.0",
+   "spec_updated": "2022-03-30",
+   "url": "https://cspec.genome.network/cspec/ui/svi/doc/GN005",
+   "api": "https://cspec.genome.network/cspec/api/SequenceVariantInterpretation/id/GN005?detail=high",
+   "pattern": "AR",
+   "ba1": {
+    "op": "ge",
+    "value": 0.005,
+    "metric": "af_unspecified"
+   },
+   "bs1": {
+    "op": "ge",
+    "value": 0.003,
+    "metric": "af_unspecified"
+   },
+   "bs1_supporting": {
+    "op": "ge",
+    "value": 0.0007,
+    "metric": "af_unspecified"
+   },
+   "pm2": {
+    "op": "le",
+    "value": 7e-05,
+    "metric": "af_unspecified",
+    "note": "absent or <=0.007%"
+   },
+   "uses_faf": false
+  },
+  {
+   "gene": "SLC26A4",
+   "vcep": "Hearing Loss Variant Curation Expert Panel",
+   "spec": "GN005",
+   "version": "2.0",
+   "spec_updated": "2022-03-30",
+   "url": "https://cspec.genome.network/cspec/ui/svi/doc/GN005",
+   "api": "https://cspec.genome.network/cspec/api/SequenceVariantInterpretation/id/GN005?detail=high",
+   "pattern": "AD",
+   "ba1": {
+    "op": "ge",
+    "value": 0.001,
+    "metric": "af_unspecified"
+   },
+   "bs1": {
+    "op": "ge",
+    "value": 0.0002,
+    "metric": "af_unspecified"
+   },
+   "pm2": {
+    "op": "le",
+    "value": 2e-05,
+    "metric": "af_unspecified",
+    "note": "absent or <=0.002%"
+   },
+   "uses_faf": false
+  },
+  {
+   "gene": "TECTA",
+   "vcep": "Hearing Loss Variant Curation Expert Panel",
+   "spec": "GN005",
+   "version": "2.0",
+   "spec_updated": "2022-03-30",
+   "url": "https://cspec.genome.network/cspec/ui/svi/doc/GN005",
+   "api": "https://cspec.genome.network/cspec/api/SequenceVariantInterpretation/id/GN005?detail=high",
+   "pattern": "AR",
+   "ba1": {
+    "op": "ge",
+    "value": 0.005,
+    "metric": "af_unspecified"
+   },
+   "bs1": {
+    "op": "ge",
+    "value": 0.003,
+    "metric": "af_unspecified"
+   },
+   "bs1_supporting": {
+    "op": "ge",
+    "value": 0.0007,
+    "metric": "af_unspecified"
+   },
+   "pm2": {
+    "op": "le",
+    "value": 7e-05,
+    "metric": "af_unspecified",
+    "note": "absent or <=0.007%"
+   },
+   "uses_faf": false
+  },
+  {
+   "gene": "TECTA",
+   "vcep": "Hearing Loss Variant Curation Expert Panel",
+   "spec": "GN005",
+   "version": "2.0",
+   "spec_updated": "2022-03-30",
+   "url": "https://cspec.genome.network/cspec/ui/svi/doc/GN005",
+   "api": "https://cspec.genome.network/cspec/api/SequenceVariantInterpretation/id/GN005?detail=high",
+   "pattern": "AD",
+   "ba1": {
+    "op": "ge",
+    "value": 0.001,
+    "metric": "af_unspecified"
+   },
+   "bs1": {
+    "op": "ge",
+    "value": 0.0002,
+    "metric": "af_unspecified"
+   },
+   "pm2": {
+    "op": "le",
+    "value": 2e-05,
+    "metric": "af_unspecified",
+    "note": "absent or <=0.002%"
+   },
+   "uses_faf": false
+  },
+  {
+   "gene": "USH2A",
+   "vcep": "Hearing Loss Variant Curation Expert Panel",
+   "spec": "GN005",
+   "version": "2.0",
+   "spec_updated": "2022-03-30",
+   "url": "https://cspec.genome.network/cspec/ui/svi/doc/GN005",
+   "api": "https://cspec.genome.network/cspec/api/SequenceVariantInterpretation/id/GN005?detail=high",
+   "pattern": "AR",
+   "ba1": {
+    "op": "ge",
+    "value": 0.005,
+    "metric": "af_unspecified"
+   },
+   "bs1": {
+    "op": "ge",
+    "value": 0.003,
+    "metric": "af_unspecified"
+   },
+   "bs1_supporting": {
+    "op": "ge",
+    "value": 0.0007,
+    "metric": "af_unspecified"
+   },
+   "pm2": {
+    "op": "le",
+    "value": 7e-05,
+    "metric": "af_unspecified",
+    "note": "absent or <=0.007%"
+   },
+   "uses_faf": false
+  },
+  {
+   "gene": "USH2A",
+   "vcep": "Hearing Loss Variant Curation Expert Panel",
+   "spec": "GN005",
+   "version": "2.0",
+   "spec_updated": "2022-03-30",
+   "url": "https://cspec.genome.network/cspec/ui/svi/doc/GN005",
+   "api": "https://cspec.genome.network/cspec/api/SequenceVariantInterpretation/id/GN005?detail=high",
+   "pattern": "AD",
+   "ba1": {
+    "op": "ge",
+    "value": 0.001,
+    "metric": "af_unspecified"
+   },
+   "bs1": {
+    "op": "ge",
+    "value": 0.0002,
+    "metric": "af_unspecified"
+   },
+   "pm2": {
+    "op": "le",
+    "value": 2e-05,
+    "metric": "af_unspecified",
+    "note": "absent or <=0.002%"
+   },
+   "uses_faf": false
+  },
+  {
+   "gene": "PAH",
+   "vcep": "Phenylketonuria Variant Curation Expert Panel",
+   "spec": "GN006",
+   "version": "2.1",
+   "spec_updated": "2026-11-03",
+   "url": "https://cspec.genome.network/cspec/ui/svi/doc/GN006",
+   "api": "https://cspec.genome.network/cspec/api/SequenceVariantInterpretation/id/GN006?detail=high",
+   "ba1": {
+    "op": "ge",
+    "value": 0.015,
+    "metric": "af_unspecified"
+   },
+   "bs1": {
+    "op": "ge",
+    "value": 0.002,
+    "metric": "af_unspecified"
+   },
+   "pm2": {
+    "op": "lt",
+    "value": 0.0002,
+    "metric": "af_unspecified"
+   },
+   "uses_faf": false
+  },
+  {
+   "gene": "CDH1",
+   "vcep": "Gastric Cancer Variant Curation Expert Panel",
+   "spec": "GN007",
+   "version": "3.1",
+   "spec_updated": "2022-03-29",
+   "url": "https://cspec.genome.network/cspec/ui/svi/doc/GN007",
+   "api": "https://cspec.genome.network/cspec/api/SequenceVariantInterpretation/id/GN007?detail=high",
+   "ba1": {
+    "op": "ge",
+    "value": 0.002,
+    "metric": "af_unspecified",
+    "note": "written as \"MAF cutoff of 0.2%\""
+   },
+   "bs1": {
+    "op": "ge",
+    "value": 0.001,
+    "metric": "af_unspecified",
+    "note": "written as \"MAF cutoff of 0.1%\""
+   },
+   "pm2": {
+    "op": "le",
+    "value": 1e-05,
+    "metric": "af_unspecified",
+    "note": "<=1 in 100,000 alleles; <=1 in 50,000 if in >=2 people in a sub-population"
+   },
+   "uses_faf": false
+  },
+  {
+   "gene": "RUNX1",
+   "vcep": "Myeloid Malignancy Variant Curation Expert Panel",
+   "spec": "GN008",
+   "version": "3.1",
+   "spec_updated": "2026-02-13",
+   "url": "https://cspec.genome.network/cspec/ui/svi/doc/GN008",
+   "api": "https://cspec.genome.network/cspec/api/SequenceVariantInterpretation/id/GN008?detail=high",
+   "ba1": {
+    "op": "ge",
+    "value": 0.0015,
+    "metric": "af_grpmax",
+    "note": "continental, >=2,000 alleles, >=5 alleles"
+   },
+   "bs1": {
+    "op": "ge",
+    "value": 0.00015,
+    "metric": "af_grpmax"
+   },
+   "pm2": {
+    "op": "le",
+    "value": 5e-05,
+    "metric": "af_grpmax",
+    "note": "panel recommends GroupMax FAF where available"
+   },
+   "uses_faf": false
+  },
+  {
+   "gene": "TP53",
+   "vcep": "TP53 Variant Curation Expert Panel",
+   "spec": "GN009",
+   "version": "2.4",
+   "spec_updated": "2025-11-20",
+   "url": "https://cspec.genome.network/cspec/ui/svi/doc/GN009",
+   "api": "https://cspec.genome.network/cspec/api/SequenceVariantInterpretation/id/GN009?detail=high",
+   "ba1": {
+    "op": "ge",
+    "value": 0.001,
+    "metric": "faf_grpmax",
+    "note": "founder groups excluded; >=2,000 alleles, >=2 present"
+   },
+   "bs1": {
+    "op": "ge",
+    "value": 0.0003,
+    "metric": "faf_grpmax"
+   },
+   "pm2": {
+    "op": "lt",
+    "value": 3e-05,
+    "metric": "af_total",
+    "note": "<0.00004 in a group if several alleles there"
+   },
+   "uses_faf": true
+  },
+  {
+   "gene": "GAA",
+   "vcep": "Lysosomal Diseases Variant Curation Expert Panel",
+   "spec": "GN010",
+   "version": "2.0",
+   "spec_updated": "2021-06-02",
+   "url": "https://cspec.genome.network/cspec/ui/svi/doc/GN010",
+   "api": "https://cspec.genome.network/cspec/api/SequenceVariantInterpretation/id/GN010?detail=high",
+   "ba1": {
+    "op": "gt",
+    "value": 0.01,
+    "metric": "af_grpmax"
+   },
+   "bs1": {
+    "op": "gt",
+    "value": 0.005,
+    "metric": "af_grpmax"
+   },
+   "pm2": {
+    "op": "lt",
+    "value": 0.001,
+    "metric": "af_grpmax",
+    "note": "specified at Moderate (pre-2020)"
+   },
+   "uses_faf": false
+  },
+  {
+   "gene": "ITGA2B",
+   "vcep": "Platelet Disorders Variant Curation Expert Panel",
+   "spec": "GN011",
+   "version": "2.1",
+   "spec_updated": "2021-11-01",
+   "url": "https://cspec.genome.network/cspec/ui/svi/doc/GN011",
+   "api": "https://cspec.genome.network/cspec/api/SequenceVariantInterpretation/id/GN011?detail=high",
+   "ba1": {
+    "op": "gt",
+    "value": 0.0024,
+    "metric": "af_grpmax_upper9999"
+   },
+   "bs1": {
+    "op": "gt",
+    "value": 0.00158,
+    "metric": "af_grpmax_upper9999"
+   },
+   "pm2": {
+    "op": "lt",
+    "value": 0.0001,
+    "metric": "af_unspecified"
+   },
+   "uses_faf": false
+  },
+  {
+   "gene": "ITGB3",
+   "vcep": "Platelet Disorders Variant Curation Expert Panel",
+   "spec": "GN011",
+   "version": "2.1",
+   "spec_updated": "2021-11-01",
+   "url": "https://cspec.genome.network/cspec/ui/svi/doc/GN011",
+   "api": "https://cspec.genome.network/cspec/api/SequenceVariantInterpretation/id/GN011?detail=high",
+   "ba1": {
+    "op": "gt",
+    "value": 0.0024,
+    "metric": "af_grpmax_upper9999"
+   },
+   "bs1": {
+    "op": "gt",
+    "value": 0.00158,
+    "metric": "af_grpmax_upper9999"
+   },
+   "pm2": {
+    "op": "lt",
+    "value": 0.0001,
+    "metric": "af_unspecified"
+   },
+   "uses_faf": false
+  },
+  {
+   "gene": "RYR1",
+   "vcep": "Malignant Hyperthermia Susceptibility Variant Curation Expert Panel",
+   "spec": "GN012",
+   "version": "2.0",
+   "spec_updated": "2022-03-01",
+   "url": "https://cspec.genome.network/cspec/ui/svi/doc/GN012",
+   "api": "https://cspec.genome.network/cspec/api/SequenceVariantInterpretation/id/GN012?detail=high",
+   "condition": "malignant hyperthermia susceptibility",
+   "ba1": {
+    "op": "gt",
+    "value": 0.0038,
+    "metric": "af_grpmax"
+   },
+   "bs1": {
+    "op": "gt",
+    "value": 0.0008,
+    "metric": "af_grpmax"
+   },
+   "pm2": {
+    "op": "not_applicable",
+    "value": null,
+    "metric": null,
+    "note": "PM2 not applicable for MHS"
+   },
+   "uses_faf": false
+  },
+  {
+   "gene": "LDLR",
+   "vcep": "Familial Hypercholesterolemia Variant Curation Expert Panel",
+   "spec": "GN013",
+   "version": "1.2",
+   "spec_updated": "2021-11-09",
+   "url": "https://cspec.genome.network/cspec/ui/svi/doc/GN013",
+   "api": "https://cspec.genome.network/cspec/api/SequenceVariantInterpretation/id/GN013?detail=high",
+   "ba1": {
+    "op": "ge",
+    "value": 0.005,
+    "metric": "faf_grpmax"
+   },
+   "bs1": {
+    "op": "ge",
+    "value": 0.002,
+    "metric": "faf_grpmax"
+   },
+   "pm2": {
+    "op": "le",
+    "value": 0.0002,
+    "metric": "af_grpmax",
+    "note": "specified at Moderate (pre-2020); founder exceptions"
+   },
+   "uses_faf": true
+  },
+  {
+   "gene": "SLC19A3",
+   "vcep": "Mitochondrial Diseases Variant Curation Expert Panel",
+   "spec": "GN014",
+   "version": "1.0",
+   "spec_updated": "2020-04-30",
+   "url": "https://cspec.genome.network/cspec/ui/svi/doc/GN014",
+   "api": "https://cspec.genome.network/cspec/api/SequenceVariantInterpretation/id/GN014?detail=high",
+   "ba1": {
+    "op": "gt",
+    "value": 0.001,
+    "metric": "af_unspecified"
+   },
+   "bs1": {
+    "op": "gt",
+    "value": 0.0005,
+    "metric": "af_unspecified"
+   },
+   "pm2": {
+    "op": "lt",
+    "value": 5e-05,
+    "metric": "af_unspecified",
+    "note": "specified at Moderate"
+   },
+   "uses_faf": false
+  },
+  {
+   "gene": "PDHA1",
+   "vcep": "Mitochondrial Diseases Variant Curation Expert Panel",
+   "spec": "GN014",
+   "version": "1.0",
+   "spec_updated": "2020-04-30",
+   "url": "https://cspec.genome.network/cspec/ui/svi/doc/GN014",
+   "api": "https://cspec.genome.network/cspec/api/SequenceVariantInterpretation/id/GN014?detail=high",
+   "ba1": {
+    "op": "gt",
+    "value": 0.00092,
+    "metric": "af_unspecified"
+   },
+   "bs1": {
+    "op": "gt",
+    "value": 9.2e-05,
+    "metric": "af_unspecified"
+   },
+   "pm2": {
+    "op": "lt",
+    "value": 9.2e-06,
+    "metric": "af_unspecified",
+    "note": "specified at Moderate"
+   },
+   "uses_faf": false
+  },
+  {
+   "gene": "ETHE1",
+   "vcep": "Mitochondrial Diseases Variant Curation Expert Panel",
+   "spec": "GN014",
+   "version": "1.0",
+   "spec_updated": "2020-04-30",
+   "url": "https://cspec.genome.network/cspec/ui/svi/doc/GN014",
+   "api": "https://cspec.genome.network/cspec/api/SequenceVariantInterpretation/id/GN014?detail=high",
+   "ba1": {
+    "op": "gt",
+    "value": 0.001,
+    "metric": "af_unspecified"
+   },
+   "bs1": {
+    "op": "gt",
+    "value": 0.0002,
+    "metric": "af_unspecified"
+   },
+   "pm2": {
+    "op": "lt",
+    "value": 2e-05,
+    "metric": "af_unspecified",
+    "note": "specified at Moderate"
+   },
+   "uses_faf": false
+  },
+  {
+   "gene": "HNF1A",
+   "vcep": "Monogenic Diabetes Variant Curation Expert Panel",
+   "spec": "GN017",
+   "version": "3.1",
+   "spec_updated": "2025-10-10",
+   "url": "https://cspec.genome.network/cspec/ui/svi/doc/GN017",
+   "api": "https://cspec.genome.network/cspec/api/SequenceVariantInterpretation/id/GN017?detail=high",
+   "ba1": {
+    "op": "ge",
+    "value": 0.0001,
+    "metric": "faf_grpmax"
+   },
+   "bs1": {
+    "op": "ge",
+    "value": 3.3e-05,
+    "metric": "faf_grpmax"
+   },
+   "pm2": {
+    "op": "le",
+    "value": 3e-06,
+    "metric": "faf_grpmax"
+   },
+   "uses_faf": true
+  },
+  {
+   "gene": "AKT3",
+   "vcep": "Brain Malformations Variant Curation Expert Panel",
+   "spec": "GN018",
+   "version": "1.1",
+   "spec_updated": "2022-08-19",
+   "url": "https://cspec.genome.network/cspec/ui/svi/doc/GN018",
+   "api": "https://cspec.genome.network/cspec/api/SequenceVariantInterpretation/id/GN018?detail=high",
+   "ba1": {
+    "op": "gt",
+    "value": 0.000926,
+    "metric": "af_unspecified"
+   },
+   "bs1": {
+    "op": "gt",
+    "value": 0.000185,
+    "metric": "af_unspecified"
+   },
+   "pm2": {
+    "op": "unparsed",
+    "value": null,
+    "metric": null,
+    "note": "text gives no number (\"absent/rare ... (>=1)\")"
+   },
+   "uses_faf": false
+  },
+  {
+   "gene": "MTOR",
+   "vcep": "Brain Malformations Variant Curation Expert Panel",
+   "spec": "GN018",
+   "version": "1.1",
+   "spec_updated": "2022-08-19",
+   "url": "https://cspec.genome.network/cspec/ui/svi/doc/GN018",
+   "api": "https://cspec.genome.network/cspec/api/SequenceVariantInterpretation/id/GN018?detail=high",
+   "ba1": {
+    "op": "gt",
+    "value": 0.000926,
+    "metric": "af_unspecified"
+   },
+   "bs1": {
+    "op": "gt",
+    "value": 0.000185,
+    "metric": "af_unspecified"
+   },
+   "pm2": {
+    "op": "unparsed",
+    "value": null,
+    "metric": null,
+    "note": "text gives no number (\"absent/rare ... (>=1)\")"
+   },
+   "uses_faf": false
+  },
+  {
+   "gene": "PIK3R2",
+   "vcep": "Brain Malformations Variant Curation Expert Panel",
+   "spec": "GN018",
+   "version": "1.1",
+   "spec_updated": "2022-08-19",
+   "url": "https://cspec.genome.network/cspec/ui/svi/doc/GN018",
+   "api": "https://cspec.genome.network/cspec/api/SequenceVariantInterpretation/id/GN018?detail=high",
+   "ba1": {
+    "op": "gt",
+    "value": 0.000926,
+    "metric": "af_unspecified"
+   },
+   "bs1": {
+    "op": "gt",
+    "value": 0.000185,
+    "metric": "af_unspecified"
+   },
+   "pm2": {
+    "op": "unparsed",
+    "value": null,
+    "metric": null,
+    "note": "text gives no number (\"absent/rare ... (>=1)\")"
+   },
+   "uses_faf": false
+  },
+  {
+   "gene": "MYOC",
+   "vcep": "Glaucoma Variant Curation Expert Panel",
+   "spec": "GN019",
+   "version": "2.1",
+   "spec_updated": "2025-11-06",
+   "url": "https://cspec.genome.network/cspec/ui/svi/doc/GN019",
+   "api": "https://cspec.genome.network/cspec/api/SequenceVariantInterpretation/id/GN019?detail=high",
+   "ba1": {
+    "op": "ge",
+    "value": 0.01,
+    "metric": "af_unspecified"
+   },
+   "bs1": {
+    "op": "ge",
+    "value": 0.001,
+    "metric": "af_unspecified"
+   },
+   "pm2": {
+    "op": "le",
+    "value": 0.0001,
+    "metric": "af_unspecified"
+   },
+   "uses_faf": false
+  },
+  {
+   "gene": "ATM",
+   "vcep": "Hereditary Breast, Ovarian and Pancreatic Cancer Variant Curation Expert Panel",
+   "spec": "GN020",
+   "version": "1.6",
+   "spec_updated": "2026-09-18",
+   "url": "https://cspec.genome.network/cspec/ui/svi/doc/GN020",
+   "api": "https://cspec.genome.network/cspec/api/SequenceVariantInterpretation/id/GN020?detail=high",
+   "ba1": {
+    "op": "gt",
+    "value": 0.005,
+    "metric": "faf_grpmax"
+   },
+   "bs1": {
+    "op": "gt",
+    "value": 0.0005,
+    "metric": "faf_grpmax"
+   },
+   "pm2": {
+    "op": "le",
+    "value": 1e-05,
+    "metric": "af_grpmax",
+    "note": "n=1 in a single group also qualifies"
+   },
+   "uses_faf": true
+  },
+  {
+   "gene": "ACADVL",
+   "vcep": "ACADVL Variant Curation Expert Panel",
+   "spec": "GN021",
+   "version": "2.2",
+   "spec_updated": "2026-07-20",
+   "url": "https://cspec.genome.network/cspec/ui/svi/doc/GN021",
+   "api": "https://cspec.genome.network/cspec/api/SequenceVariantInterpretation/id/GN021?detail=high",
+   "ba1": {
+    "op": "ge",
+    "value": 0.007,
+    "metric": "af_grpmax"
+   },
+   "bs1": {
+    "op": "ge",
+    "value": 0.0035,
+    "metric": "af_grpmax"
+   },
+   "pm2": {
+    "op": "lt",
+    "value": 0.001,
+    "metric": "af_grpmax"
+   },
+   "uses_faf": false
+  },
+  {
+   "gene": "FBN1",
+   "vcep": "FBN1 Variant Curation Expert Panel",
+   "spec": "GN022",
+   "version": "1.0",
+   "spec_updated": "2022-01-05",
+   "url": "https://cspec.genome.network/cspec/ui/svi/doc/GN022",
+   "api": "https://cspec.genome.network/cspec/api/SequenceVariantInterpretation/id/GN022?detail=high",
+   "ba1": {
+    "op": "gt",
+    "value": 0.001,
+    "metric": "af_grpmax",
+    "note": "not Finnish, Ashkenazi or Other"
+   },
+   "bs1": {
+    "op": "gt",
+    "value": 5e-05,
+    "metric": "af_grpmax"
+   },
+   "pm2": {
+    "op": "lt",
+    "value": 5e-06,
+    "metric": "af_grpmax"
+   },
+   "uses_faf": false
+  },
+  {
+   "gene": "MYO15A",
+   "vcep": "Hearing Loss Variant Curation Expert Panel",
+   "spec": "GN023",
+   "version": "1.0",
+   "spec_updated": "2022-03-30",
+   "url": "https://cspec.genome.network/cspec/ui/svi/doc/GN023",
+   "api": "https://cspec.genome.network/cspec/api/SequenceVariantInterpretation/id/GN023?detail=high",
+   "pattern": "AR",
+   "ba1": {
+    "op": "ge",
+    "value": 0.005,
+    "metric": "af_unspecified"
+   },
+   "bs1": {
+    "op": "ge",
+    "value": 0.003,
+    "metric": "af_unspecified"
+   },
+   "bs1_supporting": {
+    "op": "ge",
+    "value": 0.0007,
+    "metric": "af_unspecified"
+   },
+   "pm2": {
+    "op": "le",
+    "value": 7e-05,
+    "metric": "af_unspecified",
+    "note": "absent or <=0.007%"
+   },
+   "uses_faf": false
+  },
+  {
+   "gene": "OTOF",
+   "vcep": "Hearing Loss Variant Curation Expert Panel",
+   "spec": "GN023",
+   "version": "1.0",
+   "spec_updated": "2022-03-30",
+   "url": "https://cspec.genome.network/cspec/ui/svi/doc/GN023",
+   "api": "https://cspec.genome.network/cspec/api/SequenceVariantInterpretation/id/GN023?detail=high",
+   "pattern": "AR",
+   "ba1": {
+    "op": "ge",
+    "value": 0.005,
+    "metric": "af_unspecified"
+   },
+   "bs1": {
+    "op": "ge",
+    "value": 0.003,
+    "metric": "af_unspecified"
+   },
+   "bs1_supporting": {
+    "op": "ge",
+    "value": 0.0007,
+    "metric": "af_unspecified"
+   },
+   "pm2": {
+    "op": "le",
+    "value": 7e-05,
+    "metric": "af_unspecified",
+    "note": "absent or <=0.007%"
+   },
+   "uses_faf": false
+  },
+  {
+   "gene": "DICER1",
+   "vcep": "DICER1 and miRNA-Processing Gene Variant Curation Expert Panel",
+   "spec": "GN024",
+   "version": "1.4",
+   "spec_updated": "2026-10-05",
+   "url": "https://cspec.genome.network/cspec/ui/svi/doc/GN024",
+   "api": "https://cspec.genome.network/cspec/api/SequenceVariantInterpretation/id/GN024?detail=high",
+   "ba1": {
+    "op": "gt",
+    "value": 0.003,
+    "metric": "af_grpmax",
+    "note": ">2,000 alleles, >=5 present"
+   },
+   "bs1": {
+    "op": "gt",
+    "value": 0.0003,
+    "metric": "af_grpmax"
+   },
+   "pm2": {
+    "op": "lt",
+    "value": 5e-06,
+    "metric": "af_unspecified",
+    "note": "and no more than one allele in any sub-population"
+   },
+   "uses_faf": false
+  },
+  {
+   "gene": "GATM",
+   "vcep": "Cerebral Creatine Deficiency Syndromes Variant Curation Expert Panel",
+   "spec": "GN025",
+   "version": "2.0",
+   "spec_updated": "2024-12-03",
+   "url": "https://cspec.genome.network/cspec/ui/svi/doc/GN025",
+   "api": "https://cspec.genome.network/cspec/api/SequenceVariantInterpretation/id/GN025?detail=high",
+   "ba1": {
+    "op": "gt",
+    "value": 0.0005,
+    "metric": "faf_grpmax"
+   },
+   "bs1": {
+    "op": "gt",
+    "value": 0.0001,
+    "metric": "faf_grpmax"
+   },
+   "pm2": {
+    "op": "lt",
+    "value": 5.5e-05,
+    "metric": "af_grpmax",
+    "note": "all populations; no homozygotes"
+   },
+   "uses_faf": true
+  },
+  {
+   "gene": "GAMT",
+   "vcep": "Cerebral Creatine Deficiency Syndromes Variant Curation Expert Panel",
+   "spec": "GN026",
+   "version": "2.0",
+   "spec_updated": "2024-05-23",
+   "url": "https://cspec.genome.network/cspec/ui/svi/doc/GN026",
+   "api": "https://cspec.genome.network/cspec/api/SequenceVariantInterpretation/id/GN026?detail=high",
+   "ba1": {
+    "op": "gt",
+    "value": 0.003,
+    "metric": "af_grpmax"
+   },
+   "bs1": {
+    "op": "gt",
+    "value": 0.001,
+    "metric": "af_grpmax"
+   },
+   "pm2": {
+    "op": "lt",
+    "value": 0.0004,
+    "metric": "af_grpmax",
+    "note": "all populations; no homozygotes"
+   },
+   "uses_faf": false
+  },
+  {
+   "gene": "SLC6A8",
+   "vcep": "Cerebral Creatine Deficiency Syndromes Variant Curation Expert Panel",
+   "spec": "GN027",
+   "version": "2.1",
+   "spec_updated": "2026-07-06",
+   "url": "https://cspec.genome.network/cspec/ui/svi/doc/GN027",
+   "api": "https://cspec.genome.network/cspec/api/SequenceVariantInterpretation/id/GN027?detail=high",
+   "ba1": {
+    "op": "ge",
+    "value": 0.002,
+    "metric": "faf_grpmax",
+    "note": "or >=10 homo/hemizygotes"
+   },
+   "bs1": {
+    "op": "ge",
+    "value": 0.0002,
+    "metric": "faf_grpmax"
+   },
+   "pm2": {
+    "op": "le",
+    "value": 2e-05,
+    "metric": "faf_grpmax",
+    "note": "and no homo/hemizygotes"
+   },
+   "uses_faf": true
+  },
+  {
+   "gene": "TCF4",
+   "vcep": "Rett and Angelman-like Disorders Variant Curation Expert Panel",
+   "spec": "GN032",
+   "version": "6.0",
+   "spec_updated": "2026-05-01",
+   "url": "https://cspec.genome.network/cspec/ui/svi/doc/GN032",
+   "api": "https://cspec.genome.network/cspec/api/SequenceVariantInterpretation/id/GN032?detail=high",
+   "ba1": {
+    "op": "ge",
+    "value": 8.3e-05,
+    "metric": "af_grpmax",
+    "note": "any sub-population, >=2,000 alleles"
+   },
+   "bs1": {
+    "op": "ge",
+    "value": 8.3e-06,
+    "metric": "af_grpmax"
+   },
+   "pm2": {
+    "op": "absent",
+    "value": 0,
+    "metric": "af_grpmax"
+   },
+   "uses_faf": false
+  },
+  {
+   "gene": "SLC9A6",
+   "vcep": "Rett and Angelman-like Disorders Variant Curation Expert Panel",
+   "spec": "GN033",
+   "version": "6.0",
+   "spec_updated": "2026-05-01",
+   "url": "https://cspec.genome.network/cspec/ui/svi/doc/GN033",
+   "api": "https://cspec.genome.network/cspec/api/SequenceVariantInterpretation/id/GN033?detail=high",
+   "ba1": {
+    "op": "ge",
+    "value": 8.3e-05,
+    "metric": "af_grpmax",
+    "note": "any sub-population, >=2,000 alleles"
+   },
+   "bs1": {
+    "op": "ge",
+    "value": 8.3e-06,
+    "metric": "af_grpmax"
+   },
+   "pm2": {
+    "op": "absent",
+    "value": 0,
+    "metric": "af_grpmax"
+   },
+   "uses_faf": false
+  },
+  {
+   "gene": "CDKL5",
+   "vcep": "Rett and Angelman-like Disorders Variant Curation Expert Panel",
+   "spec": "GN034",
+   "version": "6.0",
+   "spec_updated": "2026-05-01",
+   "url": "https://cspec.genome.network/cspec/ui/svi/doc/GN034",
+   "api": "https://cspec.genome.network/cspec/api/SequenceVariantInterpretation/id/GN034?detail=high",
+   "ba1": {
+    "op": "ge",
+    "value": 8.3e-05,
+    "metric": "af_grpmax",
+    "note": "any sub-population, >=2,000 alleles"
+   },
+   "bs1": {
+    "op": "ge",
+    "value": 8.3e-06,
+    "metric": "af_grpmax"
+   },
+   "pm2": {
+    "op": "absent",
+    "value": 0,
+    "metric": "af_grpmax"
+   },
+   "uses_faf": false
+  },
+  {
+   "gene": "FOXG1",
+   "vcep": "Rett and Angelman-like Disorders Variant Curation Expert Panel",
+   "spec": "GN035",
+   "version": "6.0",
+   "spec_updated": "2026-05-01",
+   "url": "https://cspec.genome.network/cspec/ui/svi/doc/GN035",
+   "api": "https://cspec.genome.network/cspec/api/SequenceVariantInterpretation/id/GN035?detail=high",
+   "ba1": {
+    "op": "ge",
+    "value": 8.3e-05,
+    "metric": "af_grpmax",
+    "note": "any sub-population, >=2,000 alleles"
+   },
+   "bs1": {
+    "op": "ge",
+    "value": 8.3e-06,
+    "metric": "af_grpmax"
+   },
+   "pm2": {
+    "op": "absent",
+    "value": 0,
+    "metric": "af_grpmax"
+   },
+   "uses_faf": false
+  },
+  {
+   "gene": "MECP2",
+   "vcep": "Rett and Angelman-like Disorders Variant Curation Expert Panel",
+   "spec": "GN036",
+   "version": "6.0",
+   "spec_updated": "2026-11-17",
+   "url": "https://cspec.genome.network/cspec/ui/svi/doc/GN036",
+   "api": "https://cspec.genome.network/cspec/api/SequenceVariantInterpretation/id/GN036?detail=high",
+   "ba1": {
+    "op": "ge",
+    "value": 8.3e-05,
+    "metric": "af_grpmax",
+    "note": "any sub-population, >=2,000 alleles"
+   },
+   "bs1": {
+    "op": "ge",
+    "value": 8.3e-06,
+    "metric": "af_grpmax"
+   },
+   "pm2": {
+    "op": "absent",
+    "value": 0,
+    "metric": "af_grpmax"
+   },
+   "uses_faf": false
+  },
+  {
+   "gene": "UBE3A",
+   "vcep": "Rett and Angelman-like Disorders Variant Curation Expert Panel",
+   "spec": "GN037",
+   "version": "7.0",
+   "spec_updated": "2026-05-01",
+   "url": "https://cspec.genome.network/cspec/ui/svi/doc/GN037",
+   "api": "https://cspec.genome.network/cspec/api/SequenceVariantInterpretation/id/GN037?detail=high",
+   "ba1": {
+    "op": "ge",
+    "value": 8.3e-05,
+    "metric": "af_grpmax",
+    "note": "any sub-population, >=2,000 alleles"
+   },
+   "bs1": {
+    "op": "ge",
+    "value": 8.3e-06,
+    "metric": "af_grpmax"
+   },
+   "pm2": {
+    "op": "absent",
+    "value": 0,
+    "metric": "af_grpmax"
+   },
+   "uses_faf": false
+  },
+  {
+   "gene": "SHOC2",
+   "vcep": "RASopathy Variant Curation Expert Panel",
+   "spec": "GN038",
+   "version": "2.3",
+   "spec_updated": "2024-12-03",
+   "url": "https://cspec.genome.network/cspec/ui/svi/doc/GN038",
+   "api": "https://cspec.genome.network/cspec/api/SequenceVariantInterpretation/id/GN038?detail=high",
+   "ba1": {
+    "op": "ge",
+    "value": 0.0005,
+    "metric": "faf_grpmax"
+   },
+   "bs1": {
+    "op": "ge",
+    "value": 0.00025,
+    "metric": "faf_grpmax"
+   },
+   "pm2": {
+    "op": "absent",
+    "value": 0,
+    "metric": "af_grpmax"
+   },
+   "uses_faf": true
+  },
+  {
+   "gene": "NRAS",
+   "vcep": "RASopathy Variant Curation Expert Panel",
+   "spec": "GN039",
+   "version": "2.3",
+   "spec_updated": "2024-12-03",
+   "url": "https://cspec.genome.network/cspec/ui/svi/doc/GN039",
+   "api": "https://cspec.genome.network/cspec/api/SequenceVariantInterpretation/id/GN039?detail=high",
+   "ba1": {
+    "op": "ge",
+    "value": 0.0005,
+    "metric": "faf_grpmax"
+   },
+   "bs1": {
+    "op": "ge",
+    "value": 0.00025,
+    "metric": "faf_grpmax"
+   },
+   "pm2": {
+    "op": "absent",
+    "value": 0,
+    "metric": "af_grpmax"
+   },
+   "uses_faf": true
+  },
+  {
+   "gene": "RAF1",
+   "vcep": "RASopathy Variant Curation Expert Panel",
+   "spec": "GN040",
+   "version": "2.3",
+   "spec_updated": "2024-12-03",
+   "url": "https://cspec.genome.network/cspec/ui/svi/doc/GN040",
+   "api": "https://cspec.genome.network/cspec/api/SequenceVariantInterpretation/id/GN040?detail=high",
+   "ba1": {
+    "op": "ge",
+    "value": 0.0005,
+    "metric": "faf_grpmax"
+   },
+   "bs1": {
+    "op": "ge",
+    "value": 0.00025,
+    "metric": "faf_grpmax"
+   },
+   "pm2": {
+    "op": "absent",
+    "value": 0,
+    "metric": "af_grpmax"
+   },
+   "uses_faf": true
+  },
+  {
+   "gene": "SOS1",
+   "vcep": "RASopathy Variant Curation Expert Panel",
+   "spec": "GN041",
+   "version": "2.3",
+   "spec_updated": "2024-12-03",
+   "url": "https://cspec.genome.network/cspec/ui/svi/doc/GN041",
+   "api": "https://cspec.genome.network/cspec/api/SequenceVariantInterpretation/id/GN041?detail=high",
+   "ba1": {
+    "op": "ge",
+    "value": 0.0005,
+    "metric": "faf_grpmax"
+   },
+   "bs1": {
+    "op": "ge",
+    "value": 0.00025,
+    "metric": "faf_grpmax"
+   },
+   "pm2": {
+    "op": "absent",
+    "value": 0,
+    "metric": "af_grpmax"
+   },
+   "uses_faf": true
+  },
+  {
+   "gene": "SOS2",
+   "vcep": "RASopathy Variant Curation Expert Panel",
+   "spec": "GN042",
+   "version": "2.3",
+   "spec_updated": "2024-12-03",
+   "url": "https://cspec.genome.network/cspec/ui/svi/doc/GN042",
+   "api": "https://cspec.genome.network/cspec/api/SequenceVariantInterpretation/id/GN042?detail=high",
+   "ba1": {
+    "op": "ge",
+    "value": 0.0005,
+    "metric": "faf_grpmax"
+   },
+   "bs1": {
+    "op": "ge",
+    "value": 0.00025,
+    "metric": "faf_grpmax"
+   },
+   "pm2": {
+    "op": "absent",
+    "value": 0,
+    "metric": "af_grpmax"
+   },
+   "uses_faf": true
+  },
+  {
+   "gene": "PTPN11",
+   "vcep": "RASopathy Variant Curation Expert Panel",
+   "spec": "GN043",
+   "version": "2.3",
+   "spec_updated": "2024-12-03",
+   "url": "https://cspec.genome.network/cspec/ui/svi/doc/GN043",
+   "api": "https://cspec.genome.network/cspec/api/SequenceVariantInterpretation/id/GN043?detail=high",
+   "ba1": {
+    "op": "ge",
+    "value": 0.0005,
+    "metric": "faf_grpmax"
+   },
+   "bs1": {
+    "op": "ge",
+    "value": 0.00025,
+    "metric": "faf_grpmax"
+   },
+   "pm2": {
+    "op": "absent",
+    "value": 0,
+    "metric": "af_grpmax"
+   },
+   "uses_faf": true
+  },
+  {
+   "gene": "KRAS",
+   "vcep": "RASopathy Variant Curation Expert Panel",
+   "spec": "GN044",
+   "version": "2.3",
+   "spec_updated": "2024-12-03",
+   "url": "https://cspec.genome.network/cspec/ui/svi/doc/GN044",
+   "api": "https://cspec.genome.network/cspec/api/SequenceVariantInterpretation/id/GN044?detail=high",
+   "ba1": {
+    "op": "ge",
+    "value": 0.0005,
+    "metric": "faf_grpmax"
+   },
+   "bs1": {
+    "op": "ge",
+    "value": 0.00025,
+    "metric": "faf_grpmax"
+   },
+   "pm2": {
+    "op": "absent",
+    "value": 0,
+    "metric": "af_grpmax"
+   },
+   "uses_faf": true
+  },
+  {
+   "gene": "MAP2K1",
+   "vcep": "RASopathy Variant Curation Expert Panel",
+   "spec": "GN045",
+   "version": "2.3",
+   "spec_updated": "2024-12-03",
+   "url": "https://cspec.genome.network/cspec/ui/svi/doc/GN045",
+   "api": "https://cspec.genome.network/cspec/api/SequenceVariantInterpretation/id/GN045?detail=high",
+   "ba1": {
+    "op": "ge",
+    "value": 0.0005,
+    "metric": "faf_grpmax"
+   },
+   "bs1": {
+    "op": "ge",
+    "value": 0.00025,
+    "metric": "faf_grpmax"
+   },
+   "pm2": {
+    "op": "absent",
+    "value": 0,
+    "metric": "af_grpmax"
+   },
+   "uses_faf": true
+  },
+  {
+   "gene": "HRAS",
+   "vcep": "RASopathy Variant Curation Expert Panel",
+   "spec": "GN046",
+   "version": "2.3",
+   "spec_updated": "2024-12-03",
+   "url": "https://cspec.genome.network/cspec/ui/svi/doc/GN046",
+   "api": "https://cspec.genome.network/cspec/api/SequenceVariantInterpretation/id/GN046?detail=high",
+   "ba1": {
+    "op": "ge",
+    "value": 0.0005,
+    "metric": "faf_grpmax"
+   },
+   "bs1": {
+    "op": "ge",
+    "value": 0.00025,
+    "metric": "faf_grpmax"
+   },
+   "pm2": {
+    "op": "absent",
+    "value": 0,
+    "metric": "af_grpmax"
+   },
+   "uses_faf": true
+  },
+  {
+   "gene": "RIT1",
+   "vcep": "RASopathy Variant Curation Expert Panel",
+   "spec": "GN047",
+   "version": "2.3",
+   "spec_updated": "2024-12-03",
+   "url": "https://cspec.genome.network/cspec/ui/svi/doc/GN047",
+   "api": "https://cspec.genome.network/cspec/api/SequenceVariantInterpretation/id/GN047?detail=high",
+   "ba1": {
+    "op": "ge",
+    "value": 0.0005,
+    "metric": "faf_grpmax"
+   },
+   "bs1": {
+    "op": "ge",
+    "value": 0.00025,
+    "metric": "faf_grpmax"
+   },
+   "pm2": {
+    "op": "absent",
+    "value": 0,
+    "metric": "af_grpmax"
+   },
+   "uses_faf": true
+  },
+  {
+   "gene": "MAP2K2",
+   "vcep": "RASopathy Variant Curation Expert Panel",
+   "spec": "GN048",
+   "version": "2.3",
+   "spec_updated": "2024-12-03",
+   "url": "https://cspec.genome.network/cspec/ui/svi/doc/GN048",
+   "api": "https://cspec.genome.network/cspec/api/SequenceVariantInterpretation/id/GN048?detail=high",
+   "ba1": {
+    "op": "ge",
+    "value": 0.0005,
+    "metric": "faf_grpmax"
+   },
+   "bs1": {
+    "op": "ge",
+    "value": 0.00025,
+    "metric": "faf_grpmax"
+   },
+   "pm2": {
+    "op": "absent",
+    "value": 0,
+    "metric": "af_grpmax"
+   },
+   "uses_faf": true
+  },
+  {
+   "gene": "BRAF",
+   "vcep": "RASopathy Variant Curation Expert Panel",
+   "spec": "GN049",
+   "version": "2.3",
+   "spec_updated": "2024-12-03",
+   "url": "https://cspec.genome.network/cspec/ui/svi/doc/GN049",
+   "api": "https://cspec.genome.network/cspec/api/SequenceVariantInterpretation/id/GN049?detail=high",
+   "ba1": {
+    "op": "ge",
+    "value": 0.0005,
+    "metric": "faf_grpmax"
+   },
+   "bs1": {
+    "op": "ge",
+    "value": 0.00025,
+    "metric": "faf_grpmax"
+   },
+   "pm2": {
+    "op": "absent",
+    "value": 0,
+    "metric": "af_grpmax"
+   },
+   "uses_faf": true
+  },
+  {
+   "gene": "SCN1A",
+   "vcep": "Epilepsy Sodium Channel Variant Curation Expert Panel",
+   "spec": "GN067",
+   "version": "2.0",
+   "spec_updated": "2025-01-07",
+   "url": "https://cspec.genome.network/cspec/ui/svi/doc/GN067",
+   "api": "https://cspec.genome.network/cspec/api/SequenceVariantInterpretation/id/GN067?detail=high",
+   "ba1": {
+    "op": "gt",
+    "value": 0.0002,
+    "metric": "af_unspecified",
+    "note": ">=5 alleles if >=10,000 alleles assessed"
+   },
+   "bs1": {
+    "op": "gt",
+    "value": 4e-06,
+    "metric": "af_unspecified"
+   },
+   "pm2": {
+    "op": "count_le",
+    "value": 1,
+    "metric": "allele_count",
+    "note": "one or fewer alleles where >=10,000 assessed"
+   },
+   "uses_faf": false
+  },
+  {
+   "gene": "SCN2A",
+   "vcep": "Epilepsy Sodium Channel Variant Curation Expert Panel",
+   "spec": "GN068",
+   "version": "2.0",
+   "spec_updated": "2025-01-07",
+   "url": "https://cspec.genome.network/cspec/ui/svi/doc/GN068",
+   "api": "https://cspec.genome.network/cspec/api/SequenceVariantInterpretation/id/GN068?detail=high",
+   "ba1": {
+    "op": "gt",
+    "value": 0.0001,
+    "metric": "af_unspecified",
+    "note": ">=5 alleles if >=10,000 alleles assessed"
+   },
+   "bs1": {
+    "op": "gt",
+    "value": 2e-06,
+    "metric": "af_unspecified"
+   },
+   "pm2": {
+    "op": "count_le",
+    "value": 1,
+    "metric": "allele_count",
+    "note": "one or fewer alleles where >=10,000 assessed"
+   },
+   "uses_faf": false
+  },
+  {
+   "gene": "SCN3A",
+   "vcep": "Epilepsy Sodium Channel Variant Curation Expert Panel",
+   "spec": "GN069",
+   "version": "2.1",
+   "spec_updated": "2025-04-28",
+   "url": "https://cspec.genome.network/cspec/ui/svi/doc/GN069",
+   "api": "https://cspec.genome.network/cspec/api/SequenceVariantInterpretation/id/GN069?detail=high",
+   "ba1": {
+    "op": "gt",
+    "value": 0.0001,
+    "metric": "af_unspecified",
+    "note": ">=5 alleles if >=10,000 alleles assessed"
+   },
+   "bs1": {
+    "op": "gt",
+    "value": 2e-06,
+    "metric": "af_unspecified"
+   },
+   "pm2": {
+    "op": "count_le",
+    "value": 1,
+    "metric": "allele_count",
+    "note": "one or fewer alleles where >=10,000 assessed"
+   },
+   "uses_faf": false
+  },
+  {
+   "gene": "SCN8A",
+   "vcep": "Epilepsy Sodium Channel Variant Curation Expert Panel",
+   "spec": "GN070",
+   "version": "2.0",
+   "spec_updated": "2025-01-07",
+   "url": "https://cspec.genome.network/cspec/ui/svi/doc/GN070",
+   "api": "https://cspec.genome.network/cspec/api/SequenceVariantInterpretation/id/GN070?detail=high",
+   "ba1": {
+    "op": "gt",
+    "value": 0.0001,
+    "metric": "af_unspecified",
+    "note": ">=5 alleles if >=10,000 alleles assessed"
+   },
+   "bs1": {
+    "op": "gt",
+    "value": 2e-06,
+    "metric": "af_unspecified"
+   },
+   "pm2": {
+    "op": "count_le",
+    "value": 1,
+    "metric": "allele_count",
+    "note": "one or fewer alleles where >=10,000 assessed"
+   },
+   "uses_faf": false
+  },
+  {
+   "gene": "F8",
+   "vcep": "Coagulation Factor Deficiency Variant Curation Expert Panel",
+   "spec": "GN071",
+   "version": "2.0",
+   "spec_updated": "2026-01-20",
+   "url": "https://cspec.genome.network/cspec/ui/svi/doc/GN071",
+   "api": "https://cspec.genome.network/cspec/api/SequenceVariantInterpretation/id/GN071?detail=high",
+   "ba1": {
+    "op": "ge",
+    "value": 0.000333,
+    "metric": "af_unspecified"
+   },
+   "bs1": {
+    "op": "ge",
+    "value": 3.33e-05,
+    "metric": "af_unspecified"
+   },
+   "pm2": {
+    "op": "absent",
+    "value": 0,
+    "metric": "af_males",
+    "note": "absent in males"
+   },
+   "uses_faf": false
+  },
+  {
+   "gene": "SCN1B",
+   "vcep": "Epilepsy Sodium Channel Variant Curation Expert Panel",
+   "spec": "GN076",
+   "version": "2.0",
+   "spec_updated": "2025-01-07",
+   "url": "https://cspec.genome.network/cspec/ui/svi/doc/GN076",
+   "api": "https://cspec.genome.network/cspec/api/SequenceVariantInterpretation/id/GN076?detail=high",
+   "ba1": {
+    "op": "gt",
+    "value": 0.003,
+    "metric": "af_unspecified",
+    "note": ">=5 alleles if >=10,000 alleles assessed"
+   },
+   "bs1": {
+    "op": "gt",
+    "value": 0.0001,
+    "metric": "af_unspecified"
+   },
+   "pm2": {
+    "op": "count_le",
+    "value": 1,
+    "metric": "allele_count",
+    "note": "one or fewer alleles where >=10,000 assessed"
+   },
+   "uses_faf": false
+  },
+  {
+   "gene": "PALB2",
+   "vcep": "Hereditary Breast, Ovarian and Pancreatic Cancer Variant Curation Expert Panel",
+   "spec": "GN077",
+   "version": "1.3",
+   "spec_updated": "2026-09-18",
+   "url": "https://cspec.genome.network/cspec/ui/svi/doc/GN077",
+   "api": "https://cspec.genome.network/cspec/api/SequenceVariantInterpretation/id/GN077?detail=high",
+   "ba1": {
+    "op": "gt",
+    "value": 0.001,
+    "metric": "faf_grpmax"
+   },
+   "bs1": {
+    "op": "gt",
+    "value": 0.0001,
+    "metric": "faf_grpmax"
+   },
+   "pm2": {
+    "op": "le",
+    "value": 3.33e-06,
+    "metric": "af_grpmax",
+    "note": "n=1 in a single group also qualifies"
+   },
+   "uses_faf": true
+  },
+  {
+   "gene": "VHL",
+   "vcep": "VHL Variant Curation Expert Panel",
+   "spec": "GN078",
+   "version": "1.1",
+   "spec_updated": "2025-01-10",
+   "url": "https://cspec.genome.network/cspec/ui/svi/doc/GN078",
+   "api": "https://cspec.genome.network/cspec/api/SequenceVariantInterpretation/id/GN078?detail=high",
+   "ba1": {
+    "op": "ge",
+    "value": 0.000156,
+    "metric": "faf_grpmax",
+    "note": "gnomAD v4"
+   },
+   "bs1": {
+    "op": "ge",
+    "value": 1.56e-05,
+    "metric": "faf_grpmax"
+   },
+   "pm2": {
+    "op": "le",
+    "value": 1.56e-06,
+    "metric": "faf_grpmax",
+    "note": "or absent, or no FAF computed"
+   },
+   "uses_faf": true
+  },
+  {
+   "gene": "GP1BA",
+   "vcep": "Platelet Disorders Variant Curation Expert Panel",
+   "spec": "GN079",
+   "version": "1.1",
+   "spec_updated": "2025-09-29",
+   "url": "https://cspec.genome.network/cspec/ui/svi/doc/GN079",
+   "api": "https://cspec.genome.network/cspec/api/SequenceVariantInterpretation/id/GN079?detail=high",
+   "ba1": {
+    "op": "ge",
+    "value": 0.001,
+    "metric": "af_unspecified"
+   },
+   "bs1": {
+    "op": "ge",
+    "value": 0.0005,
+    "metric": "af_unspecified"
+   },
+   "pm2": {
+    "op": "le",
+    "value": 0.0001114,
+    "metric": "af_unspecified"
+   },
+   "uses_faf": false
+  },
+  {
+   "gene": "F9",
+   "vcep": "Coagulation Factor Deficiency Variant Curation Expert Panel",
+   "spec": "GN080",
+   "version": "2.1",
+   "spec_updated": "2026-04-16",
+   "url": "https://cspec.genome.network/cspec/ui/svi/doc/GN080",
+   "api": "https://cspec.genome.network/cspec/api/SequenceVariantInterpretation/id/GN080?detail=high",
+   "ba1": {
+    "op": "ge",
+    "value": 5.56e-05,
+    "metric": "af_unspecified"
+   },
+   "bs1": {
+    "op": "ge",
+    "value": 5.56e-06,
+    "metric": "af_unspecified"
+   },
+   "pm2": {
+    "op": "absent",
+    "value": 0,
+    "metric": "af_males",
+    "note": "absent in males"
+   },
+   "uses_faf": false
+  },
+  {
+   "gene": "VWF",
+   "vcep": "von Willebrand Disease  Variant Curation Expert Panel",
+   "spec": "GN081",
+   "version": "1.0",
+   "spec_updated": "2026-10-09",
+   "url": "https://cspec.genome.network/cspec/ui/svi/doc/GN081",
+   "api": "https://cspec.genome.network/cspec/api/SequenceVariantInterpretation/id/GN081?detail=high",
+   "pattern": "AD",
+   "ba1": {
+    "op": "gt",
+    "value": 0.1,
+    "metric": "af_grpmax",
+    "note": "as written (\"Popmax MAF of >0.1\")"
+   },
+   "bs1": {
+    "op": "gt",
+    "value": 0.01,
+    "metric": "af_grpmax",
+    "note": "as written (\">0.01\")"
+   },
+   "pm2": {
+    "op": "lt",
+    "value": 0.0001,
+    "metric": "af_grpmax"
+   },
+   "uses_faf": false
+  },
+  {
+   "gene": "GP1BB",
+   "vcep": "Platelet Disorders Variant Curation Expert Panel",
+   "spec": "GN082",
+   "version": "1.1",
+   "spec_updated": "2025-09-29",
+   "url": "https://cspec.genome.network/cspec/ui/svi/doc/GN082",
+   "api": "https://cspec.genome.network/cspec/api/SequenceVariantInterpretation/id/GN082?detail=high",
+   "ba1": {
+    "op": "ge",
+    "value": 0.001,
+    "metric": "af_unspecified"
+   },
+   "bs1": {
+    "op": "ge",
+    "value": 0.0005,
+    "metric": "af_unspecified"
+   },
+   "pm2": {
+    "op": "le",
+    "value": 6.517e-05,
+    "metric": "af_unspecified"
+   },
+   "uses_faf": false
+  },
+  {
+   "gene": "GP9",
+   "vcep": "Platelet Disorders Variant Curation Expert Panel",
+   "spec": "GN083",
+   "version": "1.1",
+   "spec_updated": "2025-09-29",
+   "url": "https://cspec.genome.network/cspec/ui/svi/doc/GN083",
+   "api": "https://cspec.genome.network/cspec/api/SequenceVariantInterpretation/id/GN083?detail=high",
+   "ba1": {
+    "op": "ge",
+    "value": 0.001,
+    "metric": "af_unspecified"
+   },
+   "bs1": {
+    "op": "ge",
+    "value": 0.0007,
+    "metric": "af_unspecified"
+   },
+   "pm2": {
+    "op": "le",
+    "value": 3.29e-05,
+    "metric": "af_unspecified"
+   },
+   "uses_faf": false
+  },
+  {
+   "gene": "SERPINC1",
+   "vcep": "Thrombosis Variant Curation Expert Panel",
+   "spec": "GN084",
+   "version": "1.1",
+   "spec_updated": "2026-08-04",
+   "url": "https://cspec.genome.network/cspec/ui/svi/doc/GN084",
+   "api": "https://cspec.genome.network/cspec/api/SequenceVariantInterpretation/id/GN084?detail=high",
+   "ba1": {
+    "op": "ge",
+    "value": 0.002,
+    "metric": "af_grpmax"
+   },
+   "bs1": {
+    "op": "gt",
+    "value": 0.0002,
+    "metric": "af_grpmax"
+   },
+   "pm2": {
+    "op": "lt",
+    "value": 2e-05,
+    "metric": "af_grpmax"
+   },
+   "uses_faf": false
+  },
+  {
+   "gene": "HNF4A",
+   "vcep": "Monogenic Diabetes Variant Curation Expert Panel",
+   "spec": "GN085",
+   "version": "4.0",
+   "spec_updated": "2025-10-10",
+   "url": "https://cspec.genome.network/cspec/ui/svi/doc/GN085",
+   "api": "https://cspec.genome.network/cspec/api/SequenceVariantInterpretation/id/GN085?detail=high",
+   "ba1": {
+    "op": "ge",
+    "value": 0.0001,
+    "metric": "faf_grpmax"
+   },
+   "bs1": {
+    "op": "ge",
+    "value": 3.3e-05,
+    "metric": "faf_grpmax"
+   },
+   "pm2": {
+    "op": "le",
+    "value": 3e-06,
+    "metric": "faf_grpmax"
+   },
+   "uses_faf": true
+  },
+  {
+   "gene": "GCK",
+   "vcep": "Monogenic Diabetes Variant Curation Expert Panel",
+   "spec": "GN086",
+   "version": "3.1",
+   "spec_updated": "2025-10-10",
+   "url": "https://cspec.genome.network/cspec/ui/svi/doc/GN086",
+   "api": "https://cspec.genome.network/cspec/api/SequenceVariantInterpretation/id/GN086?detail=high",
+   "ba1": {
+    "op": "ge",
+    "value": 0.0001,
+    "metric": "faf_grpmax"
+   },
+   "bs1": {
+    "op": "ge",
+    "value": 4e-05,
+    "metric": "faf_grpmax"
+   },
+   "pm2": {
+    "op": "le",
+    "value": 3e-06,
+    "metric": "faf_grpmax"
+   },
+   "uses_faf": true
+  },
+  {
+   "gene": "APC",
+   "vcep": "InSiGHT Hereditary Colorectal Cancer/Polyposis Variant Curation Expert Panel",
+   "spec": "GN089",
+   "version": "2.1",
+   "spec_updated": "2023-11-24",
+   "url": "https://cspec.genome.network/cspec/ui/svi/doc/GN089",
+   "api": "https://cspec.genome.network/cspec/api/SequenceVariantInterpretation/id/GN089?detail=high",
+   "ba1": {
+    "op": "ge",
+    "value": 0.001,
+    "metric": "faf_grpmax"
+   },
+   "bs1": {
+    "op": "ge",
+    "value": 1e-05,
+    "metric": "faf_grpmax"
+   },
+   "pm2": {
+    "op": "le",
+    "value": 3e-06,
+    "metric": "af_unspecified",
+    "note": "if allele count >1; <0.00001 if allele count <=1"
+   },
+   "uses_faf": true
+  },
+  {
+   "gene": "VWF",
+   "vcep": "von Willebrand Disease  Variant Curation Expert Panel",
+   "spec": "GN090",
+   "version": "1.0",
+   "spec_updated": "2026-10-09",
+   "url": "https://cspec.genome.network/cspec/ui/svi/doc/GN090",
+   "api": "https://cspec.genome.network/cspec/api/SequenceVariantInterpretation/id/GN090?detail=high",
+   "pattern": "AR",
+   "ba1": {
+    "op": "gt",
+    "value": 0.1,
+    "metric": "af_grpmax",
+    "note": "as written"
+   },
+   "bs1": {
+    "op": "gt",
+    "value": 0.01,
+    "metric": "af_grpmax",
+    "note": "as written"
+   },
+   "pm2": {
+    "op": "lt",
+    "value": 0.005,
+    "metric": "af_grpmax"
+   },
+   "uses_faf": false
+  },
+  {
+   "gene": "IDUA",
+   "vcep": "Lysosomal Diseases Variant Curation Expert Panel",
+   "spec": "GN091",
+   "version": "1.2",
+   "spec_updated": "2026-01-23",
+   "url": "https://cspec.genome.network/cspec/ui/svi/doc/GN091",
+   "api": "https://cspec.genome.network/cspec/api/SequenceVariantInterpretation/id/GN091?detail=high",
+   "ba1": {
+    "op": "gt",
+    "value": 0.005,
+    "metric": "faf_grpmax"
+   },
+   "bs1": {
+    "op": "gt",
+    "value": 0.0025,
+    "metric": "faf_grpmax"
+   },
+   "pm2": {
+    "op": "lt",
+    "value": 0.00025,
+    "metric": "af_grpmax"
+   },
+   "uses_faf": true
+  },
+  {
+   "gene": "BRCA1",
+   "vcep": "ENIGMA BRCA1 and BRCA2 Variant Curation Expert Panel",
+   "spec": "GN092",
+   "version": "1.2",
+   "spec_updated": "2025-01-09",
+   "url": "https://cspec.genome.network/cspec/ui/svi/doc/GN092",
+   "api": "https://cspec.genome.network/cspec/api/SequenceVariantInterpretation/id/GN092?detail=high",
+   "ba1": {
+    "op": "gt",
+    "value": 0.001,
+    "metric": "faf_grpmax",
+    "note": "gnomAD v2.1 non-cancer exomes / v3.1 non-cancer, non-founder"
+   },
+   "bs1": {
+    "op": "gt",
+    "value": 0.0001,
+    "metric": "faf_grpmax"
+   },
+   "bs1_supporting": {
+    "op": "gt",
+    "value": 2e-05,
+    "metric": "faf_grpmax"
+   },
+   "pm2": {
+    "op": "absent",
+    "value": 0,
+    "metric": "af_grpmax",
+    "note": "absent from outbred populations; read depth >=25"
+   },
+   "uses_faf": true
+  },
+  {
+   "gene": "LZTR1",
+   "vcep": "RASopathy Variant Curation Expert Panel",
+   "spec": "GN094",
+   "version": "1.3",
+   "spec_updated": "2024-12-03",
+   "url": "https://cspec.genome.network/cspec/ui/svi/doc/GN094",
+   "api": "https://cspec.genome.network/cspec/api/SequenceVariantInterpretation/id/GN094?detail=high",
+   "ba1": {
+    "op": "ge",
+    "value": 0.0005,
+    "metric": "faf_grpmax"
+   },
+   "bs1": {
+    "op": "ge",
+    "value": 0.00025,
+    "metric": "faf_grpmax"
+   },
+   "pm2": {
+    "op": "absent",
+    "value": 0,
+    "metric": "af_grpmax",
+    "note": "for AR disease PM2_Supporting at <=0.000025"
+   },
+   "uses_faf": true
+  },
+  {
+   "gene": "MYBPC3",
+   "vcep": "Cardiomyopathy Variant Curation Expert Panel",
+   "spec": "GN095",
+   "version": "1.0",
+   "spec_updated": "2024-04-22",
+   "url": "https://cspec.genome.network/cspec/ui/svi/doc/GN095",
+   "api": "https://cspec.genome.network/cspec/api/SequenceVariantInterpretation/id/GN095?detail=high",
+   "ba1": {
+    "op": "ge",
+    "value": 0.001,
+    "metric": "faf_grpmax"
+   },
+   "bs1": {
+    "op": "ge",
+    "value": 0.0002,
+    "metric": "faf_grpmax"
+   },
+   "pm2": {
+    "op": "le",
+    "value": 4e-05,
+    "metric": "af_grpmax_upper95",
+    "note": "upper bound of the 95% CI of the GroupMax AF; ~ at most 1 allele in a non-founder group"
+   },
+   "uses_faf": true
+  },
+  {
+   "gene": "BRCA2",
+   "vcep": "ENIGMA BRCA1 and BRCA2 Variant Curation Expert Panel",
+   "spec": "GN097",
+   "version": "1.2",
+   "spec_updated": "2025-01-09",
+   "url": "https://cspec.genome.network/cspec/ui/svi/doc/GN097",
+   "api": "https://cspec.genome.network/cspec/api/SequenceVariantInterpretation/id/GN097?detail=high",
+   "ba1": {
+    "op": "gt",
+    "value": 0.001,
+    "metric": "faf_grpmax",
+    "note": "gnomAD v2.1 non-cancer exomes / v3.1 non-cancer, non-founder"
+   },
+   "bs1": {
+    "op": "gt",
+    "value": 0.0001,
+    "metric": "faf_grpmax"
+   },
+   "bs1_supporting": {
+    "op": "gt",
+    "value": 2e-05,
+    "metric": "faf_grpmax"
+   },
+   "pm2": {
+    "op": "absent",
+    "value": 0,
+    "metric": "af_grpmax",
+    "note": "absent from outbred populations; read depth >=25"
+   },
+   "uses_faf": true
+  },
+  {
+   "gene": "TNNI3",
+   "vcep": "Cardiomyopathy Variant Curation Expert Panel",
+   "spec": "GN098",
+   "version": "1.0",
+   "spec_updated": "2024-04-22",
+   "url": "https://cspec.genome.network/cspec/ui/svi/doc/GN098",
+   "api": "https://cspec.genome.network/cspec/api/SequenceVariantInterpretation/id/GN098?detail=high",
+   "ba1": {
+    "op": "ge",
+    "value": 0.001,
+    "metric": "faf_grpmax"
+   },
+   "bs1": {
+    "op": "ge",
+    "value": 0.0001,
+    "metric": "faf_grpmax"
+   },
+   "pm2": {
+    "op": "le",
+    "value": 4e-05,
+    "metric": "af_grpmax_upper95",
+    "note": "upper bound of the 95% CI of the GroupMax AF; ~ at most 1 allele in a non-founder group"
+   },
+   "uses_faf": true
+  },
+  {
+   "gene": "TNNT2",
+   "vcep": "Cardiomyopathy Variant Curation Expert Panel",
+   "spec": "GN099",
+   "version": "1.0",
+   "spec_updated": "2024-04-22",
+   "url": "https://cspec.genome.network/cspec/ui/svi/doc/GN099",
+   "api": "https://cspec.genome.network/cspec/api/SequenceVariantInterpretation/id/GN099?detail=high",
+   "ba1": {
+    "op": "ge",
+    "value": 0.001,
+    "metric": "faf_grpmax"
+   },
+   "bs1": {
+    "op": "ge",
+    "value": 0.0001,
+    "metric": "faf_grpmax"
+   },
+   "pm2": {
+    "op": "le",
+    "value": 4e-05,
+    "metric": "af_grpmax_upper95",
+    "note": "upper bound of the 95% CI of the GroupMax AF; ~ at most 1 allele in a non-founder group"
+   },
+   "uses_faf": true
+  },
+  {
+   "gene": "TPM1",
+   "vcep": "Cardiomyopathy Variant Curation Expert Panel",
+   "spec": "GN100",
+   "version": "1.0",
+   "spec_updated": "2024-04-22",
+   "url": "https://cspec.genome.network/cspec/ui/svi/doc/GN100",
+   "api": "https://cspec.genome.network/cspec/api/SequenceVariantInterpretation/id/GN100?detail=high",
+   "ba1": {
+    "op": "ge",
+    "value": 0.001,
+    "metric": "faf_grpmax"
+   },
+   "bs1": {
+    "op": "ge",
+    "value": 0.0001,
+    "metric": "faf_grpmax"
+   },
+   "pm2": {
+    "op": "le",
+    "value": 4e-05,
+    "metric": "af_grpmax_upper95",
+    "note": "upper bound of the 95% CI of the GroupMax AF; ~ at most 1 allele in a non-founder group"
+   },
+   "uses_faf": true
+  },
+  {
+   "gene": "ACTC1",
+   "vcep": "Cardiomyopathy Variant Curation Expert Panel",
+   "spec": "GN101",
+   "version": "1.0",
+   "spec_updated": "2024-04-22",
+   "url": "https://cspec.genome.network/cspec/ui/svi/doc/GN101",
+   "api": "https://cspec.genome.network/cspec/api/SequenceVariantInterpretation/id/GN101?detail=high",
+   "ba1": {
+    "op": "ge",
+    "value": 0.001,
+    "metric": "faf_grpmax"
+   },
+   "bs1": {
+    "op": "ge",
+    "value": 0.0001,
+    "metric": "faf_grpmax"
+   },
+   "pm2": {
+    "op": "le",
+    "value": 4e-05,
+    "metric": "af_grpmax_upper95",
+    "note": "upper bound of the 95% CI of the GroupMax AF; ~ at most 1 allele in a non-founder group"
+   },
+   "uses_faf": true
+  },
+  {
+   "gene": "MYL2",
+   "vcep": "Cardiomyopathy Variant Curation Expert Panel",
+   "spec": "GN102",
+   "version": "1.0",
+   "spec_updated": "2024-04-22",
+   "url": "https://cspec.genome.network/cspec/ui/svi/doc/GN102",
+   "api": "https://cspec.genome.network/cspec/api/SequenceVariantInterpretation/id/GN102?detail=high",
+   "ba1": {
+    "op": "ge",
+    "value": 0.001,
+    "metric": "faf_grpmax"
+   },
+   "bs1": {
+    "op": "ge",
+    "value": 0.0001,
+    "metric": "faf_grpmax"
+   },
+   "pm2": {
+    "op": "le",
+    "value": 4e-05,
+    "metric": "af_grpmax_upper95",
+    "note": "upper bound of the 95% CI of the GroupMax AF; ~ at most 1 allele in a non-founder group"
+   },
+   "uses_faf": true
+  },
+  {
+   "gene": "MYL3",
+   "vcep": "Cardiomyopathy Variant Curation Expert Panel",
+   "spec": "GN103",
+   "version": "1.0",
+   "spec_updated": "2024-04-22",
+   "url": "https://cspec.genome.network/cspec/ui/svi/doc/GN103",
+   "api": "https://cspec.genome.network/cspec/api/SequenceVariantInterpretation/id/GN103?detail=high",
+   "ba1": {
+    "op": "ge",
+    "value": 0.001,
+    "metric": "faf_grpmax"
+   },
+   "bs1": {
+    "op": "ge",
+    "value": 0.0001,
+    "metric": "faf_grpmax"
+   },
+   "pm2": {
+    "op": "le",
+    "value": 4e-05,
+    "metric": "af_grpmax_upper95",
+    "note": "upper bound of the 95% CI of the GroupMax AF; ~ at most 1 allele in a non-founder group"
+   },
+   "uses_faf": true
+  },
+  {
+   "gene": "CYP1B1",
+   "vcep": "Glaucoma Variant Curation Expert Panel",
+   "spec": "GN104",
+   "version": "2.0",
+   "spec_updated": "2026-07-16",
+   "url": "https://cspec.genome.network/cspec/ui/svi/doc/GN104",
+   "api": "https://cspec.genome.network/cspec/api/SequenceVariantInterpretation/id/GN104?detail=high",
+   "ba1": {
+    "op": "ge",
+    "value": 0.05,
+    "metric": "af_unspecified"
+   },
+   "bs1": {
+    "op": "ge",
+    "value": 0.01,
+    "metric": "af_unspecified"
+   },
+   "pm2": {
+    "op": "le",
+    "value": 0.0005,
+    "metric": "af_unspecified"
+   },
+   "uses_faf": false
+  },
+  {
+   "gene": "ABCD1",
+   "vcep": "Peroxisomal Disorders Variant Curation Expert Panel",
+   "spec": "GN105",
+   "version": "1.0",
+   "spec_updated": "2026-04-06",
+   "url": "https://cspec.genome.network/cspec/ui/svi/doc/GN105",
+   "api": "https://cspec.genome.network/cspec/api/SequenceVariantInterpretation/id/GN105?detail=high",
+   "ba1": {
+    "op": "ge",
+    "value": 0.00017,
+    "metric": "faf_grpmax"
+   },
+   "bs1": {
+    "op": "ge",
+    "value": 1.7e-05,
+    "metric": "faf_grpmax"
+   },
+   "pm2": {
+    "op": "lt",
+    "value": 1.7e-06,
+    "metric": "af_grpmax",
+    "note": "and absent in hemizygotes"
+   },
+   "uses_faf": true
+  },
+  {
+   "gene": "RPGR",
+   "vcep": "X-linked Inherited Retinal Disease Variant Curation Expert Panel",
+   "spec": "GN106",
+   "version": "1.0",
+   "spec_updated": "2025-05-16",
+   "url": "https://cspec.genome.network/cspec/ui/svi/doc/GN106",
+   "api": "https://cspec.genome.network/cspec/api/SequenceVariantInterpretation/id/GN106?detail=high",
+   "ba1": {
+    "op": "gt",
+    "value": 0.05,
+    "metric": "af_males"
+   },
+   "bs1": {
+    "op": "ge",
+    "value": 8.3e-05,
+    "metric": "af_males"
+   },
+   "pm2": {
+    "op": "le",
+    "value": 5e-05,
+    "metric": "af_males"
+   },
+   "uses_faf": false
+  },
+  {
+   "gene": "KCNQ1",
+   "vcep": "Potassium Channel Arrhythmia Variant Curation Expert Panel",
+   "spec": "GN112",
+   "version": "1.0",
+   "spec_updated": "2026-10-07",
+   "url": "https://cspec.genome.network/cspec/ui/svi/doc/GN112",
+   "api": "https://cspec.genome.network/cspec/api/SequenceVariantInterpretation/id/GN112?detail=high",
+   "ba1": {
+    "op": "ge",
+    "value": 0.004,
+    "metric": "af_grpmax",
+    "note": "five continental groups"
+   },
+   "bs1": {
+    "op": "ge",
+    "value": 0.0004,
+    "metric": "af_grpmax"
+   },
+   "pm2": {
+    "op": "lt",
+    "value": 1e-05,
+    "metric": "af_grpmax"
+   },
+   "uses_faf": false
+  },
+  {
+   "gene": "FOXN1",
+   "vcep": "Severe Combined Immunodeficiency Disease  Variant Curation Expert Panel",
+   "spec": "GN113",
+   "version": "2.3",
+   "spec_updated": "2026-06-01",
+   "url": "https://cspec.genome.network/cspec/ui/svi/doc/GN113",
+   "api": "https://cspec.genome.network/cspec/api/SequenceVariantInterpretation/id/GN113?detail=high",
+   "ba1": {
+    "op": "gt",
+    "value": 0.00447,
+    "metric": "faf_grpmax"
+   },
+   "bs1": {
+    "op": "gt",
+    "value": 0.00141,
+    "metric": "faf_grpmax"
+   },
+   "pm2": {
+    "op": "le",
+    "value": 2.412e-05,
+    "metric": "faf_grpmax"
+   },
+   "uses_faf": true
+  },
+  {
+   "gene": "ADA",
+   "vcep": "Severe Combined Immunodeficiency Disease  Variant Curation Expert Panel",
+   "spec": "GN114",
+   "version": "2.2",
+   "spec_updated": "2026-07-17",
+   "url": "https://cspec.genome.network/cspec/ui/svi/doc/GN114",
+   "api": "https://cspec.genome.network/cspec/api/SequenceVariantInterpretation/id/GN114?detail=high",
+   "ba1": {
+    "op": "gt",
+    "value": 0.00721,
+    "metric": "faf_grpmax"
+   },
+   "bs1": {
+    "op": "gt",
+    "value": 0.00161,
+    "metric": "faf_grpmax",
+    "note": "consider bottleneck populations"
+   },
+   "pm2": {
+    "op": "lt",
+    "value": 0.0001742,
+    "metric": "faf_grpmax",
+    "note": "and no homozygotes in gnomAD"
+   },
+   "uses_faf": true
+  },
+  {
+   "gene": "MLH1",
+   "vcep": "InSiGHT Hereditary Colorectal Cancer/Polyposis Variant Curation Expert Panel",
+   "spec": "GN115",
+   "version": "2.0",
+   "spec_updated": "2026-09-09",
+   "url": "https://cspec.genome.network/cspec/ui/svi/doc/GN115",
+   "api": "https://cspec.genome.network/cspec/api/SequenceVariantInterpretation/id/GN115?detail=high",
+   "ba1": {
+    "op": "ge",
+    "value": 0.001,
+    "metric": "faf_grpmax",
+    "note": "gnomAD v4; founder pathogenic variants excluded"
+   },
+   "bs1": {
+    "op": "ge",
+    "value": 0.0001,
+    "metric": "faf_grpmax"
+   },
+   "pm2": {
+    "op": "lt",
+    "value": 2e-05,
+    "metric": "af_unspecified",
+    "note": "gnomAD v4; <1 in 50,000 alleles"
+   },
+   "uses_faf": true
+  },
+  {
+   "gene": "DCLRE1C",
+   "vcep": "Severe Combined Immunodeficiency Disease  Variant Curation Expert Panel",
+   "spec": "GN116",
+   "version": "2.2",
+   "spec_updated": "2026-06-01",
+   "url": "https://cspec.genome.network/cspec/ui/svi/doc/GN116",
+   "api": "https://cspec.genome.network/cspec/api/SequenceVariantInterpretation/id/GN116?detail=high",
+   "ba1": {
+    "op": "gt",
+    "value": 0.00346,
+    "metric": "faf_grpmax"
+   },
+   "bs1": {
+    "op": "gt",
+    "value": 0.00078,
+    "metric": "faf_grpmax",
+    "note": "consider bottleneck populations"
+   },
+   "pm2": {
+    "op": "lt",
+    "value": 3.266e-05,
+    "metric": "faf_grpmax",
+    "note": "and no homozygotes in gnomAD"
+   },
+   "uses_faf": true
+  },
+  {
+   "gene": "IL7R",
+   "vcep": "Severe Combined Immunodeficiency Disease  Variant Curation Expert Panel",
+   "spec": "GN119",
+   "version": "2.2",
+   "spec_updated": "2026-05-15",
+   "url": "https://cspec.genome.network/cspec/ui/svi/doc/GN119",
+   "api": "https://cspec.genome.network/cspec/api/SequenceVariantInterpretation/id/GN119?detail=high",
+   "ba1": {
+    "op": "gt",
+    "value": 0.00566,
+    "metric": "faf_grpmax"
+   },
+   "bs1": {
+    "op": "gt",
+    "value": 0.00126,
+    "metric": "faf_grpmax",
+    "note": "consider bottleneck populations"
+   },
+   "pm2": {
+    "op": "lt",
+    "value": 4.129e-05,
+    "metric": "faf_grpmax",
+    "note": "and no homozygotes in gnomAD"
+   },
+   "uses_faf": true
+  },
+  {
+   "gene": "RPE65",
+   "vcep": "Leber Congenital Amaurosis/early onset Retinal Dystrophy Variant Curation Expert Panel",
+   "spec": "GN120",
+   "version": "1.0",
+   "spec_updated": "2023-10-24",
+   "url": "https://cspec.genome.network/cspec/ui/svi/doc/GN120",
+   "api": "https://cspec.genome.network/cspec/api/SequenceVariantInterpretation/id/GN120?detail=high",
+   "ba1": {
+    "op": "ge",
+    "value": 0.008,
+    "metric": "faf_grpmax"
+   },
+   "bs1": {
+    "op": "ge",
+    "value": 0.0008,
+    "metric": "faf_grpmax"
+   },
+   "pm2": {
+    "op": "le",
+    "value": 0.0002,
+    "metric": "faf_grpmax"
+   },
+   "uses_faf": true
+  },
+  {
+   "gene": "JAK3",
+   "vcep": "Severe Combined Immunodeficiency Disease  Variant Curation Expert Panel",
+   "spec": "GN121",
+   "version": "2.3",
+   "spec_updated": "2026-06-01",
+   "url": "https://cspec.genome.network/cspec/ui/svi/doc/GN121",
+   "api": "https://cspec.genome.network/cspec/api/SequenceVariantInterpretation/id/GN121?detail=high",
+   "ba1": {
+    "op": "gt",
+    "value": 0.00447,
+    "metric": "faf_grpmax"
+   },
+   "bs1": {
+    "op": "gt",
+    "value": 0.001,
+    "metric": "faf_grpmax",
+    "note": "consider bottleneck populations"
+   },
+   "pm2": {
+    "op": "lt",
+    "value": 0.000115,
+    "metric": "faf_grpmax",
+    "note": "and no homozygotes in gnomAD"
+   },
+   "uses_faf": true
+  },
+  {
+   "gene": "CTLA4",
+   "vcep": "Antibody Deficiencies Variant Curation Expert Panel",
+   "spec": "GN122",
+   "version": "2.0",
+   "spec_updated": "2026-07-31",
+   "url": "https://cspec.genome.network/cspec/ui/svi/doc/GN122",
+   "api": "https://cspec.genome.network/cspec/api/SequenceVariantInterpretation/id/GN122?detail=high",
+   "ba1": {
+    "op": "ge",
+    "value": 1.11e-05,
+    "metric": "faf_grpmax",
+    "note": ">=5 alleles total; gnomAD v4.1.0"
+   },
+   "bs1": {
+    "op": "ge",
+    "value": 1.11e-06,
+    "metric": "faf_grpmax",
+    "note": ">=3 alleles total"
+   },
+   "pm2": {
+    "op": "lt",
+    "value": 1.43e-07,
+    "metric": "af_total"
+   },
+   "uses_faf": true
+  },
+  {
+   "gene": "RAG1",
+   "vcep": "Severe Combined Immunodeficiency Disease  Variant Curation Expert Panel",
+   "spec": "GN123",
+   "version": "2.2",
+   "spec_updated": "2026-05-15",
+   "url": "https://cspec.genome.network/cspec/ui/svi/doc/GN123",
+   "api": "https://cspec.genome.network/cspec/api/SequenceVariantInterpretation/id/GN123?detail=high",
+   "ba1": {
+    "op": "gt",
+    "value": 0.00872,
+    "metric": "faf_grpmax"
+   },
+   "bs1": {
+    "op": "gt",
+    "value": 0.00195,
+    "metric": "faf_grpmax",
+    "note": "consider bottleneck populations"
+   },
+   "pm2": {
+    "op": "lt",
+    "value": 0.000102,
+    "metric": "faf_grpmax",
+    "note": "and no homozygotes in gnomAD"
+   },
+   "uses_faf": true
+  },
+  {
+   "gene": "RAG2",
+   "vcep": "Severe Combined Immunodeficiency Disease  Variant Curation Expert Panel",
+   "spec": "GN124",
+   "version": "2.2",
+   "spec_updated": "2026-06-01",
+   "url": "https://cspec.genome.network/cspec/ui/svi/doc/GN124",
+   "api": "https://cspec.genome.network/cspec/api/SequenceVariantInterpretation/id/GN124?detail=high",
+   "ba1": {
+    "op": "gt",
+    "value": 0.00872,
+    "metric": "faf_grpmax"
+   },
+   "bs1": {
+    "op": "gt",
+    "value": 0.00195,
+    "metric": "faf_grpmax",
+    "note": "consider bottleneck populations"
+   },
+   "pm2": {
+    "op": "lt",
+    "value": 5.88e-05,
+    "metric": "faf_grpmax",
+    "note": "and no homozygotes in gnomAD"
+   },
+   "uses_faf": true
+  },
+  {
+   "gene": "BMPR2",
+   "vcep": "Pulmonary Hypertension Variant Curation Expert Panel",
+   "spec": "GN125",
+   "version": "2.0",
+   "spec_updated": "2026-01-30",
+   "url": "https://cspec.genome.network/cspec/ui/svi/doc/GN125",
+   "api": "https://cspec.genome.network/cspec/api/SequenceVariantInterpretation/id/GN125?detail=high",
+   "ba1": {
+    "op": "gt",
+    "value": 0.01,
+    "metric": "af_grpmax",
+    "note": "groups with >=1,000 alleles"
+   },
+   "bs1": {
+    "op": "ge",
+    "value": 0.001,
+    "metric": "af_grpmax"
+   },
+   "pm2": {
+    "op": "lt",
+    "value": 0.0001,
+    "metric": "af_grpmax"
+   },
+   "uses_faf": false
+  },
+  {
+   "gene": "RS1",
+   "vcep": "X-linked Inherited Retinal Disease Variant Curation Expert Panel",
+   "spec": "GN126",
+   "version": "1.0",
+   "spec_updated": "2025-05-16",
+   "url": "https://cspec.genome.network/cspec/ui/svi/doc/GN126",
+   "api": "https://cspec.genome.network/cspec/api/SequenceVariantInterpretation/id/GN126?detail=high",
+   "ba1": {
+    "op": "ge",
+    "value": 0.0002,
+    "metric": "af_males"
+   },
+   "bs1": {
+    "op": "ge",
+    "value": 2e-05,
+    "metric": "af_males"
+   },
+   "pm2": {
+    "op": "lt",
+    "value": 2e-06,
+    "metric": "af_males"
+   },
+   "uses_faf": false
+  },
+  {
+   "gene": "RRAS2",
+   "vcep": "RASopathy Variant Curation Expert Panel",
+   "spec": "GN127",
+   "version": "1.3",
+   "spec_updated": "2024-12-03",
+   "url": "https://cspec.genome.network/cspec/ui/svi/doc/GN127",
+   "api": "https://cspec.genome.network/cspec/api/SequenceVariantInterpretation/id/GN127?detail=high",
+   "ba1": {
+    "op": "ge",
+    "value": 0.0005,
+    "metric": "faf_grpmax"
+   },
+   "bs1": {
+    "op": "ge",
+    "value": 0.00025,
+    "metric": "faf_grpmax"
+   },
+   "pm2": {
+    "op": "absent",
+    "value": 0,
+    "metric": "af_grpmax"
+   },
+   "uses_faf": true
+  },
+  {
+   "gene": "PPP1CB",
+   "vcep": "RASopathy Variant Curation Expert Panel",
+   "spec": "GN128",
+   "version": "1.3",
+   "spec_updated": "2024-12-03",
+   "url": "https://cspec.genome.network/cspec/ui/svi/doc/GN128",
+   "api": "https://cspec.genome.network/cspec/api/SequenceVariantInterpretation/id/GN128?detail=high",
+   "ba1": {
+    "op": "ge",
+    "value": 0.0005,
+    "metric": "faf_grpmax"
+   },
+   "bs1": {
+    "op": "ge",
+    "value": 0.00025,
+    "metric": "faf_grpmax"
+   },
+   "pm2": {
+    "op": "absent",
+    "value": 0,
+    "metric": "af_grpmax"
+   },
+   "uses_faf": true
+  },
+  {
+   "gene": "IL2RG",
+   "vcep": "Severe Combined Immunodeficiency Disease  Variant Curation Expert Panel",
+   "spec": "GN129",
+   "version": "2.2",
+   "spec_updated": "2026-06-01",
+   "url": "https://cspec.genome.network/cspec/ui/svi/doc/GN129",
+   "api": "https://cspec.genome.network/cspec/api/SequenceVariantInterpretation/id/GN129?detail=high",
+   "ba1": {
+    "op": "gt",
+    "value": 0.0111,
+    "metric": "faf_grpmax"
+   },
+   "bs1": {
+    "op": "gt",
+    "value": 0.00249,
+    "metric": "faf_grpmax"
+   },
+   "pm2": {
+    "op": "unparsed",
+    "value": null,
+    "metric": null,
+    "note": "registry text for PM2 is about an in vitro assay, not a frequency (likely an entry error)"
+   },
+   "uses_faf": true
+  },
+  {
+   "gene": "DNAH5",
+   "vcep": "Motile Ciliopathy Variant Curation Expert Panel",
+   "spec": "GN134",
+   "version": "1.0",
+   "spec_updated": "2026-11-09",
+   "url": "https://cspec.genome.network/cspec/ui/svi/doc/GN134",
+   "api": "https://cspec.genome.network/cspec/api/SequenceVariantInterpretation/id/GN134?detail=high",
+   "ba1": {
+    "op": "ge",
+    "value": 0.006,
+    "metric": "faf_grpmax"
+   },
+   "bs1": {
+    "op": "ge",
+    "value": 0.0006,
+    "metric": "faf_grpmax"
+   },
+   "pm2": {
+    "op": "lt",
+    "value": 6e-05,
+    "metric": "af_total"
+   },
+   "uses_faf": true
+  },
+  {
+   "gene": "ACVRL1",
+   "vcep": "Hereditary Hemorrhagic Telangiectasia Variant Curation Expert Panel",
+   "spec": "GN135",
+   "version": "1.1",
+   "spec_updated": "2024-03-20",
+   "url": "https://cspec.genome.network/cspec/ui/svi/doc/GN135",
+   "api": "https://cspec.genome.network/cspec/api/SequenceVariantInterpretation/id/GN135?detail=high",
+   "ba1": {
+    "op": "ge",
+    "value": 0.01,
+    "metric": "faf_grpmax"
+   },
+   "bs1": {
+    "op": "gt",
+    "value": 0.002,
+    "metric": "faf_grpmax",
+    "note": "or BS1_Supporting with >=2 homozygotes"
+   },
+   "bs1_supporting": {
+    "op": "gt",
+    "value": 0.0008,
+    "metric": "faf_grpmax"
+   },
+   "pm2": {
+    "op": "lt",
+    "value": 4e-05,
+    "metric": "af_grpmax",
+    "note": "or <6 alleles in all of gnomAD"
+   },
+   "uses_faf": true
+  },
+  {
+   "gene": "ENG",
+   "vcep": "Hereditary Hemorrhagic Telangiectasia Variant Curation Expert Panel",
+   "spec": "GN136",
+   "version": "1.1",
+   "spec_updated": "2024-03-20",
+   "url": "https://cspec.genome.network/cspec/ui/svi/doc/GN136",
+   "api": "https://cspec.genome.network/cspec/api/SequenceVariantInterpretation/id/GN136?detail=high",
+   "ba1": {
+    "op": "ge",
+    "value": 0.01,
+    "metric": "faf_grpmax"
+   },
+   "bs1": {
+    "op": "gt",
+    "value": 0.002,
+    "metric": "faf_grpmax",
+    "note": "or BS1_Supporting with >=2 homozygotes"
+   },
+   "bs1_supporting": {
+    "op": "gt",
+    "value": 0.0008,
+    "metric": "faf_grpmax"
+   },
+   "pm2": {
+    "op": "lt",
+    "value": 4e-05,
+    "metric": "af_grpmax",
+    "note": "or <6 alleles in all of gnomAD"
+   },
+   "uses_faf": true
+  },
+  {
+   "gene": "MSH2",
+   "vcep": "InSiGHT Hereditary Colorectal Cancer/Polyposis Variant Curation Expert Panel",
+   "spec": "GN137",
+   "version": "2.0",
+   "spec_updated": "2026-09-09",
+   "url": "https://cspec.genome.network/cspec/ui/svi/doc/GN137",
+   "api": "https://cspec.genome.network/cspec/api/SequenceVariantInterpretation/id/GN137?detail=high",
+   "ba1": {
+    "op": "ge",
+    "value": 0.001,
+    "metric": "faf_grpmax",
+    "note": "gnomAD v4; founder pathogenic variants excluded"
+   },
+   "bs1": {
+    "op": "ge",
+    "value": 0.0001,
+    "metric": "faf_grpmax"
+   },
+   "pm2": {
+    "op": "lt",
+    "value": 2e-05,
+    "metric": "af_unspecified",
+    "note": "gnomAD v4; <1 in 50,000 alleles"
+   },
+   "uses_faf": true
+  },
+  {
+   "gene": "MSH6",
+   "vcep": "InSiGHT Hereditary Colorectal Cancer/Polyposis Variant Curation Expert Panel",
+   "spec": "GN138",
+   "version": "2.0",
+   "spec_updated": "2026-09-09",
+   "url": "https://cspec.genome.network/cspec/ui/svi/doc/GN138",
+   "api": "https://cspec.genome.network/cspec/api/SequenceVariantInterpretation/id/GN138?detail=high",
+   "ba1": {
+    "op": "ge",
+    "value": 0.0022,
+    "metric": "faf_grpmax",
+    "note": "gnomAD v4; founder pathogenic variants excluded"
+   },
+   "bs1": {
+    "op": "ge",
+    "value": 0.00022,
+    "metric": "faf_grpmax"
+   },
+   "pm2": {
+    "op": "lt",
+    "value": 2e-05,
+    "metric": "af_unspecified",
+    "note": "gnomAD v4; <1 in 50,000 alleles"
+   },
+   "uses_faf": true
+  },
+  {
+   "gene": "PMS2",
+   "vcep": "InSiGHT Hereditary Colorectal Cancer/Polyposis Variant Curation Expert Panel",
+   "spec": "GN139",
+   "version": "2.0",
+   "spec_updated": "2026-09-09",
+   "url": "https://cspec.genome.network/cspec/ui/svi/doc/GN139",
+   "api": "https://cspec.genome.network/cspec/api/SequenceVariantInterpretation/id/GN139?detail=high",
+   "ba1": {
+    "op": "ge",
+    "value": 0.0028,
+    "metric": "faf_grpmax",
+    "note": "gnomAD v4; founder pathogenic variants excluded"
+   },
+   "bs1": {
+    "op": "ge",
+    "value": 0.00028,
+    "metric": "faf_grpmax"
+   },
+   "pm2": {
+    "op": "lt",
+    "value": 2e-05,
+    "metric": "af_unspecified",
+    "note": "gnomAD v4; <1 in 50,000 alleles"
+   },
+   "uses_faf": true
+  },
+  {
+   "gene": "PIK3CD",
+   "vcep": "Antibody Deficiencies Variant Curation Expert Panel",
+   "spec": "GN141",
+   "version": "1.0",
+   "spec_updated": "2025-12-16",
+   "url": "https://cspec.genome.network/cspec/ui/svi/doc/GN141",
+   "api": "https://cspec.genome.network/cspec/api/SequenceVariantInterpretation/id/GN141?detail=high",
+   "ba1": {
+    "op": "ge",
+    "value": 0.00316,
+    "metric": "faf_grpmax",
+    "note": "gnomAD v4.1.0"
+   },
+   "bs1": {
+    "op": "ge",
+    "value": 0.000316,
+    "metric": "faf_grpmax"
+   },
+   "pm2": {
+    "op": "lt",
+    "value": 1.32e-06,
+    "metric": "af_total"
+   },
+   "uses_faf": true
+  },
+  {
+   "gene": "NEB",
+   "vcep": "Congenital Myopathies Variant Curation Expert Panel",
+   "spec": "GN146",
+   "version": "1.0",
+   "spec_updated": "2024-08-07",
+   "url": "https://cspec.genome.network/cspec/ui/svi/doc/GN146",
+   "api": "https://cspec.genome.network/cspec/api/SequenceVariantInterpretation/id/GN146?detail=high",
+   "ba1": {
+    "op": "ge",
+    "value": 0.00559,
+    "metric": "faf_grpmax",
+    "note": "exclusion list of known pathogenic variants"
+   },
+   "bs1": {
+    "op": "ge",
+    "value": 0.000237,
+    "metric": "faf_grpmax"
+   },
+   "pm2": {
+    "op": "le",
+    "value": 5.59e-05,
+    "metric": "af_unspecified",
+    "note": "1 allele allowed"
+   },
+   "uses_faf": true
+  },
+  {
+   "gene": "ACTA1",
+   "vcep": "Congenital Myopathies Variant Curation Expert Panel",
+   "spec": "GN147",
+   "version": "2.0",
+   "spec_updated": "2024-08-27",
+   "url": "https://cspec.genome.network/cspec/ui/svi/doc/GN147",
+   "api": "https://cspec.genome.network/cspec/api/SequenceVariantInterpretation/id/GN147?detail=high",
+   "pattern": "AD",
+   "ba1": {
+    "op": "ge",
+    "value": 7.81e-05,
+    "metric": "faf_grpmax",
+    "note": "continental groups >=2,000 alleles and >1 observation"
+   },
+   "bs1": {
+    "op": "ge",
+    "value": 7.81e-06,
+    "metric": "faf_grpmax"
+   },
+   "pm2": {
+    "op": "count_le",
+    "value": 1,
+    "metric": "allele_count",
+    "note": "absent, 1 allele allowed, >=2,000 alleles"
+   },
+   "uses_faf": true
+  },
+  {
+   "gene": "DNM2",
+   "vcep": "Congenital Myopathies Variant Curation Expert Panel",
+   "spec": "GN148",
+   "version": "1.0",
+   "spec_updated": "2024-08-07",
+   "url": "https://cspec.genome.network/cspec/ui/svi/doc/GN148",
+   "api": "https://cspec.genome.network/cspec/api/SequenceVariantInterpretation/id/GN148?detail=high",
+   "pattern": "AD",
+   "ba1": {
+    "op": "ge",
+    "value": 1.5e-06,
+    "metric": "faf_grpmax",
+    "note": "continental groups >=2,000 alleles and >1 observation"
+   },
+   "bs1": {
+    "op": "ge",
+    "value": 1.5e-07,
+    "metric": "faf_grpmax"
+   },
+   "pm2": {
+    "op": "count_le",
+    "value": 1,
+    "metric": "allele_count",
+    "note": "absent, 1 allele allowed, >=2,000 alleles"
+   },
+   "uses_faf": true
+  },
+  {
+   "gene": "MTM1",
+   "vcep": "Congenital Myopathies Variant Curation Expert Panel",
+   "spec": "GN149",
+   "version": "1.0",
+   "spec_updated": "2024-08-07",
+   "url": "https://cspec.genome.network/cspec/ui/svi/doc/GN149",
+   "api": "https://cspec.genome.network/cspec/api/SequenceVariantInterpretation/id/GN149?detail=high",
+   "ba1": {
+    "op": "ge",
+    "value": 1.6e-05,
+    "metric": "faf_grpmax"
+   },
+   "bs1": {
+    "op": "ge",
+    "value": 1.6e-06,
+    "metric": "faf_grpmax"
+   },
+   "pm2": {
+    "op": "count_le",
+    "value": 1,
+    "metric": "allele_count",
+    "note": "absent; 1 observation allowed, in females only"
+   },
+   "uses_faf": true
+  },
+  {
+   "gene": "RYR1",
+   "vcep": "Congenital Myopathies Variant Curation Expert Panel",
+   "spec": "GN150",
+   "version": "2.0",
+   "spec_updated": "2024-12-12",
+   "url": "https://cspec.genome.network/cspec/ui/svi/doc/GN150",
+   "api": "https://cspec.genome.network/cspec/api/SequenceVariantInterpretation/id/GN150?detail=high",
+   "pattern": "AD",
+   "ba1": {
+    "op": "ge",
+    "value": 4.86e-05,
+    "metric": "faf_grpmax",
+    "note": "continental groups >=2,000 alleles and >1 observation"
+   },
+   "bs1": {
+    "op": "ge",
+    "value": 4.86e-06,
+    "metric": "faf_grpmax"
+   },
+   "pm2": {
+    "op": "count_le",
+    "value": 1,
+    "metric": "allele_count",
+    "note": "absent, 1 allele allowed, >=2,000 alleles"
+   },
+   "uses_faf": true
+  },
+  {
+   "gene": "OTC",
+   "vcep": "Urea Cycle Disorders Variant Curation Expert Panel",
+   "spec": "GN156",
+   "version": "1.0",
+   "spec_updated": "2026-02-27",
+   "url": "https://cspec.genome.network/cspec/ui/svi/doc/GN156",
+   "api": "https://cspec.genome.network/cspec/api/SequenceVariantInterpretation/id/GN156?detail=high",
+   "ba1": {
+    "op": "gt",
+    "value": 0.01,
+    "metric": "faf_grpmax",
+    "note": "or >=10 homo/hemizygotes"
+   },
+   "bs1": {
+    "op": "gt",
+    "value": 0.002,
+    "metric": "faf_grpmax"
+   },
+   "pm2": {
+    "op": "lt",
+    "value": 1.5e-05,
+    "metric": "faf_grpmax",
+    "note": "and <=1 homo/hemizygote"
+   },
+   "uses_faf": true
+  },
+  {
+   "gene": "GFAP",
+   "vcep": "Leukodystrophy and Leukoencephalopathy Variant Curation Expert Panel",
+   "spec": "GN157",
+   "version": "1.0",
+   "spec_updated": "2026-08-03",
+   "url": "https://cspec.genome.network/cspec/ui/svi/doc/GN157",
+   "api": "https://cspec.genome.network/cspec/api/SequenceVariantInterpretation/id/GN157?detail=high",
+   "ba1": {
+    "op": "ge",
+    "value": 0.0001,
+    "metric": "faf_grpmax",
+    "note": "gnomAD v4.1.0"
+   },
+   "bs1": {
+    "op": "ge",
+    "value": 1e-05,
+    "metric": "faf_grpmax"
+   },
+   "pm2": {
+    "op": "absent",
+    "value": 0,
+    "metric": "af_grpmax"
+   },
+   "uses_faf": true
+  },
+  {
+   "gene": "DDX41",
+   "vcep": "Myeloid Malignancy Variant Curation Expert Panel",
+   "spec": "GN159",
+   "version": "1.0",
+   "spec_updated": "2026-11-02",
+   "url": "https://cspec.genome.network/cspec/ui/svi/doc/GN159",
+   "api": "https://cspec.genome.network/cspec/api/SequenceVariantInterpretation/id/GN159?detail=high",
+   "ba1": {
+    "op": "ge",
+    "value": 0.0274,
+    "metric": "af_grpmax",
+    "note": "continental, >=2,000 alleles, >=5 present"
+   },
+   "bs1": {
+    "op": "ge",
+    "value": 0.00274,
+    "metric": "af_grpmax"
+   },
+   "pm2": {
+    "op": "absent",
+    "value": 0,
+    "metric": "af_grpmax",
+    "note": "coverage >=20x"
+   },
+   "uses_faf": false
+  },
+  {
+   "gene": "PIK3R1",
+   "vcep": "Antibody Deficiencies Variant Curation Expert Panel",
+   "spec": "GN160",
+   "version": "1.0",
+   "spec_updated": "2026-04-29",
+   "url": "https://cspec.genome.network/cspec/ui/svi/doc/GN160",
+   "api": "https://cspec.genome.network/cspec/api/SequenceVariantInterpretation/id/GN160?detail=high",
+   "ba1": {
+    "op": "ge",
+    "value": 0.00316,
+    "metric": "faf_grpmax",
+    "note": "gnomAD v4.1.0"
+   },
+   "bs1": {
+    "op": "ge",
+    "value": 0.000316,
+    "metric": "faf_grpmax"
+   },
+   "pm2": {
+    "op": "lt",
+    "value": 1.32e-06,
+    "metric": "af_total"
+   },
+   "uses_faf": true
+  },
+  {
+   "gene": "PAX6",
+   "vcep": "Ocular Anterior Segment Disorder Variant Curation Expert Panel",
+   "spec": "GN162",
+   "version": "1.0",
+   "spec_updated": "2026-08-26",
+   "url": "https://cspec.genome.network/cspec/ui/svi/doc/GN162",
+   "api": "https://cspec.genome.network/cspec/api/SequenceVariantInterpretation/id/GN162?detail=high",
+   "ba1": {
+    "op": "ge",
+    "value": 0.0001,
+    "metric": "faf_grpmax"
+   },
+   "bs1": {
+    "op": "ge",
+    "value": 1e-05,
+    "metric": "faf_grpmax"
+   },
+   "pm2": {
+    "op": "le",
+    "value": 1e-06,
+    "metric": "af_grpmax"
+   },
+   "uses_faf": true
+  },
+  {
+   "gene": "DDC",
+   "vcep": "Dopa Decarboxylase (Aromatic L-Amino Acid Decarboxylase) Variant Curation Expert Panel",
+   "spec": "GN163",
+   "version": "1.0",
+   "spec_updated": "2026-11-12",
+   "url": "https://cspec.genome.network/cspec/ui/svi/doc/GN163",
+   "api": "https://cspec.genome.network/cspec/api/SequenceVariantInterpretation/id/GN163?detail=high",
+   "ba1": {
+    "op": "ge",
+    "value": 0.004,
+    "metric": "af_grpmax"
+   },
+   "bs1": {
+    "op": "gt",
+    "value": 0.002,
+    "metric": "af_grpmax"
+   },
+   "pm2": {
+    "op": "lt",
+    "value": 0.0002,
+    "metric": "af_grpmax",
+    "note": "no homozygotes unless a known hypomorph"
+   },
+   "uses_faf": false
+  },
+  {
+   "gene": "ABCA4",
+   "vcep": "ABCA4 Variant Curation Expert Panel",
+   "spec": "GN164",
+   "version": "1.0",
+   "spec_updated": "2025-11-14",
+   "url": "https://cspec.genome.network/cspec/ui/svi/doc/GN164",
+   "api": "https://cspec.genome.network/cspec/api/SequenceVariantInterpretation/id/GN164?detail=high",
+   "ba1": {
+    "op": "gt",
+    "value": 0.163,
+    "metric": "af_grpmax",
+    "note": "as written"
+   },
+   "bs1": {
+    "op": "gt",
+    "value": 0.0163,
+    "metric": "af_grpmax"
+   },
+   "bs1_supporting": {
+    "op": "gt",
+    "value": 0.00163,
+    "metric": "af_grpmax"
+   },
+   "pm2": {
+    "op": "lt",
+    "value": 0.0001,
+    "metric": "af_total"
+   },
+   "uses_faf": false
+  },
+  {
+   "gene": "GUCY2D",
+   "vcep": "Leber Congenital Amaurosis/early onset Retinal Dystrophy Variant Curation Expert Panel",
+   "spec": "GN167",
+   "version": "1.0",
+   "spec_updated": "2025-01-22",
+   "url": "https://cspec.genome.network/cspec/ui/svi/doc/GN167",
+   "api": "https://cspec.genome.network/cspec/api/SequenceVariantInterpretation/id/GN167?detail=high",
+   "ba1": {
+    "op": "gt",
+    "value": 0.016,
+    "metric": "faf_grpmax"
+   },
+   "bs1": {
+    "op": "ge",
+    "value": 0.0016,
+    "metric": "faf_grpmax"
+   },
+   "pm2": {
+    "op": "le",
+    "value": 0.0004,
+    "metric": "af_total"
+   },
+   "uses_faf": true
+  },
+  {
+   "gene": "ACTA1",
+   "vcep": "Congenital Myopathies Variant Curation Expert Panel",
+   "spec": "GN169",
+   "version": "1.0",
+   "spec_updated": "2024-08-07",
+   "url": "https://cspec.genome.network/cspec/ui/svi/doc/GN169",
+   "api": "https://cspec.genome.network/cspec/api/SequenceVariantInterpretation/id/GN169?detail=high",
+   "pattern": "AR",
+   "ba1": {
+    "op": "ge",
+    "value": 0.0025,
+    "metric": "faf_grpmax",
+    "note": "exclusion list"
+   },
+   "bs1": {
+    "op": "ge",
+    "value": 0.00025,
+    "metric": "faf_grpmax"
+   },
+   "pm2": {
+    "op": "le",
+    "value": 5e-06,
+    "metric": "af_unspecified"
+   },
+   "uses_faf": true
+  },
+  {
+   "gene": "HBB",
+   "vcep": "Hemoglobinopathy Variant Curation Expert Panel",
+   "spec": "GN170",
+   "version": "1.0",
+   "spec_updated": "2026-03-20",
+   "url": "https://cspec.genome.network/cspec/ui/svi/doc/GN170",
+   "api": "https://cspec.genome.network/cspec/api/SequenceVariantInterpretation/id/GN170?detail=high",
+   "ba1": {
+    "op": "ge",
+    "value": 0.005,
+    "metric": "af_unspecified",
+    "note": ">=2,000 alleles, >=5 present"
+   },
+   "bs1": {
+    "op": "ge",
+    "value": 0.001,
+    "metric": "af_unspecified"
+   },
+   "pm2": {
+    "op": "lt",
+    "value": 0.0001,
+    "metric": "af_unspecified"
+   },
+   "uses_faf": false
+  },
+  {
+   "gene": "HBA2",
+   "vcep": "Hemoglobinopathy Variant Curation Expert Panel",
+   "spec": "GN173",
+   "version": "1.0",
+   "spec_updated": "2026-03-20",
+   "url": "https://cspec.genome.network/cspec/ui/svi/doc/GN173",
+   "api": "https://cspec.genome.network/cspec/api/SequenceVariantInterpretation/id/GN173?detail=high",
+   "ba1": {
+    "op": "ge",
+    "value": 0.005,
+    "metric": "af_unspecified",
+    "note": ">=2,000 alleles, >=5 present"
+   },
+   "bs1": {
+    "op": "ge",
+    "value": 0.001,
+    "metric": "af_unspecified"
+   },
+   "pm2": {
+    "op": "lt",
+    "value": 0.0001,
+    "metric": "af_unspecified"
+   },
+   "uses_faf": false
+  },
+  {
+   "gene": "RYR1",
+   "vcep": "Congenital Myopathies Variant Curation Expert Panel",
+   "spec": "GN179",
+   "version": "2.0",
+   "spec_updated": "2024-12-12",
+   "url": "https://cspec.genome.network/cspec/ui/svi/doc/GN179",
+   "api": "https://cspec.genome.network/cspec/api/SequenceVariantInterpretation/id/GN179?detail=high",
+   "pattern": "AR",
+   "ba1": {
+    "op": "ge",
+    "value": 0.00697,
+    "metric": "faf_grpmax",
+    "note": "exclusion list"
+   },
+   "bs1": {
+    "op": "ge",
+    "value": 0.000697,
+    "metric": "faf_grpmax"
+   },
+   "pm2": {
+    "op": "le",
+    "value": 6.97e-06,
+    "metric": "af_unspecified"
+   },
+   "uses_faf": true
+  },
+  {
+   "gene": "DYSF",
+   "vcep": "Limb Girdle Muscular Dystrophy Variant Curation Expert Panel",
+   "spec": "GN180",
+   "version": "2.0",
+   "spec_updated": "2025-07-09",
+   "url": "https://cspec.genome.network/cspec/ui/svi/doc/GN180",
+   "api": "https://cspec.genome.network/cspec/api/SequenceVariantInterpretation/id/GN180?detail=high",
+   "ba1": {
+    "op": "gt",
+    "value": 0.003,
+    "metric": "faf_grpmax"
+   },
+   "bs1": {
+    "op": "gt",
+    "value": 0.001,
+    "metric": "faf_grpmax"
+   },
+   "pm2": {
+    "op": "lt",
+    "value": 0.0001,
+    "metric": "af_grpmax_upper95",
+    "note": "GroupMax AF if 1-2 alleles, else the upper 95% CI"
+   },
+   "uses_faf": true
+  },
+  {
+   "gene": "SGCB",
+   "vcep": "Limb Girdle Muscular Dystrophy Variant Curation Expert Panel",
+   "spec": "GN184",
+   "version": "2.0",
+   "spec_updated": "2025-07-09",
+   "url": "https://cspec.genome.network/cspec/ui/svi/doc/GN184",
+   "api": "https://cspec.genome.network/cspec/api/SequenceVariantInterpretation/id/GN184?detail=high",
+   "ba1": {
+    "op": "gt",
+    "value": 0.002,
+    "metric": "faf_grpmax"
+   },
+   "bs1": {
+    "op": "gt",
+    "value": 0.0009,
+    "metric": "faf_grpmax"
+   },
+   "pm2": {
+    "op": "lt",
+    "value": 9e-05,
+    "metric": "af_grpmax_upper95",
+    "note": "GroupMax AF if 1-2 alleles, else the upper 95% CI"
+   },
+   "uses_faf": true
+  },
+  {
+   "gene": "SGCG",
+   "vcep": "Limb Girdle Muscular Dystrophy Variant Curation Expert Panel",
+   "spec": "GN185",
+   "version": "2.0",
+   "spec_updated": "2025-07-09",
+   "url": "https://cspec.genome.network/cspec/ui/svi/doc/GN185",
+   "api": "https://cspec.genome.network/cspec/api/SequenceVariantInterpretation/id/GN185?detail=high",
+   "ba1": {
+    "op": "gt",
+    "value": 0.002,
+    "metric": "faf_grpmax"
+   },
+   "bs1": {
+    "op": "gt",
+    "value": 0.0009,
+    "metric": "faf_grpmax"
+   },
+   "pm2": {
+    "op": "lt",
+    "value": 9e-05,
+    "metric": "af_grpmax_upper95",
+    "note": "GroupMax AF if 1-2 alleles, else the upper 95% CI"
+   },
+   "uses_faf": true
+  },
+  {
+   "gene": "SGCD",
+   "vcep": "Limb Girdle Muscular Dystrophy Variant Curation Expert Panel",
+   "spec": "GN186",
+   "version": "2.0",
+   "spec_updated": "2025-07-09",
+   "url": "https://cspec.genome.network/cspec/ui/svi/doc/GN186",
+   "api": "https://cspec.genome.network/cspec/api/SequenceVariantInterpretation/id/GN186?detail=high",
+   "ba1": {
+    "op": "gt",
+    "value": 0.002,
+    "metric": "faf_grpmax"
+   },
+   "bs1": {
+    "op": "gt",
+    "value": 0.0009,
+    "metric": "faf_grpmax"
+   },
+   "pm2": {
+    "op": "lt",
+    "value": 9e-05,
+    "metric": "af_grpmax_upper95",
+    "note": "GroupMax AF if 1-2 alleles, else the upper 95% CI"
+   },
+   "uses_faf": true
+  },
+  {
+   "gene": "CAPN3",
+   "vcep": "Limb Girdle Muscular Dystrophy Variant Curation Expert Panel",
+   "spec": "GN187",
+   "version": "2.0",
+   "spec_updated": "2025-07-09",
+   "url": "https://cspec.genome.network/cspec/ui/svi/doc/GN187",
+   "api": "https://cspec.genome.network/cspec/api/SequenceVariantInterpretation/id/GN187?detail=high",
+   "ba1": {
+    "op": "gt",
+    "value": 0.003,
+    "metric": "faf_grpmax"
+   },
+   "bs1": {
+    "op": "gt",
+    "value": 0.001,
+    "metric": "faf_grpmax"
+   },
+   "pm2": {
+    "op": "lt",
+    "value": 0.0001,
+    "metric": "af_grpmax_upper95",
+    "note": "GroupMax AF if 1-2 alleles, else the upper 95% CI"
+   },
+   "uses_faf": true
+  },
+  {
+   "gene": "ANO5",
+   "vcep": "Limb Girdle Muscular Dystrophy Variant Curation Expert Panel",
+   "spec": "GN188",
+   "version": "2.0",
+   "spec_updated": "2025-07-09",
+   "url": "https://cspec.genome.network/cspec/ui/svi/doc/GN188",
+   "api": "https://cspec.genome.network/cspec/api/SequenceVariantInterpretation/id/GN188?detail=high",
+   "ba1": {
+    "op": "gt",
+    "value": 0.003,
+    "metric": "faf_grpmax"
+   },
+   "bs1": {
+    "op": "gt",
+    "value": 0.001,
+    "metric": "faf_grpmax"
+   },
+   "pm2": {
+    "op": "lt",
+    "value": 0.0001,
+    "metric": "af_grpmax_upper95",
+    "note": "GroupMax AF if 1-2 alleles, else the upper 95% CI"
+   },
+   "uses_faf": true
+  },
+  {
+   "gene": "SGCA",
+   "vcep": "Limb Girdle Muscular Dystrophy Variant Curation Expert Panel",
+   "spec": "GN189",
+   "version": "2.0",
+   "spec_updated": "2025-07-09",
+   "url": "https://cspec.genome.network/cspec/ui/svi/doc/GN189",
+   "api": "https://cspec.genome.network/cspec/api/SequenceVariantInterpretation/id/GN189?detail=high",
+   "ba1": {
+    "op": "gt",
+    "value": 0.002,
+    "metric": "faf_grpmax"
+   },
+   "bs1": {
+    "op": "gt",
+    "value": 0.0009,
+    "metric": "faf_grpmax"
+   },
+   "pm2": {
+    "op": "lt",
+    "value": 9e-05,
+    "metric": "af_grpmax_upper95",
+    "note": "GroupMax AF if 1-2 alleles, else the upper 95% CI"
+   },
+   "uses_faf": true
+  },
+  {
+   "gene": "AIPL1",
+   "vcep": "Leber Congenital Amaurosis/early onset Retinal Dystrophy Variant Curation Expert Panel",
+   "spec": "GN208",
+   "version": "1.0",
+   "spec_updated": "2025-09-26",
+   "url": "https://cspec.genome.network/cspec/ui/svi/doc/GN208",
+   "api": "https://cspec.genome.network/cspec/api/SequenceVariantInterpretation/id/GN208?detail=high",
+   "ba1": {
+    "op": "ge",
+    "value": 0.0057,
+    "metric": "faf_grpmax"
+   },
+   "bs1": {
+    "op": "ge",
+    "value": 0.00057,
+    "metric": "faf_grpmax"
+   },
+   "pm2": {
+    "op": "le",
+    "value": 0.0004,
+    "metric": "af_total"
+   },
+   "uses_faf": true
+  },
+  {
+   "gene": "CEP290",
+   "vcep": "Leber Congenital Amaurosis/early onset Retinal Dystrophy Variant Curation Expert Panel",
+   "spec": "GN226",
+   "version": "1.0",
+   "spec_updated": "2026-07-02",
+   "url": "https://cspec.genome.network/cspec/ui/svi/doc/GN226",
+   "api": "https://cspec.genome.network/cspec/api/SequenceVariantInterpretation/id/GN226?detail=high",
+   "ba1": {
+    "op": "gt",
+    "value": 0.016,
+    "metric": "faf_grpmax"
+   },
+   "bs1": {
+    "op": "ge",
+    "value": 0.0016,
+    "metric": "faf_grpmax"
+   },
+   "pm2": {
+    "op": "le",
+    "value": 0.0006,
+    "metric": "af_total"
+   },
+   "uses_faf": true
+  }
+ ]
+}

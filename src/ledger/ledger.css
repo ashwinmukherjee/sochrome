@@ -1,0 +1,411 @@
+/* Copyright 2026 Ashwin Mukherjee */
+/* SPDX-License-Identifier: PolyForm-Noncommercial-1.0.0 */
+/* The ledger: its place in the specimen, and the drawing's states. Ink is verdigris; a fallen record keeps its hue. */
+
+/* ── Its place: the caption on the rail, chromosome 1's track on the first line ── */
+
+.ledger {
+  /* The room a row's key always has while the row is pointed at: left of the numbers its word, right of the bars
+     its count (six figures and their word, at the gap). The drawing is centred where the column has more. */
+  /* The room the longest row name needs (measured by the drawing) and 16 clear of the column's edge, so every row
+     names itself. */
+  --ledger-lead: calc(var(--ledger-key, 0px) + var(--sp-2));
+  /* Right of the bars, the count's room: whole (136) from a 576 px column (a 960 window), down to the wall at the
+     narrowest column beside the apparatus (417, an 801 window), so the bars keep their length there. A count with
+     no room beside its bar stands over its end. Resolved against the ledger's own width (its container). */
+  --ledger-air: clamp(var(--wall), var(--wall) + (100cqi - 417px) * 0.58, var(--sp-8) + var(--sp-1));
+  --ledger-w: min(var(--stage-w), 100% - var(--ledger-air) - var(--ledger-lead));
+  --ledger-right: max(var(--ledger-air), (100% - var(--stage-w)) / 2);
+  --ledger-left: calc(100% - var(--ledger-right) - var(--ledger-w));
+  grid-row: top / foot;
+  min-width: 0;
+  container-type: inline-size;
+  animation: ledger-in var(--t-arrive) ease both;
+}
+/* The read's ground is narrated, not navigated: the unread genome stands up at the descent's own pace. */
+:root[data-beat="ground"] .ledger {
+  animation-duration: var(--t-fade);
+}
+@keyframes ledger-in {
+  from {
+    opacity: 0;
+  }
+}
+
+/* The caption's baseline is the rail: a strut as tall as the rail stands on the same baseline. */
+.ledger-caption {
+  display: flex;
+  align-items: baseline;
+  height: var(--rail-top);
+  margin: 0;
+  padding-left: calc(var(--ledger-left) + var(--ledger-gutter, 0px));
+  white-space: nowrap;
+}
+.ledger-caption::before {
+  content: "";
+  display: inline-block;
+  width: 0;
+  height: var(--rail-top);
+}
+.ledger-name {
+  /* A long file name ends in an ellipsis at the caption's edge: it never pushes the page sideways. */
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  transition: opacity var(--t-beat) ease;
+}
+.ledger-name.out {
+  opacity: 0;
+}
+
+/* The host's padding is the room either side of the drawing: the drawing reads it, and its key stands in it. */
+.ledger-host {
+  margin-top: calc(var(--first-line) - var(--rail-top) - var(--ledger-y1, 0px));
+  padding: 0 var(--ledger-right) 0 var(--ledger-left);
+}
+/* Resolves the frame's pitch to a length the drawing can read; takes no room. */
+.ledger-pitch {
+  display: block;
+  width: 0;
+  height: var(--pitch);
+  margin-bottom: calc(-1 * var(--pitch));
+  visibility: hidden;
+  pointer-events: none;
+}
+
+/* On a phone the drawing starts at the screen's edge: its numbers stand in the margin, its tracks on the wall. */
+@media (max-width: 800px) {
+  .ledger {
+    --ledger-left: 0px;
+    --ledger-right: 0px;
+    margin: 0 var(--wall) 0 0;
+  }
+}
+/* On a phone the tracks start on the wall, with every word on the page; YOUR GENOME stands on the tracks' start,
+   as on desktop (G27). */
+@media (max-width: 800px) {
+  .ledger .ledger-caption,
+  .ledger .ledger-host {
+    --ledger-left: 0px;
+    --ledger-right: 0px;
+  }
+  .ledger .ledger-caption {
+    --ledger-gutter: inherit;
+  }
+  /* Nothing on a phone's ledger answers the pointer: no hover there, and a tap's place is the list.
+     The rows' bands and the ticks' targets take the pointer on their own, so they are let go by name. */
+  .ledger .ledger-svg,
+  .ledger .ledger-svg .band,
+  .ledger .ledger-svg .hit {
+    pointer-events: none;
+  }
+  /* No row numbers on a phone: twenty-three bars falling in length read as a genome, and the eye stays on them. */
+  .ledger-svg .chr {
+    display: none;
+  }
+}
+
+/* ── The drawing ── */
+
+.ledger-svg {
+  /* How far the rows not in focus step back; a gene tick at rest, and stepped back. */
+  --ledger-recede: var(--hover-recede);
+  --ledger-gene: 0.45;
+  --ledger-gene-back: 0.12;
+  display: block;
+  overflow: visible;
+}
+.ledger-svg text {
+  font: var(--t-1) / 1 var(--mono);
+  font-variant-numeric: tabular-nums;
+  dominant-baseline: central;
+}
+/* The sex row's pair settling out of "XX/XY" once the read knows it: a part leaves on the swap's clock. */
+.ledger-svg .sex-lead,
+.ledger-svg .sex-last {
+  transition: fill-opacity var(--t-swap) ease;
+}
+.ledger-svg tspan.out {
+  fill-opacity: 0;
+}
+/* Safari doesn't pass dominant-baseline down to a tspan, so the rows' key ("Chromosome") sat above its
+   number there. Set on the tspan itself it centres on the number's line in every browser. */
+.ledger-svg tspan {
+  dominant-baseline: central;
+}
+.ledger-svg .chr {
+  fill: var(--ink-dim);
+  text-anchor: end;
+  transition:
+    fill var(--t-hover) ease,
+    opacity var(--t-hover) ease;
+}
+
+.ledger-svg .m,
+.ledger-svg .solid,
+.ledger-svg .ink,
+.ledger-svg .base {
+  transition:
+    fill var(--t-fade) var(--ease),
+    stroke var(--t-fade) var(--ease),
+    opacity var(--t-fade) var(--ease),
+    transform var(--t-move) var(--ease);
+}
+
+/* The bar is one grey before the read: the chromosome. The ink is the records read onto it. */
+.ledger-svg .base,
+.ledger-svg .solid {
+  fill: var(--v-unknown);
+}
+/* Loading: one reading head with a hard edge. The solid ends where the head is. */
+.ledger-svg .ink {
+  fill: var(--v-read);
+  opacity: var(--o, 0);
+  transform-box: fill-box;
+  transform-origin: 0 50%;
+  transform: scaleX(var(--f, 0));
+}
+.ledger-svg.filling .ink {
+  transition: none;
+}
+/* The landing: the genome not yet read, every row an outline (the one the sex row keeps when the file holds no
+   X). During the read the outlines stay until the ink reaches them: the ink fills the outline it waited in. */
+.ledger-svg.empty .base,
+.ledger-svg.filling .base,
+.ledger-svg.empty .solid,
+.ledger-svg.filling .solid,
+.ledger-svg.empty .ink {
+  opacity: 0;
+}
+
+/* The coding cut: the solid fades onto the base, which keeps the fallen records' hue under the marks
+   (on the ink layer over them it would hide every standing mark). */
+.ledger-svg.coding .solid,
+.ledger-svg.coding .ink {
+  opacity: 0;
+}
+.ledger-svg.coding .row.read .base {
+  fill: var(--v-fall);
+}
+
+.ledger-svg .m {
+  fill: var(--v-lit);
+  transform-box: fill-box;
+  transform-origin: 50% 100%;
+  transform: translateY(var(--ty, 0px)) scale(var(--sw, 1), var(--sy, 1));
+}
+/* Before the first cut the marks wait unseen: painted under the solid bar, each one's soft edge stacked on the
+   bar's own and showed as a ragged rim along it. Stepping back from the cut, they leave once the solid has
+   faded over them again. */
+.ledger-svg:not(.coding) .m {
+  visibility: hidden;
+  transition:
+    fill var(--t-fade) var(--ease),
+    stroke var(--t-fade) var(--ease),
+    opacity var(--t-fade) var(--ease),
+    transform var(--t-move) var(--ease),
+    visibility 0s linear var(--t-fade);
+}
+.ledger-svg.protein .m.l1,
+.ledger-svg.rare .m.l2 {
+  fill: var(--v-fall);
+}
+/* Rare: the few that are left become individuals, three wide, reaching past the track each side. */
+.ledger-svg.rare .m.l3 {
+  --sw: 3;
+  --sy: var(--g);
+  --ty: var(--e);
+}
+/* Arriving at rare the fallen fade first and the survivors widen after. Leaving, or going on, nothing waits. */
+.ledger-svg.rare:not(.yours) .m.l3 {
+  transition:
+    fill var(--t-fade) var(--ease),
+    stroke var(--t-fade) var(--ease),
+    opacity var(--t-fade) var(--ease),
+    transform var(--t-move) var(--ease) var(--tw);
+}
+/* The last cut: the carriers fall like every cut's fallen, back to one pixel. Standing or fallen, no third style. */
+.ledger-svg.yours .m.c {
+  fill: var(--v-fall);
+  --sw: 1;
+  --sy: 1;
+  --ty: 0px;
+}
+
+/* ── The list: the ticks are a menu ── */
+
+/* CARRIERS raises its own ticks again and grounds the others. */
+.ledger-svg.menu.carriers .m.l3:not(.c) {
+  fill: var(--v-fall);
+  --sw: 1;
+  --sy: 1;
+  --ty: 0px;
+}
+.ledger-svg.menu.carriers .m.l3.c {
+  fill: var(--v-lit);
+  --sw: 3;
+  --sy: var(--g);
+  --ty: var(--e);
+}
+/* In the list a tick answers at hover speed; the cuts keep their own durations. */
+.ledger-svg.menu .m.l3 {
+  transition-duration: var(--t-hover);
+}
+
+/* Linked highlighting: what is pointed at stays, the rest steps back one level, never hidden. */
+.ledger-svg > .row {
+  transition: opacity var(--t-hover) ease;
+}
+.ledger-svg.focusing > .row:not(.focus) {
+  opacity: var(--ledger-recede);
+}
+.ledger-svg.linking:not(.carriers) .m.l3:not(.c):not(.hot),
+.ledger-svg.linking.carriers .m.l3.c:not(.hot) {
+  fill: var(--v-uncertain);
+}
+/* Only a single variant's tick grows: size marks the one in question, value marks a set. */
+.ledger-svg.menu.single .m.l3.hot {
+  --sy: var(--g2);
+  --ty: var(--e2);
+}
+
+/* Pointer targets exist only where they lead somewhere: rows from the first count on, ticks in the list. */
+.ledger-svg .band,
+.ledger-svg .hit {
+  fill: none;
+  pointer-events: all;
+}
+.ledger-svg .hit {
+  cursor: pointer;
+}
+.ledger-svg:not(.live) .bands,
+.ledger-svg:not(.menu) .hits,
+.ledger-svg.genes-page .hits,
+.ledger-svg:not(.carriers) .hits [data-list="carriers"],
+.ledger-svg.carriers .hits [data-list="yours"] {
+  display: none;
+}
+
+/* The rows' key: the row pointed at is named left of its number and counted right of its bar. */
+.ledger-svg .key {
+  fill-opacity: 0;
+  transition: fill-opacity var(--t-hover) ease;
+}
+.ledger-svg .count {
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity var(--t-hover) ease;
+}
+.ledger-svg .count {
+  fill: var(--ink);
+}
+/* A count with no room beside its bar stands over the bar's end. */
+.ledger-svg .count.over {
+  text-anchor: end;
+}
+.ledger-svg .row.keyed .chr {
+  fill: var(--ink);
+}
+.ledger-svg .row.keyed .key {
+  fill-opacity: 1;
+}
+/* With no room for the words the number alone answers. */
+.ledger-svg .row.tight .key {
+  display: none;
+}
+.ledger-svg .row.counted .count {
+  opacity: 1;
+}
+
+/* Parked on a phone: a row's key and count don't show; the number steps to ink alone. */
+@media (max-width: 800px) {
+  .ledger-svg .row .key,
+  .ledger-svg .row.counted .count {
+    display: none;
+  }
+}
+
+/* ── The outline: no records drawn here. Every row before and during the read; the sex row after it when the
+   file holds no X (its note is the hover's) ── */
+
+.ledger-svg .absent {
+  opacity: 0;
+  transition: opacity var(--t-fade) var(--ease);
+}
+.ledger-svg .absent rect {
+  fill: none;
+  stroke: var(--ink-outline);
+  stroke-width: 1;
+}
+.ledger-svg.empty .absent,
+.ledger-svg.filling .absent,
+.ledger-svg.no-x .sex .absent {
+  opacity: 1;
+}
+.ledger-svg.no-x .sex > rect {
+  opacity: 0;
+}
+
+/* ── The genes checked: one layer over the genome ── */
+
+/* In and out at hover speed, out as quick as in. */
+.ledger-svg .genes {
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity var(--t-hover) ease;
+}
+.ledger-svg.genes-on .genes {
+  opacity: 1;
+}
+.ledger-svg .genes rect {
+  fill: var(--v-lit);
+  opacity: var(--ledger-gene);
+  transform-box: fill-box;
+  transform-origin: 50% 100%;
+  transition:
+    opacity var(--t-hover) ease,
+    transform var(--t-hover) ease;
+}
+.ledger-svg.gfocus .genes rect:not(.hot) {
+  opacity: var(--ledger-gene-back);
+}
+/* The gene pointed at widens as a variant does at rare. */
+.ledger-svg .genes rect.hot {
+  opacity: 1;
+  transform: translateY(var(--e)) scale(3, var(--g));
+}
+/* The genes page over a person's results: their ticks step out, their colours stay. */
+.ledger-svg.genes-page .m {
+  opacity: 0;
+  transition: opacity var(--t-swap) ease;
+}
+/* Its bars stand as the coding cut's do, the read records' fallen hue: the genes' ticks share the ink's colour and
+   vanish on a solid bar, so the page keeps the contrast the count's hover showed, from whichever step it opened. */
+.ledger-svg.genes-page .solid,
+.ledger-svg.genes-page .ink {
+  opacity: 0;
+}
+.ledger-svg.genes-page .row.read .base {
+  fill: var(--v-fall);
+}
+/* The reference is no one's file: the landing's outlines, no records, the genes in the neutral ink, as the empty
+   ledger's preview of them shows. Over grey bars the ticks would lose their contrast (P4). */
+.ledger-svg.empty .genes rect,
+.ledger-svg.genes-ref .genes rect {
+  fill: var(--v-terminal-ref);
+}
+.ledger-svg.genes-ref .row .m,
+.ledger-svg.genes-ref .row .base,
+.ledger-svg.genes-ref .row .solid,
+.ledger-svg.genes-ref .row .ink {
+  opacity: 0;
+}
+.ledger-svg.genes-ref .absent {
+  opacity: 1;
+}
+
+/* A rebuild, a list swap and a landed state show their end state at once. */
+.ledger-svg.instant,
+.ledger-svg.instant * {
+  transition: none !important;
+}

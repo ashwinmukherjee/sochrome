@@ -1,0 +1,65 @@
+Sochrome is not a medical device and gives no clinical or diagnostic advice.
+
+Your file is read in this browser, on this device. Nothing from it, or worked out from it, is sent anywhere. The app downloads the same reference data for everyone, so the download says nothing about you. Your browser keeps that reference data to make the next visit faster; it keeps nothing from your file after you close the page.
+
+CREDITS
+
+ClinVar
+ClinVar (NCBI, National Library of Medicine), GRCh38 release 2026-10-19. Landrum MJ et al., Nucleic Acids Res 2018;46:D1062. ncbi.nlm.nih.gov/clinvar
+https://www.ncbi.nlm.nih.gov/clinvar/
+
+gnomAD
+This tool includes data from the gnomAD v4.1 release (Broad Institute). Chen S et al., Nature 2024;625:92. gnomad.broadinstitute.org
+https://gnomad.broadinstitute.org/
+
+AlphaMissense
+AlphaMissense predictions, Copyright 2023 DeepMind Technologies Limited, licensed under CC BY 4.0 (creativecommons.org/licenses/by/4.0). Source: zenodo.org/records/10813168. Repacked and rounded for this app. Cheng J et al., Science 2023;381:eadg7492. Not validated for clinical use.
+https://zenodo.org/records/10813168
+
+MANE Select
+MANE Select v1.5 (NCBI RefSeq and EMBL-EBI Ensembl). Morales J et al., Nature 2022;604:310.
+https://www.ncbi.nlm.nih.gov/refseq/MANE/
+
+Human reference genome GRCh38
+Human reference genome GRCh38 (Genome Reference Consortium, GenBank GCA_000001405.15), obtained as hg38 from the UCSC Genome Browser (genome.ucsc.edu).
+https://genome.ucsc.edu/
+
+ClinGen
+ClinGen (Clinical Genome Resource): gene-disease validity, dosage sensitivity and variant curation expert panel specifications (CSpec), accessed 2026-10-20. clinicalgenome.org. Rehm HL et al., N Engl J Med 2015;372:2235.
+https://clinicalgenome.org/
+
+ACMG secondary findings list
+ACMG SF v3.3 gene list: Lee K et al., Genet Med 2025;27:101454 (American College of Medical Genetics and Genomics). Gene list used as published; not endorsed by ACMG.
+https://doi.org/10.1016/j.gim.2025.101454
+
+UniProtKB
+UniProtKB (UniProt Consortium), licensed under CC BY 4.0. Gene descriptions in this app are summarised and rewritten from UniProt function annotations. UniProt Consortium, Nucleic Acids Res 2025;53:D609.
+https://www.uniprot.org/
+
+AlphaFold Protein Structure Database
+Predicted protein structures from the AlphaFold Protein Structure Database (EMBL-EBI and Google DeepMind), Copyright 2021 DeepMind Technologies Limited, licensed under CC BY 4.0. Jumper J et al., Nature 2021;596:583. Varadi M et al., Nucleic Acids Res 2024;52:D368.
+https://alphafold.ebi.ac.uk/
+
+Mondo Disease Ontology
+Mondo Disease Ontology (Monarch Initiative), licensed under CC BY 4.0, accessed through the EMBL-EBI Ontology Lookup Service. Condition names in this app are adapted from Mondo labels and definitions. Vasilevsky NA et al., Genetics 2025 (doi:10.1093/genetics/iyaf215).
+https://mondo.monarchinitiative.org/
+
+Genome in a Bottle sample genomes
+Sample genomes HG001 (NA12878), HG002 (NA24385) and HG003 (NA24149) from the NIST Genome in a Bottle Consortium (nist.gov/programs-projects/genome-bottle). Benchmark calls filtered and repacked for this app. The HG002 and HG003 donors consented through the Personal Genome Project. Zook JM et al., Sci Data 2016;3:160025.
+https://www.nist.gov/programs-projects/genome-bottle
+
+Risk figures quoted from papers
+Risk figures are quoted from the published studies named beside each one.
+
+Suisse Intl, Suisse Works, Suisse Mono
+Suisse Intl, Suisse Works, Suisse Mono (Swiss Typefaces).
+https://www.swisstypefaces.com/
+
+LICENCE
+
+Copyright 2026 Ashwin Mukherjee.
+You may read, run, and learn from this. You may not use it commercially or redistribute modified content.
+Code: PolyForm Noncommercial 1.0.0, https://polyformproject.org/licenses/noncommercial/1.0.0
+Copy, narrative text, graphics and visual design: CC BY-NC-ND 4.0, https://creativecommons.org/licenses/by-nc-nd/4.0/
+Data, models, fonts and dependencies keep their own licences. Open-source notices: /third-party-licenses.txt
+For anything else, contact hello@sochro.me.

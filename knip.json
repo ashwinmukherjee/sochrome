@@ -1,0 +1,23 @@
+{
+  "$schema": "https://unpkg.com/knip@5/schema.json",
+  "entry": [
+    "src/app/shell/later.ts",
+    "src/styles/tokens-page.ts",
+    "src/app/**/dev/*.tsx",
+    "src/app/room/RoomDev.tsx",
+    "src/render/system-main.tsx",
+    "tools/*.ts",
+    "tools/checks/*.ts",
+    "tools/e2e/*.ts",
+    "tools/decisions/*.ts",
+    "tools/clinvar-check/*.ts",
+    "tools/spine/*.ts"
+  ],
+  "project": ["src/**/*.{ts,tsx}", "tools/**/*.ts"],
+  "ignore": ["src/render/**", "src/spine/**", "src/copy/p1/**", "src/copy/p23/**"],
+  "ignoreDependencies": [
+    "@fontsource-variable/inter",
+    "@fontsource-variable/source-serif-4",
+    "@fontsource/ibm-plex-mono"
+  ]
+}

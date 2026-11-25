@@ -1,0 +1,213 @@
+/* Copyright 2026 Ashwin Mukherjee */
+/* SPDX-License-Identifier: PolyForm-Noncommercial-1.0.0 */
+/* Dev page only: the renderer sheet's page chrome. Tokens and faces come from the page that loads it. */
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  background: var(--v-paper);
+}
+
+body {
+  margin: 0;
+  padding: var(--sp-6) var(--sp-5) var(--sp-8);
+  background: var(--v-paper);
+  color: var(--v-text);
+  font-family: var(--sans);
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+}
+
+.sheet-head {
+  max-width: calc(var(--cell-w) * 2 + var(--sp-6) + var(--cell-bleed) * 4);
+  margin: 0 auto var(--sp-7);
+}
+.sheet-title {
+  font-family: var(--serif);
+  font-size: 28px;
+  font-weight: 400;
+  letter-spacing: -0.01em;
+  margin: 0 0 var(--sp-2);
+}
+.sheet-sub {
+  font-family: var(--mono);
+  font-size: 11px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--v-text-2);
+  margin: 0 0 var(--sp-3);
+}
+.sheet-lede {
+  font-family: var(--serif);
+  font-size: 15px;
+  line-height: 1.55;
+  max-width: 540px;
+  color: var(--v-text);
+  margin: 0;
+}
+
+.lane {
+  max-width: calc(var(--cell-w) * 2 + var(--sp-6) + var(--cell-bleed) * 4);
+  margin: 0 auto var(--sp-8);
+}
+.lane-head {
+  display: flex;
+  align-items: baseline;
+  gap: var(--sp-2);
+  padding-bottom: var(--sp-2);
+  border-bottom: 0.5px solid var(--v-rail);
+  margin-bottom: var(--sp-5);
+}
+.lane-num {
+  font-family: var(--mono);
+  font-size: 11px;
+  color: var(--v-text-2);
+}
+.lane-name {
+  font-family: var(--sans);
+  font-size: 17px;
+  font-weight: 500;
+  margin: 0;
+}
+.lane-note {
+  font-family: var(--serif);
+  font-size: 13px;
+  color: var(--v-text-2);
+  margin: 0;
+}
+.lane-count {
+  margin-left: auto;
+  font-family: var(--mono);
+  font-size: 11px;
+  color: var(--v-text-2);
+}
+
+.lane-cells {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(var(--cell-w), 1fr));
+  gap: var(--sp-7) var(--sp-6);
+  justify-content: start;
+}
+
+.cell {
+  margin: 0;
+  max-width: var(--cell-w);
+}
+
+.cell-id {
+  display: flex;
+  align-items: baseline;
+  gap: var(--sp-1);
+  flex-wrap: wrap;
+  font-family: var(--mono);
+  font-size: 11px;
+  letter-spacing: 0.02em;
+  margin-bottom: var(--sp-1);
+}
+.cell-state {
+  color: var(--v-text);
+}
+.cell-spec {
+  color: var(--v-text-2);
+}
+.cell-spec[data-unresolved] {
+  font-style: italic;
+}
+.cell-spec[data-unresolved]::before {
+  content: "· ";
+  font-style: normal;
+}
+
+.cell-addr {
+  color: var(--v-text-2);
+}
+.cell-addr::before {
+  content: "· ";
+}
+
+.cell-flag {
+  font-size: 9px;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--v-text-2);
+  border: 0.5px solid var(--v-rail);
+  padding: 1px 5px;
+}
+
+.stage {
+  position: relative;
+  background: var(--v-ground);
+  overflow: visible;
+}
+.stage[role="button"] {
+  cursor: pointer;
+}
+.stage[role="button"]:focus-visible {
+  outline: 1px solid var(--v-observed);
+  outline-offset: 3px;
+}
+
+.cell[data-built="0"] .stage::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border: 0.5px dashed var(--v-rail);
+}
+
+.cell-note {
+  font-family: var(--serif);
+  font-size: 13px;
+  line-height: 1.5;
+  color: var(--v-text);
+  max-width: 540px;
+  margin: var(--sp-2) 0 var(--sp-1);
+}
+.cell-beats {
+  font-family: var(--mono);
+  font-size: 10px;
+  letter-spacing: 0.03em;
+  color: var(--v-text-2);
+  margin: 0;
+}
+.beat[data-live] {
+  color: var(--v-text);
+}
+.beat-stub {
+  font-style: italic;
+}
+
+.strip {
+  display: block;
+}
+.strip .mk-svg {
+  display: block;
+  margin: 0;
+  overflow: hidden;
+}
+body:has(.strip) {
+  padding: 0;
+  margin: 0;
+  background: var(--v-ground);
+}
+
+.sheet-options {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: var(--sp-2);
+  font-family: var(--mono);
+  font-size: var(--t-1);
+  color: var(--v-text-2);
+}
+.sheet-options select,
+.sheet-options input,
+.sheet-options button {
+  font: inherit;
+  color: var(--v-text);
+}
+.sheet-options button {
+  border: 1px solid var(--v-rail);
+  padding: 0 var(--sp-1);
+}
