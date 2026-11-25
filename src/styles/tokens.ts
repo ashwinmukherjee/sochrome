@@ -26,13 +26,13 @@ export const INK: { light: Rungs; dark: Rungs } = {
     "v-uncertain": "#93979A",
     "v-observed": "#44474B",
     "v-text": "#35393D",
-    // 4.5:1 on the apparatus ground (REBUILD §8 A1); the deck's #74777A was 3.2:1 there.
+    // 4.5:1 on the apparatus ground; the deck's #74777A was 3.2:1 there.
     "v-text-2": "#5E6063",
     // The caption greys: every label at 4.5:1 on both grounds. Faint sits where text-2
     // does; axis moves a step toward ink to stay apart from it.
     "v-axis": "#4B4E52",
     "v-faint": "#5D6064",
-    // Outlines and hairlines (tuning C3): 3:1 on both grounds, the floor for graphics (WCAG 1.4.11),
+    // Outlines and hairlines: 3:1 on both grounds, the floor for graphics (WCAG 1.4.11),
     // so the marks that only point don't darken with the faint text grey.
     "v-outline": "#797C80",
     "v-terminal-ref": "#22262A",

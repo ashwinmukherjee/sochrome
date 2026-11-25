@@ -43,7 +43,7 @@ const OWNER: Record<string, string> = {
   T7: "D", T8: "D", T9: "D", I1: "C", I2: "C", I3: "B", I4: "D", I8: "B",
   V1: "D", V2: "D", V13: "B", V14: "G", V15: "G", K11: "F", K12: "F", K13: "F",
 }; // prettier-ignore
-/** Rows a later decision changes (REBUILD §2.0 and the accepted defaults are newer than the sweep). */
+/** Rows a later decision changes: the privacy rule and the accepted defaults are newer than the sweep. */
 const AMENDED: Record<string, string> = {
   L2: 'The last line is the accepted privacy line ("Your genome is read on this device, and nothing about it is sent anywhere."), and the not-a-test line is added after the third.',
   L9: "The refusals name the product from the brand constant, never a written name.",
@@ -83,7 +83,8 @@ let inConflicts = false;
 for (const line of readFileSync(SOURCE, "utf8").split("\n")) {
   const head = /^## (.+)$/.exec(line);
   if (head) {
-    section = head[1].replace(/^\d+\.\s*/, "");
+    // A heading's number and its sign-off (who agreed, in quotes) are the file's own, not the section's name.
+    section = head[1].replace(/^\d+\.\s*/, "").replace(/\s*\([A-Z][a-z]+: "[^"]*"\)$/, "");
     inConflicts = /^Conflicts: resolved/.test(section);
     continue;
   }

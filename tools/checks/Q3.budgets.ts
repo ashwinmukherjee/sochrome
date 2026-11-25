@@ -12,7 +12,7 @@ import { sampleVcf } from "../spine/paths";
 import type { Check, Result } from "./_check";
 import { builtFiles, DIST } from "./lib/built";
 
-/** The scripts the page loads before anything is chosen, gzipped (REBUILD §7.1b). */
+/** The scripts the page loads before anything is chosen, gzipped. */
 const KB = 1024;
 const MB = 1024 ** 2;
 

@@ -2,7 +2,7 @@
 // SPDX-License-Identifier: PolyForm-Noncommercial-1.0.0
 // The privacy rule as a lint rule: every way out of the page, by any spelling, allowed only in its one home.
 
-const WHY = "(REBUILD §2.0)";
+const WHY = "(the privacy rule)";
 const REQUEST = `Requests are made only in src/data/ ${WHY}.`;
 const STORED = `Nothing is stored ${WHY}.`;
 const WINDOWS = `No other window is reached ${WHY}.`;

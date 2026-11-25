@@ -7,7 +7,7 @@ import reactHooks from "eslint-plugin-react-hooks";
 import tseslint from "typescript-eslint";
 import exits from "./tools/checks/lib/exit-guard.js";
 
-/** Ported as is (REBUILD §4.1): behaviour is pinned by parity checks, so their types are not rewritten in v1. */
+/** Ported as is: behaviour is pinned by parity checks, so their types are not rewritten in v1. */
 const PORTED = [
   "src/spine/*.ts",
   "src/spine/gates/*.ts",
@@ -20,7 +20,7 @@ const PORTED = [
   "tools/clinvar-check/{check,fit,contract}.ts",
 ];
 
-/** The privacy rule (REBUILD §2.0): each way out of the page lives in one named place, and nowhere else. */
+/** The privacy rule: each way out of the page lives in one named place, and nowhere else. */
 const guard = (options = {}) => ({ "exits/no-exit": ["error", options] });
 
 export default tseslint.config(

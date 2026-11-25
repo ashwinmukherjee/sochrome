@@ -13,7 +13,7 @@ export interface Result {
 }
 
 export interface Check {
-  /** The id REBUILD §8 gives it. */
+  /** Its id, as the checks are numbered. */
   id: string;
   title: string;
   /** The lane that owns it. */

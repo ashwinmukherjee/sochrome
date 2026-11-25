@@ -41,7 +41,7 @@ function problems(name: string, r: GenomeResult): string[] {
     );
     try {
       p23Context(f.p23);
-      // The P1 copy still reads its own looser shape of the facts; lane D makes it read the contract's.
+      // The P1 copy still reads its own looser shape of the facts; reading the contract's is the P1 copy's own change to make.
       const facts = f.facts as unknown as Parameters<typeof p1Context>[0];
       f.facts.drawings.forEach((_, i) => p1Context(facts, i));
     } catch (e) {

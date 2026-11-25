@@ -16,7 +16,7 @@ export type { Fill } from "../ledger/dirs";
 export type { P1Handle } from "../render/lib";
 export type { CodonRecord, Drawing, FoldSource, VariantFacts } from "../spine/facts/dispatch";
 
-// ── The privacy rule (REBUILD §2.0) ──
+// ── The privacy rule ──
 // Nothing worked out from a person's file leaves the page's memory. `GenomeResult` and everything
 // reachable from it stay in memory: never a URL, a title, storage, a request, or the console.
 
