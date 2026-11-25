@@ -1,19 +1,14 @@
 # Sochrome
 
 Sochrome reads a whole-genome file on your own device and shows what each rare change in about 2,100
-condition-linked genes does to the gene's protein. Designed and built by Ashwin Mukherjee, 2026.
+condition-linked genes does to the gene's protein.
 
-It is not a medical device and gives no clinical or diagnostic advice.
+## Privacy
 
-## What happens to a genome file
-
-Your file is read in this browser, on this device. Nothing from it, or worked out from it, is sent
+Your file is read in your browser, on your device. Nothing from it, or worked out from it, is sent
 anywhere. The app downloads the same reference data for everyone, so the download says nothing about
 you. Your browser keeps that reference data to make the next visit faster; it keeps nothing from your
 file after you close the page.
-
-That is a description of what the code does, and `npm run verify` proves it (the leak test, check P1).
-If the code ever changes, this statement changes in the same commit.
 
 ## Run it
 
@@ -42,7 +37,7 @@ needs a licence that covers the site it is served from; the owner's licence term
 The typeface is one token, `src/typeface.ts`. Setting it to `"standin"` builds with free faces
 (Inter, Source Serif 4, IBM Plex Mono) and ships no commercial file.
 
-## Where things are
+## Directory
 
 - `src/brand.ts` holds the product's name. Nothing else states it.
 - `src/contracts/` holds the types every module shares and every shared number.
